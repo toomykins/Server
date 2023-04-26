@@ -1,51 +1,57 @@
-import ScriptState from '#engine/ScriptState.js';
 import ScriptOpcodes from '#engine/ScriptOpcodes.js';
+import ScriptState from '#engine/ScriptState.js';
 import ScriptProvider from '#engine/ScriptProvider.js';
-import _ from 'lodash';
 
+// script executor
 export default class ScriptRunner {
     static handlers = {
+        // Language required opcodes
+
         [ScriptOpcodes.PUSH_CONSTANT_INT]: (state) => {
-            state.intStack[state.isp++] = state.script.intOperands[state.pc];
+            state.pushInt(state.intOperand);
         },
 
         [ScriptOpcodes.PUSH_CONSTANT_STRING]: (state) => {
-            state.stringStack[state.ssp++] = state.script.stringOperands[state.pc];
+            state.pushString(state.stringOperand);
         },
 
         [ScriptOpcodes.BRANCH]: (state) => {
-            state.pc += state.script.intOperands[state.pc];
+            state.pc += state.intOperand;
         },
 
         [ScriptOpcodes.BRANCH_NOT]: (state) => {
-            state.isp -= 2;
+            let b = state.popInt();
+            let a = state.popInt();
 
-            if (state.intStack[state.isp] != state.intStack[state.isp + 1]) {
-                state.pc += state.script.intOperands[state.pc];
+            if (a !== b) {
+                state.pc += state.intOperand;
             }
         },
 
         [ScriptOpcodes.BRANCH_EQUALS]: (state) => {
-            state.isp -= 2;
+            let b = state.popInt();
+            let a = state.popInt();
 
-            if (state.intStack[state.isp] == state.intStack[state.isp + 1]) {
-                state.pc += state.script.intOperands[state.pc];
+            if (a === b) {
+                state.pc += state.intOperand;
             }
         },
 
         [ScriptOpcodes.BRANCH_LESS_THAN]: (state) => {
-            state.isp -= 2;
+            let b = state.popInt();
+            let a = state.popInt();
 
-            if (state.intStack[state.isp] < state.intStack[state.isp + 1]) {
-                state.pc += state.script.intOperands[state.pc];
+            if (a < b) {
+                state.pc += state.intOperand;
             }
         },
 
         [ScriptOpcodes.BRANCH_GREATER_THAN]: (state) => {
-            state.isp -= 2;
+            let b = state.popInt();
+            let a = state.popInt();
 
-            if (state.intStack[state.isp] > state.intStack[state.isp + 1]) {
-                state.pc += state.script.intOperands[state.pc];
+            if (a > b) {
+                state.pc += state.intOperand;
             }
         },
 
@@ -55,43 +61,45 @@ export default class ScriptRunner {
                 return;
             }
 
-            let frame = state.callStack[--state.fp];
-            state.script = frame.script;
+            let frame = state.frames[--state.fp];
             state.pc = frame.pc;
+            state.script = frame.script;
             state.intLocals = frame.intLocals;
             state.stringLocals = frame.stringLocals;
         },
 
         [ScriptOpcodes.BRANCH_LESS_THAN_OR_EQUALS]: (state) => {
-            state.isp -= 2;
+            let b = state.popInt();
+            let a = state.popInt();
 
-            if (state.intStack[state.isp] <= state.intStack[state.isp + 1]) {
-                state.pc += state.script.intOperands[state.pc];
+            if (a <= b) {
+                state.pc += state.intOperand;
             }
         },
 
         [ScriptOpcodes.BRANCH_GREATER_THAN_OR_EQUALS]: (state) => {
-            state.isp -= 2;
+            let b = state.popInt();
+            let a = state.popInt();
 
-            if (state.intStack[state.isp] >= state.intStack[state.isp + 1]) {
-                state.pc += state.script.intOperands[state.pc];
+            if (a >= b) {
+                state.pc += state.intOperand;
             }
         },
 
         [ScriptOpcodes.PUSH_INT_LOCAL]: (state) => {
-            state.intStack[state.isp++] = state.intLocals[state.script.intOperands[state.pc]];
+            state.pushInt(state.intLocals[state.intOperand]);
         },
 
         [ScriptOpcodes.POP_INT_LOCAL]: (state) => {
-            state.intLocals[state.script.intOperands[state.pc]] = state.intStack[--state.isp];
+            state.intLocals[state.intOperand] = state.popInt();
         },
 
         [ScriptOpcodes.PUSH_STRING_LOCAL]: (state) => {
-            state.stringStack[state.ssp++] = state.stringLocals[state.script.stringOperands[state.pc]];
+            state.pushString(state.stringLocals[state.stringOperand]);
         },
 
         [ScriptOpcodes.POP_STRING_LOCAL]: (state) => {
-            state.stringLocals[state.script.stringOperands[state.pc]] = state.stringStack[--state.ssp];
+            state.stringLocals[state.stringOperand] = state.popString();
         },
 
         [ScriptOpcodes.POP_INT_DISCARD]: (state) => {
@@ -103,153 +111,116 @@ export default class ScriptRunner {
         },
 
         [ScriptOpcodes.GOSUB_WITH_PARAMS]: (state) => {
-            let procId = state.script.intOperands[state.pc];
-
+            let procId = state.intOperand;
             let proc = ScriptProvider.get(procId);
             if (!proc) {
-                throw new Error('Invalid gosub proc', procId, 'in', state.script.name);
+                throw new Error('Invalid gosub proc', procId);
             }
 
             if (state.fp >= 100) {
                 throw new Error('Stack overflow');
             }
 
+            // copy stack to locals (passing args)
             let intLocals = [];
-            for (let i = 0; i < proc.intArgs; i++) {
-                intLocals[i] = state.intStack[state.isp - proc.intArgs + i];
+            for (let i = 0; i < proc.intArgCount; i++) {
+                intLocals[proc.intArgCount - i - 1] = state.popInt();
             }
 
             let stringLocals = [];
-            for (let i = 0; i < proc.stringArgs; i++) {
-                stringLocals[i] = state.stringStack[state.ssp - proc.stringArgs + i];
+            for (let i = 0; i < proc.stringArgCount; i++) {
+                stringLocals[proc.stringArgCount - i - 1] = state.popString();
             }
 
             // console.log(`gosub ${proc.name}`, intLocals, stringLocals);
 
-            state.isp -= state.script.intArgs;
-            state.ssp -= state.script.stringArgs;
-
-            let frame = {
+            state.frames[state.fp++] = {
+                pc: state.pc,
+                script: state.script,
                 intLocals: state.intLocals,
                 stringLocals: state.stringLocals,
-                pc: state.pc,
-                script: state.script
             };
-
-            state.callStack[state.fp++] = frame;
 
             state.pc = -1;
             state.script = proc;
             state.intLocals = intLocals;
             state.stringLocals = stringLocals;
-            state.script.opcodes = proc.opcodes;
-            state.script.intOperands = proc.intOperands;
-            state.script.stringOperands = proc.stringOperands;
         },
 
+        [ScriptOpcodes.SWITCH]: (state) => {
+            let table = state.script.switchTables[state.intOperand];
+            let key = state.popInt();
+            let result = table[key];
+            pc += result;
+        },
+
+        // Math opcodes
+
         [ScriptOpcodes.ADD]: (state) => {
-            state.isp -= 2;
-            let a = state.intStack[state.isp];
-            let b = state.intStack[state.isp + 1];
-
-            if (typeof a === 'undefined' || typeof b === 'undefined') {
-                throw new Error(`Bad stack: ${a} ${b} ${state.isp} ${JSON.stringify(state.intStack)}`);
-            }
-
+            let b = state.popInt();
+            let a = state.popInt();
             state.intStack[state.isp++] = a + b;
         },
 
         [ScriptOpcodes.SUB]: (state) => {
-            state.isp -= 2;
-            let a = state.intStack[state.isp];
-            let b = state.intStack[state.isp + 1];
-
-            if (typeof a === 'undefined' || typeof b === 'undefined') {
-                throw new Error(`Bad stack: ${a} ${b} ${state.isp} ${JSON.stringify(state.intStack)}`);
-            }
-
+            let b = state.popInt();
+            let a = state.popInt();
             state.intStack[state.isp++] = a - b;
         },
 
         [ScriptOpcodes.MULTIPLY]: (state) => {
-            state.isp -= 2;
-            let a = state.intStack[state.isp];
-            let b = state.intStack[state.isp + 1];
-
-            if (typeof a === 'undefined' || typeof b === 'undefined') {
-                throw new Error(`Bad stack: ${a} ${b} ${state.isp} ${JSON.stringify(state.intStack)}`);
-            }
-
+            let b = state.popInt();
+            let a = state.popInt();
             state.intStack[state.isp++] = a * b;
         },
 
         [ScriptOpcodes.DIVIDE]: (state) => {
-            state.isp -= 2;
-            let a = state.intStack[state.isp];
-            let b = state.intStack[state.isp + 1];
-
-            if (typeof a === 'undefined' || typeof b === 'undefined') {
-                throw new Error(`Bad stack: ${a} ${b} ${state.isp} ${JSON.stringify(state.intStack)}`);
-            }
-
+            let b = state.popInt();
+            let a = state.popInt();
             state.intStack[state.isp++] = a / b;
         },
 
         [ScriptOpcodes.RANDOM]: (state) => {
-            let a = state.intStack[--state.isp];
+            let a = state.popInt();
             state.intStack[state.isp++] = Math.floor(Math.random() * a);
         },
 
         [ScriptOpcodes.RANDOMINC]: (state) => {
-            let a = state.intStack[--state.isp];
+            let a = state.popInt();
             state.intStack[state.isp++] = Math.floor(Math.random() * (a + 1));
-        },
-
-        [ScriptOpcodes.MES]: (state) => {
-            state.scope.sendMessage(state.popString());
         },
     };
 
-    execute(script, args = [], scope = null) {
-        let state = new ScriptState();
-        state.setup(script);
-        state.scope = scope;
-
-        for (let i = 0; i < args.length; i++) {
-            const arg = args[i];
-
-            if (typeof arg === 'number') {
-                state.intLocals[i] = arg;
-            } else {
-                state.stringLocals[i] = arg;
-            }
-        }
-
-        try {
-            return this.executeInner(state);
-        } catch (err) {
-            console.error(err);
-            return null;
-        }
+    static init(script) {
+        return new ScriptState(script);
     }
 
-    executeInner(state) {
-        while (state.execution === ScriptState.RUNNING) {
-            if (state.pc + 1 >= state.script.opcodes.length) {
-                state.execution = ScriptState.FINISHED;
-                break;
-            }
+    static execute(state, benchmark = false) {
+        try {
+            while (state.execution === ScriptState.RUNNING) {
+                if (state.pc >= state.script.opcodes.length || state.pc < -1) {
+                    throw new Error('Invalid program counter: ' + state.pc + ', max: ' + state.script.opcodes.length);
+                }
 
-            state.opcount++;
-            this.executeOpcode(state.opcodes[++state.pc], state);
+                // if we're benchmarking we don't care about the opcount
+                if (!benchmark && state.opcount > 500_000) {
+                    throw new Error('Too many instructions');
+                }
+
+                state.opcount++;
+                ScriptRunner.executeInner(state, state.script.opcodes[++state.pc]);
+            }
+        } catch (err) {
+            console.error(`Error while executing script ${state.script.name}: ${err.message}`);
+            state.execution = ScriptState.ABORTED;
         }
 
         return state;
     }
 
-    executeOpcode(opcode, state) {
+    static executeInner(state, opcode) {
         if (!ScriptRunner.handlers[opcode]) {
-            throw new Error(`Unhandled opcode: ${opcode}`);
+            throw new Error(`Unknown opcode ${opcode}`);
         }
 
         // console.log(state.script.name, state.pc, ScriptOpcodes[opcode]);

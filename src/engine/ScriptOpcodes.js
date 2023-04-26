@@ -1,8 +1,6 @@
-let opcodes = {
-    // language required ops
+const ScriptOpcodes = {
+    // Language required opcodes
     PUSH_CONSTANT_INT: 0,
-    PUSH_VARP: 1,
-    POP_VARP: 2,
     PUSH_CONSTANT_STRING: 3,
     BRANCH: 6,
     BRANCH_NOT: 7,
@@ -10,8 +8,6 @@ let opcodes = {
     BRANCH_LESS_THAN: 9,
     BRANCH_GREATER_THAN: 10,
     RETURN: 21,
-    PUSH_VARBIT: 25,
-    POP_VARBIT: 27,
     BRANCH_LESS_THAN_OR_EQUALS: 31,
     BRANCH_GREATER_THAN_OR_EQUALS: 32,
     PUSH_INT_LOCAL: 33,
@@ -22,17 +18,12 @@ let opcodes = {
     POP_INT_DISCARD: 38,
     POP_STRING_DISCARD: 39,
     GOSUB_WITH_PARAMS: 40,
-    PUSH_VARC_INT: 42,
-    POP_VARC_INT: 43,
     DEFINE_ARRAY: 44,
     PUSH_ARRAY_INT: 45,
     POP_ARRAY_INT: 46,
-    PUSH_VARC_STRING: 49,
-    POP_VARC_STRING: 50,
     SWITCH: 60,
 
-    MES: 3100,
-
+    // Math opcodes
     ADD: 4000,
     SUB: 4001,
     MULTIPLY: 4002,
@@ -62,9 +53,8 @@ let opcodes = {
 };
 
 // generate reverse lookup
-
-for (let key in opcodes) {
-    opcodes[opcodes[key]] = key;
+for (let key in ScriptOpcodes) {
+    ScriptOpcodes[ScriptOpcodes[key]] = key;
 }
 
-export default opcodes
+export default ScriptOpcodes;

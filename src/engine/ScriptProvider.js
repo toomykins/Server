@@ -1,27 +1,53 @@
 import fs from 'fs';
-import ScriptBuilder from '#engine/ScriptBuilder.js';
+import path from 'path';
+
 import Packet from '#util/Packet.js';
+import Script from '#engine/Script.js';
 
-class ScriptProvider {
-    scripts = [];
+// maintains a list of scripts (id <-> name)
+export default class ScriptProvider {
+    static scripts = [];
 
-    load(path) {
-        let scriptFiles = fs.readdirSync(path);
+    static loadDirectory(dir) {
+        let dirListing = fs.readdirSync(dir);
 
-        for (let i = 0; i < scriptFiles.length; i++) {
-            let id = Number(scriptFiles[i]);
-            this.scripts[id] = ScriptBuilder.decode(Packet.fromFile(`${path}/${id}`));
-            this.scripts[id].sourceInfo.id = id;
+        for (let file of dirListing) {
+            let full = path.join(dir, file);
+
+            // recursively load subdirectories
+            let stat = fs.statSync(full);
+            if (stat.isDirectory()) {
+                ScriptProvider.loadDirectory(full);
+                continue;
+            }
+
+            let id = parseInt(file); // (filename is the script id)
+            if (isNaN(id)) {
+                continue;
+            }
+
+            try {
+                let script = Script.decode(Packet.fromFile(full));
+                ScriptProvider.scripts[id] = script; // we can hotload scripts by replacing the script at the id
+            } catch (err) {
+                console.error(`Failed to load script ${id}: ${err.message}`);
+            }
         }
     }
 
-    get(id) {
+    static get(id) {
         return this.scripts[id];
     }
 
-    getByName(name) {
-        return this.scripts.find(script => script.sourceInfo && script.sourceInfo.name === name);
+    static getByName(name) {
+        for (let script of this.scripts) {
+            if (script && script.info.name === name) {
+                return script;
+            }
+        }
+
+        return null;
     }
 }
 
-export default new ScriptProvider();
+ScriptProvider.loadDirectory('data/scripts/');

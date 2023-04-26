@@ -25,8 +25,6 @@ import Zone from '#engine/Zone.js';
 import { Position } from '#util/Position.js';
 import ScriptProvider from '#engine/ScriptProvider.js';
 
-ScriptProvider.load('data/scripts');
-
 const FLAG_TYPED_ARRAY = 'FLAG_TYPED_ARRAY';
 
 class World {
