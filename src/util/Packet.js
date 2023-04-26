@@ -251,9 +251,17 @@ export default class Packet {
         return (BigInt(a) << 32n) | BigInt(b);
     }
 
+    // newline-terminated
     gjstr() {
         let start = this.pos;
         while (this.data[this.pos++] !== 10) {}
+        return Buffer.from(this.data.slice(start, this.pos - 1)).toString();
+    }
+
+    // null-terminated
+    gjnstr() {
+        let start = this.pos;
+        while (this.data[this.pos++] !== 0) {}
         return Buffer.from(this.data.slice(start, this.pos - 1)).toString();
     }
 

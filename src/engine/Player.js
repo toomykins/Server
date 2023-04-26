@@ -15,8 +15,6 @@ import SoundNames from '#enum/SoundNames.js';
 
 import PlayerMovement from '#scripts/core/PlayerMovement.js';
 
-import ScriptManager from '#engine/ScriptManager.js';
-
 import Component from '#cache/Component.js';
 import NpcType from '#cache/config/NpcType.js';
 import ObjectType from '#cache/config/ObjectType.js';
@@ -30,6 +28,9 @@ import { LevelUpDialogue } from '#scripts/core/Unlocks.js';
 import VarpType from '#cache/config/VarpType.js';
 import ZoneEvent from '#engine/ZoneEvent.js';
 import LocationType from '#cache/config/LocationType.js';
+import ScriptProvider from '#engine/ScriptProvider.js';
+import ScriptRunner from '#engine/ScriptRunner.js';
+import ScriptState from '#engine/ScriptState.js';
 
 // TODO: move this to a better place
 const SkillUnlocks = {
@@ -470,6 +471,8 @@ export class Player {
     webclient = false;
 
     streamer = false;
+
+    scriptRunner = new ScriptRunner();
 
     constructor(client, reconnecting, username, lowmem, webclient, hasData) {
         this.reconnecting = reconnecting;
@@ -1264,11 +1267,11 @@ export class Player {
         }
 
         // try to get approachable scripts first since they can set aprange(-1) and turn into operable scripts
-        let script = ScriptManager.get(this, trigger.replace('OP', 'AP'), on, params);
+        let script = ScriptProvider.getByName('[proc,test]'); // ScriptManager.get(this, trigger.replace('OP', 'AP'), on, params);
         if (script) {
             this.apScript = script;
         } else {
-            this.opScript = ScriptManager.get(this, trigger, on, params);
+            this.opScript = ScriptProvider.getByName('[proc,test]'); // ScriptManager.get(this, trigger, on, params);
         }
 
         // close any pending interface scripts
@@ -1378,10 +1381,15 @@ export class Player {
                 this.loaded = true;
                 this.loading = false;
             } else if (id == ClientProt.CLIENT_CHEAT) {
-                let command = data.gjstr().toLowerCase();
-                let args = command.split(' ');
-                command = args.shift();
+                let cheat = data.gjstr().toLowerCase();
+                let args = cheat.split(' ');
+                cheat = args.shift();
 
+                let script = ScriptProvider.getByName(`[proc,${cheat}]`);
+
+                this.scriptRunner.execute(script, args, this);
+
+                return;
                 switch (command) {
                     case 'help':
                         this.sendMessage('Available commands: tele, region, anim, gfx, sound, inter, chat, settext, close, pos, npc, item, clear, clearbank, bank, herbtest, max, min, setlevel, banktest');
@@ -1815,19 +1823,19 @@ export class Player {
             } else if (id == ClientProt.IF_BUTTON) {
                 let buttonId = data.g2();
 
-                this.executeInterface(ScriptManager.get(this, ClientProt[id], { buttonId }, { buttonId }));
+                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { buttonId }, { buttonId }));
             } else if (id == ClientProt.IF_BUTTOND) {
                 let interfaceId = data.g2();
                 let fromSlot = data.g2();
                 let toSlot = data.g2();
 
-                this.executeInterface(ScriptManager.get(this, ClientProt[id], { interfaceId }, { interfaceId, fromSlot, toSlot }));
+                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { interfaceId }, { interfaceId, fromSlot, toSlot }));
             } else if (id == ClientProt.IF_BUTTON1 || id == ClientProt.IF_BUTTON2 || id == ClientProt.IF_BUTTON3 || id == ClientProt.IF_BUTTON4 || id == ClientProt.IF_BUTTON5) {
                 let itemId = data.g2();
                 let slot = data.g2();
                 let interfaceId = data.g2();
 
-                this.executeInterface(ScriptManager.get(this, ClientProt[id], { interfaceId }, { itemId, slot, interfaceId }));
+                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { interfaceId }, { itemId, slot, interfaceId }));
             } else if (id == ClientProt.OPLOC1 || id == ClientProt.OPLOC2 || id == ClientProt.OPLOC3 || id == ClientProt.OPLOC4 || id == ClientProt.OPLOC5) {
                 let x = data.g2();
                 let z = data.g2();
@@ -1860,7 +1868,7 @@ export class Player {
                 this.lastComSubId = interfaceId;
 
                 this.closeModal();
-                this.executeInterface(ScriptManager.get(this, ClientProt[id], { itemId }, { itemId, slot, interfaceId }));
+                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { itemId }, { itemId, slot, interfaceId }));
             } else if (id == ClientProt.OPLOCU) {
                 let x = data.g2();
                 let z = data.g2();
@@ -1893,7 +1901,7 @@ export class Player {
                 let useInterfaceId = data.g2();
 
                 this.closeModal();
-                this.executeInterface(ScriptManager.get(this, ClientProt[id], { onItemId, useItemId }, { onItemId, onSlot, onInterfaceId, useItemId, useSlot, useInterfaceId }));
+                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { onItemId, useItemId }, { onItemId, onSlot, onInterfaceId, useItemId, useSlot, useInterfaceId }));
             } else if (id == ClientProt.RESUME_PAUSEBUTTON) {
                 let interfaceId = data.g2();
 
@@ -1919,7 +1927,7 @@ export class Player {
         if (script) {
             let state = script.execute();
 
-            if (!state) {
+            if (state.execution === ScriptState.SUSPENDED) {
                 this.interfaceScript = script;
             }
         } else {
@@ -1931,7 +1939,7 @@ export class Player {
         if (this.interfaceScript != null) {
             let done = this.interfaceScript.execute();
 
-            if (done) {
+            if (done.execution === ScriptState.FINISHED || done.execution === ScriptState.ABORTED) {
                 this.interfaceScript = null;
 
                 if (close) {
@@ -2452,6 +2460,10 @@ export class Player {
     }
 
     sendMessage(message) {
+        if (!message) {
+            return;
+        }
+
         let nextLine;
         if (message.length > 80) {
             nextLine = message.substring(80);

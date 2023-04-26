@@ -16,7 +16,6 @@ import InventoryUpdate from '#scripts/core/InventoryUpdate.js';
 import NpcMovement from '#scripts/core/NpcMovement.js';
 import ZoneUpdate from '#scripts/core/ZoneUpdate.js';
 
-import '#scripts/index.js';
 import axios from 'axios';
 import { ClientProt, ClientProtOpcode, ClientProtOpcodeFromID, ClientProtSize } from '#enum/ClientProt.js';
 
@@ -24,6 +23,9 @@ import ZoneEvent from '#engine/ZoneEvent.js';
 import { ServerProt } from '#enum/ServerProt.js';
 import Zone from '#engine/Zone.js';
 import { Position } from '#util/Position.js';
+import ScriptProvider from '#engine/ScriptProvider.js';
+
+ScriptProvider.load('data/scripts');
 
 const FLAG_TYPED_ARRAY = 'FLAG_TYPED_ARRAY';
 
