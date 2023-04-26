@@ -47,7 +47,7 @@ export default class Script {
 
             for (let j = 0; j < count; j++) {
                 let key = stream.g4();
-                let offset = stream.g4();
+                let offset = stream.g4s();
                 table[key] = offset;
             }
 
@@ -64,9 +64,9 @@ export default class Script {
             if (opcode === 3) {
                 sscript.stringOperands[instr] = stream.gjnstr();
             } else if (opcode < 100 && opcode !== ScriptOpcodes.RETURN && opcode !== ScriptOpcodes.POP_INT_DISCARD && opcode !== ScriptOpcodes.POP_STRING_DISCARD) {
-                sscript.intOperands[instr] = stream.g4();
+                sscript.intOperands[instr] = stream.g4s();
             } else {
-                sscript.intOperands[instr] = stream.g1();
+                sscript.intOperands[instr] = stream.g1b();
             }
 
             sscript.opcodes[instr++] = opcode;
