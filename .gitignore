@@ -8,10 +8,15 @@ node_modules/
 
 /data/cache/config
 /data/maps/
+/data/scripts/
+
 /src/cache/locs.js
 /src/cache/npcs.js
 /src/cache/objs.js
+
 /data/players/
 
 /.env
 package-lock.json
+
+compiler.jar
