@@ -76,6 +76,10 @@ export default class Jagfile {
     }
 
     write(name, data) {
+        if (data instanceof Packet) {
+            data = data.data;
+        }
+
         let hashName = genHash(name);
 
         let index = this.files.findIndex(x => x.hashName === hashName);

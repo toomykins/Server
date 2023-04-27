@@ -1,12 +1,11 @@
 import Packet from '#util/Packet.js';
-import SequenceFrame from '#cache/SequenceFrame.js';
 
 export default class SequenceType {
-    static dat = null;
+    static config = {};
+    static ids = [];
     static count = 0;
-    static offsets = [];
-    static cache = [];
 
+    namedId = '';
     id = -1;
     framecount = 0;
     primaryFrames = [];
@@ -20,173 +19,142 @@ export default class SequenceType {
     offhand = -1;
     replaycount = 99;
 
-    static unpack(dat, idx, preload = false) {
-        SequenceType.dat = dat;
-        SequenceType.count = idx.g2();
-        SequenceType.offsets = [];
-        SequenceType.cache = [];
-
-        let offset = 2;
-        for (let i = 0; i < SequenceType.count; i++) {
-            SequenceType.offsets[i] = offset;
-            offset += idx.g2();
+    static get(id) {
+        if (SequenceType.config[id]) {
+            return SequenceType.config[id];
         }
 
-        if (preload) {
-            for (let i = 0; i < SequenceType.count; i++) {
-                SequenceType.get(i);
-            }
+        if (SequenceType.ids[id]) {
+            return SequenceType.config[SequenceType.ids[id]];
         }
+
+        return null;
     }
 
-    static load(config) {
-        const dat = config.read('seq.dat');
-        const idx = config.read('seq.idx');
+    static fromDef(src) {
+        const lines = src.replaceAll('\r\n', '\n').split('\n');
+        let offset = 0;
 
-        SequenceType.unpack(dat, idx);
+        let seq;
+        let id = 0;
+        while (offset < lines.length) {
+            if (!lines[offset] || lines[offset].startsWith('//')) {
+                offset++;
+                continue;
+            }
+
+            if (lines[offset].startsWith('[')) {
+                // extract text in brackets
+                const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
+
+                seq = new SequenceType();
+                seq.namedId = namedId;
+                seq.id = id;
+
+                offset++;
+                id++;
+                continue;
+            }
+
+            while (lines[offset] && !lines[offset].startsWith('[')) {
+                if (!lines[offset] || lines[offset].startsWith('//')) {
+                    offset++;
+                    continue;
+                }
+    
+                const parts = lines[offset].split('=');
+                const key = parts[0].trim();
+                let value = parts[1].trim();
+
+                if (key === 'framecount') {
+                    seq.framecount = parseInt(value);
+                    seq.primaryFrames = new Array(seq.framecount);
+                    seq.primaryFrames.fill(-1);
+                    seq.secondaryFrames = new Array(seq.framecount);
+                    seq.secondaryFrames.fill(-1);
+                    seq.frameDelay = new Array(seq.framecount);
+                    seq.frameDelay.fill(0);
+                } else if (key.startsWith('frame_b')) {
+                    let index = parseInt(key.substring('frame_b'.length)) - 1;
+                    seq.secondaryFrames[index] = parseInt(value);
+                } else if (key.startsWith('framedel')) {
+                    let index = parseInt(key.substring('framedel'.length)) - 1;
+                    seq.frameDelay[index] = parseInt(value);
+                } else if (key.startsWith('frame')) {
+                    let index = parseInt(key.substring('frame'.length)) - 1;
+                    seq.primaryFrames[index] = parseInt(value);
+                } else if (key === 'replayoff') {
+                    seq.replayoff = parseInt(value);
+                } else if (key.startsWith('label')) {
+                    let index = parseInt(key.substring('label'.length)) - 1;
+                    seq.labelGroups[index] = parseInt(value);
+                } else if (key === 'stretches') {
+                    seq.stretches = value === 'yes';
+                } else if (key === 'priority') {
+                    seq.priority = parseInt(value);
+                } else if (key === 'mainhand') {
+                    seq.mainhand = parseInt(value);
+                } else if (key === 'offhand') {
+                    seq.offhand = parseInt(value);
+                } else if (key === 'replaycount') {
+                    seq.replaycount = parseInt(value);
+                } else {
+                    console.log(`Unrecognized seq config "${key}" reading ${seq.namedId}`);
+                }
+    
+                offset++;
+            }
+    
+            SequenceType.config[seq.namedId] = seq;
+            SequenceType.ids[seq.id] = seq.namedId;
+        }
+
+        SequenceType.count = SequenceType.ids.length;
     }
 
     static pack() {
-        const dat = new Packet();
-        const idx = new Packet();
+        let dat = new Packet();
+        let idx = new Packet();
 
-        idx.p2(SequenceType.count);
         dat.p2(SequenceType.count);
+        idx.p2(SequenceType.count);
 
         for (let i = 0; i < SequenceType.count; i++) {
-            let sequenceType;
-            if (SequenceType.cache[i]) {
-                sequenceType = SequenceType.cache[i];
-            } else {
-                sequenceType = new SequenceType(i);
-            }
-
-            const sequenceTypeDat = sequenceType.encode();
-            idx.p2(sequenceTypeDat.length);
-            dat.pdata(sequenceTypeDat);
+            const seq = SequenceType.config[SequenceType.ids[i]];
+            const packed = seq.pack();
+            idx.p2(packed.length);
+            dat.pdata(packed);
         }
 
         return { dat, idx };
     }
 
-    static get(id) {
-        if (SequenceType.cache[id]) {
-            return SequenceType.cache[id];
-        } else {
-            return new SequenceType(id);
-        }
-    }
+    pack() {
+        let dat = new Packet();
 
-    static toJagConfig() {
-        let config = '';
-
-        for (let i = 0; i < SequenceType.count; i++) {
-            config += SequenceType.get(i).toJagConfig() + '\n';
+        if (this.stretches) {
+            dat.p1(4);
         }
 
-        return config;
-    }
-
-    constructor(id = 0, decode = true) {
-        this.id = id;
-        SequenceType.cache[id] = this;
-
-        if (decode) {
-            const offset = SequenceType.offsets[id];
-            if (!offset) {
-                return;
-            }
-
-            SequenceType.dat.pos = offset;
-            this.#decode();
-        }
-    }
-
-    #decode() {
-        const dat = SequenceType.dat;
-
-        while (true) {
-            const opcode = dat.g1();
-            if (opcode == 0) {
-                break;
-            }
-
-            if (opcode == 1) {
-                this.framecount = dat.g1();
-
-                for (let i = 0; i < this.framecount; i++) {
-                    this.primaryFrames[i] = dat.g2();
-                    this.secondaryFrames[i] = dat.g2();
-
-                    if (this.secondaryFrames[i] == 65535) {
-                        this.secondaryFrames[i] = -1;
-                    }
-
-                    this.frameDelay[i] = dat.g2();
-
-                    if (this.frameDelay[i] == 0) {
-                        this.frameDelay[i] = SequenceFrame.instances[this.primaryFrames[i]].delay;
-                    }
-
-                    if (this.frameDelay[i] == 0) {
-                        this.frameDelay[i] = 1;
-                    }
-                }
-            } else if (opcode == 2) {
-                this.replayoff = dat.g2();
-            } else if (opcode == 3) {
-                const count = dat.g1();
-
-                for (let i = 0; i < count; i++) {
-                    this.labelGroups[i] = dat.g1();
-                }
-
-                this.labelGroups[count] = 9999999;
-            } else if (opcode == 4) {
-                this.stretches = true;
-            } else if (opcode == 5) {
-                this.priority = dat.g1();
-            } else if (opcode == 6) {
-                this.mainhand = dat.g2();
-            } else if (opcode == 7) {
-                this.offhand = dat.g2();
-            } else if (opcode == 8) {
-                this.replaycount = dat.g1();
-            } else {
-                console.error('Unknown SequenceType opcode:', opcode);
-            }
+        if (this.replayoff != -1) {
+            dat.p1(2);
+            dat.p2(this.replayoff);
         }
 
-        if (this.framecount == 0) {
-            this.framecount = 1;
-            this.primaryFrames[0] = -1;
-            this.secondaryFrames[0] = -1;
-            this.frameDelay[0] = -1;
+        if (this.priority != 5) {
+            dat.p1(5);
+            dat.p1(this.priority);
         }
-    }
 
-    encode() {
-        const dat = new Packet();
-
-        if (this.primaryFrames[0] != -1 || this.secondaryFrames[0] != -1 || this.frameDelay[0] != -1) {
+        if (this.framecount) {
             dat.p1(1);
             dat.p1(this.framecount);
 
             for (let i = 0; i < this.framecount; i++) {
                 dat.p2(this.primaryFrames[i]);
                 dat.p2(this.secondaryFrames[i]);
-
-                if (this.frameDelay[i] != SequenceFrame.instances[this.primaryFrames[i]].delay) {
-                    dat.p2(this.frameDelay[i]);
-                } else {
-                    dat.p2(0);
-                }
+                dat.p2(this.frameDelay[i]);
             }
-        }
-
-        if (this.replayoff != -1) {
-            dat.p1(2);
-            dat.p2(this.replayoff);
         }
 
         if (this.labelGroups.length) {
@@ -196,15 +164,6 @@ export default class SequenceType {
             for (let i = 0; i < this.labelGroups.length; i++) {
                 dat.p1(this.labelGroups[i]);
             }
-        }
-
-        if (this.stretches) {
-            dat.p1(4);
-        }
-
-        if (this.priority != 5) {
-            dat.p1(5);
-            dat.p1(this.priority);
         }
 
         if (this.mainhand != -1) {
@@ -223,76 +182,67 @@ export default class SequenceType {
         }
 
         dat.p1(0);
-        dat.pos = 0;
         return dat;
     }
 
-    toJagConfig() {
-        let config = `[seq_${this.id}]\n`;
+    static unpack(dat) {
+        let count = dat.g2();
 
-        if (this.primaryFrames[0] != -1 || this.secondaryFrames[0] != -1 || this.frameDelay[0] != -1) {
-            config += `framecount=${this.framecount}\n`;
+        for (let i = 0; i < count; i++) {
+            let seq = new SequenceType();
+            seq.namedId = `seq_${i}`;
+            seq.id = i;
 
-            // not real names, these might be able to go into a "framegroup" definition elsewhere
-            for (let i = 0; i < this.primaryFrames.length; ++i) {
-                if (this.primaryFrames[i] == -1) {
-                    continue;
+            while (true) {
+                let code = dat.g1();
+                if (code === 0) {
+                    break;
                 }
 
-                config += `frame${i + 1}=${this.primaryFrames[i]}\n`;
-            }
+                if (code === 1) {
+                    seq.framecount = dat.g1();
 
-            for (let i = 0; i < this.secondaryFrames.length; ++i) {
-                if (this.secondaryFrames[i] == -1) {
-                    continue;
+                    seq.primaryFrames = new Array(seq.framecount);
+                    seq.secondaryFrames = new Array(seq.framecount);
+                    seq.frameDelay = new Array(seq.framecount);
+
+                    for (let i = 0; i < seq.framecount; i++) {
+                        seq.primaryFrames[i] = dat.g2();
+                        seq.secondaryFrames[i] = dat.g2();
+                        if (seq.secondaryFrames[i] === 65535) {
+                            seq.secondaryFrames[i] = -1;
+                        }
+
+                        seq.frameDelay[i] = dat.g2();
+                    }
+                } else if (code === 2) {
+                    seq.replayoff = dat.g2();
+                } else if (code === 3) {
+                    let count = dat.g1();
+
+                    for (let i = 0; i < count; i++) {
+                        seq.labelGroups[i] = dat.g1();
+                    }
+                } else if (code === 4) {
+                    seq.stretches = true;
+                } else if (code === 5) {
+                    seq.priority = dat.g1();
+                } else if (code === 6) {
+                    seq.mainhand = dat.g2();
+                } else if (code === 7) {
+                    seq.offhand = dat.g2();
+                } else if (code === 8) {
+                    seq.replaycount = dat.g1();
+                } else {
+                    console.log(`Unrecognized seq config code ${code} reading ${seq.namedId}`);
+                    process.exit(0);
                 }
-
-                config += `frame_b${i + 1}=${this.secondaryFrames[i]}\n`;
             }
 
-            for (let i = 0; i < this.frameDelay.length; ++i) {
-                if (this.frameDelay[i] == -1) {
-                    continue;
-                }
-
-                config += `framedel${i + 1}=${this.frameDelay[i]}\n`;
-            }
+            SequenceType.config[seq.namedId] = seq;
+            SequenceType.ids[seq.id] = seq.namedId;
         }
 
-        if (this.priority != 5) {
-            config += `priority=${this.priority}\n`;
-        }
-
-        if (this.replayoff != -1) {
-            config += `replayoff=${this.replayoff}\n`;
-        }
-
-        if (this.stretches) {
-            config += `stretches=yes\n`;
-        }
-
-        if (this.replaycount != 99) {
-            config += `replaycount=${this.replaycount}\n`;
-        }
-
-        if (this.mainhand != -1) {
-            config += `mainhand=${this.mainhand}\n`;
-        }
-
-        if (this.offhand != -1) {
-            config += `offhand=${this.offhand}\n`;
-        }
-
-        if (this.labelGroups != null) {
-            for (let i = 0; i < this.labelGroups.length; ++i) {
-                if (this.labelGroups[i] == 9999999) {
-                    continue;
-                }
-
-                config += `label${i + 1}=${this.labelGroups[i]}\n`;
-            }
-        }
-
-        return config;
+        SequenceType.count = SequenceType.ids.length;
     }
 }

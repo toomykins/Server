@@ -1,10 +1,11 @@
 import Packet from '#util/Packet.js';
 
 export default class NpcType {
-    static dat = null;
+    static config = {};
+    static ids = [];
     static count = 0;
-    static offsets = [];
-    static cache = [];
+
+    namedId = '';
 
     id = -1;
     models = [];
@@ -12,7 +13,7 @@ export default class NpcType {
     desc = '';
     size = 1;
     readyanim = -1;
-    disposeAlpha = false; // probably auto-generated if an animation uses transparency
+    disposeAlpha = false; // TODO: likely auto-generated if an animation uses transparency
     walkanim = -1;
     walkanim_b = -1;
     walkanim_r = -1;
@@ -37,33 +38,6 @@ export default class NpcType {
     magic = 1;
     hitpoints = 1;
 
-    // read dat/idx from config archive
-    static unpack(dat, idx, preload = false) {
-        NpcType.dat = dat;
-        NpcType.count = idx.g2();
-        NpcType.offsets = [];
-        NpcType.cache = [];
-
-        let offset = 2;
-        for (let i = 0; i < NpcType.count; i++) {
-            NpcType.offsets[i] = offset;
-            offset += idx.g2();
-        }
-
-        if (preload) {
-            for (let i = 0; i < NpcType.count; i++) {
-                NpcType.get(i);
-            }
-        }
-    }
-
-    static load(config) {
-        const dat = config.read('npc.dat');
-        const idx = config.read('npc.idx');
-
-        NpcType.unpack(dat, idx);
-    }
-
     static pack() {
         const dat = new Packet();
         const idx = new Packet();
@@ -72,79 +46,14 @@ export default class NpcType {
         dat.p2(NpcType.count);
 
         for (let i = 0; i < NpcType.count; i++) {
-            let npcType;
-            if (NpcType.cache[i]) {
-                npcType = NpcType.cache[i];
-            } else {
-                npcType = new NpcType(i);
-            }
-
-            const npcTypeDat = npcType.encode();
-            idx.p2(npcTypeDat.length);
-            dat.pdata(npcTypeDat);
+            let id = NpcType.ids[i];
+            let config = NpcType.config[id];
+            let packed = config.encode();
+            idx.p2(packed.length);
+            dat.pdata(packed);
         }
 
         return { dat, idx };
-    }
-
-    static get(id) {
-        if (NpcType.cache[id]) {
-            return NpcType.cache[id];
-        } else if (typeof NpcType.offsets[id] !== 'undefined') {
-            return new NpcType(id);
-        } else {
-            return null;
-        }
-    }
-
-    static getByName(name) {
-        for (let i = 0; i < NpcType.count; i++) {
-            if (NpcType.get(i).name.toLowerCase() == name.toLowerCase()) {
-                return NpcType.get(i);
-            }
-        }
-        return null;
-    }
-
-    static find(predicate) {
-        for (let i = 0; i < NpcType.count; i++) {
-            if (predicate(NpcType.get(i))) {
-                return NpcType.get(i);
-            }
-        }
-        return null;
-    }
-
-    static filter(predicate) {
-        let filtered = [];
-
-        for (let i = 0; i < NpcType.count; i++) {
-            if (predicate(NpcType.get(i))) {
-                filtered.push(NpcType.get(i));
-            }
-        }
-
-        return filtered;
-    }
-
-    static indexOf(predicate, start = 0) {
-        for (let i = start; i < NpcType.count; i++) {
-            if (predicate(NpcType.get(i))) {
-                return i;
-            }
-        }
-
-        return -1;
-    }
-
-    static toJagConfig() {
-        let config = '';
-
-        for (let i = 0; i < NpcType.count; i++) {
-            config += NpcType.get(i).toJagConfig() + '\n';
-        }
-
-        return config;
     }
 
     static fromJagConfig(src) {
@@ -154,21 +63,33 @@ export default class NpcType {
         let npc;
         let id = 0;
         while (offset < lines.length) {
-            if (!lines[offset]) {
+            if (!lines[offset] || lines[offset].startsWith('//')) {
                 offset++;
                 continue;
             }
 
             if (lines[offset].startsWith('[')) {
-                npc = new NpcType(id, false);
+                // extract text in brackets
+                const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
+
+                npc = new NpcType();
+                npc.namedId = namedId;
+                npc.id = id;
+
                 offset++;
                 id++;
                 continue;
             }
 
             while (lines[offset] && !lines[offset].startsWith('[')) {
-                const key = lines[offset].slice(0, lines[offset].indexOf('='));
-                const value = lines[offset].slice(lines[offset].indexOf('=') + 1).replaceAll('model_', '').replaceAll('seq_', '');
+                if (!lines[offset] || lines[offset].startsWith('//')) {
+                    offset++;
+                    continue;
+                }
+
+                const parts = lines[offset].split('=');
+                const key = parts[0].trim();
+                const value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '');
 
                 if (key.startsWith('model')) {
                     let index = parseInt(key.slice(5)) - 1;
@@ -233,97 +154,26 @@ export default class NpcType {
                 offset++;
             }
 
-            NpcType.cache[npc.id] = npc;
+            NpcType.config[npc.namedId] = npc;
+            NpcType.ids[npc.id] = npc.namedId;
         }
 
-        NpcType.count = NpcType.cache.length;
+        NpcType.count = NpcType.ids.length;
     }
 
-    constructor(id = 0, decode = true, addToCache = true) {
-        this.id = id;
-
-        if (decode) {
-            const offset = NpcType.offsets[id];
-            if (!offset) {
-                return;
-            }
-
-            NpcType.dat.pos = offset;
-            this.#decode();
+    static get(id) {
+        if (NpcType.config[id]) {
+            return NpcType.config[id];
         }
 
-        if (addToCache) {
-            NpcType.cache[id] = this;
+        if (NpcType.ids[id]) {
+            return NpcType.config[NpcType.ids[id]];
         }
+
+        return null;
     }
 
-    #decode() {
-        const dat = NpcType.dat;
-
-        while (true) {
-            const opcode = dat.g1();
-            if (opcode == 0) {
-                break;
-            }
-
-            if (opcode == 1) {
-                const count = dat.g1();
-
-                for (let i = 0; i < count; i++) {
-                    this.models[i] = dat.g2();
-                }
-            } else if (opcode == 2) {
-                this.name = dat.gjstr();
-            } else if (opcode == 3) {
-                this.desc = dat.gjstr();
-            } else if (opcode == 12) {
-                this.size = dat.g1b();
-            } else if (opcode == 13) {
-                this.readyanim = dat.g2();
-            } else if (opcode == 14) {
-                this.walkanim = dat.g2();
-            } else if (opcode == 16) {
-                this.disposeAlpha = true;
-            } else if (opcode == 17) {
-                this.walkanim = dat.g2();
-                this.walkanim_b = dat.g2();
-                this.walkanim_r = dat.g2();
-                this.walkanim_l = dat.g2();
-            } else if (opcode >= 30 && opcode < 40) {
-                this.ops[opcode - 30] = dat.gjstr();
-            } else if (opcode == 40) {
-                const count = dat.g1();
-
-                for (let i = 0; i < count; i++) {
-                    this.recol_s[i] = dat.g2();
-                    this.recol_d[i] = dat.g2();
-                }
-            } else if (opcode == 60) {
-                const count = dat.g1();
-
-                for (let i = 0; i < count; i++) {
-                    this.heads[i] = dat.g2();
-                }
-            } else if (opcode == 90) {
-                this.opcode90 = dat.g2();
-            } else if (opcode == 91) {
-                this.opcode91 = dat.g2();
-            } else if (opcode == 92) {
-                this.opcode92 = dat.g2();
-            } else if (opcode == 93) {
-                this.visonmap = false;
-            } else if (opcode == 95) {
-                this.vislevel = dat.g2();
-            } else if (opcode == 97) {
-                this.resizex = dat.g2();
-            } else if (opcode == 98) {
-                this.resizez = dat.g2();
-            } else {
-                console.error('Unknown NpcType opcode:', opcode);
-            }
-        }
-    }
-
+    // encode in client format
     encode() {
         const dat = new Packet();
 
@@ -451,84 +301,5 @@ export default class NpcType {
         dat.p1(0);
         dat.pos = 0;
         return dat;
-    }
-
-    toJagConfig() {
-        let config = `[npc_${this.id}]\n`;
-
-        if (this.name) {
-            config += `name=${this.name}\n`;
-        }
-
-        if (this.desc) {
-            config += `desc=${this.desc}\n`;
-        }
-
-        for (let i = 0; i < this.models.length; ++i) {
-            config += `model${i + 1}=model_${this.models[i]}\n`;
-        }
-
-        for (let i = 0; i < this.heads.length; ++i) {
-            config += `head${i + 1}=model_${this.heads[i]}\n`;
-        }
-
-        if (this.readyanim != -1) {
-            config += `readyanim=seq_${this.readyanim}\n`;
-        }
-
-        if (this.walkanim != -1) {
-            config += `walkanim=seq_${this.walkanim}\n`;
-        }
-
-        if (this.walkanim_b != -1) {
-            config += `walkanim_b=seq_${this.walkanim_b}\n`;
-        }
-
-        if (this.walkanim_r != -1) {
-            config += `walkanim_r=seq_${this.walkanim_r}\n`;
-        }
-
-        if (this.walkanim_l != -1) {
-            config += `walkanim_l=seq_${this.walkanim_l}\n`;
-        }
-
-        if (this.disposeAlpha) {
-            config += `disposealpha=yes\n`;
-        }
-
-        if (this.size != 1) {
-            config += `size=${this.size}\n`;
-        }
-
-        if (this.resizex != 128) {
-            config += `resizex=${this.resizex}\n`;
-        }
-
-        if (this.resizez != 128) {
-            config += `resizez=${this.resizez}\n`;
-        }
-
-        for (let i = 0; i < this.recol_s.length; ++i) {
-            config += `recol${i + 1}s=${this.recol_s[i]}\n`;
-            config += `recol${i + 1}d=${this.recol_d[i]}\n`;
-        }
-
-        for (let i = 0; i < this.ops.length; ++i) {
-            if (this.ops[i] == null) {
-                continue;
-            }
-
-            config += `op${i + 1}=${this.ops[i]}\n`;
-        }
-
-        if (this.vislevel != -1) {
-            config += `vislevel=${this.vislevel}\n`;
-        }
-
-        if (!this.visonmap) {
-            config += `visonmap=no\n`;
-        }
-
-        return config;
     }
 }

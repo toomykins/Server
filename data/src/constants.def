@@ -1,0 +1,17 @@
+// these constants get exposed in configs and runescript
+
+// identitykit parts
+bodypart_male_hair=0
+bodypart_male_jaw=1
+bodypart_male_torso=2
+bodypart_male_arms=3
+bodypart_male_hands=4
+bodypart_male_legs=5
+bodypart_male_feet=6
+bodypart_female_hair=7
+bodypart_female_jaw=8
+bodypart_female_torso=9
+bodypart_female_arms=10
+bodypart_female_hands=11
+bodypart_female_legs=12
+bodypart_female_feet=13

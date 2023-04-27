@@ -1,4 +1,4 @@
-[npc_0]
+[hans]
 name=Hans
 desc=Servant of the Duke of Lumbridge.
 model1=model_217
@@ -23,7 +23,7 @@ recol3d=4550
 op1=Talk-to
 vislevel=0
 
-[npc_1]
+[man]
 name=Man
 desc=One of RuneScape's many citizens.
 model1=model_215
@@ -48,7 +48,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[npc_2]
+[man2]
 name=Man
 desc=One of RuneScape's many citizens.
 model1=model_217
@@ -73,7 +73,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[npc_3]
+[man3]
 name=Man
 desc=One of RuneScape's many citizens.
 model1=model_235
@@ -100,7 +100,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[npc_4]
+[woman]
 name=Woman
 desc=One of RuneScape's many citizens.
 model1=model_390
@@ -126,7 +126,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[npc_5]
+[woman2]
 name=Woman
 desc=One of RuneScape's many citizens.
 model1=model_391
@@ -158,7 +158,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[npc_6]
+[woman3]
 name=Woman
 desc=One of RuneScape's many citizens.
 model1=model_393
@@ -191,7 +191,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[npc_7]
+[farmer]
 name=Farmer
 desc=He grows the crops in this area.
 model1=model_217
@@ -216,7 +216,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=7
 
-[npc_8]
+[thief]
 name=Thief
 desc=Known for his lightfingered qualities.
 model1=model_215
@@ -240,7 +240,7 @@ recol2d=6930
 op2=Attack
 vislevel=16
 
-[npc_9]
+[guard]
 name=Guard
 desc=He tries to keep order around here.
 model1=model_233
@@ -267,7 +267,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=21
 
-[npc_10]
+[guard2]
 name=Guard
 desc=He tries to keep order around here.
 model1=model_233
@@ -293,7 +293,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=22
 
-[npc_11]
+[tramp]
 name=Tramp
 desc=A man down on his luck.
 model1=model_214
@@ -318,7 +318,7 @@ recol3d=4550
 op2=Attack
 vislevel=2
 
-[npc_12]
+[barbarian]
 name=Barbarian
 desc=Not very civilised looking.
 model1=model_219
@@ -350,7 +350,7 @@ op1=Talk-to
 op2=Attack
 vislevel=7
 
-[npc_13]
+[wizard]
 name=Wizard
 desc=Slightly magical.
 model1=model_215
@@ -377,7 +377,7 @@ recol3d=127
 op2=Attack
 vislevel=9
 
-[npc_14]
+[druid]
 name=Druid
 desc=Loves nature.
 model1=model_217
@@ -401,7 +401,7 @@ recol3d=127
 op2=Attack
 vislevel=33
 
-[npc_15]
+[warrior_woman]
 name=Warrior woman
 desc=Not very fashion conscious.
 model1=model_390
@@ -426,7 +426,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=19
 
-[npc_16]
+[man4]
 name=Man
 desc=One of the citizens of Al-Kharid.
 model1=model_215
@@ -453,7 +453,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[npc_17]
+[barbarian_woman]
 name=Barbarian woman
 desc=Scary in an argument!
 model1=model_390
@@ -481,7 +481,7 @@ recol3d=6854
 op2=Attack
 vislevel=8
 
-[npc_18]
+[al_kharid_warrior]
 name=Al-Kharid warrior
 desc=Part of Al-Kharid's elite fighting force.
 model1=model_215
@@ -513,7 +513,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=9
 
-[npc_19]
+[white_knight]
 name=White Knight
 desc=Nice armour!
 model1=model_218
@@ -541,7 +541,7 @@ recol5d=99
 op2=Attack
 vislevel=36
 
-[npc_20]
+[paladin]
 name=Paladin
 desc=A holy warrior.
 model1=model_217
@@ -571,7 +571,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=53
 
-[npc_21]
+[hero]
 name=Hero
 desc=Heroic!
 model1=model_217
@@ -604,7 +604,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=63
 
-[npc_22]
+[forester]
 name=Forester
 desc=They love the forests.
 model1=model_217
@@ -634,7 +634,7 @@ recol4d=10508
 op2=Attack
 vislevel=15
 
-[npc_23]
+[knight_of_ardougne]
 name=Knight of Ardougne
 desc=A member of Ardougne's militia.
 model1=model_218
@@ -662,7 +662,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=46
 
-[npc_24]
+[man5]
 name=Man
 desc=One of RuneScape's many citizens.
 model1=model_230
@@ -691,7 +691,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[npc_25]
+[woman4]
 name=Woman
 desc=One of RuneScape's many citizens.
 model1=model_378
@@ -717,7 +717,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[npc_26]
+[knight_of_ardougne]
 name=Knight of Ardougne
 desc=To protect and serve the populace of Ardougne.
 model1=model_232
@@ -744,7 +744,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=46
 
-[npc_27]
+[archer]
 name=Archer
 desc=Good with arrows.
 model1=model_220
@@ -765,7 +765,7 @@ recol1d=8111
 op2=Attack
 vislevel=42
 
-[npc_28]
+[zoo_keeper]
 name=Zoo keeper
 desc=Enjoys locking up animals in small pens.
 model1=model_215
@@ -797,7 +797,7 @@ recol4d=6488
 op1=Talk-to
 vislevel=0
 
-[npc_29]
+[chuck]
 name=Chuck
 desc=He's a lumberjack, and he's ok.
 model1=model_210
@@ -819,7 +819,7 @@ recol1s=25238
 recol1d=10128
 vislevel=1
 
-[npc_30]
+[barman]
 name=Barman
 desc=Doesn't water down the beer too much.
 model1=model_230
@@ -843,7 +843,7 @@ recol3s=43072
 recol3d=4550
 vislevel=0
 
-[npc_31]
+[priest]
 name=Priest
 desc=A holy man.
 model1=model_223
@@ -867,7 +867,7 @@ recol3s=8078
 recol3d=43111
 vislevel=0
 
-[npc_32]
+[guard3]
 name=Guard
 desc=Keeps the peace... kind of.
 model1=model_225
@@ -890,7 +890,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=20
 
-[npc_33]
+[door_man]
 name=Door man
 desc=What a boring job he has.
 model1=model_214
@@ -922,7 +922,7 @@ recol5d=37807
 op1=Talk-to
 vislevel=0
 
-[npc_34]
+[watchman]
 name=Watchman
 desc=Watches stuff. But who watches him?
 model1=model_219
@@ -945,7 +945,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=28
 
-[npc_35]
+[soldier]
 name=Soldier
 desc=A soldier of the town of Yanille.
 model1=model_219
@@ -968,7 +968,7 @@ recol2d=43939
 op2=Attack
 vislevel=25
 
-[npc_36]
+[wyson]
 name=Wyson the gardener
 desc=An old gardener.
 model1=model_230
@@ -992,7 +992,7 @@ op1=Talk-to
 op2=Attack
 vislevel=3
 
-[npc_37]
+[sigbert]
 name=Sigbert the Adventurer
 desc=A bold knight famed for his travels.
 model1=model_313
@@ -1025,7 +1025,7 @@ recol5d=43934
 op1=Talk-to
 vislevel=0
 
-[npc_38]
+[shipyard_worker]
 name=Shipyard worker
 desc=Builds ships for a living.
 model1=model_215
@@ -1052,7 +1052,7 @@ op1=Talk-to
 op2=Attack
 vislevel=6
 
-[npc_39]
+[shipyard_worker2]
 name=Shipyard worker
 desc=Builds ships for a living.
 model1=model_230
@@ -1077,14 +1077,14 @@ op1=Talk-to
 op2=Attack
 vislevel=6
 
-[npc_40]
+[shark]
 name=Shark
 desc=Let's not go skinny dipping eh?
 model1=model_2848
 walkanim=seq_10
 vislevel=1
 
-[npc_41]
+[chicken]
 name=Chicken
 desc=Yep, definitely a chicken.
 model1=model_2849
@@ -1093,7 +1093,7 @@ walkanim=seq_53
 op2=Attack
 vislevel=1
 
-[npc_42]
+[sheep]
 name=Sheep
 desc=Freshly sheared.
 model1=model_2928
@@ -1101,7 +1101,7 @@ readyanim=seq_252
 walkanim=seq_249
 vislevel=0
 
-[npc_43]
+[sheep2]
 name=Sheep
 desc=White and fluffy.
 model1=model_2929
@@ -1109,7 +1109,7 @@ readyanim=seq_252
 walkanim=seq_249
 vislevel=0
 
-[npc_44]
+[duck]
 name=Duck
 desc=Quackers.
 model1=model_2847
@@ -1119,7 +1119,7 @@ op2=Attack
 vislevel=1
 visonmap=no
 
-[npc_45]
+[duck2]
 name=Duck
 desc=She quackers.
 model1=model_2847
@@ -1135,7 +1135,7 @@ op2=Attack
 vislevel=1
 visonmap=no
 
-[npc_46]
+[duckling]
 name=Duckling
 desc=Mini quackers.
 model1=model_2847
@@ -1153,7 +1153,7 @@ op2=Attack
 vislevel=1
 visonmap=no
 
-[npc_47]
+[rat]
 name=Rat
 desc=A popular dwarven delicacy.
 model1=model_2927
@@ -1163,7 +1163,7 @@ op2=Attack
 vislevel=1
 visonmap=no
 
-[npc_48]
+[oomlie_bird]
 name=Oomlie Bird
 desc=A jungle version of the chicken, but more vicious.
 model1=model_2849
@@ -1182,7 +1182,7 @@ recol4d=926
 op2=Attack
 vislevel=28
 
-[npc_49]
+[hellhound]
 name=Hellhound
 desc=Hello, nice doggy...
 model1=model_2997
@@ -1196,7 +1196,7 @@ strength=104
 defence=102
 hitpoints=116
 
-[npc_50]
+[king_black_dragon]
 name=King black dragon
 desc=The biggest meanest dragon around.
 model1=model_2853
@@ -1224,7 +1224,7 @@ defence=240
 magic=243
 hitpoints=240
 
-[npc_51]
+[baby_dragon]
 name=Baby dragon
 desc=Young but still dangerous.
 model1=model_2998
@@ -1234,7 +1234,7 @@ size=2
 op2=Attack
 vislevel=43
 
-[npc_52]
+[baby_blue_dragon]
 name=Baby blue dragon
 desc=Young but still dangerous.
 model1=model_2998
@@ -1251,7 +1251,7 @@ defence=40
 magic=43
 hitpoints=50
 
-[npc_53]
+[red_dragon]
 name=Red dragon
 desc=A big powerful dragon.
 model1=model_2853
@@ -1268,7 +1268,7 @@ strength=130
 defence=130
 hitpoints=140
 
-[npc_54]
+[black_dragon]
 name=Black dragon
 desc=A fierce dragon with black scales!
 model1=model_2853
@@ -1286,7 +1286,7 @@ defence=200
 magic=210
 hitpoints=190
 
-[npc_55]
+[blue_dragon]
 name=Blue dragon
 desc=A mother dragon.
 model1=model_2853
@@ -1299,7 +1299,7 @@ recol1d=40487
 op2=Attack
 vislevel=99
 
-[npc_56]
+[dryad]
 name=Dryad
 desc=A wood nymph.
 model1=model_2856
@@ -1307,7 +1307,7 @@ readyanim=seq_96
 walkanim=seq_93
 vislevel=1
 
-[npc_57]
+[fairy]
 name=Fairy
 desc=A delicate creature from this strange realm.
 model1=model_2857
@@ -1315,7 +1315,7 @@ readyanim=seq_112
 walkanim=seq_106
 vislevel=0
 
-[npc_58]
+[shadow_spider]
 name=Shadow spider
 desc=Is it a spider or is it a shadow?
 model1=model_2884
@@ -1326,7 +1326,7 @@ op2=Attack
 vislevel=49
 visonmap=no
 
-[npc_59]
+[giant_spider]
 name=Giant spider
 desc=I think this spider has been genetically modified.
 model1=model_2884
@@ -1337,7 +1337,7 @@ recol1d=8084
 op2=Attack
 vislevel=2
 
-[npc_60]
+[giant_spider2]
 name=Giant spider
 desc=I think this spider has been genetically modified.
 model1=model_2884
@@ -1348,7 +1348,7 @@ recol1d=8084
 op2=Attack
 vislevel=27
 
-[npc_61]
+[spider]
 name=Spider
 desc=Incey wincey.
 model1=model_2996
@@ -1356,7 +1356,7 @@ walkanim=seq_279
 op2=Attack
 vislevel=1
 
-[npc_62]
+[jungle_spider]
 name=Jungle spider
 desc=A venomous deadly spider.
 model1=model_2884
@@ -1368,7 +1368,7 @@ op2=Attack
 vislevel=42
 visonmap=no
 
-[npc_63]
+[deadly_red_spider]
 name=Deadly red spider
 desc=I think this spider has been genetically modified.
 model1=model_2884
@@ -1379,7 +1379,7 @@ recol1d=64414
 op2=Attack
 vislevel=31
 
-[npc_64]
+[ice_spider]
 name=Ice spider
 desc=I think this spider has been genetically modified.
 model1=model_2885
@@ -1389,7 +1389,7 @@ op2=Attack
 vislevel=61
 visonmap=no
 
-[npc_65]
+[leprechaun]
 name=Leprechaun
 desc=A funny little man normally associated with rainbows.
 model1=model_2909
@@ -1400,7 +1400,7 @@ walkanim=seq_189
 op2=Attack
 vislevel=12
 
-[npc_66]
+[gnome]
 name=Gnome
 desc=Like a mini man!
 model1=model_2909
@@ -1414,7 +1414,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=1
 
-[npc_67]
+[gnome2]
 name=Gnome
 desc=Like a mini man!
 model1=model_2909
@@ -1430,7 +1430,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=1
 
-[npc_68]
+[gnome3]
 name=Gnome
 desc=Like a mini man!
 model1=model_2909
@@ -1450,7 +1450,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=1
 
-[npc_69]
+[lizard_man]
 name=Lizard man
 desc=A scaly reptilian creature.
 model1=model_2888
@@ -1460,7 +1460,7 @@ size=2
 op2=Attack
 vislevel=22
 
-[npc_70]
+[mummy]
 name=Mummy
 desc=A tightly wrapped monster.
 model1=model_2925
@@ -1469,7 +1469,7 @@ walkanim=seq_224
 op2=attack
 vislevel=47
 
-[npc_71]
+[orc]
 name=Orc
 desc=A hideous malformed elf.
 model1=model_2926
@@ -1478,7 +1478,7 @@ walkanim=seq_229
 op2=Attack
 vislevel=20
 
-[npc_72]
+[troll]
 name=Troll
 desc=A hideously deformed creature.
 model1=model_2930
@@ -1487,7 +1487,7 @@ walkanim=seq_283
 op2=Attack
 vislevel=69
 
-[npc_73]
+[zombie]
 name=Zombie
 desc=Dead man walking.
 model1=model_2931
@@ -1496,7 +1496,7 @@ walkanim=seq_298
 op2=Attack
 vislevel=13
 
-[npc_74]
+[zombie2]
 name=Zombie
 desc=Dead man walking.
 model1=model_2931
@@ -1505,7 +1505,7 @@ walkanim=seq_298
 op2=Attack
 vislevel=18
 
-[npc_75]
+[zombie3]
 name=Zombie
 desc=The walking dead.
 model1=model_2931
@@ -1515,7 +1515,7 @@ walkanim=seq_298
 op2=Attack
 vislevel=24
 
-[npc_76]
+[zombie4]
 name=Zombie
 desc=The walking dead.
 model1=model_2931
@@ -1525,7 +1525,7 @@ walkanim=seq_298
 op2=Attack
 vislevel=25
 
-[npc_77]
+[summoned_zombie]
 name=Summoned Zombie
 desc=The living dead.
 model1=model_2931
@@ -1534,7 +1534,7 @@ walkanim=seq_298
 op2=Attack
 vislevel=13
 
-[npc_78]
+[giant_bat]
 name=Giant bat
 desc=Annoying flappy thing.
 model1=model_2941
@@ -1544,7 +1544,7 @@ size=2
 op2=Attack
 vislevel=27
 
-[npc_79]
+[death_wing]
 name=Death wing
 desc=A shadowy, barely visible flying entity from some evil place.
 model1=model_2940
@@ -1563,7 +1563,7 @@ recol4d=20
 op2=Attack
 vislevel=83
 
-[npc_80]
+[camel]
 name=Camel
 desc=Oh, it's a camel.
 model1=model_2939
@@ -1572,7 +1572,7 @@ walkanim=seq_45
 size=2
 vislevel=0
 
-[npc_81]
+[cow]
 name=Cow
 desc=It's a dairy cow.
 model1=model_3341
@@ -1583,7 +1583,7 @@ size=2
 op2=Attack
 vislevel=2
 
-[npc_82]
+[lesser_demon]
 name=Lesser demon
 desc=Lesser, but still pretty big.
 model1=model_2943
@@ -1593,7 +1593,7 @@ size=2
 op2=Attack
 vislevel=82
 
-[npc_83]
+[greater_demon]
 name=Greater demon
 desc=Big, red, and incredibly evil.
 model1=model_2942
@@ -1605,7 +1605,7 @@ resizez=110
 op2=Attack
 vislevel=92
 
-[npc_84]
+[black_demon]
 name=Black Demon
 desc=A big, scary, jet-black demon.
 model1=model_2942
@@ -1625,7 +1625,7 @@ strength=148
 defence=152
 hitpoints=157
 
-[npc_85]
+[golem]
 name=Golem
 desc=A creature made from clay.
 model1=model_2969
@@ -1635,7 +1635,7 @@ size=2
 op2=Attack
 vislevel=55
 
-[npc_86]
+[giant_rat]
 name=Giant rat
 desc=Overgrown vermin.
 model1=model_2959
@@ -1645,7 +1645,7 @@ size=2
 op2=Attack
 vislevel=3
 
-[npc_87]
+[giant_rat2]
 name=Giant rat
 desc=Overgrown vermin.
 model1=model_2959
@@ -1655,7 +1655,7 @@ size=2
 op2=Attack
 vislevel=6
 
-[npc_88]
+[dungeon_rat]
 name=Dungeon rat
 desc=Overgrown vermin.
 model1=model_2959
@@ -1667,7 +1667,7 @@ recol1d=70
 op2=Attack
 vislevel=10
 
-[npc_89]
+[unicorn]
 name=Unicorn
 desc=Horse with a horn.
 model1=model_2933
@@ -1677,7 +1677,7 @@ size=2
 op2=Attack
 vislevel=15
 
-[npc_90]
+[skeleton]
 name=Skeleton
 desc=Could do with gaining a few pounds.
 model1=model_2944
@@ -1686,7 +1686,7 @@ walkanim=seq_259
 op2=Attack
 vislevel=18
 
-[npc_91]
+[skeleton2]
 name=Skeleton
 desc=Could do with gaining a few pounds.
 model1=model_2944
@@ -1695,7 +1695,7 @@ walkanim=seq_259
 op2=Attack
 vislevel=20
 
-[npc_92]
+[skeleton3]
 name=Skeleton
 desc=Could do with gaining a few pounds.
 model1=model_2944
@@ -1705,7 +1705,7 @@ walkanim=seq_259
 op2=Attack
 vislevel=22
 
-[npc_93]
+[skeleton4]
 name=Skeleton
 desc=Could do with gaining a few pounds.
 model1=model_2944
@@ -1717,7 +1717,7 @@ resizez=170
 op2=Attack
 vislevel=45
 
-[npc_94]
+[skeleton_mage]
 name=Skeleton Mage
 desc=An undead worker of dark magic.
 model1=model_209
@@ -1740,7 +1740,7 @@ recol3d=10508
 op2=Attack
 vislevel=15
 
-[npc_95]
+[wolf]
 name=Wolf
 desc=Not mans' best friend.
 model1=model_2937
@@ -1750,7 +1750,7 @@ size=2
 op2=Attack
 vislevel=64
 
-[npc_96]
+[white_wolf]
 name=White wolf
 desc=A vicious mountain wolf.
 model1=model_2937
@@ -1764,7 +1764,7 @@ recol2d=127
 op2=Attack
 vislevel=25
 
-[npc_97]
+[white_wolf2]
 name=White wolf
 desc=A vicious mountain wolf.
 model1=model_2937
@@ -1778,7 +1778,7 @@ recol2d=127
 op2=Attack
 vislevel=38
 
-[npc_98]
+[dog]
 name=Dog
 desc=Bow wow.
 model1=model_2935
@@ -1786,7 +1786,7 @@ readyanim=seq_77
 walkanim=seq_74
 vislevel=0
 
-[npc_99]
+[guard_dog]
 name=Guard dog
 desc=He doesn't seem pleased to see me.
 model1=model_2936
@@ -1795,7 +1795,7 @@ walkanim=seq_74
 op2=Attack
 vislevel=44
 
-[npc_100]
+[goblin]
 name=Goblin
 desc=An ugly green creature.
 model1=model_2951
@@ -1807,7 +1807,7 @@ walkanim=seq_308
 op2=Attack
 vislevel=2
 
-[npc_101]
+[goblin2]
 name=Goblin
 desc=An ugly green creature.
 model1=model_2951
@@ -1820,7 +1820,7 @@ walkanim=seq_308
 op2=Attack
 vislevel=5
 
-[npc_102]
+[goblin3]
 name=Goblin
 desc=These goblins have grown strong.
 model1=model_2952
@@ -1832,7 +1832,7 @@ walkanim=seq_308
 op2=Attack
 vislevel=13
 
-[npc_103]
+[ghost]
 name=Ghost
 desc=Eeek! A ghost!
 model1=model_2961
@@ -1844,7 +1844,7 @@ disposealpha=yes
 op2=Attack
 vislevel=19
 
-[npc_104]
+[ghost2]
 name=Ghost
 desc=Eeek! A ghost!
 model1=model_2961
@@ -1856,7 +1856,7 @@ disposealpha=yes
 op2=Attack
 vislevel=19
 
-[npc_105]
+[bear]
 name=Bear
 desc=Eek! A bear!
 model1=model_2966
@@ -1866,7 +1866,7 @@ size=2
 op2=Attack
 vislevel=21
 
-[npc_106]
+[bear2]
 name=Bear
 desc=Eek! A bear!
 model1=model_2966
@@ -1878,7 +1878,7 @@ recol1d=12
 op2=Attack
 vislevel=19
 
-[npc_107]
+[scorpion]
 name=Scorpion
 desc=An extremely vicious scorpion.
 model1=model_2967
@@ -1888,7 +1888,7 @@ size=2
 op2=Attack
 vislevel=14
 
-[npc_108]
+[poison_scorpion]
 name=Poison Scorpion
 desc=It has a very vicious looking tail.
 model1=model_2967
@@ -1898,7 +1898,7 @@ size=2
 op2=Attack
 vislevel=20
 
-[npc_109]
+[pit_scorpion]
 name=Pit Scorpion
 desc=Tiny, annoying, stinging thing.
 model1=model_2968
@@ -1907,7 +1907,7 @@ walkanim=seq_269
 op2=Attack
 vislevel=32
 
-[npc_110]
+[fire_giant]
 name=Fire giant
 desc=A very large elemental adversary.
 model1=model_2870
@@ -1922,7 +1922,7 @@ recol2d=2349
 op2=Attack
 vislevel=93
 
-[npc_111]
+[ice_giant]
 name=Ice giant
 desc=He's got icicles in his beard.
 model1=model_2870
@@ -1935,7 +1935,7 @@ recol1d=36075
 op2=Attack
 vislevel=54
 
-[npc_112]
+[moss_giant]
 name=Moss giant
 desc=His beard seems to have a life of it's own.
 model1=model_2870
@@ -1950,7 +1950,7 @@ recol2d=10130
 op2=Attack
 vislevel=48
 
-[npc_113]
+[jogre]
 name=Jogre
 desc=An aggressive humanoid.
 model1=model_2870
@@ -1967,7 +1967,7 @@ recol3d=14236
 op2=Attack
 vislevel=48
 
-[npc_114]
+[ogre]
 name=Ogre
 desc=A large dim looking humanoid.
 model1=model_2878
@@ -1978,7 +1978,7 @@ size=2
 op2=Attack
 vislevel=48
 
-[npc_115]
+[ogre2]
 name=Ogre
 desc=A large dim looking humanoid.
 model1=model_2878
@@ -1989,7 +1989,7 @@ size=2
 op2=Attack
 vislevel=48
 
-[npc_116]
+[cyclops]
 name=Cyclops
 desc=A one-eyed man eater.
 model1=model_2870
@@ -2000,7 +2000,7 @@ size=2
 op2=Attack
 vislevel=56
 
-[npc_117]
+[giant]
 name=Giant
 desc=A very large foe.
 model1=model_2870
@@ -2011,7 +2011,7 @@ size=2
 op2=Attack
 vislevel=28
 
-[npc_118]
+[dwarf]
 name=Dwarf
 desc=A short angry guy.
 model1=model_2970
@@ -2027,7 +2027,7 @@ recol1d=5652
 op2=Attack
 vislevel=10
 
-[npc_119]
+[chaos_dwarf]
 name=Chaos dwarf
 desc=A dwarf gone bad.
 model1=model_2970
@@ -2047,7 +2047,7 @@ recol2d=2619
 op2=Attack
 vislevel=48
 
-[npc_120]
+[dwarf2]
 name=Dwarf
 desc=A mountain dwelling short angry guy.
 model1=model_2970
@@ -2061,7 +2061,7 @@ walkanim=seq_98
 op2=Attack
 vislevel=20
 
-[npc_121]
+[dwarf3]
 name=Dwarf
 desc=A short angry guy.
 model1=model_2970
@@ -2075,7 +2075,7 @@ walkanim=seq_98
 op2=Attack
 vislevel=9
 
-[npc_122]
+[hobgoblin]
 name=Hobgoblin
 desc=An ugly, smelly creature.
 model1=model_2994
@@ -2084,7 +2084,7 @@ walkanim=seq_162
 op2=Attack
 vislevel=28
 
-[npc_123]
+[hobgoblin2]
 name=Hobgoblin
 desc=An ugly, smelly creature, with a spear.
 model1=model_2994
@@ -2094,7 +2094,7 @@ walkanim=seq_162
 op2=Attack
 vislevel=42
 
-[npc_124]
+[earth_warrior]
 name=Earth warrior
 desc=A strange inhuman elemental warrior.
 model1=model_213
@@ -2125,7 +2125,7 @@ recol6d=5662
 op2=Attack
 vislevel=47
 
-[npc_125]
+[ice_warrior]
 name=Ice warrior
 desc=A cold hearted elemental warrior.
 model1=model_213
@@ -2153,7 +2153,7 @@ recol6d=35792
 op2=Attack
 vislevel=53
 
-[npc_126]
+[otherworldly_being]
 name=Otherworldly being
 desc=Is he invisible or just a set of floating clothing?
 model1=model_292
@@ -2174,7 +2174,7 @@ recol3d=10508
 op2=Attack
 vislevel=64
 
-[npc_127]
+[magic_axe]
 name=Magic axe
 desc=A magic axe with a mind of it's own.
 model1=model_3000
@@ -2183,7 +2183,7 @@ walkanim=seq_181
 op2=Attack
 vislevel=42
 
-[npc_128]
+[snake]
 name=Snake
 desc=A slithering serpent.
 model1=model_3002
@@ -2192,7 +2192,7 @@ walkanim=seq_274
 op2=Attack
 vislevel=5
 
-[npc_129]
+[skavid1]
 name=Skavid
 desc=Servant race to the ogres.
 model1=model_2999
@@ -2201,7 +2201,7 @@ walkanim=seq_254
 op2=Attack
 vislevel=2
 
-[npc_130]
+[yeti]
 name=Yeti
 desc=The abominable snowman.
 model1=model_3001
@@ -2211,7 +2211,7 @@ size=3
 op2=Attack
 vislevel=58
 
-[npc_131]
+[penguin]
 name=Penguin
 desc=An inhabitant of icy regions.
 model1=model_3003
@@ -2220,7 +2220,7 @@ walkanim=seq_234
 op2=Attack
 vislevel=2
 
-[npc_132]
+[monkey]
 name=Monkey
 desc=Perhaps our oldest relatives?
 model1=model_3004
@@ -2229,7 +2229,7 @@ walkanim=seq_219
 op2=Attack
 vislevel=3
 
-[npc_133]
+[black_unicorn]
 name=Black unicorn
 desc=A unicorn with a blackened heart.
 model1=model_2933
@@ -2243,7 +2243,7 @@ recol2d=41
 op2=Attack
 vislevel=27
 
-[npc_134]
+[poison_spider]
 name=Poison spider
 desc=I think this spider has been genetically modified.
 model1=model_2883
@@ -2252,7 +2252,7 @@ walkanim=seq_142
 op2=Attack
 vislevel=64
 
-[npc_135]
+[mammoth]
 name=Mammoth
 desc=A wooly elephantlike monster.
 model1=model_3005
@@ -2262,7 +2262,7 @@ size=3
 op2=Attack
 vislevel=41
 
-[npc_136]
+[terrorbird]
 name=Terrorbird
 desc=A giant raptor.
 model1=model_3011
@@ -2272,7 +2272,7 @@ size=2
 op2=Attack
 vislevel=28
 
-[npc_137]
+[gnome_terrorbird_mount]
 name=Mounted terrorbird gnome
 desc=These gnomes know how to get around!
 model1=model_3012
@@ -2282,7 +2282,7 @@ size=2
 op2=Attack
 vislevel=29
 
-[npc_138]
+[gnome_terrorbird_mount2]
 name=Mounted terrorbird gnome
 desc=These gnomes know how to get around!
 model1=model_3013
@@ -2292,7 +2292,7 @@ size=2
 op2=Attack
 vislevel=46
 
-[npc_139]
+[entrana_fire_bird]
 name=Entrana Fire Bird
 desc=Probably not a chicken.
 model1=model_2861
@@ -2301,7 +2301,7 @@ walkanim=seq_114
 op2=Attack
 vislevel=2
 
-[npc_140]
+[soulless]
 name=Souless
 desc=A servent to Zamorak.
 model1=model_2958
@@ -2310,7 +2310,7 @@ walkanim=seq_336
 op2=Attack
 vislevel=18
 
-[npc_141]
+[big_wolf]
 name=Big Wolf
 desc=Must be the pack leader.
 model1=model_2937
@@ -2326,7 +2326,7 @@ recol2d=127
 op2=Attack
 vislevel=73
 
-[npc_142]
+[wolf2]
 name=Wolf
 desc=A social killer.
 model1=model_2937
@@ -2340,7 +2340,7 @@ recol2d=127
 op2=Attack
 vislevel=25
 
-[npc_143]
+[jungle_wolf]
 name=Jungle Wolf
 desc=A rare jungle wolf - specific to the Kharazi jungle.
 model1=model_2937
@@ -2354,7 +2354,7 @@ recol2d=8751
 op2=Attack
 vislevel=64
 
-[npc_144]
+[king_scorpion]
 name=King Scorpion
 desc=Wow! Scorpions shouldn't grow that big.
 model1=model_2967
@@ -2366,7 +2366,7 @@ resizez=180
 op2=Attack
 vislevel=32
 
-[npc_145]
+[ice_warrior_guard]
 name=Ice warrior
 desc=The Ice Queen's Royal Guard.
 model1=model_213
@@ -2394,7 +2394,7 @@ recol6d=42209
 op2=Attack
 vislevel=53
 
-[npc_146]
+[gull]
 name=Gull
 desc=A sea bird.
 model1=model_2850
@@ -2404,7 +2404,7 @@ size=2
 vislevel=26
 visonmap=no
 
-[npc_147]
+[cormorant]
 name=Cormorant
 desc=A sea bird.
 model1=model_2850
@@ -2414,7 +2414,7 @@ size=2
 vislevel=26
 visonmap=no
 
-[npc_148]
+[albatross]
 name=Albatross
 desc=A sea bird.
 model1=model_2850
@@ -2424,7 +2424,7 @@ size=2
 vislevel=26
 visonmap=no
 
-[npc_149]
+[gull2]
 name=Gull
 desc=A sea bird.
 model1=model_2850
@@ -2438,7 +2438,7 @@ recol2d=35361
 vislevel=0
 visonmap=no
 
-[npc_150]
+[gull3]
 name=Gull
 desc=A sea bird.
 model1=model_2850
@@ -2448,14 +2448,14 @@ size=2
 vislevel=0
 visonmap=no
 
-[npc_151]
+[fly_trap]
 name=Fly trap
 desc=No flies on me.
 model1=model_2295
 vislevel=0
 visonmap=no
 
-[npc_152]
+[manor_tree]
 name=Tree
 desc=It's bark is worse than its swipe.
 model1=model_3014
@@ -2466,7 +2466,7 @@ recol2d=5388
 vislevel=0
 visonmap=no
 
-[npc_153]
+[butterfly]
 name=Butterfly
 desc=These look much better in the wild.
 model1=model_3022
@@ -2475,7 +2475,7 @@ walkanim=seq_362
 vislevel=0
 visonmap=no
 
-[npc_154]
+[butterfly2]
 name=Butterfly
 desc=I love butterflies.
 model1=model_3023
@@ -2484,7 +2484,7 @@ walkanim=seq_362
 vislevel=0
 visonmap=no
 
-[npc_155]
+[butterfly3]
 name=Butterfly
 desc=It's a Blue Morpho Butterfly.
 model1=model_3023
@@ -2499,7 +2499,7 @@ recol3d=5648
 vislevel=0
 visonmap=no
 
-[npc_156]
+[butterfly4]
 name=Butterfly
 desc=It's a Tiger Swallowtail Butterfly.
 model1=model_3023
@@ -2514,7 +2514,7 @@ recol3d=24
 vislevel=0
 visonmap=no
 
-[npc_157]
+[butterfly5]
 name=Butterfly
 desc=It's a Viceroy Butterfly.
 model1=model_3023
@@ -2529,7 +2529,7 @@ recol3d=6798
 vislevel=0
 visonmap=no
 
-[npc_158]
+[shadow_warrior]
 name=Shadow warrior
 desc=A fighter from the supernatural world, he's a shadow of his former self.
 model1=model_213
@@ -2558,7 +2558,7 @@ op2=Attack
 vislevel=48
 visonmap=no
 
-[npc_159]
+[gnome_child]
 name=Gnome child
 desc=Small, even by gnome standards.
 model1=model_2909
@@ -2576,7 +2576,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=1
 
-[npc_160]
+[gnome_child2]
 name=Gnome child
 desc=Small, even by gnome standards.
 model1=model_2909
@@ -2594,7 +2594,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=1
 
-[npc_161]
+[gnome_child3]
 name=Gnome child
 desc=Small, even by gnome standards.
 model1=model_2909
@@ -2610,7 +2610,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=1
 
-[npc_162]
+[gnome_trainer]
 name=Gnome trainer
 desc=He can advise on training.
 model1=model_2909
@@ -2624,7 +2624,7 @@ recol1d=5543
 op1=Talk-to
 vislevel=0
 
-[npc_163]
+[gnome_guard]
 name=Gnome guard
 desc=A tree gnome guard.
 model1=model_2909
@@ -2638,7 +2638,7 @@ recol1d=64427
 op2=Attack
 vislevel=19
 
-[npc_164]
+[gnome_guard2]
 name=Gnome guard
 desc=A tree gnome guard.
 model1=model_2909
@@ -2652,7 +2652,7 @@ recol1d=64427
 op2=Attack
 vislevel=19
 
-[npc_165]
+[gnome_shop_keeper]
 name=Gnome shop keeper
 desc=Sells gnomish things.
 model1=model_2909
@@ -2665,7 +2665,7 @@ recol1s=10365
 recol1d=5561
 vislevel=0
 
-[npc_166]
+[gnome_banker]
 name=Gnome banker
 desc=Banks gnomish things.
 model1=model_2909
@@ -2679,7 +2679,7 @@ recol1d=8
 op1=Talk-to
 vislevel=0
 
-[npc_167]
+[gnome_baller]
 name=Gnome baller
 desc=A professional gnome baller.
 model1=model_2914
@@ -2690,7 +2690,7 @@ readyanim=seq_195
 walkanim=seq_189
 vislevel=0
 
-[npc_168]
+[gnome_woman]
 name=Gnome woman
 desc=A female gnome.
 model1=model_2911
@@ -2708,7 +2708,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=1
 
-[npc_169]
+[gnome_woman2]
 name=Gnome woman
 desc=A female gnome.
 model1=model_2911
@@ -2732,7 +2732,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=1
 
-[npc_170]
+[gnome_pilot]
 name=Gnome pilot
 desc=He can fly the glider.
 model1=model_2909
@@ -2744,7 +2744,7 @@ walkanim=seq_189
 op1=Talk-to
 vislevel=0
 
-[npc_171]
+[brimstail]
 name=Brimstail
 desc=Small but powerful.
 model1=model_2909
@@ -2764,7 +2764,7 @@ recol4d=70
 op1=Talk-to
 vislevel=0
 
-[npc_172]
+[dark_wizard]
 name=Dark wizard
 desc=A practicer of dark arts.
 model1=model_208
@@ -2788,7 +2788,7 @@ recol3d=10508
 op2=Attack
 vislevel=20
 
-[npc_173]
+[invrigar]
 name=Invrigar the Necromancer
 desc=An evil user of Magic powers
 model1=model_208
@@ -2812,7 +2812,7 @@ recol3d=10508
 op2=Attack
 vislevel=20
 
-[npc_174]
+[dark_wizard2]
 name=Dark wizard
 desc=He works evil magic.
 model1=model_208
@@ -2836,7 +2836,7 @@ recol3d=10508
 op2=Attack
 vislevel=7
 
-[npc_175]
+[mugger]
 name=Mugger
 desc=He jumps out and attacks people.
 model1=model_215
@@ -2861,7 +2861,7 @@ recol3d=5921
 op2=Attack
 vislevel=4
 
-[npc_176]
+[witch]
 name=Witch
 desc=The hat's a dead give away.
 model1=model_405
@@ -2889,7 +2889,7 @@ recol5d=10508
 op2=Attack
 vislevel=20
 
-[npc_177]
+[witch2]
 name=Witch
 desc=The hat's a dead give away.
 model1=model_405
@@ -2915,7 +2915,7 @@ recol4d=10508
 op2=Attack
 vislevel=20
 
-[npc_178]
+[black_knight]
 name=Black Knight
 desc=A dark-hearted knight.
 model1=model_218
@@ -2943,7 +2943,7 @@ recol5d=24
 op2=Attack
 vislevel=31
 
-[npc_179]
+[black_knight2]
 name=Black Knight
 desc=A dark-hearted knight.
 model1=model_218
@@ -2971,7 +2971,7 @@ recol5d=24
 op2=Attack
 vislevel=31
 
-[npc_180]
+[highwayman]
 name=Highwayman
 desc=He holds up passers by.
 model1=model_215
@@ -3000,7 +3000,7 @@ recol3d=12
 op2=Attack
 vislevel=5
 
-[npc_181]
+[chaos_druid]
 name=Chaos druid
 desc=A crazy evil druid.
 model1=model_235
@@ -3024,7 +3024,7 @@ recol3d=127
 op2=Attack
 vislevel=13
 
-[npc_182]
+[pirate]
 name=Pirate
 desc=Yar! Shiver me timbers!
 model1=model_211
@@ -3051,7 +3051,7 @@ op1=Talk-to
 op2=Attack
 vislevel=20
 
-[npc_183]
+[pirate2]
 name=Pirate
 desc=Avast ye scurvy land lubbers!
 model1=model_215
@@ -3082,7 +3082,7 @@ op1=Talk-to
 op2=Attack
 vislevel=20
 
-[npc_184]
+[pirate3]
 name=Pirate
 desc=This ones had too much to drink!
 model1=model_215
@@ -3112,7 +3112,7 @@ recol3d=4550
 op2=Attack
 vislevel=25
 
-[npc_185]
+[pirate4]
 name=Pirate
 desc=A fine example of piracys' equal opportunities program.
 model1=model_388
@@ -3141,7 +3141,7 @@ op1=Talk-to
 op2=Attack
 vislevel=20
 
-[npc_186]
+[thug]
 name=Thug
 desc=Low on brains, high on aggression.
 model1=model_215
@@ -3164,7 +3164,7 @@ recol2d=10508
 op2=Attack
 vislevel=10
 
-[npc_187]
+[rogue]
 name=Rogue
 desc=Rogueish.
 model1=model_230
@@ -3190,7 +3190,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=14
 
-[npc_188]
+[monk_of_zamorak]
 name=Monk of Zamorak
 desc=An evil human cleric.
 model1=model_230
@@ -3213,7 +3213,7 @@ recol3d=127
 op2=Attack
 vislevel=22
 
-[npc_189]
+[monk_of_zamorak2]
 name=Monk of Zamorak
 desc=An evil human cleric.
 model1=model_230
@@ -3237,7 +3237,7 @@ recol3d=127
 op2=Attack
 vislevel=17
 
-[npc_190]
+[monk_of_zamorak3]
 name=Monk of Zamorak
 desc=An evil human cleric.
 model1=model_208
@@ -3260,7 +3260,7 @@ recol3d=127
 op2=Attack
 vislevel=45
 
-[npc_191]
+[tribesman]
 name=Tribesman
 desc=A primitive warrior.
 model1=model_231
@@ -3284,7 +3284,7 @@ recol2d=6806
 op2=Attack
 vislevel=32
 
-[npc_192]
+[dark_warrior]
 name=Dark warrior
 desc=A warrior touched by chaos.
 model1=model_219
@@ -3315,7 +3315,7 @@ recol6d=24
 op2=Attack
 vislevel=8
 
-[npc_193]
+[chaos_druid_warrior]
 name=Chaos druid warrior
 desc=A crazy evil druid.
 model1=model_206
@@ -3340,7 +3340,7 @@ recol3d=82
 op2=Attack
 vislevel=37
 
-[npc_194]
+[necromancer]
 name=Necromancer
 desc=A crazy evil necromancer.
 model1=model_230
@@ -3365,7 +3365,7 @@ recol3d=127
 op2=Attack
 vislevel=29
 
-[npc_195]
+[bandit]
 name=Bandit
 desc=A wilderness outlaw.
 model1=model_215
@@ -3394,7 +3394,7 @@ recol4d=10508
 op2=Attack
 vislevel=21
 
-[npc_196]
+[guard_bandit]
 name=Guard Bandit
 desc=Bandit Camp guard.
 model1=model_215
@@ -3424,7 +3424,7 @@ recol4d=10508
 op2=Attack
 vislevel=21
 
-[npc_197]
+[barbarian_guard]
 name=Barbarian guard
 desc=Not very civilised looking.
 model1=model_219
@@ -3456,7 +3456,7 @@ recol6d=6709
 op2=Attack
 vislevel=7
 
-[npc_198]
+[guild_master]
 name=Guild master
 desc=Master of the guild.
 model1=model_214
@@ -3480,7 +3480,7 @@ recol2d=41
 op1=Talk-to
 vislevel=0
 
-[npc_199]
+[gunthor]
 name=Gunthor the brave
 desc=A mighty warrior!
 model1=model_219
@@ -3513,7 +3513,7 @@ op1=Talk-to
 op2=Attack
 vislevel=29
 
-[npc_200]
+[lord_daquarius]
 name=Lord Daquarius
 desc=Wears a stylish suit of armour.
 model1=model_217
@@ -3545,7 +3545,7 @@ op1=Talk-to
 op2=Attack
 vislevel=59
 
-[npc_201]
+[jailer]
 name=Jailer
 desc=Guards prisoners for the black knights.
 model1=model_230
@@ -3572,7 +3572,7 @@ op1=Talk-to
 op2=Attack
 vislevel=42
 
-[npc_202]
+[black_heather]
 name=Black Heather
 desc=Has a fearsome scowl.
 model1=model_401
@@ -3601,7 +3601,7 @@ op1=Talk-to
 op2=Attack
 vislevel=34
 
-[npc_203]
+[donny]
 name=Donny the lad
 desc=Has a fearsome posture.
 model1=model_235
@@ -3631,7 +3631,7 @@ op1=Talk-to
 op2=Attack
 vislevel=34
 
-[npc_204]
+[speedy_keith]
 name=Speedy Keith
 desc=Nice hair.
 model1=model_206
@@ -3661,7 +3661,7 @@ op1=Talk-to
 op2=Attack
 vislevel=34
 
-[npc_205]
+[salarin]
 name=Salarin the twisted
 desc=A crazy evil druid
 model1=model_203
@@ -3685,7 +3685,7 @@ recol3d=4913
 op2=Attack
 vislevel=70
 
-[npc_206]
+[dwarf4]
 name=Dwarf
 desc=A Dwarf guard.
 model1=model_2970
@@ -3706,7 +3706,7 @@ op1=Talk-to
 op2=Attack
 vislevel=10
 
-[npc_207]
+[dwarf_youngster]
 name=Dwarf youngster
 desc=A young Dwarf lad.
 model1=model_2976
@@ -3724,7 +3724,7 @@ recol1d=5652
 op1=Talk-to
 vislevel=0
 
-[npc_208]
+[dwarf_commander]
 name=Dwarf Commander
 desc=He guards the mines.
 model1=model_2970
@@ -3740,7 +3740,7 @@ recol1d=5652
 op1=Talk-to
 vislevel=0
 
-[npc_209]
+[nulodion]
 name=Nulodion
 desc=The Dwarven armoury engineer.
 model1=model_2970
@@ -3757,7 +3757,7 @@ op1=Talk-to
 op3=Trade
 vislevel=0
 
-[npc_210]
+[grail_maiden]
 name=Grail Maiden
 desc=She looks serene.
 model1=model_384
@@ -3786,7 +3786,7 @@ recol5d=20
 op1=Talk-to
 vislevel=0
 
-[npc_211]
+[sir_percival]
 name=Sir Percival
 desc=One of the Knights of the Round Table.
 model1=model_232
@@ -3818,7 +3818,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_212]
+[king_percival]
 name=King Percival
 desc=A former Knight of the Round Table.
 model1=model_232
@@ -3853,7 +3853,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_213]
+[merlin]
 name=Merlin
 desc=A powerful Wizard of the Knights of the Round Table.
 model1=model_214
@@ -3890,7 +3890,7 @@ recol6d=38814
 op1=Talk-to
 vislevel=0
 
-[npc_214]
+[peasant]
 name=Peasant
 desc=He looks unhappy...
 model1=model_230
@@ -3920,7 +3920,7 @@ recol5d=41
 op1=Talk-to
 vislevel=0
 
-[npc_215]
+[peasant2]
 name=Peasant
 desc=He looks happy...
 model1=model_230
@@ -3950,7 +3950,7 @@ recol5d=41
 op1=Talk-to
 vislevel=0
 
-[npc_216]
+[high_priest]
 name=High Priest
 desc=High Priest of Entrana.
 model1=model_223
@@ -3982,7 +3982,7 @@ recol6d=7070
 op1=Talk-to
 vislevel=0
 
-[npc_217]
+[crone]
 name=Crone
 desc=A crone.
 model1=model_378
@@ -4010,7 +4010,7 @@ recol5d=33694
 op1=Talk-to
 vislevel=0
 
-[npc_218]
+[galahad]
 name=Galahad
 desc=A former Knight of the Round Table.
 model1=model_223
@@ -4041,7 +4041,7 @@ recol5d=7070
 op1=Talk-to
 vislevel=0
 
-[npc_219]
+[fisherman]
 name=Fisherman
 desc=Its a fisherman!
 model1=model_230
@@ -4079,7 +4079,7 @@ recol6d=33694
 op1=Talk-to
 vislevel=0
 
-[npc_220]
+[fisher_king]
 name=The Fisher King
 desc=He doesn't look very well...
 model1=model_215
@@ -4115,7 +4115,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_221]
+[black_knight_titan]
 name=Black Knight Titan
 desc=He looks mean and powerful.
 model1=model_2864
@@ -4138,7 +4138,7 @@ op1=Talk-to
 op2=Attack
 vislevel=126
 
-[npc_222]
+[monk]
 name=Monk
 desc=A holy man.
 model1=model_230
@@ -4162,7 +4162,7 @@ op1=Talk-to
 op2=Attack
 vislevel=5
 
-[npc_223]
+[brother_kojo]
 name=Brother Kojo
 desc=A peaceful monk.
 model1=model_223
@@ -4185,7 +4185,7 @@ recol2d=4769
 op1=Talk-to
 vislevel=0
 
-[npc_224]
+[dungeon_rat2]
 name=Dungeon rat
 desc=A dirty rat.
 model1=model_2959
@@ -4198,7 +4198,7 @@ recol1d=70
 op2=Attack
 vislevel=10
 
-[npc_225]
+[bonzo]
 name=Bonzo
 desc=The Fishing Contest Judge.
 model1=model_230
@@ -4229,7 +4229,7 @@ recol5d=8
 op1=Talk-to
 vislevel=0
 
-[npc_226]
+[sinister_stranger]
 name=A Sinister Stranger
 desc=He looks a LOT like a vampire...
 model1=model_227
@@ -4263,7 +4263,7 @@ recol6d=4205
 op1=Talk-to
 vislevel=0
 
-[npc_227]
+[morris]
 name=Morris
 desc=He checks the entrants to the fishing contest.
 model1=model_215
@@ -4288,7 +4288,7 @@ recol2d=6798
 op1=Talk-to
 vislevel=0
 
-[npc_228]
+[big_dave]
 name=Big Dave
 desc=I can see how he got his name.
 model1=model_203
@@ -4314,7 +4314,7 @@ recol2d=7070
 op1=Talk-to
 vislevel=0
 
-[npc_229]
+[joshua]
 name=Joshua
 desc=He loves to fish!
 model1=model_235
@@ -4345,7 +4345,7 @@ recol5d=60312
 op1=Talk-to
 vislevel=0
 
-[npc_230]
+[grandpa_jack]
 name=Grandpa Jack
 desc=He looks elderly.
 model1=model_206
@@ -4376,7 +4376,7 @@ recol5d=8
 op1=Talk-to
 vislevel=0
 
-[npc_231]
+[forester2]
 name=Forester
 desc=He likes to cut down trees.
 model1=model_217
@@ -4409,7 +4409,7 @@ recol4d=10508
 op1=Talk-to
 vislevel=0
 
-[npc_232]
+[mountain_dwarf]
 name=Mountain Dwarf
 desc=He looks short and grumpy.
 model1=model_2970
@@ -4424,7 +4424,7 @@ walkanim=seq_98
 op1=Talk-to
 vislevel=0
 
-[npc_233]
+[fishing_spot]
 name=Fishing spot
 desc=I can fish here.
 model1=model_1491
@@ -4435,7 +4435,7 @@ op1=Fish
 vislevel=0
 visonmap=no
 
-[npc_234]
+[fishing_spot2]
 name=Fishing spot
 desc=I can fish here.
 model1=model_1491
@@ -4446,7 +4446,7 @@ op1=Fish
 vislevel=0
 visonmap=no
 
-[npc_235]
+[fishing_spot3]
 name=Fishing spot
 desc=I can fish here.
 model1=model_1491
@@ -4457,7 +4457,7 @@ op1=Fish
 vislevel=0
 visonmap=no
 
-[npc_236]
+[fishing_spot4]
 name=Fishing spot
 desc=I can fish here.
 model1=model_1491
@@ -4468,7 +4468,7 @@ op1=Fish
 vislevel=0
 visonmap=no
 
-[npc_237]
+[renegade_knight]
 name=Renegade Knight
 desc=He isn't very friendly.
 model1=model_232
@@ -4498,7 +4498,7 @@ recol5d=24
 op2=Attack
 vislevel=35
 
-[npc_238]
+[thrantax]
 name=Thrantax The Mighty
 desc=A scary looking spirit.
 model1=model_2961
@@ -4519,7 +4519,7 @@ recol4d=916
 op2=Attack
 vislevel=92
 
-[npc_239]
+[sir_lancelot]
 name=Sir Lancelot
 desc=One of the Knights of the Round Table.
 model1=model_206
@@ -4553,7 +4553,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_240]
+[sir_gawain]
 name=Sir Gawain
 desc=One of the Knights of the Round Table.
 model1=model_232
@@ -4587,7 +4587,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_241]
+[sir_kay]
 name=Sir Kay
 desc=One of the Knights of the Round Table.
 model1=model_225
@@ -4621,7 +4621,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_242]
+[sir_bedivere]
 name=Sir Bedivere
 desc=One of the Knights of the Round Table.
 model1=model_210
@@ -4655,7 +4655,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_243]
+[sir_tristam]
 name=Sir Tristram
 desc=One of the Knights of the Round Table.
 model1=model_218
@@ -4688,7 +4688,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_244]
+[sir_pelleas]
 name=Sir Pelleas
 desc=One of the Knights of the Round Table.
 model1=model_232
@@ -4723,7 +4723,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_245]
+[sir_lucan]
 name=Sir Lucan
 desc=One of the Knights of the Round Table.
 model1=model_233
@@ -4758,7 +4758,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_246]
+[sir_palomedes]
 name=Sir Palomedes
 desc=One of the Knights of the Round Table.
 model1=model_219
@@ -4793,7 +4793,7 @@ recol6d=107
 op1=Talk-to
 vislevel=0
 
-[npc_247]
+[sir_mordred]
 name=Sir Mordred
 desc=Leader of the Renegade Knights.
 model1=model_225
@@ -4828,7 +4828,7 @@ op1=Talk-to
 op2=Attack
 vislevel=37
 
-[npc_248]
+[morgan_le_faye]
 name=Morgan Le Faye
 desc=An evil and powerful sorceress.
 model1=model_390
@@ -4858,7 +4858,7 @@ recol5d=0
 op1=Talk-to
 vislevel=0
 
-[npc_249]
+[merlin]
 name=Merlin
 desc=A powerful Wizard of the Knights of the Round Table.
 model1=model_214
@@ -4895,7 +4895,7 @@ recol6d=38814
 op1=Talk-to
 vislevel=0
 
-[npc_250]
+[lady_of_the_lake]
 name=The Lady of the Lake
 desc=A powerful sorceress who guards Excalibur.
 model1=model_390
@@ -4924,7 +4924,7 @@ recol5d=127
 op1=Talk-to
 vislevel=0
 
-[npc_251]
+[king_arthur]
 name=King Arthur
 desc=Legendary King of the Britons.
 model1=model_215
@@ -4961,7 +4961,7 @@ recol6d=70
 op1=Talk-to
 vislevel=0
 
-[npc_252]
+[beggar]
 name=Beggar
 desc=He looks very hungry...
 model1=model_230
@@ -4991,7 +4991,7 @@ recol5d=5347
 op1=Talk-to
 vislevel=0
 
-[npc_253]
+[khazard_guard]
 name=Khazard Guard
 desc=It's one of General Khazard's guards.
 model1=model_230
@@ -5017,7 +5017,7 @@ op1=Talk-to
 op2=Attack
 vislevel=21
 
-[npc_254]
+[khazard_guard2]
 name=Khazard Guard
 desc=It's one of General Khazard's guards.
 model1=model_230
@@ -5043,7 +5043,7 @@ op1=Talk-to
 op2=Attack
 vislevel=21
 
-[npc_255]
+[khazard_guard3]
 name=Khazard Guard
 desc=It's one of General Khazard's guards.
 model1=model_219
@@ -5068,7 +5068,7 @@ op1=Talk-to
 op2=Attack
 vislevel=21
 
-[npc_256]
+[khazard_guard4]
 name=Khazard Guard
 desc=It's one of General Khazard's guards.
 model1=model_219
@@ -5094,7 +5094,7 @@ op1=Talk-to
 op2=Attack
 vislevel=21
 
-[npc_257]
+[khazard_guard5]
 name=Khazard Guard
 desc=It's one of General Khazard's guards.
 model1=model_230
@@ -5118,7 +5118,7 @@ recol2s=25238
 recol2d=3974
 vislevel=25
 
-[npc_258]
+[general_khazard]
 name=General Khazard
 desc=He looks really nasty. Smells bad too.
 model1=model_209
@@ -5143,7 +5143,7 @@ op1=Talk-to
 op2=Attack
 vislevel=112
 
-[npc_259]
+[khazard_barman]
 name=Khazard barman
 desc=A tough looking barman.
 model1=model_230
@@ -5170,7 +5170,7 @@ recol3d=4550
 op1=Talk-to
 vislevel=0
 
-[npc_260]
+[fightslave_kelvin]
 name=Kelvin
 desc=A fightslave. He looks mistreated and weak.
 model1=model_214
@@ -5195,7 +5195,7 @@ recol3d=4651
 op1=Talk-to
 vislevel=0
 
-[npc_261]
+[fightslave_joe]
 name=Joe
 desc=A fightslave. He looks mistreated and weak.
 model1=model_206
@@ -5225,7 +5225,7 @@ recol5d=4558
 op1=Talk-to
 vislevel=0
 
-[npc_262]
+[fightslave]
 name=Fightslave
 desc=A fightslave. He looks mistreated and weak.
 model1=model_214
@@ -5248,7 +5248,7 @@ recol2d=4626
 op1=Talk-to
 vislevel=0
 
-[npc_263]
+[hengrad]
 name=Hengrad
 desc=He looks mistreated and weak.
 model1=model_230
@@ -5273,7 +5273,7 @@ recol3d=5297
 op1=Talk-to
 vislevel=0
 
-[npc_264]
+[lady_servil]
 name=Lady Servil
 desc=She looks wealthy.
 model1=model_378
@@ -5297,7 +5297,7 @@ recol3d=39029
 op1=Talk-to
 vislevel=0
 
-[npc_265]
+[jeremy_servil]
 name=Jeremy Servil
 desc=A young squire. He looks worse for wear.
 model1=model_2918
@@ -5313,7 +5313,7 @@ recol2d=53155
 op1=Talk-to
 vislevel=0
 
-[npc_266]
+[jeremy_servil2]
 name=Jeremy Servil
 desc=A young squire. He looks worse for wear.
 model1=model_2918
@@ -5329,7 +5329,7 @@ recol2d=53155
 op1=Talk-to
 vislevel=0
 
-[npc_267]
+[justin_servil]
 name=Justin Servil
 desc=Jeremy's father Sir Servil.
 model1=model_230
@@ -5353,7 +5353,7 @@ recol2d=4626
 op1=Talk-to
 vislevel=0
 
-[npc_268]
+[local]
 name=Local
 desc=A scruffy looking chap.
 model1=model_230
@@ -5378,7 +5378,7 @@ recol2d=33
 op1=Talk-to
 vislevel=0
 
-[npc_269]
+[bouncer]
 name=Bouncer
 desc=Nice doggy.
 model1=model_2997
@@ -5388,7 +5388,7 @@ size=2
 op2=Attack
 vislevel=132
 
-[npc_270]
+[khazard_ogre]
 name=Khazard Ogre
 desc=Khazard's strongest ogre warrior.
 model1=model_2880
@@ -5399,7 +5399,7 @@ size=2
 op2=Attack
 vislevel=55
 
-[npc_271]
+[khazard_scorpion]
 name=Khazard Scorpion
 desc=A large angry scorpion.
 model1=model_2967
@@ -5413,7 +5413,7 @@ recol2d=24
 op2=Attack
 vislevel=44
 
-[npc_272]
+[lucien]
 name=Lucien
 desc=He walks with a slight limp.
 model1=model_218
@@ -5445,7 +5445,7 @@ op1=Talk-to
 op2=Attack
 vislevel=14
 
-[npc_273]
+[lucien2]
 name=Lucien
 desc=He walks with a slight limp.
 model1=model_218
@@ -5475,7 +5475,7 @@ recol6d=16
 op1=Talk-to
 vislevel=0
 
-[npc_274]
+[guardian_of_armadyl]
 name=Guardian of Armadyl
 desc=A guard who has devoted their life to Armadyl.
 model1=model_214
@@ -5512,7 +5512,7 @@ op1=Talk-to
 op2=Attack
 vislevel=40
 
-[npc_275]
+[guardian_of_armadyl2]
 name=Guardian of Armadyl
 desc=A guard who has devoted their life to Armadyl.
 model1=model_390
@@ -5547,7 +5547,7 @@ op1=Talk-to
 op2=Attack
 vislevel=36
 
-[npc_276]
+[winelda]
 name=Winelda
 desc=A witch.
 model1=model_393
@@ -5581,7 +5581,7 @@ recol6d=84
 op1=Talk-to
 vislevel=0
 
-[npc_277]
+[fire_warrior_of_lesarkus]
 name=Fire Warrior of Lesarkus
 desc=Intimidating!
 model1=model_230
@@ -5615,7 +5615,7 @@ op1=Talk-to
 op2=Attack
 vislevel=65
 
-[npc_278]
+[cook]
 name=Cook
 desc=The head cook of Lumbridge castle.
 model1=model_215
@@ -5643,7 +5643,7 @@ recol3d=127
 op1=Talk-to
 vislevel=0
 
-[npc_279]
+[brother_omad]
 name=Brother Omad
 desc=An old monk.
 model1=model_223
@@ -5666,7 +5666,7 @@ recol2d=4769
 op1=Talk-to
 vislevel=3
 
-[npc_280]
+[brother_cedric]
 name=Brother Cedric
 desc=An old drunk monk.
 model1=model_223
@@ -5689,7 +5689,7 @@ recol2d=4769
 op1=Talk-to
 vislevel=3
 
-[npc_281]
+[monk2]
 name=Monk
 desc=An Ardougne Monk.
 model1=model_223
@@ -5713,7 +5713,7 @@ op1=Talk-to
 op2=Attack
 vislevel=3
 
-[npc_282]
+[blanket_thief]
 name=Thief
 desc=A dastardly blanket thief.
 model1=model_215
@@ -5734,7 +5734,7 @@ recol1d=47399
 op2=Attack
 vislevel=14
 
-[npc_283]
+[head_thief]
 name=Head Thief
 desc=The head of the treacherous blanket stealing gang.
 model1=model_215
@@ -5755,7 +5755,7 @@ recol1d=47399
 op2=Attack
 vislevel=26
 
-[npc_284]
+[doric]
 name=Doric
 desc=A dwarf smith, quite handy with a hammer.
 model1=model_2974
@@ -5773,7 +5773,7 @@ recol2d=7469
 op1=Talk-to
 vislevel=0
 
-[npc_285]
+[veronica]
 name=Veronica
 desc=She doesn't look too happy.
 model1=model_399
@@ -5797,7 +5797,7 @@ recol3d=4550
 op1=Talk-to
 vislevel=0
 
-[npc_286]
+[professor_oddenstein]
 name=Professor Oddenstein
 desc=A mad scientist if ever I saw one!
 model1=model_230
@@ -5824,7 +5824,7 @@ recol4d=127
 op1=Talk-to
 vislevel=0
 
-[npc_287]
+[ernest]
 name=Ernest
 desc=A former chicken.
 model1=model_215
@@ -5849,7 +5849,7 @@ recol3s=43072
 recol3d=4550
 vislevel=0
 
-[npc_288]
+[ernest_chicken]
 name=Chicken
 desc=Yep, definitely a chicken.
 model1=model_2849
@@ -5858,7 +5858,7 @@ readyanim=seq_54
 walkanim=seq_53
 vislevel=0
 
-[npc_289]
+[councillor_halgrive]
 name=Councillor Halgrive
 desc=Important looking.
 model1=model_215
@@ -5893,7 +5893,7 @@ recol6d=0
 op1=Talk-to
 vislevel=0
 
-[npc_290]
+[doctor_orbon]
 name=Doctor Orbon
 desc=Seems very serious.
 model1=model_230
@@ -5920,7 +5920,7 @@ recol3d=103
 op1=Talk-to
 vislevel=0
 
-[npc_291]
+[farmer_brunty]
 name=Farmer Brumty
 desc=There's a sadness in his eyes.
 model1=model_217
@@ -5950,7 +5950,7 @@ recol4d=6709
 op1=Talk-to
 vislevel=0
 
-[npc_292]
+[diseased_sheep_red]
 name=Diseased sheep
 desc=Even from here you can see this sheep's not well.
 model1=model_2929
@@ -5963,7 +5963,7 @@ recol2d=11489
 op1=Prod
 vislevel=0
 
-[npc_293]
+[diseased_sheep_green]
 name=Diseased sheep
 desc=Even from here you can see this sheep's not well.
 model1=model_2929
@@ -5976,7 +5976,7 @@ recol2d=11489
 op1=Prod
 vislevel=0
 
-[npc_294]
+[diseased_sheep_blue]
 name=Diseased sheep
 desc=Even from here you can see this sheep's not well.
 model1=model_2929
@@ -5989,7 +5989,7 @@ recol2d=11489
 op1=Prod
 vislevel=0
 
-[npc_295]
+[diseased_sheep_yellow]
 name=Diseased sheep
 desc=Even from here you can see this sheep's not well.
 model1=model_2929
@@ -6002,7 +6002,7 @@ recol2d=11489
 op1=Prod
 vislevel=0
 
-[npc_296]
+[general_bentnoze]
 name=General Bentnoze
 desc=An ugly green creature.
 model1=model_2952
@@ -6021,7 +6021,7 @@ recol3d=11158
 op1=Talk-to
 vislevel=0
 
-[npc_297]
+[general_wartface]
 name=General Wartface
 desc=An ugly green creature.
 model1=model_2951
@@ -6038,7 +6038,7 @@ recol2d=22443
 op1=Talk-to
 vislevel=0
 
-[npc_298]
+[goblin4]
 name=Goblin
 desc=An ugly green creature.
 model1=model_2951
@@ -6055,7 +6055,7 @@ op1=Talk-to
 op2=Attack
 vislevel=5
 
-[npc_299]
+[goblin5]
 name=Goblin
 desc=An ugly green creature.
 model1=model_2951
@@ -6072,7 +6072,7 @@ op1=Talk-to
 op2=Attack
 vislevel=5
 
-[npc_300]
+[sedridor]
 name=Sedridor
 desc=Chief of research at Wizards' Tower.
 model1=model_214
@@ -6104,13 +6104,13 @@ recol4d=38852
 op1=Talk-to
 vislevel=0
 
-[npc_301]
+[twig]
 name=Twig
 desc=Reminds me of playing pooh sticks.
 model1=model_1644
 vislevel=0
 
-[npc_302]
+[hadley]
 name=Hadley
 desc=Could do with losing a bit of weight.
 model1=model_215
@@ -6136,7 +6136,7 @@ recol2d=6492
 op1=Talk-to
 vislevel=0
 
-[npc_303]
+[gerald]
 name=Gerald
 desc=Looks suspiciously like a fisherman.
 model1=model_230
@@ -6160,7 +6160,7 @@ recol2d=10508
 op1=Talk-to
 vislevel=0
 
-[npc_304]
+[almera]
 name=Almera
 desc=Nice hair.
 model1=model_390
@@ -6186,7 +6186,7 @@ recol4d=5805
 op1=Talk-to
 vislevel=0
 
-[npc_305]
+[hudon]
 name=Hudon
 desc=Looks young.
 model1=model_2897
@@ -6200,7 +6200,7 @@ recol1d=941
 op1=Talk-to
 vislevel=0
 
-[npc_306]
+[golrie]
 name=Golrie
 desc=It's a tree gnome
 model1=model_2900
@@ -6212,7 +6212,7 @@ walkanim=seq_189
 op1=Talk-to
 vislevel=0
 
-[npc_307]
+[hetty]
 name=Hetty
 desc=An old motherly witch with a curious smile and a hooked nose.
 model1=model_405
@@ -6242,7 +6242,7 @@ recol5d=4550
 op1=Talk-to
 vislevel=0
 
-[npc_308]
+[master_fisher]
 name=Master fisher
 desc=The man in charge of the fishing guild.
 model1=model_230
@@ -6272,7 +6272,7 @@ recol4d=9131
 op1=Talk-to
 vislevel=0
 
-[npc_309]
+[fishing_spot5]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6286,7 +6286,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_310]
+[fishing_spot6]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6300,7 +6300,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_311]
+[fishing_spot7]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6314,7 +6314,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_312]
+[fishing_spot8]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6328,7 +6328,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_313]
+[fishing_spot9]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6342,7 +6342,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_314]
+[fishing_spot10]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6356,7 +6356,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_315]
+[fishing_spot11]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6370,7 +6370,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_316]
+[fishing_spot12]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6384,7 +6384,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_317]
+[fishing_spot13]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6398,7 +6398,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_318]
+[fishing_spot14]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6412,7 +6412,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_319]
+[fishing_spot15]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6426,7 +6426,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_320]
+[fishing_spot16]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6440,7 +6440,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_321]
+[fishing_spot17]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6454,7 +6454,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_322]
+[fishing_spot18]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6468,7 +6468,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_323]
+[fishing_spot19]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6482,7 +6482,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_324]
+[fishing_spot20]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6496,7 +6496,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_325]
+[fishing_spot21]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6510,7 +6510,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_326]
+[fishing_spot22]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6524,7 +6524,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_327]
+[fishing_spot23]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6538,7 +6538,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_328]
+[fishing_spot24]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6552,7 +6552,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_329]
+[fishing_spot25]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6566,7 +6566,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_330]
+[fishing_spot26]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6580,7 +6580,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_331]
+[fishing_spot27]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6594,7 +6594,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_332]
+[fishing_spot28]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6608,7 +6608,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_333]
+[fishing_spot29]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6622,7 +6622,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_334]
+[fishing_spot30]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -6636,7 +6636,7 @@ op5=hidden
 vislevel=0
 visonmap=no
 
-[npc_335]
+[elena]
 name=Elena
 desc=She looks concerned.
 model1=model_390
@@ -6664,7 +6664,7 @@ recol5d=59350
 op1=Talk-to
 vislevel=0
 
-[npc_336]
+[devinci]
 name=DeVinci
 desc=He has a colourful personality.
 model1=model_215
@@ -6686,7 +6686,7 @@ walkanim_l=seq_822
 op1=Talk-to
 vislevel=0
 
-[npc_337]
+[devinci2]
 name=DeVinci
 desc=He has a colourful personality.
 model1=model_215
@@ -6708,7 +6708,7 @@ walkanim_l=seq_822
 op1=Talk-to
 vislevel=0
 
-[npc_338]
+[chancy]
 name=Chancy
 desc=He's ready for a bet.
 model1=model_206
@@ -6734,7 +6734,7 @@ recol3d=5652
 op1=Talk-to
 vislevel=0
 
-[npc_339]
+[chancy2]
 name=Chancy
 desc=He's ready for a bet.
 model1=model_206
@@ -6760,7 +6760,7 @@ recol3d=5652
 op1=Talk-to
 vislevel=0
 
-[npc_340]
+[hops]
 name=Hops
 desc=He's drunk.
 model1=model_217
@@ -6788,7 +6788,7 @@ recol4d=5784
 op1=Talk-to
 vislevel=0
 
-[npc_341]
+[hops2]
 name=Hops
 desc=He's drunk.
 model1=model_217
@@ -6816,7 +6816,7 @@ recol4d=5784
 op1=Talk-to
 vislevel=0
 
-[npc_342]
+[guidors_wife]
 name=Guidor's wife
 desc=She looks rather concerned.
 model1=model_378
@@ -6842,7 +6842,7 @@ recol4d=45
 op1=Talk-to
 vislevel=0
 
-[npc_343]
+[guidor]
 name=Guidor
 desc=He's not that ill.
 model1=model_230
@@ -6875,7 +6875,7 @@ recol6d=127
 op1=Talk-to
 vislevel=0
 
-[npc_344]
+[guard4]
 name=Guard
 desc=He tries to keep order around here.
 model1=model_208
@@ -6900,7 +6900,7 @@ recol1d=8472
 op1=Talk-to
 vislevel=0
 
-[npc_345]
+[guard5]
 name=Guard
 desc=He tries to keep order around here.
 model1=model_208
@@ -6924,7 +6924,7 @@ recol1d=8472
 op1=Talk-to
 vislevel=0
 
-[npc_346]
+[guard6]
 name=Guard
 desc=He tries to keep order around here.
 model1=model_208
@@ -6948,7 +6948,7 @@ recol1d=8472
 op1=Talk-to
 vislevel=0
 
-[npc_347]
+[mourner]
 name=Mourner
 desc=A mourner, or plague healer.
 model1=model_212
@@ -6978,7 +6978,7 @@ op1=Talk-to
 op2=Attack
 vislevel=15
 
-[npc_348]
+[mourner2]
 name=Mourner
 desc=A mourner, or plague healer.
 model1=model_212
@@ -7005,7 +7005,7 @@ op1=Talk-to
 op2=Attack
 vislevel=19
 
-[npc_349]
+[kilron]
 name=Kilron
 desc=He looks shifty.
 model1=model_208
@@ -7029,7 +7029,7 @@ recol2d=3980
 op1=Talk-to
 vislevel=0
 
-[npc_350]
+[omart]
 name=Omart
 desc=A nervous looking fellow.
 model1=model_207
@@ -7057,7 +7057,7 @@ recol4d=43270
 op1=Talk-to
 vislevel=0
 
-[npc_351]
+[man6]
 name=Man
 desc=One of RuneScapes' many citizens.
 model1=model_215
@@ -7084,7 +7084,7 @@ op1=Talk-to
 op2=Attack
 vislevel=4
 
-[npc_352]
+[woman5]
 name=Woman
 desc=One of RuneScapes' many citizens.
 model1=model_408
@@ -7109,7 +7109,7 @@ op1=Talk-to
 op2=Attack
 vislevel=3
 
-[npc_353]
+[woman6]
 name=Woman
 desc=One of RuneScapes' many citizens.
 model1=model_390
@@ -7132,7 +7132,7 @@ op1=Talk-to
 op2=Attack
 vislevel=4
 
-[npc_354]
+[woman7]
 name=Woman
 desc=One of RuneScapes' many citizens.
 model1=model_378
@@ -7157,7 +7157,7 @@ op1=Talk-to
 op2=Attack
 vislevel=3
 
-[npc_355]
+[child]
 name=Child
 desc=One of RuneScapes' many citizens.
 model1=model_2897
@@ -7173,7 +7173,7 @@ recol2d=5006
 op1=Talk-to
 vislevel=0
 
-[npc_356]
+[child2]
 name=Child
 desc=One of RuneScapes' many citizens.
 model1=model_2897
@@ -7191,7 +7191,7 @@ recol3d=5006
 op1=Talk-to
 vislevel=0
 
-[npc_357]
+[mourner3]
 name=Mourner
 desc=A mourner, or plague healer.
 model1=model_212
@@ -7218,7 +7218,7 @@ recol4d=6936
 op2=Attack
 vislevel=16
 
-[npc_358]
+[priest2]
 name=Priest
 desc=A holy man.
 model1=model_230
@@ -7244,7 +7244,7 @@ recol3d=5908
 op1=Talk-to
 vislevel=0
 
-[npc_359]
+[man7]
 name=Man
 desc=One of RuneScapes' many citizens.
 model1=model_230
@@ -7271,7 +7271,7 @@ recol4s=4550
 recol4d=5662
 vislevel=0
 
-[npc_360]
+[woman8]
 name=Woman
 desc=One of RuneScapes' many citizens.
 model1=model_399
@@ -7296,7 +7296,7 @@ op1=Talk-to
 op2=Attack
 vislevel=4
 
-[npc_361]
+[woman9]
 name=Woman
 desc=One of RuneScapes' many citizens.
 model1=model_404
@@ -7321,7 +7321,7 @@ op1=Talk-to
 op2=Attack
 vislevel=12
 
-[npc_362]
+[woman10]
 name=Woman
 desc=One of RuneScapes' many citizens.
 model1=model_404
@@ -7344,7 +7344,7 @@ op1=Talk-to
 op2=Attack
 vislevel=3
 
-[npc_363]
+[woman11]
 name=Woman
 desc=One of RuneScapes' many citizens.
 model1=model_404
@@ -7367,7 +7367,7 @@ op1=Talk-to
 op2=Attack
 vislevel=14
 
-[npc_364]
+[king_lathas]
 name=King Lathas
 desc=King Lathas of East Ardougne.
 model1=model_230
@@ -7402,7 +7402,7 @@ recol6d=127
 op1=Talk-to
 vislevel=0
 
-[npc_365]
+[paladin2]
 name=Paladin
 desc=A military man.
 model1=model_225
@@ -7436,7 +7436,7 @@ recol6d=823
 op2=Attack
 vislevel=50
 
-[npc_366]
+[jercio]
 name=Jerico
 desc=He looks friendly enough.
 model1=model_214
@@ -7463,7 +7463,7 @@ recol3d=43111
 op1=Talk-to
 vislevel=0
 
-[npc_367]
+[chemist]
 name=Chemist
 desc=Smells very chemically...
 model1=model_230
@@ -7496,7 +7496,7 @@ recol5d=906
 op1=Talk-to
 vislevel=0
 
-[npc_368]
+[guard7]
 name=Guard
 desc=He tries to keep order around here.
 model1=model_233
@@ -7931,7 +7931,7 @@ recol2d=414
 op1=Talk-to
 vislevel=0
 
-[npc_384]
+[barbarian_guard2]
 name=Barbarian guard
 desc=Not very civilised looking.
 model1=model_219
@@ -8327,7 +8327,7 @@ recol4d=7952
 op1=Talk-to
 vislevel=0
 
-[npc_403]
+[fishing_spot31]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_2320
@@ -8341,7 +8341,7 @@ op4=hidden
 op5=hidden
 vislevel=0
 
-[npc_404]
+[fishing_spot32]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_2320
@@ -8355,7 +8355,7 @@ op4=hidden
 op5=hidden
 vislevel=0
 
-[npc_405]
+[fishing_spot33]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_2320
@@ -8369,7 +8369,7 @@ op4=hidden
 op5=hidden
 vislevel=0
 
-[npc_406]
+[fishing_spot34]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_2320
@@ -14170,7 +14170,7 @@ recol3d=10508
 op1=Talk-to
 vislevel=0
 
-[npc_651]
+[monk3]
 name=Monk
 desc=He looks holy.
 model1=model_215
@@ -14283,7 +14283,7 @@ recol2d=4769
 op1=Talk-to
 vislevel=0
 
-[npc_657]
+[monk_of_entrana]
 name=Monk of Entrana
 desc=Holy looking.
 model1=model_223
@@ -14309,7 +14309,7 @@ recol3d=6854
 op1=Talk-to
 vislevel=0
 
-[npc_658]
+[monk_of_entrana2]
 name=Monk of Entrana
 desc=Holy looking.
 model1=model_223
@@ -14432,7 +14432,7 @@ recol3d=2981
 op1=Talk-to
 vislevel=0
 
-[npc_663]
+[nobleman]
 name=Man
 desc=A well dressed nobleman.
 model1=model_215
@@ -14769,7 +14769,7 @@ recol3d=931
 op2=Attack
 vislevel=172
 
-[npc_678]
+[guard8]
 name=Guard
 desc=Keeps order in the ranging guild.
 model1=model_220
@@ -15966,7 +15966,7 @@ recol4d=4550
 op1=Talk-to
 vislevel=0
 
-[npc_726]
+[man8]
 name=Man
 desc=One of RuneScapes' many citizens.
 model1=model_235
@@ -15990,7 +15990,7 @@ recol2d=3980
 op1=Talk-to
 vislevel=0
 
-[npc_727]
+[man9]
 name=Man
 desc=One of RuneScapes' many citizens.
 model1=model_235
@@ -16016,7 +16016,7 @@ recol3d=7609
 op1=Talk-to
 vislevel=0
 
-[npc_728]
+[man10]
 name=Man
 desc=One of RuneScapes' many citizens.
 model1=model_214
@@ -16042,7 +16042,7 @@ recol3d=6449
 op1=Talk-to
 vislevel=0
 
-[npc_729]
+[man11]
 name=Man
 desc=One of RuneScapes' many citizens.
 model1=model_214
@@ -16068,7 +16068,7 @@ recol3d=6449
 op1=Talk-to
 vislevel=0
 
-[npc_730]
+[man12]
 name=Man
 desc=One of RuneScapes' many citizens.
 model1=model_214
@@ -17638,7 +17638,7 @@ op1=Talk-to
 op2=Attack
 vislevel=19
 
-[npc_800]
+[fishing_spot35]
 name=Fishing spot
 desc=I can see eels swimming in the water.
 model1=model_2331
@@ -17705,7 +17705,7 @@ recol3d=9135
 op1=Talk-to
 vislevel=0
 
-[npc_803]
+[monk4]
 name=Monk
 desc=A holy man.
 model1=model_230
@@ -17972,7 +17972,7 @@ recol5d=7068
 op1=Talk-to
 vislevel=0
 
-[npc_812]
+[guard9]
 name=Guard
 desc=An officer of the Law.
 model1=model_219
@@ -19177,7 +19177,7 @@ recol1d=11154
 op1=Talk-to
 vislevel=0
 
-[npc_865]
+[skavid2]
 name=Skavid
 desc=A skavid.
 model1=model_2999
@@ -19188,7 +19188,7 @@ size=2
 op1=Talk-to
 vislevel=0
 
-[npc_866]
+[skavid3]
 name=Skavid
 desc=A skavid.
 model1=model_2999
@@ -19199,7 +19199,7 @@ size=2
 op1=Talk-to
 vislevel=0
 
-[npc_867]
+[skavid4]
 name=Skavid
 desc=A skavid.
 model1=model_2999
@@ -19210,7 +19210,7 @@ size=2
 op1=Talk-to
 vislevel=0
 
-[npc_868]
+[skavid5]
 name=Skavid
 desc=A skavid.
 model1=model_2999
@@ -19221,7 +19221,7 @@ size=2
 op1=Talk-to
 vislevel=0
 
-[npc_869]
+[skavid6]
 name=Skavid
 desc=A skavid.
 model1=model_2999
@@ -19597,7 +19597,7 @@ recol5d=916
 op1=Talk-to
 vislevel=0
 
-[npc_887]
+[guard10]
 name=Guard
 desc=On special duty to protect the Carnilleans.
 model1=model_225
@@ -19619,7 +19619,7 @@ recol2d=43939
 op1=Talk-to
 vislevel=0
 
-[npc_888]
+[philipe_carnillean]
 name=Philipe Carnillean
 desc=The newest member of the Carnillean family.
 model1=model_2894
@@ -19641,7 +19641,7 @@ recol5d=43955
 op1=Talk-to
 vislevel=0
 
-[npc_889]
+[henryeta_carnillean]
 name=Henryeta Carnillean
 desc=Ceril Carnilleans' wife.
 model1=model_378
@@ -19674,7 +19674,7 @@ recol6s=37
 recol6d=78
 vislevel=0
 
-[npc_890]
+[butler_jones]
 name=Butler Jones
 desc=The Carnillean family butler.
 model1=model_235
@@ -19707,7 +19707,7 @@ recol6d=5347
 op1=Talk-to
 vislevel=0
 
-[npc_891]
+[alomone]
 name=Alomone
 desc=Leader of the Hazeel cult.
 model1=model_208
@@ -19736,7 +19736,7 @@ op1=Talk-to
 op2=Attack
 vislevel=13
 
-[npc_892]
+[hazeel]
 name=Hazeel
 desc=An evil being raised from the dead.
 model1=model_231
@@ -19768,7 +19768,7 @@ recol5d=4205
 op1=Talk-to
 vislevel=296
 
-[npc_893]
+[clivet]
 name=Clivet
 desc=A member of the Hazeel cult.
 model1=model_226
@@ -19802,7 +19802,7 @@ op1=Talk-to
 op2=Attack
 vislevel=13
 
-[npc_894]
+[hazeel_cultist]
 name=Hazeel Cultist
 desc=A member of the Hazeel cult.
 model1=model_226
@@ -19831,7 +19831,7 @@ op1=Talk-to
 op2=Attack
 vislevel=13
 
-[npc_895]
+[boy]
 name=Boy
 desc=A sad looking child...
 model1=model_2897
@@ -19851,7 +19851,7 @@ recol4d=7079
 op1=Talk-to
 vislevel=0
 
-[npc_896]
+[nora_t_hagg]
 name=Nora T. Hagg
 desc=Distinctly witchey.
 model1=model_405
@@ -19880,7 +19880,7 @@ recol5s=8741
 recol5d=10508
 vislevel=0
 
-[npc_897]
+[witches_experiment]
 name=Witches experiment
 desc=Looks unnatural.
 model1=model_2999
@@ -19893,7 +19893,7 @@ recol2d=23506
 op2=Attack
 vislevel=19
 
-[npc_898]
+[witches_experiment_2]
 name=Witches experiment second form
 desc=Looks unnatural.
 model1=model_2884
@@ -19906,7 +19906,7 @@ recol2d=23506
 op2=Attack
 vislevel=30
 
-[npc_899]
+[witches_experiment_3]
 name=Witches experiment third form
 desc=Looks unnatural.
 model1=model_2966
@@ -19922,7 +19922,7 @@ recol3d=23506
 op2=Attack
 vislevel=42
 
-[npc_900]
+[witches_experiment_4]
 name=Witches experiment fourth form
 desc=Looks unnatural.
 model1=model_2937
@@ -19937,7 +19937,7 @@ recol3d=23506
 op2=Attack
 vislevel=53
 
-[npc_901]
+[mouse]
 name=Mouse
 desc=Deceptively mouse shaped.
 model1=model_2927
@@ -19948,7 +19948,7 @@ recol1d=21588
 op1=Feed
 vislevel=0
 
-[npc_902]
+[gundai]
 name=Gundai
 desc=He must get lonely out here.
 model1=model_215
@@ -19974,7 +19974,7 @@ recol2d=61
 op1=Talk-to
 vislevel=0
 
-[npc_903]
+[lundail]
 name=Lundail
 desc=He sells rune stones.
 model1=model_230
@@ -19995,7 +19995,7 @@ op1=Talk-to
 op3=Trade
 vislevel=0
 
-[npc_904]
+[chamber_guardian]
 name=Chamber guardian
 desc=He hasn't seen much sun lately.
 model1=model_214
@@ -20025,7 +20025,7 @@ op1=Talk-to
 op3=Trade
 vislevel=0
 
-[npc_905]
+[kolodion]
 name=Kolodion
 desc=He runs the mage arena.
 model1=model_162
@@ -20060,7 +20060,7 @@ recol6d=43968
 op1=Talk-to
 vislevel=0
 
-[npc_906]
+[kolodion2]
 name=Kolodion
 desc=He runs the mage arena.
 model1=model_162
@@ -20094,7 +20094,7 @@ recol6s=908
 recol6d=43968
 vislevel=0
 
-[npc_907]
+[kolodion3]
 name=Kolodion
 desc=He runs the mage arena.
 model1=model_162
@@ -20129,7 +20129,7 @@ recol6d=43968
 op2=Attack
 vislevel=0
 
-[npc_908]
+[kolodion4]
 name=Kolodion
 desc=He's a shape shifter.
 model1=model_2863
@@ -20151,7 +20151,7 @@ recol6d=10512
 op2=Attack
 vislevel=0
 
-[npc_909]
+[kolodion5]
 name=Kolodion
 desc=He's a shape shifter.
 model1=model_2884
@@ -20165,7 +20165,7 @@ recol1d=43197
 op2=Attack
 vislevel=0
 
-[npc_910]
+[kolodion6]
 name=Kolodion
 desc=He's a shape shifter.
 model1=model_221
@@ -20195,7 +20195,7 @@ recol6d=40049
 op2=Attack
 vislevel=0
 
-[npc_911]
+[kolodion7]
 name=Kolodion
 desc=He's a shape shifter.
 model1=model_2942
@@ -20212,7 +20212,7 @@ recol3d=931
 op2=Attack
 vislevel=113
 
-[npc_912]
+[battle_mage_zamorak]
 name=Battle mage
 desc=He kills in the name of Zamorak.
 model1=model_207
@@ -20245,7 +20245,7 @@ recol6d=0
 op2=Attack
 vislevel=54
 
-[npc_913]
+[battle_mage_saradomin]
 name=Battle mage
 desc=He kills in the name of Saradomin.
 model1=model_217
@@ -20277,7 +20277,7 @@ recol6d=4645
 op2=Attack
 vislevel=54
 
-[npc_914]
+[battle_mage_guthix]
 name=Battle mage
 desc=He kills in the name of Guthix.
 model1=model_2909
@@ -20292,7 +20292,7 @@ recol2d=22426
 op2=Attack
 vislevel=54
 
-[npc_915]
+[leela]
 name=Leela
 desc=She comes from Al-Kharid.
 model1=model_393
@@ -20320,7 +20320,7 @@ recol4d=4657
 op1=Talk-to
 vislevel=0
 
-[npc_916]
+[joe]
 name=Joe
 desc=Lady Keli's head guard.
 model1=model_217
@@ -20346,7 +20346,7 @@ recol3d=10508
 op1=Talk-to
 vislevel=0
 
-[npc_917]
+[jail_guard]
 name=Jail guard
 desc=I wonder who he's guarding?
 model1=model_217
@@ -20374,7 +20374,7 @@ op1=Talk-to
 op2=Attack
 vislevel=26
 
-[npc_918]
+[ned]
 name=Ned
 desc=An old sailor.
 model1=model_215
@@ -20404,7 +20404,7 @@ recol4d=127
 op1=Talk-to
 vislevel=0
 
-[npc_919]
+[lady_keli]
 name=Lady Keli
 desc=An infamous bandit.
 model1=model_390
@@ -20428,7 +20428,7 @@ recol3d=6854
 op1=Talk-to
 vislevel=0
 
-[npc_920]
+[prince_ali]
 name=Prince Ali
 desc=A young prince.
 model1=model_215
@@ -20458,7 +20458,7 @@ recol4d=10508
 op1=Talk-to
 vislevel=0
 
-[npc_921]
+[prince_ali_disguise]
 name=Prince Ali
 desc=Now that's an effective disguise!
 model1=model_214
@@ -20481,7 +20481,7 @@ recol3s=6798
 recol3d=6854
 vislevel=0
 
-[npc_922]
+[aggie]
 name=Aggie
 desc=A witch.
 model1=model_393
@@ -20509,7 +20509,7 @@ recol4d=10508
 op1=Talk-to
 vislevel=0
 
-[npc_923]
+[hassan]
 name=Hassan
 desc=The chancellor to the Emir.
 model1=model_215
@@ -20545,7 +20545,7 @@ recol6d=926
 op1=Talk-to
 vislevel=0
 
-[npc_924]
+[osman]
 name=Osman
 desc=He looks a little shifty.
 model1=model_208
@@ -20573,7 +20573,7 @@ recol4d=10508
 op1=Talk-to
 vislevel=0
 
-[npc_925]
+[border_guard]
 name=Border Guard
 desc=Guards the border.
 model1=model_215
@@ -20604,7 +20604,7 @@ recol4d=10508
 op1=Talk-to
 vislevel=0
 
-[npc_926]
+[border_guard2]
 name=Border Guard
 desc=Guards the border.
 model1=model_215
@@ -20635,7 +20635,7 @@ recol4d=10508
 op1=Talk-to
 vislevel=0
 
-[npc_927]
+[fishing_spot36]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -20949,7 +20949,7 @@ op1=Talk-to
 op2=Attack
 vislevel=95
 
-[npc_939]
+[boulder]
 name=Boulder
 desc=I wonder what this is doing here.
 model1=model_2846
@@ -21276,7 +21276,7 @@ walkanim=seq_53
 op2=Attack
 vislevel=3
 
-[npc_952]
+[fishing_spot37]
 name=Fishing spot
 desc=I can see fish swimming in the water.
 model1=model_1491
@@ -21360,7 +21360,7 @@ recol3d=5289
 op2=Attack
 vislevel=2
 
-[npc_956]
+[drunken_dwarf]
 name=Drunken Dwarf
 desc=He's had a fair bit to drink...
 model1=model_2974
@@ -21377,7 +21377,7 @@ walkanim=seq_104
 op1=Talk-to
 vislevel=0
 
-[npc_957]
+[mubariz]
 name=Mubariz
 desc=Tough looking combat type.
 model1=model_230
@@ -21409,7 +21409,7 @@ recol4d=6705
 op1=Talk-to
 vislevel=0
 
-[npc_958]
+[fadli]
 name=Fadli
 desc=Looks kinda bored.
 model1=model_210
@@ -21469,7 +21469,7 @@ op1=Talk-to
 op3=Heal
 vislevel=0
 
-[npc_960]
+[sabreen]
 name=Sabreen
 desc=Wow! She's made a statement with that hair!
 model1=model_393
@@ -21499,7 +21499,7 @@ op1=Talk-to
 op3=Heal
 vislevel=0
 
-[npc_961]
+[tafani]
 name=Tafani
 desc=Looks after injured fighters.
 model1=model_390
@@ -21529,7 +21529,7 @@ op1=Talk-to
 op3=Heal
 vislevel=0
 
-[npc_962]
+[jaraah]
 name=Jaraah
 desc=Has the messy job of putting players back together again.
 model1=model_230
@@ -21562,7 +21562,7 @@ op1=Talk-to
 op3=Heal
 vislevel=0
 
-[npc_963]
+[zahwa]
 name=Zahwa
 desc='Battle scarred'.
 model1=model_206
@@ -21592,7 +21592,7 @@ recol4d=103
 op1=Talk-to
 vislevel=0
 
-[npc_964]
+[ima]
 name=Ima
 desc=A citizen of Al Kharid.
 model1=model_215
@@ -21622,7 +21622,7 @@ recol4d=127
 op1=Talk-to
 vislevel=0
 
-[npc_965]
+[sabeil]
 name=Sabeil
 desc=A citizen of Al Kharid.
 model1=model_215
@@ -21652,7 +21652,7 @@ recol4d=7397
 op1=Talk-to
 vislevel=0
 
-[npc_966]
+[jadid]
 name=Jadid
 desc=A citizen of Al Kharid.
 model1=model_215
@@ -21682,7 +21682,7 @@ recol4d=7397
 op1=Talk-to
 vislevel=0
 
-[npc_967]
+[dalal]
 name=Dalal
 desc=A citizen of Al Kharid.
 model1=model_391
@@ -21710,7 +21710,7 @@ recol4d=127
 op1=Talk-to
 vislevel=0
 
-[npc_968]
+[afrah]
 name=Afrah
 desc=A citizen of Al Kharid.
 model1=model_391
@@ -21738,7 +21738,7 @@ recol4d=127
 op1=Talk-to
 vislevel=0
 
-[npc_969]
+[jeed]
 name=Jeed
 desc=A citizen of Al Kharid.
 model1=model_390
@@ -21764,7 +21764,7 @@ recol4d=7397
 op1=Talk-to
 vislevel=0
 
-[npc_970]
+[diango]
 name=Diango
 desc=He smells funny.
 model1=model_186
@@ -21800,7 +21800,7 @@ op1=Talk-to
 op3=Trade
 vislevel=0
 
-[npc_971]
+[chadwell]
 name=chadwell
 desc=Shop keeper.
 model1=model_230
@@ -21819,7 +21819,7 @@ walkanim_l=seq_822
 op1=Talk-to
 vislevel=0
 
-[npc_972]
+[koftik]
 name=Koftik
 desc=The cave guide.
 model1=model_163
@@ -21840,7 +21840,7 @@ walkanim_l=seq_822
 op1=Talk-to
 vislevel=0
 
-[npc_973]
+[koftik2]
 name=Koftik
 desc=The cave guide.
 model1=model_163
@@ -21861,7 +21861,7 @@ walkanim_l=seq_822
 op1=Talk-to
 vislevel=0
 
-[npc_974]
+[koftik3]
 name=Koftik
 desc=The cave guide.
 model1=model_163
@@ -21882,7 +21882,7 @@ walkanim_l=seq_822
 op1=Talk-to
 vislevel=0
 
-[npc_975]
+[koftik4]
 name=Koftik
 desc=The cave guide.
 model1=model_163
@@ -21903,7 +21903,7 @@ walkanim_l=seq_822
 op1=Talk-to
 vislevel=0
 
-[npc_976]
+[koftik5]
 name=Koftik
 desc=The cave guide.
 model1=model_163
@@ -21924,7 +21924,7 @@ walkanim_l=seq_822
 op1=Talk-to
 vislevel=0
 
-[npc_977]
+[blessed_spider]
 name=Blessed spider
 desc=It's one of Ibans' pets.
 model1=model_2884
@@ -21933,7 +21933,7 @@ walkanim=seq_142
 op2=Attack
 vislevel=31
 
-[npc_978]
+[blessed_giant_rat]
 name=Blessed Giant rat
 desc=It's one of Ibans' pet vermin.
 model1=model_2959
@@ -21943,7 +21943,7 @@ size=2
 op2=Attack
 vislevel=9
 
-[npc_979]
+[iban_slave]
 name=Slave
 desc=A wretched slave of Iban.
 model1=model_230
@@ -21968,7 +21968,7 @@ recol3d=5347
 op1=Talk-to
 vislevel=0
 
-[npc_980]
+[iban_slave2]
 name=Slave
 desc=A wretched slave of Iban.
 model1=model_214
@@ -21993,7 +21993,7 @@ recol3d=5347
 op1=Talk-to
 vislevel=0
 
-[npc_981]
+[iban_slave3]
 name=Slave
 desc=A wretched slave of Iban.
 model1=model_210
@@ -22018,7 +22018,7 @@ recol3d=5347
 op1=Talk-to
 vislevel=0
 
-[npc_982]
+[iban_slave4]
 name=Slave
 desc=A wretched slave of Iban.
 model1=model_207
@@ -22043,7 +22043,7 @@ recol3d=5347
 op1=Talk-to
 vislevel=0
 
-[npc_983]
+[iban_slave5]
 name=Slave
 desc=A wretched slave of Iban.
 model1=model_203
@@ -22070,7 +22070,7 @@ recol4d=7227
 op1=Talk-to
 vislevel=0
 
-[npc_984]
+[iban_slave6]
 name=Slave
 desc=A wretched slave of Iban.
 model1=model_208
@@ -22095,7 +22095,7 @@ recol3d=5347
 op1=Talk-to
 vislevel=0
 
-[npc_985]
+[iban_slave7]
 name=Slave
 desc=A wretched slave of Iban.
 model1=model_214
@@ -22120,7 +22120,7 @@ recol3d=5347
 op1=Talk-to
 vislevel=0
 
-[npc_986]
+[upass_boulder]
 name=Boulder
 desc=Precariously balanced....
 model1=model_2846
@@ -22130,7 +22130,7 @@ op1=Push
 vislevel=0
 visonmap=no
 
-[npc_987]
+[upass_unicorn]
 name=Unicorn
 desc=The animal is caged here.
 model1=model_2933
@@ -22139,7 +22139,7 @@ walkanim=seq_288
 size=2
 vislevel=15
 
-[npc_988]
+[sir_jerro]
 name=Sir Jerro
 desc=A mighty looking warrior.
 model1=model_217
@@ -22170,7 +22170,7 @@ op1=Talk-to
 op2=Attack
 vislevel=53
 
-[npc_989]
+[sir_carl]
 name=Sir Carl
 desc=A mighty looking warrior.
 model1=model_214
@@ -22199,7 +22199,7 @@ op1=Talk-to
 op2=Attack
 vislevel=53
 
-[npc_990]
+[sir_harry]
 name=Sir Harry
 desc=A mighty looking warrior.
 model1=model_214
@@ -22228,7 +22228,7 @@ op1=Talk-to
 op2=Attack
 vislevel=53
 
-[npc_991]
+[half_soulless]
 name=Half-Souless
 desc=A creature empty of emotion.
 model1=model_230
@@ -22253,7 +22253,7 @@ recol5s=43072
 recol5d=8286
 vislevel=1
 
-[npc_992]
+[kardia]
 name=Kardia
 desc=A dark and evil crone.
 model1=model_405
@@ -22284,7 +22284,7 @@ recol5d=59274
 op1=Talk-to
 vislevel=0
 
-[npc_993]
+[witches_cat]
 name=Witches cat
 desc=Curiosity is yet to kill this one...
 model1=model_3010
@@ -22298,7 +22298,7 @@ recol1d=16
 op1=Pick-up
 vislevel=0
 
-[npc_994]
+[nilhoof]
 name=Nilhoof
 desc=A strong and hardy dwarf.
 model1=model_2970
@@ -22321,7 +22321,7 @@ recol4d=42413
 op1=Talk-to
 vislevel=0
 
-[npc_995]
+[klank]
 name=Klank
 desc=A dwarven maker of gauntlets.
 model1=model_2971
@@ -22341,7 +22341,7 @@ recol3d=15248
 op1=Talk-to
 vislevel=0
 
-[npc_996]
+[kamen]
 name=Kamen
 desc=This dwarf looks intoxicated.
 model1=model_2972
@@ -22360,7 +22360,7 @@ recol2d=6709
 op1=Talk-to
 vislevel=0
 
-[npc_997]
+[kalrag]
 name=Kalrag
 desc=A giant spider.
 model1=model_2884
@@ -22372,7 +22372,7 @@ resizez=352
 op2=Attack
 vislevel=78
 
-[npc_998]
+[othainian]
 name=Othainian
 desc=One of the Guardians of Iban.
 model1=model_2942
@@ -22384,7 +22384,7 @@ resizez=110
 op2=Attack
 vislevel=91
 
-[npc_999]
+[doomion]
 name=Doomion
 desc=One of the Guardians of Iban.
 model1=model_2942
@@ -22396,7 +22396,7 @@ resizez=110
 op2=Attack
 vislevel=91
 
-[npc_1000]
+[holthion]
 name=Holthion
 desc=One of the Guardians of Iban.
 model1=model_2942
@@ -22408,7 +22408,7 @@ resizez=110
 op2=Attack
 vislevel=91
 
-[npc_1001]
+[dark_mage]
 name=Dark mage
 desc=A dark magic user.
 model1=model_235
@@ -22434,7 +22434,7 @@ recol3d=127
 op1=Talk-to
 vislevel=13
 
-[npc_1002]
+[iban_disciple]
 name=Iban disciple
 desc=A dark magic user.
 model1=model_235
@@ -22462,7 +22462,7 @@ op1=Talk-to
 op2=Attack
 vislevel=13
 
-[npc_1003]
+[lord_iban]
 name=Lord Iban
 desc=The great and dreadful Lord Iban
 model1=model_221
@@ -22494,7 +22494,7 @@ recol6s=23442
 recol6d=20
 vislevel=0
 
-[npc_1004]
+[spider2]
 name=Spider
 desc=Incey wincey.
 model1=model_2996
@@ -22504,7 +22504,7 @@ recol1d=10258
 op2=Attack
 vislevel=1
 
-[npc_1005]
+[giant_bat2]
 name=Giant bat
 desc=Annoying flappy thing.
 model1=model_2941
@@ -22513,7 +22513,7 @@ walkanim=seq_29
 size=2
 vislevel=0
 
-[npc_1006]
+[sea_slug]
 name=Sea slug
 desc=A rather nasty looking crustacean.
 model1=model_560
@@ -22522,7 +22522,7 @@ walkanim=seq_933
 op1=Take
 vislevel=0
 
-[npc_1007]
+[zamorak_wizard]
 name=Zamorak Wizard
 desc=A servant of Zamorak.
 model1=model_206
@@ -22552,7 +22552,7 @@ recol5d=0
 op2=Attack
 vislevel=74
 
-[npc_1008]
+[hamid]
 name=Hamid
 desc=A holy man.
 model1=model_230
@@ -22577,7 +22577,7 @@ recol3d=6705
 op1=Talk-to
 vislevel=0
 
-[npc_1009]
+[poison_spider2]
 name=Poison spider
 desc=A nasty poisonous arachnid.
 model1=model_2883
@@ -22586,7 +22586,7 @@ walkanim=seq_142
 op2=Attack
 vislevel=29
 
-[npc_1010]
+[rantz]
 name=Rantz
 desc=A large dim looking humanoid.
 model1=model_2878
@@ -22598,7 +22598,7 @@ size=2
 op1=Talk
 vislevel=0
 
-[npc_1011]
+[fycie]
 name=Fycie
 desc=This must be Rantz's daughter.
 model1=model_2878
@@ -22614,7 +22614,7 @@ recol2d=11171
 op1=Talk
 vislevel=0
 
-[npc_1012]
+[bugs]
 name=Bugs
 desc=This must be Rantz's son.
 model1=model_2878
@@ -22630,7 +22630,7 @@ recol2d=6034
 op1=Talk
 vislevel=0
 
-[npc_1013]
+[swamp_toad]
 name=Swamp toad
 desc=A green skinned croaker, loves the swamp.
 model1=model_3447
@@ -22638,7 +22638,7 @@ readyanim=seq_1018
 walkanim=seq_1021
 vislevel=0
 
-[npc_1014]
+[bloated_toad]
 name=Bloated Toad
 desc=A green skinned croaker.
 model1=model_3447
@@ -22646,7 +22646,7 @@ readyanim=seq_1020
 walkanim=seq_1020
 vislevel=0
 
-[npc_1015]
+[chompy_bird]
 name=Chompy bird
 desc=A large boisterous bird, a delicacy for ogres.
 model1=model_3445
@@ -22657,7 +22657,7 @@ resizez=180
 op5=Attack
 vislevel=6
 
-[npc_1016]
+[chompy_bir2]
 name=Chompy bird
 desc=A once boisterous bird, closer to being an ogre delicacy.
 model1=model_3445

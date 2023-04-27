@@ -19,7 +19,11 @@ import WSServer from '#network/WSServer.js';
 import { crcTable, loadCrcTable } from '#util/GlobalCache.js';
 import Jagfile from '#cache/Jagfile.js';
 
+import Constants from '#cache/config/Constants.js';
+
 console.time('Loaded cache');
+Constants.fromDef(fs.readFileSync('data/src/constants.def', 'utf8'));
+
 FloorType.fromJagConfig(fs.readFileSync('data/src/flo.def', 'utf8'));
 IdentityKitType.fromJagConfig(fs.readFileSync('data/src/idk.def', 'utf8'));
 LocationType.fromJagConfig(fs.readFileSync('data/src/loc.def', 'utf8'));
