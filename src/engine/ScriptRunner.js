@@ -33,7 +33,6 @@ export default class ScriptRunner {
             let b = state.popInt();
             let a = state.popInt();
 
-            console.log(a, b);
             if (a === b) {
                 state.pc += state.intOperand;
             }
@@ -127,10 +126,10 @@ export default class ScriptRunner {
             let procId = state.intOperand;
             let proc = ScriptProvider.get(procId);
             if (!proc) {
-                throw new Error('Invalid gosub proc', procId);
+                throw new Error('Invalid gosub proc ' + procId);
             }
 
-            if (state.fp >= 100) {
+            if (state.fp >= 50) {
                 throw new Error('Stack overflow');
             }
 
@@ -184,7 +183,7 @@ export default class ScriptRunner {
             let label = state.popString();
             let proc = ScriptProvider.getByName(`[proc,${label}]`);
             if (!proc) {
-                throw new Error('Invalid jump label', label);
+                throw new Error('Invalid jump label ' + label);
             }
 
             state.script = proc;
@@ -245,6 +244,10 @@ export default class ScriptRunner {
     };
 
     static init(script, player = null, npc = null, loc = null, obj = null) {
+        if (!script) {
+            return null;
+        }
+
         let state = new ScriptState(script);
         state.player = player;
         state.npc = npc;
@@ -254,10 +257,14 @@ export default class ScriptRunner {
     }
 
     static execute(state, benchmark = false) {
+        if (!state) {
+            return null;
+        }
+
         try {
             while (state.execution === ScriptState.RUNNING) {
                 if (state.pc >= state.script.opcodes.length || state.pc < -1) {
-                    throw new Error('Invalid program counter: ' + state.pc + ', max: ' + state.script.opcodes.length);
+                    throw new Error('Invalid program counter: ' + state.pc + ', max expected: ' + state.script.opcodes.length);
                 }
 
                 // if we're benchmarking we don't care about the opcount
@@ -269,7 +276,16 @@ export default class ScriptRunner {
                 ScriptRunner.executeInner(state, state.script.opcodes[++state.pc]);
             }
         } catch (err) {
-            console.error(`Error while executing script ${state.script.name}: ${err.message}`);
+            console.error('script error:', err.message, '\n');
+            console.error(`${state.script.info.sourceFilePath}`);
+
+            console.error('stack backtrace:');
+            console.error(`\t1: ${state.script.name} - ${state.script.fileName}:${state.script.lineNumber(state.pc)}`);
+            for (let i = state.fp; i >= 0; i--) {
+                let frame = state.frames[i];
+                console.error(`\t${state.fp - i + 2}: ${frame.script.name} - ${frame.script.fileName}:${frame.script.lineNumber(frame.pc)}`);
+            }
+
             state.execution = ScriptState.ABORTED;
         }
 
@@ -281,7 +297,7 @@ export default class ScriptRunner {
             throw new Error(`Unknown opcode ${opcode}`);
         }
 
-        console.log(state.script.name, state.pc, ScriptOpcodes[opcode]);
+        // console.log(state.script.name, 'line:', state.script.lineNumber(state.pc), ScriptOpcodes[opcode]);
         ScriptRunner.handlers[opcode](state);
     }
 }

@@ -1,10 +1,13 @@
 import ScriptOpcodes from '#engine/ScriptOpcodes.js';
+import path from 'path';
 
 // compiled bytecode representation
 export default class Script {
     info = {
-        name: null,
-        // TODO: line number information (need compiler to provide this) for stack traces
+        scriptName: null,
+        sourceFilePath: null,
+        pcs: [],
+        lines: []
     };
 
     intLocals = 0;
@@ -55,7 +58,14 @@ export default class Script {
         }
 
         stream.pos = 0;
-        sscript.info.name = stream.gjnstr();
+        sscript.info.scriptName = stream.gjnstr();
+        sscript.info.sourceFilePath = stream.gjnstr();
+
+        let lineNumberTableLength = stream.g2();
+        for (let i = 0; i < lineNumberTableLength; i++) {
+            sscript.info.pcs.push(stream.g4());
+            sscript.info.lines.push(stream.g4());
+        }
 
         let instr = 0;
         while (trailerPos > stream.pos) {
@@ -76,6 +86,20 @@ export default class Script {
     }
 
     get name() {
-        return this.info.name;
+        return this.info.scriptName;
+    }
+
+    get fileName() {
+        return path.basename(this.info.sourceFilePath);
+    }
+
+    lineNumber(pc) {
+        for (let i = 0; i < this.info.pcs.length; i++) {
+            if (this.info.pcs[i] > pc) {
+                return this.info.lines[i - 1];
+            }
+        }
+
+        return this.info.lines[this.info.lines.length - 1];
     }
 }

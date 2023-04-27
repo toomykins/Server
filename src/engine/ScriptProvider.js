@@ -41,7 +41,7 @@ export default class ScriptProvider {
 
     static getByName(name) {
         for (let script of this.scripts) {
-            if (script && script.info.name === name) {
+            if (script && script.name === name) {
                 return script;
             }
         }

@@ -2532,7 +2532,6 @@ export class Player {
     showChoices(...lines) {
         lines = lines.filter(l => l);
 
-        console.log(lines);
         if (lines.length == 2) {
             this.setInterfaceText(2461, lines[0]);
             this.setInterfaceText(2462, lines[1]);
