@@ -1,11 +1,11 @@
 import Packet from '#util/Packet.js';
 
 export default class FloorType {
-    static dat = null;
+    static config = {};
+    static ids = [];
     static count = 0;
-    static offsets = [];
-    static cache = [];
 
+    namedId = '';
     id = -1;
     rgb = 0;
     texture = -1;
@@ -13,89 +13,52 @@ export default class FloorType {
     occlude = true;
     name = '';
 
-    static unpack(dat, idx, preload = false) {
-        FloorType.dat = dat;
-        FloorType.count = idx.g2();
-        FloorType.offsets = [];
-        FloorType.cache = [];
-
-        let offset = 2;
-        for (let i = 0; i < FloorType.count; i++) {
-            FloorType.offsets[i] = offset;
-            offset += idx.g2();
-        }
-
-        if (preload) {
-            for (let i = 0; i < FloorType.count; i++) {
-                FloorType.get(i);
-            }
-        }
-    }
-
-    static load(config) {
-        const dat = config.read('flo.dat');
-        const idx = config.read('flo.idx');
-
-        FloorType.unpack(dat, idx);
-    }
-
-    static pack() {
-        const dat = new Packet();
-        const idx = new Packet();
-
-        idx.p2(FloorType.count);
-        dat.p2(FloorType.count);
-
-        for (let i = 0; i < FloorType.count; i++) {
-            const flo = FloorType.get(i);
-            const floorDat = flo.encode();
-            idx.p2(floorDat.length);
-            dat.pdata(floorDat);
-        }
-
-        return { dat, idx };
-    }
-
     static get(id) {
-        if (FloorType.cache[id]) {
-            return FloorType.cache[id];
-        } else {
-            return new FloorType(id);
-        }
-    }
-
-    static toJagConfig() {
-        let config = '';
-
-        for (let i = 0; i < FloorType.count; i++) {
-            config += FloorType.get(i).toJagConfig() + '\n';
+        if (FloorType.config[id]) {
+            return FloorType.config[id];
         }
 
-        return config;
+        if (FloorType.ids[id]) {
+            return FloorType.config[FloorType.ids[id]];
+        }
+
+        return null;
     }
 
-    static fromJagConfig(src) {
+    static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
 
         let flo;
         let id = 0;
         while (offset < lines.length) {
-            if (!lines[offset]) {
+            if (!lines[offset] || lines[offset].startsWith('//')) {
                 offset++;
                 continue;
             }
 
             if (lines[offset].startsWith('[')) {
-                flo = new FloorType(id, false);
+                // extract text in brackets
+                const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
+
+                flo = new FloorType();
+                flo.namedId = namedId;
+                flo.id = id;
+
                 offset++;
                 id++;
                 continue;
             }
 
             while (lines[offset] && !lines[offset].startsWith('[')) {
-                const key = lines[offset].slice(0, lines[offset].indexOf('='));
-                const value = lines[offset].slice(lines[offset].indexOf('=') + 1).replaceAll('texture_', '');
+                if (!lines[offset] || lines[offset].startsWith('//')) {
+                    offset++;
+                    continue;
+                }
+
+                const parts = lines[offset].split('=');
+                const key = parts[0].trim();
+                let value = parts[1].trim().replaceAll('texture_', '');
 
                 if (key == 'name') {
                     flo.name = value;
@@ -106,60 +69,38 @@ export default class FloorType {
                 } else if (key == 'occlude') {
                     flo.occlude = value == 'yes';
                 } else {
-                    console.log(`Unknown flo key: ${key}`);
+                    console.log(`Unrecognized flo config "${key}" in ${flo.namedId}`);
                 }
 
                 offset++;
             }
 
-            FloorType.cache[flo.id] = flo;
+            FloorType.config[flo.namedId] = flo;
+            FloorType.ids[flo.id] = flo.namedId;
         }
 
-        FloorType.count = FloorType.cache.length;
+        FloorType.count = FloorType.ids.length;
     }
 
-    constructor(id = 0, decode = true) {
-        this.id = id;
-        FloorType.cache[id] = this;
-
-        if (decode) {
-            const offset = FloorType.offsets[id];
-            if (!offset) {
-                return;
-            }
-
-            FloorType.dat.pos = offset;
-            this.#decode();
-        }
-    }
-
-    #decode() {
-        const dat = FloorType.dat;
-
-        while (true) {
-            const opcode = dat.g1();
-            if (opcode == 0) {
-                break;
-            }
-
-            if (opcode == 1) {
-                this.rgb = dat.g3();
-            } else if (opcode == 2) {
-                this.texture = dat.g1();
-            } else if (opcode == 3) {
-                this.opcode3 = true;
-            } else if (opcode == 5) {
-                this.occlude = false;
-            } else if (opcode == 6) {
-                this.name = dat.gjstr();
-            } else {
-                console.error('Unknown FloorType opcode:', opcode);
-            }
-        }
-    }
-
-    encode() {
+    static pack() {
         const dat = new Packet();
+        const idx = new Packet();
+
+        idx.p2(FloorType.count);
+        dat.p2(FloorType.count);
+
+        for (let i = 0; i < FloorType.count; i++) {
+            const flo = FloorType.config[FloorType.ids[i]];
+            const packed = flo.pack();
+            idx.p2(packed.length);
+            dat.pdata(packed);
+        }
+
+        return { dat, idx };
+    }
+
+    pack() {
+        let dat = new Packet();
 
         if (this.rgb != 0) {
             dat.p1(1);
@@ -185,32 +126,42 @@ export default class FloorType {
         }
 
         dat.p1(0);
-        dat.pos = 0;
         return dat;
     }
 
-    toJagConfig() {
-        let config = `[flo_${this.id}]\n`;
+    static unpack(dat) {
+        let count = dat.g2();
 
-        if (this.name) {
-            config += `name=${this.name}\n`;
+        for (let i = 0; i < count; i++) {
+            let flo = new FloorType();
+            flo.namedId = `flo_${i}`;
+            flo.id = i;
+
+            while (true) {
+                let code = dat.g1();
+                if (code == 0) {
+                    break;
+                }
+
+                if (code == 1) {
+                    this.rgb = dat.g3();
+                } else if (code === 2) {
+                    this.texture = dat.g1();
+                } else if (code === 3) {
+                    this.opcode3 = true;
+                } else if (code === 5) {
+                    this.occlude = false;
+                } else if (code === 6) {
+                    this.name = dat.gjstr();
+                } else {
+                    console.log(`Unrecognized flo config code ${code} in ${flo.namedId}`);
+                }
+            }
+
+            FloorType.config[flo.namedId] = flo;
+            FloorType.ids[flo.id] = flo.namedId;
         }
 
-        if (this.texture != -1) {
-            config += `texture=texture_${this.texture}\n`;
-        } else {
-            // if (this.rgb == 0) {
-            //     config += 'colour=^BLACK\n';
-            // } else {
-            // }
-
-            config += `colour=0x${this.rgb.toString(16).padStart(6, '0').toUpperCase()}\n`;
-        }
-
-        if (!this.occlude) {
-            config += 'occlude=no\n';
-        }
-
-        return config;
+        FloorType.count = FloorType.ids.length;
     }
 }

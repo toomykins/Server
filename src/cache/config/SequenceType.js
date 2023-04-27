@@ -61,7 +61,7 @@ export default class SequenceType {
                     offset++;
                     continue;
                 }
-    
+
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
                 let value = parts[1].trim();
@@ -99,12 +99,12 @@ export default class SequenceType {
                 } else if (key === 'replaycount') {
                     seq.replaycount = parseInt(value);
                 } else {
-                    console.log(`Unrecognized seq config "${key}" reading ${seq.namedId}`);
+                    console.log(`Unrecognized seq config "${key}" in ${seq.namedId}`);
                 }
-    
+
                 offset++;
             }
-    
+
             SequenceType.config[seq.namedId] = seq;
             SequenceType.ids[seq.id] = seq.namedId;
         }
@@ -132,20 +132,6 @@ export default class SequenceType {
     pack() {
         let dat = new Packet();
 
-        if (this.stretches) {
-            dat.p1(4);
-        }
-
-        if (this.replayoff != -1) {
-            dat.p1(2);
-            dat.p2(this.replayoff);
-        }
-
-        if (this.priority != 5) {
-            dat.p1(5);
-            dat.p1(this.priority);
-        }
-
         if (this.framecount) {
             dat.p1(1);
             dat.p1(this.framecount);
@@ -157,6 +143,11 @@ export default class SequenceType {
             }
         }
 
+        if (this.replayoff != -1) {
+            dat.p1(2);
+            dat.p2(this.replayoff);
+        }
+
         if (this.labelGroups.length) {
             dat.p1(3);
             dat.p1(this.labelGroups.length);
@@ -164,6 +155,15 @@ export default class SequenceType {
             for (let i = 0; i < this.labelGroups.length; i++) {
                 dat.p1(this.labelGroups[i]);
             }
+        }
+
+        if (this.stretches) {
+            dat.p1(4);
+        }
+
+        if (this.priority != 5) {
+            dat.p1(5);
+            dat.p1(this.priority);
         }
 
         if (this.mainhand != -1) {
