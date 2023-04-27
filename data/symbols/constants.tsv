@@ -1,0 +1,19 @@
+false	0
+true	1
+
+min_32bit_int	-2147483648
+max_32bit_int	2147483647
+
+red	0xFF0000
+green	0x00FF00
+blue	0x0000FF
+yellow	0xFFFF00
+magenta	0xFF00FF
+cyan	0x00FFFF
+white	0xFFFFFF
+black	0x000000
+
+lootdrop_duration	200
+dm_default	Nothing interesting happens
+dm_members_obj	Login to a members' server to use this object
+dm_members_action	You must be on a members world to do that

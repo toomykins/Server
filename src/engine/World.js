@@ -23,7 +23,6 @@ import ZoneEvent from '#engine/ZoneEvent.js';
 import { ServerProt } from '#enum/ServerProt.js';
 import Zone from '#engine/Zone.js';
 import { Position } from '#util/Position.js';
-import ScriptProvider from '#engine/ScriptProvider.js';
 
 const FLAG_TYPED_ARRAY = 'FLAG_TYPED_ARRAY';
 

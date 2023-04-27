@@ -5,7 +5,10 @@ export default class ScriptState {
     static FINISHED = 2;
     static ABORTED = 3;
 
-    // interpreter state
+    // engine states
+    static PAUSEBUTTON = 4;
+
+    // interpreter
     script = null;
     execution = ScriptState.RUNNING;
 
@@ -24,7 +27,7 @@ export default class ScriptState {
     intLocals = [];
     stringLocals = [];
 
-    // server state
+    // server
     player = null;
     npc = null;
     obj = null;

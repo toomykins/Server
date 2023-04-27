@@ -796,10 +796,12 @@ export class Player {
 
         if (!this.delayed() && !this.containsModalInterface()) {
             if (this.opScript != null && this.inOperableDistance()) {
-                this.persistent = !this.opScript.execute();
+                ScriptRunner.execute(this.opScript);
+                this.persistent = this.opScript.execution !== ScriptState.FINISHED;
                 interacted = true;
             } else if (this.apScript != null && this.inApproachDistance()) {
-                this.persistent = !this.apScript.execute();
+                ScriptRunner.execute(this.apScript);
+                this.persistent = this.apScript.execution !== ScriptState.FINISHED;
                 interacted = true;
             } else if (this.inOperableDistance()) {
                 this.sendMessage('Nothing interesting happens.');
@@ -820,11 +822,13 @@ export class Player {
         if (!this.delayed() && !this.containsModalInterface()) {
             if (!interacted || this.apRangeCalled) {
                 if (this.opScript != null && this.inOperableDistance() && !moved) {
-                    this.persistent = !this.opScript.execute();
+                    ScriptRunner.execute(this.opScript);
+                    this.persistent = this.opScript.execution !== ScriptState.FINISHED;
                     interacted = true;
                 } else if (this.apScript != null && this.inApproachDistance()) {
                     this.apRangeCalled = false;
-                    this.persistent = !this.apScript.execute();
+                    ScriptRunner.execute(this.apScript);
+                    this.persistent = this.apScript.execution !== ScriptState.FINISHED;
                     interacted = true;
                 } else if (this.inOperableDistance() && !moved) {
                     this.sendMessage('Nothing interesting happens.');
@@ -1236,7 +1240,10 @@ export class Player {
         this.target = { ...params };
         this.persistent = false;
 
+        let script = ScriptRunner.init(ScriptProvider.getByName('[proc,hans]'), this.pid);
+
         if (trigger.indexOf('LOC') !== -1) {
+            script.loc = params.locId; // TODO: pass real instance so loc commands can edit this specific loc
             this.target.type = 'loc';
 
             let config = LocationType.get(params.locId);
@@ -1246,18 +1253,21 @@ export class Player {
             this.faceZ = (this.target.z * 2) + config.length;
             this.alreadyFaced = false;
         } else if (trigger.indexOf('OBJ') !== -1) {
+            script.obj = params.objId; // TODO: pass real instance so obj commands can edit this specific obj
             this.target.type = 'obj';
 
             this.faceX = (this.target.x * 2) + 1;
             this.faceZ = (this.target.z * 2) + 1;
             this.alreadyFaced = false;
         } else if (trigger.indexOf('PLAYER') !== -1) {
+            script.player = params.playerIndex;
             this.target.type = 'player';
             this.target.index = params.playerIndex;
 
             this.mask |= Player.FACE_ENTITY;
             this.faceEntity = this.target.index + 32768;
         } else if (trigger.indexOf('NPC') !== -1) {
+            script.npc = params.npcIndex;
             this.target.type = 'npc';
             this.target.index = params.npcIndex;
 
@@ -1266,13 +1276,15 @@ export class Player {
             this.faceEntity = this.target.index;
         }
 
+        this.opScript = script;
+
         // try to get approachable scripts first since they can set aprange(-1) and turn into operable scripts
-        let script = ScriptProvider.getByName('[proc,test]'); // ScriptManager.get(this, trigger.replace('OP', 'AP'), on, params);
-        if (script) {
-            this.apScript = script;
-        } else {
-            this.opScript = ScriptProvider.getByName('[proc,test]'); // ScriptManager.get(this, trigger, on, params);
-        }
+        // let script = ScriptManager.get(this, trigger.replace('OP', 'AP'), on, params);
+        // if (script) {
+        //     this.apScript = script;
+        // } else {
+        //     this.opScript = ScriptManager.get(this, trigger, on, params);
+        // }
 
         // close any pending interface scripts
         this.closeModal();
@@ -1381,15 +1393,10 @@ export class Player {
                 this.loaded = true;
                 this.loading = false;
             } else if (id == ClientProt.CLIENT_CHEAT) {
-                let cheat = data.gjstr().toLowerCase();
-                let args = cheat.split(' ');
-                cheat = args.shift();
+                let command = data.gjstr().toLowerCase();
+                let args = command.split(' ');
+                command = args.shift();
 
-                let script = ScriptProvider.getByName(`[proc,${cheat}]`);
-
-                this.scriptRunner.execute(script, args, this);
-
-                return;
                 switch (command) {
                     case 'help':
                         this.sendMessage('Available commands: tele, region, anim, gfx, sound, inter, chat, settext, close, pos, npc, item, clear, clearbank, bank, herbtest, max, min, setlevel, banktest');
@@ -1823,19 +1830,26 @@ export class Player {
             } else if (id == ClientProt.IF_BUTTON) {
                 let buttonId = data.g2();
 
-                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { buttonId }, { buttonId }));
+                this.lastComSubId = buttonId;
+
+                if ((buttonId === 2461 || buttonId === 2462) && this.opScript) {
+                    // testing... resume_pausebutton isn't sent when clicking choices
+                    this.opScript.execution = ScriptState.RUNNING;
+                }
+
+                // this.executeInterface(ScriptProvider.getByName('[proc,hans]')); // ScriptManager.get(this, ClientProt[id], { buttonId }, { buttonId }));
             } else if (id == ClientProt.IF_BUTTOND) {
                 let interfaceId = data.g2();
                 let fromSlot = data.g2();
                 let toSlot = data.g2();
 
-                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { interfaceId }, { interfaceId, fromSlot, toSlot }));
+                this.executeInterface(ScriptProvider.getByName('[proc,hans]')); // ScriptManager.get(this, ClientProt[id], { interfaceId }, { interfaceId, fromSlot, toSlot }));
             } else if (id == ClientProt.IF_BUTTON1 || id == ClientProt.IF_BUTTON2 || id == ClientProt.IF_BUTTON3 || id == ClientProt.IF_BUTTON4 || id == ClientProt.IF_BUTTON5) {
                 let itemId = data.g2();
                 let slot = data.g2();
                 let interfaceId = data.g2();
 
-                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { interfaceId }, { itemId, slot, interfaceId }));
+                this.executeInterface(ScriptProvider.getByName('[proc,hans]')); // ScriptManager.get(this, ClientProt[id], { interfaceId }, { itemId, slot, interfaceId }));
             } else if (id == ClientProt.OPLOC1 || id == ClientProt.OPLOC2 || id == ClientProt.OPLOC3 || id == ClientProt.OPLOC4 || id == ClientProt.OPLOC5) {
                 let x = data.g2();
                 let z = data.g2();
@@ -1868,7 +1882,7 @@ export class Player {
                 this.lastComSubId = interfaceId;
 
                 this.closeModal();
-                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { itemId }, { itemId, slot, interfaceId }));
+                this.executeInterface(ScriptProvider.getByName('[proc,hans]')); // ScriptManager.get(this, ClientProt[id], { itemId }, { itemId, slot, interfaceId }));
             } else if (id == ClientProt.OPLOCU) {
                 let x = data.g2();
                 let z = data.g2();
@@ -1901,18 +1915,28 @@ export class Player {
                 let useInterfaceId = data.g2();
 
                 this.closeModal();
-                this.executeInterface(ScriptProvider.getByName('[proc,test]')); // ScriptManager.get(this, ClientProt[id], { onItemId, useItemId }, { onItemId, onSlot, onInterfaceId, useItemId, useSlot, useInterfaceId }));
+                this.executeInterface(ScriptProvider.getByName('[proc,hans]')); // ScriptManager.get(this, ClientProt[id], { onItemId, useItemId }, { onItemId, onSlot, onInterfaceId, useItemId, useSlot, useInterfaceId }));
             } else if (id == ClientProt.RESUME_PAUSEBUTTON) {
                 let interfaceId = data.g2();
 
                 this.resumed = true;
                 this.lastComSubId = interfaceId;
                 this.resumeInterface(true);
+
+                if (this.opScript) {
+                    // testing
+                    this.opScript.execution = ScriptState.RUNNING;
+                }
             } else if (id == ClientProt.RESUME_P_COUNTDIALOG) {
                 let count = data.g4();
 
                 this.lastInt = count;
                 this.resumeInterface();
+
+                if (this.opScript) {
+                    // testing
+                    this.opScript.execution = ScriptState.RUNNING;
+                }
             } else if (id == ClientProt.MESSAGE_PUBLIC) {
                 this.messageColor = data.g1();
                 this.messageEffect = data.g1();
@@ -2508,6 +2532,7 @@ export class Player {
     showChoices(...lines) {
         lines = lines.filter(l => l);
 
+        console.log(lines);
         if (lines.length == 2) {
             this.setInterfaceText(2461, lines[0]);
             this.setInterfaceText(2462, lines[1]);

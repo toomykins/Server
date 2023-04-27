@@ -1,0 +1,12 @@
+[proc,hans]
+// TODO: jump using @ (no clientscript restrictions)
+~multi2("branch1", "hanshello", "branch2", "hansgoodbye");
+
+// TODO: maybe implement chatnpc in runescript? what would that look like?
+// TODO: chatnpc should prepend <p,happy> instead of a separate argument
+
+[proc,hanshello]
+chatnpc("happy", "branch1");
+
+[proc,hansgoodbye]
+chatnpc("angry", "branch2");

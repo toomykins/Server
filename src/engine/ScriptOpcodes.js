@@ -23,6 +23,13 @@ const ScriptOpcodes = {
     POP_ARRAY_INT: 46,
     SWITCH: 60,
 
+    // Server opcodes
+    IF_CHATSELECT: 2000,
+    P_PAUSEBUTTON: 2001,
+    LAST_COMSUBID: 2002,
+    JUMP: 2003,
+    CHATNPC: 2004,
+
     // Math opcodes
     ADD: 4000,
     SUB: 4001,

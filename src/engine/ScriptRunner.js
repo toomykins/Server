@@ -1,6 +1,7 @@
 import ScriptOpcodes from '#engine/ScriptOpcodes.js';
 import ScriptState from '#engine/ScriptState.js';
 import ScriptProvider from '#engine/ScriptProvider.js';
+import World from './World.js';
 
 // script executor
 export default class ScriptRunner {
@@ -32,6 +33,7 @@ export default class ScriptRunner {
             let b = state.popInt();
             let a = state.popInt();
 
+            console.log(a, b);
             if (a === b) {
                 state.pc += state.intOperand;
             }
@@ -95,11 +97,22 @@ export default class ScriptRunner {
         },
 
         [ScriptOpcodes.PUSH_STRING_LOCAL]: (state) => {
-            state.pushString(state.stringLocals[state.stringOperand]);
+            state.pushString(state.stringLocals[state.intOperand]);
         },
 
         [ScriptOpcodes.POP_STRING_LOCAL]: (state) => {
-            state.stringLocals[state.stringOperand] = state.popString();
+            state.stringLocals[state.intOperand] = state.popString();
+        },
+
+        [ScriptOpcodes.JOIN_STRING]: (state) => {
+            let count = state.intOperand;
+
+            let strings = [];
+            for (let i = 0; i < count; i++) {
+                strings.push(state.popString());
+            }
+
+            state.pushString(strings.reverse().join(''));
         },
 
         [ScriptOpcodes.POP_INT_DISCARD]: (state) => {
@@ -154,6 +167,46 @@ export default class ScriptRunner {
             pc += result;
         },
 
+        // Server opcodes
+        [ScriptOpcodes.IF_CHATSELECT]: (state) => {
+            World.getPlayer(state.player).showChoices(...state.popString().split('|'));
+        },
+
+        [ScriptOpcodes.P_PAUSEBUTTON]: (state) => {
+            state.execution = ScriptState.PAUSEBUTTON;
+        },
+
+        [ScriptOpcodes.LAST_COMSUBID]: (state) => {
+            state.pushInt(World.getPlayer(state.player).lastComSubId);
+        },
+
+        [ScriptOpcodes.JUMP]: (state) => {
+            let label = state.popString();
+            let proc = ScriptProvider.getByName(`[proc,${label}]`);
+            if (!proc) {
+                throw new Error('Invalid jump label', label);
+            }
+
+            state.script = proc;
+            state.pc = -1;
+            state.frames = [];
+            state.fp = 0;
+            state.intStack = [];
+            state.isp = 0;
+            state.stringStack = [];
+            state.ssp = 0;
+            state.intLocals = [];
+            state.stringLocals = [];
+        },
+
+        [ScriptOpcodes.CHATNPC]: (state) => {
+            let text = state.popString();
+            let expression = state.popString();
+            let npc = World.getNpc(state.npc);
+            World.getPlayer(state.player).showNpcMessage(npc.id, expression, ...text.split('|'));
+            state.execution = ScriptState.PAUSEBUTTON;
+        },
+
         // Math opcodes
 
         [ScriptOpcodes.ADD]: (state) => {
@@ -191,8 +244,13 @@ export default class ScriptRunner {
         },
     };
 
-    static init(script) {
-        return new ScriptState(script);
+    static init(script, player = null, npc = null, loc = null, obj = null) {
+        let state = new ScriptState(script);
+        state.player = player;
+        state.npc = npc;
+        state.loc = loc;
+        state.obj = obj;
+        return state;
     }
 
     static execute(state, benchmark = false) {
@@ -223,7 +281,7 @@ export default class ScriptRunner {
             throw new Error(`Unknown opcode ${opcode}`);
         }
 
-        // console.log(state.script.name, state.pc, ScriptOpcodes[opcode]);
+        console.log(state.script.name, state.pc, ScriptOpcodes[opcode]);
         ScriptRunner.handlers[opcode](state);
     }
 }

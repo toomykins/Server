@@ -66,7 +66,7 @@ export default class Script {
             } else if (opcode < 100 && opcode !== ScriptOpcodes.RETURN && opcode !== ScriptOpcodes.POP_INT_DISCARD && opcode !== ScriptOpcodes.POP_STRING_DISCARD) {
                 sscript.intOperands[instr] = stream.g4s();
             } else {
-                sscript.intOperands[instr] = stream.g1b();
+                sscript.intOperands[instr] = stream.g1();
             }
 
             sscript.opcodes[instr++] = opcode;
