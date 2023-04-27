@@ -4,6 +4,7 @@
 
 [command,if_chatselect](string $options)
 [command,chatnpc](string $expression, string $text)
+[command,error](string $text)
 
 // leaks
 

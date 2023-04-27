@@ -206,6 +206,10 @@ export default class ScriptRunner {
             state.execution = ScriptState.PAUSEBUTTON;
         },
 
+        [ScriptOpcodes.ERROR]: (state) => {
+            throw new Error(state.popString());
+        },
+
         // Math opcodes
 
         [ScriptOpcodes.ADD]: (state) => {
@@ -276,12 +280,13 @@ export default class ScriptRunner {
                 ScriptRunner.executeInner(state, state.script.opcodes[++state.pc]);
             }
         } catch (err) {
-            console.error('script error:', err.message, '\n');
-            console.error(`${state.script.info.sourceFilePath}`);
+            console.error('script error:', err.message);
+            console.error(`file: ${state.script.info.sourceFilePath}`);
+            console.error();
 
             console.error('stack backtrace:');
             console.error(`\t1: ${state.script.name} - ${state.script.fileName}:${state.script.lineNumber(state.pc)}`);
-            for (let i = state.fp; i >= 0; i--) {
+            for (let i = state.fp; i > 0; i--) {
                 let frame = state.frames[i];
                 console.error(`\t${state.fp - i + 2}: ${frame.script.name} - ${frame.script.fileName}:${frame.script.lineNumber(frame.pc)}`);
             }

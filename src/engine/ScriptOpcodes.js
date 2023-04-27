@@ -29,6 +29,7 @@ const ScriptOpcodes = {
     LAST_COMSUBID: 2002,
     JUMP: 2003,
     CHATNPC: 2004,
+    ERROR: 2005,
 
     // Math opcodes
     ADD: 4000,
