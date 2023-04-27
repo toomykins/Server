@@ -1,74 +1,14 @@
+import Constants from '#cache/config/Constants.js';
 import Packet from '#util/Packet.js';
 
 export default class LocationType {
-    static dat = null;
+    static config = {};
+    static ids = [];
     static count = 0;
-    static offsets = [];
-    static cache = [];
 
-	static WALL_STRAIGHT = 0;
-	static WALL_DIAGONALCORNER = 1;
-	static WALL_L = 2;
-	static WALL_SQUARECORNER = 3;
-
-	static WALLDECOR_STRAIGHT = 4;
-	static WALLDECOR_STRAIGHT_OFFSET = 5;
-	static WALLDECOR_DIAGONAL_NOOFFSET = 6;
-	static WALLDECOR_DIAGONAL_OFFSET = 7;
-	static WALLDECOR_DIAGONAL_BOTH = 8;
-
-	static WALL_DIAGONAL = 9;
-
-	static CENTREPIECE_STRAIGHT = 10;
-	static CENTREPIECE_DIAGONAL = 11;
-
-	static ROOF_STRAIGHT = 12;
-	static ROOF_DIAGONAL_WITH_ROOFEDGE = 13;
-	static ROOF_DIAGONAL = 14;
-	static ROOF_L_CONCAVE = 15;
-	static ROOF_L_CONVEX = 16;
-	static ROOF_FLAT = 17;
-
-	static ROOFEDGE_STRAIGHT = 18;
-	static ROOFEDGE_DIAGONALCORNER = 19;
-	static ROOFEDGE_L = 20;
-	static ROOFEDGE_SQUARECORNER = 21;
-
-	static GROUNDDECOR = 22;
-
-    // reverse lookup for toJagConfig
-    static SHAPE = {
-        0: 'WALL_STRAIGHT',
-        1: 'WALL_DIAGONALCORNER',
-        2: 'WALL_L',
-        3: 'WALL_SQUARECORNER',
-        9: 'WALL_DIAGONAL',
-
-        4: 'WALLDECOR_STRAIGHT',
-        5: 'WALLDECOR_STRAIGHT_OFFSET',
-        6: 'WALLDECOR_DIAGONAL_NOOFFSET',
-        7: 'WALLDECOR_DIAGONAL_OFFSET',
-        8: 'WALLDECOR_DIAGONAL_BOTH',
-
-        10: 'CENTREPIECE_STRAIGHT',
-        11: 'CENTREPIECE_DIAGONAL',
-
-        12: 'ROOF_STRAIGHT',
-        13: 'ROOF_DIAGONAL_WITH_ROOFEDGE',
-        14: 'ROOF_DIAGONAL',
-        15: 'ROOF_L_CONCAVE',
-        16: 'ROOF_L_CONVEX',
-        17: 'ROOF_FLAT',
-
-        18: 'ROOFEDGE_STRAIGHT',
-        19: 'ROOFEDGE_DIAGONALCORNER',
-        20: 'ROOFEDGE_L',
-        21: 'ROOFEDGE_SQUARECORNER',
-
-        22: 'GROUNDDECOR'
-    };
-
+    namedId = '';
     id = -1;
+
     models = [];
     shapes = [];
     name = '';
@@ -103,135 +43,56 @@ export default class LocationType {
     zoff = 0;
     forcedecor = false;
 
-    static unpack(dat, idx, preload = false) {
-        LocationType.dat = dat;
-        LocationType.count = idx.g2();
-        LocationType.offsets = [];
-        LocationType.cache = [];
-
-        let offset = 2;
-        for (let i = 0; i < LocationType.count; i++) {
-            LocationType.offsets[i] = offset;
-            offset += idx.g2();
-        }
-
-        if (preload) {
-            for (let i = 0; i < LocationType.count; i++) {
-                LocationType.get(i);
-            }
-        }
-    }
-
-    static load(config) {
-        const dat = config.read('loc.dat');
-        const idx = config.read('loc.idx');
-
-        LocationType.unpack(dat, idx);
-    }
-
-    static pack() {
-        const dat = new Packet();
-        const idx = new Packet();
-
-        idx.p2(LocationType.count);
-        dat.p2(LocationType.count);
-
-        for (let i = 0; i < LocationType.count; i++) {
-            let locationType;
-            if (LocationType.cache[i]) {
-                locationType = LocationType.cache[i];
-            } else {
-                locationType = new LocationType(i);
-            }
-
-            const locationTypeDat = locationType.encode();
-            idx.p2(locationTypeDat.length);
-            dat.pdata(locationTypeDat);
-        }
-
-        return { dat, idx };
-    }
-
     static get(id) {
-        if (LocationType.cache[id]) {
-            return LocationType.cache[id];
-        } else {
-            return new LocationType(id);
+        if (LocationType.config[id]) {
+            return LocationType.config[id];
         }
-    }
 
-    static getByName(name) {
-        for (let i = 0; i < LocationType.count; i++) {
-            if (LocationType.get(i).name.toLowerCase() == name.toLowerCase()) {
-                return LocationType.get(i);
-            }
+        if (LocationType.ids[id]) {
+            return LocationType.config[LocationType.ids[id]];
         }
+
         return null;
     }
 
-    static find(predicate) {
-        for (let i = 0; i < LocationType.count; i++) {
-            if (predicate(LocationType.get(i))) {
-                return LocationType.get(i);
-            }
-        }
-        return null;
-    }
-
-    static filter(predicate) {
-        let filtered = [];
-
-        for (let i = 0; i < LocationType.count; i++) {
-            if (predicate(LocationType.get(i))) {
-                filtered.push(LocationType.get(i));
-            }
-        }
-
-        return filtered;
-    }
-
-    static indexOf(predicate, start = 0) {
-        for (let i = start; i < LocationType.count; i++) {
-            if (predicate(LocationType.get(i))) {
-                return i;
-            }
-        }
-
-        return -1;
-    }
-
-    static toJagConfig() {
-        let config = '';
-
-        for (let i = 0; i < LocationType.count; i++) {
-            config += LocationType.get(i).toJagConfig() + '\n';
-        }
-
-        return config;
-    }
-
-    static fromJagConfig(src) {
+    static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
 
         let loc;
         let id = 0;
         while (offset < lines.length) {
-            if (!lines[offset]) {
+            if (!lines[offset] || lines[offset].startsWith('//')) {
                 offset++;
                 continue;
             }
 
             if (lines[offset].startsWith('[')) {
-                loc = new LocationType(id, false);
+                // extract text in brackets
+                const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
+
+                loc = new LocationType();
+                loc.namedId = namedId;
+                loc.id = id;
+
                 offset++;
                 id++;
                 continue;
             }
 
             while (lines[offset] && !lines[offset].startsWith('[')) {
-                const key = lines[offset].slice(0, lines[offset].indexOf('='));
-                const value = lines[offset].slice(lines[offset].indexOf('=') + 1).replaceAll('model_', '').replaceAll('seq_', '');
+                if (!lines[offset] || lines[offset].startsWith('//')) {
+                    offset++;
+                    continue;
+                }
+
+                const parts = lines[offset].split('=');
+                const key = parts[0].trim();
+                let value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '');
+
+                if (value[0] === '^') {
+                    value = Constants.get(value);
+                }
 
                 if (key.startsWith('model')) {
                     let index = parseInt(key.slice(5)) - 1;
@@ -311,137 +172,37 @@ export default class LocationType {
                 } else if (key == 'forcedecor') {
                     loc.forcedecor = value == 'yes';
                 } else {
-                    console.log(`Unknown loc key: ${key}`);
+                    console.log(`Unrecognized loc config "${key}" in ${loc.namedId}`);
                 }
 
                 offset++;
             }
 
-            LocationType.cache[loc.id] = loc;
+            LocationType.config[loc.namedId] = loc;
+            LocationType.ids[loc.id] = loc.namedId;
         }
 
-        LocationType.count = LocationType.cache.length;
+        LocationType.count = LocationType.ids.length;
     }
 
-    constructor(id = 0, decode = true) {
-        this.id = id;
-        LocationType.cache[id] = this;
+    static pack() {
+        const dat = new Packet();
+        const idx = new Packet();
 
-        if (decode) {
-            const offset = LocationType.offsets[id];
-            if (!offset) {
-                return;
-            }
+        idx.p2(LocationType.count);
+        dat.p2(LocationType.count);
 
-            LocationType.dat.pos = offset;
-            this.#decode();
+        for (let i = 0; i < LocationType.count; i++) {
+            const loc = LocationType.config[LocationType.ids[i]];
+            const packed = loc.pack();
+            idx.p2(packed.length);
+            dat.pdata(packed);
         }
+
+        return { dat, idx };
     }
 
-    #decode() {
-        const dat = LocationType.dat;
-
-        let interactive = -1;
-        while (true) {
-            const opcode = dat.g1();
-            if (opcode == 0) {
-                break;
-            }
-
-            if (opcode == 1) {
-                const count = dat.g1();
-
-                for (let i = 0; i < count; i++) {
-                    this.models[i] = dat.g2();
-                    this.shapes[i] = dat.g1();
-                }
-            } else if (opcode == 2) {
-                this.name = dat.gjstr();
-            } else if (opcode == 3) {
-                this.desc = dat.gjstr();
-            } else if (opcode == 14) {
-                this.width = dat.g1();
-            } else if (opcode == 15) {
-                this.length = dat.g1();
-            } else if (opcode == 17) {
-                this.blockwalk = false;
-            } else if (opcode == 18) {
-                this.blockrange = false;
-            } else if (opcode == 19) {
-                interactive = dat.g1();
-                this._interactable = interactive; // so we can preserve the original value
-
-                if (interactive == 1) {
-                    this.interactable = true;
-                }
-            } else if (opcode == 21) {
-                this.hillskew = true;
-            } else if (opcode == 22) {
-                this.sharelight = true;
-            } else if (opcode == 23) {
-                this.occlude = true;
-            } else if (opcode == 24) {
-                this.anim = dat.g2();
-
-                if (this.anim == 65535) {
-                    this.anim = -1;
-                }
-            } else if (opcode == 25) {
-                this.disposeAlpha = true;
-            } else if (opcode == 28) {
-                this.walloff = dat.g1();
-            } else if (opcode == 29) {
-                this.ambient = dat.g1b();
-            } else if (opcode == 39) {
-                this.contrast = dat.g1b();
-            } else if (opcode >= 30 && opcode < 35) {
-                this.ops[opcode - 30] = dat.gjstr();
-            } else if (opcode == 40) {
-                const count = dat.g1();
-
-                for (let i = 0; i < count; i++) {
-                    this.recol_s[i] = dat.g2();
-                    this.recol_d[i] = dat.g2();
-                }
-            } else if (opcode == 60) {
-                this.mapfunction = dat.g2();
-            } else if (opcode == 62) {
-                this.mirror = true;
-            } else if (opcode == 64) {
-                this.active = false;
-            } else if (opcode == 65) {
-                this.resizex = dat.g2();
-            } else if (opcode == 66) {
-                this.resizey = dat.g2();
-            } else if (opcode == 67) {
-                this.resizez = dat.g2();
-            } else if (opcode == 68) {
-                this.mapscene = dat.g2();
-            } else if (opcode == 69) {
-                this.blocksides = dat.g1();
-            } else if (opcode == 70) {
-                this.xoff = dat.g2s();
-            } else if (opcode == 71) {
-                this.yoff = dat.g2s();
-            } else if (opcode == 72) {
-                this.zoff = dat.g2s();
-            } else if (opcode == 73) {
-                this.forcedecor = true;
-            } else {
-                console.error('Unknown LocationType opcode:', opcode);
-            }
-        }
-
-        if (interactive == -1) {
-            this.interactable = false;
-
-            if ((this.shapes.length && this.shapes[0] == LocationType.CENTREPIECE_STRAIGHT) || this.ops.length) {
-                this.interactable = true;
-            }
-        }
-    }
-
-    encode() {
+    pack() {
         const dat = new Packet();
 
         if (this.models.length) {
@@ -602,135 +363,117 @@ export default class LocationType {
         return dat;
     }
 
-    toJagConfig() {
-        let config = `[loc_${this.id}]\n`;
+    static unpack(dat) {
+        let count = dat.g2();
 
-        if (this.name) {
-            config += `name=${this.name}\n`;
-        }
+        for (let i = 0; i < count; i++) {
+            let loc = new LocationType();
+            loc.namedId = `loc_${i}`;
+            loc.id = i;
 
-        if (this.desc) {
-            config += `desc=${this.desc}\n`;
-        }
+            let interactive = -1;
+            while (true) {
+                const code = dat.g1();
+                if (code == 0) {
+                    break;
+                }
 
-        for (let i = 0; i < this.models.length; ++i) {
-            if (this.shapes[i] == LocationType.CENTREPIECE_STRAIGHT) {
-                // this is the default
-                config += `model${i + 1}=model_${this.models[i]}\n`;
-            } else {
-                config += `model${i + 1}=model_${this.models[i]},^${LocationType.SHAPE[this.shapes[i]]}\n`;
-            }
-        }
+                if (code == 1) {
+                    const count = dat.g1();
 
-        if (this.width != 1) {
-            config += `width=${this.width}\n`;
-        }
+                    for (let i = 0; i < count; i++) {
+                        this.models[i] = dat.g2();
+                        this.shapes[i] = dat.g1();
+                    }
+                } else if (code == 2) {
+                    this.name = dat.gjstr();
+                } else if (code == 3) {
+                    this.desc = dat.gjstr();
+                } else if (code == 14) {
+                    this.width = dat.g1();
+                } else if (code == 15) {
+                    this.length = dat.g1();
+                } else if (code == 17) {
+                    this.blockwalk = false;
+                } else if (code == 18) {
+                    this.blockrange = false;
+                } else if (code == 19) {
+                    interactive = dat.g1();
+                    this._interactable = interactive; // so we can preserve the original value
 
-        if (this.length != 1) {
-            config += `length=${this.length}\n`;
-        }
+                    if (interactive == 1) {
+                        this.interactable = true;
+                    }
+                } else if (code == 21) {
+                    this.hillskew = true;
+                } else if (code == 22) {
+                    this.sharelight = true;
+                } else if (code == 23) {
+                    this.occlude = true;
+                } else if (code == 24) {
+                    this.anim = dat.g2();
 
-        if (!this.blockwalk) {
-            config += `blockwalk=no\n`;
-        }
+                    if (this.anim == 65535) {
+                        this.anim = -1;
+                    }
+                } else if (code == 25) {
+                    this.disposeAlpha = true;
+                } else if (code == 28) {
+                    this.walloff = dat.g1();
+                } else if (code == 29) {
+                    this.ambient = dat.g1b();
+                } else if (code == 39) {
+                    this.contrast = dat.g1b();
+                } else if (code >= 30 && code < 35) {
+                    this.ops[code - 30] = dat.gjstr();
+                } else if (code == 40) {
+                    const count = dat.g1();
 
-        if (!this.blockrange) {
-            config += `blockrange=no\n`;
-        }
-
-        if (this._interactable != -1) {
-            config += `interactable=${this._interactable}\n`;
-        }
-
-        if (this.hillskew) {
-            config += `hillskew=yes\n`;
-        }
-
-        if (this.occlude) {
-            config += `occlude=yes\n`;
-        }
-
-        if (this.anim != -1) {
-            config += `anim=seq_${this.anim}\n`;
-        }
-
-        if (this.disposeAlpha) {
-            config += `disposealpha=yes\n`;
-        }
-
-        if (this.sharelight) {
-            config += `sharelight=yes\n`;
-        }
-
-        if (this.ambient != 0) {
-            config += `ambient=${this.ambient}\n`;
-        }
-
-        if (this.contrast != 0) {
-            config += `contrast=${this.contrast}\n`;
-        }
-
-        if (this.mapfunction != -1) {
-            config += `mapfunction=${this.mapfunction}\n`;
-        }
-
-        if (this.mapscene != -1) {
-            config += `mapscene=${this.mapscene}\n`;
-        }
-
-        if (this.mirror) {
-            config += `mirror=yes\n`;
-        }
-
-        if (!this.active) {
-            config += `active=no\n`;
-        }
-
-        if (this.resizex != 128) {
-            config += `resizex=${this.resizex}\n`;
-        }
-
-        if (this.resizey != 128) {
-            config += `resizey=${this.resizey}\n`;
-        }
-
-        if (this.resizez != 128) {
-            config += `resizez=${this.resizez}\n`;
-        }
-
-        if (this.blocksides != 0) {
-            config += `blocksides=${this.blocksides}\n`;
-        }
-
-        if (this.xoff != 0) {
-            config += `xoff=${this.xoff}\n`;
-        }
-
-        if (this.yoff != 0) {
-            config += `yoff=${this.yoff}\n`;
-        }
-
-        if (this.zoff != 0) {
-            config += `zoff=${this.zoff}\n`;
-        }
-
-        if (this.forcedecor) {
-            config += `forcedecor=yes\n`;
-        }
-
-        for (let i = 0; i < this.recol_s.length; ++i) {
-            config += `recol${i + 1}s=${this.recol_s[i]}\n`;
-            config += `recol${i + 1}d=${this.recol_d[i]}\n`;
-        }
-
-        for (let i = 0; i < this.ops.length; ++i) {
-            if (this.ops[i] == null) {
-                continue;
+                    for (let i = 0; i < count; i++) {
+                        this.recol_s[i] = dat.g2();
+                        this.recol_d[i] = dat.g2();
+                    }
+                } else if (code == 60) {
+                    this.mapfunction = dat.g2();
+                } else if (code == 62) {
+                    this.mirror = true;
+                } else if (code == 64) {
+                    this.active = false;
+                } else if (code == 65) {
+                    this.resizex = dat.g2();
+                } else if (code == 66) {
+                    this.resizey = dat.g2();
+                } else if (code == 67) {
+                    this.resizez = dat.g2();
+                } else if (code == 68) {
+                    this.mapscene = dat.g2();
+                } else if (code == 69) {
+                    this.blocksides = dat.g1();
+                } else if (code == 70) {
+                    this.xoff = dat.g2s();
+                } else if (code == 71) {
+                    this.yoff = dat.g2s();
+                } else if (code == 72) {
+                    this.zoff = dat.g2s();
+                } else if (code == 73) {
+                    this.forcedecor = true;
+                } else {
+                    console.log(`Unrecognised loc config code ${code} in ${loc.namedId}`);
+                }
             }
 
-            config += `op${i + 1}=${this.ops[i]}\n`;
+            if (interactive == -1) {
+                this.interactable = false;
+
+                if ((this.shapes.length && this.shapes[0] == LocationType.CENTREPIECE_STRAIGHT) || this.ops.length) {
+                    this.interactable = true;
+                }
+            }
+
+            LocationType.config[loc.namedId] = loc;
+            LocationType.ids[loc.id] = loc.namedId;
         }
 
-        return config;
+        LocationType.count = LocationType.ids.length;
     }
 }

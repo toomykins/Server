@@ -25,12 +25,12 @@ console.time('Loaded cache');
 Constants.fromDef(fs.readFileSync('data/src/constants.def', 'utf8'));
 
 FloorType.fromDef(fs.readFileSync('data/src/flo.def', 'utf8'));
-IdentityKitType.fromJagConfig(fs.readFileSync('data/src/idk.def', 'utf8'));
-LocationType.fromJagConfig(fs.readFileSync('data/src/loc.def', 'utf8'));
-NpcType.fromJagConfig(fs.readFileSync('data/src/npc.def', 'utf8'));
-ObjectType.fromJagConfig(fs.readFileSync('data/src/obj.def', 'utf8'));
-SpotAnimationType.fromJagConfig(fs.readFileSync('data/src/spotanim.def', 'utf8'));
-VarpType.fromJagConfig(fs.readFileSync('data/src/varp.def', 'utf8'));
+IdentityKitType.fromDef(fs.readFileSync('data/src/idk.def', 'utf8'));
+LocationType.fromDef(fs.readFileSync('data/src/loc.def', 'utf8'));
+NpcType.fromDef(fs.readFileSync('data/src/npc.def', 'utf8'));
+ObjectType.fromDef(fs.readFileSync('data/src/obj.def', 'utf8'));
+SpotAnimationType.fromDef(fs.readFileSync('data/src/spotanim.def', 'utf8'));
+VarpType.fromDef(fs.readFileSync('data/src/varp.def', 'utf8'));
 
 Component.load(Jagfile.fromFile('data/cache/interface'));
 console.timeEnd('Loaded cache');

@@ -7,8 +7,8 @@ export default class IdentityKitType {
     static count = 0;
 
     namedId = '';
-
     id = -1;
+
     bodypart = -1;
     disable = false;
     models = [];
@@ -46,7 +46,7 @@ export default class IdentityKitType {
         return null;
     }
 
-    static fromJagConfig(src) {
+    static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
 

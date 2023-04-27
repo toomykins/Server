@@ -7,6 +7,7 @@ export default class FloorType {
 
     namedId = '';
     id = -1;
+
     rgb = 0;
     texture = -1;
     opcode3 = false;
@@ -138,7 +139,7 @@ export default class FloorType {
             flo.id = i;
 
             while (true) {
-                let code = dat.g1();
+                const code = dat.g1();
                 if (code == 0) {
                     break;
                 }
