@@ -717,7 +717,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=2
 
-[knight_of_ardougne]
+[knight_of_ardougne2]
 name=Knight of Ardougne
 desc=To protect and serve the populace of Ardougne.
 model1=model_232
@@ -4858,7 +4858,7 @@ recol5d=0
 op1=Talk-to
 vislevel=0
 
-[merlin]
+[merlin2]
 name=Merlin
 desc=A powerful Wizard of the Knights of the Round Table.
 model1=model_214
@@ -22657,7 +22657,7 @@ resizez=180
 op5=Attack
 vislevel=6
 
-[chompy_bir2]
+[chompy_bird2]
 name=Chompy bird
 desc=A once boisterous bird, closer to being an ogre delicacy.
 model1=model_3445

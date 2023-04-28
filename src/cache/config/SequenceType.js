@@ -54,6 +54,10 @@ export default class SequenceType {
                 // extract text in brackets
                 const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
 
+                if (SequenceType.config[namedId]) {
+                    console.error(`Duplicate seq config: ${namedId}`);
+                }
+
                 config = new SequenceType();
                 config.namedId = namedId;
                 config.id = id;
@@ -71,7 +75,7 @@ export default class SequenceType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].trim().replaceAll('animframe_', '').replaceAll('label_', '').replaceAll('obj_', '');
+                let value = parts[1].replaceAll('animframe_', '').replaceAll('label_', '').replaceAll('obj_', '');
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');

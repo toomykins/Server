@@ -49,6 +49,10 @@ export default class FloorType {
                 // extract text in brackets
                 const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
 
+                if (FloorType.config[namedId]) {
+                    console.error(`Duplicate flo config: ${namedId}`);
+                }
+
                 config = new FloorType();
                 config.namedId = namedId;
                 config.id = id;
@@ -66,7 +70,7 @@ export default class FloorType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].trim().replaceAll('texture_', '');
+                let value = parts[1].replaceAll('texture_', '');
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');

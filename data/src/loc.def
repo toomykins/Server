@@ -125,7 +125,7 @@ model1=model_1411
 length=2
 blockrange=no
 hillskew=yes
-active=no
+shadow=no
 op1=Climb-over
 
 [loc_14]
@@ -727,7 +727,7 @@ model1=model_2214,^wall_straight
 model2=model_2215,^wall_diagonal
 blockrange=no
 mapscene=22
-active=no
+shadow=no
 
 [loc_86]
 name=Lever bracket
@@ -3663,7 +3663,7 @@ length=2
 blockrange=no
 hillskew=yes
 mapscene=25
-active=no
+shadow=no
 
 [loc_474]
 name=Rockslide
@@ -3672,7 +3672,7 @@ model1=model_821
 width=2
 length=2
 blockrange=no
-active=no
+shadow=no
 
 [loc_475]
 model1=model_773,^grounddecor
@@ -3737,7 +3737,7 @@ length=2
 blockrange=no
 hillskew=yes
 mapscene=12
-active=no
+shadow=no
 recol1s=6689
 recol1d=10262
 
@@ -3750,7 +3750,7 @@ length=2
 blockrange=no
 hillskew=yes
 mapscene=12
-active=no
+shadow=no
 recol1s=6689
 recol1d=10262
 
@@ -3787,7 +3787,7 @@ length=2
 blockrange=no
 hillskew=yes
 mapscene=12
-active=no
+shadow=no
 recol1s=6689
 recol1d=61
 
@@ -3800,7 +3800,7 @@ length=2
 blockrange=no
 hillskew=yes
 mapscene=12
-active=no
+shadow=no
 recol1s=6689
 recol1d=61
 
@@ -3997,7 +3997,7 @@ length=2
 blockrange=no
 hillskew=yes
 mapscene=12
-active=no
+shadow=no
 recol1s=6689
 recol1d=119
 
@@ -4009,7 +4009,7 @@ width=2
 length=2
 blockrange=no
 hillskew=yes
-active=no
+shadow=no
 recol1s=6689
 recol1d=119
 
@@ -4088,7 +4088,7 @@ length=2
 blockrange=no
 hillskew=yes
 mapscene=12
-active=no
+shadow=no
 recol1s=6689
 recol1d=7056
 
@@ -4100,7 +4100,7 @@ width=2
 length=2
 blockrange=no
 hillskew=yes
-active=no
+shadow=no
 recol1s=6689
 recol1d=7056
 
@@ -4114,7 +4114,7 @@ hillskew=yes
 anim=seq_524
 ambient=25
 contrast=25
-active=no
+shadow=no
 
 [loc_522]
 model1=model_2330
@@ -4124,7 +4124,7 @@ hillskew=yes
 anim=seq_524
 ambient=25
 contrast=25
-active=no
+shadow=no
 resizex=64
 resizey=64
 resizez=64
@@ -4354,7 +4354,7 @@ length=2
 blockrange=no
 hillskew=yes
 mapscene=12
-active=no
+shadow=no
 recol1s=6689
 recol1d=7952
 
@@ -4366,7 +4366,7 @@ width=2
 length=2
 blockrange=no
 hillskew=yes
-active=no
+shadow=no
 recol1s=6689
 recol1d=7952
 
@@ -5282,7 +5282,7 @@ name=Hole
 desc=A hole.
 model1=model_1464
 sharelight=yes
-active=no
+shadow=no
 
 [loc_697]
 name=Animal skull
@@ -5385,7 +5385,7 @@ anim=seq_476
 disposealpha=yes
 ambient=100
 contrast=100
-active=no
+shadow=no
 
 [loc_716]
 model1=model_2266,^wall_diagonal
@@ -5393,7 +5393,7 @@ anim=seq_476
 disposealpha=yes
 ambient=100
 contrast=100
-active=no
+shadow=no
 
 [loc_717]
 model1=model_1072,^grounddecor
@@ -5462,7 +5462,7 @@ anim=seq_473
 disposealpha=yes
 ambient=100
 contrast=100
-active=no
+shadow=no
 
 [loc_726]
 model1=model_1526,^grounddecor
@@ -5511,7 +5511,7 @@ anim=seq_493
 disposealpha=yes
 ambient=50
 contrast=25
-active=no
+shadow=no
 
 [loc_732]
 model1=model_2298
@@ -5521,7 +5521,7 @@ anim=seq_494
 disposealpha=yes
 ambient=50
 contrast=25
-active=no
+shadow=no
 
 [loc_733]
 name=Web
@@ -5688,7 +5688,7 @@ model1=model_2175,^grounddecor
 active=no
 hillskew=yes
 sharelight=yes
-active=no
+shadow=no
 recol1s=5400
 recol1d=16
 recol2s=5660
@@ -5703,7 +5703,7 @@ model1=model_2148,^grounddecor
 active=no
 hillskew=yes
 sharelight=yes
-active=no
+shadow=no
 recol1s=5400
 recol1d=16
 recol2s=5660
@@ -5718,7 +5718,7 @@ model1=model_2150,^grounddecor
 active=no
 hillskew=yes
 sharelight=yes
-active=no
+shadow=no
 recol1s=5400
 recol1d=16
 recol2s=5660
@@ -5734,7 +5734,7 @@ active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
-active=no
+shadow=no
 recol1s=5400
 recol1d=16
 recol2s=5660
@@ -5749,7 +5749,7 @@ model1=model_2159,^grounddecor
 active=no
 hillskew=yes
 sharelight=yes
-active=no
+shadow=no
 recol1s=5400
 recol1d=16
 recol2s=5660
@@ -5765,7 +5765,7 @@ active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
-active=no
+shadow=no
 recol1s=5400
 recol1d=16
 recol2s=5660
@@ -8308,7 +8308,7 @@ blockwalk=no
 blockrange=no
 hillskew=yes
 ambient=50
-active=no
+shadow=no
 
 [loc_1176]
 name=Waterlily
@@ -8318,7 +8318,7 @@ blockwalk=no
 blockrange=no
 hillskew=yes
 ambient=50
-active=no
+shadow=no
 
 [loc_1177]
 name=Waterlily
@@ -8328,7 +8328,7 @@ blockwalk=no
 blockrange=no
 hillskew=yes
 ambient=50
-active=no
+shadow=no
 
 [loc_1178]
 name=Heather
@@ -13240,11 +13240,11 @@ mirror=yes
 recol1s=6
 recol1d=18
 
-[magicwall]
+[loc_1796]
 name=magicwall
 model1=model_1739
 length=2
-active=no
+shadow=no
 
 [loc_1797]
 name=Waterfall rocks
@@ -14525,7 +14525,7 @@ name=Rock
 desc=Looks rock solid.
 model1=model_1805
 blockwalk=no
-active=no
+shadow=no
 op1=Swim to
 
 [loc_1997]
@@ -14533,7 +14533,7 @@ name=Rock
 desc=Looks rock solid.
 model1=model_1773
 blockwalk=no
-active=no
+shadow=no
 op1=Swim to
 
 [loc_1998]
@@ -14541,7 +14541,7 @@ name=Rope
 desc=Rope
 model1=model_1760
 blockwalk=no
-active=no
+shadow=no
 
 [loc_1999]
 name=Crate
@@ -14695,7 +14695,7 @@ anim=seq_522
 disposealpha=yes
 ambient=80
 contrast=80
-active=no
+shadow=no
 
 [loc_2017]
 model1=model_2329
@@ -14706,7 +14706,7 @@ anim=seq_522
 disposealpha=yes
 ambient=80
 contrast=80
-active=no
+shadow=no
 resizex=200
 resizey=200
 resizez=200
@@ -14718,7 +14718,7 @@ anim=seq_522
 disposealpha=yes
 ambient=80
 contrast=80
-active=no
+shadow=no
 resizex=64
 resizey=64
 resizez=64
@@ -20255,7 +20255,7 @@ anim=seq_525
 disposealpha=yes
 ambient=100
 contrast=100
-active=no
+shadow=no
 op1=Bait
 op3=hidden
 
@@ -20805,7 +20805,7 @@ desc=Tracks in the sand.
 model1=model_1744
 width=3
 active=yes
-active=no
+shadow=no
 op1=Look at
 op2=Search
 
@@ -20815,7 +20815,7 @@ desc=Tracks in the sand.
 model1=model_1744
 width=3
 active=yes
-active=no
+shadow=no
 op1=Look at
 op2=Search
 
@@ -22646,7 +22646,7 @@ name=Sacred water
 desc=Sparkling sacred water straight from the source.
 model1=model_1491
 hillskew=yes
-active=no
+shadow=no
 op1=Look
 
 [loc_2942]
@@ -25511,7 +25511,7 @@ mirror=yes
 recol1s=5916
 recol1d=7952
 
-[upass_bridge+support]
+[loc_3261]
 name=upass_bridge+support
 model1=model_756
 hillskew=yes
@@ -25994,7 +25994,7 @@ sharelight=yes
 recol1s=61
 recol1d=7952
 
-[upass_bridge_corner]
+[loc_3325]
 name=upass_bridge_corner
 model1=model_688
 width=2
@@ -26040,7 +26040,7 @@ model1=model_761,^wall_straight
 sharelight=yes
 mirror=yes
 
-[upass_templedoor_top]
+[loc_3332]
 name=upass_templedoor_top
 model1=model_765
 length=4
@@ -26178,7 +26178,7 @@ recol1d=7952
 recol2s=5916
 recol2d=8076
 
-[iban_temple_throne_top]
+[loc_3349]
 name=iban_temple_throne_top
 model1=model_702
 width=2
@@ -26259,7 +26259,7 @@ recol5d=57
 recol6s=10560
 recol6d=57
 
-[ibantomb_burnt_right]
+[loc_3356]
 name=ibantomb_burnt_right
 model1=model_708
 width=4

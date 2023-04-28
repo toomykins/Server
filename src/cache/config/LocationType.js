@@ -76,6 +76,10 @@ export default class LocationType {
                 // extract text in brackets
                 const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
 
+                if (LocationType.config[namedId]) {
+                    console.error(`Duplicate loc config: ${namedId}`);
+                }
+
                 config = new LocationType();
                 config.namedId = namedId;
                 config.id = id;
@@ -93,7 +97,7 @@ export default class LocationType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '');
+                let value = parts.slice(1).join('=').replaceAll('model_', '').replaceAll('seq_', '');
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');
@@ -117,10 +121,10 @@ export default class LocationType {
 
                     if (typeof value === 'string' && value.indexOf(',') !== -1) {
                         const parts = value.split(',');
-                        config.models[index] = parts[0];
-                        config.shapes[index] = parts[1];
+                        config.models[index] = parseInt(parts[0]);
+                        config.shapes[index] = parseInt(parts[1]);
                     } else {
-                        config.models[index] = value;
+                        config.models[index] = parseInt(value);
                         config.shapes[index] = 10;
                     }
                 } else if (key == 'name') {
@@ -136,7 +140,7 @@ export default class LocationType {
                 } else if (key == 'blockrange') {
                     config.blockrange = value == 'yes';
                 } else if (key == 'active') {
-                    config.active = parseInt(value);
+                    config.active = value == 'yes' ? 1 : 0;
                 } else if (key == 'hillskew') {
                     config.hillskew = value == 'yes';
                 } else if (key == 'sharelight') {

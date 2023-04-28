@@ -54,6 +54,10 @@ export default class SpotAnimationType {
                 // extract text in brackets
                 const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
 
+                if (SpotAnimationType.config[namedId]) {
+                    console.error(`Duplicate spotanim config: ${namedId}`);
+                }
+
                 config = new SpotAnimationType();
                 config.namedId = namedId;
                 config.id = id;
@@ -71,7 +75,7 @@ export default class SpotAnimationType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '');
+                let value = parts[1].replaceAll('model_', '').replaceAll('seq_', '');
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');

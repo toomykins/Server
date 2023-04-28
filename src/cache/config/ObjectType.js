@@ -132,7 +132,17 @@ export default class ObjectType {
                     ObjectType.ids[config.id] = config.namedId;
                 }
 
-                config = new ObjectType(id, false);
+                // extract text in brackets
+                const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
+
+                if (ObjectType.config[namedId]) {
+                    console.error(`Duplicate obj config: ${namedId}`);
+                }
+
+                config = new ObjectType();
+                config.namedId = namedId;
+                config.id = id;
+
                 offset++;
                 id++;
                 continue;
@@ -146,7 +156,7 @@ export default class ObjectType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '').replaceAll('obj_', '');
+                let value = parts[1].replaceAll('model_', '').replaceAll('seq_', '').replaceAll('obj_', '');
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');

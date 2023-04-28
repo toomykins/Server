@@ -23,50 +23,50 @@ VarpType.fromDef(fs.readFileSync('data/src/varp.def', 'utf8'));
 let config = new Jagfile();
 
 let seq = SequenceType.pack();
-seq.dat.toFile('dump/seq.dat');
-seq.idx.toFile('dump/seq.idx');
+// seq.dat.toFile('dump/seq.dat');
+// seq.idx.toFile('dump/seq.idx');
 config.write('seq.dat', seq.dat);
 config.write('seq.idx', seq.idx);
 
 let loc = LocationType.pack();
-loc.dat.toFile('dump/loc.dat');
-loc.idx.toFile('dump/loc.idx');
+// loc.dat.toFile('dump/loc.dat');
+// loc.idx.toFile('dump/loc.idx');
 config.write('loc.dat', loc.dat);
 config.write('loc.idx', loc.idx);
 
 let flo = FloorType.pack();
-flo.dat.toFile('dump/flo.dat');
-flo.idx.toFile('dump/flo.idx');
+// flo.dat.toFile('dump/flo.dat');
+// flo.idx.toFile('dump/flo.idx');
 config.write('flo.dat', flo.dat);
 config.write('flo.idx', flo.idx);
 
 let spotanim = SpotAnimationType.pack();
-spotanim.dat.toFile('dump/spotanim.dat');
-spotanim.idx.toFile('dump/spotanim.idx');
+// spotanim.dat.toFile('dump/spotanim.dat');
+// spotanim.idx.toFile('dump/spotanim.idx');
 config.write('spotanim.dat', spotanim.dat.data);
 config.write('spotanim.idx', spotanim.idx.data);
 
 let obj = ObjectType.pack();
-obj.dat.toFile('dump/obj.dat');
-obj.idx.toFile('dump/obj.idx');
+// obj.dat.toFile('dump/obj.dat');
+// obj.idx.toFile('dump/obj.idx');
 config.write('obj.dat', obj.dat.data);
 config.write('obj.idx', obj.idx.data);
 
 let npc = NpcType.pack();
-npc.dat.toFile('dump/npc.dat');
-npc.idx.toFile('dump/npc.idx');
+// npc.dat.toFile('dump/npc.dat');
+// npc.idx.toFile('dump/npc.idx');
 config.write('npc.dat', npc.dat.data);
 config.write('npc.idx', npc.idx.data);
 
 let idk = IdentityKitType.pack();
-idk.dat.toFile('dump/idk.dat');
-idk.idx.toFile('dump/idk.idx');
+// idk.dat.toFile('dump/idk.dat');
+// idk.idx.toFile('dump/idk.idx');
 config.write('idk.dat', idk.dat.data);
 config.write('idk.idx', idk.idx.data);
 
 let varp = VarpType.pack();
-varp.dat.toFile('dump/varp.dat');
-varp.idx.toFile('dump/varp.idx');
+// varp.dat.toFile('dump/varp.dat');
+// varp.idx.toFile('dump/varp.idx');
 config.write('varp.dat', varp.dat.data);
 config.write('varp.idx', varp.idx.data);
 
