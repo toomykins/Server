@@ -230,7 +230,7 @@ export default class Packet {
     }
 
     g2s() {
-        return (this.data[this.pos++] << 8) | this.data[this.pos++];
+        return ((this.data[this.pos++] << 8) | this.data[this.pos++]) << 24 >> 24;
     }
 
     g3() {
@@ -362,6 +362,10 @@ export default class Packet {
     }
 
     pdata(src, advance = true) {
+        if (!src) {
+            return;
+        }
+
         this.ensure(src.length);
 
         if (src instanceof Packet) {

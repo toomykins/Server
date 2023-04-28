@@ -1,0 +1,17 @@
+[if_3822]
+type=^iftype_layer
+width=512
+height=334
+
+[if_3822:com_3823]
+type=^iftype_inventory
+x=16
+y=8
+width=4
+height=7
+invxof=10
+invyof=4
+invoption1=Value
+invoption2=Sell 1
+invoption3=Sell 5
+invoption4=Sell 10

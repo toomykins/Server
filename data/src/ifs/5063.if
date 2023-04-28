@@ -1,0 +1,19 @@
+[if_5063]
+type=^iftype_layer
+width=512
+height=334
+
+[if_5063:com_5064]
+type=^iftype_inventory
+x=16
+y=8
+width=4
+height=7
+invdummy=yes
+invxof=10
+invyof=4
+invoption1=Store 1
+invoption2=Store 5
+invoption3=Store10
+invoption4=StoreAll
+invoption5=Store X

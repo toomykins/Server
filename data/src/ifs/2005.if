@@ -1,0 +1,19 @@
+[if_2005]
+type=^iftype_layer
+width=512
+height=334
+
+[if_2005:com_2006]
+type=^iftype_inventory
+x=16
+y=8
+width=4
+height=7
+invdummy=yes
+invxof=10
+invyof=4
+invoption1=Deposit 1
+invoption2=Deposit 5
+invoption3=Deposit 10
+invoption4=Deposit All
+invoption5=Deposit X

@@ -1,0 +1,16 @@
+[if_3213]
+type=^iftype_layer
+width=512
+height=334
+
+[if_3213:com_3214]
+type=^iftype_inventory
+x=16
+y=8
+width=4
+height=7
+invdummy=yes
+invoptions=yes
+invusable=yes
+invxof=10
+invyof=4

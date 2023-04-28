@@ -1,0 +1,18 @@
+[if_6573]
+type=^iftype_layer
+width=512
+height=334
+
+[if_6573:com_6574]
+type=^iftype_inventory
+x=16
+y=8
+width=4
+height=7
+invxof=10
+invyof=4
+invoption1=Stake 1
+invoption2=Stake 5
+invoption3=Stake 10
+invoption4=Stake All
+invoption5=Stake X

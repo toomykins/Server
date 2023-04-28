@@ -1,5 +1,26 @@
 // these constants get exposed in configs and runescript
 
+// stats
+attack=0
+defence=1
+strength=2
+hitpoints=3
+ranged=4
+prayer=5
+magic=6
+cooking=7
+woodcutting=8
+fletching=9
+fishing=10
+firemaking=11
+crafting=12
+smithing=13
+mining=14
+herblore=15
+agility=16
+thieving=17
+runecraft=20
+
 // identitykit parts
 bodypart_male_hair=0
 bodypart_male_jaw=1
@@ -40,3 +61,57 @@ roofedge_diagonalcorner=19
 roofedge_l=20
 roofedge_squarecorner=21
 grounddecor=22
+
+// if types
+iftype_layer=0
+// not sure what the real name for this is:
+iftype_inventory=2
+iftype_rectangle=3
+iftype_text=4
+iftype_graphic=5
+iftype_model=6
+// not sure what the real name for this is:
+iftype_inventory_text=7
+
+// if buttontypes
+if_button=1
+if_targetbutton=2
+if_closebutton=3
+if_togglebutton=4
+if_selectbutton=5
+if_pausebutton=6
+
+// if script comparators
+op_neq=1
+op_geq=2
+op_leq=3
+op_eq=4
+
+// if script opcodes
+// {stat}
+load_stat_level=1
+// {stat}
+load_stat_base_level=2
+// {stat}
+load_stat_xp=3
+// {inv com} {obj}
+load_inv_count=4
+// {varp}
+load_var=5
+// {stat}
+load_stat_xp_remaining=6
+load_op7=7
+load_combat_level=8
+load_total_level=9
+// {inv com} {obj}
+load_inv_contains=10
+load_runenergy=11
+load_runweight=12
+// {varp} {bit: 0..31}
+load_bool=13
+
+// if fonts
+p11=0
+p12=1
+b12=2
+q8=3
