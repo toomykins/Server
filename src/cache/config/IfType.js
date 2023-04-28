@@ -551,7 +551,7 @@ export default class IfType {
         def += `height=${config.height}\n`;
 
         if (typeof config.overlayer !== 'undefined') {
-            def += `overlayer=${config.overlayer}\n`;
+            def += `overlayer=com_${config.overlayer}\n`;
         }
 
         for (let i = 0; i < config.script.length; i++) {
