@@ -1,6 +1,8 @@
 import Packet from '#util/Packet.js';
 import _ from 'lodash';
 import Constants from './Constants.js';
+import PackOrder from './PackOrder.js';
+import SequenceType from './SequenceType.js';
 
 function getWearPosIndex(pos) {
     if (pos === 'hat') {
@@ -113,6 +115,14 @@ export default class ObjectType {
         return null;
     }
 
+    static getId(namedId) {
+        if (ObjectType.config[namedId]) {
+            return ObjectType.config[namedId].id;
+        }
+
+        return -1;
+    }
+
     static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
@@ -156,7 +166,7 @@ export default class ObjectType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].replaceAll('model_', '').replaceAll('seq_', '').replaceAll('obj_', '');
+                let value = parts[1];
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');
@@ -171,7 +181,7 @@ export default class ObjectType {
                 }
 
                 if (key == 'model') {
-                    config.model = parseInt(value);
+                    config.model = parseInt(PackOrder.get(value));
                 } else if (key == 'name') {
                     config.name = value;
                 } else if (key == 'desc') {
@@ -195,23 +205,23 @@ export default class ObjectType {
                 } else if (key == 'manwear') {
                     if (value.indexOf(',') !== -1) {
                         const parts = value.split(',');
-                        config.manwear = parseInt(parts[0]);
+                        config.manwear = parseInt(PackOrder.get(parts[0]));
                         config.manwearOffsetY = parseInt(parts[1]);
                     } else {
-                        config.manwear = parseInt(value);
+                        config.manwear = parseInt(PackOrder.get(value));
                     }
                 } else if (key == 'manwear2') {
                     config.manwear2 = parseInt(value);
                 } else if (key == 'womanwear') {
                     if (value.indexOf(',') !== -1) {
                         const parts = value.split(',');
-                        config.womanwear = parseInt(parts[0]);
+                        config.womanwear = parseInt(PackOrder.get(parts[0]));
                         config.womanwearOffsetY = parseInt(parts[1]);
                     } else {
-                        config.womanwear = parseInt(value);
+                        config.womanwear = parseInt(PackOrder.get(value));
                     }
                 } else if (key == 'womanwear2') {
-                    config.womanwear2 = parseInt(value);
+                    config.womanwear2 = parseInt(PackOrder.get(value));
                 } else if (key.startsWith('op')) {
                     let index = parseInt(key.charAt(2)) - 1;
                     config.ops[index] = value;
@@ -228,23 +238,23 @@ export default class ObjectType {
                         config.recol_d[index] = parseInt(value);
                     }
                 } else if (key == 'manwear3') {
-                    config.manwear3 = parseInt(value);
+                    config.manwear3 = parseInt(PackOrder.get(value));
                 } else if (key == 'womanwear3') {
-                    config.womanwear3 = parseInt(value);
+                    config.womanwear3 = parseInt(PackOrder.get(value));
                 } else if (key == 'manhead') {
-                    config.manhead = parseInt(value);
+                    config.manhead = parseInt(PackOrder.get(value));
                 } else if (key == 'womanhead') {
-                    config.womanhead = parseInt(value);
+                    config.womanhead = parseInt(PackOrder.get(value));
                 } else if (key == 'manhead2') {
-                    config.manhead2 = parseInt(value);
+                    config.manhead2 = parseInt(PackOrder.get(value));
                 } else if (key == 'womanhead2') {
-                    config.womanhead2 = parseInt(value);
+                    config.womanhead2 = parseInt(PackOrder.get(value));
                 } else if (key == '2dzan') {
                     config.zan2d = parseInt(value);
                 } else if (key == 'certlink') {
-                    config.certlink = parseInt(value);
+                    config.certlink = value;
                 } else if (key == 'certtemplate') {
-                    config.certtemplate = parseInt(value);
+                    config.certtemplate = value;
                 } else if (key.startsWith('count')) {
                     const parts = value.split(',');
                     let index = parseInt(key.charAt(5)) - 1;
@@ -290,7 +300,7 @@ export default class ObjectType {
                     }
                     config.param[k] = v;
                 } else if (key.startsWith('readyanim')) {
-                    config.readyanim = Number(value);
+                    config.readyanim = SequenceType.getId(value);
                 } else {
                     console.log(`Unrecognized obj config "${key}" in ${config.namedId}`);
                 }
@@ -335,10 +345,10 @@ export default class ObjectType {
 
         if (this.certlink != -1 && this.certtemplate != -1) {
             dat.p1(97);
-            dat.p2(this.certlink);
+            dat.p2(ObjectType.getId(this.certlink));
 
             dat.p1(98);
-            dat.p2(this.certtemplate);
+            dat.p2(ObjectType.getId(this.certtemplate));
 
             dat.p1(0);
             dat.pos = 0;

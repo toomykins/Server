@@ -27,6 +27,14 @@ export default class FloorType {
         return null;
     }
 
+    static getId(namedId) {
+        if (FloorType.config[namedId]) {
+            return FloorType.config[namedId].id;
+        }
+
+        return -1;
+    }
+
     static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;

@@ -32,6 +32,14 @@ export default class SpotAnimationType {
         return null;
     }
 
+    static getId(namedId) {
+        if (SpotAnimationType.config[namedId]) {
+            return SpotAnimationType.config[namedId].id;
+        }
+
+        return -1;
+    }
+
     static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;

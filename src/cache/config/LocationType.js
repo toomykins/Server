@@ -1,5 +1,7 @@
 import Constants from '#cache/config/Constants.js';
 import Packet from '#util/Packet.js';
+import PackOrder from './PackOrder.js';
+import SequenceType from './SequenceType.js';
 
 export default class LocationType {
     static config = {};
@@ -54,6 +56,14 @@ export default class LocationType {
         return null;
     }
 
+    static getId(namedId) {
+        if (LocationType.config[namedId]) {
+            return LocationType.config[namedId].id;
+        }
+
+        return -1;
+    }
+
     static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
@@ -97,7 +107,7 @@ export default class LocationType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts.slice(1).join('=').replaceAll('model_', '').replaceAll('seq_', '');
+                let value = parts.slice(1).join('='); // re-join because value may contain '='
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');
@@ -121,10 +131,10 @@ export default class LocationType {
 
                     if (typeof value === 'string' && value.indexOf(',') !== -1) {
                         const parts = value.split(',');
-                        config.models[index] = parseInt(parts[0]);
+                        config.models[index] = parseInt(PackOrder.get(parts[0]));
                         config.shapes[index] = parseInt(parts[1]);
                     } else {
-                        config.models[index] = parseInt(value);
+                        config.models[index] = parseInt(PackOrder.get(value));
                         config.shapes[index] = 10;
                     }
                 } else if (key == 'name') {
@@ -148,7 +158,7 @@ export default class LocationType {
                 } else if (key == 'occlude') {
                     config.occlude = value == 'yes';
                 } else if (key == 'anim') {
-                    config.anim = parseInt(value);
+                    config.anim = SequenceType.getId(value);
                 } else if (key == 'disposealpha') {
                     config.disposeAlpha = value == 'yes';
                 } else if (key == 'walloff') {

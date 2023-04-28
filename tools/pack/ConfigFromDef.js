@@ -9,8 +9,13 @@ import SpotAnimationType from '#cache/config/SpotAnimationType.js';
 import VarpType from '#cache/config/VarpType.js';
 import SequenceType from '#cache/config/SequenceType.js';
 import Constants from '#cache/config/Constants.js';
+import IfType from '#cache/config/IfType.js';
+import PackOrder from '#cache/config/PackOrder.js';
 
-Constants.fromDef(fs.readFileSync('data/src/constants.def', 'utf8'));
+Constants.load(fs.readFileSync('data/src/constants.def', 'utf8'));
+PackOrder.load(fs.readFileSync('data/src/model.order', 'utf8'));
+PackOrder.load(fs.readFileSync('data/src/if.order', 'utf8'));
+
 SequenceType.fromDef(fs.readFileSync('data/src/seq.def', 'utf8'));
 LocationType.fromDef(fs.readFileSync('data/src/loc.def', 'utf8'));
 FloorType.fromDef(fs.readFileSync('data/src/flo.def', 'utf8'));
@@ -71,3 +76,11 @@ config.write('varp.dat', varp.dat.data);
 config.write('varp.idx', varp.idx.data);
 
 config.pack().toFile('data/cache/config');
+
+// ----
+
+IfType.loadDirectory('data/src/ifs');
+
+let interfaces = new Jagfile();
+
+interfaces.write('data', IfType.pack());

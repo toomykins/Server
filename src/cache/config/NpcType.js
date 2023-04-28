@@ -1,5 +1,7 @@
 import Packet from '#util/Packet.js';
 import Constants from './Constants.js';
+import PackOrder from './PackOrder.js';
+import SequenceType from './SequenceType.js';
 
 export default class NpcType {
     static config = {};
@@ -51,6 +53,14 @@ export default class NpcType {
         return null;
     }
 
+    static getId(namedId) {
+        if (NpcType.config[namedId]) {
+            return NpcType.config[namedId].id;
+        }
+
+        return -1;
+    }
+
     static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
@@ -94,7 +104,7 @@ export default class NpcType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].replaceAll('model_', '').replaceAll('seq_', '');
+                let value = parts[1];
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');
@@ -110,7 +120,7 @@ export default class NpcType {
 
                 if (key.startsWith('model')) {
                     let index = parseInt(key.slice(5)) - 1;
-                    config.models[index] = parseInt(value);
+                    config.models[index] = parseInt(PackOrder.get(value));
                 } else if (key == 'name') {
                     config.name = value;
                 } else if (key == 'desc') {
@@ -118,17 +128,17 @@ export default class NpcType {
                 } else if (key == 'size') {
                     config.size = parseInt(value);
                 } else if (key == 'readyanim') {
-                    config.readyanim = parseInt(value);
+                    config.readyanim = SequenceType.getId(value);
                 } else if (key == 'walkanim') {
-                    config.walkanim = parseInt(value);
+                    config.walkanim = SequenceType.getId(value);
                 } else if (key == 'disposealpha') {
                     config.disposeAlpha = value == 'yes';
                 } else if (key == 'walkanim_b') {
-                    config.walkanim_b = parseInt(value);
+                    config.walkanim_b = SequenceType.getId(value);
                 } else if (key == 'walkanim_r') {
-                    config.walkanim_r = parseInt(value);
+                    config.walkanim_r = SequenceType.getId(value);
                 } else if (key == 'walkanim_l') {
-                    config.walkanim_l = parseInt(value);
+                    config.walkanim_l = SequenceType.getId(value);
                 } else if (key.startsWith('op')) {
                     let index = parseInt(key.charAt(2)) - 1;
                     config.ops[index] = value;
@@ -143,7 +153,7 @@ export default class NpcType {
                     }
                 } else if (key.startsWith('head')) {
                     let index = parseInt(key.slice(4)) - 1;
-                    config.heads[index] = parseInt(value);
+                    config.heads[index] = parseInt(PackOrder.get(value));
                 } else if (key == 'visonmap') {
                     config.visonmap = value == 'yes';
                 } else if (key == 'vislevel') {

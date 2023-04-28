@@ -1,4 +1,4 @@
-export default class Constants {
+export default class PackOrder {
     static config = {};
 
     static load(src) {
@@ -18,7 +18,7 @@ export default class Constants {
                 value = parseInt(value);
             }
 
-            Constants.config[key] = value;
+            PackOrder.config[key] = value;
         }
     }
 
@@ -27,6 +27,6 @@ export default class Constants {
             name = name.substring(1);
         }
 
-        return Constants.config[name];
+        return PackOrder.config[name];
     }
 }

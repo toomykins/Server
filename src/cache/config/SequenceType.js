@@ -32,6 +32,14 @@ export default class SequenceType {
         return null;
     }
 
+    static getId(namedId) {
+        if (SequenceType.config[namedId]) {
+            return SequenceType.config[namedId].id;
+        }
+
+        return -1;
+    }
+
     static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;

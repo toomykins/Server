@@ -34,6 +34,14 @@ export default class VarpType {
         return null;
     }
 
+    static getId(namedId) {
+        if (VarpType.config[namedId]) {
+            return VarpType.config[namedId].id;
+        }
+
+        return -1;
+    }
+
     static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;

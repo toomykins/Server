@@ -1,5 +1,6 @@
 import Constants from '#cache/config/Constants.js';
 import Packet from '#util/Packet.js';
+import PackOrder from './PackOrder.js';
 
 export default class IdentityKitType {
     static config = {};
@@ -26,6 +27,14 @@ export default class IdentityKitType {
         }
 
         return null;
+    }
+
+    static getId(namedId) {
+        if (IdentityKitType.config[namedId]) {
+            return IdentityKitType.config[namedId].id;
+        }
+
+        return -1;
     }
 
     static fromDef(src) {
@@ -71,7 +80,7 @@ export default class IdentityKitType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].replaceAll('model_', '').replaceAll('seq_', '');
+                let value = parts[1];
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');
@@ -93,7 +102,7 @@ export default class IdentityKitType {
                     config.models = config.models || [];
 
                     let number = key.substring('model'.length) - 1;
-                    config.models[number] = parseInt(value);
+                    config.models[number] = parseInt(PackOrder.get(value));
                 } else if (key.startsWith('recol')) {
                     config.recol_s = config.recol_s || [];
                     config.recol_d = config.recol_d || [];
@@ -109,7 +118,7 @@ export default class IdentityKitType {
                     config.heads = config.heads || [];
 
                     let number = key.substring('head'.length) - 1;
-                    config.heads[number] = parseInt(value);
+                    config.heads[number] = parseInt(PackOrder.get(value));
                 } else {
                     console.log(`Unrecognized idk config "${key}" in ${config.namedId}`);
                 }

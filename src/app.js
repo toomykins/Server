@@ -20,9 +20,12 @@ import { crcTable, loadCrcTable } from '#util/GlobalCache.js';
 import Jagfile from '#cache/Jagfile.js';
 
 import Constants from '#cache/config/Constants.js';
+import PackOrder from '#cache/config/PackOrder.js';
 
 console.time('Loaded cache');
-Constants.fromDef(fs.readFileSync('data/src/constants.def', 'utf8'));
+Constants.load(fs.readFileSync('data/src/constants.def', 'utf8'));
+PackOrder.load(fs.readFileSync('data/src/model.order', 'utf8'));
+PackOrder.load(fs.readFileSync('data/src/if.order', 'utf8'));
 
 FloorType.fromDef(fs.readFileSync('data/src/flo.def', 'utf8'));
 IdentityKitType.fromDef(fs.readFileSync('data/src/idk.def', 'utf8'));
