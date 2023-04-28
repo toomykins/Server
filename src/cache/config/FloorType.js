@@ -70,7 +70,7 @@ export default class FloorType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].replaceAll('texture_', '');
+                let value = parts[1];
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');

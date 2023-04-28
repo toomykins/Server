@@ -843,11 +843,9 @@ export default class IfType {
     }
 }
 
-// import fs from 'fs';
-
-let data = Jagfile.fromFile('data/cache/interface').read('data', true);
-IfType.unpack(data);
-IfType.dumpToDirectory('data/src/ifs');
+// let data = Jagfile.fromFile('data/cache/interface').read('data', true);
+// IfType.unpack(data);
+// IfType.dumpToDirectory('data/src/ifs');
 
 // fs.writeFileSync('dump/test', JSON.stringify(IfType.ids, null, 2));
 

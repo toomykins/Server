@@ -16,15 +16,15 @@ colour=0x888888
 
 [woodenfloor]
 name=woodenfloor
-texture=texture_3
+texture=^planks
 
 [water]
 name=water
-texture=texture_1
+texture=^water
 
 [gungywater]
 name=gungywater
-texture=texture_25
+texture=^gungywater
 
 [greyroof]
 name=greyroof
@@ -44,7 +44,7 @@ colour=0x222222
 
 [pebblefloor]
 name=pebblefloor
-texture=texture_46
+texture=^pebblefloor
 
 [redfloor]
 name=redfloor
@@ -72,11 +72,11 @@ colour=0x0000CC
 
 [lava]
 name=lava
-texture=texture_31
+texture=^lava
 
 [marble]
 name=marble
-texture=texture_15
+texture=^marble
 
 [sandfloor]
 name=sandfloor
@@ -92,7 +92,7 @@ colour=0x6D5B2B
 
 [cliff_textured]
 name=cliff_textured
-texture=texture_47
+texture=^rockwall
 
 [sand_cliff]
 name=sand_cliff
@@ -104,11 +104,11 @@ colour=0x827944
 
 [oldbrick]
 name=oldbrick
-texture=texture_23
+texture=^mossybricks
 
 [brick]
 name=brick
-texture=texture_2
+texture=^wall
 
 [grass]
 name=grass
@@ -124,7 +124,7 @@ colour=0x654D0B
 
 [stone_texture]
 name=stone_texture
-texture=texture_11
+texture=^mossy
 
 [ice_overlay_blue]
 name=ice_overlay_blue
@@ -136,7 +136,7 @@ colour=0x505050
 
 [woodenfloor_bridge]
 name=woodenfloor_bridge
-texture=texture_3
+texture=^planks
 
 [mud5_overlay]
 name=mud5_overlay
@@ -152,7 +152,7 @@ colour=0x557799
 
 [water_fountain]
 name=water_fountain
-texture=texture_17
+texture=^fountain
 
 [bluefloor2]
 name=bluefloor2
@@ -178,17 +178,17 @@ occlude=no
 
 [woodenfloor_no_occlude]
 name=woodenfloor_no_occlude
-texture=texture_3
+texture=^planks
 occlude=no
 
 [oldbrick_no_occlude]
 name=oldbrick_no_occlude
-texture=texture_23
+texture=^mossybricks
 occlude=no
 
 [brick_no_occlude]
 name=brick_no_occlude
-texture=texture_2
+texture=^wall
 occlude=no
 
 [grassland]
