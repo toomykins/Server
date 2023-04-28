@@ -1,5 +1,6 @@
 import Packet from '#util/Packet.js';
 import _ from 'lodash';
+import Constants from './Constants.js';
 
 function getWearPosIndex(pos) {
     if (pos === 'hat') {

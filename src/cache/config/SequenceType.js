@@ -9,12 +9,11 @@ export default class SequenceType {
     namedId = '';
     id = -1;
 
-    framecount = 0;
-    primaryFrames = [];
-    secondaryFrames = [];
-    frameDelay = [];
+    frames = [];
+    iframes = [];
+    delay = [];
     replayoff = -1;
-    labelGroups = [];
+    walkmerge = [];
     stretches = false;
     priority = 5;
     mainhand = -1;
@@ -72,7 +71,7 @@ export default class SequenceType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                let value = parts[1].trim();
+                let value = parts[1].trim().replaceAll('animframe_', '').replaceAll('label_', '').replaceAll('obj_', '');
 
                 while (value.indexOf('^') !== -1) {
                     const index = value.indexOf('^');
@@ -86,35 +85,33 @@ export default class SequenceType {
                     }
                 }
 
-                if (key === 'framecount') {
-                    config.framecount = parseInt(value);
-                    config.primaryFrames = new Array(config.framecount);
-                    config.primaryFrames.fill(-1);
-                    config.secondaryFrames = new Array(config.framecount);
-                    config.secondaryFrames.fill(-1);
-                    config.frameDelay = new Array(config.framecount);
-                    config.frameDelay.fill(0);
-                } else if (key.startsWith('frame_b')) {
-                    let index = parseInt(key.substring('frame_b'.length)) - 1;
-                    config.secondaryFrames[index] = parseInt(value);
-                } else if (key.startsWith('framedel')) {
-                    let index = parseInt(key.substring('framedel'.length)) - 1;
-                    config.frameDelay[index] = parseInt(value);
-                } else if (key.startsWith('frame')) {
+                if (key.startsWith('frame')) {
                     let index = parseInt(key.substring('frame'.length)) - 1;
-                    config.primaryFrames[index] = parseInt(value);
+                    config.frames[index] = parseInt(value);
+                } else if (key.startsWith('delay')) {
+                    let index = parseInt(key.substring('delay'.length)) - 1;
+                    config.delay[index] = parseInt(value);
+                } else if (key.startsWith('iframe')) {
+                    let index = parseInt(key.substring('iframe'.length)) - 1;
+                    config.iframes[index] = parseInt(value);
                 } else if (key === 'replayoff') {
                     config.replayoff = parseInt(value);
-                } else if (key.startsWith('label')) {
-                    let index = parseInt(key.substring('label'.length)) - 1;
-                    config.labelGroups[index] = parseInt(value);
+                } else if (key.startsWith('walkmerge')) {
+                    let index = parseInt(key.substring('walkmerge'.length)) - 1;
+                    config.walkmerge[index] = parseInt(value);
                 } else if (key === 'stretches') {
                     config.stretches = value === 'yes';
                 } else if (key === 'priority') {
                     config.priority = parseInt(value);
                 } else if (key === 'mainhand') {
+                    if (value === 'hide') {
+                        value = 0;
+                    }
                     config.mainhand = parseInt(value);
                 } else if (key === 'offhand') {
+                    if (value === 'hide') {
+                        value = 0;
+                    }
                     config.offhand = parseInt(value);
                 } else if (key === 'replaycount') {
                     config.replaycount = parseInt(value);
@@ -152,14 +149,14 @@ export default class SequenceType {
     pack() {
         let dat = new Packet();
 
-        if (this.framecount) {
+        if (this.frames.length) {
             dat.p1(1);
-            dat.p1(this.framecount);
+            dat.p1(this.frames.length);
 
-            for (let i = 0; i < this.framecount; i++) {
-                dat.p2(this.primaryFrames[i]);
-                dat.p2(this.secondaryFrames[i]);
-                dat.p2(this.frameDelay[i]);
+            for (let i = 0; i < this.frames.length; i++) {
+                dat.p2(this.frames[i]);
+                dat.p2(typeof this.iframes[i] !== 'undefined' ? this.iframes[i] : 0);
+                dat.p2(typeof this.delay[i] !== 'undefined' ? this.delay[i] : 0);
             }
         }
 
@@ -168,12 +165,12 @@ export default class SequenceType {
             dat.p2(this.replayoff);
         }
 
-        if (this.labelGroups.length) {
+        if (this.walkmerge.length) {
             dat.p1(3);
-            dat.p1(this.labelGroups.length);
+            dat.p1(this.walkmerge.length);
 
-            for (let i = 0; i < this.labelGroups.length; i++) {
-                dat.p1(this.labelGroups[i]);
+            for (let i = 0; i < this.walkmerge.length; i++) {
+                dat.p1(this.walkmerge[i]);
             }
         }
 
@@ -220,20 +217,20 @@ export default class SequenceType {
                 }
 
                 if (code === 1) {
-                    config.framecount = dat.g1();
+                    let framecount = dat.g1();
 
-                    config.primaryFrames = new Array(config.framecount);
-                    config.secondaryFrames = new Array(config.framecount);
-                    config.frameDelay = new Array(config.framecount);
+                    for (let i = 0; i < framecount; i++) {
+                        config.frames[i] = dat.g2();
+                        config.iframes[i] = dat.g2();
 
-                    for (let i = 0; i < config.framecount; i++) {
-                        config.primaryFrames[i] = dat.g2();
-                        config.secondaryFrames[i] = dat.g2();
-                        if (config.secondaryFrames[i] === 65535) {
-                            config.secondaryFrames[i] = -1;
+                        if (config.iframes[i] === 65535) {
+                            delete config.iframes[i];
                         }
 
-                        config.frameDelay[i] = dat.g2();
+                        config.delay[i] = dat.g2();
+                        if (config.delay[i] === 0) {
+                            delete config.delay[i];
+                        }
                     }
                 } else if (code === 2) {
                     config.replayoff = dat.g2();
@@ -241,7 +238,7 @@ export default class SequenceType {
                     let count = dat.g1();
 
                     for (let i = 0; i < count; i++) {
-                        config.labelGroups[i] = dat.g1();
+                        config.walkmerge[i] = dat.g1();
                     }
                 } else if (code === 4) {
                     config.stretches = true;
