@@ -17,7 +17,7 @@ export default class LocationType {
     length = 1;
     blockwalk = true;
     blockrange = true;
-    interactable = -1;
+    active = -1;
     hillskew = false;
     sharelight = false;
     occlude = false;
@@ -31,7 +31,7 @@ export default class LocationType {
     recol_d = [];
     mapfunction = -1;
     mirror = false;
-    active = true;
+    shadow = true;
     resizex = 128;
     resizey = 128;
     resizez = 128;
@@ -135,8 +135,8 @@ export default class LocationType {
                     config.blockwalk = value == 'yes';
                 } else if (key == 'blockrange') {
                     config.blockrange = value == 'yes';
-                } else if (key == 'interactable') {
-                    config.interactable = parseInt(value);
+                } else if (key == 'active') {
+                    config.active = parseInt(value);
                 } else if (key == 'hillskew') {
                     config.hillskew = value == 'yes';
                 } else if (key == 'sharelight') {
@@ -169,8 +169,8 @@ export default class LocationType {
                     config.mapfunction = parseInt(value);
                 } else if (key == 'mirror') {
                     config.mirror = value == 'yes';
-                } else if (key == 'active') {
-                    config.active = value == 'yes';
+                } else if (key == 'shadow') {
+                    config.shadow = value == 'yes';
                 } else if (key == 'resizex') {
                     config.resizex = parseInt(value);
                 } else if (key == 'resizey') {
@@ -261,9 +261,9 @@ export default class LocationType {
             dat.p1(18);
         }
 
-        if (this.interactable != -1) {
+        if (this.active != -1) {
             dat.p1(19);
-            dat.p1(this.interactable);
+            dat.p1(this.active);
         }
 
         if (this.hillskew) {
@@ -328,7 +328,7 @@ export default class LocationType {
             dat.p1(62);
         }
 
-        if (!this.active) {
+        if (!this.shadow) {
             dat.p1(64);
         }
 
@@ -415,7 +415,7 @@ export default class LocationType {
                 } else if (code == 18) {
                     config.blockrange = false;
                 } else if (code == 19) {
-                    config.interactable = dat.g1();
+                    config.active = dat.g1();
                 } else if (code == 21) {
                     config.hillskew = true;
                 } else if (code == 22) {
@@ -450,7 +450,7 @@ export default class LocationType {
                 } else if (code == 62) {
                     config.mirror = true;
                 } else if (code == 64) {
-                    config.active = false;
+                    config.shadow = false;
                 } else if (code == 65) {
                     config.resizex = dat.g2();
                 } else if (code == 66) {

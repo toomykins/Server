@@ -26,7 +26,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -41,7 +41,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -98,7 +98,7 @@ op1=Pick-up
 name=Ladder
 desc=I can climb down this.
 model1=model_1215
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -106,7 +106,7 @@ op1=Climb-down
 name=Ladder
 desc=I can climb up this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -213,7 +213,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -234,7 +234,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -245,7 +245,7 @@ op1=Open
 name=Clock spindle
 desc=Seems to be some kind of clock part.
 model1=model_1793
-interactable=1
+active=yes
 recol1s=41905
 recol1d=960
 
@@ -253,7 +253,7 @@ recol1d=960
 name=Clock spindle
 desc=Seems to be some kind of clock part.
 model1=model_1793
-interactable=1
+active=yes
 recol1s=41905
 recol1d=0
 
@@ -261,7 +261,7 @@ recol1d=0
 name=Clock spindle
 desc=Seems to be some kind of clock part.
 model1=model_1793
-interactable=1
+active=yes
 recol1s=41905
 recol1d=127
 
@@ -269,13 +269,13 @@ recol1d=127
 name=Clock spindle
 desc=Seems to be some kind of clock part.
 model1=model_1793
-interactable=1
+active=yes
 
 [loc_29]
 name=Clock spindle
 desc=Seems to be some kind of clock part.
 model1=model_1793
-interactable=1
+active=yes
 recol1s=41905
 recol1d=960
 
@@ -283,7 +283,7 @@ recol1d=960
 name=Clock spindle
 desc=Seems to be some kind of clock part.
 model1=model_1793
-interactable=1
+active=yes
 recol1s=41905
 recol1d=0
 
@@ -291,7 +291,7 @@ recol1d=0
 name=Clock spindle
 desc=Seems to be some kind of clock part.
 model1=model_1793
-interactable=1
+active=yes
 recol1s=41905
 recol1d=127
 
@@ -299,55 +299,55 @@ recol1d=127
 name=Clock spindle
 desc=Seems to be some kind of clock part.
 model1=model_1793
-interactable=1
+active=yes
 
 [loc_33]
 name=Lever
 desc=Yup, definitely a lever.
 model1=model_2077,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_34]
 name=Lever
 desc=Yup, definitely a lever.
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_35]
 name=Lever
 desc=Yup, definitely a lever.
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_36]
 name=Lever
 desc=Yup, definitely a lever.
 model1=model_2077,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_37]
 name=Gate
 desc=Stops people walking past.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_38]
 name=Gate
 desc=Stops people walking past.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_39]
 name=Gate
 desc=Stops people walking past.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 op1=Go-through
 
 [loc_40]
@@ -355,7 +355,7 @@ name=Food trough
 desc=Animals have no table manners.
 model1=model_1540
 width=2
-interactable=1
+active=yes
 
 [loc_41]
 name=Wall Pipe
@@ -398,7 +398,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 
 [loc_48]
@@ -407,7 +407,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -417,7 +417,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 
 [loc_50]
 name=Gate
@@ -425,7 +425,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 
 [loc_51]
@@ -505,7 +505,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -515,7 +515,7 @@ op1=Open
 [loc_60]
 name=Ladder
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -524,7 +524,7 @@ name=Chaos altar
 desc=A shrine to evil.
 model1=model_1216
 width=2
-interactable=1
+active=yes
 op1=Pray-at
 op2=Check
 
@@ -534,20 +534,20 @@ desc=Can I see something inside...?
 model1=model_1747
 width=2
 length=2
-interactable=1
+active=yes
 
 [loc_63]
 name=Crate
 desc=Used for storage.
 model1=model_2143
-interactable=1
+active=yes
 op2=Hide-in
 
 [loc_64]
 name=Crate
 desc=Used for storage.
 model1=model_2143
-interactable=1
+active=yes
 op2=Hide-in
 
 [loc_65]
@@ -586,21 +586,21 @@ op1=Climb-out
 name=Crate
 desc=Used for storage.
 model1=model_2143
-interactable=1
+active=yes
 op2=Check
 
 [loc_68]
 name=Beehive
 desc=Where bees live.
 model1=model_1505
-interactable=1
+active=yes
 op1=Take-from
 
 [loc_69]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 sharelight=yes
 op1=Cross
 
@@ -608,7 +608,7 @@ op1=Cross
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 sharelight=yes
 op1=Cross
 
@@ -631,14 +631,14 @@ op2=Knock-at
 name=Large door
 desc=Securely fastened shut.
 model1=model_639,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_74]
 name=Large door
 desc=Securely fastened shut.
 model1=model_639,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -661,14 +661,14 @@ op2=Close
 name=Door
 desc=Securely fastened shut.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 
 [loc_78]
 name=Door
 desc=Securely fastened shut.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 
 [loc_79]
 name=Prison Door
@@ -692,7 +692,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -707,7 +707,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -733,18 +733,18 @@ active=no
 name=Lever bracket
 desc=Seems very old...
 model1=model_2092,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_87]
 name=Lever
 desc=I guess you pull it...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_88]
 model1=model_2077,^walldecor_straight
-interactable=0
+active=no
 
 [loc_89]
 name=Gate
@@ -752,7 +752,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_90]
@@ -761,7 +761,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -769,7 +769,7 @@ op1=Open
 name=Lever
 desc=I don't like the look of this!
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 op2=Search for traps
 
@@ -781,7 +781,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -796,7 +796,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -809,7 +809,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_95]
@@ -818,7 +818,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -828,7 +828,7 @@ desc=A dark flight of stairs.
 model1=model_1176
 width=2
 length=3
-interactable=1
+active=yes
 recol1s=49
 recol1d=8
 recol2s=37
@@ -841,7 +841,7 @@ op1=Climb-up
 model1=model_1268
 width=2
 length=2
-interactable=0
+active=no
 recol1s=49
 recol1d=8
 recol2s=37
@@ -854,7 +854,7 @@ name=Stairs
 model1=model_1211
 width=2
 length=3
-interactable=1
+active=yes
 recol1s=49
 recol1d=8
 recol2s=37
@@ -871,7 +871,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -885,7 +885,7 @@ model1=model_1205,^grounddecor
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -897,7 +897,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=4
 recol2s=24
@@ -1183,7 +1183,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -1223,7 +1223,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -1238,7 +1238,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -1253,7 +1253,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -1268,7 +1268,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -1283,7 +1283,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -1298,7 +1298,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -1313,7 +1313,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -1328,7 +1328,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -1343,7 +1343,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -1358,7 +1358,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -1369,7 +1369,7 @@ op1=Open
 name=Lever A
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 op2=Inspect
 
@@ -1377,7 +1377,7 @@ op2=Inspect
 name=Lever B
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 op2=Inspect
 
@@ -1385,7 +1385,7 @@ op2=Inspect
 name=Lever C
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 op2=Inspect
 
@@ -1393,7 +1393,7 @@ op2=Inspect
 name=Lever D
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 op2=Inspect
 
@@ -1401,7 +1401,7 @@ op2=Inspect
 name=Lever E
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 op2=Inspect
 
@@ -1409,7 +1409,7 @@ op2=Inspect
 name=Lever F
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 op2=Inspect
 
@@ -1470,7 +1470,7 @@ recol2d=9098
 name=Wall
 desc=This wall looks odd...
 model1=model_1764
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 recol2s=24
@@ -1480,7 +1480,7 @@ recol2d=16532
 name=Wall
 desc=This wall looks odd...
 model1=model_1764
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 recol2s=24
@@ -1490,7 +1490,7 @@ recol2d=16532
 name=Lever
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_161]
@@ -1526,7 +1526,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 
 [loc_167]
@@ -1535,7 +1535,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -1673,7 +1673,7 @@ desc=Fly Gnome Air.
 model1=model_1323
 width=4
 length=4
-interactable=1
+active=yes
 
 [loc_188]
 name=Crashed glider
@@ -1681,14 +1681,14 @@ desc=Probably pilot error.
 model1=model_1329
 width=4
 length=4
-interactable=1
+active=yes
 
 [loc_189]
 name=Blurberry bar
 desc=The Blurberry bar - cocktails extraordinaire!
 model1=model_1333
 length=3
-interactable=1
+active=yes
 
 [loc_190]
 name=Gate
@@ -1696,20 +1696,20 @@ desc=A large gate in the gnome style.
 model1=model_1321
 width=5
 length=2
-interactable=1
+active=yes
 op1=Open
 
 [loc_191]
 model1=model_1319
 width=2
 length=2
-interactable=0
+active=no
 
 [loc_192]
 model1=model_1319
 width=2
 length=2
-interactable=0
+active=no
 mirror=yes
 
 [loc_193]
@@ -1722,7 +1722,7 @@ desc=The entrance to the cave.
 model1=model_732
 width=4
 length=4
-interactable=1
+active=yes
 blocksides=7
 op1=Enter
 
@@ -1730,7 +1730,7 @@ op1=Enter
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 blocksides=11
 op1=Climb-up
@@ -1877,12 +1877,12 @@ width=8
 [loc_219]
 model1=model_1848
 width=4
-interactable=0
+active=no
 
 [loc_220]
 model1=model_1848
 width=4
-interactable=0
+active=no
 mirror=yes
 
 [loc_221]
@@ -1901,12 +1901,12 @@ mirror=yes
 [loc_223]
 model1=model_1889
 width=4
-interactable=0
+active=no
 
 [loc_224]
 model1=model_1889
 width=4
-interactable=0
+active=no
 mirror=yes
 
 [loc_225]
@@ -1968,58 +1968,58 @@ mirror=yes
 
 [loc_234]
 model1=model_1846
-interactable=0
+active=no
 sharelight=yes
 
 [loc_235]
 model1=model_1864
-interactable=0
+active=no
 sharelight=yes
 
 [loc_236]
 model1=model_1864
-interactable=0
+active=no
 sharelight=yes
 mirror=yes
 
 [loc_237]
 model1=model_1874
-interactable=0
+active=no
 sharelight=yes
 
 [loc_238]
 model1=model_1850
-interactable=0
+active=no
 sharelight=yes
 
 [loc_239]
 model1=model_1908
-interactable=0
+active=no
 
 [loc_240]
 model1=model_1867
-interactable=0
+active=no
 
 [loc_241]
 model1=model_1891
-interactable=0
+active=no
 sharelight=yes
 
 [loc_242]
 model1=model_1843
 width=2
-interactable=0
+active=no
 sharelight=yes
 
 [loc_243]
 model1=model_1849
 width=2
-interactable=0
+active=no
 sharelight=yes
 
 [loc_244]
 model1=model_1910
-interactable=0
+active=no
 sharelight=yes
 
 [loc_245]
@@ -2041,12 +2041,12 @@ op1=Climb-down
 [loc_247]
 model1=model_1875
 blockwalk=no
-interactable=0
+active=no
 
 [loc_248]
 model1=model_1876
 blockwalk=no
-interactable=0
+active=no
 
 [loc_249]
 model1=model_1852,^wall_straight
@@ -2058,11 +2058,11 @@ sharelight=yes
 
 [loc_250]
 model1=model_1883
-interactable=0
+active=no
 
 [loc_251]
 model1=model_1902
-interactable=0
+active=no
 
 [loc_252]
 name=Ship's wheel
@@ -2071,7 +2071,7 @@ model1=model_1890
 
 [loc_253]
 model1=model_1861
-interactable=0
+active=no
 
 [loc_254]
 name=Figurehead
@@ -2088,23 +2088,23 @@ op1=Operate
 [loc_256]
 model1=model_1899
 width=8
-interactable=0
+active=no
 
 [loc_257]
 model1=model_1888
 width=2
-interactable=0
+active=no
 
 [loc_258]
 model1=model_1888
 width=2
-interactable=0
+active=no
 mirror=yes
 
 [loc_259]
 model1=model_1833
 width=2
-interactable=0
+active=no
 
 [loc_260]
 name=Figurehead
@@ -2119,7 +2119,7 @@ model1=model_1868
 
 [loc_262]
 model1=model_1869
-interactable=0
+active=no
 
 [loc_263]
 name=Mast
@@ -2227,34 +2227,34 @@ model1=model_1834,^walldecor_straight
 
 [loc_281]
 model1=model_1845
-interactable=0
+active=no
 sharelight=yes
 
 [loc_282]
 model1=model_1906
-interactable=0
+active=no
 sharelight=yes
 
 [loc_283]
 model1=model_1903
-interactable=0
+active=no
 sharelight=yes
 
 [loc_284]
 model1=model_1903
-interactable=0
+active=no
 sharelight=yes
 mirror=yes
 
 [loc_285]
 model1=model_1879
-interactable=0
+active=no
 sharelight=yes
 
 [loc_286]
 model1=model_1857
 width=2
-interactable=0
+active=no
 sharelight=yes
 
 [loc_287]
@@ -2266,21 +2266,21 @@ op1=Climb-down
 [loc_288]
 model1=model_2332
 length=3
-interactable=0
+active=no
 anim=seq_526
 disposealpha=yes
 
 [loc_289]
 model1=model_2333
 length=3
-interactable=0
+active=no
 anim=seq_527
 disposealpha=yes
 
 [loc_290]
 model1=model_2334
 length=3
-interactable=0
+active=no
 anim=seq_527
 disposealpha=yes
 
@@ -2306,7 +2306,7 @@ forcedecor=yes
 
 [loc_295]
 model1=model_1895
-interactable=0
+active=no
 
 [loc_296]
 name=Plough
@@ -2540,7 +2540,7 @@ model1=model_1544
 [loc_328]
 model1=model_1519
 width=2
-interactable=0
+active=no
 
 [loc_329]
 model1=model_1124,^grounddecor
@@ -3523,14 +3523,14 @@ recol1d=7721
 [loc_456]
 model1=model_2151
 blockrange=no
-interactable=0
+active=no
 recol1s=9511
 recol1d=5392
 
 [loc_457]
 model1=model_2160
 blockrange=no
-interactable=0
+active=no
 mapscene=21
 recol1s=9511
 recol1d=5392
@@ -3538,7 +3538,7 @@ recol1d=5392
 [loc_458]
 model1=model_2154
 blockrange=no
-interactable=0
+active=no
 mapscene=21
 recol1s=9511
 recol1d=5392
@@ -3546,7 +3546,7 @@ recol1d=5392
 [loc_459]
 model1=model_2155
 blockrange=no
-interactable=0
+active=no
 mapscene=21
 recol1s=9511
 recol1d=5392
@@ -3554,7 +3554,7 @@ recol1d=5392
 [loc_460]
 model1=model_2156
 blockrange=no
-interactable=0
+active=no
 mapscene=21
 recol1s=9511
 recol1d=5392
@@ -3562,7 +3562,7 @@ recol1d=5392
 [loc_461]
 model1=model_2158
 blockrange=no
-interactable=0
+active=no
 mapscene=21
 recol1s=9511
 recol1d=5392
@@ -4109,7 +4109,7 @@ model1=model_2330
 width=2
 length=2
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 anim=seq_524
 ambient=25
@@ -4119,7 +4119,7 @@ active=no
 [loc_522]
 model1=model_2330
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 anim=seq_524
 ambient=25
@@ -4317,7 +4317,7 @@ sharelight=yes
 [loc_547]
 model1=model_725
 length=3
-interactable=0
+active=no
 sharelight=yes
 mirror=yes
 
@@ -4862,18 +4862,18 @@ recol2d=16
 model1=model_1210
 width=2
 blockrange=no
-interactable=0
+active=no
 
 [loc_626]
 model1=model_1230
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_627]
 model1=model_1247
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_628]
@@ -5409,19 +5409,19 @@ model1=model_3338
 model1=model_732
 width=4
 length=4
-interactable=0
+active=no
 
 [loc_720]
 model1=model_731
 width=3
 length=2
-interactable=0
+active=no
 
 [loc_721]
 model1=model_731
 width=4
 length=2
-interactable=0
+active=no
 recol1s=6036
 recol1d=90
 recol2s=5008
@@ -5437,7 +5437,7 @@ recol5d=24
 model1=model_743
 width=6
 length=6
-interactable=0
+active=no
 
 [loc_723]
 name=Buried skeleton
@@ -5506,7 +5506,7 @@ recol3d=8656
 [loc_731]
 model1=model_2297
 blockwalk=no
-interactable=0
+active=no
 anim=seq_493
 disposealpha=yes
 ambient=50
@@ -5516,7 +5516,7 @@ active=no
 [loc_732]
 model1=model_2298
 blockwalk=no
-interactable=0
+active=no
 anim=seq_494
 disposealpha=yes
 ambient=50
@@ -5613,7 +5613,7 @@ model1=model_1047,^grounddecor
 
 [loc_747]
 model1=model_1217
-interactable=0
+active=no
 
 [loc_748]
 name=Cave entrance
@@ -5629,31 +5629,31 @@ width=16
 
 [loc_750]
 model1=model_1030,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_751]
 model1=model_1040,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_752]
 model1=model_1058,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_753]
 model1=model_1086,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_754]
 model1=model_1052,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 ambient=-56
@@ -5685,7 +5685,7 @@ recol1d=41
 
 [loc_760]
 model1=model_2175,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 active=no
@@ -5700,7 +5700,7 @@ recol4d=4
 
 [loc_761]
 model1=model_2148,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 active=no
@@ -5715,7 +5715,7 @@ recol4d=4
 
 [loc_762]
 model1=model_2150,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 active=no
@@ -5730,7 +5730,7 @@ recol4d=4
 
 [loc_763]
 model1=model_2150,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
@@ -5746,7 +5746,7 @@ recol4d=4
 
 [loc_764]
 model1=model_2159,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 active=no
@@ -5761,7 +5761,7 @@ recol4d=4
 
 [loc_765]
 model1=model_2159,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
@@ -5805,7 +5805,7 @@ recol1d=20
 [loc_771]
 name=gnomeglider_icon1
 model1=model_596,^grounddecor
-interactable=1
+active=yes
 mapscene=16
 forcedecor=yes
 
@@ -6068,7 +6068,7 @@ sharelight=yes
 
 [loc_816]
 model1=model_1077
-interactable=0
+active=no
 
 [loc_817]
 name=Suit of armour
@@ -6520,14 +6520,14 @@ blockrange=no
 name=Portrait
 desc=A painting of the King looking royal.
 model1=model_2057,^walldecor_straight
-interactable=1
+active=yes
 ambient=20
 
 [loc_888]
 name=Painting
 desc=A beautiful landscape.
 model1=model_2057,^walldecor_straight
-interactable=1
+active=yes
 ambient=20
 recol1s=14
 recol1d=13
@@ -6536,7 +6536,7 @@ recol1d=13
 name=Painting
 desc=A mysterious figure stands alone in this haunting image.
 model1=model_2057,^walldecor_straight
-interactable=1
+active=yes
 ambient=20
 recol1s=14
 recol1d=39
@@ -6545,14 +6545,14 @@ recol1d=39
 name=Portrait
 desc=Hail to the King!
 model1=model_2085,^walldecor_straight
-interactable=1
+active=yes
 ambient=20
 
 [loc_891]
 name=Landscape
 desc=I don't know much about art, but I like this.
 model1=model_2085,^walldecor_straight
-interactable=1
+active=yes
 ambient=20
 recol1s=14
 recol1d=13
@@ -6561,7 +6561,7 @@ recol1d=13
 name=Painting
 desc=A painting of some guy standing around somewhere.
 model1=model_2085,^walldecor_straight
-interactable=1
+active=yes
 ambient=20
 recol1s=14
 recol1d=39
@@ -6570,14 +6570,14 @@ recol1d=39
 name=Painting
 desc=A really bad portrait of the King.
 model1=model_2107,^walldecor_straight
-interactable=1
+active=yes
 ambient=20
 
 [loc_894]
 name=Landscape
 desc=Fine brushwork adds to the realism of this serene landscape.
 model1=model_2107,^walldecor_straight
-interactable=1
+active=yes
 ambient=20
 recol1s=14
 recol1d=13
@@ -6586,7 +6586,7 @@ recol1d=13
 name=Painting
 desc=Pretty good painting.
 model1=model_2107,^walldecor_straight
-interactable=1
+active=yes
 ambient=20
 recol1s=14
 recol1d=39
@@ -6595,27 +6595,27 @@ recol1d=39
 name=Star chart
 desc=I can see the stars on this.
 model1=model_2041,^walldecor_straight
-interactable=1
+active=yes
 ambient=100
 
 [loc_897]
 name=Star chart
 desc=A picture of the stars with funny diagrams and things on.
 model1=model_2031,^walldecor_straight
-interactable=1
+active=yes
 ambient=100
 
 [loc_898]
 name=Cross
 desc=Cross shaped.
 model1=model_2038,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_899]
 name=Hanging banner
 desc=Mmmm decorative!
 model1=model_2065,^walldecor_straight
-interactable=1
+active=yes
 sharelight=yes
 ambient=50
 
@@ -6623,7 +6623,7 @@ ambient=50
 name=Hanging banner
 desc=Brightens up the room a bit.
 model1=model_2065,^walldecor_straight
-interactable=1
+active=yes
 sharelight=yes
 ambient=50
 recol1s=16
@@ -6641,7 +6641,7 @@ recol5d=43105
 name=Hanging banner
 desc=I don't know art, but I like it!
 model1=model_2053,^walldecor_straight
-interactable=1
+active=yes
 sharelight=yes
 ambient=50
 
@@ -6649,7 +6649,7 @@ ambient=50
 name=Hanging banner
 desc=Not bad at all.
 model1=model_2053,^walldecor_straight
-interactable=1
+active=yes
 sharelight=yes
 ambient=50
 recol1s=16
@@ -6667,19 +6667,19 @@ recol5d=43105
 name=Unicorn's head
 desc=Alas poor unicorn, I knew him well.
 model1=model_2073,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_904]
 name=Dragon's head
 desc=A scary looking dragons head.
 model1=model_2076,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_905]
 name=Dragon's head
 desc=Not what I would pick as wall decoration.
 model1=model_2076,^walldecor_straight
-interactable=1
+active=yes
 recol1s=61
 recol1d=926
 
@@ -6687,13 +6687,13 @@ recol1d=926
 name=Bull's head
 desc=Looks like the bull lost.
 model1=model_2052,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_907]
 name=Charms
 desc=Trinkets and stuff.
 model1=model_2258,^walldecor_straight
-interactable=1
+active=yes
 anim=seq_468
 ambient=50
 
@@ -6701,44 +6701,44 @@ ambient=50
 name=Mystical wall chart
 desc=Weird looking symbols and diagrams.
 model1=model_2086,^walldecor_straight
-interactable=1
+active=yes
 ambient=50
 
 [loc_909]
 name=Plaque
 desc=Something is written on it. I can't read what.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_910]
 name=Evil eye decoration
 desc=Looks like an eye with huge lashes.
 model1=model_929,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_911]
 name=Glyphs
 desc=A tablet covered in weird looking little squiggles and pictures.
 model1=model_927,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_912]
 model1=model_909,^walldecor_straight
-interactable=0
+active=no
 
 [loc_913]
 model1=model_910,^walldecor_straight
-interactable=0
+active=no
 
 [loc_914]
 model1=model_896,^walldecor_straight
-interactable=0
+active=no
 
 [loc_915]
 name=Font
 desc=A posh water bowl.
 model1=model_905
-interactable=1
+active=yes
 
 [loc_916]
 model1=model_1113,^grounddecor
@@ -6952,13 +6952,13 @@ sharelight=yes
 name=Doormat
 desc=For wiping muddy feet on.
 model1=model_1516,^grounddecor
-interactable=1
+active=yes
 
 [loc_955]
 name=Spooky picture
 desc=Disturbingly its eyes look everywhere in the room except at you.
 model1=model_2291,^walldecor_straight
-interactable=1
+active=yes
 anim=seq_470
 ambient=50
 
@@ -6975,39 +6975,39 @@ model1=model_2098,^grounddecor
 name=Clock face
 desc=What has a face and hands but is not a man?
 model1=model_2081,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_960]
 name=Clock face
 desc=It's a time machine....sort of!
 model1=model_2117,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_961]
 name=Bank notice board
 desc='Ask about our low, low interest rates!'
 model1=model_2040,^walldecor_straight
-interactable=1
+active=yes
 ambient=50
 
 [loc_962]
 name=Noticeboard
 desc=Some helpful people have placed notes on here, how nice.
 model1=model_2040,^walldecor_straight
-interactable=1
+active=yes
 ambient=50
 
 [loc_963]
 name=Clothes equipment
 desc=Essentials for a seamstress.
 model1=model_2066,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_964]
 name=Stuffed swordfish
 desc=It really was this big!
 model1=model_2075,^walldecor_straight
-interactable=1
+active=yes
 ambient=10
 contrast=100
 
@@ -7015,7 +7015,7 @@ contrast=100
 name=Stuffed swordfish
 desc=It really was this big!
 model1=model_2090,^walldecor_straight
-interactable=1
+active=yes
 ambient=10
 contrast=100
 
@@ -7023,7 +7023,7 @@ contrast=100
 name=Jolly Roger
 desc=He dosen't look too jolly to me!
 model1=model_2094,^walldecor_straight
-interactable=1
+active=yes
 ambient=10
 contrast=100
 
@@ -7031,13 +7031,13 @@ contrast=100
 name=Hanging wheel
 desc=Looks like this ship was way off course!
 model1=model_2118,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_968]
 name=Pirate map
 desc=X marks the spot.
 model1=model_2035,^walldecor_straight
-interactable=1
+active=yes
 ambient=10
 contrast=100
 
@@ -7045,13 +7045,13 @@ contrast=100
 name=Fishing net
 desc=Complete with authentic seaweed!
 model1=model_2124,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_970]
 name=Plaque
 desc=This mentions the monk trapped here...
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=24
 recol1d=8128
 op1=Read
@@ -7060,31 +7060,31 @@ op1=Read
 name=Bow and Arrow
 desc=A useful ranging device.
 model1=model_2030,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_972]
 name=Arrows
 desc=Use these with bows.
 model1=model_2029,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_973]
 name=Javelin
 desc=A powerful throwing weapon.
 model1=model_2099,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_974]
 name=Studded Leather
 desc=Improved Leather armour for archers.
 model1=model_2042,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_975]
 name=Dragonhide Leather
 desc=Leather made from the skin of a Dragon.
 model1=model_2067,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_976]
 model1=model_1110,^grounddecor
@@ -7275,7 +7275,7 @@ sharelight=yes
 model1=model_965
 width=2
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -7283,7 +7283,7 @@ sharelight=yes
 model1=model_965
 width=2
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
@@ -7557,7 +7557,7 @@ model1=model_1921,^walldecor_straight
 name=Sign
 desc=Ye olde shrimp and parrot.
 model1=model_1931,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_1058]
 model1=model_1932,^walldecor_straight
@@ -7593,7 +7593,7 @@ model1=model_1938,^walldecor_straight
 name=Sign
 desc=The Blue Moon Inn - Licensed to sell intoxicating liquor.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7601,7 +7601,7 @@ recol1d=11200
 name=Sign
 desc=The Jolly Boar - Purveyors of fine brews.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7609,7 +7609,7 @@ recol1d=11200
 name=Sign
 desc=The Rusty Anchor - Licensed to sell intoxicating beverages.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7617,7 +7617,7 @@ recol1d=11200
 name=Sign
 desc=The Shrimp and Parrot - Licensed to sell dangerous liquids.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7625,7 +7625,7 @@ recol1d=11200
 name=Sign
 desc=The Dead Man's Chest - Brews to maroon any pirate.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7633,7 +7633,7 @@ recol1d=11200
 name=Sign
 desc=The Rising Sun - Purveyors of fine liquor.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7641,7 +7641,7 @@ recol1d=11200
 name=Sign
 desc=The Forester's Arms - Quality Real Ales.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7649,7 +7649,7 @@ recol1d=11200
 name=Sign
 desc=The Flying Horse - Often seen after 10 pints.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7657,7 +7657,7 @@ recol1d=11200
 name=Sign
 desc=The Dancing Donkey - Licensed to sell intoxicating beverages.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7665,7 +7665,7 @@ recol1d=11200
 name=Sign
 desc=The Dragon Inn - Visit us for a firey frothy brew!
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -7673,7 +7673,7 @@ recol1d=11200
 name=Sign
 desc=Karamja Spirits bar - For all your alcohol needs.
 model1=model_2111,^walldecor_straight
-interactable=1
+active=yes
 recol1s=6028
 recol1d=11200
 
@@ -8013,78 +8013,78 @@ blockrange=no
 
 [loc_1127]
 model1=model_2012
-interactable=0
+active=no
 
 [loc_1128]
 model1=model_2016
 length=4
-interactable=0
+active=no
 
 [loc_1129]
 model1=model_2004
 width=4
 length=4
-interactable=0
+active=no
 
 [loc_1130]
 model1=model_2010
-interactable=0
+active=no
 
 [loc_1131]
 model1=model_2020
 length=3
-interactable=0
+active=no
 
 [loc_1132]
 model1=model_2019
 width=3
 length=3
-interactable=0
+active=no
 
 [loc_1133]
 model1=model_2011
-interactable=0
+active=no
 
 [loc_1134]
 model1=model_2013
-interactable=0
+active=no
 
 [loc_1135]
 model1=model_2014
-interactable=0
+active=no
 
 [loc_1136]
 model1=model_2015
-interactable=0
+active=no
 
 [loc_1137]
 model1=model_2024
-interactable=0
+active=no
 
 [loc_1138]
 model1=model_2023
-interactable=0
+active=no
 
 [loc_1139]
 model1=model_2005
-interactable=0
+active=no
 
 [loc_1140]
 model1=model_2001
-interactable=0
+active=no
 
 [loc_1141]
 model1=model_2017
 length=2
-interactable=0
+active=no
 
 [loc_1142]
 model1=model_2022
-interactable=0
+active=no
 
 [loc_1143]
 model1=model_2000
-interactable=0
+active=no
 
 [loc_1144]
 name=Bush
@@ -10227,13 +10227,13 @@ sharelight=yes
 
 [loc_1419]
 model1=model_826
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1420]
 model1=model_771
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -10279,25 +10279,25 @@ sharelight=yes
 model1=model_827,^wall_straight
 model2=model_828,^wall_diagonalcorner
 model3=model_829,^wall_diagonal
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1429]
 model1=model_795,^wall_straight
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1430]
 model1=model_778,^wall_straight
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1431]
 model1=model_812
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -10305,37 +10305,37 @@ sharelight=yes
 model1=model_797,^wall_straight
 model2=model_798,^wall_diagonalcorner
 model3=model_799,^wall_diagonal
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1433]
 model1=model_772
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1434]
 model1=model_834
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1435]
 model1=model_823
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1436]
 model1=model_787
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1437]
 model1=model_787
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10343,13 +10343,13 @@ recol1d=8
 
 [loc_1438]
 model1=model_792,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1439]
 model1=model_793,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -10364,7 +10364,7 @@ recol1d=119
 
 [loc_1441]
 model1=model_834
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10372,7 +10372,7 @@ recol1d=119
 
 [loc_1442]
 model1=model_823
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10380,7 +10380,7 @@ recol1d=119
 
 [loc_1443]
 model1=model_787
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10512,7 +10512,7 @@ recol1d=7952
 
 [loc_1460]
 model1=model_834
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10520,44 +10520,44 @@ recol1d=7952
 
 [loc_1461]
 model1=model_816
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1462]
 model1=model_814
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1463]
 model1=model_814
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
 
 [loc_1464]
 model1=model_815
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1465]
 model1=model_817
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1466]
 model1=model_822
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1467]
 model1=model_823
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10565,7 +10565,7 @@ recol1d=7952
 
 [loc_1468]
 model1=model_787
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10638,13 +10638,13 @@ recol1d=7952
 
 [loc_1477]
 model1=model_833
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1478]
 model1=model_833
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10699,7 +10699,7 @@ recol1d=61985
 
 [loc_1484]
 model1=model_834
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10707,13 +10707,13 @@ recol1d=61733
 
 [loc_1485]
 model1=model_834
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_1486]
 model1=model_825
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10721,7 +10721,7 @@ recol1d=7952
 
 [loc_1487]
 model1=model_825
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10749,7 +10749,7 @@ recol1d=45
 
 [loc_1490]
 model1=model_834
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10766,7 +10766,7 @@ recol1d=45
 
 [loc_1492]
 model1=model_823
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10797,7 +10797,7 @@ recol1d=45
 
 [loc_1496]
 model1=model_816
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=8
@@ -10807,7 +10807,7 @@ recol2d=8980
 
 [loc_1497]
 model1=model_814
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=8
@@ -10817,7 +10817,7 @@ recol2d=8980
 
 [loc_1498]
 model1=model_814
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
@@ -10828,7 +10828,7 @@ recol2d=8980
 
 [loc_1499]
 model1=model_815
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=8
@@ -10838,7 +10838,7 @@ recol2d=8980
 
 [loc_1500]
 model1=model_817
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=8
@@ -10848,7 +10848,7 @@ recol2d=8980
 
 [loc_1501]
 model1=model_822
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=8
@@ -10867,7 +10867,7 @@ recol1d=8
 
 [loc_1503]
 model1=model_834
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6689
@@ -10877,14 +10877,14 @@ recol1d=8
 name=Door
 desc=The door is open.
 model1=model_608,^wall_straight
-interactable=1
+active=yes
 sharelight=yes
 
 [loc_1505]
 name=Door
 desc=The door is closed.
 model1=model_605,^wall_straight
-interactable=1
+active=yes
 occlude=yes
 sharelight=yes
 
@@ -10892,7 +10892,7 @@ sharelight=yes
 name=Large door
 desc=A sturdy wooden door.
 model1=model_633,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -10900,7 +10900,7 @@ op1=Open
 name=Large door
 desc=A sturdy wooden door.
 model1=model_594,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 op1=Close
 
@@ -10908,23 +10908,23 @@ op1=Close
 name=Large door
 desc=A sturdy wooden door.
 model1=model_633,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_1509]
 model1=model_633,^wall_straight
-interactable=0
+active=no
 mirror=yes
 
 [loc_1510]
 model1=model_633,^wall_straight
-interactable=0
+active=no
 
 [loc_1511]
 name=Large door
 desc=A sturdy wooden door.
 model1=model_594,^wall_straight
-interactable=1
+active=yes
 op1=Close
 
 [loc_1512]
@@ -11004,20 +11004,20 @@ mirror=yes
 
 [loc_1522]
 model1=model_639,^wall_straight
-interactable=0
+active=no
 
 [loc_1523]
 model1=model_639,^wall_straight
-interactable=0
+active=no
 mirror=yes
 
 [loc_1524]
 model1=model_639,^wall_straight
-interactable=0
+active=no
 
 [loc_1525]
 model1=model_639,^wall_straight
-interactable=0
+active=no
 mirror=yes
 
 [loc_1526]
@@ -11025,20 +11025,20 @@ name=Curtain
 desc=The curtain is closed.
 model1=model_884,^wall_straight
 model2=model_885,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 
 [loc_1527]
 model1=model_879,^wall_straight
 model2=model_880,^wall_diagonal
-interactable=0
+active=no
 
 [loc_1528]
 name=Curtain
 desc=The curtain is closed.
 model1=model_884,^wall_straight
 model2=model_885,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 
 [loc_1529]
@@ -11048,7 +11048,7 @@ model1=model_879,^wall_straight
 model2=model_880,^wall_diagonal
 blockwalk=no
 blockrange=no
-interactable=1
+active=yes
 op1=Close
 
 [loc_1530]
@@ -11059,7 +11059,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -11074,7 +11074,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -11087,7 +11087,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=0
+active=no
 recol1s=2
 recol1d=0
 recol2s=24
@@ -11101,7 +11101,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -11116,7 +11116,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -11129,7 +11129,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=0
+active=no
 recol1s=2
 recol1d=45
 recol2s=24
@@ -11143,7 +11143,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=4
 recol2s=24
@@ -11158,7 +11158,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=4
 recol2s=24
@@ -11171,7 +11171,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=0
+active=no
 recol1s=2
 recol1d=4
 recol2s=24
@@ -11182,34 +11182,34 @@ name=Door
 desc=Solid bars of iron.
 model1=model_609,^wall_straight
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_1540]
 name=Door
 desc=Solid bars of iron.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 op1=Close
 
 [loc_1541]
 model1=model_609,^wall_straight
 blockrange=no
-interactable=0
+active=no
 
 [loc_1542]
 name=Door
 desc=Solid bars of iron.
 model1=model_609,^wall_straight
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_1543]
 name=Door
 desc=Solid bars of iron.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 op1=Close
 
 [loc_1544]
@@ -11217,7 +11217,7 @@ name=Door
 desc=Solid bars of iron.
 model1=model_609,^wall_straight
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -11225,14 +11225,14 @@ op1=Open
 name=Door
 desc=Solid bars of iron.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 op1=Close
 
 [loc_1546]
 model1=model_609,^wall_straight
 blockrange=no
-interactable=0
+active=no
 mirror=yes
 
 [loc_1547]
@@ -11260,7 +11260,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_1552]
@@ -11269,7 +11269,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 op1=Close
 
 [loc_1553]
@@ -11279,7 +11279,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -11288,7 +11288,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=0
+active=no
 mirror=yes
 
 [loc_1555]
@@ -11296,7 +11296,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=0
+active=no
 
 [loc_1556]
 name=Gate
@@ -11304,7 +11304,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Close
 
@@ -11314,7 +11314,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_1558]
@@ -11323,7 +11323,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -11337,7 +11337,7 @@ name=Gate
 desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Close
 
 [loc_1561]
@@ -11345,19 +11345,19 @@ name=Gate
 desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Close
 
 [loc_1562]
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=0
+active=no
 
 [loc_1563]
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=0
+active=no
 mirror=yes
 
 [loc_1564]
@@ -11387,21 +11387,21 @@ model1=model_1205,^grounddecor
 name=Trapdoor
 desc=I wonder what's under it?
 model1=model_1205,^grounddecor
-interactable=1
+active=yes
 op1=Open
 
 [loc_1569]
 name=Trapdoor
 desc=I wonder what's under it?
 model1=model_1205,^grounddecor
-interactable=1
+active=yes
 op1=Open
 
 [loc_1570]
 name=Trapdoor
 desc=I wonder what's down there?
 model1=model_1173,^grounddecor
-interactable=1
+active=yes
 op1=Climb-down
 op2=Close
 
@@ -11409,7 +11409,7 @@ op2=Close
 name=Trapdoor
 desc=I wonder what's down there?
 model1=model_1173,^grounddecor
-interactable=1
+active=yes
 op1=Climb-down
 op2=Close
 
@@ -11417,20 +11417,20 @@ op2=Close
 name=Boarded-up door
 desc=This door has been boarded up.
 model1=model_2033,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_1573]
 name=Doors
 desc=A door to a grand place.
 model1=model_593,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 
 [loc_1574]
 name=Doors
 desc=A door to a grand place.
 model1=model_593,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 op1=Close
 
@@ -11438,14 +11438,14 @@ op1=Close
 name=Doors
 desc=A door to a grand place.
 model1=model_593,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_1576]
 name=Doors
 desc=A door to a grand place.
 model1=model_593,^wall_straight
-interactable=1
+active=yes
 op1=Close
 
 [loc_1577]
@@ -11501,7 +11501,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 op1=Push
 
 [loc_1584]
@@ -11512,7 +11512,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 op1=Push
 
 [loc_1585]
@@ -11521,7 +11521,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=0
+active=no
 
 [loc_1586]
 name=Wall
@@ -11531,7 +11531,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 op1=Push
@@ -11544,7 +11544,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 op1=Push
@@ -11555,7 +11555,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=0
+active=no
 recol1s=2
 recol1d=23
 
@@ -11565,7 +11565,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_1590]
@@ -11574,7 +11574,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -11586,7 +11586,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -11599,7 +11599,7 @@ desc=Something is strange about this panel.
 model1=model_598
 width=2
 length=2
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 recol2s=24
@@ -11612,7 +11612,7 @@ op1=Push
 model1=model_597
 width=2
 length=2
-interactable=0
+active=no
 recol1s=2
 recol1d=23
 recol2s=24
@@ -11628,7 +11628,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -11642,7 +11642,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -11655,7 +11655,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_1597]
@@ -11664,7 +11664,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -11675,7 +11675,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_1599]
@@ -11685,7 +11685,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -11746,7 +11746,7 @@ model1=model_2179,^grounddecor
 
 [loc_1608]
 model1=model_610
-interactable=0
+active=no
 sharelight=yes
 recol1s=6
 recol1d=18
@@ -11755,28 +11755,28 @@ recol1d=18
 name=Scaffold
 desc=A wooden structure used in the process of building.
 model1=model_2211
-interactable=1
+active=yes
 sharelight=yes
 
 [loc_1610]
 name=Scaffold
 desc=A wooden structure used in the process of building.
 model1=model_2196
-interactable=1
+active=yes
 sharelight=yes
 
 [loc_1611]
 name=Scaffold
 desc=A wooden structure used in the process of building.
 model1=model_2186
-interactable=1
+active=yes
 sharelight=yes
 
 [loc_1612]
 name=Scaffold
 desc=A wooden structure used in the process of building.
 model1=model_2180
-interactable=1
+active=yes
 sharelight=yes
 
 [loc_1613]
@@ -11804,7 +11804,7 @@ model2=model_2202,^wall_straight
 model3=model_2203,^wall_l
 model4=model_2204,^wall_squarecorner
 model5=model_2205,^wall_diagonal
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 ambient=10
@@ -11813,7 +11813,7 @@ contrast=100
 [loc_1617]
 model1=model_2193
 width=2
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
@@ -11824,7 +11824,7 @@ sharelight=yes
 
 [loc_1619]
 model1=model_3212
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1620]
@@ -11900,7 +11900,7 @@ model4=model_846,^wall_l
 model5=model_847,^wall_squarecorner
 model6=model_848,^wall_diagonal
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -11910,7 +11910,7 @@ model2=model_850,^wall_diagonalcorner
 model3=model_851,^wall_l
 model4=model_852,^wall_squarecorner
 model5=model_853,^wall_diagonal
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -11922,7 +11922,7 @@ model4=model_846,^wall_l
 model5=model_847,^wall_squarecorner
 model6=model_848,^wall_diagonal
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -12089,18 +12089,18 @@ recol1d=7331
 
 [loc_1647]
 model1=model_640
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1648]
 model1=model_640
-interactable=0
+active=no
 sharelight=yes
 mirror=yes
 
 [loc_1649]
 model1=model_640
-interactable=0
+active=no
 sharelight=yes
 recol1s=61
 recol1d=7952
@@ -12109,7 +12109,7 @@ recol2d=23
 
 [loc_1650]
 model1=model_640
-interactable=0
+active=no
 sharelight=yes
 mirror=yes
 recol1s=61
@@ -12215,7 +12215,7 @@ recol2d=9098
 [loc_1660]
 model1=model_662
 model2=model_656,^wall_straight
-interactable=0
+active=no
 
 [loc_1661]
 name=Bricks
@@ -12356,11 +12356,11 @@ sharelight=yes
 
 [loc_1680]
 model1=model_1998
-interactable=0
+active=no
 
 [loc_1681]
 model1=model_1999
-interactable=0
+active=no
 
 [loc_1682]
 name=tentroofcentre1
@@ -12397,7 +12397,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 recol1s=2
@@ -12409,7 +12409,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 recol1s=2
@@ -12421,7 +12421,7 @@ model2=model_850,^wall_diagonalcorner
 model3=model_851,^wall_l
 model4=model_852,^wall_squarecorner
 model5=model_853,^wall_diagonal
-interactable=0
+active=no
 sharelight=yes
 recol1s=23
 recol1d=11
@@ -12433,7 +12433,7 @@ model3=model_845,^wall_diagonalcorner
 model4=model_846,^wall_l
 model5=model_847,^wall_squarecorner
 model6=model_848,^wall_diagonal
-interactable=0
+active=no
 sharelight=yes
 recol1s=23
 recol1d=11
@@ -12444,7 +12444,7 @@ model2=model_850,^wall_diagonalcorner
 model3=model_851,^wall_l
 model4=model_852,^wall_squarecorner
 model5=model_853,^wall_diagonal
-interactable=0
+active=no
 sharelight=yes
 mirror=yes
 recol1s=23
@@ -12457,7 +12457,7 @@ model3=model_845,^wall_diagonalcorner
 model4=model_846,^wall_l
 model5=model_847,^wall_squarecorner
 model6=model_848,^wall_diagonal
-interactable=0
+active=no
 sharelight=yes
 mirror=yes
 recol1s=23
@@ -12469,7 +12469,7 @@ model2=model_850,^wall_diagonalcorner
 model3=model_851,^wall_l
 model4=model_852,^wall_squarecorner
 model5=model_853,^wall_diagonal
-interactable=0
+active=no
 sharelight=yes
 recol1s=23
 recol1d=48
@@ -12481,7 +12481,7 @@ model3=model_845,^wall_diagonalcorner
 model4=model_846,^wall_l
 model5=model_847,^wall_squarecorner
 model6=model_848,^wall_diagonal
-interactable=0
+active=no
 sharelight=yes
 recol1s=23
 recol1d=48
@@ -12492,7 +12492,7 @@ model2=model_940,^wall_diagonalcorner
 model3=model_941,^wall_l
 model4=model_942,^wall_squarecorner
 model5=model_943,^wall_diagonal
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
@@ -12502,136 +12502,136 @@ model2=model_923,^wall_diagonalcorner
 model3=model_924,^wall_l
 model4=model_925,^wall_squarecorner
 model5=model_926,^wall_diagonal
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
 [loc_1697]
 model1=model_946
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
 [loc_1698]
 model1=model_930
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
 [loc_1699]
 model1=model_938
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
 [loc_1700]
 model1=model_895
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
 [loc_1701]
 model1=model_1332,^grounddecor
-interactable=0
+active=no
 sharelight=yes
 forcedecor=yes
 
 [loc_1702]
 model1=model_1300,^grounddecor
-interactable=0
+active=no
 sharelight=yes
 forcedecor=yes
 
 [loc_1703]
 model1=model_1312,^grounddecor
-interactable=0
+active=no
 sharelight=yes
 forcedecor=yes
 
 [loc_1704]
 model1=model_1299,^grounddecor
-interactable=0
+active=no
 sharelight=yes
 forcedecor=yes
 
 [loc_1705]
 model1=model_1308,^grounddecor
-interactable=0
+active=no
 
 [loc_1706]
 model1=model_1305
-interactable=0
+active=no
 mapscene=47
 
 [loc_1707]
 model1=model_1336,^grounddecor
-interactable=0
+active=no
 
 [loc_1708]
 model1=model_1315,^wall_straight
 model2=model_1316,^wall_l
-interactable=0
+active=no
 
 [loc_1709]
 model1=model_1447
-interactable=0
+active=no
 resizey=43
 
 [loc_1710]
 model1=model_1447
-interactable=0
+active=no
 
 [loc_1711]
 model1=model_1534
-interactable=0
+active=no
 
 [loc_1712]
 model1=model_1444
-interactable=0
+active=no
 
 [loc_1713]
 model1=model_1512
-interactable=0
+active=no
 
 [loc_1714]
 model1=model_1546
-interactable=0
+active=no
 
 [loc_1715]
 model1=model_1546
-interactable=0
+active=no
 mirror=yes
 
 [loc_1716]
 model1=model_1547
-interactable=0
+active=no
 
 [loc_1717]
 model1=model_1549
-interactable=0
+active=no
 
 [loc_1718]
 model1=model_1546
 width=2
-interactable=0
+active=no
 recol1s=2
 recol1d=23
 
 [loc_1719]
 model1=model_1547
-interactable=0
+active=no
 recol1s=2
 recol1d=23
 
 [loc_1720]
 model1=model_1549
-interactable=0
+active=no
 recol1s=2
 recol1d=23
 
 [loc_1721]
 model1=model_2188,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -12882,7 +12882,7 @@ op1=Climb-down
 name=Ladder
 desc=I can climb down this.
 model1=model_1215
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -12890,7 +12890,7 @@ op1=Climb-down
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -12898,7 +12898,7 @@ op1=Climb-up
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb
 op2=Climb-up
@@ -12908,7 +12908,7 @@ op3=Climb-down
 name=Ladder
 desc=I can climb down this.
 model1=model_1215
-interactable=1
+active=yes
 mapscene=7
 blocksides=14
 op1=Climb-down
@@ -12917,7 +12917,7 @@ op1=Climb-down
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 blocksides=14
 op1=Climb-up
@@ -12926,7 +12926,7 @@ op1=Climb-up
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 blocksides=14
 op1=Climb
@@ -12937,7 +12937,7 @@ op3=Climb-down
 name=Ladder
 desc=I can't climb this.
 model1=model_1183
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -12945,7 +12945,7 @@ op1=Climb-up
 name=Ladder
 desc=It's useless.
 model1=model_1183
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 op2=Climb-up
@@ -12954,7 +12954,7 @@ op2=Climb-up
 name=Ladder
 desc=I can climb down this.
 model1=model_1231
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -12962,7 +12962,7 @@ op1=Climb-down
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -12970,7 +12970,7 @@ op1=Climb-up
 name=Ladder
 desc=I can climb down this.
 model1=model_1231
-interactable=1
+active=yes
 mapscene=7
 blocksides=14
 op1=Climb-down
@@ -12979,7 +12979,7 @@ op1=Climb-down
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 blocksides=14
 op1=Climb-up
@@ -12988,7 +12988,7 @@ op1=Climb-up
 name=Ladder
 desc=Not much use really.
 model1=model_1143
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -12996,7 +12996,7 @@ op1=Climb-down
 name=Ladder
 desc=This leads downwards.
 model1=model_1203
-interactable=1
+active=yes
 blocksides=13
 op1=Climb-Down
 
@@ -13033,28 +13033,28 @@ op1=Climb
 name=Ladder
 desc=I can climb down this.
 model1=model_1203
-interactable=1
+active=yes
 op1=Climb-down
 
 [loc_1766]
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 op1=Climb-up
 
 [loc_1767]
 name=Ladder
 desc=I can climb down this.
 model1=model_1203
-interactable=1
+active=yes
 op1=Climb-down
 
 [loc_1768]
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 op1=Climb-up
 
 [loc_1769]
@@ -13097,17 +13097,17 @@ sharelight=yes
 
 [loc_1773]
 model1=model_2208
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1774]
 model1=model_2209
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1775]
 model1=model_2210
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1776]
@@ -13157,17 +13157,17 @@ op1=Empty
 [loc_1783]
 model1=model_1379
 width=2
-interactable=0
+active=no
 
 [loc_1784]
 model1=model_1380
 width=2
 length=2
-interactable=0
+active=no
 
 [loc_1785]
 model1=model_1381
-interactable=0
+active=no
 
 [loc_1786]
 name=mroof1
@@ -13240,7 +13240,7 @@ mirror=yes
 recol1s=6
 recol1d=18
 
-[loc_1796]
+[magicwall]
 name=magicwall
 model1=model_1739
 length=2
@@ -13302,7 +13302,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -13317,7 +13317,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -13397,28 +13397,28 @@ sharelight=yes
 name=Lever
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_1815]
 name=Lever
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_1816]
 name=Lever
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_1817]
 name=Lever
 desc=I wonder what this does...
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_1818]
@@ -13434,7 +13434,7 @@ mirror=yes
 
 [loc_1820]
 model1=model_2077
-interactable=0
+active=no
 
 [loc_1821]
 model1=model_2032,^walldecor_straight
@@ -13619,23 +13619,23 @@ recol3d=6550
 
 [loc_1857]
 model1=model_921
-interactable=0
+active=no
 
 [loc_1858]
 model1=model_899
-interactable=0
+active=no
 
 [loc_1859]
 model1=model_900
-interactable=0
+active=no
 
 [loc_1860]
 model1=model_901
-interactable=0
+active=no
 
 [loc_1861]
 model1=model_932
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1862]
@@ -13665,32 +13665,32 @@ forcedecor=yes
 
 [loc_1866]
 model1=model_1424
-interactable=0
+active=no
 
 [loc_1867]
 model1=model_1404
-interactable=0
+active=no
 
 [loc_1868]
 model1=model_1486
 width=2
-interactable=0
+active=no
 
 [loc_1869]
 model1=model_1542
-interactable=0
+active=no
 
 [loc_1870]
 model1=model_1209
-interactable=0
+active=no
 
 [loc_1871]
 model1=model_2115,^walldecor_straight
-interactable=0
+active=no
 
 [loc_1872]
 model1=model_2093,^walldecor_straight
-interactable=0
+active=no
 ambient=20
 
 [loc_1873]
@@ -13701,7 +13701,7 @@ model1=model_2068,^walldecor_straight
 
 [loc_1875]
 model1=model_1548
-interactable=0
+active=no
 
 [loc_1876]
 name=Altar slab
@@ -13712,7 +13712,7 @@ length=2
 
 [loc_1877]
 model1=model_1472
-interactable=0
+active=no
 
 [loc_1878]
 model1=model_796,^wall_straight
@@ -13755,7 +13755,7 @@ length=3
 
 [loc_1886]
 model1=model_839
-interactable=0
+active=no
 
 [loc_1887]
 name=runetemple_altar_new
@@ -13966,48 +13966,48 @@ sharelight=yes
 
 [loc_1914]
 model1=model_2290
-interactable=0
+active=no
 anim=seq_473
 disposealpha=yes
 
 [loc_1915]
 model1=model_643,^wall_straight
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1916]
 model1=model_676
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1917]
 model1=model_676
-interactable=0
+active=no
 sharelight=yes
 mirror=yes
 
 [loc_1918]
 model1=model_663
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1919]
 model1=model_663
-interactable=0
+active=no
 sharelight=yes
 mirror=yes
 
 [loc_1920]
 model1=model_651,^wall_straight
 model2=model_652,^wall_diagonalcorner
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
 [loc_1921]
 model1=model_667
 width=2
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
@@ -14015,7 +14015,7 @@ sharelight=yes
 model1=model_668
 width=2
 length=2
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 
@@ -14108,7 +14108,7 @@ recol1d=16
 
 [loc_1934]
 model1=model_571
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 mapscene=21
@@ -14117,7 +14117,7 @@ recol1d=23
 
 [loc_1935]
 model1=model_572
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 mapscene=21
@@ -14126,7 +14126,7 @@ recol1d=23
 
 [loc_1936]
 model1=model_573
-interactable=0
+active=no
 occlude=yes
 sharelight=yes
 mapscene=21
@@ -14137,7 +14137,7 @@ recol1d=23
 model1=model_1412
 width=2
 length=2
-interactable=0
+active=no
 
 [loc_1938]
 model1=model_680,^walldecor_straight
@@ -14257,64 +14257,64 @@ sharelight=yes
 
 [loc_1956]
 model1=model_1359
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1957]
 model1=model_1348
 length=2
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1958]
 model1=model_1339
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1959]
 model1=model_1345
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1960]
 model1=model_1355
 width=2
 length=2
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1961]
 model1=model_1360
 length=2
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1962]
 model1=model_1349
 length=2
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1963]
 model1=model_1340
 length=2
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1964]
 model1=model_1346
 length=2
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1965]
 model1=model_1356
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1966]
 model1=model_1357
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1967]
@@ -14335,73 +14335,73 @@ op1=Open
 [loc_1969]
 model1=model_1352
 width=2
-interactable=0
+active=no
 
 [loc_1970]
 model1=model_1352
 width=2
-interactable=0
+active=no
 mirror=yes
 
 [loc_1971]
 model1=model_1337
 width=4
 length=3
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1972]
 model1=model_1361
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1973]
 model1=model_1341
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1974]
 model1=model_1347
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1975]
 model1=model_1358
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1976]
 model1=model_1353
 width=3
 length=4
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1977]
 model1=model_1338
 width=3
 length=5
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1978]
 model1=model_1342
 width=2
 length=3
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1979]
 model1=model_1351
 width=2
 length=7
-interactable=0
+active=no
 sharelight=yes
 
 [loc_1980]
 model1=model_1354
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 op1=Open
 
@@ -14409,7 +14409,7 @@ op1=Open
 model1=model_1354
 length=2
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 op1=Open
 
@@ -14418,17 +14418,17 @@ model1=model_1325,^wall_straight
 model2=model_1326,^wall_l
 model3=model_1327,^wall_diagonal
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 
 [loc_1983]
 model1=model_1330,^wall_straight
 blockrange=no
-interactable=0
+active=no
 
 [loc_1984]
 model1=model_1335,^wall_squarecorner
-interactable=0
+active=no
 
 [loc_1985]
 name=Root
@@ -14437,7 +14437,7 @@ model1=model_2152
 width=3
 length=3
 blockrange=no
-interactable=1
+active=yes
 op1=Search
 
 [loc_1986]
@@ -14447,7 +14447,7 @@ model1=model_2153
 width=3
 length=3
 blockrange=no
-interactable=1
+active=yes
 op1=Search
 
 [loc_1987]
@@ -14483,7 +14483,7 @@ name=Door
 desc=Solid bars of iron.
 model1=model_609,^wall_straight
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_1992]
@@ -14626,17 +14626,17 @@ recol2d=6587
 
 [loc_2007]
 model1=model_1767
-interactable=0
+active=no
 sharelight=yes
 
 [loc_2008]
 model1=model_1775
-interactable=0
+active=no
 sharelight=yes
 
 [loc_2009]
 model1=model_1751
-interactable=0
+active=no
 sharelight=yes
 
 [loc_2010]
@@ -14690,7 +14690,7 @@ op1=Take treasure
 [loc_2016]
 model1=model_2329
 width=2
-interactable=0
+active=no
 anim=seq_522
 disposealpha=yes
 ambient=80
@@ -14701,7 +14701,7 @@ active=no
 model1=model_2329
 width=4
 length=2
-interactable=0
+active=no
 anim=seq_522
 disposealpha=yes
 ambient=80
@@ -14713,7 +14713,7 @@ resizez=200
 
 [loc_2018]
 model1=model_2329
-interactable=0
+active=no
 anim=seq_522
 disposealpha=yes
 ambient=80
@@ -14745,7 +14745,7 @@ op1=Climb
 
 [loc_2021]
 model1=model_1716
-interactable=0
+active=no
 recol1s=7054
 recol1d=5388
 recol2s=6028
@@ -14782,7 +14782,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -14847,7 +14847,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -14862,7 +14862,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -14876,7 +14876,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -14891,7 +14891,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -14905,7 +14905,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -14920,7 +14920,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -15052,7 +15052,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -15172,7 +15172,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -15185,7 +15185,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=0
+active=no
 recol1s=2
 recol1d=45
 recol2s=24
@@ -15261,69 +15261,69 @@ op1=Search
 name=Chest
 desc=I wonder what's inside?
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 
 [loc_2080]
 model1=model_1226
-interactable=0
+active=no
 blocksides=14
 
 [loc_2081]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2082]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2083]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2084]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2085]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2086]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2087]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2088]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2089]
@@ -15603,7 +15603,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -15614,7 +15614,7 @@ op1=Open
 name=Ladder
 desc=I can climb down this.
 model1=model_1203
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -15622,21 +15622,21 @@ op1=Climb-down
 name=Coal Truck
 desc=This transports coal!
 model1=model_1398
-interactable=1
+active=yes
 op1=Remove-coal
 
 [loc_2115]
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 
 [loc_2116]
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -15648,7 +15648,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 hillskew=yes
 occlude=yes
 sharelight=yes
@@ -16041,14 +16041,14 @@ recol2d=43237
 name=Prison door
 desc=Looks secure.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_2144]
 name=Prison door
 desc=Looks secure.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -16073,14 +16073,14 @@ op2=Search
 [loc_2147]
 name=Ladder
 model1=model_1231
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
 [loc_2148]
 name=Ladder
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -16122,7 +16122,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_2155]
@@ -16131,7 +16131,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -16140,7 +16140,7 @@ name=Magic Portal
 desc=A magical portal of teleportation.
 model1=model_1783
 length=2
-interactable=1
+active=yes
 op1=Enter
 
 [loc_2157]
@@ -16148,7 +16148,7 @@ name=Magic Portal
 desc=A magical portal of teleportation.
 model1=model_1783
 length=2
-interactable=1
+active=yes
 op1=Enter
 
 [loc_2158]
@@ -16156,7 +16156,7 @@ name=Magic Portal
 desc=A magical portal of teleportation.
 model1=model_1783
 length=2
-interactable=1
+active=yes
 op1=Enter
 
 [loc_2159]
@@ -16245,7 +16245,7 @@ model1=model_1460
 
 [loc_2171]
 model1=model_1381
-interactable=0
+active=no
 
 [loc_2172]
 name=Trawler net
@@ -16283,7 +16283,7 @@ name=Hole
 desc=This old trawler has seen better days.
 model1=model_1860
 width=2
-interactable=1
+active=yes
 
 [loc_2177]
 name=Hull
@@ -16291,13 +16291,13 @@ desc=This old trawler has seen better days.
 model1=model_1913
 width=2
 blockwalk=no
-interactable=1
+active=yes
 
 [loc_2178]
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 sharelight=yes
 op1=Cross
 
@@ -16305,7 +16305,7 @@ op1=Cross
 name=Gangplank
 desc=Handy for boarding boats.
 model1=model_1844
-interactable=1
+active=yes
 sharelight=yes
 op1=Cross
 
@@ -16315,7 +16315,7 @@ desc=It's a war machine.
 model1=model_2217
 width=3
 length=3
-interactable=1
+active=yes
 disposealpha=yes
 
 [loc_2181]
@@ -16349,7 +16349,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -16360,7 +16360,7 @@ op1=Open
 name=Crumbled wall
 desc=This wall has seen better days.
 model1=model_843
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 recol2s=24
@@ -16380,35 +16380,35 @@ op1=Squeeze-through
 name=Ladder
 desc=I can climb down this ladder.
 model1=model_1203
-interactable=1
+active=yes
 op1=Climb-down
 
 [loc_2188]
 name=Ladder
 desc=I can climb up this ladder.
 model1=model_1208
-interactable=1
+active=yes
 op1=Climb-up
 
 [loc_2189]
 name=Ladder
 desc=I can climb up this ladder.
 model1=model_1208
-interactable=1
+active=yes
 op1=Climb-up
 
 [loc_2190]
 name=Ladder
 desc=I can climb down this ladder.
 model1=model_1203
-interactable=1
+active=yes
 op1=Climb-down
 
 [loc_2191]
 name=Chest
 desc=I wonder what's inside?
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 
@@ -16416,7 +16416,7 @@ op1=Open
 name=Chest
 desc=I wonder what's inside?
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 
@@ -16424,7 +16424,7 @@ op1=Open
 name=Chest
 desc=I wonder what's inside?
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 
@@ -16432,7 +16432,7 @@ op1=Open
 name=Chest
 desc=Perhaps I should search it.
 model1=model_1226
-interactable=1
+active=yes
 blocksides=14
 op1=Close
 op2=Search
@@ -16441,7 +16441,7 @@ op2=Search
 name=Chest
 desc=Perhaps I should search it.
 model1=model_1226
-interactable=1
+active=yes
 blocksides=14
 op1=Close
 op2=Search
@@ -16450,7 +16450,7 @@ op2=Search
 name=Chest
 desc=Perhaps I should search it.
 model1=model_1226
-interactable=1
+active=yes
 blocksides=14
 op1=Close
 op2=Search
@@ -16459,7 +16459,7 @@ op2=Search
 name=Chest
 desc=I wonder what's inside?
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 
@@ -16467,7 +16467,7 @@ op1=Open
 name=Chest
 desc=Perhaps I should search it.
 model1=model_1226
-interactable=1
+active=yes
 blocksides=14
 op1=Close
 op2=Search
@@ -16477,7 +16477,7 @@ name=Keep gate
 desc=An old gate for locking up undesirables.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -16486,7 +16486,7 @@ name=Keep gate
 desc=An old gate for locking up undesirables.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 
 [loc_2201]
@@ -16648,7 +16648,7 @@ op2=Search
 name=Strange looking stone
 desc=A stone with some carvings on it.
 model1=model_1799,^grounddecor
-interactable=1
+active=yes
 op1=Look-at
 op2=Investigate
 
@@ -16760,7 +16760,7 @@ op2=Search
 name=Climbing rocks
 desc=I can climb the rocky outcrop.
 model1=model_1494,^grounddecor
-interactable=1
+active=yes
 hillskew=yes
 forcedecor=yes
 op1=Climb
@@ -16992,7 +16992,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_2262]
@@ -17002,7 +17002,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -17037,7 +17037,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -17052,7 +17052,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -17234,21 +17234,21 @@ op1=Squeeze-through
 [loc_2291]
 model1=model_1115,^grounddecor
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 forcedecor=yes
 
 [loc_2292]
 model1=model_1128,^grounddecor
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 forcedecor=yes
 
 [loc_2293]
 model1=model_1024,^grounddecor
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 forcedecor=yes
 
@@ -17256,7 +17256,7 @@ forcedecor=yes
 name=Log balance
 desc=A slippery log I can walk across.
 model1=model_1115,^grounddecor
-interactable=1
+active=yes
 sharelight=yes
 op1=Walk-across
 
@@ -17264,7 +17264,7 @@ op1=Walk-across
 name=Log balance
 desc=A slippery log I can walk across.
 model1=model_1115,^grounddecor
-interactable=1
+active=yes
 sharelight=yes
 op1=Walk-across
 
@@ -17272,7 +17272,7 @@ op1=Walk-across
 name=Log balance
 desc=A slippery log I can walk across.
 model1=model_1115,^grounddecor
-interactable=1
+active=yes
 sharelight=yes
 op1=Walk-across
 
@@ -17280,7 +17280,7 @@ op1=Walk-across
 name=Log balance
 desc=A slippery log I can walk across.
 model1=model_1115,^grounddecor
-interactable=1
+active=yes
 sharelight=yes
 op1=Walk-across
 
@@ -17306,21 +17306,21 @@ op1=Climb-up
 name=Balancing ledge
 desc=Tread carefully!
 model1=model_1786,^walldecor_straight
-interactable=1
+active=yes
 op1=Walk-across
 
 [loc_2302]
 name=Balancing ledge
 desc=Tread carefully!
 model1=model_1072,^grounddecor
-interactable=1
+active=yes
 op1=Walk-across
 
 [loc_2303]
 name=Balancing ledge
 desc=I can just about edge across here.
 model1=model_1072,^grounddecor
-interactable=1
+active=yes
 op1=Walk-across
 
 [loc_2304]
@@ -17344,7 +17344,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_2308]
@@ -17353,7 +17353,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -17362,7 +17362,7 @@ name=Door
 desc=Solid bars of iron.
 model1=model_609,^wall_straight
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_2310]
@@ -17375,14 +17375,14 @@ op1=Climb-up
 name=Stepping stone
 desc=I can jump from this stepping stone.
 model1=model_1046,^grounddecor
-interactable=1
+active=yes
 op1=Jump-from
 
 [loc_2312]
 name=Balancing rope
 desc=I can balance on this rope.
 model1=model_1878,^grounddecor
-interactable=1
+active=yes
 hillskew=yes
 sharelight=yes
 op1=Walk-on
@@ -17391,21 +17391,21 @@ op1=Walk-on
 name=Tree branch
 desc=I can climb up this.
 model1=model_2001
-interactable=1
+active=yes
 op1=Climb
 
 [loc_2314]
 name=Tree branch
 desc=I can climb down here.
 model1=model_2023
-interactable=1
+active=yes
 op1=Climb-down
 
 [loc_2315]
 name=Tree branch
 desc=I can climb down here.
 model1=model_2000
-interactable=1
+active=yes
 op1=Climb-down
 
 [loc_2316]
@@ -17503,7 +17503,7 @@ desc=This tree has an unusually long branch on it.
 model1=model_2276
 width=2
 length=2
-interactable=1
+active=yes
 
 [loc_2328]
 name=Rocks.
@@ -17555,28 +17555,28 @@ op1=Balance
 name=Stepping stones
 desc=A rocky outcrop from the running water.
 model1=model_1046,^grounddecor
-interactable=1
+active=yes
 op1=Balance
 
 [loc_2334]
 name=Stepping stones
 desc=A rocky outcrop from the running water.
 model1=model_1046,^grounddecor
-interactable=1
+active=yes
 op1=Balance
 
 [loc_2335]
 name=Stepping stones
 desc=A rocky outcrop from the running water.
 model1=model_1046,^grounddecor
-interactable=1
+active=yes
 op1=Balance
 
 [loc_2336]
 name=Hole
 desc=You can see a cauldron directly below.
 model1=model_1464
-interactable=1
+active=yes
 
 [loc_2337]
 name=Sturdy door
@@ -17586,7 +17586,7 @@ model2=model_679,^wall_diagonalcorner
 model3=model_636,^wall_l
 model4=model_637,^wall_squarecorner
 model5=model_638,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -17601,7 +17601,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -17616,7 +17616,7 @@ model2=model_679,^wall_diagonalcorner
 model3=model_636,^wall_l
 model4=model_637,^wall_squarecorner
 model5=model_638,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -17631,7 +17631,7 @@ model2=model_679,^wall_diagonalcorner
 model3=model_636,^wall_l
 model4=model_637,^wall_squarecorner
 model5=model_638,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -17646,7 +17646,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 op1=Push
@@ -17655,7 +17655,7 @@ op1=Push
 name=Grill
 desc=Looks like a ventilation grill.
 model1=model_2097,^walldecor_straight
-interactable=1
+active=yes
 op1=Listen-at
 
 [loc_2343]
@@ -17870,7 +17870,7 @@ name=Soil
 desc=Soil - dug up!
 model1=model_1124,^grounddecor
 blockwalk=no
-interactable=1
+active=yes
 hillskew=yes
 
 [loc_2377]
@@ -17878,7 +17878,7 @@ name=Soil
 desc=Soil - dug up!
 model1=model_1139,^grounddecor
 blockwalk=no
-interactable=1
+active=yes
 hillskew=yes
 
 [loc_2378]
@@ -17886,7 +17886,7 @@ name=Soil
 desc=Soil - dug up!
 model1=model_1032,^grounddecor
 blockwalk=no
-interactable=1
+active=yes
 hillskew=yes
 
 [loc_2379]
@@ -17908,7 +17908,7 @@ name=Soil
 desc=Swampy dirt.
 model1=model_1124,^grounddecor
 blockwalk=no
-interactable=1
+active=yes
 hillskew=yes
 recol1s=4899
 recol1d=21902
@@ -17924,7 +17924,7 @@ name=Soil
 desc=Swampy dirt.
 model1=model_1139,^grounddecor
 blockwalk=no
-interactable=1
+active=yes
 hillskew=yes
 recol1s=4899
 recol1d=21902
@@ -17938,7 +17938,7 @@ name=Soil
 desc=Swampy dirt.
 model1=model_1032,^grounddecor
 blockwalk=no
-interactable=1
+active=yes
 hillskew=yes
 recol1s=4899
 recol1d=21902
@@ -18021,7 +18021,7 @@ recol2d=4888
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 op2=Search
 
@@ -18029,7 +18029,7 @@ op2=Search
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 op2=Search
@@ -18038,14 +18038,14 @@ op2=Search
 name=Gnome goal
 desc=Aim for the goal!
 model1=model_1317
-interactable=1
+active=yes
 
 [loc_2394]
 name=Gate
 desc=A gate to the Gnomeball pitch.
 model1=model_1298,^wall_straight
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_2395]
@@ -18071,7 +18071,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18086,7 +18086,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18101,7 +18101,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18114,7 +18114,7 @@ desc=Might be worth searching.
 model1=model_2247
 width=2
 length=3
-interactable=1
+active=yes
 blocksides=13
 op1=Open
 
@@ -18124,7 +18124,7 @@ desc=Might be worth searching.
 model1=model_2244
 width=2
 length=3
-interactable=1
+active=yes
 blocksides=13
 op1=Shut
 op2=Search
@@ -18134,14 +18134,14 @@ name=Bookcase
 desc=A good source of books!
 model1=model_1263
 length=2
-interactable=1
+active=yes
 op2=Check
 
 [loc_2403]
 name=Chest
 desc=Might be worth searching.
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 recol1s=41
 recol1d=11173
@@ -18151,7 +18151,7 @@ op1=Open
 name=Chest
 desc=Might be worth searching.
 model1=model_1226
-interactable=1
+active=yes
 blocksides=14
 recol1s=41
 recol1d=11173
@@ -18162,7 +18162,7 @@ op2=Close
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -18174,7 +18174,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -18189,7 +18189,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18200,7 +18200,7 @@ op1=Open
 name=Ladder
 desc=I can climb down this.
 model1=model_1203
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -18217,7 +18217,7 @@ op1=Chop
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -18229,7 +18229,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18240,35 +18240,35 @@ op1=Open
 name=Gangplank
 desc=Handy for boarding the ship.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2413]
 name=Gangplank
 desc=Handy for boarding the ship.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2414]
 name=Gangplank
 desc=Handy for boarding the ship.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2415]
 name=Gangplank
 desc=Handy for boarding the ship.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2416]
 name=Lever
 desc=Pull me!
 model1=model_2221
-interactable=1
+active=yes
 blocksides=11
 op1=Pull
 
@@ -18303,42 +18303,42 @@ mapscene=45
 name=Lever
 desc=This lever is down.
 model1=model_2077,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_2422]
 name=Lever
 desc=This lever is up.
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_2423]
 name=Lever
 desc=This lever is down.
 model1=model_2077,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_2424]
 name=Lever
 desc=This lever is up.
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_2425]
 name=Lever
 desc=This lever is down.
 model1=model_2077,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_2426]
 name=Lever
 desc=This lever is up.
 model1=model_2108,^walldecor_straight
-interactable=1
+active=yes
 op1=Pull
 
 [loc_2427]
@@ -18349,7 +18349,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18364,7 +18364,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18379,7 +18379,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18394,7 +18394,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18409,7 +18409,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18421,7 +18421,7 @@ name=Gate
 desc=This gate is closed shut.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -18433,7 +18433,7 @@ name=Gate
 desc=This gate is closed shut.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 recol1s=2
 recol1d=45
@@ -18467,7 +18467,7 @@ op1=Open
 
 [loc_2437]
 model1=model_1226
-interactable=0
+active=no
 
 [loc_2438]
 name=Gate
@@ -18476,7 +18476,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_2439]
@@ -18485,7 +18485,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -18494,47 +18494,47 @@ name=Pillar
 desc=Wonder what this pillar is for?
 model1=model_1310
 blockrange=no
-interactable=1
+active=yes
 
 [loc_2441]
 name=Pillar
 desc=Wonder what this pillar is for?
 model1=model_1310
 blockrange=no
-interactable=1
+active=yes
 
 [loc_2442]
 name=Pillar
 desc=Wonder what this pillar is for?
 model1=model_1310
 blockrange=no
-interactable=1
+active=yes
 
 [loc_2443]
 name=Pillar
 desc=Wonder what this pillar is for?
 model1=model_1310
 blockrange=no
-interactable=1
+active=yes
 
 [loc_2444]
 name=Trapdoor
 desc=I wonder what's under it?
 model1=model_1175,^grounddecor
-interactable=1
+active=yes
 mapscene=43
 op1=Open
 
 [loc_2445]
 model1=model_1259,^grounddecor
-interactable=0
+active=no
 mapscene=43
 
 [loc_2446]
 name=Trap door
 desc=This leads to somewhere...but where?
 model1=model_1175,^grounddecor
-interactable=1
+active=yes
 mapscene=43
 op1=Open
 
@@ -18542,14 +18542,14 @@ op1=Open
 name=Tree
 desc=I reckon I could climb that!
 model1=model_2013
-interactable=1
+active=yes
 op1=Climb-up
 
 [loc_2448]
 name=Tree
 desc=I reckon I could climb that!
 model1=model_2024
-interactable=1
+active=yes
 op1=Climb-down
 
 [loc_2449]
@@ -18571,7 +18571,7 @@ name=Roots
 desc=There's something behind these roots.
 model1=model_2220
 width=4
-interactable=1
+active=yes
 hillskew=yes
 op1=Push
 
@@ -18938,7 +18938,7 @@ desc=The source of all Rune Stones.
 model1=model_863
 width=5
 length=5
-interactable=1
+active=yes
 sharelight=yes
 op1=Mine
 op2=Prospect
@@ -19070,7 +19070,7 @@ model1=model_868
 name=Tower ladder
 desc=This leads to the practice tower.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -19078,7 +19078,7 @@ op1=Climb-up
 name=Tower ladder
 desc=This leads back down to the guild.
 model1=model_1215
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -19096,7 +19096,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19199,7 +19199,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19213,7 +19213,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19227,7 +19227,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19241,7 +19241,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19257,13 +19257,13 @@ op1=Search
 name=Mud patch
 desc=Looks like someone's tried digging here.
 model1=model_1139,^grounddecor
-interactable=1
+active=yes
 
 [loc_2532]
 name=Mud patch
 desc=Looks like someone's tried digging here.
 model1=model_1032,^grounddecor
-interactable=1
+active=yes
 
 [loc_2533]
 name=Mud pile
@@ -19276,7 +19276,7 @@ op1=Climb
 name=Door
 desc=There's black cross on the door.
 model1=model_3197,^wall_straight
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19287,7 +19287,7 @@ op1=Open
 name=Door
 desc=The door is closed.
 model1=model_3197,^wall_straight
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19297,7 +19297,7 @@ op1=Open
 [loc_2536]
 name=Door
 model1=model_3197,^wall_straight
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19311,7 +19311,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19325,7 +19325,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19431,7 +19431,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19446,7 +19446,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19459,7 +19459,7 @@ name=Gate
 desc=A metal gate bars your way
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 op2=Pick Lock
 
@@ -19468,7 +19468,7 @@ name=Gate
 desc=A metal gate bars your way
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 op2=Pick Lock
@@ -19480,7 +19480,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19495,7 +19495,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=4
 recol2s=24
@@ -19510,7 +19510,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=4
 recol2s=24
@@ -19521,7 +19521,7 @@ op2=Pick Lock
 [loc_2557]
 name=Door
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19536,7 +19536,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -19551,7 +19551,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19611,7 +19611,7 @@ op2=Steal from
 name=Chest
 desc=I wonder what's inside it..
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 op2=Search for traps
@@ -19620,7 +19620,7 @@ op2=Search for traps
 name=Chest
 desc=I wonder what's inside it.
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 op2=Search for traps
@@ -19629,7 +19629,7 @@ op2=Search for traps
 name=Chest
 desc=I wonder what's inside it.
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 op2=Search for traps
@@ -19638,7 +19638,7 @@ op2=Search for traps
 name=Chest
 desc=I wonder what's inside it.
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 op2=Search for traps
@@ -19647,7 +19647,7 @@ op2=Search for traps
 name=Chest
 desc=I wonder what's inside it.
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 op2=Search for traps
@@ -19656,7 +19656,7 @@ op2=Search for traps
 name=Chest
 desc=I wonder what's inside it.
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 op2=Search for traps
@@ -19665,7 +19665,7 @@ op2=Search for traps
 name=Chest
 desc=I wonder what's inside it.
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 op2=Search for traps
@@ -19674,14 +19674,14 @@ op2=Search for traps
 name=Chest
 desc=I wonder what's inside it.
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 op2=Search for traps
 
 [loc_2574]
 model1=model_1226
-interactable=0
+active=no
 blocksides=14
 
 [loc_2575]
@@ -19760,7 +19760,7 @@ mapscene=12
 name=Fungus covered Cavern wall
 desc=It looks as if it is covered in some fungus.
 model1=model_2071,^walldecor_straight
-interactable=1
+active=yes
 ambient=50
 contrast=100
 recol1s=6689
@@ -19781,7 +19781,7 @@ op2=Search
 name=Hand holds
 desc=Rocky walls, you may be able to climb it.
 model1=model_2078,^walldecor_straight
-interactable=1
+active=yes
 ambient=50
 contrast=100
 op1=Climb
@@ -19794,7 +19794,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19820,7 +19820,7 @@ op2=Close
 name=Hole
 desc=This ship's not getting far with that.
 model1=model_1845
-interactable=1
+active=yes
 sharelight=yes
 op1=Repair
 
@@ -19828,7 +19828,7 @@ op1=Repair
 name=Ladder
 desc=Takes me into the ship.
 model1=model_1215
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -19836,14 +19836,14 @@ op1=Climb-down
 name=Ladder
 desc=Takes me into the ship.
 model1=model_1215
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
 [loc_2592]
 name=Ladder
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -19851,14 +19851,14 @@ op1=Climb-up
 name=Gangplank
 desc=Handy for boarding the ship.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2594]
 name=Gangplank
 desc=Handy for boarding the ship.
 model1=model_1844
-interactable=1
+active=yes
 op1=Cross
 
 [loc_2595]
@@ -19869,7 +19869,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19884,7 +19884,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19899,7 +19899,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19914,7 +19914,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19929,7 +19929,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19944,7 +19944,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19959,7 +19959,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19974,7 +19974,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -19999,7 +19999,7 @@ op2=Close
 [loc_2605]
 name=Ladder
 model1=model_1231
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -20011,7 +20011,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 op1=Open
@@ -20021,7 +20021,7 @@ name=Gate
 desc=It's closed.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20033,7 +20033,7 @@ name=Gate
 desc=It's closed.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 recol1s=2
 recol1d=45
@@ -20060,7 +20060,7 @@ op1=Climb
 [loc_2611]
 name=Ladder
 model1=model_1215
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -20145,7 +20145,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20159,7 +20159,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20169,14 +20169,14 @@ op1=Open
 [loc_2623]
 name=Door
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_2624]
 name=Door
 desc=The entrance to the Hero's Guild.
 model1=model_639,^wall_straight
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20187,7 +20187,7 @@ op1=Open
 name=Door
 desc=The entrance to the Hero's Guild.
 model1=model_639,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 recol1s=2
 recol1d=45
@@ -20202,7 +20202,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20216,7 +20216,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20230,7 +20230,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20262,7 +20262,7 @@ op3=hidden
 [loc_2631]
 name=Door
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_2632]
@@ -20344,7 +20344,7 @@ op1=Pray-at
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -20388,7 +20388,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -20515,7 +20515,7 @@ op1=Investigate
 name=Smashed window
 desc=looks like the killer smashed this to leave the mansion.
 model1=model_2037
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20572,7 +20572,7 @@ op1=Use
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 op2=Search
 
@@ -20580,7 +20580,7 @@ op2=Search
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 op2=Search
@@ -20652,7 +20652,7 @@ op2=Search
 [loc_2683]
 name=Window
 model1=model_2045,^walldecor_straight
-interactable=1
+active=yes
 ambient=10
 op2=Search
 
@@ -20667,7 +20667,7 @@ op2=Search
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 op2=Search
 
@@ -20675,7 +20675,7 @@ op2=Search
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 op2=Search
@@ -20684,7 +20684,7 @@ op2=Search
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 op2=Search
 
@@ -20692,7 +20692,7 @@ op2=Search
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 op2=Search
@@ -20701,7 +20701,7 @@ op2=Search
 name=Prison door
 desc=There's no getting around it, it's a fairly sturdy prison cell door.
 model1=model_609,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_2690]
@@ -20784,7 +20784,7 @@ name=Tent door
 desc=The entrance to the tent.
 model1=model_884,^wall_straight
 model2=model_885,^wall_diagonal
-interactable=1
+active=yes
 recol1s=1948
 recol1d=53
 recol2s=1955
@@ -20804,7 +20804,7 @@ name=Tracks
 desc=Tracks in the sand.
 model1=model_1744
 width=3
-interactable=1
+active=yes
 active=no
 op1=Look at
 op2=Search
@@ -20814,7 +20814,7 @@ name=Tracks
 desc=Tracks in the sand.
 model1=model_1744
 width=3
-interactable=1
+active=yes
 active=no
 op1=Look at
 op2=Search
@@ -20836,7 +20836,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20851,7 +20851,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -20902,7 +20902,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -21303,7 +21303,7 @@ model1=model_1251
 name=Blacksmith's tools
 desc=Various implements for working with metal.
 model1=model_2125,^walldecor_straight
-interactable=1
+active=yes
 
 [loc_2785]
 name=Furnace
@@ -21317,7 +21317,7 @@ name=City gate
 desc=An entrance to Gu'Tanoth.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 
 [loc_2787]
@@ -21325,7 +21325,7 @@ name=City gate
 desc=An entrance to Gu'Tanoth.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -21334,7 +21334,7 @@ name=City gate
 desc=An entrance to Gu'Tanoth.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 
 [loc_2789]
@@ -21342,7 +21342,7 @@ name=City gate
 desc=An entrance to Gu'Tanoth.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -21350,7 +21350,7 @@ op1=Open
 name=Chest
 desc=I wonder what's inside it.
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 
@@ -21359,14 +21359,14 @@ name=Counter
 desc=A counter made from a stone block.
 model1=model_723
 width=2
-interactable=1
+active=yes
 
 [loc_2792]
 name=Counter
 desc=A counter made from a stone block.
 model1=model_723
 width=2
-interactable=1
+active=yes
 op1=Steal-From
 
 [loc_2793]
@@ -21374,21 +21374,21 @@ name=Counter
 desc=An ogre is selling cakes here.
 model1=model_711
 width=2
-interactable=1
+active=yes
 op1=Steal-From
 
 [loc_2794]
 name=Lever
 desc=A lever for activating something.
 model1=model_2108
-interactable=1
+active=yes
 op1=Pull
 
 [loc_2795]
 name=Lever
 desc=A lever for activating something.
 model1=model_2077
-interactable=1
+active=yes
 op1=Pull
 
 [loc_2796]
@@ -21451,7 +21451,7 @@ desc=I think I can squeeze through here...
 model1=model_731
 width=4
 length=2
-interactable=1
+active=yes
 op1=Enter
 
 [loc_2805]
@@ -21630,7 +21630,7 @@ op1=Climb
 name=Chest
 desc=I wonder what's inside it?
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 
@@ -21638,19 +21638,19 @@ op1=Open
 name=Chest
 desc=I wonder what's inside it?
 model1=model_1249
-interactable=1
+active=yes
 blocksides=14
 op1=Open
 
 [loc_2828]
 model1=model_1226
-interactable=0
+active=no
 blocksides=14
 op1=Close
 
 [loc_2829]
 model1=model_1226
-interactable=0
+active=no
 blocksides=14
 op1=Close
 
@@ -21671,7 +21671,7 @@ name=Battlement
 desc=A low wall is blocking your path.
 model1=model_3345
 blockrange=no
-interactable=1
+active=yes
 op1=Climb-over
 
 [loc_2833]
@@ -21684,7 +21684,7 @@ op1=Climb-up
 name=Battlement
 desc=A low wall is blocking your path.
 model1=model_842,^grounddecor
-interactable=1
+active=yes
 op1=Climb_over
 
 [loc_2835]
@@ -21704,25 +21704,25 @@ op1=Search
 
 [loc_2838]
 model1=model_1811
-interactable=0
+active=no
 recol1s=18522
 recol1d=32433
 
 [loc_2839]
 model1=model_1811
-interactable=0
+active=no
 recol1s=18522
 recol1d=10167
 
 [loc_2840]
 model1=model_1811
-interactable=0
+active=no
 recol1s=18522
 recol1d=55250
 
 [loc_2841]
 model1=model_1811
-interactable=0
+active=no
 recol1s=22336
 recol1d=127
 
@@ -21737,14 +21737,14 @@ disposealpha=yes
 name=Drain
 desc=This drain leads from the sink to the sewers below.
 model1=model_2027,^walldecor_straight
-interactable=1
+active=yes
 op1=Search
 
 [loc_2844]
 name=Sewer valve
 desc=This looks like it can be turned.
 model1=model_1746
-interactable=1
+active=yes
 op1=Turn-left
 op2=Turn-right
 
@@ -21752,7 +21752,7 @@ op2=Turn-right
 name=Sewer valve
 desc=This looks like it can be turned.
 model1=model_1746
-interactable=1
+active=yes
 op1=Turn-left
 op2=Turn-right
 
@@ -21760,7 +21760,7 @@ op2=Turn-right
 name=Sewer valve
 desc=This looks like it can be turned.
 model1=model_1746
-interactable=1
+active=yes
 op1=Turn-left
 op2=Turn-right
 
@@ -21768,7 +21768,7 @@ op2=Turn-right
 name=Sewer valve
 desc=This looks like it can be turned.
 model1=model_1746
-interactable=1
+active=yes
 op1=Turn-left
 op2=Turn-right
 
@@ -21776,7 +21776,7 @@ op2=Turn-right
 name=Sewer valve
 desc=This looks like it can be turned.
 model1=model_1746
-interactable=1
+active=yes
 op1=Turn-left
 op2=Turn-right
 
@@ -21785,7 +21785,7 @@ name=Raft
 desc=A rudimentary type of boat.
 model1=model_1461
 length=2
-interactable=1
+active=yes
 op1=Board
 
 [loc_2850]
@@ -21811,7 +21811,7 @@ desc=I can probably squeeze my way inside there.
 model1=model_732
 width=4
 length=4
-interactable=1
+active=yes
 op1=Enter
 
 [loc_2853]
@@ -21830,7 +21830,7 @@ model2=model_2213,^wall_diagonalcorner
 model3=model_2176,^wall_l
 model4=model_2177,^wall_squarecorner
 model5=model_2178,^wall_diagonal
-interactable=1
+active=yes
 occlude=yes
 op1=Knock-at
 
@@ -21861,7 +21861,7 @@ op2=Close
 name=Crate
 desc=Used for storage.
 model1=model_2143
-interactable=1
+active=yes
 op1=Search
 
 [loc_2859]
@@ -21869,14 +21869,14 @@ name=Range
 desc=Used for cooking.
 model1=model_1219
 length=2
-interactable=1
+active=yes
 
 [loc_2860]
 name=Hazeels' coffin
 desc=Very ominous.
 model1=model_1819
 width=3
-interactable=1
+active=yes
 
 [loc_2861]
 name=Door
@@ -21885,7 +21885,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -21899,7 +21899,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -21914,7 +21914,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -21934,7 +21934,7 @@ op2=Check
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -21945,7 +21945,7 @@ op1=Open
 name=Gate
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 recol1s=2
 recol1d=45
@@ -21956,7 +21956,7 @@ op1=Open
 [loc_2867]
 name=Pot plant
 model1=model_1590
-interactable=1
+active=yes
 op1=Look-under
 
 [loc_2868]
@@ -21978,14 +21978,14 @@ op2=Shut
 name=Mouse hole
 desc=The mouse equivalent of a door.
 model1=model_2068
-interactable=1
+active=yes
 op1=Examine
 
 [loc_2871]
 name=Ladder
 desc=I can climb down this.
 model1=model_1203
-interactable=1
+active=yes
 mapscene=7
 recol1s=5660
 recol1d=33
@@ -22005,7 +22005,7 @@ op1=Climb-down
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -22067,7 +22067,7 @@ op1=Step-into
 [loc_2880]
 name=Mystic portal
 model1=model_2161,^wall_straight
-interactable=1
+active=yes
 ambient=100
 contrast=100
 op1=Walk-through
@@ -22098,7 +22098,7 @@ op1=Open
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb
 op2=Climb-up
@@ -22212,7 +22212,7 @@ recol1d=22447
 name=Legends Guild door
 desc=A door to the Legends Guild.
 model1=model_593,^wall_straight
-interactable=1
+active=yes
 recol1s=10167
 recol1d=43486
 recol2s=9643
@@ -22225,7 +22225,7 @@ op1=Open
 name=Legends Guild door
 desc=A door to the Legends Guild.
 model1=model_593,^wall_straight
-interactable=1
+active=yes
 mirror=yes
 recol1s=10167
 recol1d=43486
@@ -22368,14 +22368,14 @@ op2=Search
 [loc_2912]
 name=Ancient Gate
 model1=model_1809,^wall_straight
-interactable=1
+active=yes
 op1=Open
 op2=Search
 
 [loc_2913]
 name=Ancient Gate
 model1=model_1771,^wall_straight
-interactable=1
+active=yes
 op1=Open
 op2=Search
 
@@ -22439,7 +22439,7 @@ op1=Smash-to-bits
 [loc_2922]
 name=Ancient Gate
 model1=model_1727,^wall_straight
-interactable=1
+active=yes
 recol1s=41
 recol1d=4
 recol2s=61
@@ -22453,7 +22453,7 @@ op1=Open
 [loc_2923]
 name=Ancient Gate
 model1=model_1815,^wall_straight
-interactable=1
+active=yes
 recol1s=41
 recol1d=4
 recol2s=61
@@ -22467,7 +22467,7 @@ op1=Open
 [loc_2924]
 name=Ancient Gate
 model1=model_1727,^wall_straight
-interactable=1
+active=yes
 recol1s=41
 recol1d=4
 recol2s=61
@@ -22480,7 +22480,7 @@ recol4d=1942
 [loc_2925]
 name=Ancient Gate
 model1=model_1815,^wall_straight
-interactable=1
+active=yes
 recol1s=41
 recol1d=4
 recol2s=61
@@ -22534,7 +22534,7 @@ desc=A huge, strangely constructed doorway, not sure how this opens.
 model1=model_1823
 width=2
 length=2
-interactable=1
+active=yes
 op1=Open
 op2=Search
 
@@ -22544,7 +22544,7 @@ desc=It looks like a magical portal of somekind, who knows where it leads to?
 model1=model_1780
 width=2
 length=2
-interactable=1
+active=yes
 
 [loc_2932]
 name=Barrel
@@ -22557,7 +22557,7 @@ op1=Smash
 [loc_2933]
 model1=model_2218
 blockwalk=no
-interactable=0
+active=no
 anim=seq_449
 disposealpha=yes
 
@@ -22799,7 +22799,7 @@ model1=model_1076
 width=3
 length=3
 blockwalk=no
-interactable=1
+active=yes
 hillskew=yes
 
 [loc_2957]
@@ -22910,7 +22910,7 @@ op1=Search
 name=Shimmering field
 desc=This looks like some sort of shimering surface.
 model1=model_584,^wall_straight
-interactable=1
+active=yes
 op1=Walk-through
 op2=Look
 
@@ -23194,19 +23194,19 @@ op1=Open
 name=Door
 desc=The door is closed.
 model1=model_3197,^wall_straight
-interactable=1
+active=yes
 op1=Open
 
 [loc_2998]
 name=Door
 desc=The door is open.
 model1=model_3197,^wall_straight
-interactable=1
+active=yes
 op1=Close
 
 [loc_2999]
 model1=model_3201
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3000]
@@ -23219,32 +23219,32 @@ sharelight=yes
 
 [loc_3001]
 model1=model_3202
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3002]
 model1=model_3207
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3003]
 model1=model_3203
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3004]
 model1=model_3199
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3005]
 model1=model_3204
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3006]
 model1=model_3200
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3007]
@@ -23255,32 +23255,32 @@ sharelight=yes
 
 [loc_3008]
 model1=model_3210
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3009]
 model1=model_658
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3010]
 model1=model_3213
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3011]
 model1=model_3211
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3012]
 model1=model_3214
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3013]
 model1=model_3209
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3014]
@@ -23291,7 +23291,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -23304,7 +23304,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 op1=Open
 
 [loc_3016]
@@ -23313,7 +23313,7 @@ desc=A wooden gate.
 model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -23325,7 +23325,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -23340,7 +23340,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -23355,7 +23355,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -23368,7 +23368,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_3021]
@@ -23377,7 +23377,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -23387,7 +23387,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 op1=Open
 
 [loc_3023]
@@ -23396,7 +23396,7 @@ desc=A wrought iron gate.
 model1=model_1509,^wall_straight
 model2=model_1511,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 op1=Open
 
@@ -23408,7 +23408,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -23423,7 +23423,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -23438,7 +23438,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -23453,7 +23453,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=45
 recol2s=24
@@ -23464,7 +23464,7 @@ op1=Open
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -23472,7 +23472,7 @@ op1=Climb-up
 name=Ladder
 desc=I can climb down this.
 model1=model_1203
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -23480,7 +23480,7 @@ op1=Climb-down
 name=Ladder
 desc=I can climb this.
 model1=model_1208
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-up
 
@@ -23488,7 +23488,7 @@ op1=Climb-up
 name=Ladder
 desc=I can climb down this.
 model1=model_1203
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -23607,7 +23607,7 @@ desc=A hot place for forging things in.
 model1=model_1192
 width=3
 length=3
-interactable=1
+active=yes
 blocksides=13
 
 [loc_3045]
@@ -23627,56 +23627,56 @@ sharelight=yes
 
 [loc_3047]
 model1=model_3245
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3048]
 model1=model_3302
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3049]
 model1=model_3265
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3050]
 model1=model_3219
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3051]
 model1=model_3267
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3052]
 model1=model_3269
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3053]
 model1=model_3249
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3054]
 model1=model_3295
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
@@ -23684,42 +23684,42 @@ mirror=yes
 
 [loc_3055]
 model1=model_3295
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3056]
 model1=model_3299
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3057]
 model1=model_3300
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3058]
 model1=model_3266
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3059]
 model1=model_3291
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3060]
 model1=model_3291
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
@@ -23727,14 +23727,14 @@ mirror=yes
 
 [loc_3061]
 model1=model_3226
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3062]
 model1=model_3226
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
@@ -23742,14 +23742,14 @@ mirror=yes
 
 [loc_3063]
 model1=model_3240
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3064]
 model1=model_3240
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
@@ -23757,14 +23757,14 @@ mirror=yes
 
 [loc_3065]
 model1=model_3304
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3066]
 model1=model_3304
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
@@ -23772,14 +23772,14 @@ mirror=yes
 
 [loc_3067]
 model1=model_3294
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3068]
 model1=model_3294
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
@@ -23787,14 +23787,14 @@ mirror=yes
 
 [loc_3069]
 model1=model_3296
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3070]
 model1=model_3296
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
@@ -23802,42 +23802,42 @@ mirror=yes
 
 [loc_3071]
 model1=model_3239
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3072]
 model1=model_3241
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3073]
 model1=model_3242
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3074]
 model1=model_3243
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3075]
 model1=model_3277
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
 
 [loc_3076]
 model1=model_3245
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
@@ -23880,7 +23880,7 @@ op5=Lean against
 
 [loc_3080]
 model1=model_3236,^wall_straight
-interactable=0
+active=no
 sharelight=yes
 ambient=30
 contrast=30
@@ -23889,7 +23889,7 @@ forcedecor=yes
 [loc_3081]
 model1=model_3236,^wall_straight
 blockrange=no
-interactable=0
+active=no
 ambient=30
 contrast=30
 mirror=yes
@@ -23960,7 +23960,7 @@ forcedecor=yes
 
 [loc_3089]
 model1=model_3276
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -23970,7 +23970,7 @@ recol1d=6689
 model1=model_3278
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -23982,7 +23982,7 @@ recol2d=2485
 model1=model_3229
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -23994,7 +23994,7 @@ recol2d=2485
 model1=model_3250
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24006,7 +24006,7 @@ recol2d=2485
 model1=model_3250
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 mirror=yes
@@ -24019,7 +24019,7 @@ recol2d=2485
 model1=model_3251
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24031,7 +24031,7 @@ recol2d=2485
 model1=model_3251
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 mirror=yes
@@ -24044,7 +24044,7 @@ recol2d=2485
 model1=model_3278
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24056,7 +24056,7 @@ recol2d=43063
 model1=model_3229
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24068,7 +24068,7 @@ recol2d=43063
 model1=model_3250
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24080,7 +24080,7 @@ recol2d=43063
 model1=model_3250
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 mirror=yes
@@ -24093,7 +24093,7 @@ recol2d=43063
 model1=model_3251
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24105,7 +24105,7 @@ recol2d=43063
 model1=model_3251
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 mirror=yes
@@ -24118,7 +24118,7 @@ recol2d=43063
 model1=model_3278
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24130,7 +24130,7 @@ recol2d=20810
 model1=model_3229
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24142,7 +24142,7 @@ recol2d=20810
 model1=model_3250
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24154,7 +24154,7 @@ recol2d=20810
 model1=model_3250
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 mirror=yes
@@ -24167,7 +24167,7 @@ recol2d=20810
 model1=model_3251
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 recol1s=6932
@@ -24179,7 +24179,7 @@ recol2d=20810
 model1=model_3251
 length=2
 blockrange=no
-interactable=0
+active=no
 ambient=60
 contrast=60
 mirror=yes
@@ -24194,7 +24194,7 @@ desc=Flags marking the entrance to the arena.
 model1=model_3321
 width=2
 blockrange=no
-interactable=1
+active=yes
 anim=seq_917
 ambient=60
 contrast=60
@@ -24208,7 +24208,7 @@ desc=Flags marking the entrance to the arena.
 model1=model_3320
 width=2
 blockrange=no
-interactable=1
+active=yes
 anim=seq_917
 ambient=60
 contrast=60
@@ -24229,7 +24229,7 @@ desc=Flags marking the entrance to the arena.
 model1=model_3324
 width=2
 blockrange=no
-interactable=1
+active=yes
 anim=seq_917
 ambient=60
 contrast=60
@@ -24243,7 +24243,7 @@ desc=Flags marking the entrance to the arena.
 model1=model_3319
 width=2
 blockrange=no
-interactable=1
+active=yes
 anim=seq_917
 ambient=60
 contrast=60
@@ -24257,7 +24257,7 @@ desc=Flags marking the entrance to the arena.
 model1=model_3324
 width=2
 blockrange=no
-interactable=1
+active=yes
 anim=seq_917
 ambient=60
 contrast=60
@@ -24272,7 +24272,7 @@ desc=Flags marking the entrance to the arena.
 model1=model_3319
 width=2
 blockrange=no
-interactable=1
+active=yes
 anim=seq_917
 ambient=60
 contrast=60
@@ -24283,39 +24283,39 @@ op1=Forfeit
 
 [loc_3115]
 model1=model_3290,^wall_squarecorner
-interactable=0
+active=no
 
 [loc_3116]
 model1=model_3303,^wall_squarecorner
-interactable=0
+active=no
 
 [loc_3117]
 model1=model_3224,^wall_squarecorner
-interactable=0
+active=no
 
 [loc_3118]
 model1=model_3234,^wall_squarecorner
-interactable=0
+active=no
 
 [loc_3119]
 model1=model_3246,^wall_squarecorner
-interactable=0
+active=no
 
 [loc_3120]
 model1=model_3268,^wall_squarecorner
-interactable=0
+active=no
 
 [loc_3121]
 model1=model_3279,^wall_squarecorner
-interactable=0
+active=no
 
 [loc_3122]
 model1=model_3238,^wall_squarecorner
-interactable=0
+active=no
 
 [loc_3123]
 model1=model_1089,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mapscene=46
@@ -24327,7 +24327,7 @@ recol2d=6569
 
 [loc_3124]
 model1=model_1137,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6932
@@ -24342,7 +24342,7 @@ model3=model_996,^wall_l
 model4=model_998,^wall_squarecorner
 model5=model_999,^wall_diagonal
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6932
@@ -24355,7 +24355,7 @@ recol3d=6565
 [loc_3126]
 model1=model_3198,^wall_straight
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=6932
@@ -24368,7 +24368,7 @@ recol3d=6565
 [loc_3127]
 model1=model_3198,^wall_straight
 blockrange=no
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
@@ -24382,144 +24382,144 @@ recol3d=6565
 [loc_3128]
 model1=model_3235
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3129]
 model1=model_3283
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3130]
 model1=model_3314
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3131]
 model1=model_3307
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3132]
 model1=model_3285
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3133]
 model1=model_3231
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3134]
 model1=model_3260
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3135]
 model1=model_3258
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3136]
 model1=model_3232
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3137]
 model1=model_3282
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3138]
 model1=model_3305
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3139]
 model1=model_3306
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3140]
 model1=model_3280
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3141]
 model1=model_3230
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3142]
 model1=model_3270
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3143]
 model1=model_3259
 blockwalk=no
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3144]
 model1=model_3256,^wall_straight
-interactable=0
+active=no
 mirror=yes
 
 [loc_3145]
 model1=model_3275,^wall_straight
-interactable=0
+active=no
 mirror=yes
 
 [loc_3146]
 model1=model_3297,^wall_straight
 model2=model_3298,^wall_diagonal
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3147]
 model1=model_3273
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3148]
 model1=model_3263
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3149]
 model1=model_3263
-interactable=0
+active=no
 ambient=15
 contrast=15
 mirror=yes
 
 [loc_3150]
 model1=model_3264
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3151]
 model1=model_3264
-interactable=0
+active=no
 ambient=15
 contrast=15
 mirror=yes
@@ -24529,25 +24529,25 @@ model1=model_3220,^wall_straight
 model2=model_3221,^wall_diagonalcorner
 model3=model_3222,^wall_l
 model4=model_3223,^wall_squarecorner
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3153]
 model1=model_3255,^wall_straight
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3154]
 model1=model_3254,^wall_straight
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3155]
 model1=model_3254,^wall_straight
-interactable=0
+active=no
 ambient=15
 contrast=15
 mirror=yes
@@ -24555,21 +24555,21 @@ mirror=yes
 [loc_3156]
 model1=model_3228,^wall_straight
 blockrange=no
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3157]
 model1=model_3228,^wall_straight
 blockrange=no
-interactable=0
+active=no
 ambient=15
 contrast=15
 mirror=yes
 
 [loc_3158]
 model1=model_3284
-interactable=0
+active=no
 ambient=15
 contrast=15
 
@@ -24588,14 +24588,14 @@ recol2d=43067
 [loc_3160]
 model1=model_3315,^wall_straight
 blockrange=no
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3161]
 model1=model_3315,^wall_straight
 blockrange=no
-interactable=0
+active=no
 ambient=15
 contrast=15
 mirror=yes
@@ -24603,7 +24603,7 @@ mirror=yes
 [loc_3162]
 model1=model_3252,^wall_straight
 blockrange=no
-interactable=0
+active=no
 ambient=15
 contrast=15
 
@@ -24611,20 +24611,20 @@ contrast=15
 model1=model_3308
 blockwalk=no
 blockrange=no
-interactable=0
+active=no
 
 [loc_3164]
 model1=model_3308
 blockwalk=no
 blockrange=no
-interactable=0
+active=no
 mirror=yes
 
 [loc_3165]
 model1=model_3262
 width=2
 length=3
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -24632,7 +24632,7 @@ sharelight=yes
 model1=model_3262
 width=2
 length=3
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
@@ -24641,20 +24641,20 @@ mirror=yes
 model1=model_3312,^wall_straight
 model2=model_3313,^wall_l
 model3=model_3310,^grounddecor
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3168]
 model1=model_3316,^wall_straight
 model2=model_3317,^wall_diagonalcorner
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3169]
 model1=model_1124,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 recol1s=4892
 recol1d=6466
@@ -24665,7 +24665,7 @@ recol3d=6470
 
 [loc_3170]
 model1=model_1139,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 recol1s=4892
 recol1d=6466
@@ -24676,7 +24676,7 @@ recol3d=6470
 
 [loc_3171]
 model1=model_1032,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 recol1s=4892
 recol1d=6466
@@ -24687,7 +24687,7 @@ recol3d=6470
 
 [loc_3172]
 model1=model_1124,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 mapscene=49
 recol1s=4892
@@ -24699,7 +24699,7 @@ recol3d=6470
 
 [loc_3173]
 model1=model_1139,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 mapscene=49
 recol1s=4892
@@ -24711,7 +24711,7 @@ recol3d=6470
 
 [loc_3174]
 model1=model_1032,^grounddecor
-interactable=0
+active=no
 hillskew=yes
 mapscene=49
 recol1s=4892
@@ -24723,52 +24723,52 @@ recol3d=6470
 
 [loc_3175]
 model1=model_3301,^grounddecor
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3176]
 model1=model_3272,^grounddecor
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3177]
 model1=model_3244,^wall_straight
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3178]
 model1=model_3244,^wall_straight
-interactable=0
+active=no
 ambient=15
 contrast=15
 mirror=yes
 
 [loc_3179]
 model1=model_3292,^wall_straight
-interactable=0
+active=no
 ambient=15
 contrast=15
 
 [loc_3180]
 model1=model_3292,^wall_straight
-interactable=0
+active=no
 ambient=15
 contrast=15
 mirror=yes
 
 [loc_3181]
 model1=model_3281,^wall_straight
-interactable=0
+active=no
 
 [loc_3182]
 name=Chair
 desc=Wait here for a nurse.
 model1=model_1170
 blockrange=no
-interactable=1
+active=yes
 ambient=15
 contrast=15
 recol1s=4886
@@ -24778,7 +24778,7 @@ recol1d=99
 name=Hospital shelves
 desc=Storage for drugs and bandages.
 model1=model_2133
-interactable=1
+active=yes
 ambient=15
 contrast=15
 recol1s=8076
@@ -24788,7 +24788,7 @@ recol1d=99
 name=Hospital shelves
 desc=Storage for drugs and bandages.
 model1=model_2134
-interactable=1
+active=yes
 ambient=15
 contrast=15
 recol1s=8076
@@ -24798,7 +24798,7 @@ recol1d=99
 name=Hospital shelves
 desc=Storage for drugs and bandages.
 model1=model_2135
-interactable=1
+active=yes
 ambient=15
 contrast=15
 recol1s=8076
@@ -24809,28 +24809,28 @@ name=Operating Table
 desc=I don't really want to end up here...
 model1=model_3289
 length=2
-interactable=1
+active=yes
 
 [loc_3187]
 name=Operating Table
 desc=I don't really want to end up here...
 model1=model_3248
 length=2
-interactable=1
+active=yes
 
 [loc_3188]
 model1=model_3237,^wall_straight
-interactable=0
+active=no
 
 [loc_3189]
 model1=model_3311,^wall_straight
-interactable=0
+active=no
 
 [loc_3190]
 name=Drawers
 desc=These open and close!
 model1=model_1155
-interactable=1
+active=yes
 ambient=15
 contrast=15
 resizex=100
@@ -24849,7 +24849,7 @@ op1=Open
 name=Drawers
 desc=This may be worth searching.
 model1=model_1236
-interactable=1
+active=yes
 ambient=15
 contrast=15
 resizex=100
@@ -24871,7 +24871,7 @@ desc=You can see the last 10 fights on here.
 model1=model_3293
 width=2
 length=3
-interactable=1
+active=yes
 ambient=50
 contrast=50
 op1=View
@@ -24911,7 +24911,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 recol1s=6040
 recol1d=6689
 op1=Open
@@ -24923,7 +24923,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=1
+active=yes
 mirror=yes
 recol1s=6040
 recol1d=6689
@@ -24934,7 +24934,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=0
+active=no
 recol1s=6040
 recol1d=6689
 
@@ -24943,7 +24943,7 @@ model1=model_966,^wall_straight
 model2=model_967,^wall_diagonalcorner
 model3=model_968,^wall_diagonal
 blockrange=no
-interactable=0
+active=no
 mirror=yes
 recol1s=6040
 recol1d=6689
@@ -24974,7 +24974,7 @@ sharelight=yes
 name=Ladder
 desc=I can climb down this.
 model1=model_3336
-interactable=1
+active=yes
 mapscene=7
 op1=Climb-down
 
@@ -24985,7 +24985,7 @@ model1=model_3337
 
 [loc_3207]
 model1=model_3344
-interactable=0
+active=no
 
 [loc_3208]
 name=Vine
@@ -24993,7 +24993,7 @@ desc=It's covered in thorns!
 model1=model_3347,^grounddecor
 blockwalk=no
 blockrange=no
-interactable=1
+active=yes
 hillskew=yes
 anim=seq_927
 
@@ -25001,7 +25001,7 @@ anim=seq_927
 name=Odd looking wall
 desc=A strange crack cuts into the wall.
 model1=model_3367,^wall_straight
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 recol2s=24
@@ -25014,7 +25014,7 @@ op1=push
 name=Odd looking wall
 desc=A strange crack cuts into the wall.
 model1=model_3366,^wall_straight
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 recol2s=24
@@ -25026,7 +25026,7 @@ recol3d=7050
 name=Odd looking wall
 desc=A strange crack cuts into the wall.
 model1=model_3369,^wall_straight
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 recol2s=24
@@ -25039,7 +25039,7 @@ op1=push
 name=Odd looking wall
 desc=A strange crack cuts into the wall.
 model1=model_3368,^wall_straight
-interactable=1
+active=yes
 recol1s=2
 recol1d=23
 recol2s=24
@@ -25080,13 +25080,13 @@ op1=Leave
 
 [loc_3215]
 model1=model_1749,^grounddecor
-interactable=0
+active=no
 
 [loc_3216]
 name=Mud
 desc=A pile of mud.
 model1=model_1757
-interactable=1
+active=yes
 forcedecor=yes
 
 [loc_3217]
@@ -25248,7 +25248,7 @@ name=Plank
 model1=model_1135,^grounddecor
 blockwalk=no
 blockrange=no
-interactable=1
+active=yes
 hillskew=yes
 sharelight=yes
 
@@ -25320,14 +25320,14 @@ model1=model_2293
 width=2
 length=2
 blockrange=no
-interactable=1
+active=yes
 
 [loc_3240]
 name=Bridge
 model1=model_2292
 width=2
 length=4
-interactable=1
+active=yes
 anim=seq_474
 
 [loc_3241]
@@ -25442,7 +25442,7 @@ name=Bridge
 desc=I can't get past that very easily...
 model1=model_751
 length=3
-interactable=1
+active=yes
 hillskew=yes
 recol1s=6689
 recol1d=7952
@@ -25453,7 +25453,7 @@ name=Bridge
 desc=I can't get past that very easily...
 model1=model_752
 length=3
-interactable=1
+active=yes
 hillskew=yes
 recol1s=6689
 recol1d=7952
@@ -25463,7 +25463,7 @@ op1=Cross
 model1=model_719
 width=2
 length=2
-interactable=0
+active=no
 
 [loc_3257]
 name=Platform
@@ -25581,7 +25581,7 @@ op2=Search
 [loc_3269]
 model1=model_969,^wall_straight
 model2=model_970,^wall_diagonal
-interactable=0
+active=no
 
 [loc_3270]
 name=Door
@@ -25591,7 +25591,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -25607,7 +25607,7 @@ model2=model_635,^wall_diagonalcorner
 model3=model_574,^wall_l
 model4=model_575,^wall_squarecorner
 model5=model_576,^wall_diagonal
-interactable=1
+active=yes
 recol1s=2
 recol1d=0
 recol2s=24
@@ -25635,7 +25635,7 @@ op1=Open
 [loc_3275]
 model1=model_3158
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 mapscene=43
 recol1s=6689
@@ -25645,7 +25645,7 @@ recol1d=7952
 name=Stone bridge
 model1=model_3156,^grounddecor
 blockrange=no
-interactable=1
+active=yes
 sharelight=yes
 mapscene=43
 recol1s=6689
@@ -25655,7 +25655,7 @@ op1=Cross
 [loc_3277]
 model1=model_3157
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 mapscene=43
 recol1s=6689
@@ -25665,7 +25665,7 @@ recol1d=7952
 model1=model_701
 model2=model_684,^wall_diagonalcorner
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 mapscene=43
 recol1s=6689
@@ -25674,7 +25674,7 @@ recol1d=7952
 [loc_3279]
 model1=model_684
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 mapscene=43
 recol1s=6689
@@ -25683,7 +25683,7 @@ recol1d=7952
 [loc_3280]
 model1=model_683
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 mapscene=43
 recol1s=6689
@@ -25693,7 +25693,7 @@ recol1d=7952
 model1=model_736
 model2=model_716,^wall_diagonalcorner
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 recol1s=6689
 recol1d=7952
@@ -25701,7 +25701,7 @@ recol1d=7952
 [loc_3282]
 model1=model_737
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 recol1s=6689
 recol1d=7952
@@ -25712,7 +25712,7 @@ model2=model_745,^wall_diagonalcorner
 model3=model_746,^wall_l
 model4=model_747,^wall_squarecorner
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 recol1s=6689
 recol1d=7952
@@ -25720,7 +25720,7 @@ recol1d=7952
 [loc_3284]
 model1=model_740
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 recol1s=6689
 recol1d=7952
@@ -25728,7 +25728,7 @@ recol1d=7952
 [loc_3285]
 model1=model_716
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 recol1s=6689
 recol1d=7952
@@ -25736,7 +25736,7 @@ recol1d=7952
 [loc_3286]
 model1=model_745
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 recol1s=6689
 recol1d=7952
@@ -25744,7 +25744,7 @@ recol1d=7952
 [loc_3287]
 model1=model_746
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 recol1s=6689
 recol1d=7952
@@ -25752,7 +25752,7 @@ recol1d=7952
 [loc_3288]
 model1=model_747
 blockrange=no
-interactable=0
+active=no
 sharelight=yes
 recol1s=6689
 recol1d=7952
@@ -25768,15 +25768,15 @@ recol1d=7952
 
 [loc_3290]
 model1=model_703
-interactable=0
+active=no
 
 [loc_3291]
 model1=model_704
-interactable=0
+active=no
 
 [loc_3292]
 model1=model_705
-interactable=0
+active=no
 
 [loc_3293]
 model1=model_703,^wall_straight
@@ -25901,75 +25901,75 @@ op1=Climb-over
 
 [loc_3310]
 model1=model_802
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_3311]
 model1=model_803
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_3312]
 model1=model_803
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
 
 [loc_3313]
 model1=model_804
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_3314]
 model1=model_806
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_3315]
 model1=model_807
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_3316]
 model1=model_808
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_3317]
 model1=model_809
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_3318]
 model1=model_809
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
 
 [loc_3319]
 model1=model_810
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_3320]
 model1=model_811
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
 [loc_3321]
 model1=model_777
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 
@@ -26007,7 +26007,7 @@ recol1d=7952
 [loc_3326]
 model1=model_725
 length=3
-interactable=0
+active=no
 sharelight=yes
 
 [loc_3327]
@@ -26029,7 +26029,7 @@ recol1d=7952
 model1=model_713
 width=4
 length=2
-interactable=0
+active=no
 
 [loc_3330]
 model1=model_761,^wall_straight
@@ -26102,7 +26102,7 @@ op1=Search
 name=Guide rope
 desc=Looks like the rope is holding the bridge up.
 model1=model_755
-interactable=1
+active=yes
 op1=Fire-at
 
 [loc_3341]
@@ -26113,7 +26113,7 @@ mirror=yes
 
 [loc_3342]
 model1=model_720
-interactable=0
+active=no
 
 [loc_3343]
 name=Rock pile
@@ -26138,7 +26138,7 @@ blocksides=11
 model1=model_712
 width=2
 length=7
-interactable=0
+active=no
 recol1s=4888
 recol1d=7952
 recol2s=5916
@@ -26148,7 +26148,7 @@ recol2d=8076
 model1=model_712
 width=2
 length=7
-interactable=0
+active=no
 mirror=yes
 recol1s=4888
 recol1d=7952
@@ -26158,7 +26158,7 @@ recol2d=8076
 [loc_3347]
 model1=model_744
 width=4
-interactable=0
+active=no
 recol1s=4888
 recol1d=7952
 recol2s=5916
@@ -26192,7 +26192,7 @@ recol2d=8076
 [loc_3350]
 model1=model_1738,^wall_l
 blockwalk=no
-interactable=0
+active=no
 mapscene=22
 
 [loc_3351]
@@ -26201,7 +26201,7 @@ desc=I'm glad I'm on this side of those bars.
 model1=model_1822
 width=2
 length=2
-interactable=1
+active=yes
 op1=Search
 
 [loc_3352]
@@ -26210,7 +26210,7 @@ desc=I'm glad I'm on this side of those bars.
 model1=model_1822
 width=2
 length=2
-interactable=1
+active=yes
 op1=Search
 
 [loc_3353]
@@ -26326,7 +26326,7 @@ op1=Search
 name=Orb of Light
 desc=A magical sphere that glimmers within.
 model1=model_3176
-interactable=1
+active=yes
 op3=Take
 
 [loc_3362]
@@ -26367,19 +26367,19 @@ name=Prison Door
 desc=Steel bars that are locked securely.
 model1=model_609,^wall_straight
 blockrange=no
-interactable=1
+active=yes
 
 [loc_3368]
 model1=model_1226
-interactable=0
+active=no
 
 [loc_3369]
 model1=model_1145
-interactable=0
+active=no
 
 [loc_3370]
 model1=model_1236
-interactable=0
+active=no
 
 [loc_3371]
 name=Achey Tree stump
@@ -26501,7 +26501,7 @@ disposealpha=yes
 
 [loc_3384]
 model1=model_816
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=8
@@ -26511,7 +26511,7 @@ recol2d=7333
 
 [loc_3385]
 model1=model_814
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 recol1s=8
@@ -26521,7 +26521,7 @@ recol2d=7333
 
 [loc_3386]
 model1=model_814
-interactable=0
+active=no
 hillskew=yes
 sharelight=yes
 mirror=yes
