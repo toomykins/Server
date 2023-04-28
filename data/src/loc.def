@@ -926,7 +926,7 @@ model1=model_1244
 blockwalk=no
 blockrange=no
 
-[loc_106]
+[hiddentrapdoor_open]
 name=hiddentrapdoor_open
 model1=model_1223
 blockwalk=no
@@ -1632,7 +1632,7 @@ hillskew=yes
 model1=model_1129,^grounddecor
 hillskew=yes
 
-[loc_183]
+[mudpiledown]
 name=mudpiledown
 model1=model_1481
 length=2
@@ -1846,24 +1846,24 @@ desc=Useful for making ships move.
 model1=model_1831
 width=5
 
-[loc_213]
+[bowcornerl]
 name=bowcornerl
 model1=model_1904
 
-[loc_214]
+[bowcornerr]
 name=bowcornerr
 model1=model_1904
 mirror=yes
 
-[loc_215]
+[bowmiddle]
 name=bowmiddle
 model1=model_1836
 
-[loc_216]
+[bowshortl]
 name=bowshortl
 model1=model_1877
 
-[loc_217]
+[bowshortr]
 name=bowshortr
 model1=model_1877
 mirror=yes
@@ -2125,7 +2125,7 @@ active=no
 name=Mast
 model1=model_1870
 
-[loc_264]
+[mast4]
 name=mast4
 model1=model_1871
 
@@ -3412,7 +3412,7 @@ length=2
 blockrange=no
 mapscene=12
 
-[loc_443]
+[boulder_group]
 name=boulder_group
 model1=model_1435
 width=2
@@ -3874,7 +3874,7 @@ recol6s=16156
 recol6d=6798
 op1=Climb-down
 
-[loc_493]
+[greatrunestone]
 name=greatrunestone
 model1=model_863
 width=5
@@ -3882,28 +3882,28 @@ length=5
 occlude=yes
 sharelight=yes
 
-[loc_494]
+[greatrunestone_mid]
 name=greatrunestone_mid
 model1=model_859
 width=6
 length=7
 sharelight=yes
 
-[loc_495]
+[greatrunestone_uppermid]
 name=greatrunestone_uppermid
 model1=model_856
 width=5
 length=5
 sharelight=yes
 
-[loc_496]
+[greatrunestone_top]
 name=greatrunestone_top
 model1=model_861
 width=5
 length=5
 sharelight=yes
 
-[loc_497]
+[greatrunestone_top2]
 name=greatrunestone_top2
 model1=model_858
 width=5
@@ -4038,7 +4038,7 @@ model1=model_1120,^grounddecor
 [loc_514]
 model1=model_1545,^wall_squarecorner
 
-[loc_515]
+[greatrunestone_top_glow]
 name=greatrunestone_top_glow
 model1=model_2319
 width=7
@@ -5132,63 +5132,63 @@ blockrange=no
 recol1s=10361
 recol1d=6241
 
-[loc_669]
+[floorlever_on]
 name=floorlever_on
 model1=model_1796
 
-[loc_670]
+[floorlever_off]
 name=floorlever_off
 model1=model_1774
 
-[loc_671]
+[catapult]
 name=catapult
 model1=model_2217
 width=2
 length=3
 disposealpha=yes
 
-[loc_672]
+[barrel_breaking]
 name=barrel_breaking
 model1=model_2218
 anim=seq_449
 disposealpha=yes
 
-[loc_673]
+[gas]
 name=gas
 model1=model_2235
 anim=seq_523
 disposealpha=yes
 
-[loc_674]
+[gas_chest]
 name=gas_chest
 model1=model_3075
 anim=seq_654
 disposealpha=yes
 
-[loc_675]
+[gas_rocks1]
 name=gas_rocks1
 model1=model_2236
 anim=seq_523
 disposealpha=yes
 
-[loc_676]
+[gas_rocks2]
 name=gas_rocks2
 model1=model_2237
 anim=seq_523
 disposealpha=yes
 
-[loc_677]
+[gas_rocks3]
 name=gas_rocks3
 model1=model_2238
 anim=seq_523
 disposealpha=yes
 
-[loc_678]
+[fishingspot]
 name=fishingspot
 model1=model_2234
 disposealpha=yes
 
-[loc_679]
+[fishingspot2]
 name=fishingspot2
 model1=model_2233
 disposealpha=yes
@@ -5454,7 +5454,7 @@ model1=model_2288
 anim=seq_473
 disposealpha=yes
 
-[loc_725]
+[fire_graphic]
 name=fire_graphic
 desc=Fire !
 model1=model_2289
@@ -5566,13 +5566,13 @@ recol1d=57
 model1=model_2166,^grounddecor
 hillskew=yes
 
-[loc_739]
+[magic_portal]
 name=magic_portal
 model1=model_1783
 length=2
 ambient=100
 
-[loc_740]
+[glowing_circle]
 name=glowing_circle
 model1=model_2318
 anim=seq_504
@@ -5587,7 +5587,7 @@ model1=model_1521
 length=2
 sharelight=yes
 
-[loc_742]
+[ladder_old_top]
 name=ladder_old_top
 model1=model_1529
 length=2
@@ -5622,7 +5622,7 @@ model1=model_733
 width=2
 length=2
 
-[loc_749]
+[lineofsight_ruler]
 name=lineofsight_ruler
 model1=model_1831
 width=16
@@ -5802,7 +5802,7 @@ hillskew=yes
 recol1s=7952
 recol1d=20
 
-[loc_771]
+[gnomeglider_icon1]
 name=gnomeglider_icon1
 model1=model_596,^grounddecor
 active=yes
@@ -7168,7 +7168,7 @@ model1=model_992,^wall_straight
 hillskew=yes
 sharelight=yes
 
-[loc_986]
+[poshwallgatetop]
 name=poshwallgatetop
 model1=model_1022
 length=3
@@ -7200,7 +7200,7 @@ sharelight=yes
 recol1s=61
 recol1d=5285
 
-[loc_990]
+[poshwallgatetop_brown]
 name=poshwallgatetop_brown
 model1=model_1022
 length=3
@@ -8180,7 +8180,7 @@ model1=model_1632
 width=2
 length=2
 
-[loc_1161]
+[cabbage]
 name=cabbage
 desc=Cabbage... yuk !
 model1=model_2739
@@ -10237,7 +10237,7 @@ active=no
 hillskew=yes
 sharelight=yes
 
-[loc_1421]
+[cavewall_facewithledge1]
 name=cavewall_facewithledge1
 model1=model_835
 width=2
@@ -10594,7 +10594,7 @@ sharelight=yes
 recol1s=6689
 recol1d=7952
 
-[loc_1472]
+[cavewall_slopefill_dark]
 name=cavewall_slopefill_dark
 model1=model_812
 hillskew=yes
@@ -11373,7 +11373,7 @@ occlude=yes
 sharelight=yes
 mirror=yes
 
-[loc_1566]
+[towered_gateway_roof]
 name=towered_gateway_roof
 model1=model_933
 length=3
@@ -12075,7 +12075,7 @@ sharelight=yes
 recol1s=2
 recol1d=23
 
-[loc_1645]
+[oldcastlewallbattlementroof]
 name=oldcastlewallbattlementroof
 model1=model_641
 sharelight=yes
@@ -12123,7 +12123,7 @@ model2=model_655,^wall_diagonalcorner
 model3=model_657,^wall_diagonal
 sharelight=yes
 
-[loc_1652]
+[oldstone_arched_doortop]
 name=oldstone_arched_doortop
 model1=model_675
 length=3
@@ -12134,7 +12134,7 @@ recol1d=7952
 recol2s=2
 recol2d=23
 
-[loc_1653]
+[oldstone_arched_doortop_b_l]
 name=oldstone_arched_doortop_b_l
 model1=model_674
 length=2
@@ -12145,7 +12145,7 @@ recol1d=7952
 recol2s=2
 recol2d=23
 
-[loc_1654]
+[oldstone_arched_doortop_b_r]
 name=oldstone_arched_doortop_b_r
 model1=model_674
 length=2
@@ -12157,7 +12157,7 @@ recol1d=7952
 recol2s=2
 recol2d=23
 
-[loc_1655]
+[oldstone_arched_doorbase_r]
 name=oldstone_arched_doorbase_r
 model1=model_653
 model2=model_644,^wall_straight
@@ -12167,7 +12167,7 @@ recol1d=7952
 recol2s=2
 recol2d=23
 
-[loc_1656]
+[oldstone_arched_doorbase_l]
 name=oldstone_arched_doorbase_l
 model1=model_653
 model2=model_644,^wall_straight
@@ -12178,7 +12178,7 @@ recol1d=7952
 recol2s=2
 recol2d=23
 
-[loc_1657]
+[crumblywall_with_roof_diag]
 name=crumblywall_with_roof_diag
 model1=model_2198
 sharelight=yes
@@ -12362,7 +12362,7 @@ active=no
 model1=model_1999
 active=no
 
-[loc_1682]
+[tentroofcentre1]
 name=tentroofcentre1
 model1=model_1970
 sharelight=yes
@@ -12377,7 +12377,7 @@ model2=model_1959,^wall_diagonal
 occlude=yes
 sharelight=yes
 
-[loc_1685]
+[tentroofcentreold]
 name=tentroofcentreold
 model1=model_1957
 sharelight=yes
@@ -13019,7 +13019,7 @@ desc=A rope hangs here
 model1=model_1487
 op1=Climb
 
-[loc_1763]
+[climbing_rope_top]
 name=climbing_rope_top
 model1=model_1433
 
@@ -13169,25 +13169,25 @@ active=no
 model1=model_1381
 active=no
 
-[loc_1786]
+[mroof1]
 name=mroof1
 model1=model_1374
 width=4
 length=4
 
-[loc_1787]
+[mroof2]
 name=mroof2
 model1=model_1375
 width=4
 length=4
 
-[loc_1788]
+[mroof3]
 name=mroof3
 model1=model_1376
 width=4
 length=4
 
-[loc_1789]
+[mroof4]
 name=mroof4
 model1=model_1377
 width=4
@@ -13240,7 +13240,7 @@ mirror=yes
 recol1s=6
 recol1d=18
 
-[loc_1796]
+[magicwall]
 name=magicwall
 model1=model_1739
 length=2
@@ -13421,12 +13421,12 @@ model1=model_2108,^walldecor_straight
 active=yes
 op1=Pull
 
-[loc_1818]
+[woodfloor_crumbly_l]
 name=woodfloor_crumbly_l
 model1=model_860
 sharelight=yes
 
-[loc_1819]
+[woodfloor_crumbly_r]
 name=woodfloor_crumbly_r
 model1=model_860
 sharelight=yes
@@ -13741,13 +13741,13 @@ model1=model_794,^wall_straight
 sharelight=yes
 mirror=yes
 
-[loc_1884]
+[runetemple_ruined]
 name=runetemple_ruined
 model1=model_864
 width=3
 length=3
 
-[loc_1885]
+[runetemple]
 name=runetemple
 model1=model_854
 width=3
@@ -13757,7 +13757,7 @@ length=3
 model1=model_839
 active=no
 
-[loc_1887]
+[runetemple_altar_new]
 name=runetemple_altar_new
 model1=model_2304
 width=3
@@ -13765,7 +13765,7 @@ length=3
 anim=seq_503
 disposealpha=yes
 
-[loc_1888]
+[runetemple_altar_old]
 name=runetemple_altar_old
 model1=model_2305
 width=3
@@ -14159,12 +14159,12 @@ sharelight=yes
 recol1s=2
 recol1d=23
 
-[loc_1941]
+[woodwall+brickedge_left]
 name=woodwall+brickedge_left
 model1=model_606
 sharelight=yes
 
-[loc_1942]
+[woodwall+brickedge_right]
 name=woodwall+brickedge_right
 model1=model_606
 sharelight=yes
@@ -17071,7 +17071,7 @@ desc=This leads downwards.
 model1=model_1215
 op1=Climb=down
 
-[loc_2270]
+[zqdoorhideplant]
 name=zqdoorhideplant
 model1=model_1617
 mapscene=5
@@ -25411,7 +25411,7 @@ model1=model_756
 hillskew=yes
 sharelight=yes
 
-[loc_3251]
+[bridge_bend_left]
 name=bridge_bend_left
 model1=model_718
 width=2
@@ -25420,7 +25420,7 @@ sharelight=yes
 recol1s=6689
 recol1d=7952
 
-[loc_3252]
+[bridge_bend_right]
 name=bridge_bend_right
 model1=model_718
 width=2
@@ -25430,7 +25430,7 @@ mirror=yes
 recol1s=6689
 recol1d=7952
 
-[loc_3253]
+[bridge_threeway]
 name=bridge_threeway
 model1=model_754
 sharelight=yes
@@ -25511,7 +25511,7 @@ mirror=yes
 recol1s=5916
 recol1d=7952
 
-[loc_3261]
+[upass_bridge+support]
 name=upass_bridge+support
 model1=model_756
 hillskew=yes
@@ -25994,7 +25994,7 @@ sharelight=yes
 recol1s=61
 recol1d=7952
 
-[loc_3325]
+[upass_bridge_corner]
 name=upass_bridge_corner
 model1=model_688
 width=2
@@ -26040,7 +26040,7 @@ model1=model_761,^wall_straight
 sharelight=yes
 mirror=yes
 
-[loc_3332]
+[upass_templedoor_top]
 name=upass_templedoor_top
 model1=model_765
 length=4
@@ -26178,7 +26178,7 @@ recol1d=7952
 recol2s=5916
 recol2d=8076
 
-[loc_3349]
+[iban_temple_throne_top]
 name=iban_temple_throne_top
 model1=model_702
 width=2
@@ -26240,7 +26240,7 @@ recol2s=5665
 recol2d=7954
 op1=Search
 
-[loc_3355]
+[ibantomb_burnt_left]
 name=ibantomb_burnt_left
 model1=model_708
 width=4
@@ -26259,7 +26259,7 @@ recol5d=57
 recol6s=10560
 recol6d=57
 
-[loc_3356]
+[ibantomb_burnt_right]
 name=ibantomb_burnt_right
 model1=model_708
 width=4
@@ -26352,7 +26352,7 @@ desc=Looks like I can climb these.
 model1=model_2056,^walldecor_straight
 op1=Climb
 
-[loc_3366]
+[onion]
 name=onion
 model1=model_2750
 blockwalk=no
