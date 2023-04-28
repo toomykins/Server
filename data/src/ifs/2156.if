@@ -773,7 +773,6 @@ y=3
 width=68
 height=25
 fill=yes
-colour=0x0
 
 [if_2156:com_2247]
 layer=if_2156:com_2251

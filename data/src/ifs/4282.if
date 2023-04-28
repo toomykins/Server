@@ -12,7 +12,6 @@ height=17
 halign=yes
 font=^q8
 text=Line1
-colour=0x0
 
 [if_4282:com_4284]
 type=^iftype_text
@@ -23,7 +22,6 @@ height=18
 halign=yes
 font=^q8
 text=Line2
-colour=0x0
 
 [if_4282:com_4285]
 type=^iftype_text

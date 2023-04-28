@@ -34,7 +34,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1140]
@@ -45,7 +44,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1141]
@@ -56,7 +54,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1142]
@@ -67,7 +64,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1143]
@@ -78,7 +74,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1144]
@@ -89,7 +84,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1145]
@@ -100,7 +94,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1146]
@@ -111,7 +104,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1147]
@@ -122,7 +114,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1148]
@@ -133,7 +124,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1149]
@@ -144,7 +134,6 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00
 
 [if_1136:com_1150]
@@ -155,5 +144,4 @@ width=354
 height=14
 halign=yes
 font=^p12
-text=
 colour=0xffff00

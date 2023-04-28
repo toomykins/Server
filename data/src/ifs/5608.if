@@ -13,7 +13,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_83
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5610]
@@ -26,7 +25,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_84
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5611]
@@ -39,7 +37,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_85
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5612]
@@ -52,7 +49,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_86
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5613]
@@ -65,7 +61,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_87
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5614]
@@ -78,7 +73,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_88
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5615]
@@ -91,7 +85,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_89
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5616]
@@ -104,7 +97,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_90
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5617]
@@ -117,7 +109,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_91
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5618]
@@ -130,7 +121,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_92
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5619]
@@ -143,7 +133,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_93
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5620]
@@ -156,7 +145,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_94
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5621]
@@ -169,7 +157,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_95
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5622]
@@ -182,7 +169,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_96
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5623]
@@ -195,7 +181,6 @@ height=34
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_97
-graphic=
 activegraphic=prayerglow,0
 
 [if_5608:com_5624]
@@ -236,7 +221,6 @@ y=-67
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5629]
 type=^iftype_graphic
@@ -470,7 +454,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5648]
 layer=if_5608:com_5646
@@ -514,7 +497,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5652]
 layer=if_5608:com_5650
@@ -558,7 +540,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5656]
 layer=if_5608:com_5654
@@ -602,7 +583,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5660]
 layer=if_5608:com_5658
@@ -646,7 +626,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5664]
 layer=if_5608:com_5662
@@ -690,7 +669,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5668]
 layer=if_5608:com_5666
@@ -734,7 +712,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5672]
 layer=if_5608:com_5670
@@ -778,7 +755,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5676]
 layer=if_5608:com_5674
@@ -822,7 +798,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5680]
 layer=if_5608:com_5678
@@ -866,7 +841,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5684]
 layer=if_5608:com_5682
@@ -910,7 +884,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5688]
 layer=if_5608:com_5686
@@ -954,7 +927,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5692]
 layer=if_5608:com_5690
@@ -998,7 +970,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5696]
 layer=if_5608:com_5694
@@ -1042,7 +1013,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5700]
 layer=if_5608:com_5698
@@ -1086,7 +1056,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_5608:com_5704]
 layer=if_5608:com_5702

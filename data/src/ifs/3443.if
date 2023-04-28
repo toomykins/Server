@@ -861,7 +861,6 @@ y=40
 width=66
 height=18
 fill=yes
-colour=0x0
 
 [if_3443:com_3547]
 type=^iftype_text
@@ -882,7 +881,6 @@ y=40
 width=66
 height=18
 fill=yes
-colour=0x0
 
 [if_3443:com_3549]
 type=^iftype_text

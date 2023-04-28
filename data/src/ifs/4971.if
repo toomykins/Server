@@ -46,7 +46,6 @@ width=175
 height=182
 font=^b12
 text=line16\nline17\nline18\nline19\nline20\nline21\nline22\nline23\nline24\nline25\nline26\nline27\nline28\nline29\nline30\n
-colour=0x0
 
 [if_4971:com_4977]
 type=^iftype_text
@@ -56,7 +55,6 @@ width=180
 height=182
 font=^b12
 text=line1\nline2\nline3\nline4\nline5\nline6\nline7\nline8\nline9\nline10\nline11\nline12\nline13\nline14\nline15
-colour=0x0
 
 [if_4971:com_4978]
 type=^iftype_layer

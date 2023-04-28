@@ -1296,7 +1296,6 @@ y=11
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1151:com_1199]
 type=^iftype_layer

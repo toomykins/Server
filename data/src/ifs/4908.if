@@ -268,7 +268,6 @@ y=4
 width=9
 height=9
 fill=yes
-colour=0x0
 
 [if_4908:com_4940]
 layer=if_4908:com_4938
@@ -331,7 +330,6 @@ y=4
 width=9
 height=9
 fill=yes
-colour=0x0
 
 [if_4908:com_4946]
 layer=if_4908:com_4944

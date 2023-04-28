@@ -709,7 +709,9 @@ export default class IfType {
         }
 
         if (config.type === IfType.TYPE_TEXT) {
-            def += `text=${config.text}\n`;
+            if (config.text) {
+                def += `text=${config.text}\n`;
+            }
 
             if (config.activeText) {
                 def += `activetext=${config.activeText}\n`;
@@ -717,7 +719,9 @@ export default class IfType {
         }
 
         if (config.type === IfType.TYPE_RECTANGLE || config.type === IfType.TYPE_TEXT) {
-            def += `colour=0x${config.colour.toString(16)}\n`;
+            if (config.colour !== 0) {
+                def += `colour=0x${config.colour.toString(16)}\n`;
+            }
 
             if (config.activecolour !== 0) {
                 def += `activecolour=0x${config.activecolour.toString(16)}\n`;
@@ -729,7 +733,9 @@ export default class IfType {
         }
 
         if (config.type === IfType.TYPE_GRAPHIC) {
-            def += `graphic=${config.graphic}\n`;
+            if (config.graphic) {
+                def += `graphic=${config.graphic}\n`;
+            }
 
             if (config.activeGraphic) {
                 def += `activegraphic=${config.activeGraphic}\n`;
@@ -785,7 +791,9 @@ export default class IfType {
                 def += `shadow=yes\n`;
             }
 
-            def += `colour=0x${config.colour.toString(16)}\n`;
+            if (config.colour !== 0) {
+                def += `colour=0x${config.colour.toString(16)}\n`;
+            }
 
             if (config.inventoryMarginX != 0) {
                 def += `invxof=${config.inventoryMarginX}\n`;

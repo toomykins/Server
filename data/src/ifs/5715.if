@@ -22,7 +22,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5743]
@@ -35,7 +34,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5744]
@@ -48,7 +46,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5745]
@@ -61,7 +58,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5746]
@@ -74,7 +70,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5747]
@@ -87,7 +82,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5748]
@@ -100,7 +94,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5749]
@@ -113,7 +106,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5750]
@@ -126,7 +118,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5751]
@@ -139,7 +130,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5752]
@@ -152,7 +142,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5753]
@@ -165,7 +154,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5754]
@@ -178,7 +166,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5755]
@@ -191,7 +178,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5756]
@@ -204,7 +190,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5757]
@@ -217,7 +202,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5758]
@@ -230,7 +214,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5759]
@@ -243,7 +226,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5760]
@@ -256,7 +238,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5761]
@@ -269,7 +250,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5762]
@@ -282,7 +262,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5763]
@@ -295,7 +274,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5764]
@@ -308,7 +286,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5765]
@@ -321,7 +298,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5766]
@@ -334,7 +310,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5767]
@@ -347,7 +322,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5768]
@@ -360,7 +334,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5769]
@@ -373,7 +346,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5770]
@@ -386,7 +358,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5771]
@@ -399,7 +370,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5772]
@@ -412,7 +382,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5773]
@@ -425,7 +394,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5774]
@@ -438,7 +406,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5775]
@@ -451,7 +418,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5776]
@@ -464,7 +430,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5777]
@@ -477,7 +442,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5778]
@@ -490,7 +454,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5779]
@@ -503,7 +466,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5780]
@@ -516,7 +478,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5781]
@@ -529,7 +490,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5782]
@@ -542,7 +502,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5783]
@@ -555,7 +514,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5784]
@@ -568,7 +526,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5785]
@@ -581,7 +538,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5786]
@@ -594,7 +550,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5787]
@@ -607,7 +562,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5788]
@@ -620,7 +574,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5789]
@@ -633,7 +586,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5790]
@@ -646,7 +598,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5791]
@@ -659,7 +610,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5792]
@@ -672,7 +622,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5793]
@@ -685,7 +634,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5794]
@@ -698,7 +646,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5795]
@@ -711,7 +658,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5796]
@@ -724,7 +670,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5797]
@@ -737,7 +682,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5798]
@@ -750,7 +694,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5799]
@@ -763,7 +706,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5800]
@@ -776,7 +718,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5801]
@@ -789,7 +730,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5802]
@@ -802,7 +742,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5803]
@@ -815,7 +754,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5804]
@@ -828,7 +766,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5805]
@@ -841,7 +778,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5806]
@@ -854,7 +790,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5807]
@@ -867,7 +802,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5808]
@@ -880,7 +814,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5809]
@@ -893,7 +826,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5810]
@@ -906,7 +838,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5811]
@@ -919,7 +850,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5812]
@@ -932,7 +862,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5813]
@@ -945,7 +874,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5814]
@@ -958,7 +886,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5815]
@@ -971,7 +898,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5816]
@@ -984,7 +910,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5817]
@@ -997,7 +922,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5818]
@@ -1010,7 +934,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5819]
@@ -1023,7 +946,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5820]
@@ -1036,7 +958,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5821]
@@ -1049,7 +970,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5822]
@@ -1062,7 +982,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5823]
@@ -1075,7 +994,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5824]
@@ -1088,7 +1006,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5825]
@@ -1101,7 +1018,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5826]
@@ -1114,7 +1030,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5827]
@@ -1127,7 +1042,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5828]
@@ -1140,7 +1054,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5829]
@@ -1153,7 +1066,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5830]
@@ -1166,7 +1078,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5831]
@@ -1179,7 +1090,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5832]
@@ -1192,7 +1102,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5833]
@@ -1205,7 +1114,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5834]
@@ -1218,7 +1126,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5835]
@@ -1231,7 +1138,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5836]
@@ -1244,7 +1150,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5837]
@@ -1257,7 +1162,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5838]
@@ -1270,7 +1174,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5839]
@@ -1283,7 +1186,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5840]
@@ -1296,7 +1198,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5841]
@@ -1309,7 +1210,6 @@ width=153
 height=14
 font=^p12
 shadow=yes
-text=
 colour=0xffffff
 
 [if_5715:com_5717]

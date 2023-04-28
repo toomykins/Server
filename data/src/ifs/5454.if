@@ -740,7 +740,6 @@ y=64
 width=35
 height=202
 fill=yes
-colour=0x0
 
 [if_5454:com_5546]
 type=^iftype_model
@@ -889,7 +888,6 @@ script1op1=^load_var,^varp_261
 font=^b12
 shadow=yes
 text=MALE
-colour=0x0
 activecolour=0xff00
 
 [if_5454:com_5558]
@@ -916,7 +914,6 @@ script1op1=^load_var,^varp_261
 font=^b12
 shadow=yes
 text=FEMALE
-colour=0x0
 activecolour=0xff00
 
 [if_5454:com_5560]
@@ -928,7 +925,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=8
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_5454:com_5561]
@@ -940,7 +936,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_5454:com_5562]
@@ -952,7 +947,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=2
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_5454:com_5563]
@@ -964,7 +958,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=3
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_5454:com_5564]
@@ -976,7 +969,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=4
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_5454:com_5565]
@@ -988,7 +980,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=5
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_5454:com_5566]
@@ -1000,7 +991,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=6
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_5454:com_5567]
@@ -1012,7 +1002,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=7
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_5454:com_5568]
@@ -1025,7 +1014,6 @@ height=150
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_5454:com_5569]
 type=^iftype_graphic
@@ -1037,4 +1025,3 @@ height=150
 scriptc1=^op_neq
 scriptv1=2
 script1op1=^load_var,^varp_261
-graphic=

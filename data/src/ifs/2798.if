@@ -49,8 +49,6 @@ width=152
 height=17
 halign=yes
 font=^q8
-text=
-colour=0x0
 
 [if_2798:com_2804]
 type=^iftype_text
@@ -61,8 +59,6 @@ width=152
 height=17
 halign=yes
 font=^q8
-text=
-colour=0x0
 
 [if_2798:com_2805]
 type=^iftype_text
@@ -73,8 +69,6 @@ width=152
 height=17
 halign=yes
 font=^q8
-text=
-colour=0x0
 
 [if_2798:com_2806]
 type=^iftype_text

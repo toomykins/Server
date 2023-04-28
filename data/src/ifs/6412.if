@@ -910,7 +910,6 @@ y=6
 width=66
 height=31
 fill=yes
-colour=0x0
 
 [if_6412:com_6521]
 layer=if_6412:com_6518
@@ -991,7 +990,6 @@ y=6
 width=66
 height=31
 fill=yes
-colour=0x0
 
 [if_6412:com_6523]
 layer=if_6412:com_6519

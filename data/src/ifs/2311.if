@@ -940,9 +940,7 @@ scriptc1=^op_geq
 scriptv1=14
 script1op1=^load_stat_level,^crafting
 font=^p12
-text=
 activetext=Not Available
-colour=0x0
 activecolour=0xcc0000
 
 [if_2311:com_2416]
@@ -955,9 +953,7 @@ scriptc1=^op_geq
 scriptv1=1
 script1op1=^load_stat_level,^crafting
 font=^p12
-text=
 activetext=Not Available
-colour=0x0
 activecolour=0xcc0000
 
 [if_2311:com_2417]
@@ -970,9 +966,7 @@ scriptc1=^op_geq
 scriptv1=7
 script1op1=^load_stat_level,^crafting
 font=^p12
-text=
 activetext=Not Available
-colour=0x0
 activecolour=0xcc0000
 
 [if_2311:com_2418]
@@ -985,9 +979,7 @@ scriptc1=^op_geq
 scriptv1=11
 script1op1=^load_stat_level,^crafting
 font=^p12
-text=
 activetext=Not Available
-colour=0x0
 activecolour=0xcc0000
 
 [if_2311:com_2419]
@@ -1000,9 +992,7 @@ scriptc1=^op_geq
 scriptv1=18
 script1op1=^load_stat_level,^crafting
 font=^p12
-text=
 activetext=Not Available
-colour=0x0
 activecolour=0xcc0000
 
 [if_2311:com_2420]
@@ -1015,9 +1005,7 @@ scriptc1=^op_geq
 scriptv1=38
 script1op1=^load_stat_level,^crafting
 font=^p12
-text=
 activetext=Not Available
-colour=0x0
 activecolour=0xcc0000
 
 [if_2311:com_2421]
@@ -1030,9 +1018,7 @@ scriptc1=^op_geq
 scriptv1=9
 script1op1=^load_stat_level,^crafting
 font=^p12
-text=
 activetext=Not Available
-colour=0x0
 activecolour=0xcc0000
 
 [if_2311:com_2422]

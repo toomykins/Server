@@ -485,7 +485,6 @@ y=11
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1847]
 type=^iftype_text
@@ -515,7 +514,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1854]
 layer=if_1829:com_1852
@@ -618,7 +616,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1862]
 layer=if_1829:com_1860
@@ -752,7 +749,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1872]
 layer=if_1829:com_1870
@@ -886,7 +882,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1882]
 layer=if_1829:com_1880
@@ -1020,7 +1015,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1891]
 layer=if_1829:com_1889
@@ -1123,7 +1117,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1899]
 layer=if_1829:com_1897
@@ -1257,7 +1250,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1909]
 layer=if_1829:com_1907
@@ -1391,7 +1383,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1919]
 layer=if_1829:com_1917
@@ -1525,7 +1516,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1929]
 layer=if_1829:com_1927
@@ -1628,7 +1618,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1937]
 layer=if_1829:com_1935
@@ -1762,7 +1751,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1947]
 layer=if_1829:com_1945
@@ -1896,7 +1884,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1957]
 layer=if_1829:com_1955
@@ -2030,7 +2017,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1967]
 layer=if_1829:com_1965
@@ -2133,7 +2119,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1975]
 layer=if_1829:com_1973
@@ -2267,7 +2252,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1985]
 layer=if_1829:com_1983
@@ -2401,7 +2385,6 @@ y=5
 width=174
 height=68
 fill=yes
-colour=0x0
 
 [if_1829:com_1996]
 layer=if_1829:com_1994

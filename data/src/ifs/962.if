@@ -3128,7 +3128,6 @@ x=28
 y=-28
 width=36
 height=36
-graphic=
 
 [if_962:com_3203]
 type=^iftype_graphic
@@ -3136,7 +3135,6 @@ x=63
 y=-28
 width=36
 height=36
-graphic=
 
 [if_962:com_3204]
 type=^iftype_graphic

@@ -21,7 +21,6 @@ width=200
 height=77
 font=^q8
 text=line1\nline2\nline3\nline4\nline5
-colour=0x0
 
 [if_1779:com_1784]
 type=^iftype_model
@@ -52,7 +51,6 @@ width=200
 height=182
 font=^q8
 text=line1\nline2\nline3\nline4\nline5\nline6\nline7\nline8\nline9\nline10\nline11\nline12
-colour=0x0
 
 [if_1779:com_1787]
 type=^iftype_layer

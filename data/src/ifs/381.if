@@ -227,7 +227,6 @@ y=4
 width=9
 height=9
 fill=yes
-colour=0x0
 
 [if_381:com_409]
 layer=if_381:com_407
@@ -290,7 +289,6 @@ y=4
 width=9
 height=9
 fill=yes
-colour=0x0
 
 [if_381:com_415]
 layer=if_381:com_411
@@ -353,7 +351,6 @@ y=4
 width=9
 height=9
 fill=yes
-colour=0x0
 
 [if_381:com_421]
 layer=if_381:com_419

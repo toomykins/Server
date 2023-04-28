@@ -745,7 +745,6 @@ y=10
 width=66
 height=31
 fill=yes
-colour=0x0
 option=Accept
 
 [if_3559:com_3652]

@@ -60,7 +60,6 @@ width=175
 height=17
 font=^q8
 text=line1
-colour=0x0
 
 [if_3215:com_3222]
 type=^iftype_text
@@ -70,7 +69,6 @@ width=177
 height=17
 font=^q8
 text=line2
-colour=0x0
 
 [if_3215:com_3223]
 type=^iftype_text
@@ -80,7 +78,6 @@ width=179
 height=17
 font=^q8
 text=line3
-colour=0x0
 
 [if_3215:com_3224]
 type=^iftype_text
@@ -90,7 +87,6 @@ width=181
 height=17
 font=^q8
 text=line4
-colour=0x0
 
 [if_3215:com_3225]
 type=^iftype_text
@@ -100,7 +96,6 @@ width=184
 height=17
 font=^q8
 text=line5
-colour=0x0
 
 [if_3215:com_3226]
 type=^iftype_text
@@ -110,7 +105,6 @@ width=186
 height=17
 font=^q8
 text=line6
-colour=0x0
 
 [if_3215:com_3227]
 type=^iftype_text
@@ -120,7 +114,6 @@ width=188
 height=17
 font=^q8
 text=line7
-colour=0x0
 
 [if_3215:com_3228]
 type=^iftype_text
@@ -130,7 +123,6 @@ width=190
 height=17
 font=^q8
 text=line8
-colour=0x0
 
 [if_3215:com_3229]
 type=^iftype_text
@@ -140,7 +132,6 @@ width=193
 height=17
 font=^q8
 text=line9
-colour=0x0
 
 [if_3215:com_3230]
 type=^iftype_text
@@ -150,7 +141,6 @@ width=195
 height=17
 font=^q8
 text=line10
-colour=0x0
 
 [if_3215:com_3231]
 type=^iftype_text
@@ -160,7 +150,6 @@ width=197
 height=17
 font=^q8
 text=line11
-colour=0x0
 
 [if_3215:com_3232]
 type=^iftype_text
@@ -170,7 +159,6 @@ width=135
 height=17
 font=^q8
 text=line12
-colour=0x0
 
 [if_3215:com_3233]
 type=^iftype_text
@@ -180,7 +168,6 @@ width=136
 height=17
 font=^q8
 text=line13
-colour=0x0
 
 [if_3215:com_3234]
 type=^iftype_text
@@ -190,7 +177,6 @@ width=179
 height=17
 font=^q8
 text=line14
-colour=0x0
 
 [if_3215:com_3235]
 type=^iftype_text
@@ -200,7 +186,6 @@ width=181
 height=17
 font=^q8
 text=line15
-colour=0x0
 
 [if_3215:com_3236]
 type=^iftype_text
@@ -210,7 +195,6 @@ width=183
 height=17
 font=^q8
 text=line16
-colour=0x0
 
 [if_3215:com_3237]
 type=^iftype_text
@@ -220,7 +204,6 @@ width=185
 height=17
 font=^q8
 text=line17
-colour=0x0
 
 [if_3215:com_3238]
 type=^iftype_text
@@ -230,7 +213,6 @@ width=187
 height=17
 font=^q8
 text=line18
-colour=0x0
 
 [if_3215:com_3239]
 type=^iftype_text
@@ -240,7 +222,6 @@ width=189
 height=17
 font=^q8
 text=line19
-colour=0x0
 
 [if_3215:com_3240]
 type=^iftype_text
@@ -250,7 +231,6 @@ width=193
 height=17
 font=^q8
 text=line20
-colour=0x0
 
 [if_3215:com_3241]
 type=^iftype_layer

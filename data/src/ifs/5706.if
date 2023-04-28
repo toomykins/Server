@@ -22,7 +22,6 @@ height=17
 halign=yes
 font=^q8
 text=Line1
-colour=0x0
 
 [if_5706:com_5709]
 type=^iftype_text

@@ -719,7 +719,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Warhammer
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1084]
@@ -747,7 +746,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Sword
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1086]
@@ -762,7 +760,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Long sword
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1087]
@@ -777,7 +774,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Scimitar
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1088]
@@ -792,7 +788,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=2 hand sword
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1089]
@@ -838,7 +833,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Axe
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1092]
@@ -853,7 +847,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Battle axe
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1093]
@@ -868,7 +861,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Mace
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1094]
@@ -883,7 +875,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Dagger
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1095]
@@ -920,7 +911,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=other
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1132]
@@ -952,7 +942,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Chain body
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1099]
@@ -967,7 +956,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Plate legs
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1100]
@@ -982,7 +970,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Plate skirt
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1101]
@@ -997,7 +984,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Plate body
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1102]
@@ -1012,7 +998,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Medium helm
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1103]
@@ -1027,7 +1012,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Full helm
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1104]
@@ -1042,7 +1026,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Square shield
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1105]
@@ -1057,7 +1040,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Kite shield
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1106]
@@ -1072,7 +1054,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Throwing knives
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1107]
@@ -1090,7 +1071,6 @@ script2op1=^load_var,^varp_261
 halign=yes
 font=^p12
 text=Dart tips
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1108]
@@ -1105,7 +1085,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Arrow heads
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1109]
@@ -1465,7 +1444,6 @@ script1op1=^load_var,^varp_211
 halign=yes
 font=^p12
 text=Studs
-colour=0x0
 activecolour=0xffffff
 
 [if_994:com_1135]

@@ -739,7 +739,6 @@ y=-7
 width=403
 height=28
 fill=yes
-colour=0x0
 
 [if_2851:com_2943]
 type=^iftype_rectangle
@@ -987,7 +986,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2961]
@@ -999,7 +997,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=2
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2962]
@@ -1011,7 +1008,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=3
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2963]
@@ -1023,7 +1019,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=4
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2964]
@@ -1035,7 +1030,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=5
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2965]
@@ -1047,7 +1041,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=6
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2966]
@@ -1059,7 +1052,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=7
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2967]
@@ -1071,7 +1063,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=8
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2968]
@@ -1083,7 +1074,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=9
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2969]
@@ -1095,7 +1085,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=10
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2970]
@@ -1107,7 +1096,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=11
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2971]
@@ -1119,7 +1107,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=12
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2972]
@@ -1131,7 +1118,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=13
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2973]
@@ -1143,7 +1129,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=14
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2974]
@@ -1155,7 +1140,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=15
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2975]
@@ -1167,7 +1151,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=16
 script1op1=^load_var,^varp_263
-graphic=
 activegraphic=headicons,1
 
 [if_2851:com_2976]
@@ -1492,7 +1475,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 option=Plain
 
@@ -1506,7 +1488,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=2
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 option=Light buttons
 
@@ -1520,7 +1501,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=3
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 option=Jacket
 
@@ -1534,7 +1514,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=4
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 option=Dark buttons
 
@@ -1548,7 +1527,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=5
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 option=Stitching
 
@@ -1562,7 +1540,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=6
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 option=Shirt
 
@@ -1576,7 +1553,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=7
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 option=Two-toned
 
@@ -1590,7 +1566,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 option=Regular
 
@@ -1604,7 +1579,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=2
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 option=Musclebound
 
@@ -1618,7 +1592,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=3
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 option=Loose sleeved
 
@@ -1632,7 +1605,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=4
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 option=Large cuffed
 
@@ -1646,7 +1618,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=5
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 option=Thin sleeved
 
@@ -1660,6 +1631,5 @@ height=25
 scriptc1=^op_neq
 scriptv1=6
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 option=Shoulder pads

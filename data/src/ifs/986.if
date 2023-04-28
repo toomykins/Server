@@ -32,7 +32,6 @@ height=17
 halign=yes
 font=^q8
 text=Line1
-colour=0x0
 
 [if_986:com_990]
 type=^iftype_text
@@ -43,7 +42,6 @@ height=17
 halign=yes
 font=^q8
 text=Line2
-colour=0x0
 
 [if_986:com_991]
 type=^iftype_text
@@ -54,7 +52,6 @@ height=17
 halign=yes
 font=^q8
 text=Line3
-colour=0x0
 
 [if_986:com_992]
 type=^iftype_text
@@ -65,7 +62,6 @@ height=17
 halign=yes
 font=^q8
 text=Line4
-colour=0x0
 
 [if_986:com_993]
 type=^iftype_text

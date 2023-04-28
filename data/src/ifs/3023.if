@@ -34,7 +34,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3027]
@@ -46,7 +45,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3028]
@@ -58,7 +56,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3029]
@@ -70,7 +67,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3030]
@@ -82,7 +78,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3031]
@@ -94,7 +89,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3032]
@@ -106,7 +100,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3033]
@@ -118,7 +111,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3034]
@@ -130,7 +122,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3035]
@@ -142,7 +133,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3036]
@@ -154,7 +144,6 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000
 
 [if_3023:com_3037]
@@ -166,5 +155,4 @@ height=14
 halign=yes
 font=^q8
 shadow=yes
-text=
 colour=0xff0000

@@ -852,7 +852,6 @@ y=3
 width=243
 height=23
 fill=yes
-colour=0x0
 
 [if_2505:com_2608]
 type=^iftype_rectangle
@@ -983,7 +982,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2622]
@@ -995,7 +993,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=2
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2623]
@@ -1007,7 +1004,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=3
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2624]
@@ -1019,7 +1015,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=4
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2625]
@@ -1031,7 +1026,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=5
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2626]
@@ -1043,7 +1037,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=6
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2627]
@@ -1055,7 +1048,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=7
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2628]
@@ -1067,7 +1059,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=8
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2629]
@@ -1079,7 +1070,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=9
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2630]
@@ -1091,7 +1081,6 @@ height=25
 scriptc1=^op_neq
 scriptv1=10
 script1op1=^load_var,^varp_261
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2631]
@@ -1104,7 +1093,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2632]
@@ -1117,7 +1105,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=2
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2633]
@@ -1130,7 +1117,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=3
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2634]
@@ -1143,7 +1129,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=4
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2635]
@@ -1156,7 +1141,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=5
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2636]
@@ -1169,7 +1153,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=6
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2637]
@@ -1182,7 +1165,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=7
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2638]
@@ -1195,7 +1177,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=8
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2639]
@@ -1208,7 +1189,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=9
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2640]
@@ -1221,7 +1201,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=10
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2641]
@@ -1234,7 +1213,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=11
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2642]
@@ -1247,7 +1225,6 @@ height=20
 scriptc1=^op_neq
 scriptv1=12
 script1op1=^load_var,^varp_262
-graphic=
 activegraphic=headicons,1
 
 [if_2505:com_2643]
@@ -1260,7 +1237,6 @@ height=50
 scriptc1=^op_neq
 scriptv1=1
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_2505:com_2644]
 type=^iftype_graphic
@@ -1272,7 +1248,6 @@ height=50
 scriptc1=^op_neq
 scriptv1=2
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_2505:com_2645]
 type=^iftype_graphic
@@ -1284,7 +1259,6 @@ height=50
 scriptc1=^op_neq
 scriptv1=3
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_2505:com_2646]
 type=^iftype_graphic
@@ -1296,7 +1270,6 @@ height=50
 scriptc1=^op_neq
 scriptv1=4
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_2505:com_2647]
 type=^iftype_graphic
@@ -1308,7 +1281,6 @@ height=50
 scriptc1=^op_neq
 scriptv1=5
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_2505:com_2648]
 type=^iftype_graphic
@@ -1320,7 +1292,6 @@ height=50
 scriptc1=^op_neq
 scriptv1=6
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_2505:com_2649]
 type=^iftype_graphic
@@ -1332,7 +1303,6 @@ height=50
 scriptc1=^op_neq
 scriptv1=7
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_2505:com_2650]
 type=^iftype_graphic
@@ -1344,7 +1314,6 @@ height=50
 scriptc1=^op_neq
 scriptv1=8
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_2505:com_2651]
 type=^iftype_graphic
@@ -1356,7 +1325,6 @@ height=50
 scriptc1=^op_neq
 scriptv1=9
 script1op1=^load_var,^varp_261
-graphic=
 
 [if_2505:com_2652]
 type=^iftype_graphic
@@ -1368,4 +1336,3 @@ height=50
 scriptc1=^op_neq
 scriptv1=10
 script1op1=^load_var,^varp_261
-graphic=

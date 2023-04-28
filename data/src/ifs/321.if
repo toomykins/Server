@@ -22,7 +22,6 @@ height=17
 halign=yes
 font=^q8
 text=Line1
-colour=0x0
 
 [if_321:com_324]
 type=^iftype_text
@@ -33,7 +32,6 @@ height=17
 halign=yes
 font=^q8
 text=Line1
-colour=0x0
 
 [if_321:com_325]
 type=^iftype_text
@@ -57,7 +55,6 @@ height=17
 halign=yes
 font=^q8
 text=Line1
-colour=0x0
 
 [if_321:com_327]
 type=^iftype_text
@@ -68,4 +65,3 @@ height=17
 halign=yes
 font=^q8
 text=Line1
-colour=0x0

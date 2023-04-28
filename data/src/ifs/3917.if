@@ -1055,7 +1055,6 @@ y=11
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_3983]
 layer=if_3917:com_3960
@@ -1235,7 +1234,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4042]
 layer=if_3917:com_4040
@@ -1303,7 +1301,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4048]
 layer=if_3917:com_4046
@@ -1371,7 +1368,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4054]
 layer=if_3917:com_4052
@@ -1439,7 +1435,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4060]
 layer=if_3917:com_4058
@@ -1507,7 +1502,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4066]
 layer=if_3917:com_4064
@@ -1575,7 +1569,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4072]
 layer=if_3917:com_4070
@@ -1643,7 +1636,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4078]
 layer=if_3917:com_4076
@@ -1711,7 +1703,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4084]
 layer=if_3917:com_4082
@@ -1779,7 +1770,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4090]
 layer=if_3917:com_4088
@@ -1847,7 +1837,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4096]
 layer=if_3917:com_4094
@@ -1915,7 +1904,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4102]
 layer=if_3917:com_4100
@@ -1983,7 +1971,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4108]
 layer=if_3917:com_4106
@@ -2051,7 +2038,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4114]
 layer=if_3917:com_4112
@@ -2119,7 +2105,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4120]
 layer=if_3917:com_4118
@@ -2187,7 +2172,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4126]
 layer=if_3917:com_4124
@@ -2255,7 +2239,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4132]
 layer=if_3917:com_4130
@@ -2323,7 +2306,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4138]
 layer=if_3917:com_4136
@@ -2391,7 +2373,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4144]
 layer=if_3917:com_4142
@@ -2527,7 +2508,6 @@ y=7
 width=174
 height=32
 fill=yes
-colour=0x0
 
 [if_3917:com_4156]
 layer=if_3917:com_4160
