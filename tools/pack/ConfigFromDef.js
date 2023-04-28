@@ -8,47 +8,66 @@ import ObjectType from '#cache/config/ObjectType.js';
 import SpotAnimationType from '#cache/config/SpotAnimationType.js';
 import VarpType from '#cache/config/VarpType.js';
 import SequenceType from '#cache/config/SequenceType.js';
+import Constants from '#cache/config/Constants.js';
+
+Constants.fromDef(fs.readFileSync('data/src/constants.def', 'utf8'));
+SequenceType.fromDef(fs.readFileSync('data/src/seq.def', 'utf8'));
+LocationType.fromDef(fs.readFileSync('data/src/loc.def', 'utf8'));
+FloorType.fromDef(fs.readFileSync('data/src/flo.def', 'utf8'));
+SpotAnimationType.fromDef(fs.readFileSync('data/src/spotanim.def', 'utf8'));
+ObjectType.fromDef(fs.readFileSync('data/src/obj.def', 'utf8'));
+NpcType.fromDef(fs.readFileSync('data/src/npc.def', 'utf8'));
+IdentityKitType.fromDef(fs.readFileSync('data/src/idk.def', 'utf8'));
+VarpType.fromDef(fs.readFileSync('data/src/varp.def', 'utf8'));
 
 let config = new Jagfile();
 
-SequenceType.fromDef(fs.readFileSync('data/src/seq.def', 'utf8'));
-let seqPack = SequenceType.pack();
-config.write('seq.dat', seqPack.dat);
-config.write('seq.idx', seqPack.idx);
+let seq = SequenceType.pack();
+seq.dat.toFile('dump/seq.dat');
+seq.idx.toFile('dump/seq.idx');
+config.write('seq.dat', seq.dat);
+config.write('seq.idx', seq.idx);
 
-LocationType.fromJagConfig(fs.readFileSync('data/src/loc.def', 'utf8'));
-let locPack = LocationType.pack();
-config.write('loc.dat', locPack.dat);
-config.write('loc.idx', locPack.idx);
+let loc = LocationType.pack();
+loc.dat.toFile('dump/loc.dat');
+loc.idx.toFile('dump/loc.idx');
+config.write('loc.dat', loc.dat);
+config.write('loc.idx', loc.idx);
 
-FloorType.fromJagConfig(fs.readFileSync('data/src/flo.def', 'utf8'));
-let floPack = FloorType.pack();
-config.write('flo.dat', floPack.dat);
-config.write('flo.idx', floPack.idx);
+let flo = FloorType.pack();
+flo.dat.toFile('dump/flo.dat');
+flo.idx.toFile('dump/flo.idx');
+config.write('flo.dat', flo.dat);
+config.write('flo.idx', flo.idx);
 
-SpotAnimationType.fromJagConfig(fs.readFileSync('data/src/spotanim.def', 'utf8'));
-let spotanimPack = SpotAnimationType.pack();
-config.write('spotanim.dat', spotanimPack.dat.data);
-config.write('spotanim.idx', spotanimPack.idx.data);
+let spotanim = SpotAnimationType.pack();
+spotanim.dat.toFile('dump/spotanim.dat');
+spotanim.idx.toFile('dump/spotanim.idx');
+config.write('spotanim.dat', spotanim.dat.data);
+config.write('spotanim.idx', spotanim.idx.data);
 
-ObjectType.fromJagConfig(fs.readFileSync('data/src/obj.def', 'utf8'));
-let objPack = ObjectType.pack();
-config.write('obj.dat', objPack.dat.data);
-config.write('obj.idx', objPack.idx.data);
+let obj = ObjectType.pack();
+obj.dat.toFile('dump/obj.dat');
+obj.idx.toFile('dump/obj.idx');
+config.write('obj.dat', obj.dat.data);
+config.write('obj.idx', obj.idx.data);
 
-NpcType.fromJagConfig(fs.readFileSync('data/src/npc.def', 'utf8'));
-let npcPack = NpcType.pack();
-config.write('npc.dat', npcPack.dat.data);
-config.write('npc.idx', npcPack.idx.data);
+let npc = NpcType.pack();
+npc.dat.toFile('dump/npc.dat');
+npc.idx.toFile('dump/npc.idx');
+config.write('npc.dat', npc.dat.data);
+config.write('npc.idx', npc.idx.data);
 
-IdentityKitType.fromJagConfig(fs.readFileSync('data/src/idk.def', 'utf8'));
-let idkPack = IdentityKitType.pack();
-config.write('idk.dat', idkPack.dat.data);
-config.write('idk.idx', idkPack.idx.data);
+let idk = IdentityKitType.pack();
+idk.dat.toFile('dump/idk.dat');
+idk.idx.toFile('dump/idk.idx');
+config.write('idk.dat', idk.dat.data);
+config.write('idk.idx', idk.idx.data);
 
-VarpType.fromJagConfig(fs.readFileSync('data/src/varp.def', 'utf8'));
-let varpPack = VarpType.pack();
-config.write('varp.dat', varpPack.dat.data);
-config.write('varp.idx', varpPack.idx.data);
+let varp = VarpType.pack();
+varp.dat.toFile('dump/varp.dat');
+varp.idx.toFile('dump/varp.idx');
+config.write('varp.dat', varp.dat.data);
+config.write('varp.idx', varp.idx.data);
 
 config.pack().toFile('data/cache/config');

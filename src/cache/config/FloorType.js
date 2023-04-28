@@ -1,4 +1,5 @@
 import Packet from '#util/Packet.js';
+import Constants from './Constants.js';
 
 export default class FloorType {
     static config = {};
@@ -30,7 +31,7 @@ export default class FloorType {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
 
-        let flo;
+        let config;
         let id = 0;
         while (offset < lines.length) {
             if (!lines[offset] || lines[offset].startsWith('//')) {
@@ -39,12 +40,18 @@ export default class FloorType {
             }
 
             if (lines[offset].startsWith('[')) {
+                if (config && !FloorType.ids[config.id]) {
+                    // allow for empty configs
+                    FloorType.config[config.namedId] = config;
+                    FloorType.ids[config.id] = config.namedId;
+                }
+
                 // extract text in brackets
                 const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
 
-                flo = new FloorType();
-                flo.namedId = namedId;
-                flo.id = id;
+                config = new FloorType();
+                config.namedId = namedId;
+                config.id = id;
 
                 offset++;
                 id++;
@@ -61,23 +68,35 @@ export default class FloorType {
                 const key = parts[0].trim();
                 let value = parts[1].trim().replaceAll('texture_', '');
 
+                while (value.indexOf('^') !== -1) {
+                    const index = value.indexOf('^');
+                    const constant = value.substring(index);
+
+                    let match = Constants.get(constant);
+                    if (typeof match !== 'undefined') {
+                        value = value.replace(constant, match);
+                    } else {
+                        console.error(`Could not find constant for ${constant}`);
+                    }
+                }
+
                 if (key == 'name') {
-                    flo.name = value;
+                    config.name = value;
                 } else if (key == 'texture') {
-                    flo.texture = parseInt(value);
+                    config.texture = parseInt(value);
                 } else if (key == 'colour') {
-                    flo.rgb = parseInt(value, 16);
+                    config.rgb = parseInt(value, 16);
                 } else if (key == 'occlude') {
-                    flo.occlude = value == 'yes';
+                    config.occlude = value == 'yes';
                 } else {
-                    console.log(`Unrecognized flo config "${key}" in ${flo.namedId}`);
+                    console.log(`Unrecognized flo config "${key}" in ${config.namedId}`);
                 }
 
                 offset++;
             }
 
-            FloorType.config[flo.namedId] = flo;
-            FloorType.ids[flo.id] = flo.namedId;
+            FloorType.config[config.namedId] = config;
+            FloorType.ids[config.id] = config.namedId;
         }
 
         FloorType.count = FloorType.ids.length;
@@ -91,8 +110,8 @@ export default class FloorType {
         dat.p2(FloorType.count);
 
         for (let i = 0; i < FloorType.count; i++) {
-            const flo = FloorType.config[FloorType.ids[i]];
-            const packed = flo.pack();
+            const config = FloorType.config[FloorType.ids[i]];
+            const packed = config.pack();
             idx.p2(packed.length);
             dat.pdata(packed);
         }
@@ -127,16 +146,17 @@ export default class FloorType {
         }
 
         dat.p1(0);
+        dat.pos = 0;
         return dat;
     }
 
     static unpack(dat) {
-        let count = dat.g2();
+        FloorType.count = dat.g2();
 
-        for (let i = 0; i < count; i++) {
-            let flo = new FloorType();
-            flo.namedId = `flo_${i}`;
-            flo.id = i;
+        for (let i = 0; i < FloorType.count; i++) {
+            let config = new FloorType();
+            config.namedId = `flo_${i}`;
+            config.id = i;
 
             while (true) {
                 const code = dat.g1();
@@ -155,14 +175,12 @@ export default class FloorType {
                 } else if (code === 6) {
                     this.name = dat.gjstr();
                 } else {
-                    console.log(`Unrecognized flo config code ${code} in ${flo.namedId}`);
+                    console.log(`Unrecognized flo config code ${code} in ${config.namedId}`);
                 }
             }
 
-            FloorType.config[flo.namedId] = flo;
-            FloorType.ids[flo.id] = flo.namedId;
+            FloorType.config[config.namedId] = config;
+            FloorType.ids[config.id] = config.namedId;
         }
-
-        FloorType.count = FloorType.ids.length;
     }
 }

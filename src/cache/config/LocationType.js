@@ -17,8 +17,7 @@ export default class LocationType {
     length = 1;
     blockwalk = true;
     blockrange = true;
-    interactable = false;
-    _interactable = -1;
+    interactable = -1;
     hillskew = false;
     sharelight = false;
     occlude = false;
@@ -59,7 +58,7 @@ export default class LocationType {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
 
-        let loc;
+        let config;
         let id = 0;
         while (offset < lines.length) {
             if (!lines[offset] || lines[offset].startsWith('//')) {
@@ -68,12 +67,18 @@ export default class LocationType {
             }
 
             if (lines[offset].startsWith('[')) {
+                if (config && !LocationType.ids[config.id]) {
+                    // allow for empty configs
+                    LocationType.config[config.namedId] = config;
+                    LocationType.ids[config.id] = config.namedId;
+                }
+
                 // extract text in brackets
                 const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
 
-                loc = new LocationType();
-                loc.namedId = namedId;
-                loc.id = id;
+                config = new LocationType();
+                config.namedId = namedId;
+                config.id = id;
 
                 offset++;
                 id++;
@@ -90,96 +95,109 @@ export default class LocationType {
                 const key = parts[0].trim();
                 let value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '');
 
-                if (value[0] === '^') {
-                    value = Constants.get(value);
+                while (value.indexOf('^') !== -1) {
+                    const index = value.indexOf('^');
+                    const constant = value.substring(index);
+
+                    let match = Constants.get(constant);
+                    if (typeof match !== 'undefined') {
+                        value = value.replace(constant, match);
+                    } else {
+                        console.error(`Could not find constant for ${constant}`);
+                    }
+                }
+
+                // if value is a number, convert it
+                if (!isNaN(value)) {
+                    value = parseInt(value);
                 }
 
                 if (key.startsWith('model')) {
                     let index = parseInt(key.slice(5)) - 1;
 
-                    if (value.indexOf(',') !== -1) {
+                    if (typeof value === 'string' && value.indexOf(',') !== -1) {
                         const parts = value.split(',');
-                        loc.models[index] = parseInt(parts[0]);
-                        loc.shapes[index] = LocationType[parts[1].replace('^', '')];
+                        config.models[index] = parts[0];
+                        config.shapes[index] = parts[1];
                     } else {
-                        loc.models[index] = parseInt(value);
-                        loc.shapes[index] = LocationType.CENTREPIECE_STRAIGHT;
+                        config.models[index] = value;
+                        config.shapes[index] = 10;
                     }
                 } else if (key == 'name') {
-                    loc.name = value;
+                    config.name = value;
                 } else if (key == 'desc') {
-                    loc.desc = value;
+                    config.desc = value;
                 } else if (key == 'width') {
-                    loc.width = parseInt(value);
+                    config.width = parseInt(value);
                 } else if (key == 'length') {
-                    loc.length = parseInt(value);
+                    config.length = parseInt(value);
                 } else if (key == 'blockwalk') {
-                    loc.blockwalk = value == 'yes';
+                    config.blockwalk = value == 'yes';
                 } else if (key == 'blockrange') {
-                    loc.blockrange = value == 'yes';
+                    config.blockrange = value == 'yes';
                 } else if (key == 'interactable') {
-                    loc._interactable = parseInt(value);
+                    config.interactable = parseInt(value);
                 } else if (key == 'hillskew') {
-                    loc.hillskew = value == 'yes';
+                    config.hillskew = value == 'yes';
                 } else if (key == 'sharelight') {
-                    loc.sharelight = value == 'yes';
+                    config.sharelight = value == 'yes';
                 } else if (key == 'occlude') {
-                    loc.occlude = value == 'yes';
+                    config.occlude = value == 'yes';
                 } else if (key == 'anim') {
-                    loc.anim = parseInt(value);
+                    config.anim = parseInt(value);
                 } else if (key == 'disposealpha') {
-                    loc.disposeAlpha = value == 'yes';
+                    config.disposeAlpha = value == 'yes';
                 } else if (key == 'walloff') {
-                    loc.walloff = parseInt(value);
+                    config.walloff = parseInt(value);
                 } else if (key == 'ambient') {
-                    loc.ambient = parseInt(value);
+                    config.ambient = parseInt(value);
                 } else if (key == 'contrast') {
-                    loc.contrast = parseInt(value);
+                    config.contrast = parseInt(value);
                 } else if (key.startsWith('op')) {
                     let index = parseInt(key.charAt(2)) - 1;
-                    loc.ops[index] = value;
+                    config.ops[index] = value;
                 } else if (key.startsWith('recol')) {
                     let index = parseInt(key.charAt(5)) - 1;
                     let type = key.charAt(6);
 
                     if (type == 's') {
-                        loc.recol_s[index] = parseInt(value);
+                        config.recol_s[index] = parseInt(value);
                     } else if (type == 'd') {
-                        loc.recol_d[index] = parseInt(value);
+                        config.recol_d[index] = parseInt(value);
                     }
                 } else if (key == 'mapfunction') {
-                    loc.mapfunction = parseInt(value);
+                    config.mapfunction = parseInt(value);
                 } else if (key == 'mirror') {
-                    loc.mirror = value == 'yes';
+                    config.mirror = value == 'yes';
                 } else if (key == 'active') {
-                    loc.active = value == 'yes';
+                    config.active = value == 'yes';
                 } else if (key == 'resizex') {
-                    loc.resizex = parseInt(value);
+                    config.resizex = parseInt(value);
                 } else if (key == 'resizey') {
-                    loc.resizey = parseInt(value);
+                    config.resizey = parseInt(value);
                 } else if (key == 'resizez') {
-                    loc.resizez = parseInt(value);
+                    config.resizez = parseInt(value);
                 } else if (key == 'mapscene') {
-                    loc.mapscene = parseInt(value);
+                    config.mapscene = parseInt(value);
                 } else if (key == 'blocksides') {
-                    loc.blocksides = parseInt(value);
+                    config.blocksides = parseInt(value);
                 } else if (key == 'xoff') {
-                    loc.xoff = parseInt(value);
+                    config.xoff = parseInt(value);
                 } else if (key == 'yoff') {
-                    loc.yoff = parseInt(value);
+                    config.yoff = parseInt(value);
                 } else if (key == 'zoff') {
-                    loc.zoff = parseInt(value);
+                    config.zoff = parseInt(value);
                 } else if (key == 'forcedecor') {
-                    loc.forcedecor = value == 'yes';
+                    config.forcedecor = value == 'yes';
                 } else {
-                    console.log(`Unrecognized loc config "${key}" in ${loc.namedId}`);
+                    console.log(`Unrecognized loc config "${key}" in ${config.namedId}`);
                 }
 
                 offset++;
             }
 
-            LocationType.config[loc.namedId] = loc;
-            LocationType.ids[loc.id] = loc.namedId;
+            LocationType.config[config.namedId] = config;
+            LocationType.ids[config.id] = config.namedId;
         }
 
         LocationType.count = LocationType.ids.length;
@@ -193,8 +211,8 @@ export default class LocationType {
         dat.p2(LocationType.count);
 
         for (let i = 0; i < LocationType.count; i++) {
-            const loc = LocationType.config[LocationType.ids[i]];
-            const packed = loc.pack();
+            const config = LocationType.config[LocationType.ids[i]];
+            const packed = config.pack();
             idx.p2(packed.length);
             dat.pdata(packed);
         }
@@ -203,7 +221,7 @@ export default class LocationType {
     }
 
     pack() {
-        const dat = new Packet();
+        let dat = new Packet();
 
         if (this.models.length) {
             dat.p1(1);
@@ -243,9 +261,9 @@ export default class LocationType {
             dat.p1(18);
         }
 
-        if (this._interactable != -1) {
+        if (this.interactable != -1) {
             dat.p1(19);
-            dat.p1(this._interactable);
+            dat.p1(this.interactable);
         }
 
         if (this.hillskew) {
@@ -364,14 +382,13 @@ export default class LocationType {
     }
 
     static unpack(dat) {
-        let count = dat.g2();
+        LocationType.count = dat.g2();
 
-        for (let i = 0; i < count; i++) {
-            let loc = new LocationType();
-            loc.namedId = `loc_${i}`;
-            loc.id = i;
+        for (let i = 0; i < LocationType.count; i++) {
+            let config = new LocationType();
+            config.namedId = `loc_${i}`;
+            config.id = i;
 
-            let interactive = -1;
             while (true) {
                 const code = dat.g1();
                 if (code == 0) {
@@ -382,98 +399,83 @@ export default class LocationType {
                     const count = dat.g1();
 
                     for (let i = 0; i < count; i++) {
-                        this.models[i] = dat.g2();
-                        this.shapes[i] = dat.g1();
+                        config.models[i] = dat.g2();
+                        config.shapes[i] = dat.g1();
                     }
                 } else if (code == 2) {
-                    this.name = dat.gjstr();
+                    config.name = dat.gjstr();
                 } else if (code == 3) {
-                    this.desc = dat.gjstr();
+                    config.desc = dat.gjstr();
                 } else if (code == 14) {
-                    this.width = dat.g1();
+                    config.width = dat.g1();
                 } else if (code == 15) {
-                    this.length = dat.g1();
+                    config.length = dat.g1();
                 } else if (code == 17) {
-                    this.blockwalk = false;
+                    config.blockwalk = false;
                 } else if (code == 18) {
-                    this.blockrange = false;
+                    config.blockrange = false;
                 } else if (code == 19) {
-                    interactive = dat.g1();
-                    this._interactable = interactive; // so we can preserve the original value
-
-                    if (interactive == 1) {
-                        this.interactable = true;
-                    }
+                    config.interactable = dat.g1();
                 } else if (code == 21) {
-                    this.hillskew = true;
+                    config.hillskew = true;
                 } else if (code == 22) {
-                    this.sharelight = true;
+                    config.sharelight = true;
                 } else if (code == 23) {
-                    this.occlude = true;
+                    config.occlude = true;
                 } else if (code == 24) {
-                    this.anim = dat.g2();
+                    config.anim = dat.g2();
 
-                    if (this.anim == 65535) {
-                        this.anim = -1;
+                    if (config.anim == 65535) {
+                        config.anim = -1;
                     }
                 } else if (code == 25) {
-                    this.disposeAlpha = true;
+                    config.disposeAlpha = true;
                 } else if (code == 28) {
-                    this.walloff = dat.g1();
+                    config.walloff = dat.g1();
                 } else if (code == 29) {
-                    this.ambient = dat.g1b();
+                    config.ambient = dat.g1b();
                 } else if (code == 39) {
-                    this.contrast = dat.g1b();
+                    config.contrast = dat.g1b();
                 } else if (code >= 30 && code < 35) {
-                    this.ops[code - 30] = dat.gjstr();
+                    config.ops[code - 30] = dat.gjstr();
                 } else if (code == 40) {
                     const count = dat.g1();
 
                     for (let i = 0; i < count; i++) {
-                        this.recol_s[i] = dat.g2();
-                        this.recol_d[i] = dat.g2();
+                        config.recol_s[i] = dat.g2();
+                        config.recol_d[i] = dat.g2();
                     }
                 } else if (code == 60) {
-                    this.mapfunction = dat.g2();
+                    config.mapfunction = dat.g2();
                 } else if (code == 62) {
-                    this.mirror = true;
+                    config.mirror = true;
                 } else if (code == 64) {
-                    this.active = false;
+                    config.active = false;
                 } else if (code == 65) {
-                    this.resizex = dat.g2();
+                    config.resizex = dat.g2();
                 } else if (code == 66) {
-                    this.resizey = dat.g2();
+                    config.resizey = dat.g2();
                 } else if (code == 67) {
-                    this.resizez = dat.g2();
+                    config.resizez = dat.g2();
                 } else if (code == 68) {
-                    this.mapscene = dat.g2();
+                    config.mapscene = dat.g2();
                 } else if (code == 69) {
-                    this.blocksides = dat.g1();
+                    config.blocksides = dat.g1();
                 } else if (code == 70) {
-                    this.xoff = dat.g2s();
+                    config.xoff = dat.g2s();
                 } else if (code == 71) {
-                    this.yoff = dat.g2s();
+                    config.yoff = dat.g2s();
                 } else if (code == 72) {
-                    this.zoff = dat.g2s();
+                    config.zoff = dat.g2s();
                 } else if (code == 73) {
-                    this.forcedecor = true;
+                    config.forcedecor = true;
                 } else {
-                    console.log(`Unrecognised loc config code ${code} in ${loc.namedId}`);
+                    console.log(`Unrecognised loc config code ${code} in ${config.namedId}`);
                 }
             }
 
-            if (interactive == -1) {
-                this.interactable = false;
-
-                if ((this.shapes.length && this.shapes[0] == LocationType.CENTREPIECE_STRAIGHT) || this.ops.length) {
-                    this.interactable = true;
-                }
-            }
-
-            LocationType.config[loc.namedId] = loc;
-            LocationType.ids[loc.id] = loc.namedId;
+            LocationType.config[config.namedId] = config;
+            LocationType.ids[config.id] = config.namedId;
         }
-
-        LocationType.count = LocationType.ids.length;
     }
 }

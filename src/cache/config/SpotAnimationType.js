@@ -1,12 +1,14 @@
 import Packet from '#util/Packet.js';
+import Constants from './Constants.js';
 
 export default class SpotAnimationType {
-    static dat = null;
+    static config = {};
+    static ids = [];
     static count = 0;
-    static offsets = [];
-    static cache = [];
 
+    namedId = '';
     id = -1;
+
     model = 0;
     anim = -1;
     disposeAlpha = false;
@@ -18,30 +20,108 @@ export default class SpotAnimationType {
     recol_s = [];
     recol_d = [];
 
-    static unpack(dat, idx, preload = false) {
-        SpotAnimationType.dat = dat;
-        SpotAnimationType.count = idx.g2();
-        SpotAnimationType.offsets = [];
-        SpotAnimationType.cache = [];
-
-        let offset = 2;
-        for (let i = 0; i < SpotAnimationType.count; i++) {
-            SpotAnimationType.offsets[i] = offset;
-            offset += idx.g2();
+    static get(id) {
+        if (SpotAnimationType.config[id]) {
+            return SpotAnimationType.config[id];
         }
 
-        if (preload) {
-            for (let i = 0; i < SpotAnimationType.count; i++) {
-                SpotAnimationType.get(i);
-            }
+        if (SpotAnimationType.ids[id]) {
+            return SpotAnimationType.config[SpotAnimationType.ids[id]];
         }
+
+        return null;
     }
 
-    static load(config) {
-        const dat = config.read('spotanim.dat');
-        const idx = config.read('spotanim.idx');
+    static fromDef(src) {
+        const lines = src.replaceAll('\r\n', '\n').split('\n');
+        let offset = 0;
 
-        SpotAnimationType.unpack(dat, idx);
+        let config;
+        let id = 0;
+        while (offset < lines.length) {
+            if (!lines[offset] || lines[offset].startsWith('//')) {
+                offset++;
+                continue;
+            }
+
+            if (lines[offset].startsWith('[')) {
+                if (config && !SpotAnimationType.ids[config.id]) {
+                    // allow for empty configs
+                    SpotAnimationType.config[config.namedId] = config;
+                    SpotAnimationType.ids[config.id] = config.namedId;
+                }
+
+                // extract text in brackets
+                const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
+
+                config = new SpotAnimationType();
+                config.namedId = namedId;
+                config.id = id;
+
+                offset++;
+                id++;
+                continue;
+            }
+
+            while (lines[offset] && !lines[offset].startsWith('[')) {
+                if (!lines[offset] || lines[offset].startsWith('//')) {
+                    offset++;
+                    continue;
+                }
+
+                const parts = lines[offset].split('=');
+                const key = parts[0].trim();
+                let value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '');
+
+                while (value.indexOf('^') !== -1) {
+                    const index = value.indexOf('^');
+                    const constant = value.substring(index);
+
+                    let match = Constants.get(constant);
+                    if (typeof match !== 'undefined') {
+                        value = value.replace(constant, match);
+                    } else {
+                        console.error(`Could not find constant for ${constant}`);
+                    }
+                }
+
+                if (key == 'model') {
+                    config.model = parseInt(value);
+                } else if (key == 'anim') {
+                    config.anim = parseInt(value);
+                } else if (key == 'disposealpha') {
+                    config.disposeAlpha = value == 'yes';
+                } else if (key == 'resizeh') {
+                    config.resizeh = parseInt(value);
+                } else if (key == 'resizev') {
+                    config.resizev = parseInt(value);
+                } else if (key == 'rotation') {
+                    config.rotation = parseInt(value);
+                } else if (key == 'ambient') {
+                    config.ambient = parseInt(value);
+                } else if (key == 'contrast') {
+                    config.contrast = parseInt(value);
+                } else if (key.startsWith('recol')) {
+                    let index = parseInt(key.charAt(5)) - 1;
+                    let type = key.charAt(6);
+
+                    if (type == 's') {
+                        config.recol_s[index] = parseInt(value);
+                    } else if (type == 'd') {
+                        config.recol_d[index] = parseInt(value);
+                    }
+                } else {
+                    console.log(`Unrecognized spotanim config "${key}" in ${config.namedId}`);
+                }
+
+                offset++;
+            }
+
+            SpotAnimationType.config[config.namedId] = config;
+            SpotAnimationType.ids[config.id] = config.namedId;
+        }
+
+        SpotAnimationType.count = SpotAnimationType.ids.length;
     }
 
     static pack() {
@@ -52,152 +132,17 @@ export default class SpotAnimationType {
         dat.p2(SpotAnimationType.count);
 
         for (let i = 0; i < SpotAnimationType.count; i++) {
-            let spotAnimation;
-            if (SpotAnimationType.cache[i]) {
-                spotAnimation = SpotAnimationType.cache[i];
-            } else {
-                spotAnimation = new SpotAnimationType(i);
-            }
-
-            const spotAnimationDat = spotAnimation.encode();
-            idx.p2(spotAnimationDat.length);
-            dat.pdata(spotAnimationDat);
+            const config = SpotAnimationType.config[SpotAnimationType.ids[i]];
+            const packed = config.pack();
+            idx.p2(packed.length);
+            dat.pdata(packed);
         }
 
         return { dat, idx };
     }
 
-    static get(id) {
-        if (SpotAnimationType.cache[id]) {
-            return SpotAnimationType.cache[id];
-        } else {
-            return new SpotAnimationType(id);
-        }
-    }
-
-    static toJagConfig() {
-        let config = '';
-
-        for (let i = 0; i < SpotAnimationType.count; i++) {
-            config += SpotAnimationType.get(i).toJagConfig() + '\n';
-        }
-
-        return config;
-    }
-
-    static fromJagConfig(src) {
-        const lines = src.replaceAll('\r\n', '\n').split('\n');
-        let offset = 0;
-
-        let spotanim;
-        let id = 0;
-        while (offset < lines.length) {
-            if (!lines[offset]) {
-                offset++;
-                continue;
-            }
-
-            if (lines[offset].startsWith('[')) {
-                spotanim = new SpotAnimationType(id, false);
-                offset++;
-                id++;
-                continue;
-            }
-
-            while (lines[offset] && !lines[offset].startsWith('[')) {
-                const key = lines[offset].slice(0, lines[offset].indexOf('='));
-                const value = lines[offset].slice(lines[offset].indexOf('=') + 1).replaceAll('model_', '').replaceAll('seq_', '');
-
-                if (key == 'model') {
-                    spotanim.model = parseInt(value);
-                } else if (key == 'anim') {
-                    spotanim.anim = parseInt(value);
-                } else if (key == 'disposealpha') {
-                    spotanim.disposeAlpha = value == 'yes';
-                } else if (key == 'resizeh') {
-                    spotanim.resizeh = parseInt(value);
-                } else if (key == 'resizev') {
-                    spotanim.resizev = parseInt(value);
-                } else if (key == 'rotation') {
-                    spotanim.rotation = parseInt(value);
-                } else if (key == 'ambient') {
-                    spotanim.ambient = parseInt(value);
-                } else if (key == 'contrast') {
-                    spotanim.contrast = parseInt(value);
-                } else if (key.startsWith('recol')) {
-                    let index = parseInt(key.charAt(5)) - 1;
-                    let type = key.charAt(6);
-
-                    if (type == 's') {
-                        spotanim.recol_s[index] = parseInt(value);
-                    } else if (type == 'd') {
-                        spotanim.recol_d[index] = parseInt(value);
-                    }
-                } else {
-                    console.log(`Unknown spotanim key: ${key}`);
-                }
-
-                offset++;
-            }
-
-            SpotAnimationType.cache[spotanim.id] = spotanim;
-        }
-
-        SpotAnimationType.count = SpotAnimationType.cache.length;
-    }
-
-    constructor(id = 0, decode = true) {
-        this.id = id;
-        SpotAnimationType.cache[id] = this;
-
-        if (decode) {
-            const offset = SpotAnimationType.offsets[id];
-            if (!offset) {
-                return;
-            }
-
-            SpotAnimationType.dat.pos = offset;
-            this.#decode();
-        }
-    }
-
-    #decode() {
-        const dat = SpotAnimationType.dat;
-
-        while (true) {
-            const opcode = dat.g1();
-            if (opcode == 0) {
-                break;
-            }
-
-            if (opcode == 1) {
-                this.model = dat.g2();
-            } else if (opcode == 2) {
-                this.anim = dat.g2();
-            } else if (opcode == 3) {
-                this.disposeAlpha = true;
-            } else if (opcode == 4) {
-                this.resizeh = dat.g2();
-            } else if (opcode == 5) {
-                this.resizev = dat.g2();
-            } else if (opcode == 6) {
-                this.rotation = dat.g2();
-            } else if (opcode == 7) {
-                this.ambient = dat.g1();
-            } else if (opcode == 8) {
-                this.contrast = dat.g1();
-            } else if (opcode >= 40 && opcode < 50) {
-                this.recol_s[opcode - 40] = dat.g2();
-            } else if (opcode >= 50 && opcode < 60) {
-                this.recol_d[opcode - 50] = dat.g2();
-            } else {
-                console.error('Unknown SpotAnimationType opcode:', opcode);
-            }
-        }
-    }
-
-    encode() {
-        const dat = new Packet();
+    pack() {
+        let dat = new Packet();
 
         if (this.model != -1) {
             dat.p1(1);
@@ -253,46 +198,47 @@ export default class SpotAnimationType {
         return dat;
     }
 
-    toJagConfig() {
-        let config = `[spotanim_${this.id}]\n`;
+    unpack(dat) {
+        SpotAnimationType.count = dat.g2();
 
-		if (this.model != 0) {
-            config += `model=model_${this.model}\n`;
-		}
+        for (let i = 0; i < SpotAnimationType.count; i++) {
+            let config = new SpotAnimationType();
+            config.namedId = `spotanim_${i}`;
+            config.id = i;
 
-		if (this.anim != -1) {
-            config += `anim=seq_${this.anim}\n`;
-		}
+            while (true) {
+                const code = dat.g1();
+                if (code == 0) {
+                    break;
+                }
 
-        if (this.disposeAlpha) {
-            config += `disposealpha=yes\n`;
+                if (code == 1) {
+                    config.model = dat.g2();
+                } else if (code == 2) {
+                    config.anim = dat.g2();
+                } else if (code == 3) {
+                    config.disposeAlpha = true;
+                } else if (code == 4) {
+                    config.resizeh = dat.g2();
+                } else if (code == 5) {
+                    config.resizev = dat.g2();
+                } else if (code == 6) {
+                    config.rotation = dat.g2();
+                } else if (code == 7) {
+                    config.ambient = dat.g1();
+                } else if (code == 8) {
+                    config.contrast = dat.g1();
+                } else if (code >= 40 && code < 50) {
+                    config.recol_s[code - 40] = dat.g2();
+                } else if (code >= 50 && code < 60) {
+                    config.recol_d[code - 50] = dat.g2();
+                } else {
+                    console.log(`Unrecognized spotanim config code ${code} in ${config.namedId}`);
+                }
+            }
+
+            SpotAnimationType.config[config.namedId] = config;
+            SpotAnimationType.ids[config.id] = config.namedId;
         }
-
-        if (this.resizeh != 128) {
-            config += `resizeh=${this.resizeh}\n`;
-		}
-
-		if (this.resizev != 128) {
-            config += `resizev=${this.resizev}\n`;
-		}
-
-		if (this.rotation != 0) {
-            config += `rotation=${this.rotation}\n`;
-		}
-
-		if (this.ambient != 0) {
-            config += `ambient=${this.ambient}\n`;
-		}
-
-		if (this.contrast != 0) {
-            config += `contrast=${this.contrast}\n`;
-		}
-
-        for (let i = 0; i < this.recol_s.length; ++i) {
-            config += `recol${i + 1}s=${this.recol_s[i]}\n`;
-            config += `recol${i + 1}d=${this.recol_d[i]}\n`;
-		}
-
-        return config;
     }
 }

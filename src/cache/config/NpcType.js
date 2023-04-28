@@ -1,4 +1,5 @@
 import Packet from '#util/Packet.js';
+import Constants from './Constants.js';
 
 export default class NpcType {
     static config = {};
@@ -6,8 +7,8 @@ export default class NpcType {
     static count = 0;
 
     namedId = '';
-
     id = -1;
+
     models = [];
     name = '';
     desc = '';
@@ -38,29 +39,23 @@ export default class NpcType {
     magic = 1;
     hitpoints = 1;
 
-    static pack() {
-        const dat = new Packet();
-        const idx = new Packet();
-
-        idx.p2(NpcType.count);
-        dat.p2(NpcType.count);
-
-        for (let i = 0; i < NpcType.count; i++) {
-            let id = NpcType.ids[i];
-            let config = NpcType.config[id];
-            let packed = config.encode();
-            idx.p2(packed.length);
-            dat.pdata(packed);
+    static get(id) {
+        if (NpcType.config[id]) {
+            return NpcType.config[id];
         }
 
-        return { dat, idx };
+        if (NpcType.ids[id]) {
+            return NpcType.config[NpcType.ids[id]];
+        }
+
+        return null;
     }
 
-    static fromJagConfig(src) {
+    static fromDef(src) {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
 
-        let npc;
+        let config;
         let id = 0;
         while (offset < lines.length) {
             if (!lines[offset] || lines[offset].startsWith('//')) {
@@ -69,12 +64,18 @@ export default class NpcType {
             }
 
             if (lines[offset].startsWith('[')) {
+                if (config && !NpcType.ids[config.id]) {
+                    // allow for empty configs
+                    NpcType.config[config.namedId] = config;
+                    NpcType.ids[config.id] = config.namedId;
+                }
+
                 // extract text in brackets
                 const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
 
-                npc = new NpcType();
-                npc.namedId = namedId;
-                npc.id = id;
+                config = new NpcType();
+                config.namedId = namedId;
+                config.id = id;
 
                 offset++;
                 id++;
@@ -89,93 +90,109 @@ export default class NpcType {
 
                 const parts = lines[offset].split('=');
                 const key = parts[0].trim();
-                const value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '');
+                let value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '');
+
+                while (value.indexOf('^') !== -1) {
+                    const index = value.indexOf('^');
+                    const constant = value.substring(index);
+
+                    let match = Constants.get(constant);
+                    if (typeof match !== 'undefined') {
+                        value = value.replace(constant, match);
+                    } else {
+                        console.error(`Could not find constant for ${constant}`);
+                    }
+                }
 
                 if (key.startsWith('model')) {
                     let index = parseInt(key.slice(5)) - 1;
-                    npc.models[index] = parseInt(value);
+                    config.models[index] = parseInt(value);
                 } else if (key == 'name') {
-                    npc.name = value;
+                    config.name = value;
                 } else if (key == 'desc') {
-                    npc.desc = value;
+                    config.desc = value;
                 } else if (key == 'size') {
-                    npc.size = parseInt(value);
+                    config.size = parseInt(value);
                 } else if (key == 'readyanim') {
-                    npc.readyanim = parseInt(value);
+                    config.readyanim = parseInt(value);
                 } else if (key == 'walkanim') {
-                    npc.walkanim = parseInt(value);
+                    config.walkanim = parseInt(value);
                 } else if (key == 'disposealpha') {
-                    npc.disposeAlpha = value == 'yes';
+                    config.disposeAlpha = value == 'yes';
                 } else if (key == 'walkanim_b') {
-                    npc.walkanim_b = parseInt(value);
+                    config.walkanim_b = parseInt(value);
                 } else if (key == 'walkanim_r') {
-                    npc.walkanim_r = parseInt(value);
+                    config.walkanim_r = parseInt(value);
                 } else if (key == 'walkanim_l') {
-                    npc.walkanim_l = parseInt(value);
+                    config.walkanim_l = parseInt(value);
                 } else if (key.startsWith('op')) {
                     let index = parseInt(key.charAt(2)) - 1;
-                    npc.ops[index] = value;
+                    config.ops[index] = value;
                 } else if (key.startsWith('recol')) {
                     let index = parseInt(key.charAt(5)) - 1;
                     let type = key.charAt(6);
 
                     if (type == 's') {
-                        npc.recol_s[index] = parseInt(value);
+                        config.recol_s[index] = parseInt(value);
                     } else if (type == 'd') {
-                        npc.recol_d[index] = parseInt(value);
+                        config.recol_d[index] = parseInt(value);
                     }
                 } else if (key.startsWith('head')) {
                     let index = parseInt(key.slice(4)) - 1;
-                    npc.heads[index] = parseInt(value);
+                    config.heads[index] = parseInt(value);
                 } else if (key == 'visonmap') {
-                    npc.visonmap = value == 'yes';
+                    config.visonmap = value == 'yes';
                 } else if (key == 'vislevel') {
-                    npc.vislevel = parseInt(value);
+                    config.vislevel = parseInt(value);
                 } else if (key == 'resizex') {
-                    npc.resizex = parseInt(value);
+                    config.resizex = parseInt(value);
                 } else if (key == 'resizez') {
-                    npc.resizez = parseInt(value);
+                    config.resizez = parseInt(value);
                 } else if (key === 'attack') {
-                    npc.attack = parseInt(value);
+                    config.attack = parseInt(value);
                 } else if (key === 'strength') {
-                    npc.strength = parseInt(value);
+                    config.strength = parseInt(value);
                 } else if (key === 'defence') {
-                    npc.defence = parseInt(value);
+                    config.defence = parseInt(value);
                 } else if (key === 'ranged') {
-                    npc.ranged = parseInt(value);
+                    config.ranged = parseInt(value);
                 } else if (key === 'magic') {
-                    npc.magic = parseInt(value);
+                    config.magic = parseInt(value);
                 } else if (key === 'hitpoints') {
-                    npc.hitpoints = parseInt(value);
+                    config.hitpoints = parseInt(value);
                 } else {
-                    console.log(`Unknown npc key: ${key}`);
+                    console.log(`Unknown config key: ${key}`);
                 }
 
                 offset++;
             }
 
-            NpcType.config[npc.namedId] = npc;
-            NpcType.ids[npc.id] = npc.namedId;
+            NpcType.config[config.namedId] = config;
+            NpcType.ids[config.id] = config.namedId;
         }
 
         NpcType.count = NpcType.ids.length;
     }
 
-    static get(id) {
-        if (NpcType.config[id]) {
-            return NpcType.config[id];
+    static pack() {
+        const dat = new Packet();
+        const idx = new Packet();
+
+        idx.p2(NpcType.count);
+        dat.p2(NpcType.count);
+
+        for (let i = 0; i < NpcType.count; i++) {
+            const config = NpcType.config[NpcType.ids[i]];
+            const packed = config.pack();
+            idx.p2(packed.length);
+            dat.pdata(packed);
         }
 
-        if (NpcType.ids[id]) {
-            return NpcType.config[NpcType.ids[id]];
-        }
-
-        return null;
+        return { dat, idx };
     }
 
-    // encode in client format
-    encode() {
-        const dat = new Packet();
+    pack() {
+        let dat = new Packet();
 
         if (this.models.length) {
             dat.p1(1);
@@ -277,7 +294,7 @@ export default class NpcType {
             let magic = 0.325 * Math.floor(Math.floor(this.magic / 2) + this.magic);
             let offensive = Math.max(melee, range, magic);
 
-            // TODO: this produces a different result than the cache has.
+            // TODO: this combat formula produces a different result than the cache should have.
             // there was an update in august 2004 that corrected a bug with NPC levels.
             // in the meantime we're overriding the computed value with vislevel= and skipping this block of code
             vislevel = Math.floor(defensive + offensive);
@@ -301,5 +318,81 @@ export default class NpcType {
         dat.p1(0);
         dat.pos = 0;
         return dat;
+    }
+
+    static unpack(dat) {
+        NpcType.count = dat.g2();
+
+        for (let i = 0; i < NpcType.count; i++) {
+            let config = new NpcType();
+            config.namedId = `npc_${i}`;
+            config.id = i;
+
+            while (true) {
+                const code = dat.g1();
+                if (code == 0) {
+                    break;
+                }
+
+                if (code == 1) {
+                    const count = dat.g1();
+
+                    for (let i = 0; i < count; i++) {
+                        config.models[i] = dat.g2();
+                    }
+                } else if (code == 2) {
+                    config.name = dat.gjstr();
+                } else if (code == 3) {
+                    config.desc = dat.gjstr();
+                } else if (code == 12) {
+                    config.size = dat.g1b();
+                } else if (code == 13) {
+                    config.readyanim = dat.g2();
+                } else if (code == 14) {
+                    config.walkanim = dat.g2();
+                } else if (code == 16) {
+                    config.disposeAlpha = true;
+                } else if (code == 17) {
+                    config.walkanim = dat.g2();
+                    config.walkanim_b = dat.g2();
+                    config.walkanim_r = dat.g2();
+                    config.walkanim_l = dat.g2();
+                } else if (code >= 30 && code < 40) {
+                    config.ops[code - 30] = dat.gjstr();
+                } else if (code == 40) {
+                    const count = dat.g1();
+
+                    for (let i = 0; i < count; i++) {
+                        config.recol_s[i] = dat.g2();
+                        config.recol_d[i] = dat.g2();
+                    }
+                } else if (code == 60) {
+                    const count = dat.g1();
+
+                    for (let i = 0; i < count; i++) {
+                        config.heads[i] = dat.g2();
+                    }
+                } else if (code == 90) {
+                    config.opcode90 = dat.g2();
+                } else if (code == 91) {
+                    config.opcode91 = dat.g2();
+                } else if (code == 92) {
+                    config.opcode92 = dat.g2();
+                } else if (code == 93) {
+                    config.visonmap = false;
+                } else if (code == 95) {
+                    config.vislevel = dat.g2();
+                } else if (code == 97) {
+                    config.resizex = dat.g2();
+                } else if (code == 98) {
+                    config.resizez = dat.g2();
+                } else {
+                    console.log(`Unrecognised npc config code ${code} in ${config.namedId}`);
+                }
+            }
+
+            NpcType.config[loc.namedId] = loc;
+            NpcType.ids[loc.id] = loc.namedId;
+        }
     }
 }

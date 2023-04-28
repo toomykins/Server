@@ -16,24 +16,6 @@ export default class IdentityKitType {
     recol_d = [];
     heads = [];
 
-    static pack() {
-        const dat = new Packet();
-        const idx = new Packet();
-
-        idx.p2(IdentityKitType.count);
-        dat.p2(IdentityKitType.count);
-
-        for (let i = 0; i < IdentityKitType.count; i++) {
-            let id = IdentityKitType.ids[i];
-            let config = IdentityKitType.config[id];
-            let packed = config.encode();
-            idx.p2(packed.length);
-            dat.pdata(packed);
-        }
-
-        return { dat, idx };
-    }
-
     static get(id) {
         if (IdentityKitType.config[id]) {
             return IdentityKitType.config[id];
@@ -50,7 +32,7 @@ export default class IdentityKitType {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
 
-        let idk;
+        let config;
         let id = 0;
         while (offset < lines.length) {
             if (!lines[offset] || lines[offset].startsWith('//')) {
@@ -59,12 +41,18 @@ export default class IdentityKitType {
             }
 
             if (lines[offset].startsWith('[')) {
+                if (config && !IdentityKitType.ids[config.id]) {
+                    // allow for empty configs
+                    IdentityKitType.config[config.namedId] = config;
+                    IdentityKitType.ids[config.id] = config.namedId;
+                }
+
                 // extract text in brackets
                 const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
 
-                idk = new IdentityKitType();
-                idk.namedId = namedId;
-                idk.id = id;
+                config = new IdentityKitType();
+                config.namedId = namedId;
+                config.id = id;
 
                 offset++;
                 id++;
@@ -81,49 +69,76 @@ export default class IdentityKitType {
                 const key = parts[0].trim();
                 let value = parts[1].trim().replaceAll('model_', '').replaceAll('seq_', '');
 
-                if (value[0] === '^') {
-                    value = Constants.get(value);
+                while (value.indexOf('^') !== -1) {
+                    const index = value.indexOf('^');
+                    const constant = value.substring(index);
+
+                    let match = Constants.get(constant);
+                    if (typeof match !== 'undefined') {
+                        value = value.replace(constant, match);
+                    } else {
+                        console.error(`Could not find constant for ${constant}`);
+                    }
                 }
 
                 if (key == 'bodypart') {
-                    idk.bodypart = value;
+                    config.bodypart = value;
                 } else if (key == 'disable') {
-                    idk.disable = true;
+                    config.disable = true;
                 } else if (key.startsWith('model')) {
-                    idk.models = idk.models || [];
+                    config.models = config.models || [];
 
                     let number = key.substring('model'.length) - 1;
-                    idk.models[number] = parseInt(value);
+                    config.models[number] = parseInt(value);
                 } else if (key.startsWith('recol')) {
-                    idk.recol_s = idk.recol_s || [];
-                    idk.recol_d = idk.recol_d || [];
+                    config.recol_s = config.recol_s || [];
+                    config.recol_d = config.recol_d || [];
 
                     let number = key.substring('recol'.length, 'recol1'.length) - 1;
                     let type = key.substring('recol1'.length);
                     if (type == 's') {
-                        idk.recol_s[number] = parseInt(value);
+                        config.recol_s[number] = parseInt(value);
                     } else if (type == 'd') {
-                        idk.recol_d[number] = parseInt(value);
+                        config.recol_d[number] = parseInt(value);
                     }
                 } else if (key.startsWith('head')) {
-                    idk.heads = idk.heads || [];
+                    config.heads = config.heads || [];
 
                     let number = key.substring('head'.length) - 1;
-                    idk.heads[number] = parseInt(value);
+                    config.heads[number] = parseInt(value);
+                } else {
+                    console.log(`Unrecognized idk config "${key}" in ${config.namedId}`);
                 }
 
                 offset++;
             }
 
-            IdentityKitType.config[idk.namedId] = idk;
-            IdentityKitType.ids[idk.id] = idk.namedId;
+            IdentityKitType.config[config.namedId] = config;
+            IdentityKitType.ids[config.id] = config.namedId;
         }
 
         IdentityKitType.count = IdentityKitType.ids.length;
     }
 
-    encode() {
+    static pack() {
         const dat = new Packet();
+        const idx = new Packet();
+
+        idx.p2(IdentityKitType.count);
+        dat.p2(IdentityKitType.count);
+
+        for (let i = 0; i < IdentityKitType.count; i++) {
+            const config = IdentityKitType.config[IdentityKitType.ids[i]];
+            const packed = config.pack();
+            idx.p2(packed.length);
+            dat.pdata(packed);
+        }
+
+        return { dat, idx };
+    }
+
+    pack() {
+        let dat = new Packet();
 
         if (this.bodypart != -1) {
             dat.p1(1);
@@ -161,5 +176,45 @@ export default class IdentityKitType {
         dat.p1(0);
         dat.pos = 0;
         return dat;
+    }
+
+    static unpack(dat) {
+        IdentityKitType.count = dat.g2();
+
+        for (let i = 0; i < IdentityKitType.count; i++) {
+            let config = new IdentityKitType();
+            config.namedId = `idk_${i}`;
+            config.id = i;
+
+            while (true) {
+                const code = dat.g1();
+                if (code == 0) {
+                    break;
+                }
+
+                if (code == 1) {
+                    config.bodypart = dat.g1();
+                } else if (code == 2) {
+                    const count = dat.g1();
+    
+                    for (let i = 0; i < count; i++) {
+                        config.models[i] = dat.g2();
+                    }
+                } else if (code == 3) {
+                    config.disable = true;
+                } else if (code >= 40 && code < 50) {
+                    config.recol_s[code - 40] = dat.g2();
+                } else if (code >= 50 && code < 60) {
+                    config.recol_d[code - 50] = dat.g2();
+                } else if (code >= 60 && code < 70) {
+                    config.heads[code - 60] = dat.g2();
+                } else {
+                    console.log(`Unrecognized idk config code ${code} in ${config.namedId}`);
+                }
+            }
+
+            IdentityKitType.config[config.namedId] = config;
+            IdentityKitType.ids[config.id] = config.namedId;
+        }
     }
 }

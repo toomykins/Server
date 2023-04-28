@@ -1,4 +1,5 @@
 import Packet from '#util/Packet.js';
+import Constants from './Constants.js';
 
 export default class SequenceType {
     static config = {};
@@ -7,6 +8,7 @@ export default class SequenceType {
 
     namedId = '';
     id = -1;
+
     framecount = 0;
     primaryFrames = [];
     secondaryFrames = [];
@@ -35,7 +37,7 @@ export default class SequenceType {
         const lines = src.replaceAll('\r\n', '\n').split('\n');
         let offset = 0;
 
-        let seq;
+        let config;
         let id = 0;
         while (offset < lines.length) {
             if (!lines[offset] || lines[offset].startsWith('//')) {
@@ -44,12 +46,18 @@ export default class SequenceType {
             }
 
             if (lines[offset].startsWith('[')) {
+                if (config && !SequenceType.ids[config.id]) {
+                    // allow for empty configs
+                    SequenceType.config[config.namedId] = config;
+                    SequenceType.ids[config.id] = config.namedId;
+                }
+
                 // extract text in brackets
                 const namedId = lines[offset].substring(1, lines[offset].indexOf(']'));
 
-                seq = new SequenceType();
-                seq.namedId = namedId;
-                seq.id = id;
+                config = new SequenceType();
+                config.namedId = namedId;
+                config.id = id;
 
                 offset++;
                 id++;
@@ -66,47 +74,59 @@ export default class SequenceType {
                 const key = parts[0].trim();
                 let value = parts[1].trim();
 
+                while (value.indexOf('^') !== -1) {
+                    const index = value.indexOf('^');
+                    const constant = value.substring(index);
+
+                    let match = Constants.get(constant);
+                    if (typeof match !== 'undefined') {
+                        value = value.replace(constant, match);
+                    } else {
+                        console.error(`Could not find constant for ${constant}`);
+                    }
+                }
+
                 if (key === 'framecount') {
-                    seq.framecount = parseInt(value);
-                    seq.primaryFrames = new Array(seq.framecount);
-                    seq.primaryFrames.fill(-1);
-                    seq.secondaryFrames = new Array(seq.framecount);
-                    seq.secondaryFrames.fill(-1);
-                    seq.frameDelay = new Array(seq.framecount);
-                    seq.frameDelay.fill(0);
+                    config.framecount = parseInt(value);
+                    config.primaryFrames = new Array(config.framecount);
+                    config.primaryFrames.fill(-1);
+                    config.secondaryFrames = new Array(config.framecount);
+                    config.secondaryFrames.fill(-1);
+                    config.frameDelay = new Array(config.framecount);
+                    config.frameDelay.fill(0);
                 } else if (key.startsWith('frame_b')) {
                     let index = parseInt(key.substring('frame_b'.length)) - 1;
-                    seq.secondaryFrames[index] = parseInt(value);
+                    config.secondaryFrames[index] = parseInt(value);
                 } else if (key.startsWith('framedel')) {
                     let index = parseInt(key.substring('framedel'.length)) - 1;
-                    seq.frameDelay[index] = parseInt(value);
+                    config.frameDelay[index] = parseInt(value);
                 } else if (key.startsWith('frame')) {
                     let index = parseInt(key.substring('frame'.length)) - 1;
-                    seq.primaryFrames[index] = parseInt(value);
+                    config.primaryFrames[index] = parseInt(value);
                 } else if (key === 'replayoff') {
-                    seq.replayoff = parseInt(value);
+                    config.replayoff = parseInt(value);
                 } else if (key.startsWith('label')) {
                     let index = parseInt(key.substring('label'.length)) - 1;
-                    seq.labelGroups[index] = parseInt(value);
+                    config.labelGroups[index] = parseInt(value);
                 } else if (key === 'stretches') {
-                    seq.stretches = value === 'yes';
+                    config.stretches = value === 'yes';
                 } else if (key === 'priority') {
-                    seq.priority = parseInt(value);
+                    config.priority = parseInt(value);
                 } else if (key === 'mainhand') {
-                    seq.mainhand = parseInt(value);
+                    config.mainhand = parseInt(value);
                 } else if (key === 'offhand') {
-                    seq.offhand = parseInt(value);
+                    config.offhand = parseInt(value);
                 } else if (key === 'replaycount') {
-                    seq.replaycount = parseInt(value);
+                    config.replaycount = parseInt(value);
                 } else {
-                    console.log(`Unrecognized seq config "${key}" in ${seq.namedId}`);
+                    console.log(`Unrecognized seq config "${key}" in ${config.namedId}`);
                 }
 
                 offset++;
             }
 
-            SequenceType.config[seq.namedId] = seq;
-            SequenceType.ids[seq.id] = seq.namedId;
+            SequenceType.config[config.namedId] = config;
+            SequenceType.ids[config.id] = config.namedId;
         }
 
         SequenceType.count = SequenceType.ids.length;
@@ -120,8 +140,8 @@ export default class SequenceType {
         idx.p2(SequenceType.count);
 
         for (let i = 0; i < SequenceType.count; i++) {
-            const seq = SequenceType.config[SequenceType.ids[i]];
-            const packed = seq.pack();
+            const config = SequenceType.config[SequenceType.ids[i]];
+            const packed = config.pack();
             idx.p2(packed.length);
             dat.pdata(packed);
         }
@@ -186,12 +206,12 @@ export default class SequenceType {
     }
 
     static unpack(dat) {
-        let count = dat.g2();
+        SequenceType.count = dat.g2();
 
-        for (let i = 0; i < count; i++) {
-            let seq = new SequenceType();
-            seq.namedId = `seq_${i}`;
-            seq.id = i;
+        for (let i = 0; i < SequenceType.count; i++) {
+            let config = new SequenceType();
+            config.namedId = `seq_${i}`;
+            config.id = i;
 
             while (true) {
                 let code = dat.g1();
@@ -200,49 +220,47 @@ export default class SequenceType {
                 }
 
                 if (code === 1) {
-                    seq.framecount = dat.g1();
+                    config.framecount = dat.g1();
 
-                    seq.primaryFrames = new Array(seq.framecount);
-                    seq.secondaryFrames = new Array(seq.framecount);
-                    seq.frameDelay = new Array(seq.framecount);
+                    config.primaryFrames = new Array(config.framecount);
+                    config.secondaryFrames = new Array(config.framecount);
+                    config.frameDelay = new Array(config.framecount);
 
-                    for (let i = 0; i < seq.framecount; i++) {
-                        seq.primaryFrames[i] = dat.g2();
-                        seq.secondaryFrames[i] = dat.g2();
-                        if (seq.secondaryFrames[i] === 65535) {
-                            seq.secondaryFrames[i] = -1;
+                    for (let i = 0; i < config.framecount; i++) {
+                        config.primaryFrames[i] = dat.g2();
+                        config.secondaryFrames[i] = dat.g2();
+                        if (config.secondaryFrames[i] === 65535) {
+                            config.secondaryFrames[i] = -1;
                         }
 
-                        seq.frameDelay[i] = dat.g2();
+                        config.frameDelay[i] = dat.g2();
                     }
                 } else if (code === 2) {
-                    seq.replayoff = dat.g2();
+                    config.replayoff = dat.g2();
                 } else if (code === 3) {
                     let count = dat.g1();
 
                     for (let i = 0; i < count; i++) {
-                        seq.labelGroups[i] = dat.g1();
+                        config.labelGroups[i] = dat.g1();
                     }
                 } else if (code === 4) {
-                    seq.stretches = true;
+                    config.stretches = true;
                 } else if (code === 5) {
-                    seq.priority = dat.g1();
+                    config.priority = dat.g1();
                 } else if (code === 6) {
-                    seq.mainhand = dat.g2();
+                    config.mainhand = dat.g2();
                 } else if (code === 7) {
-                    seq.offhand = dat.g2();
+                    config.offhand = dat.g2();
                 } else if (code === 8) {
-                    seq.replaycount = dat.g1();
+                    config.replaycount = dat.g1();
                 } else {
-                    console.log(`Unrecognized seq config code ${code} reading ${seq.namedId}`);
+                    console.log(`Unrecognized seq config code ${code} reading ${config.namedId}`);
                     process.exit(0);
                 }
             }
 
-            SequenceType.config[seq.namedId] = seq;
-            SequenceType.ids[seq.id] = seq.namedId;
+            SequenceType.config[config.namedId] = config;
+            SequenceType.ids[config.id] = config.namedId;
         }
-
-        SequenceType.count = SequenceType.ids.length;
     }
 }

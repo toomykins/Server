@@ -123,7 +123,7 @@ export default class LoadNewAreas {
 
             // send all varps
             player.resetVarCache();
-            for (let i = 0; i < player.varps.length; ++i) {
+            for (let i = 0; i < VarpType.count; ++i) {
                 if (!VarpType.get(i).transmit) {
                     continue;
                 }
