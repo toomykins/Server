@@ -5,7 +5,7 @@ height=334
 
 [if_328:com_329]
 type=^iftype_model
-x=-117
+x=139
 y=22
 width=35
 height=32
@@ -55,7 +55,7 @@ width=145
 height=202
 
 [if_328:com_334]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -64,12 +64,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_328:com_335]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -78,12 +78,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_328:com_336]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -92,12 +92,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_328:com_337]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_graphic
 x=22
 y=103
@@ -106,7 +106,7 @@ height=24
 graphic=combaticons,19
 
 [if_328:com_338]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_graphic
 x=21
 y=11
@@ -115,7 +115,7 @@ height=24
 graphic=combaticons2,13
 
 [if_328:com_339]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_graphic
 x=22
 y=57
@@ -124,7 +124,7 @@ height=24
 graphic=combaticons2,14
 
 [if_328:com_340]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_text
 x=78
 y=5
@@ -136,7 +136,7 @@ text=Jab
 colour=0xffff00
 
 [if_328:com_341]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_text
 x=78
 y=51
@@ -148,7 +148,7 @@ text=Pound
 colour=0xffff00
 
 [if_328:com_342]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_text
 x=78
 y=97
@@ -160,7 +160,7 @@ text=Focus - Block
 colour=0xffff00
 
 [if_328:com_343]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_text
 x=78
 y=64
@@ -171,7 +171,7 @@ text=(Aggressive)
 colour=0xffff00
 
 [if_328:com_344]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_text
 x=78
 y=18
@@ -182,7 +182,7 @@ text=(Accurate)
 colour=0xffff00
 
 [if_328:com_345]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_text
 x=78
 y=110
@@ -193,38 +193,38 @@ text=(Defensive)
 colour=0xffff00
 
 [if_328:com_349]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=6
-y=-94
+y=162
 width=72
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_108,0
+script1op1=^load_bool,varp_108,0
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_328:com_350]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_graphic
 x=24
-y=-91
+y=165
 width=30
 height=30
 graphic=prayeron,12
 
 [if_328:com_351]
-layer=if_328:com_333
+layer=com_333
 type=^iftype_text
 x=79
-y=-88
+y=168
 width=54
 height=11
 scriptc1=^op_geq
 scriptv1=2
-script1op1=^load_var,^varp_108
+script1op1=^load_var,varp_108
 font=^p11
 shadow=yes
 text=Attack with
@@ -245,7 +245,7 @@ colour=0xffff00
 [if_328:com_347]
 type=^iftype_text
 x=81
-y=-127
+y=129
 width=36
 height=11
 font=^p11
@@ -255,7 +255,7 @@ colour=0xffff00
 [if_328:com_348]
 type=^iftype_text
 x=82
-y=-82
+y=174
 width=36
 height=11
 font=^p11
@@ -265,12 +265,12 @@ colour=0xffff00
 [if_328:com_352]
 type=^iftype_text
 x=83
-y=-23
+y=233
 width=49
 height=11
 scriptc1=^op_geq
 scriptv1=2
-script1op1=^load_var,^varp_108
+script1op1=^load_var,varp_108
 font=^p11
 shadow=yes
 text=(none set)
@@ -281,8 +281,8 @@ activecolour=0xb0a392
 [if_328:com_353]
 type=^iftype_model
 buttontype=^if_button
-x=-105
-y=-65
+x=151
+y=191
 width=35
 height=57
 model=model_2543
@@ -292,13 +292,13 @@ yan=124
 
 [if_328:com_354]
 type=^iftype_text
-x=-109
-y=-22
+x=147
+y=234
 width=37
 height=11
 scriptc1=^op_geq
 scriptv1=2
-script1op1=^load_var,^varp_108
+script1op1=^load_var,varp_108
 font=^p11
 shadow=yes
 text=Choose
@@ -307,13 +307,13 @@ activecolour=0xffff00
 
 [if_328:com_355]
 type=^iftype_text
-x=-103
-y=-12
+x=153
+y=244
 width=25
 height=11
 scriptc1=^op_geq
 scriptv1=2
-script1op1=^load_var,^varp_108
+script1op1=^load_var,varp_108
 font=^p11
 shadow=yes
 text=Spell

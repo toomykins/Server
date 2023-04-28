@@ -9,7 +9,7 @@ width=190
 height=36
 
 [if_3917:com_3919]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_graphic
 x=-1
 width=36
@@ -17,7 +17,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3920]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_graphic
 x=29
 width=36
@@ -25,7 +25,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3921]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_graphic
 x=62
 width=36
@@ -33,7 +33,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3922]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_graphic
 x=92
 width=36
@@ -41,7 +41,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3923]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_graphic
 x=125
 width=36
@@ -49,15 +49,15 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3924]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_graphic
-x=-101
+x=155
 width=36
 height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3965]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_graphic
 x=4
 y=5
@@ -66,7 +66,7 @@ height=25
 graphic=staticons,0
 
 [if_3917:com_3966]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_graphic
 x=68
 y=5
@@ -75,16 +75,16 @@ height=25
 graphic=staticons,6
 
 [if_3917:com_3967]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_graphic
-x=-128
+x=128
 y=5
 width=25
 height=25
 graphic=staticons,12
 
 [if_3917:com_4004]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_text
 x=32
 y=5
@@ -98,7 +98,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4005]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_text
 x=44
 y=17
@@ -112,7 +112,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4016]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_text
 x=96
 y=5
@@ -126,7 +126,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4017]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_text
 x=108
 y=17
@@ -140,9 +140,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4028]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_text
-x=-96
+x=160
 y=5
 width=15
 height=12
@@ -154,9 +154,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4029]
-layer=if_3917:com_3918
+layer=com_3918
 type=^iftype_text
-x=-84
+x=172
 y=17
 width=15
 height=12
@@ -174,7 +174,7 @@ width=190
 height=36
 
 [if_3917:com_3926]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_graphic
 x=-1
 width=36
@@ -182,7 +182,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3927]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_graphic
 x=29
 width=36
@@ -190,7 +190,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3928]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_graphic
 x=62
 width=36
@@ -198,7 +198,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3929]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_graphic
 x=92
 width=36
@@ -206,7 +206,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3930]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_graphic
 x=125
 width=36
@@ -214,15 +214,15 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3931]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_graphic
-x=-101
+x=155
 width=36
 height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3968]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_graphic
 x=4
 y=5
@@ -231,7 +231,7 @@ height=25
 graphic=staticons,1
 
 [if_3917:com_3969]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_graphic
 x=68
 y=5
@@ -240,16 +240,16 @@ height=25
 graphic=staticons,7
 
 [if_3917:com_3970]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_graphic
-x=-128
+x=128
 y=5
 width=25
 height=25
 graphic=staticons,13
 
 [if_3917:com_4006]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_text
 x=32
 y=5
@@ -263,7 +263,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4007]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_text
 x=44
 y=17
@@ -277,7 +277,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4018]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_text
 x=96
 y=5
@@ -291,7 +291,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4019]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_text
 x=108
 y=17
@@ -305,9 +305,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4030]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_text
-x=-96
+x=160
 y=5
 width=15
 height=12
@@ -319,9 +319,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4031]
-layer=if_3917:com_3925
+layer=com_3925
 type=^iftype_text
-x=-84
+x=172
 y=17
 width=15
 height=12
@@ -339,7 +339,7 @@ width=190
 height=36
 
 [if_3917:com_3933]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_graphic
 x=-1
 width=36
@@ -347,7 +347,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3934]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_graphic
 x=29
 width=36
@@ -355,7 +355,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3935]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_graphic
 x=62
 width=36
@@ -363,7 +363,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3936]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_graphic
 x=92
 width=36
@@ -371,7 +371,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3937]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_graphic
 x=125
 width=36
@@ -379,15 +379,15 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3938]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_graphic
-x=-101
+x=155
 width=36
 height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3971]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_graphic
 x=4
 y=5
@@ -396,16 +396,16 @@ height=25
 graphic=staticons,2
 
 [if_3917:com_3973]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_graphic
-x=-128
+x=128
 y=5
 width=25
 height=25
 graphic=staticons,14
 
 [if_3917:com_4008]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_text
 x=32
 y=5
@@ -419,7 +419,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4009]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_text
 x=44
 y=17
@@ -433,7 +433,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4020]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_text
 x=96
 y=5
@@ -447,7 +447,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4021]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_text
 x=108
 y=17
@@ -461,9 +461,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4032]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_text
-x=-96
+x=160
 y=5
 width=15
 height=12
@@ -475,9 +475,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4033]
-layer=if_3917:com_3932
+layer=com_3932
 type=^iftype_text
-x=-84
+x=172
 y=17
 width=15
 height=12
@@ -496,7 +496,7 @@ width=190
 height=36
 
 [if_3917:com_3940]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_graphic
 x=-1
 width=36
@@ -504,7 +504,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3941]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_graphic
 x=29
 width=36
@@ -512,7 +512,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3942]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_graphic
 x=62
 width=36
@@ -520,7 +520,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3943]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_graphic
 x=92
 width=36
@@ -528,7 +528,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3944]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_graphic
 x=125
 width=36
@@ -536,15 +536,15 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3945]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_graphic
-x=-101
+x=155
 width=36
 height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3974]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_graphic
 x=5
 y=5
@@ -553,7 +553,7 @@ height=25
 graphic=staticons,3
 
 [if_3917:com_3975]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_graphic
 x=69
 y=5
@@ -562,16 +562,16 @@ height=25
 graphic=staticons,9
 
 [if_3917:com_3976]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_graphic
-x=-127
+x=129
 y=5
 width=25
 height=25
 graphic=staticons,15
 
 [if_3917:com_4010]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_text
 x=33
 y=5
@@ -585,7 +585,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4011]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_text
 x=45
 y=17
@@ -599,7 +599,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4022]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_text
 x=97
 y=5
@@ -613,7 +613,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4023]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_text
 x=109
 y=17
@@ -627,9 +627,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4034]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_text
-x=-95
+x=161
 y=5
 width=15
 height=12
@@ -641,9 +641,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4035]
-layer=if_3917:com_3939
+layer=com_3939
 type=^iftype_text
-x=-83
+x=173
 y=17
 width=15
 height=12
@@ -662,7 +662,7 @@ width=190
 height=36
 
 [if_3917:com_3947]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_graphic
 x=-1
 width=36
@@ -670,7 +670,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3948]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_graphic
 x=29
 width=36
@@ -678,7 +678,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3949]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_graphic
 x=62
 width=36
@@ -686,7 +686,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3950]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_graphic
 x=92
 width=36
@@ -694,15 +694,15 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3951]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_graphic
-x=-101
+x=155
 width=36
 height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3952]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_graphic
 x=125
 width=36
@@ -710,7 +710,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3977]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_graphic
 x=5
 y=5
@@ -719,7 +719,7 @@ height=25
 graphic=staticons,4
 
 [if_3917:com_3978]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_graphic
 x=69
 y=5
@@ -728,16 +728,16 @@ height=25
 graphic=staticons,10
 
 [if_3917:com_3979]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_graphic
-x=-127
+x=129
 y=5
 width=25
 height=25
 graphic=staticons,16
 
 [if_3917:com_4012]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_text
 x=33
 y=5
@@ -751,7 +751,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4013]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_text
 x=45
 y=17
@@ -765,7 +765,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4024]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_text
 x=96
 y=6
@@ -779,7 +779,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4025]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_text
 x=109
 y=17
@@ -793,9 +793,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4036]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_text
-x=-95
+x=161
 y=5
 width=15
 height=12
@@ -807,9 +807,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4037]
-layer=if_3917:com_3946
+layer=com_3946
 type=^iftype_text
-x=-83
+x=173
 y=17
 width=15
 height=12
@@ -823,12 +823,12 @@ colour=0xffff00
 [if_3917:com_3953]
 type=^iftype_layer
 x=-1
-y=-101
+y=155
 width=190
 height=36
 
 [if_3917:com_3954]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_graphic
 x=-1
 width=36
@@ -836,7 +836,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3955]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_graphic
 x=29
 width=36
@@ -844,7 +844,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3956]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_graphic
 x=62
 width=36
@@ -852,7 +852,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3957]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_graphic
 x=92
 width=36
@@ -860,7 +860,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3958]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_graphic
 x=125
 width=36
@@ -868,15 +868,15 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_3959]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_graphic
-x=-101
+x=155
 width=36
 height=36
 graphic=miscgraphics,5
 
 [if_3917:com_3980]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_graphic
 x=5
 y=5
@@ -885,7 +885,7 @@ height=25
 graphic=staticons,5
 
 [if_3917:com_3981]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_graphic
 x=69
 y=5
@@ -894,16 +894,16 @@ height=25
 graphic=staticons,11
 
 [if_3917:com_3982]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_graphic
-x=-127
+x=129
 y=5
 width=25
 height=25
 graphic=staticons,17
 
 [if_3917:com_4001]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_layer
 x=1
 y=1
@@ -912,7 +912,7 @@ height=32
 overlayer=com_4070
 
 [if_3917:com_4002]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_layer
 x=65
 y=1
@@ -921,16 +921,16 @@ height=32
 overlayer=com_4106
 
 [if_3917:com_4003]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_layer
-x=-127
+x=129
 y=1
 width=64
 height=32
 overlayer=com_4142
 
 [if_3917:com_4014]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_text
 x=33
 y=5
@@ -944,7 +944,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4015]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_text
 x=45
 y=17
@@ -958,7 +958,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4026]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_text
 x=97
 y=5
@@ -972,7 +972,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4027]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_text
 x=109
 y=17
@@ -986,9 +986,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4038]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_text
-x=-95
+x=161
 y=5
 width=15
 height=12
@@ -1000,9 +1000,9 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4039]
-layer=if_3917:com_3953
+layer=com_3953
 type=^iftype_text
-x=-83
+x=173
 y=17
 width=15
 height=12
@@ -1016,12 +1016,12 @@ colour=0xffff00
 [if_3917:com_3960]
 type=^iftype_layer
 x=1
-y=-44
+y=212
 width=186
 height=60
 
 [if_3917:com_3961]
-layer=if_3917:com_3960
+layer=com_3960
 type=^iftype_rectangle
 x=3
 y=9
@@ -1030,7 +1030,7 @@ height=36
 colour=0x726451
 
 [if_3917:com_3962]
-layer=if_3917:com_3960
+layer=com_3960
 type=^iftype_rectangle
 x=4
 y=10
@@ -1039,7 +1039,7 @@ height=34
 colour=0x726451
 
 [if_3917:com_3963]
-layer=if_3917:com_3960
+layer=com_3960
 type=^iftype_rectangle
 x=4
 y=10
@@ -1048,7 +1048,7 @@ height=35
 colour=0x2e2b23
 
 [if_3917:com_3964]
-layer=if_3917:com_3960
+layer=com_3960
 type=^iftype_rectangle
 x=5
 y=11
@@ -1057,7 +1057,7 @@ height=32
 fill=yes
 
 [if_3917:com_3983]
-layer=if_3917:com_3960
+layer=com_3960
 type=^iftype_text
 x=90
 y=12
@@ -1070,7 +1070,7 @@ text=Combat Lvl: %1
 colour=0xffff00
 
 [if_3917:com_3984]
-layer=if_3917:com_3960
+layer=com_3960
 type=^iftype_text
 x=91
 y=27
@@ -1083,13 +1083,13 @@ text=Total Lvl: %1
 colour=0xffff00
 
 [if_3917:com_3985]
-layer=if_3917:com_3960
+layer=com_3960
 type=^iftype_text
 x=18
 y=20
 width=38
 height=14
-script1op1=^load_var,^varp_101
+script1op1=^load_var,varp_101
 font=^p12
 shadow=yes
 text=QP: %1
@@ -1120,7 +1120,7 @@ overlayer=com_4076
 
 [if_3917:com_3988]
 type=^iftype_layer
-x=-128
+x=128
 y=1
 width=64
 height=32
@@ -1143,7 +1143,7 @@ overlayer=com_4082
 
 [if_3917:com_3991]
 type=^iftype_layer
-x=-128
+x=128
 y=32
 width=64
 height=32
@@ -1180,7 +1180,7 @@ overlayer=com_4064
 
 [if_3917:com_3996]
 type=^iftype_layer
-x=-128
+x=128
 y=63
 width=64
 height=32
@@ -1196,7 +1196,7 @@ overlayer=com_4094
 
 [if_3917:com_3998]
 type=^iftype_layer
-x=-128
+x=128
 y=94
 width=64
 height=32
@@ -1212,7 +1212,7 @@ overlayer=com_4100
 
 [if_3917:com_4000]
 type=^iftype_layer
-x=-128
+x=128
 y=125
 width=64
 height=32
@@ -1221,13 +1221,13 @@ overlayer=com_4136
 [if_3917:com_4040]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4041]
-layer=if_3917:com_4040
+layer=com_4040
 type=^iftype_rectangle
 x=4
 y=7
@@ -1236,7 +1236,7 @@ height=32
 fill=yes
 
 [if_3917:com_4042]
-layer=if_3917:com_4040
+layer=com_4040
 type=^iftype_text
 x=6
 y=7
@@ -1248,7 +1248,7 @@ text=Attack XP:
 colour=0xffff00
 
 [if_3917:com_4043]
-layer=if_3917:com_4040
+layer=com_4040
 type=^iftype_text
 x=6
 y=23
@@ -1260,7 +1260,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4044]
-layer=if_3917:com_4040
+layer=com_4040
 type=^iftype_text
 x=66
 y=7
@@ -1273,7 +1273,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4045]
-layer=if_3917:com_4040
+layer=com_4040
 type=^iftype_text
 x=86
 y=23
@@ -1288,13 +1288,13 @@ colour=0xffff00
 [if_3917:com_4046]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4047]
-layer=if_3917:com_4046
+layer=com_4046
 type=^iftype_rectangle
 x=4
 y=7
@@ -1303,7 +1303,7 @@ height=32
 fill=yes
 
 [if_3917:com_4048]
-layer=if_3917:com_4046
+layer=com_4046
 type=^iftype_text
 x=6
 y=7
@@ -1315,7 +1315,7 @@ text=Strength XP:
 colour=0xffff00
 
 [if_3917:com_4049]
-layer=if_3917:com_4046
+layer=com_4046
 type=^iftype_text
 x=6
 y=23
@@ -1327,7 +1327,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4050]
-layer=if_3917:com_4046
+layer=com_4046
 type=^iftype_text
 x=77
 y=7
@@ -1340,7 +1340,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4051]
-layer=if_3917:com_4046
+layer=com_4046
 type=^iftype_text
 x=84
 y=23
@@ -1355,13 +1355,13 @@ colour=0xffff00
 [if_3917:com_4052]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4053]
-layer=if_3917:com_4052
+layer=com_4052
 type=^iftype_rectangle
 x=4
 y=7
@@ -1370,7 +1370,7 @@ height=32
 fill=yes
 
 [if_3917:com_4054]
-layer=if_3917:com_4052
+layer=com_4052
 type=^iftype_text
 x=6
 y=7
@@ -1382,7 +1382,7 @@ text=Defence XP:
 colour=0xffff00
 
 [if_3917:com_4055]
-layer=if_3917:com_4052
+layer=com_4052
 type=^iftype_text
 x=6
 y=23
@@ -1394,7 +1394,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4056]
-layer=if_3917:com_4052
+layer=com_4052
 type=^iftype_text
 x=76
 y=7
@@ -1407,7 +1407,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4057]
-layer=if_3917:com_4052
+layer=com_4052
 type=^iftype_text
 x=84
 y=23
@@ -1422,13 +1422,13 @@ colour=0xffff00
 [if_3917:com_4058]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4059]
-layer=if_3917:com_4058
+layer=com_4058
 type=^iftype_rectangle
 x=4
 y=7
@@ -1437,7 +1437,7 @@ height=32
 fill=yes
 
 [if_3917:com_4060]
-layer=if_3917:com_4058
+layer=com_4058
 type=^iftype_text
 x=6
 y=7
@@ -1449,7 +1449,7 @@ text=Ranged XP:
 colour=0xffff00
 
 [if_3917:com_4061]
-layer=if_3917:com_4058
+layer=com_4058
 type=^iftype_text
 x=6
 y=23
@@ -1461,7 +1461,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4062]
-layer=if_3917:com_4058
+layer=com_4058
 type=^iftype_text
 x=73
 y=7
@@ -1474,7 +1474,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4063]
-layer=if_3917:com_4058
+layer=com_4058
 type=^iftype_text
 x=84
 y=23
@@ -1489,13 +1489,13 @@ colour=0xffff00
 [if_3917:com_4064]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4065]
-layer=if_3917:com_4064
+layer=com_4064
 type=^iftype_rectangle
 x=4
 y=7
@@ -1504,7 +1504,7 @@ height=32
 fill=yes
 
 [if_3917:com_4066]
-layer=if_3917:com_4064
+layer=com_4064
 type=^iftype_text
 x=6
 y=7
@@ -1516,7 +1516,7 @@ text=Prayer XP:
 colour=0xffff00
 
 [if_3917:com_4067]
-layer=if_3917:com_4064
+layer=com_4064
 type=^iftype_text
 x=6
 y=23
@@ -1528,7 +1528,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4068]
-layer=if_3917:com_4064
+layer=com_4064
 type=^iftype_text
 x=64
 y=7
@@ -1541,7 +1541,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4069]
-layer=if_3917:com_4064
+layer=com_4064
 type=^iftype_text
 x=84
 y=23
@@ -1556,13 +1556,13 @@ colour=0xffff00
 [if_3917:com_4070]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4071]
-layer=if_3917:com_4070
+layer=com_4070
 type=^iftype_rectangle
 x=4
 y=7
@@ -1571,7 +1571,7 @@ height=32
 fill=yes
 
 [if_3917:com_4072]
-layer=if_3917:com_4070
+layer=com_4070
 type=^iftype_text
 x=6
 y=7
@@ -1583,7 +1583,7 @@ text=Magic XP:
 colour=0xffff00
 
 [if_3917:com_4073]
-layer=if_3917:com_4070
+layer=com_4070
 type=^iftype_text
 x=6
 y=23
@@ -1595,7 +1595,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4074]
-layer=if_3917:com_4070
+layer=com_4070
 type=^iftype_text
 x=60
 y=7
@@ -1608,7 +1608,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4075]
-layer=if_3917:com_4070
+layer=com_4070
 type=^iftype_text
 x=84
 y=23
@@ -1623,13 +1623,13 @@ colour=0xffff00
 [if_3917:com_4076]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4077]
-layer=if_3917:com_4076
+layer=com_4076
 type=^iftype_rectangle
 x=4
 y=7
@@ -1638,7 +1638,7 @@ height=32
 fill=yes
 
 [if_3917:com_4078]
-layer=if_3917:com_4076
+layer=com_4076
 type=^iftype_text
 x=6
 y=7
@@ -1650,7 +1650,7 @@ text=Hitpoints XP:
 colour=0xffff00
 
 [if_3917:com_4079]
-layer=if_3917:com_4076
+layer=com_4076
 type=^iftype_text
 x=6
 y=23
@@ -1662,7 +1662,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4080]
-layer=if_3917:com_4076
+layer=com_4076
 type=^iftype_text
 x=80
 y=7
@@ -1675,7 +1675,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4081]
-layer=if_3917:com_4076
+layer=com_4076
 type=^iftype_text
 x=84
 y=23
@@ -1690,13 +1690,13 @@ colour=0xffff00
 [if_3917:com_4082]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4083]
-layer=if_3917:com_4082
+layer=com_4082
 type=^iftype_rectangle
 x=4
 y=7
@@ -1705,7 +1705,7 @@ height=32
 fill=yes
 
 [if_3917:com_4084]
-layer=if_3917:com_4082
+layer=com_4082
 type=^iftype_text
 x=6
 y=7
@@ -1717,7 +1717,7 @@ text=Agility XP:
 colour=0xffff00
 
 [if_3917:com_4085]
-layer=if_3917:com_4082
+layer=com_4082
 type=^iftype_text
 x=6
 y=23
@@ -1729,7 +1729,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4086]
-layer=if_3917:com_4082
+layer=com_4082
 type=^iftype_text
 x=64
 y=7
@@ -1742,7 +1742,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4087]
-layer=if_3917:com_4082
+layer=com_4082
 type=^iftype_text
 x=84
 y=23
@@ -1757,13 +1757,13 @@ colour=0xffff00
 [if_3917:com_4088]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4089]
-layer=if_3917:com_4088
+layer=com_4088
 type=^iftype_rectangle
 x=4
 y=7
@@ -1772,7 +1772,7 @@ height=32
 fill=yes
 
 [if_3917:com_4090]
-layer=if_3917:com_4088
+layer=com_4088
 type=^iftype_text
 x=6
 y=7
@@ -1784,7 +1784,7 @@ text=Herblore XP:
 colour=0xffff00
 
 [if_3917:com_4091]
-layer=if_3917:com_4088
+layer=com_4088
 type=^iftype_text
 x=6
 y=23
@@ -1796,7 +1796,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4092]
-layer=if_3917:com_4088
+layer=com_4088
 type=^iftype_text
 x=76
 y=7
@@ -1809,7 +1809,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4093]
-layer=if_3917:com_4088
+layer=com_4088
 type=^iftype_text
 x=84
 y=23
@@ -1824,13 +1824,13 @@ colour=0xffff00
 [if_3917:com_4094]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4095]
-layer=if_3917:com_4094
+layer=com_4094
 type=^iftype_rectangle
 x=4
 y=7
@@ -1839,7 +1839,7 @@ height=32
 fill=yes
 
 [if_3917:com_4096]
-layer=if_3917:com_4094
+layer=com_4094
 type=^iftype_text
 x=6
 y=7
@@ -1851,7 +1851,7 @@ text=Thieving XP:
 colour=0xffff00
 
 [if_3917:com_4097]
-layer=if_3917:com_4094
+layer=com_4094
 type=^iftype_text
 x=6
 y=23
@@ -1863,7 +1863,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4098]
-layer=if_3917:com_4094
+layer=com_4094
 type=^iftype_text
 x=76
 y=7
@@ -1876,7 +1876,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4099]
-layer=if_3917:com_4094
+layer=com_4094
 type=^iftype_text
 x=84
 y=23
@@ -1891,13 +1891,13 @@ colour=0xffff00
 [if_3917:com_4100]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4101]
-layer=if_3917:com_4100
+layer=com_4100
 type=^iftype_rectangle
 x=4
 y=7
@@ -1906,7 +1906,7 @@ height=32
 fill=yes
 
 [if_3917:com_4102]
-layer=if_3917:com_4100
+layer=com_4100
 type=^iftype_text
 x=6
 y=7
@@ -1918,7 +1918,7 @@ text=Crafting XP:
 colour=0xffff00
 
 [if_3917:com_4103]
-layer=if_3917:com_4100
+layer=com_4100
 type=^iftype_text
 x=6
 y=23
@@ -1930,7 +1930,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4104]
-layer=if_3917:com_4100
+layer=com_4100
 type=^iftype_text
 x=72
 y=7
@@ -1943,7 +1943,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4105]
-layer=if_3917:com_4100
+layer=com_4100
 type=^iftype_text
 x=84
 y=23
@@ -1958,13 +1958,13 @@ colour=0xffff00
 [if_3917:com_4106]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4107]
-layer=if_3917:com_4106
+layer=com_4106
 type=^iftype_rectangle
 x=4
 y=7
@@ -1973,7 +1973,7 @@ height=32
 fill=yes
 
 [if_3917:com_4108]
-layer=if_3917:com_4106
+layer=com_4106
 type=^iftype_text
 x=6
 y=7
@@ -1985,7 +1985,7 @@ text=Fletching XP:
 colour=0xffff00
 
 [if_3917:com_4109]
-layer=if_3917:com_4106
+layer=com_4106
 type=^iftype_text
 x=6
 y=23
@@ -1997,7 +1997,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4110]
-layer=if_3917:com_4106
+layer=com_4106
 type=^iftype_text
 x=80
 y=7
@@ -2010,7 +2010,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4111]
-layer=if_3917:com_4106
+layer=com_4106
 type=^iftype_text
 x=84
 y=23
@@ -2025,13 +2025,13 @@ colour=0xffff00
 [if_3917:com_4112]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4113]
-layer=if_3917:com_4112
+layer=com_4112
 type=^iftype_rectangle
 x=4
 y=7
@@ -2040,7 +2040,7 @@ height=32
 fill=yes
 
 [if_3917:com_4114]
-layer=if_3917:com_4112
+layer=com_4112
 type=^iftype_text
 x=6
 y=7
@@ -2052,7 +2052,7 @@ text=Mining XP:
 colour=0xffff00
 
 [if_3917:com_4115]
-layer=if_3917:com_4112
+layer=com_4112
 type=^iftype_text
 x=6
 y=23
@@ -2064,7 +2064,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4116]
-layer=if_3917:com_4112
+layer=com_4112
 type=^iftype_text
 x=64
 y=7
@@ -2077,7 +2077,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4117]
-layer=if_3917:com_4112
+layer=com_4112
 type=^iftype_text
 x=84
 y=23
@@ -2092,13 +2092,13 @@ colour=0xffff00
 [if_3917:com_4118]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4119]
-layer=if_3917:com_4118
+layer=com_4118
 type=^iftype_rectangle
 x=4
 y=7
@@ -2107,7 +2107,7 @@ height=32
 fill=yes
 
 [if_3917:com_4120]
-layer=if_3917:com_4118
+layer=com_4118
 type=^iftype_text
 x=6
 y=7
@@ -2119,7 +2119,7 @@ text=Smithing XP:
 colour=0xffff00
 
 [if_3917:com_4121]
-layer=if_3917:com_4118
+layer=com_4118
 type=^iftype_text
 x=6
 y=23
@@ -2131,7 +2131,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4122]
-layer=if_3917:com_4118
+layer=com_4118
 type=^iftype_text
 x=80
 y=7
@@ -2144,7 +2144,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4123]
-layer=if_3917:com_4118
+layer=com_4118
 type=^iftype_text
 x=84
 y=23
@@ -2159,13 +2159,13 @@ colour=0xffff00
 [if_3917:com_4124]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4125]
-layer=if_3917:com_4124
+layer=com_4124
 type=^iftype_rectangle
 x=4
 y=7
@@ -2174,7 +2174,7 @@ height=32
 fill=yes
 
 [if_3917:com_4126]
-layer=if_3917:com_4124
+layer=com_4124
 type=^iftype_text
 x=6
 y=7
@@ -2186,7 +2186,7 @@ text=Fishing XP:
 colour=0xffff00
 
 [if_3917:com_4127]
-layer=if_3917:com_4124
+layer=com_4124
 type=^iftype_text
 x=6
 y=23
@@ -2198,7 +2198,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4128]
-layer=if_3917:com_4124
+layer=com_4124
 type=^iftype_text
 x=68
 y=7
@@ -2211,7 +2211,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4129]
-layer=if_3917:com_4124
+layer=com_4124
 type=^iftype_text
 x=84
 y=23
@@ -2226,13 +2226,13 @@ colour=0xffff00
 [if_3917:com_4130]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4131]
-layer=if_3917:com_4130
+layer=com_4130
 type=^iftype_rectangle
 x=4
 y=7
@@ -2241,7 +2241,7 @@ height=32
 fill=yes
 
 [if_3917:com_4132]
-layer=if_3917:com_4130
+layer=com_4130
 type=^iftype_text
 x=6
 y=7
@@ -2253,7 +2253,7 @@ text=Cooking XP:
 colour=0xffff00
 
 [if_3917:com_4133]
-layer=if_3917:com_4130
+layer=com_4130
 type=^iftype_text
 x=6
 y=23
@@ -2265,7 +2265,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4134]
-layer=if_3917:com_4130
+layer=com_4130
 type=^iftype_text
 x=76
 y=7
@@ -2278,7 +2278,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4135]
-layer=if_3917:com_4130
+layer=com_4130
 type=^iftype_text
 x=84
 y=23
@@ -2293,13 +2293,13 @@ colour=0xffff00
 [if_3917:com_4136]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4137]
-layer=if_3917:com_4136
+layer=com_4136
 type=^iftype_rectangle
 x=4
 y=7
@@ -2308,7 +2308,7 @@ height=32
 fill=yes
 
 [if_3917:com_4138]
-layer=if_3917:com_4136
+layer=com_4136
 type=^iftype_text
 x=6
 y=7
@@ -2320,7 +2320,7 @@ text=Firemaking XP:
 colour=0xffff00
 
 [if_3917:com_4139]
-layer=if_3917:com_4136
+layer=com_4136
 type=^iftype_text
 x=6
 y=23
@@ -2332,7 +2332,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4140]
-layer=if_3917:com_4136
+layer=com_4136
 type=^iftype_text
 x=92
 y=7
@@ -2345,7 +2345,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4141]
-layer=if_3917:com_4136
+layer=com_4136
 type=^iftype_text
 x=84
 y=23
@@ -2360,13 +2360,13 @@ colour=0xffff00
 [if_3917:com_4142]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4143]
-layer=if_3917:com_4142
+layer=com_4142
 type=^iftype_rectangle
 x=4
 y=7
@@ -2375,7 +2375,7 @@ height=32
 fill=yes
 
 [if_3917:com_4144]
-layer=if_3917:com_4142
+layer=com_4142
 type=^iftype_text
 x=6
 y=7
@@ -2387,7 +2387,7 @@ text=Woodcutting XP:
 colour=0xffff00
 
 [if_3917:com_4145]
-layer=if_3917:com_4142
+layer=com_4142
 type=^iftype_text
 x=6
 y=23
@@ -2399,7 +2399,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4146]
-layer=if_3917:com_4142
+layer=com_4142
 type=^iftype_text
 x=100
 y=7
@@ -2412,7 +2412,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4147]
-layer=if_3917:com_4142
+layer=com_4142
 type=^iftype_text
 x=84
 y=23
@@ -2426,12 +2426,12 @@ colour=0xffff00
 
 [if_3917:com_4148]
 type=^iftype_layer
-y=-70
+y=186
 width=193
 height=36
 
 [if_3917:com_4149]
-layer=if_3917:com_4148
+layer=com_4148
 type=^iftype_graphic
 x=-1
 width=36
@@ -2439,7 +2439,7 @@ height=36
 graphic=miscgraphics,4
 
 [if_3917:com_4150]
-layer=if_3917:com_4148
+layer=com_4148
 type=^iftype_graphic
 x=29
 width=36
@@ -2447,7 +2447,7 @@ height=36
 graphic=miscgraphics,5
 
 [if_3917:com_4151]
-layer=if_3917:com_4148
+layer=com_4148
 type=^iftype_graphic
 x=5
 y=5
@@ -2456,7 +2456,7 @@ height=25
 graphic=staticons2,0
 
 [if_3917:com_4152]
-layer=if_3917:com_4148
+layer=com_4148
 type=^iftype_layer
 x=1
 y=1
@@ -2465,7 +2465,7 @@ height=32
 overlayer=com_4160
 
 [if_3917:com_4153]
-layer=if_3917:com_4148
+layer=com_4148
 type=^iftype_text
 x=33
 y=5
@@ -2479,7 +2479,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4154]
-layer=if_3917:com_4148
+layer=com_4148
 type=^iftype_text
 x=45
 y=17
@@ -2495,13 +2495,13 @@ colour=0xffff00
 [if_3917:com_4160]
 type=^iftype_layer
 x=2
-y=-40
+y=216
 width=183
 height=43
 hide=yes
 
 [if_3917:com_4155]
-layer=if_3917:com_4160
+layer=com_4160
 type=^iftype_rectangle
 x=4
 y=7
@@ -2510,7 +2510,7 @@ height=32
 fill=yes
 
 [if_3917:com_4156]
-layer=if_3917:com_4160
+layer=com_4160
 type=^iftype_text
 x=6
 y=7
@@ -2522,7 +2522,7 @@ text=Runecraft XP:
 colour=0xffff00
 
 [if_3917:com_4157]
-layer=if_3917:com_4160
+layer=com_4160
 type=^iftype_text
 x=6
 y=23
@@ -2534,7 +2534,7 @@ text=Next Level At:
 colour=0xffff00
 
 [if_3917:com_4158]
-layer=if_3917:com_4160
+layer=com_4160
 type=^iftype_text
 x=85
 y=7
@@ -2547,7 +2547,7 @@ text=%1
 colour=0xffff00
 
 [if_3917:com_4159]
-layer=if_3917:com_4160
+layer=com_4160
 type=^iftype_text
 x=88
 y=23

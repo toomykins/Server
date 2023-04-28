@@ -5,7 +5,7 @@ height=334
 
 [if_6946:com_6947]
 type=^iftype_model
-x=17
+x=273
 y=70
 width=32
 height=32
@@ -15,8 +15,8 @@ xan=500
 
 [if_6946:com_6948]
 type=^iftype_model
-x=-93
-y=-115
+x=419
+y=141
 width=32
 height=32
 model=model_3407
@@ -25,8 +25,8 @@ xan=500
 
 [if_6946:com_6949]
 type=^iftype_model
-x=-93
-y=-115
+x=419
+y=141
 width=32
 height=32
 model=model_3403
@@ -35,8 +35,8 @@ xan=500
 
 [if_6946:com_6950]
 type=^iftype_model
-x=-93
-y=-115
+x=419
+y=141
 width=32
 height=32
 model=model_3402
@@ -46,7 +46,7 @@ xan=500
 [if_6946:com_6951]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-82
+x=430
 y=8
 width=74
 height=14
@@ -59,8 +59,8 @@ overcolour=0xffffff
 [if_6946:com_6952]
 type=^iftype_model
 buttontype=^if_button
-x=57
-y=19
+x=313
+y=275
 width=30
 height=51
 model=model_3405
@@ -71,7 +71,7 @@ yan=2029
 [if_6946:com_6953]
 type=^iftype_model
 buttontype=^if_button
-x=59
+x=315
 y=13
 width=27
 height=43
@@ -83,8 +83,8 @@ yan=14
 [if_6946:com_6954]
 type=^iftype_model
 buttontype=^if_button
-x=2
-y=2
+x=258
+y=258
 width=44
 height=52
 model=model_3409
@@ -96,7 +96,7 @@ yan=285
 type=^iftype_model
 buttontype=^if_button
 x=21
-y=8
+y=264
 width=47
 height=49
 model=model_3406
@@ -106,8 +106,8 @@ yan=695
 
 [if_6946:com_6956]
 type=^iftype_model
-x=-104
-y=-76
+x=152
+y=180
 width=32
 height=32
 model=model_3411
@@ -116,8 +116,8 @@ xan=500
 
 [if_6946:com_6957]
 type=^iftype_model
-x=-104
-y=-76
+x=152
+y=180
 width=32
 height=32
 model=model_3410
@@ -126,8 +126,8 @@ xan=500
 
 [if_6946:com_6958]
 type=^iftype_model
-x=-104
-y=-76
+x=152
+y=180
 width=32
 height=32
 model=model_3412
@@ -137,8 +137,8 @@ xan=500
 [if_6946:com_6959]
 type=^iftype_text
 buttontype=^if_button
-x=-125
-y=57
+x=131
+y=313
 width=71
 height=14
 font=^p12

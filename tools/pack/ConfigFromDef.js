@@ -79,8 +79,21 @@ config.pack().toFile('data/cache/config');
 
 // ----
 
+// IfType.unpack(Jagfile.fromFile('data/cache/interfaceold').read('data'));
+// IfType.dumpToDirectory('data/src/ifs');
+
+// IfType.config = {};
+// IfType.ids = [];
+
 IfType.loadDirectory('data/src/ifs');
+// let data = IfType.pack();
+
+// IfType.config = {};
+// IfType.ids = [];
+
+// IfType.unpack(data);
+// IfType.dumpToDirectory('dump/ifs');
 
 let interfaces = new Jagfile();
-
 interfaces.write('data', IfType.pack());
+interfaces.pack().toFile('data/cache/interface');

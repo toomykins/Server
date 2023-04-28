@@ -22,7 +22,7 @@ graphic=tradebacking,0
 [if_6412:com_6415]
 type=^iftype_graphic
 x=12
-y=-116
+y=140
 width=88
 height=60
 graphic=tradebacking,0
@@ -30,7 +30,7 @@ graphic=tradebacking,0
 [if_6412:com_6416]
 type=^iftype_graphic
 x=12
-y=-56
+y=200
 width=88
 height=60
 graphic=tradebacking,0
@@ -38,7 +38,7 @@ graphic=tradebacking,0
 [if_6412:com_6417]
 type=^iftype_graphic
 x=12
-y=4
+y=260
 width=88
 height=60
 graphic=tradebacking,0
@@ -62,7 +62,7 @@ graphic=tradebacking,0
 [if_6412:com_6420]
 type=^iftype_graphic
 x=100
-y=-116
+y=140
 width=88
 height=60
 graphic=tradebacking,0
@@ -70,14 +70,14 @@ graphic=tradebacking,0
 [if_6412:com_6421]
 type=^iftype_graphic
 x=100
-y=-56
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6422]
 type=^iftype_graphic
-x=-68
+x=188
 y=20
 width=88
 height=60
@@ -86,14 +86,14 @@ graphic=tradebacking,0
 [if_6412:com_6423]
 type=^iftype_graphic
 x=100
-y=4
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6424]
 type=^iftype_graphic
-x=-68
+x=188
 y=80
 width=88
 height=60
@@ -101,31 +101,31 @@ graphic=tradebacking,0
 
 [if_6412:com_6425]
 type=^iftype_graphic
-x=-68
-y=-116
+x=188
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6426]
 type=^iftype_graphic
-x=-68
-y=-56
+x=188
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6427]
 type=^iftype_graphic
-x=-68
-y=4
+x=188
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6428]
 type=^iftype_graphic
-x=20
+x=276
 y=20
 width=88
 height=60
@@ -133,7 +133,7 @@ graphic=tradebacking,0
 
 [if_6412:com_6429]
 type=^iftype_graphic
-x=108
+x=364
 y=80
 width=88
 height=60
@@ -141,7 +141,7 @@ graphic=tradebacking,0
 
 [if_6412:com_6430]
 type=^iftype_graphic
-x=20
+x=276
 y=80
 width=88
 height=60
@@ -149,39 +149,39 @@ graphic=tradebacking,0
 
 [if_6412:com_6431]
 type=^iftype_graphic
-x=20
-y=-116
+x=276
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6432]
 type=^iftype_graphic
-x=20
-y=-56
+x=276
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6433]
 type=^iftype_graphic
-x=20
-y=4
+x=276
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6434]
 type=^iftype_graphic
-x=108
-y=-116
+x=364
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6435]
 type=^iftype_graphic
-x=108
+x=364
 y=20
 width=88
 height=60
@@ -189,23 +189,23 @@ graphic=tradebacking,0
 
 [if_6412:com_6436]
 type=^iftype_graphic
-x=108
-y=-56
+x=364
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6437]
 type=^iftype_graphic
-x=108
-y=4
+x=364
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6438]
 type=^iftype_graphic
-x=-100
+x=412
 y=20
 width=88
 height=60
@@ -213,7 +213,7 @@ graphic=tradebacking,0
 
 [if_6412:com_6439]
 type=^iftype_graphic
-x=-100
+x=412
 y=80
 width=88
 height=60
@@ -221,24 +221,24 @@ graphic=tradebacking,0
 
 [if_6412:com_6440]
 type=^iftype_graphic
-x=-100
-y=-116
+x=412
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6441]
 type=^iftype_graphic
-x=-100
-y=-56
+x=412
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_6412:com_6442]
 type=^iftype_graphic
-x=-100
-y=4
+x=412
+y=260
 width=88
 height=60
 graphic=tradebacking,0
@@ -278,7 +278,7 @@ graphic=miscgraphics,2
 [if_6412:com_6447]
 type=^iftype_graphic
 x=-3
-y=-99
+y=157
 width=36
 height=36
 graphic=miscgraphics,2
@@ -286,7 +286,7 @@ graphic=miscgraphics,2
 [if_6412:com_6448]
 type=^iftype_graphic
 x=-3
-y=-63
+y=193
 width=36
 height=36
 graphic=miscgraphics,2
@@ -294,7 +294,7 @@ graphic=miscgraphics,2
 [if_6412:com_6449]
 type=^iftype_graphic
 x=-3
-y=-27
+y=229
 width=36
 height=36
 graphic=miscgraphics,2
@@ -302,14 +302,14 @@ graphic=miscgraphics,2
 [if_6412:com_6450]
 type=^iftype_graphic
 x=-3
-y=9
+y=265
 width=36
 height=36
 graphic=miscgraphics,2
 
 [if_6412:com_6451]
 type=^iftype_graphic
-x=-33
+x=479
 y=50
 width=36
 height=36
@@ -317,7 +317,7 @@ graphic=steelborder2,1
 
 [if_6412:com_6452]
 type=^iftype_graphic
-x=-33
+x=479
 y=86
 width=36
 height=36
@@ -325,7 +325,7 @@ graphic=steelborder2,1
 
 [if_6412:com_6453]
 type=^iftype_graphic
-x=-33
+x=479
 y=122
 width=36
 height=36
@@ -333,32 +333,32 @@ graphic=steelborder2,1
 
 [if_6412:com_6454]
 type=^iftype_graphic
-x=-33
-y=-98
+x=479
+y=158
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_6412:com_6455]
 type=^iftype_graphic
-x=-33
-y=-62
+x=479
+y=194
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_6412:com_6456]
 type=^iftype_graphic
-x=-33
-y=-26
+x=479
+y=230
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_6412:com_6457]
 type=^iftype_graphic
-x=-33
-y=10
+x=479
+y=266
 width=36
 height=36
 graphic=steelborder2,1
@@ -366,7 +366,7 @@ graphic=steelborder2,1
 [if_6412:com_6458]
 type=^iftype_graphic
 x=73
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -374,63 +374,63 @@ graphic=miscgraphics,3
 [if_6412:com_6459]
 type=^iftype_graphic
 x=109
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_6412:com_6460]
 type=^iftype_graphic
-x=-111
-y=43
+x=145
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_6412:com_6461]
 type=^iftype_graphic
-x=-39
-y=43
+x=217
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_6412:com_6462]
 type=^iftype_graphic
-x=-3
-y=43
+x=253
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_6412:com_6463]
 type=^iftype_graphic
-x=33
-y=43
+x=289
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_6412:com_6464]
 type=^iftype_graphic
-x=105
-y=43
+x=361
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_6412:com_6465]
 type=^iftype_graphic
-x=-115
-y=43
+x=397
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_6412:com_6466]
 type=^iftype_graphic
-x=-79
-y=43
+x=433
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -453,7 +453,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6469]
 type=^iftype_graphic
-x=-112
+x=144
 y=5
 width=36
 height=36
@@ -461,7 +461,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6470]
 type=^iftype_graphic
-x=-76
+x=180
 y=5
 width=36
 height=36
@@ -469,7 +469,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6471]
 type=^iftype_graphic
-x=-40
+x=216
 y=5
 width=36
 height=36
@@ -477,7 +477,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6472]
 type=^iftype_graphic
-x=-4
+x=252
 y=5
 width=36
 height=36
@@ -485,7 +485,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6473]
 type=^iftype_graphic
-x=32
+x=288
 y=5
 width=36
 height=36
@@ -493,7 +493,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6474]
 type=^iftype_graphic
-x=68
+x=324
 y=5
 width=36
 height=36
@@ -501,7 +501,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6475]
 type=^iftype_graphic
-x=104
+x=360
 y=5
 width=36
 height=36
@@ -509,7 +509,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6476]
 type=^iftype_graphic
-x=-116
+x=396
 y=5
 width=36
 height=36
@@ -517,7 +517,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6477]
 type=^iftype_graphic
-x=-80
+x=432
 y=5
 width=36
 height=36
@@ -534,7 +534,7 @@ graphic=steelborder2,0
 [if_6412:com_6479]
 type=^iftype_graphic
 x=37
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -542,14 +542,14 @@ graphic=miscgraphics,3
 [if_6412:com_6480]
 type=^iftype_graphic
 x=12
-y=34
+y=290
 width=25
 height=30
 graphic=steelborder,2
 
 [if_6412:com_6481]
 type=^iftype_graphic
-x=-37
+x=475
 y=20
 width=25
 height=30
@@ -557,7 +557,7 @@ graphic=steelborder,1
 
 [if_6412:com_6482]
 type=^iftype_graphic
-x=-73
+x=439
 y=5
 width=36
 height=36
@@ -565,23 +565,23 @@ graphic=steelborder2,0
 
 [if_6412:com_6483]
 type=^iftype_graphic
-x=-37
-y=34
+x=475
+y=290
 width=25
 height=30
 graphic=steelborder,3
 
 [if_6412:com_6484]
 type=^iftype_graphic
-x=-73
-y=43
+x=439
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_6412:com_6485]
 type=^iftype_graphic
-x=32
+x=288
 y=34
 width=36
 height=36
@@ -589,7 +589,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6486]
 type=^iftype_graphic
-x=68
+x=324
 y=34
 width=36
 height=36
@@ -597,7 +597,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6487]
 type=^iftype_graphic
-x=-116
+x=396
 y=34
 width=36
 height=36
@@ -605,7 +605,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6488]
 type=^iftype_graphic
-x=-4
+x=252
 y=34
 width=36
 height=36
@@ -613,7 +613,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6489]
 type=^iftype_graphic
-x=-80
+x=432
 y=34
 width=36
 height=36
@@ -621,7 +621,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6490]
 type=^iftype_graphic
-x=-54
+x=458
 y=34
 width=36
 height=36
@@ -629,7 +629,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6491]
 type=^iftype_graphic
-x=-40
+x=216
 y=34
 width=36
 height=36
@@ -637,7 +637,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6492]
 type=^iftype_graphic
-x=-76
+x=180
 y=34
 width=36
 height=36
@@ -645,7 +645,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6493]
 type=^iftype_graphic
-x=-112
+x=144
 y=34
 width=36
 height=36
@@ -669,8 +669,8 @@ graphic=steelborder2,0
 
 [if_6412:com_6496]
 type=^iftype_graphic
-x=-75
-y=43
+x=181
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -685,7 +685,7 @@ graphic=steelborder2,0
 
 [if_6412:com_6498]
 type=^iftype_graphic
-x=104
+x=360
 y=34
 width=36
 height=36
@@ -708,7 +708,7 @@ height=142
 scrollheight=188
 
 [if_6412:com_6503]
-layer=if_6412:com_6500
+layer=com_6500
 type=^iftype_text
 x=42
 y=2
@@ -720,7 +720,7 @@ text=You are about to stake:
 colour=0xaa8822
 
 [if_6412:com_6507]
-layer=if_6412:com_6500
+layer=com_6500
 type=^iftype_inventory_text
 x=50
 y=29
@@ -733,7 +733,7 @@ colour=0xaaaaaa
 invyof=2
 
 [if_6412:com_6509]
-layer=if_6412:com_6500
+layer=com_6500
 type=^iftype_inventory_text
 x=109
 y=29
@@ -746,7 +746,7 @@ colour=0xaaaaaa
 invyof=2
 
 [if_6412:com_6516]
-layer=if_6412:com_6500
+layer=com_6500
 type=^iftype_text
 x=55
 y=17
@@ -760,14 +760,14 @@ colour=0xaaaaaa
 
 [if_6412:com_6501]
 type=^iftype_layer
-x=4
+x=260
 y=55
 width=218
 height=142
 scrollheight=188
 
 [if_6412:com_6502]
-layer=if_6412:com_6501
+layer=com_6501
 type=^iftype_inventory_text
 x=109
 y=28
@@ -780,7 +780,7 @@ colour=0xaaaaaa
 invyof=2
 
 [if_6412:com_6504]
-layer=if_6412:com_6501
+layer=com_6501
 type=^iftype_text
 x=37
 y=1
@@ -793,7 +793,7 @@ text=Your opponent will stake:
 colour=0xaa8822
 
 [if_6412:com_6508]
-layer=if_6412:com_6501
+layer=com_6501
 type=^iftype_inventory_text
 x=49
 y=28
@@ -806,7 +806,7 @@ colour=0xaaaaaa
 invyof=2
 
 [if_6412:com_6517]
-layer=if_6412:com_6501
+layer=com_6501
 type=^iftype_text
 x=52
 y=16
@@ -820,7 +820,7 @@ colour=0xaaaaaa
 
 [if_6412:com_6505]
 type=^iftype_text
-x=-117
+x=139
 y=29
 width=232
 height=14
@@ -832,8 +832,8 @@ colour=0xffaa44
 
 [if_6412:com_6506]
 type=^iftype_text
-x=42
-y=14
+x=298
+y=270
 width=57
 height=14
 font=^p12
@@ -844,7 +844,7 @@ colour=0xaa8822
 [if_6412:com_6510]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-87
+x=425
 y=29
 width=68
 height=11
@@ -856,15 +856,15 @@ overcolour=0xffffff
 
 [if_6412:com_6511]
 type=^iftype_graphic
-x=69
-y=43
+x=325
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_6412:com_6512]
 type=^iftype_graphic
-x=-17
+x=239
 y=88
 width=36
 height=36
@@ -872,7 +872,7 @@ graphic=miscgraphics,2
 
 [if_6412:com_6513]
 type=^iftype_graphic
-x=-17
+x=239
 y=52
 width=36
 height=36
@@ -880,15 +880,15 @@ graphic=miscgraphics,2
 
 [if_6412:com_6514]
 type=^iftype_graphic
-x=-17
-y=-96
+x=239
+y=160
 width=36
 height=36
 graphic=miscgraphics,2
 
 [if_6412:com_6515]
 type=^iftype_graphic
-x=-17
+x=239
 y=124
 width=36
 height=36
@@ -896,13 +896,13 @@ graphic=miscgraphics,2
 
 [if_6412:com_6518]
 type=^iftype_layer
-x=-121
-y=-44
+x=391
+y=212
 width=78
 height=42
 
 [if_6412:com_6520]
-layer=if_6412:com_6518
+layer=com_6518
 type=^iftype_rectangle
 buttontype=^if_button
 x=6
@@ -912,7 +912,7 @@ height=31
 fill=yes
 
 [if_6412:com_6521]
-layer=if_6412:com_6518
+layer=com_6518
 type=^iftype_text
 x=21
 y=14
@@ -925,7 +925,7 @@ colour=0x8000
 overcolour=0xff00
 
 [if_6412:com_6524]
-layer=if_6412:com_6518
+layer=com_6518
 type=^iftype_graphic
 x=21
 y=-15
@@ -934,14 +934,14 @@ height=36
 graphic=steelborder2,0
 
 [if_6412:com_6526]
-layer=if_6412:com_6518
+layer=com_6518
 type=^iftype_graphic
 width=25
 height=30
 graphic=steelborder,0
 
 [if_6412:com_6528]
-layer=if_6412:com_6518
+layer=com_6518
 type=^iftype_graphic
 x=53
 width=25
@@ -949,7 +949,7 @@ height=30
 graphic=steelborder,1
 
 [if_6412:com_6530]
-layer=if_6412:com_6518
+layer=com_6518
 type=^iftype_graphic
 y=13
 width=25
@@ -957,7 +957,7 @@ height=30
 graphic=steelborder,2
 
 [if_6412:com_6532]
-layer=if_6412:com_6518
+layer=com_6518
 type=^iftype_graphic
 x=53
 y=13
@@ -966,7 +966,7 @@ height=30
 graphic=steelborder,3
 
 [if_6412:com_6533]
-layer=if_6412:com_6518
+layer=com_6518
 type=^iftype_graphic
 x=21
 y=22
@@ -976,13 +976,13 @@ graphic=miscgraphics,3
 
 [if_6412:com_6519]
 type=^iftype_layer
-x=-121
-y=6
+x=391
+y=262
 width=78
 height=43
 
 [if_6412:com_6522]
-layer=if_6412:com_6519
+layer=com_6519
 type=^iftype_rectangle
 buttontype=^if_closebutton
 x=6
@@ -992,7 +992,7 @@ height=31
 fill=yes
 
 [if_6412:com_6523]
-layer=if_6412:com_6519
+layer=com_6519
 type=^iftype_text
 x=20
 y=14
@@ -1005,7 +1005,7 @@ colour=0x800000
 overcolour=0xff0000
 
 [if_6412:com_6525]
-layer=if_6412:com_6519
+layer=com_6519
 type=^iftype_graphic
 x=21
 y=-15
@@ -1014,14 +1014,14 @@ height=36
 graphic=steelborder2,0
 
 [if_6412:com_6527]
-layer=if_6412:com_6519
+layer=com_6519
 type=^iftype_graphic
 width=25
 height=30
 graphic=steelborder,0
 
 [if_6412:com_6529]
-layer=if_6412:com_6519
+layer=com_6519
 type=^iftype_graphic
 x=53
 width=25
@@ -1029,7 +1029,7 @@ height=30
 graphic=steelborder,1
 
 [if_6412:com_6531]
-layer=if_6412:com_6519
+layer=com_6519
 type=^iftype_graphic
 y=13
 width=25
@@ -1037,7 +1037,7 @@ height=30
 graphic=steelborder,2
 
 [if_6412:com_6534]
-layer=if_6412:com_6519
+layer=com_6519
 type=^iftype_graphic
 x=53
 y=13
@@ -1046,7 +1046,7 @@ height=30
 graphic=steelborder,3
 
 [if_6412:com_6569]
-layer=if_6412:com_6519
+layer=com_6519
 type=^iftype_graphic
 x=20
 y=22
@@ -1058,7 +1058,7 @@ graphic=miscgraphics,3
 type=^iftype_text
 buttontype=^if_button
 x=61
-y=-46
+y=210
 width=57
 height=14
 font=^p12
@@ -1068,8 +1068,8 @@ colour=0xaa8822
 
 [if_6412:com_6536]
 type=^iftype_text
-x=-68
-y=-6
+x=188
+y=250
 width=50
 height=14
 font=^p12
@@ -1079,8 +1079,8 @@ colour=0xaa8822
 
 [if_6412:com_6537]
 type=^iftype_text
-x=-68
-y=-46
+x=188
+y=210
 width=60
 height=14
 font=^p12
@@ -1090,8 +1090,8 @@ colour=0xaa8822
 
 [if_6412:com_6538]
 type=^iftype_text
-x=-68
-y=-26
+x=188
+y=230
 width=51
 height=14
 font=^p12
@@ -1103,7 +1103,7 @@ colour=0xaa8822
 [if_6412:com_6539]
 type=^iftype_text
 x=61
-y=-6
+y=250
 width=69
 height=14
 font=^p12
@@ -1113,8 +1113,8 @@ colour=0xaa8822
 
 [if_6412:com_6540]
 type=^iftype_text
-x=42
-y=-46
+x=298
+y=210
 width=61
 height=14
 font=^p12
@@ -1124,8 +1124,8 @@ colour=0xaa8822
 
 [if_6412:com_6541]
 type=^iftype_text
-x=42
-y=-26
+x=298
+y=230
 width=45
 height=14
 font=^p12
@@ -1135,8 +1135,8 @@ colour=0xaa8822
 
 [if_6412:com_6542]
 type=^iftype_text
-x=42
-y=-6
+x=298
+y=250
 width=56
 height=14
 font=^p12
@@ -1147,7 +1147,7 @@ colour=0xaa8822
 [if_6412:com_6543]
 type=^iftype_text
 x=61
-y=-26
+y=230
 width=76
 height=14
 font=^p12
@@ -1158,7 +1158,7 @@ colour=0xaa8822
 [if_6412:com_6544]
 type=^iftype_text
 x=61
-y=14
+y=270
 width=59
 height=14
 font=^p12
@@ -1169,7 +1169,7 @@ colour=0xaa8822
 [if_6412:com_6545]
 type=^iftype_graphic
 x=18
-y=-74
+y=182
 width=36
 height=36
 graphic=steelborder2,0
@@ -1177,7 +1177,7 @@ graphic=steelborder2,0
 [if_6412:com_6546]
 type=^iftype_graphic
 x=54
-y=-74
+y=182
 width=36
 height=36
 graphic=steelborder2,0
@@ -1185,7 +1185,7 @@ graphic=steelborder2,0
 [if_6412:com_6547]
 type=^iftype_graphic
 x=90
-y=-74
+y=182
 width=36
 height=36
 graphic=steelborder2,0
@@ -1193,87 +1193,87 @@ graphic=steelborder2,0
 [if_6412:com_6548]
 type=^iftype_graphic
 x=126
-y=-74
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6549]
 type=^iftype_graphic
-x=-94
-y=-74
+x=162
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6550]
 type=^iftype_graphic
-x=-58
-y=-74
+x=198
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6551]
 type=^iftype_graphic
-x=-22
-y=-74
+x=234
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6552]
 type=^iftype_graphic
-x=14
-y=-74
+x=270
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6553]
 type=^iftype_graphic
-x=50
-y=-74
+x=306
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6554]
 type=^iftype_graphic
-x=86
-y=-74
+x=342
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6555]
 type=^iftype_graphic
-x=122
-y=-74
+x=378
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6556]
 type=^iftype_graphic
-x=-98
-y=-74
+x=414
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6557]
 type=^iftype_graphic
-x=-62
-y=-74
+x=450
+y=182
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_6412:com_6558]
 type=^iftype_graphic
-x=-54
-y=-74
+x=458
+y=182
 width=36
 height=36
 graphic=steelborder2,0
@@ -1281,139 +1281,139 @@ graphic=steelborder2,0
 [if_6412:com_6559]
 type=^iftype_graphic
 x=36
-y=-46
+y=210
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,0
+script1op1=^load_bool,varp_286,0
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6560]
 type=^iftype_graphic
 x=36
-y=-26
+y=230
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,1
+script1op1=^load_bool,varp_286,1
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6561]
 type=^iftype_graphic
 x=36
-y=-6
+y=250
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,2
+script1op1=^load_bool,varp_286,2
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6562]
 type=^iftype_graphic
 x=36
-y=14
+y=270
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,3
+script1op1=^load_bool,varp_286,3
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6563]
 type=^iftype_graphic
-x=-94
-y=-46
+x=162
+y=210
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,4
+script1op1=^load_bool,varp_286,4
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6564]
 type=^iftype_graphic
-x=-94
-y=-26
+x=162
+y=230
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,5
+script1op1=^load_bool,varp_286,5
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6565]
 type=^iftype_graphic
-x=-94
-y=-6
+x=162
+y=250
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,6
+script1op1=^load_bool,varp_286,6
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6566]
 type=^iftype_graphic
-x=16
-y=-46
+x=272
+y=210
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,7
+script1op1=^load_bool,varp_286,7
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6567]
 type=^iftype_graphic
-x=16
-y=-26
+x=272
+y=230
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,8
+script1op1=^load_bool,varp_286,8
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6568]
 type=^iftype_graphic
-x=16
-y=-6
+x=272
+y=250
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,9
+script1op1=^load_bool,varp_286,9
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6570]
 type=^iftype_graphic
-x=16
-y=14
+x=272
+y=270
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,10
+script1op1=^load_bool,varp_286,10
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_6571]
 type=^iftype_text
-x=-62
-y=37
+x=194
+y=293
 width=130
 height=11
 font=^p11
@@ -1423,16 +1423,16 @@ colour=0xaaaaaa
 
 [if_6412:com_6572]
 type=^iftype_graphic
-x=-17
-y=-95
+x=239
+y=161
 width=36
 height=36
 graphic=miscgraphics,2
 
 [if_6412:com_664]
 type=^iftype_text
-x=-68
-y=14
+x=188
+y=270
 width=71
 height=14
 font=^p12
@@ -1442,20 +1442,20 @@ colour=0xaa8822
 
 [if_6412:com_665]
 type=^iftype_graphic
-x=-94
-y=14
+x=162
+y=270
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,12
+script1op1=^load_bool,varp_286,12
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11
 
 [if_6412:com_666]
 type=^iftype_text
 x=61
-y=34
+y=290
 width=61
 height=14
 font=^p12
@@ -1466,11 +1466,11 @@ colour=0xaa8822
 [if_6412:com_667]
 type=^iftype_graphic
 x=36
-y=34
+y=290
 width=14
 height=15
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_286,11
+script1op1=^load_bool,varp_286,11
 graphic=miscgraphics,10
 activegraphic=miscgraphics,11

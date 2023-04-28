@@ -54,16 +54,16 @@ width=229
 height=13
 
 [if_2469:com_2474]
-layer=if_2469:com_2476
+layer=com_2476
 type=^iftype_graphic
 width=57
 height=13
 graphic=sworddecor,1
 
 [if_2469:com_2475]
-layer=if_2469:com_2476
+layer=com_2476
 type=^iftype_graphic
-x=-84
+x=172
 width=57
 height=13
 graphic=sworddecor,0
@@ -77,16 +77,16 @@ height=13
 hide=yes
 
 [if_2469:com_2477]
-layer=if_2469:com_2479
+layer=com_2479
 type=^iftype_graphic
 width=57
 height=13
 graphic=sworddecor,1
 
 [if_2469:com_2478]
-layer=if_2469:com_2479
+layer=com_2479
 type=^iftype_graphic
-x=-93
+x=419
 width=57
 height=13
 graphic=sworddecor,0

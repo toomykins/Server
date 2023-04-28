@@ -5,7 +5,7 @@ height=334
 
 [if_986:com_987]
 type=^iftype_model
-x=-98
+x=414
 y=34
 width=32
 height=32

@@ -5,7 +5,7 @@ height=334
 
 [if_3796:com_3797]
 type=^iftype_model
-x=-120
+x=136
 y=23
 width=35
 height=32
@@ -55,7 +55,7 @@ width=145
 height=190
 
 [if_3796:com_3802]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -64,26 +64,26 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_3796:com_3803]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
-y=-113
+y=143
 width=72
 height=36
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_3796:com_3804]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -92,12 +92,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_3796:com_3805]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -106,21 +106,21 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_3796:com_3806]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_graphic
 x=22
-y=-107
+y=149
 width=34
 height=24
 graphic=combaticons,10
 
 [if_3796:com_3807]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_graphic
 x=22
 y=11
@@ -129,7 +129,7 @@ height=24
 graphic=combaticons,13
 
 [if_3796:com_3808]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_graphic
 x=21
 y=57
@@ -138,7 +138,7 @@ height=24
 graphic=combaticons,11
 
 [if_3796:com_3809]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_graphic
 x=22
 y=103
@@ -147,7 +147,7 @@ height=24
 graphic=combaticons,12
 
 [if_3796:com_3810]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_text
 x=78
 y=5
@@ -159,7 +159,7 @@ text=Pound
 colour=0xffff00
 
 [if_3796:com_3811]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_text
 x=78
 y=51
@@ -171,7 +171,7 @@ text=Pummel
 colour=0xffff00
 
 [if_3796:com_3812]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_text
 x=78
 y=97
@@ -183,10 +183,10 @@ text=Spike
 colour=0xffff00
 
 [if_3796:com_3813]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_text
 x=78
-y=-113
+y=143
 width=26
 height=11
 font=^p11
@@ -195,7 +195,7 @@ text=Block
 colour=0xffff00
 
 [if_3796:com_3814]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_text
 x=78
 y=18
@@ -206,7 +206,7 @@ text=(Accurate)
 colour=0xffff00
 
 [if_3796:com_3815]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_text
 x=78
 y=110
@@ -217,7 +217,7 @@ text=(Controlled)
 colour=0xffff00
 
 [if_3796:com_3816]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_text
 x=78
 y=64
@@ -228,10 +228,10 @@ text=(Aggressive)
 colour=0xffff00
 
 [if_3796:com_3817]
-layer=if_3796:com_3801
+layer=com_3801
 type=^iftype_text
 x=78
-y=-100
+y=156
 width=58
 height=11
 font=^p11
@@ -251,7 +251,7 @@ colour=0xffff00
 [if_3796:com_3819]
 type=^iftype_text
 x=82
-y=-120
+y=136
 width=36
 height=11
 font=^p11
@@ -261,7 +261,7 @@ colour=0xffff00
 [if_3796:com_3820]
 type=^iftype_text
 x=82
-y=-74
+y=182
 width=29
 height=11
 font=^p11
@@ -271,7 +271,7 @@ colour=0xffff00
 [if_3796:com_3821]
 type=^iftype_text
 x=82
-y=-28
+y=228
 width=36
 height=11
 font=^p11

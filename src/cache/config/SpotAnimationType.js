@@ -1,5 +1,7 @@
 import Packet from '#util/Packet.js';
 import Constants from './Constants.js';
+import PackOrder from './PackOrder.js';
+import SequenceType from './SequenceType.js';
 
 export default class SpotAnimationType {
     static config = {};
@@ -98,9 +100,9 @@ export default class SpotAnimationType {
                 }
 
                 if (key == 'model') {
-                    config.model = parseInt(value);
+                    config.model = parseInt(PackOrder.get(value));
                 } else if (key == 'anim') {
-                    config.anim = parseInt(value);
+                    config.anim = parseInt(SequenceType.getId(value));
                 } else if (key == 'disposealpha') {
                     config.disposeAlpha = value == 'yes';
                 } else if (key == 'resizeh') {

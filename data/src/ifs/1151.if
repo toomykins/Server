@@ -186,7 +186,7 @@ optionflags=10
 [if_1151:com_1158]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-111
+x=145
 y=1
 width=20
 height=20
@@ -218,7 +218,7 @@ optionflags=10
 [if_1151:com_1159]
 type=^iftype_graphic
 buttontype=^if_button
-x=-87
+x=169
 y=1
 width=20
 height=20
@@ -394,7 +394,7 @@ option=Cast @gre@Varrock teleport
 [if_1151:com_1165]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-111
+x=145
 y=25
 width=20
 height=20
@@ -420,7 +420,7 @@ optionflags=16
 [if_1151:com_1166]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-87
+x=169
 y=25
 width=20
 height=20
@@ -628,7 +628,7 @@ optionflags=10
 [if_1151:com_1173]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-111
+x=145
 y=49
 width=20
 height=20
@@ -654,7 +654,7 @@ optionflags=16
 [if_1151:com_1174]
 type=^iftype_graphic
 buttontype=^if_button
-x=-87
+x=169
 y=49
 width=20
 height=20
@@ -768,7 +768,7 @@ optionflags=10
 [if_1151:com_1178]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-111
+x=145
 y=73
 width=20
 height=20
@@ -794,7 +794,7 @@ optionflags=16
 [if_1151:com_1179]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-87
+x=169
 y=73
 width=20
 height=20
@@ -910,7 +910,7 @@ optionflags=4
 [if_1151:com_1183]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-87
+x=169
 y=97
 width=20
 height=20
@@ -1090,7 +1090,7 @@ optionflags=10
 [if_1151:com_1189]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-87
+x=169
 y=121
 width=20
 height=20
@@ -1192,7 +1192,7 @@ optionflags=10
 [if_1151:com_1192]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-111
+x=145
 y=97
 width=20
 height=20
@@ -1228,7 +1228,7 @@ optionflags=10
 type=^iftype_graphic
 buttontype=^if_button
 x=49
-y=-111
+y=145
 width=20
 height=20
 overlayer=com_1635
@@ -1257,12 +1257,12 @@ option=Cast @gre@Charge
 [if_1151:com_1194]
 type=^iftype_layer
 x=3
-y=-78
+y=178
 width=186
 height=85
 
 [if_1151:com_1195]
-layer=if_1151:com_1194
+layer=com_1194
 type=^iftype_rectangle
 x=3
 y=9
@@ -1271,7 +1271,7 @@ height=72
 colour=0x726451
 
 [if_1151:com_1196]
-layer=if_1151:com_1194
+layer=com_1194
 type=^iftype_rectangle
 x=4
 y=10
@@ -1280,7 +1280,7 @@ height=70
 colour=0x726451
 
 [if_1151:com_1197]
-layer=if_1151:com_1194
+layer=com_1194
 type=^iftype_rectangle
 x=4
 y=10
@@ -1289,7 +1289,7 @@ height=71
 colour=0x2e2b23
 
 [if_1151:com_1198]
-layer=if_1151:com_1194
+layer=com_1194
 type=^iftype_rectangle
 x=5
 y=11
@@ -1300,13 +1300,13 @@ fill=yes
 [if_1151:com_1199]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1200]
-layer=if_1151:com_1199
+layer=com_1199
 type=^iftype_text
 x=3
 y=4
@@ -1319,7 +1319,7 @@ text=Level 1 : Wind Strike
 colour=0xfff000
 
 [if_1151:com_1201]
-layer=if_1151:com_1199
+layer=com_1199
 type=^iftype_text
 x=3
 y=17
@@ -1332,7 +1332,7 @@ text=A basic Air missile
 colour=0x6b6f33
 
 [if_1151:com_1202]
-layer=if_1151:com_1199
+layer=com_1199
 type=^iftype_model
 x=38
 y=35
@@ -1343,7 +1343,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1203]
-layer=if_1151:com_1199
+layer=com_1199
 type=^iftype_model
 x=114
 y=35
@@ -1354,7 +1354,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1204]
-layer=if_1151:com_1199
+layer=com_1199
 type=^iftype_text
 x=40
 y=62
@@ -1374,7 +1374,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1205]
-layer=if_1151:com_1199
+layer=com_1199
 type=^iftype_text
 x=116
 y=62
@@ -1393,13 +1393,13 @@ activecolour=0xc000
 [if_1151:com_1206]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1207]
-layer=if_1151:com_1206
+layer=com_1206
 type=^iftype_text
 x=3
 y=4
@@ -1412,7 +1412,7 @@ text=Level 3 : Confuse
 colour=0xfff000
 
 [if_1151:com_1208]
-layer=if_1151:com_1206
+layer=com_1206
 type=^iftype_text
 x=3
 y=17
@@ -1425,7 +1425,7 @@ text=Reduces your opponents\nattack by 5 %
 colour=0x6b6f33
 
 [if_1151:com_1209]
-layer=if_1151:com_1206
+layer=com_1206
 type=^iftype_model
 x=26
 y=35
@@ -1436,7 +1436,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1210]
-layer=if_1151:com_1206
+layer=com_1206
 type=^iftype_model
 x=78
 y=35
@@ -1447,9 +1447,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1211]
-layer=if_1151:com_1206
+layer=com_1206
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1458,7 +1458,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1212]
-layer=if_1151:com_1206
+layer=com_1206
 type=^iftype_text
 x=27
 y=62
@@ -1478,7 +1478,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1213]
-layer=if_1151:com_1206
+layer=com_1206
 type=^iftype_text
 x=79
 y=62
@@ -1498,9 +1498,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1214]
-layer=if_1151:com_1206
+layer=com_1206
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1517,13 +1517,13 @@ activecolour=0xc000
 [if_1151:com_1215]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1216]
-layer=if_1151:com_1215
+layer=com_1215
 type=^iftype_text
 x=3
 y=4
@@ -1536,7 +1536,7 @@ text=Level 5 : Water Strike
 colour=0xfff000
 
 [if_1151:com_1217]
-layer=if_1151:com_1215
+layer=com_1215
 type=^iftype_text
 x=3
 y=17
@@ -1549,7 +1549,7 @@ text=A basic Water missile
 colour=0x6b6f33
 
 [if_1151:com_1218]
-layer=if_1151:com_1215
+layer=com_1215
 type=^iftype_model
 x=25
 y=35
@@ -1560,7 +1560,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1219]
-layer=if_1151:com_1215
+layer=com_1215
 type=^iftype_model
 x=78
 y=35
@@ -1571,9 +1571,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1220]
-layer=if_1151:com_1215
+layer=com_1215
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1582,7 +1582,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1221]
-layer=if_1151:com_1215
+layer=com_1215
 type=^iftype_text
 x=27
 y=62
@@ -1602,7 +1602,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1222]
-layer=if_1151:com_1215
+layer=com_1215
 type=^iftype_text
 x=80
 y=62
@@ -1622,9 +1622,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1223]
-layer=if_1151:com_1215
+layer=com_1215
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1641,13 +1641,13 @@ activecolour=0xc000
 [if_1151:com_1224]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1225]
-layer=if_1151:com_1224
+layer=com_1224
 type=^iftype_text
 x=3
 y=4
@@ -1660,7 +1660,7 @@ text=Level 7: Enchant Lvl-1 Jewelry
 colour=0xfff000
 
 [if_1151:com_1226]
-layer=if_1151:com_1224
+layer=com_1224
 type=^iftype_text
 x=3
 y=17
@@ -1673,7 +1673,7 @@ text=For use on sapphire jewelry
 colour=0x6b6f33
 
 [if_1151:com_1227]
-layer=if_1151:com_1224
+layer=com_1224
 type=^iftype_model
 x=38
 y=35
@@ -1684,7 +1684,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1228]
-layer=if_1151:com_1224
+layer=com_1224
 type=^iftype_model
 x=114
 y=35
@@ -1695,7 +1695,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1229]
-layer=if_1151:com_1224
+layer=com_1224
 type=^iftype_text
 x=40
 y=62
@@ -1715,7 +1715,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1230]
-layer=if_1151:com_1224
+layer=com_1224
 type=^iftype_text
 x=116
 y=62
@@ -1733,13 +1733,13 @@ activecolour=0xc000
 [if_1151:com_1231]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1232]
-layer=if_1151:com_1231
+layer=com_1231
 type=^iftype_text
 x=3
 y=4
@@ -1752,7 +1752,7 @@ text=Level 9 : Earth Strike
 colour=0xfff000
 
 [if_1151:com_1233]
-layer=if_1151:com_1231
+layer=com_1231
 type=^iftype_text
 x=3
 y=17
@@ -1765,7 +1765,7 @@ text=A basic Earth missile
 colour=0x6b6f33
 
 [if_1151:com_1234]
-layer=if_1151:com_1231
+layer=com_1231
 type=^iftype_model
 x=26
 y=35
@@ -1776,7 +1776,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1235]
-layer=if_1151:com_1231
+layer=com_1231
 type=^iftype_model
 x=78
 y=35
@@ -1787,9 +1787,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1236]
-layer=if_1151:com_1231
+layer=com_1231
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1798,7 +1798,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1237]
-layer=if_1151:com_1231
+layer=com_1231
 type=^iftype_text
 x=27
 y=62
@@ -1818,7 +1818,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1238]
-layer=if_1151:com_1231
+layer=com_1231
 type=^iftype_text
 x=80
 y=62
@@ -1838,9 +1838,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1239]
-layer=if_1151:com_1231
+layer=com_1231
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1857,13 +1857,13 @@ activecolour=0xc000
 [if_1151:com_1240]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1241]
-layer=if_1151:com_1240
+layer=com_1240
 type=^iftype_text
 x=3
 y=4
@@ -1876,7 +1876,7 @@ text=Level 11 : Weaken
 colour=0xfff000
 
 [if_1151:com_1242]
-layer=if_1151:com_1240
+layer=com_1240
 type=^iftype_text
 x=3
 y=17
@@ -1889,7 +1889,7 @@ text=Reduces your opponents\nstrength by 5%
 colour=0x6b6f33
 
 [if_1151:com_1243]
-layer=if_1151:com_1240
+layer=com_1240
 type=^iftype_model
 x=26
 y=35
@@ -1900,7 +1900,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1244]
-layer=if_1151:com_1240
+layer=com_1240
 type=^iftype_model
 x=78
 y=35
@@ -1911,9 +1911,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1245]
-layer=if_1151:com_1240
+layer=com_1240
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1922,7 +1922,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1246]
-layer=if_1151:com_1240
+layer=com_1240
 type=^iftype_text
 x=27
 y=62
@@ -1942,7 +1942,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1247]
-layer=if_1151:com_1240
+layer=com_1240
 type=^iftype_text
 x=79
 y=62
@@ -1962,9 +1962,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1248]
-layer=if_1151:com_1240
+layer=com_1240
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1981,13 +1981,13 @@ activecolour=0xc000
 [if_1151:com_1249]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1250]
-layer=if_1151:com_1249
+layer=com_1249
 type=^iftype_text
 x=3
 y=4
@@ -2000,7 +2000,7 @@ text=Level 13 : Fire Strike
 colour=0xfff000
 
 [if_1151:com_1251]
-layer=if_1151:com_1249
+layer=com_1249
 type=^iftype_text
 x=3
 y=17
@@ -2013,7 +2013,7 @@ text=A basic Fire missile
 colour=0x6b6f33
 
 [if_1151:com_1252]
-layer=if_1151:com_1249
+layer=com_1249
 type=^iftype_model
 x=26
 y=35
@@ -2024,7 +2024,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1253]
-layer=if_1151:com_1249
+layer=com_1249
 type=^iftype_model
 x=78
 y=35
@@ -2035,9 +2035,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1254]
-layer=if_1151:com_1249
+layer=com_1249
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -2046,7 +2046,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1255]
-layer=if_1151:com_1249
+layer=com_1249
 type=^iftype_text
 x=27
 y=62
@@ -2066,7 +2066,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1256]
-layer=if_1151:com_1249
+layer=com_1249
 type=^iftype_text
 x=79
 y=62
@@ -2086,9 +2086,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1257]
-layer=if_1151:com_1249
+layer=com_1249
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -2105,13 +2105,13 @@ activecolour=0xc000
 [if_1151:com_1258]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1259]
-layer=if_1151:com_1258
+layer=com_1258
 type=^iftype_text
 x=3
 y=4
@@ -2124,7 +2124,7 @@ text=Level 15 : Bones to Bananas
 colour=0xfff000
 
 [if_1151:com_1260]
-layer=if_1151:com_1258
+layer=com_1258
 type=^iftype_text
 x=3
 y=17
@@ -2137,7 +2137,7 @@ text=Changes all held bones into\nbananas
 colour=0x6b6f33
 
 [if_1151:com_1261]
-layer=if_1151:com_1258
+layer=com_1258
 type=^iftype_model
 x=26
 y=35
@@ -2148,7 +2148,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1262]
-layer=if_1151:com_1258
+layer=com_1258
 type=^iftype_model
 x=78
 y=35
@@ -2159,9 +2159,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1263]
-layer=if_1151:com_1258
+layer=com_1258
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -2170,7 +2170,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1264]
-layer=if_1151:com_1258
+layer=com_1258
 type=^iftype_text
 x=27
 y=62
@@ -2190,7 +2190,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1265]
-layer=if_1151:com_1258
+layer=com_1258
 type=^iftype_text
 x=79
 y=62
@@ -2210,9 +2210,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1266]
-layer=if_1151:com_1258
+layer=com_1258
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -2229,13 +2229,13 @@ activecolour=0xc000
 [if_1151:com_1267]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1268]
-layer=if_1151:com_1267
+layer=com_1267
 type=^iftype_text
 x=3
 y=4
@@ -2248,7 +2248,7 @@ text=Level 17 : Wind Bolt
 colour=0xfff000
 
 [if_1151:com_1269]
-layer=if_1151:com_1267
+layer=com_1267
 type=^iftype_text
 x=3
 y=17
@@ -2261,7 +2261,7 @@ text=A low level Air missile
 colour=0x6b6f33
 
 [if_1151:com_1270]
-layer=if_1151:com_1267
+layer=com_1267
 type=^iftype_model
 x=38
 y=35
@@ -2272,7 +2272,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1271]
-layer=if_1151:com_1267
+layer=com_1267
 type=^iftype_model
 x=114
 y=35
@@ -2283,7 +2283,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1272]
-layer=if_1151:com_1267
+layer=com_1267
 type=^iftype_text
 x=40
 y=62
@@ -2303,7 +2303,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1273]
-layer=if_1151:com_1267
+layer=com_1267
 type=^iftype_text
 x=116
 y=62
@@ -2322,13 +2322,13 @@ activecolour=0xc000
 [if_1151:com_1274]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1275]
-layer=if_1151:com_1274
+layer=com_1274
 type=^iftype_text
 x=3
 y=4
@@ -2341,7 +2341,7 @@ text=Level 19 : Curse
 colour=0xfff000
 
 [if_1151:com_1276]
-layer=if_1151:com_1274
+layer=com_1274
 type=^iftype_text
 x=3
 y=17
@@ -2354,7 +2354,7 @@ text=Reduces your opponents\ndefence by 5%
 colour=0x6b6f33
 
 [if_1151:com_1277]
-layer=if_1151:com_1274
+layer=com_1274
 type=^iftype_model
 x=26
 y=35
@@ -2365,7 +2365,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1278]
-layer=if_1151:com_1274
+layer=com_1274
 type=^iftype_model
 x=78
 y=35
@@ -2376,9 +2376,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1279]
-layer=if_1151:com_1274
+layer=com_1274
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -2387,7 +2387,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1280]
-layer=if_1151:com_1274
+layer=com_1274
 type=^iftype_text
 x=27
 y=62
@@ -2407,7 +2407,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1281]
-layer=if_1151:com_1274
+layer=com_1274
 type=^iftype_text
 x=80
 y=62
@@ -2427,9 +2427,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1282]
-layer=if_1151:com_1274
+layer=com_1274
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -2446,13 +2446,13 @@ activecolour=0xc000
 [if_1151:com_1283]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1284]
-layer=if_1151:com_1283
+layer=com_1283
 type=^iftype_text
 x=3
 y=4
@@ -2465,7 +2465,7 @@ text=Level 21 : Low Level Alchemy
 colour=0xfff000
 
 [if_1151:com_1285]
-layer=if_1151:com_1283
+layer=com_1283
 type=^iftype_text
 x=3
 y=17
@@ -2478,7 +2478,7 @@ text=Converts an item into gold
 colour=0x6b6f33
 
 [if_1151:com_1286]
-layer=if_1151:com_1283
+layer=com_1283
 type=^iftype_model
 x=38
 y=35
@@ -2489,7 +2489,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1287]
-layer=if_1151:com_1283
+layer=com_1283
 type=^iftype_model
 x=114
 y=35
@@ -2500,7 +2500,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1288]
-layer=if_1151:com_1283
+layer=com_1283
 type=^iftype_text
 x=40
 y=62
@@ -2520,7 +2520,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1289]
-layer=if_1151:com_1283
+layer=com_1283
 type=^iftype_text
 x=116
 y=62
@@ -2539,13 +2539,13 @@ activecolour=0xc000
 [if_1151:com_1290]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1291]
-layer=if_1151:com_1290
+layer=com_1290
 type=^iftype_text
 x=3
 y=4
@@ -2558,7 +2558,7 @@ text=Level 23 : Water Bolt
 colour=0xfff000
 
 [if_1151:com_1292]
-layer=if_1151:com_1290
+layer=com_1290
 type=^iftype_text
 x=3
 y=17
@@ -2571,7 +2571,7 @@ text=A low level Water missile
 colour=0x6b6f33
 
 [if_1151:com_1293]
-layer=if_1151:com_1290
+layer=com_1290
 type=^iftype_model
 x=26
 y=35
@@ -2582,7 +2582,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1294]
-layer=if_1151:com_1290
+layer=com_1290
 type=^iftype_model
 x=78
 y=35
@@ -2593,9 +2593,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1295]
-layer=if_1151:com_1290
+layer=com_1290
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -2604,7 +2604,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1296]
-layer=if_1151:com_1290
+layer=com_1290
 type=^iftype_text
 x=27
 y=62
@@ -2624,7 +2624,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1297]
-layer=if_1151:com_1290
+layer=com_1290
 type=^iftype_text
 x=80
 y=62
@@ -2644,9 +2644,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1298]
-layer=if_1151:com_1290
+layer=com_1290
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -2663,13 +2663,13 @@ activecolour=0xc000
 [if_1151:com_1299]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1300]
-layer=if_1151:com_1299
+layer=com_1299
 type=^iftype_text
 x=3
 y=4
@@ -2682,7 +2682,7 @@ text=Level 25 : Varrock Teleport
 colour=0xfff000
 
 [if_1151:com_1301]
-layer=if_1151:com_1299
+layer=com_1299
 type=^iftype_text
 x=3
 y=17
@@ -2695,7 +2695,7 @@ text=Teleports you to Varrock
 colour=0x6b6f33
 
 [if_1151:com_1302]
-layer=if_1151:com_1299
+layer=com_1299
 type=^iftype_model
 x=26
 y=35
@@ -2706,7 +2706,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1303]
-layer=if_1151:com_1299
+layer=com_1299
 type=^iftype_model
 x=78
 y=35
@@ -2717,9 +2717,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1304]
-layer=if_1151:com_1299
+layer=com_1299
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -2728,7 +2728,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1305]
-layer=if_1151:com_1299
+layer=com_1299
 type=^iftype_text
 x=27
 y=62
@@ -2748,7 +2748,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1306]
-layer=if_1151:com_1299
+layer=com_1299
 type=^iftype_text
 x=80
 y=62
@@ -2768,9 +2768,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1307]
-layer=if_1151:com_1299
+layer=com_1299
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -2787,13 +2787,13 @@ activecolour=0xc000
 [if_1151:com_1308]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1309]
-layer=if_1151:com_1308
+layer=com_1308
 type=^iftype_text
 x=2
 y=4
@@ -2806,7 +2806,7 @@ text=Level 27: Enchant Lvl-2 Jewelry
 colour=0xfff000
 
 [if_1151:com_1310]
-layer=if_1151:com_1308
+layer=com_1308
 type=^iftype_text
 x=3
 y=17
@@ -2819,7 +2819,7 @@ text=For use on emerald jewelry
 colour=0x6b6f33
 
 [if_1151:com_1311]
-layer=if_1151:com_1308
+layer=com_1308
 type=^iftype_model
 x=38
 y=35
@@ -2830,7 +2830,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1312]
-layer=if_1151:com_1308
+layer=com_1308
 type=^iftype_model
 x=114
 y=35
@@ -2841,7 +2841,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1313]
-layer=if_1151:com_1308
+layer=com_1308
 type=^iftype_text
 x=40
 y=62
@@ -2861,7 +2861,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1314]
-layer=if_1151:com_1308
+layer=com_1308
 type=^iftype_text
 x=116
 y=62
@@ -2880,13 +2880,13 @@ activecolour=0xc000
 [if_1151:com_1315]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1316]
-layer=if_1151:com_1315
+layer=com_1315
 type=^iftype_text
 x=3
 y=4
@@ -2899,7 +2899,7 @@ text=Level 29 : Earth Bolt
 colour=0xfff000
 
 [if_1151:com_1317]
-layer=if_1151:com_1315
+layer=com_1315
 type=^iftype_text
 x=3
 y=17
@@ -2912,7 +2912,7 @@ text=A low level Earth missile
 colour=0x6b6f33
 
 [if_1151:com_1318]
-layer=if_1151:com_1315
+layer=com_1315
 type=^iftype_model
 x=26
 y=35
@@ -2923,7 +2923,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1319]
-layer=if_1151:com_1315
+layer=com_1315
 type=^iftype_model
 x=78
 y=35
@@ -2934,9 +2934,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1320]
-layer=if_1151:com_1315
+layer=com_1315
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -2945,7 +2945,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1321]
-layer=if_1151:com_1315
+layer=com_1315
 type=^iftype_text
 x=27
 y=62
@@ -2965,7 +2965,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1322]
-layer=if_1151:com_1315
+layer=com_1315
 type=^iftype_text
 x=80
 y=62
@@ -2985,9 +2985,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1323]
-layer=if_1151:com_1315
+layer=com_1315
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -3004,13 +3004,13 @@ activecolour=0xc000
 [if_1151:com_1324]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1325]
-layer=if_1151:com_1324
+layer=com_1324
 type=^iftype_text
 x=3
 y=4
@@ -3023,7 +3023,7 @@ text=Level 31 : Lumbridge Teleport
 colour=0xfff000
 
 [if_1151:com_1326]
-layer=if_1151:com_1324
+layer=com_1324
 type=^iftype_text
 x=3
 y=17
@@ -3036,7 +3036,7 @@ text=Teleports you to Lumbridge
 colour=0x6b6f33
 
 [if_1151:com_1327]
-layer=if_1151:com_1324
+layer=com_1324
 type=^iftype_model
 x=26
 y=35
@@ -3047,7 +3047,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1328]
-layer=if_1151:com_1324
+layer=com_1324
 type=^iftype_model
 x=78
 y=35
@@ -3058,9 +3058,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1329]
-layer=if_1151:com_1324
+layer=com_1324
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -3069,7 +3069,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1330]
-layer=if_1151:com_1324
+layer=com_1324
 type=^iftype_text
 x=27
 y=62
@@ -3089,7 +3089,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1331]
-layer=if_1151:com_1324
+layer=com_1324
 type=^iftype_text
 x=80
 y=62
@@ -3109,9 +3109,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1332]
-layer=if_1151:com_1324
+layer=com_1324
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -3128,13 +3128,13 @@ activecolour=0xc000
 [if_1151:com_1333]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1334]
-layer=if_1151:com_1333
+layer=com_1333
 type=^iftype_text
 x=3
 y=4
@@ -3147,7 +3147,7 @@ text=Level 33 : Telekinetic Grab
 colour=0xfff000
 
 [if_1151:com_1335]
-layer=if_1151:com_1333
+layer=com_1333
 type=^iftype_text
 x=3
 y=17
@@ -3160,7 +3160,7 @@ text=Take an item you can see\nbut can't reach
 colour=0x6b6f33
 
 [if_1151:com_1336]
-layer=if_1151:com_1333
+layer=com_1333
 type=^iftype_model
 x=38
 y=35
@@ -3171,7 +3171,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1337]
-layer=if_1151:com_1333
+layer=com_1333
 type=^iftype_model
 x=114
 y=35
@@ -3182,7 +3182,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1338]
-layer=if_1151:com_1333
+layer=com_1333
 type=^iftype_text
 x=40
 y=62
@@ -3202,7 +3202,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1339]
-layer=if_1151:com_1333
+layer=com_1333
 type=^iftype_text
 x=116
 y=62
@@ -3221,13 +3221,13 @@ activecolour=0xc000
 [if_1151:com_1340]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1341]
-layer=if_1151:com_1340
+layer=com_1340
 type=^iftype_text
 x=3
 y=4
@@ -3240,7 +3240,7 @@ text=Level 35 : Fire Bolt
 colour=0xfff000
 
 [if_1151:com_1342]
-layer=if_1151:com_1340
+layer=com_1340
 type=^iftype_text
 x=3
 y=17
@@ -3253,7 +3253,7 @@ text=A low level Fire missile
 colour=0x6b6f33
 
 [if_1151:com_1343]
-layer=if_1151:com_1340
+layer=com_1340
 type=^iftype_model
 x=26
 y=35
@@ -3264,7 +3264,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1344]
-layer=if_1151:com_1340
+layer=com_1340
 type=^iftype_model
 x=78
 y=35
@@ -3275,9 +3275,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1345]
-layer=if_1151:com_1340
+layer=com_1340
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -3286,7 +3286,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1346]
-layer=if_1151:com_1340
+layer=com_1340
 type=^iftype_text
 x=27
 y=62
@@ -3306,7 +3306,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1347]
-layer=if_1151:com_1340
+layer=com_1340
 type=^iftype_text
 x=80
 y=62
@@ -3326,9 +3326,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1348]
-layer=if_1151:com_1340
+layer=com_1340
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -3345,13 +3345,13 @@ activecolour=0xc000
 [if_1151:com_1349]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1350]
-layer=if_1151:com_1349
+layer=com_1349
 type=^iftype_text
 x=3
 y=4
@@ -3364,7 +3364,7 @@ text=Level 37 : Falador Teleport
 colour=0xfff000
 
 [if_1151:com_1351]
-layer=if_1151:com_1349
+layer=com_1349
 type=^iftype_text
 x=3
 y=17
@@ -3377,7 +3377,7 @@ text=Teleports you to Falador
 colour=0x6b6f33
 
 [if_1151:com_1352]
-layer=if_1151:com_1349
+layer=com_1349
 type=^iftype_model
 x=26
 y=35
@@ -3388,7 +3388,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1353]
-layer=if_1151:com_1349
+layer=com_1349
 type=^iftype_model
 x=78
 y=35
@@ -3399,9 +3399,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1354]
-layer=if_1151:com_1349
+layer=com_1349
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -3410,7 +3410,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1355]
-layer=if_1151:com_1349
+layer=com_1349
 type=^iftype_text
 x=28
 y=62
@@ -3430,7 +3430,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1356]
-layer=if_1151:com_1349
+layer=com_1349
 type=^iftype_text
 x=80
 y=62
@@ -3450,9 +3450,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1357]
-layer=if_1151:com_1349
+layer=com_1349
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -3469,13 +3469,13 @@ activecolour=0xc000
 [if_1151:com_1358]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1359]
-layer=if_1151:com_1358
+layer=com_1358
 type=^iftype_text
 x=3
 y=4
@@ -3488,7 +3488,7 @@ text=Level 39 : Crumble Undead
 colour=0xfff000
 
 [if_1151:com_1360]
-layer=if_1151:com_1358
+layer=com_1358
 type=^iftype_text
 x=3
 y=17
@@ -3501,7 +3501,7 @@ text=Hits skeletons, ghosts and\nzombies hard
 colour=0x6b6f33
 
 [if_1151:com_1361]
-layer=if_1151:com_1358
+layer=com_1358
 type=^iftype_model
 x=26
 y=35
@@ -3512,7 +3512,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1362]
-layer=if_1151:com_1358
+layer=com_1358
 type=^iftype_model
 x=78
 y=35
@@ -3523,9 +3523,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1363]
-layer=if_1151:com_1358
+layer=com_1358
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -3534,7 +3534,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1364]
-layer=if_1151:com_1358
+layer=com_1358
 type=^iftype_text
 x=27
 y=62
@@ -3554,7 +3554,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1365]
-layer=if_1151:com_1358
+layer=com_1358
 type=^iftype_text
 x=80
 y=62
@@ -3574,9 +3574,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1366]
-layer=if_1151:com_1358
+layer=com_1358
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -3593,13 +3593,13 @@ activecolour=0xc000
 [if_1151:com_1367]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1368]
-layer=if_1151:com_1367
+layer=com_1367
 type=^iftype_text
 x=3
 y=4
@@ -3612,7 +3612,7 @@ text=Level 41 : Wind Blast
 colour=0xfff000
 
 [if_1151:com_1369]
-layer=if_1151:com_1367
+layer=com_1367
 type=^iftype_text
 x=3
 y=17
@@ -3625,7 +3625,7 @@ text=A medium level Air missile
 colour=0x6b6f33
 
 [if_1151:com_1370]
-layer=if_1151:com_1367
+layer=com_1367
 type=^iftype_model
 x=38
 y=35
@@ -3636,7 +3636,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1371]
-layer=if_1151:com_1367
+layer=com_1367
 type=^iftype_model
 x=114
 y=35
@@ -3647,7 +3647,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1372]
-layer=if_1151:com_1367
+layer=com_1367
 type=^iftype_text
 x=40
 y=62
@@ -3667,7 +3667,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1373]
-layer=if_1151:com_1367
+layer=com_1367
 type=^iftype_text
 x=116
 y=62
@@ -3686,13 +3686,13 @@ activecolour=0xc000
 [if_1151:com_1374]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1375]
-layer=if_1151:com_1374
+layer=com_1374
 type=^iftype_text
 x=3
 y=4
@@ -3705,7 +3705,7 @@ text=Level 43 : Superheat Item
 colour=0xfff000
 
 [if_1151:com_1376]
-layer=if_1151:com_1374
+layer=com_1374
 type=^iftype_text
 x=3
 y=17
@@ -3718,7 +3718,7 @@ text=Smelt ore without a furnace
 colour=0x6b6f33
 
 [if_1151:com_1377]
-layer=if_1151:com_1374
+layer=com_1374
 type=^iftype_model
 x=38
 y=35
@@ -3729,7 +3729,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1378]
-layer=if_1151:com_1374
+layer=com_1374
 type=^iftype_model
 x=114
 y=35
@@ -3740,7 +3740,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1379]
-layer=if_1151:com_1374
+layer=com_1374
 type=^iftype_text
 x=40
 y=62
@@ -3760,7 +3760,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1380]
-layer=if_1151:com_1374
+layer=com_1374
 type=^iftype_text
 x=116
 y=62
@@ -3779,13 +3779,13 @@ activecolour=0xc000
 [if_1151:com_1381]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1382]
-layer=if_1151:com_1381
+layer=com_1381
 type=^iftype_text
 x=3
 y=4
@@ -3798,7 +3798,7 @@ text=Level 45 : Camelot Teleport
 colour=0xfff000
 
 [if_1151:com_1383]
-layer=if_1151:com_1381
+layer=com_1381
 type=^iftype_text
 x=3
 y=17
@@ -3811,7 +3811,7 @@ text=Teleports you to Camelot
 colour=0x6b6f33
 
 [if_1151:com_1384]
-layer=if_1151:com_1381
+layer=com_1381
 type=^iftype_model
 x=38
 y=35
@@ -3822,7 +3822,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1385]
-layer=if_1151:com_1381
+layer=com_1381
 type=^iftype_model
 x=114
 y=35
@@ -3833,7 +3833,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1386]
-layer=if_1151:com_1381
+layer=com_1381
 type=^iftype_text
 x=40
 y=62
@@ -3853,7 +3853,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1387]
-layer=if_1151:com_1381
+layer=com_1381
 type=^iftype_text
 x=116
 y=62
@@ -3872,13 +3872,13 @@ activecolour=0xc000
 [if_1151:com_1388]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1389]
-layer=if_1151:com_1388
+layer=com_1388
 type=^iftype_text
 x=3
 y=4
@@ -3891,7 +3891,7 @@ text=Level 47 : Water Blast
 colour=0xfff000
 
 [if_1151:com_1390]
-layer=if_1151:com_1388
+layer=com_1388
 type=^iftype_text
 x=3
 y=17
@@ -3904,7 +3904,7 @@ text=A medium level Water missile
 colour=0x6b6f33
 
 [if_1151:com_1391]
-layer=if_1151:com_1388
+layer=com_1388
 type=^iftype_model
 x=26
 y=35
@@ -3915,7 +3915,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1392]
-layer=if_1151:com_1388
+layer=com_1388
 type=^iftype_model
 x=78
 y=35
@@ -3926,9 +3926,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1393]
-layer=if_1151:com_1388
+layer=com_1388
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -3937,7 +3937,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1394]
-layer=if_1151:com_1388
+layer=com_1388
 type=^iftype_text
 x=28
 y=62
@@ -3957,7 +3957,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1395]
-layer=if_1151:com_1388
+layer=com_1388
 type=^iftype_text
 x=80
 y=62
@@ -3977,9 +3977,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1396]
-layer=if_1151:com_1388
+layer=com_1388
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -3996,13 +3996,13 @@ activecolour=0xc000
 [if_1151:com_1397]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1398]
-layer=if_1151:com_1397
+layer=com_1397
 type=^iftype_text
 x=3
 y=4
@@ -4015,7 +4015,7 @@ text=Level 49: Enchant Lvl-3 Jewelry
 colour=0xfff000
 
 [if_1151:com_1399]
-layer=if_1151:com_1397
+layer=com_1397
 type=^iftype_text
 x=3
 y=17
@@ -4028,7 +4028,7 @@ text=For use on ruby jewelry
 colour=0x6b6f33
 
 [if_1151:com_1400]
-layer=if_1151:com_1397
+layer=com_1397
 type=^iftype_model
 x=38
 y=35
@@ -4039,7 +4039,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1401]
-layer=if_1151:com_1397
+layer=com_1397
 type=^iftype_model
 x=114
 y=35
@@ -4050,7 +4050,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1402]
-layer=if_1151:com_1397
+layer=com_1397
 type=^iftype_text
 x=40
 y=62
@@ -4070,7 +4070,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1403]
-layer=if_1151:com_1397
+layer=com_1397
 type=^iftype_text
 x=116
 y=62
@@ -4089,13 +4089,13 @@ activecolour=0xc000
 [if_1151:com_1404]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1405]
-layer=if_1151:com_1404
+layer=com_1404
 type=^iftype_text
 x=3
 y=4
@@ -4108,7 +4108,7 @@ text=Level 50 : Iban Blast
 colour=0xfff000
 
 [if_1151:com_1406]
-layer=if_1151:com_1404
+layer=com_1404
 type=^iftype_text
 x=3
 y=17
@@ -4121,7 +4121,7 @@ text=A strength 25 missile attack
 colour=0x6b6f33
 
 [if_1151:com_1407]
-layer=if_1151:com_1404
+layer=com_1404
 type=^iftype_model
 x=26
 y=35
@@ -4132,7 +4132,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1408]
-layer=if_1151:com_1404
+layer=com_1404
 type=^iftype_model
 x=78
 y=35
@@ -4143,18 +4143,18 @@ zoom=900
 xan=512
 
 [if_1151:com_1409]
-layer=if_1151:com_1404
+layer=com_1404
 type=^iftype_layer
-x=-126
+x=130
 y=35
 width=28
 height=28
 hide=yes
 
 [if_1151:com_1410]
-layer=if_1151:com_1404
+layer=com_1404
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -4164,7 +4164,7 @@ xan=231
 yan=1504
 
 [if_1151:com_1411]
-layer=if_1151:com_1404
+layer=com_1404
 type=^iftype_text
 x=28
 y=62
@@ -4184,7 +4184,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1412]
-layer=if_1151:com_1404
+layer=com_1404
 type=^iftype_text
 x=80
 y=62
@@ -4201,9 +4201,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1413]
-layer=if_1151:com_1404
+layer=com_1404
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -4220,13 +4220,13 @@ activecolour=0xc000
 [if_1151:com_1414]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1415]
-layer=if_1151:com_1414
+layer=com_1414
 type=^iftype_text
 x=3
 y=4
@@ -4239,7 +4239,7 @@ text=Level 51 : Ardougne Teleport
 colour=0xfff000
 
 [if_1151:com_1416]
-layer=if_1151:com_1414
+layer=com_1414
 type=^iftype_text
 x=3
 y=17
@@ -4252,7 +4252,7 @@ text=Teleports you to Ardougne
 colour=0x6b6f33
 
 [if_1151:com_1417]
-layer=if_1151:com_1414
+layer=com_1414
 type=^iftype_model
 x=38
 y=35
@@ -4263,7 +4263,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1418]
-layer=if_1151:com_1414
+layer=com_1414
 type=^iftype_model
 x=114
 y=35
@@ -4274,7 +4274,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1419]
-layer=if_1151:com_1414
+layer=com_1414
 type=^iftype_text
 x=39
 y=62
@@ -4294,7 +4294,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1420]
-layer=if_1151:com_1414
+layer=com_1414
 type=^iftype_text
 x=115
 y=62
@@ -4313,13 +4313,13 @@ activecolour=0xc000
 [if_1151:com_1421]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1422]
-layer=if_1151:com_1421
+layer=com_1421
 type=^iftype_text
 x=3
 y=4
@@ -4332,7 +4332,7 @@ text=Level 53 : Earth Blast
 colour=0xfff000
 
 [if_1151:com_1423]
-layer=if_1151:com_1421
+layer=com_1421
 type=^iftype_text
 x=3
 y=17
@@ -4345,7 +4345,7 @@ text=A medium level Earth missile
 colour=0x6b6f33
 
 [if_1151:com_1424]
-layer=if_1151:com_1421
+layer=com_1421
 type=^iftype_model
 x=26
 y=35
@@ -4356,7 +4356,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1425]
-layer=if_1151:com_1421
+layer=com_1421
 type=^iftype_model
 x=78
 y=35
@@ -4367,9 +4367,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1426]
-layer=if_1151:com_1421
+layer=com_1421
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -4378,7 +4378,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1427]
-layer=if_1151:com_1421
+layer=com_1421
 type=^iftype_text
 x=28
 y=62
@@ -4398,7 +4398,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1428]
-layer=if_1151:com_1421
+layer=com_1421
 type=^iftype_text
 x=80
 y=62
@@ -4418,9 +4418,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1429]
-layer=if_1151:com_1421
+layer=com_1421
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -4437,13 +4437,13 @@ activecolour=0xc000
 [if_1151:com_1430]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1431]
-layer=if_1151:com_1430
+layer=com_1430
 type=^iftype_text
 x=3
 y=4
@@ -4456,7 +4456,7 @@ text=Level 55 : High Level Alchemy
 colour=0xfff000
 
 [if_1151:com_1432]
-layer=if_1151:com_1430
+layer=com_1430
 type=^iftype_text
 x=3
 y=17
@@ -4469,7 +4469,7 @@ text=Converts an item into\nmore gold
 colour=0x6b6f33
 
 [if_1151:com_1433]
-layer=if_1151:com_1430
+layer=com_1430
 type=^iftype_model
 x=38
 y=35
@@ -4480,7 +4480,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1434]
-layer=if_1151:com_1430
+layer=com_1430
 type=^iftype_model
 x=114
 y=35
@@ -4491,7 +4491,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1435]
-layer=if_1151:com_1430
+layer=com_1430
 type=^iftype_text
 x=40
 y=62
@@ -4511,7 +4511,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1436]
-layer=if_1151:com_1430
+layer=com_1430
 type=^iftype_text
 x=116
 y=62
@@ -4530,13 +4530,13 @@ activecolour=0xc000
 [if_1151:com_1437]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1438]
-layer=if_1151:com_1437
+layer=com_1437
 type=^iftype_text
 x=3
 y=4
@@ -4549,7 +4549,7 @@ text=Level 56 : Charge Water Orb
 colour=0xfff000
 
 [if_1151:com_1439]
-layer=if_1151:com_1437
+layer=com_1437
 type=^iftype_text
 x=3
 y=17
@@ -4562,7 +4562,7 @@ text=Needs to be cast on\na water obelisk
 colour=0x6b6f33
 
 [if_1151:com_1440]
-layer=if_1151:com_1437
+layer=com_1437
 type=^iftype_model
 x=26
 y=35
@@ -4573,7 +4573,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1441]
-layer=if_1151:com_1437
+layer=com_1437
 type=^iftype_model
 x=78
 y=35
@@ -4584,9 +4584,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1442]
-layer=if_1151:com_1437
+layer=com_1437
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -4596,7 +4596,7 @@ xan=597
 yan=861
 
 [if_1151:com_1443]
-layer=if_1151:com_1437
+layer=com_1437
 type=^iftype_text
 x=24
 y=62
@@ -4616,7 +4616,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1444]
-layer=if_1151:com_1437
+layer=com_1437
 type=^iftype_text
 x=80
 y=62
@@ -4633,9 +4633,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1445]
-layer=if_1151:com_1437
+layer=com_1437
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -4652,13 +4652,13 @@ activecolour=0xc000
 [if_1151:com_1446]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1447]
-layer=if_1151:com_1446
+layer=com_1446
 type=^iftype_text
 x=2
 y=4
@@ -4671,7 +4671,7 @@ text=Level 57: Enchant Lvl-4 Jewelry
 colour=0xfff000
 
 [if_1151:com_1448]
-layer=if_1151:com_1446
+layer=com_1446
 type=^iftype_text
 x=3
 y=17
@@ -4684,7 +4684,7 @@ text=For use on diamond jewelry
 colour=0x6b6f33
 
 [if_1151:com_1449]
-layer=if_1151:com_1446
+layer=com_1446
 type=^iftype_model
 x=38
 y=35
@@ -4695,7 +4695,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1450]
-layer=if_1151:com_1446
+layer=com_1446
 type=^iftype_model
 x=114
 y=35
@@ -4706,7 +4706,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1451]
-layer=if_1151:com_1446
+layer=com_1446
 type=^iftype_text
 x=37
 y=62
@@ -4726,7 +4726,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1452]
-layer=if_1151:com_1446
+layer=com_1446
 type=^iftype_text
 x=116
 y=62
@@ -4745,13 +4745,13 @@ activecolour=0xc000
 [if_1151:com_1453]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1454]
-layer=if_1151:com_1453
+layer=com_1453
 type=^iftype_text
 x=3
 y=4
@@ -4764,7 +4764,7 @@ text=Level 58 : Watchtower Teleport
 colour=0xfff000
 
 [if_1151:com_1455]
-layer=if_1151:com_1453
+layer=com_1453
 type=^iftype_text
 x=3
 y=17
@@ -4777,7 +4777,7 @@ text=Teleports you to the\nWatchtower
 colour=0x6b6f33
 
 [if_1151:com_1456]
-layer=if_1151:com_1453
+layer=com_1453
 type=^iftype_model
 x=38
 y=35
@@ -4788,7 +4788,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1457]
-layer=if_1151:com_1453
+layer=com_1453
 type=^iftype_model
 x=114
 y=35
@@ -4799,7 +4799,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1458]
-layer=if_1151:com_1453
+layer=com_1453
 type=^iftype_text
 x=39
 y=62
@@ -4819,7 +4819,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1459]
-layer=if_1151:com_1453
+layer=com_1453
 type=^iftype_text
 x=115
 y=62
@@ -4838,13 +4838,13 @@ activecolour=0xc000
 [if_1151:com_1460]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1461]
-layer=if_1151:com_1460
+layer=com_1460
 type=^iftype_text
 x=3
 y=4
@@ -4857,7 +4857,7 @@ text=Level 59 : Fire Blast
 colour=0xfff000
 
 [if_1151:com_1462]
-layer=if_1151:com_1460
+layer=com_1460
 type=^iftype_text
 x=3
 y=17
@@ -4870,7 +4870,7 @@ text=A medium level Fire missile
 colour=0x6b6f33
 
 [if_1151:com_1463]
-layer=if_1151:com_1460
+layer=com_1460
 type=^iftype_model
 x=26
 y=35
@@ -4881,7 +4881,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1464]
-layer=if_1151:com_1460
+layer=com_1460
 type=^iftype_model
 x=78
 y=35
@@ -4892,9 +4892,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1465]
-layer=if_1151:com_1460
+layer=com_1460
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -4903,7 +4903,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1466]
-layer=if_1151:com_1460
+layer=com_1460
 type=^iftype_text
 x=27
 y=62
@@ -4923,7 +4923,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1467]
-layer=if_1151:com_1460
+layer=com_1460
 type=^iftype_text
 x=80
 y=62
@@ -4943,9 +4943,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1468]
-layer=if_1151:com_1460
+layer=com_1460
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -4962,13 +4962,13 @@ activecolour=0xc000
 [if_1151:com_1469]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1470]
-layer=if_1151:com_1469
+layer=com_1469
 type=^iftype_text
 x=3
 y=4
@@ -4981,7 +4981,7 @@ text=Level 60 : Charge Earth Orb
 colour=0xfff000
 
 [if_1151:com_1471]
-layer=if_1151:com_1469
+layer=com_1469
 type=^iftype_text
 x=3
 y=17
@@ -4994,7 +4994,7 @@ text=Needs to be cast on\na earth obelisk
 colour=0x6b6f33
 
 [if_1151:com_1472]
-layer=if_1151:com_1469
+layer=com_1469
 type=^iftype_model
 x=26
 y=35
@@ -5005,7 +5005,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1473]
-layer=if_1151:com_1469
+layer=com_1469
 type=^iftype_model
 x=78
 y=35
@@ -5016,9 +5016,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1474]
-layer=if_1151:com_1469
+layer=com_1469
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -5028,7 +5028,7 @@ xan=597
 yan=861
 
 [if_1151:com_1475]
-layer=if_1151:com_1469
+layer=com_1469
 type=^iftype_text
 x=24
 y=62
@@ -5048,7 +5048,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1476]
-layer=if_1151:com_1469
+layer=com_1469
 type=^iftype_text
 x=80
 y=62
@@ -5065,9 +5065,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1477]
-layer=if_1151:com_1469
+layer=com_1469
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -5084,13 +5084,13 @@ activecolour=0xc000
 [if_1151:com_1478]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1479]
-layer=if_1151:com_1478
+layer=com_1478
 type=^iftype_text
 x=3
 y=4
@@ -5103,7 +5103,7 @@ text=Level 62 : Wind Wave
 colour=0xfff000
 
 [if_1151:com_1480]
-layer=if_1151:com_1478
+layer=com_1478
 type=^iftype_text
 x=3
 y=17
@@ -5116,7 +5116,7 @@ text=A high level Air missile
 colour=0x6b6f33
 
 [if_1151:com_1481]
-layer=if_1151:com_1478
+layer=com_1478
 type=^iftype_model
 x=38
 y=35
@@ -5127,7 +5127,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1482]
-layer=if_1151:com_1478
+layer=com_1478
 type=^iftype_model
 x=114
 y=35
@@ -5138,7 +5138,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1483]
-layer=if_1151:com_1478
+layer=com_1478
 type=^iftype_text
 x=40
 y=62
@@ -5158,7 +5158,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1484]
-layer=if_1151:com_1478
+layer=com_1478
 type=^iftype_text
 x=116
 y=62
@@ -5177,13 +5177,13 @@ activecolour=0xc000
 [if_1151:com_1485]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1486]
-layer=if_1151:com_1485
+layer=com_1485
 type=^iftype_text
 x=3
 y=4
@@ -5196,7 +5196,7 @@ text=Level 63 : Charge Fire Orb
 colour=0xfff000
 
 [if_1151:com_1487]
-layer=if_1151:com_1485
+layer=com_1485
 type=^iftype_text
 x=3
 y=17
@@ -5209,7 +5209,7 @@ text=Needs to be cast on\na fire obelisk
 colour=0x6b6f33
 
 [if_1151:com_1488]
-layer=if_1151:com_1485
+layer=com_1485
 type=^iftype_model
 x=26
 y=35
@@ -5220,7 +5220,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1489]
-layer=if_1151:com_1485
+layer=com_1485
 type=^iftype_model
 x=78
 y=35
@@ -5231,9 +5231,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1490]
-layer=if_1151:com_1485
+layer=com_1485
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -5243,7 +5243,7 @@ xan=597
 yan=861
 
 [if_1151:com_1491]
-layer=if_1151:com_1485
+layer=com_1485
 type=^iftype_text
 x=24
 y=62
@@ -5263,7 +5263,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1492]
-layer=if_1151:com_1485
+layer=com_1485
 type=^iftype_text
 x=80
 y=62
@@ -5280,9 +5280,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1493]
-layer=if_1151:com_1485
+layer=com_1485
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -5299,13 +5299,13 @@ activecolour=0xc000
 [if_1151:com_1494]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1495]
-layer=if_1151:com_1494
+layer=com_1494
 type=^iftype_text
 x=3
 y=4
@@ -5318,7 +5318,7 @@ text=Level 65 : Water Wave
 colour=0xfff000
 
 [if_1151:com_1496]
-layer=if_1151:com_1494
+layer=com_1494
 type=^iftype_text
 x=3
 y=17
@@ -5331,7 +5331,7 @@ text=A high level Water missile
 colour=0x6b6f33
 
 [if_1151:com_1497]
-layer=if_1151:com_1494
+layer=com_1494
 type=^iftype_model
 x=26
 y=35
@@ -5342,7 +5342,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1498]
-layer=if_1151:com_1494
+layer=com_1494
 type=^iftype_model
 x=78
 y=35
@@ -5353,9 +5353,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1499]
-layer=if_1151:com_1494
+layer=com_1494
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -5364,7 +5364,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1500]
-layer=if_1151:com_1494
+layer=com_1494
 type=^iftype_text
 x=28
 y=62
@@ -5384,7 +5384,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1501]
-layer=if_1151:com_1494
+layer=com_1494
 type=^iftype_text
 x=80
 y=62
@@ -5404,9 +5404,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1502]
-layer=if_1151:com_1494
+layer=com_1494
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -5423,13 +5423,13 @@ activecolour=0xc000
 [if_1151:com_1503]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1504]
-layer=if_1151:com_1503
+layer=com_1503
 type=^iftype_text
 x=3
 y=4
@@ -5442,7 +5442,7 @@ text=Level 66 : Charge Air Orb
 colour=0xfff000
 
 [if_1151:com_1505]
-layer=if_1151:com_1503
+layer=com_1503
 type=^iftype_text
 x=3
 y=17
@@ -5455,7 +5455,7 @@ text=Needs to be cast on\na air obelisk
 colour=0x6b6f33
 
 [if_1151:com_1506]
-layer=if_1151:com_1503
+layer=com_1503
 type=^iftype_model
 x=26
 y=35
@@ -5466,7 +5466,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1507]
-layer=if_1151:com_1503
+layer=com_1503
 type=^iftype_model
 x=78
 y=35
@@ -5477,9 +5477,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1508]
-layer=if_1151:com_1503
+layer=com_1503
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -5489,7 +5489,7 @@ xan=597
 yan=861
 
 [if_1151:com_1509]
-layer=if_1151:com_1503
+layer=com_1503
 type=^iftype_text
 x=24
 y=62
@@ -5509,7 +5509,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1510]
-layer=if_1151:com_1503
+layer=com_1503
 type=^iftype_text
 x=80
 y=62
@@ -5526,9 +5526,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1511]
-layer=if_1151:com_1503
+layer=com_1503
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -5545,13 +5545,13 @@ activecolour=0xc000
 [if_1151:com_1512]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1513]
-layer=if_1151:com_1512
+layer=com_1512
 type=^iftype_text
 x=3
 y=4
@@ -5564,7 +5564,7 @@ text=Level 66 : Vulnerability
 colour=0xfff000
 
 [if_1151:com_1514]
-layer=if_1151:com_1512
+layer=com_1512
 type=^iftype_text
 x=3
 y=17
@@ -5577,7 +5577,7 @@ text=Reduces your opponents\ndefense by 10%
 colour=0x6b6f33
 
 [if_1151:com_1515]
-layer=if_1151:com_1512
+layer=com_1512
 type=^iftype_model
 x=26
 y=35
@@ -5588,7 +5588,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1516]
-layer=if_1151:com_1512
+layer=com_1512
 type=^iftype_model
 x=78
 y=35
@@ -5599,9 +5599,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1517]
-layer=if_1151:com_1512
+layer=com_1512
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -5610,7 +5610,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1518]
-layer=if_1151:com_1512
+layer=com_1512
 type=^iftype_text
 x=28
 y=62
@@ -5630,7 +5630,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1519]
-layer=if_1151:com_1512
+layer=com_1512
 type=^iftype_text
 x=80
 y=62
@@ -5650,9 +5650,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1520]
-layer=if_1151:com_1512
+layer=com_1512
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -5669,13 +5669,13 @@ activecolour=0xc000
 [if_1151:com_1521]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1522]
-layer=if_1151:com_1521
+layer=com_1521
 type=^iftype_text
 x=2
 y=4
@@ -5688,7 +5688,7 @@ text=Level 68: Enchant Lvl-5 Jewelry
 colour=0xfff000
 
 [if_1151:com_1523]
-layer=if_1151:com_1521
+layer=com_1521
 type=^iftype_text
 x=3
 y=17
@@ -5701,7 +5701,7 @@ text=For use on dragonstone jewelry
 colour=0x6b6f33
 
 [if_1151:com_1524]
-layer=if_1151:com_1521
+layer=com_1521
 type=^iftype_model
 x=26
 y=35
@@ -5712,7 +5712,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1525]
-layer=if_1151:com_1521
+layer=com_1521
 type=^iftype_model
 x=78
 y=35
@@ -5723,9 +5723,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1526]
-layer=if_1151:com_1521
+layer=com_1521
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -5734,7 +5734,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1527]
-layer=if_1151:com_1521
+layer=com_1521
 type=^iftype_text
 x=25
 y=62
@@ -5754,7 +5754,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1528]
-layer=if_1151:com_1521
+layer=com_1521
 type=^iftype_text
 x=77
 y=62
@@ -5774,9 +5774,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1529]
-layer=if_1151:com_1521
+layer=com_1521
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -5793,13 +5793,13 @@ activecolour=0xc000
 [if_1151:com_1530]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1531]
-layer=if_1151:com_1530
+layer=com_1530
 type=^iftype_text
 x=2
 y=4
@@ -5812,7 +5812,7 @@ text=Level 70 : Earth Wave
 colour=0xfff000
 
 [if_1151:com_1532]
-layer=if_1151:com_1530
+layer=com_1530
 type=^iftype_text
 x=3
 y=17
@@ -5825,7 +5825,7 @@ text=A high level Earth missile
 colour=0x6b6f33
 
 [if_1151:com_1533]
-layer=if_1151:com_1530
+layer=com_1530
 type=^iftype_model
 x=26
 y=35
@@ -5836,7 +5836,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1534]
-layer=if_1151:com_1530
+layer=com_1530
 type=^iftype_model
 x=78
 y=35
@@ -5847,9 +5847,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1535]
-layer=if_1151:com_1530
+layer=com_1530
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -5858,7 +5858,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1536]
-layer=if_1151:com_1530
+layer=com_1530
 type=^iftype_text
 x=28
 y=62
@@ -5878,7 +5878,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1537]
-layer=if_1151:com_1530
+layer=com_1530
 type=^iftype_text
 x=80
 y=62
@@ -5898,9 +5898,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1538]
-layer=if_1151:com_1530
+layer=com_1530
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -6026,7 +6026,7 @@ optionflags=10
 [if_1151:com_1543]
 type=^iftype_graphic
 buttontype=^if_targetbutton
-x=-111
+x=145
 y=121
 width=20
 height=20
@@ -6058,13 +6058,13 @@ optionflags=10
 [if_1151:com_1544]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1545]
-layer=if_1151:com_1544
+layer=com_1544
 type=^iftype_text
 x=2
 y=4
@@ -6077,7 +6077,7 @@ text=Level 73 : Enfeeble
 colour=0xfff000
 
 [if_1151:com_1546]
-layer=if_1151:com_1544
+layer=com_1544
 type=^iftype_text
 x=3
 y=17
@@ -6090,7 +6090,7 @@ text=Reduces you opponents\nstrength by 10%
 colour=0x6b6f33
 
 [if_1151:com_1547]
-layer=if_1151:com_1544
+layer=com_1544
 type=^iftype_model
 x=26
 y=35
@@ -6101,7 +6101,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1548]
-layer=if_1151:com_1544
+layer=com_1544
 type=^iftype_model
 x=78
 y=35
@@ -6112,9 +6112,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1549]
-layer=if_1151:com_1544
+layer=com_1544
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -6123,7 +6123,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1550]
-layer=if_1151:com_1544
+layer=com_1544
 type=^iftype_text
 x=27
 y=62
@@ -6143,7 +6143,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1551]
-layer=if_1151:com_1544
+layer=com_1544
 type=^iftype_text
 x=79
 y=62
@@ -6163,9 +6163,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1552]
-layer=if_1151:com_1544
+layer=com_1544
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -6182,13 +6182,13 @@ activecolour=0xc000
 [if_1151:com_1553]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1554]
-layer=if_1151:com_1553
+layer=com_1553
 type=^iftype_text
 x=2
 y=4
@@ -6201,7 +6201,7 @@ text=Level 75 : Fire Wave
 colour=0xfff000
 
 [if_1151:com_1555]
-layer=if_1151:com_1553
+layer=com_1553
 type=^iftype_text
 x=3
 y=17
@@ -6214,7 +6214,7 @@ text=A high level Fire mssile
 colour=0x6b6f33
 
 [if_1151:com_1556]
-layer=if_1151:com_1553
+layer=com_1553
 type=^iftype_model
 x=26
 y=35
@@ -6225,7 +6225,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1557]
-layer=if_1151:com_1553
+layer=com_1553
 type=^iftype_model
 x=78
 y=35
@@ -6236,9 +6236,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1558]
-layer=if_1151:com_1553
+layer=com_1553
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -6247,7 +6247,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1559]
-layer=if_1151:com_1553
+layer=com_1553
 type=^iftype_text
 x=28
 y=62
@@ -6267,7 +6267,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1560]
-layer=if_1151:com_1553
+layer=com_1553
 type=^iftype_text
 x=80
 y=62
@@ -6287,9 +6287,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1561]
-layer=if_1151:com_1553
+layer=com_1553
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -6307,7 +6307,7 @@ activecolour=0xc000
 type=^iftype_graphic
 buttontype=^if_targetbutton
 x=25
-y=-111
+y=145
 width=20
 height=20
 overlayer=com_1563
@@ -6338,13 +6338,13 @@ optionflags=10
 [if_1151:com_1563]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1564]
-layer=if_1151:com_1563
+layer=com_1563
 type=^iftype_text
 x=2
 y=4
@@ -6357,7 +6357,7 @@ text=Level 80 : Stun
 colour=0xfff000
 
 [if_1151:com_1565]
-layer=if_1151:com_1563
+layer=com_1563
 type=^iftype_text
 x=3
 y=17
@@ -6370,7 +6370,7 @@ text=Reduces your opponents\nattack by 10%
 colour=0x6b6f33
 
 [if_1151:com_1566]
-layer=if_1151:com_1563
+layer=com_1563
 type=^iftype_model
 x=26
 y=35
@@ -6381,7 +6381,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1567]
-layer=if_1151:com_1563
+layer=com_1563
 type=^iftype_model
 x=78
 y=35
@@ -6392,9 +6392,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1568]
-layer=if_1151:com_1563
+layer=com_1563
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -6403,7 +6403,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1569]
-layer=if_1151:com_1563
+layer=com_1563
 type=^iftype_text
 x=25
 y=62
@@ -6423,7 +6423,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1570]
-layer=if_1151:com_1563
+layer=com_1563
 type=^iftype_text
 x=77
 y=62
@@ -6443,9 +6443,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1571]
-layer=if_1151:com_1563
+layer=com_1563
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -6494,13 +6494,13 @@ optionflags=10
 [if_1151:com_1573]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1574]
-layer=if_1151:com_1573
+layer=com_1573
 type=^iftype_text
 x=2
 y=4
@@ -6513,7 +6513,7 @@ text=Level 20 : Bind
 colour=0xfff000
 
 [if_1151:com_1575]
-layer=if_1151:com_1573
+layer=com_1573
 type=^iftype_text
 x=3
 y=17
@@ -6526,7 +6526,7 @@ text=Holds your opponent\nfor 5 seconds
 colour=0x6b6f33
 
 [if_1151:com_1576]
-layer=if_1151:com_1573
+layer=com_1573
 type=^iftype_model
 x=26
 y=35
@@ -6537,7 +6537,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1577]
-layer=if_1151:com_1573
+layer=com_1573
 type=^iftype_model
 x=78
 y=35
@@ -6548,9 +6548,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1578]
-layer=if_1151:com_1573
+layer=com_1573
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -6559,7 +6559,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1579]
-layer=if_1151:com_1573
+layer=com_1573
 type=^iftype_text
 x=28
 y=62
@@ -6579,7 +6579,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1580]
-layer=if_1151:com_1573
+layer=com_1573
 type=^iftype_text
 x=80
 y=62
@@ -6599,9 +6599,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1581]
-layer=if_1151:com_1573
+layer=com_1573
 type=^iftype_text
-x=-125
+x=131
 y=62
 width=26
 height=11
@@ -6650,13 +6650,13 @@ optionflags=10
 [if_1151:com_1583]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1584]
-layer=if_1151:com_1583
+layer=com_1583
 type=^iftype_text
 x=2
 y=4
@@ -6669,7 +6669,7 @@ text=Level 50 : Snare
 colour=0xfff000
 
 [if_1151:com_1585]
-layer=if_1151:com_1583
+layer=com_1583
 type=^iftype_text
 x=3
 y=17
@@ -6682,7 +6682,7 @@ text=Holds your opponents\nfor 10 seconds
 colour=0x6b6f33
 
 [if_1151:com_1586]
-layer=if_1151:com_1583
+layer=com_1583
 type=^iftype_model
 x=26
 y=35
@@ -6693,7 +6693,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1587]
-layer=if_1151:com_1583
+layer=com_1583
 type=^iftype_model
 x=78
 y=35
@@ -6704,9 +6704,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1588]
-layer=if_1151:com_1583
+layer=com_1583
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -6715,7 +6715,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1589]
-layer=if_1151:com_1583
+layer=com_1583
 type=^iftype_text
 x=28
 y=62
@@ -6735,7 +6735,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1590]
-layer=if_1151:com_1583
+layer=com_1583
 type=^iftype_text
 x=80
 y=62
@@ -6755,9 +6755,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1591]
-layer=if_1151:com_1583
+layer=com_1583
 type=^iftype_text
-x=-125
+x=131
 y=62
 width=25
 height=11
@@ -6775,7 +6775,7 @@ activecolour=0xc000
 type=^iftype_graphic
 buttontype=^if_targetbutton
 x=1
-y=-111
+y=145
 width=20
 height=20
 overlayer=com_1593
@@ -6806,13 +6806,13 @@ optionflags=10
 [if_1151:com_1593]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1594]
-layer=if_1151:com_1593
+layer=com_1593
 type=^iftype_text
 x=2
 y=4
@@ -6825,7 +6825,7 @@ text=Level 79 : Entangle
 colour=0xfff000
 
 [if_1151:com_1595]
-layer=if_1151:com_1593
+layer=com_1593
 type=^iftype_text
 x=3
 y=17
@@ -6838,7 +6838,7 @@ text=Holds your opponent\nfor 15 seconds
 colour=0x6b6f33
 
 [if_1151:com_1596]
-layer=if_1151:com_1593
+layer=com_1593
 type=^iftype_model
 x=26
 y=35
@@ -6849,7 +6849,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1597]
-layer=if_1151:com_1593
+layer=com_1593
 type=^iftype_model
 x=78
 y=35
@@ -6860,9 +6860,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1598]
-layer=if_1151:com_1593
+layer=com_1593
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -6871,7 +6871,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1599]
-layer=if_1151:com_1593
+layer=com_1593
 type=^iftype_text
 x=28
 y=62
@@ -6891,7 +6891,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1600]
-layer=if_1151:com_1593
+layer=com_1593
 type=^iftype_text
 x=80
 y=62
@@ -6911,9 +6911,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1601]
-layer=if_1151:com_1593
+layer=com_1593
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=24
 height=11
@@ -6930,13 +6930,13 @@ activecolour=0xc000
 [if_1151:com_1602]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1603]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_text
 x=3
 y=4
@@ -6949,7 +6949,7 @@ text=Level 60 : Saradomin strike
 colour=0xfff000
 
 [if_1151:com_1604]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_text
 x=3
 y=17
@@ -6962,7 +6962,7 @@ text=Summons the power\nof Saradomin
 colour=0x6b6f33
 
 [if_1151:com_1605]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_model
 x=10
 y=35
@@ -6973,7 +6973,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1606]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_model
 x=54
 y=35
@@ -6984,7 +6984,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1607]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_model
 x=98
 y=35
@@ -6995,7 +6995,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1608]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_text
 x=12
 y=62
@@ -7015,7 +7015,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1609]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_text
 x=56
 y=62
@@ -7032,7 +7032,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1610]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_text
 x=100
 y=62
@@ -7052,9 +7052,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1611]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_model
-x=-115
+x=141
 y=39
 width=28
 height=28
@@ -7064,9 +7064,9 @@ xan=1818
 yan=1588
 
 [if_1151:com_1612]
-layer=if_1151:com_1602
+layer=com_1602
 type=^iftype_text
-x=-112
+x=144
 y=62
 width=23
 height=11
@@ -7083,13 +7083,13 @@ activecolour=0xc000
 [if_1151:com_1613]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1614]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_text
 x=3
 y=4
@@ -7102,7 +7102,7 @@ text=Level 60 : Claws of Guthix
 colour=0xfff000
 
 [if_1151:com_1615]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_text
 x=3
 y=17
@@ -7115,7 +7115,7 @@ text=Summons the power\nof Guthix
 colour=0x6b6f33
 
 [if_1151:com_1616]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_model
 x=10
 y=35
@@ -7126,7 +7126,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1617]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_model
 x=54
 y=35
@@ -7137,7 +7137,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1618]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_model
 x=98
 y=35
@@ -7148,7 +7148,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1619]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_text
 x=12
 y=62
@@ -7168,7 +7168,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1620]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_text
 x=56
 y=62
@@ -7185,7 +7185,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1621]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_text
 x=100
 y=62
@@ -7205,9 +7205,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1622]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_model
-x=-115
+x=141
 y=39
 width=28
 height=28
@@ -7217,9 +7217,9 @@ xan=1818
 yan=1588
 
 [if_1151:com_1623]
-layer=if_1151:com_1613
+layer=com_1613
 type=^iftype_text
-x=-112
+x=144
 y=62
 width=23
 height=11
@@ -7236,13 +7236,13 @@ activecolour=0xc000
 [if_1151:com_1624]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1625]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_text
 x=3
 y=4
@@ -7255,7 +7255,7 @@ text=Level 60 : Flames of Zamorak
 colour=0xfff000
 
 [if_1151:com_1626]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_text
 x=3
 y=17
@@ -7268,7 +7268,7 @@ text=Summons the power\nof Zamorak
 colour=0x6b6f33
 
 [if_1151:com_1627]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_model
 x=10
 y=35
@@ -7279,7 +7279,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1628]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_model
 x=54
 y=35
@@ -7290,7 +7290,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1629]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_model
 x=98
 y=35
@@ -7301,7 +7301,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1630]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_text
 x=12
 y=62
@@ -7321,7 +7321,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1631]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_text
 x=56
 y=62
@@ -7338,7 +7338,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1632]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_text
 x=100
 y=62
@@ -7358,9 +7358,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1633]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_model
-x=-115
+x=141
 y=39
 width=28
 height=28
@@ -7370,9 +7370,9 @@ xan=1818
 yan=1588
 
 [if_1151:com_1634]
-layer=if_1151:com_1624
+layer=com_1624
 type=^iftype_text
-x=-112
+x=144
 y=62
 width=23
 height=11
@@ -7389,13 +7389,13 @@ activecolour=0xc000
 [if_1151:com_1635]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1151:com_1636]
-layer=if_1151:com_1635
+layer=com_1635
 type=^iftype_text
 x=3
 y=4
@@ -7408,7 +7408,7 @@ text=Level 80 : Charge
 colour=0xfff000
 
 [if_1151:com_1637]
-layer=if_1151:com_1635
+layer=com_1635
 type=^iftype_text
 x=3
 y=17
@@ -7421,7 +7421,7 @@ text=Temporarily increases the power\nof the three arena spells
 colour=0x6b6f33
 
 [if_1151:com_1638]
-layer=if_1151:com_1635
+layer=com_1635
 type=^iftype_model
 x=26
 y=35
@@ -7432,7 +7432,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1639]
-layer=if_1151:com_1635
+layer=com_1635
 type=^iftype_model
 x=78
 y=35
@@ -7443,9 +7443,9 @@ zoom=900
 xan=512
 
 [if_1151:com_1640]
-layer=if_1151:com_1635
+layer=com_1635
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -7454,7 +7454,7 @@ zoom=900
 xan=512
 
 [if_1151:com_1641]
-layer=if_1151:com_1635
+layer=com_1635
 type=^iftype_text
 x=28
 y=62
@@ -7474,7 +7474,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1642]
-layer=if_1151:com_1635
+layer=com_1635
 type=^iftype_text
 x=80
 y=62
@@ -7491,9 +7491,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1151:com_1643]
-layer=if_1151:com_1635
+layer=com_1635
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=25
 height=11

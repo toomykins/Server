@@ -230,7 +230,11 @@ export default class Packet {
     }
 
     g2s() {
-        return ((this.data[this.pos++] << 8) | this.data[this.pos++]) << 24 >> 24;
+        let value = (this.data[this.pos++] << 8) | this.data[this.pos++];
+        if (value > 32767) {
+			value -= 65536;
+		}
+        return value;
     }
 
     g3() {

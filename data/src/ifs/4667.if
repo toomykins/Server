@@ -13,7 +13,7 @@ graphic=sworddecor,1
 
 [if_4667:com_4669]
 type=^iftype_graphic
-x=-91
+x=421
 y=5
 width=57
 height=13
@@ -31,7 +31,7 @@ zoom=400
 [if_4667:com_4671]
 type=^iftype_model
 buttontype=^if_button
-x=-108
+x=148
 y=13
 width=64
 height=96
@@ -40,7 +40,7 @@ zoom=400
 [if_4667:com_4672]
 type=^iftype_model
 buttontype=^if_button
-x=12
+x=268
 y=13
 width=64
 height=96
@@ -49,7 +49,7 @@ zoom=400
 [if_4667:com_4673]
 type=^iftype_model
 buttontype=^if_button
-x=-124
+x=388
 y=13
 width=64
 height=96
@@ -77,7 +77,7 @@ font=^q8
 [if_4667:com_4676]
 type=^iftype_text
 buttontype=^if_button
-x=-16
+x=240
 y=76
 width=120
 height=17
@@ -87,7 +87,7 @@ font=^q8
 [if_4667:com_4677]
 type=^iftype_text
 buttontype=^if_button
-x=104
+x=360
 y=76
 width=120
 height=17

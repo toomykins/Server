@@ -5,7 +5,7 @@ height=334
 
 [if_425:com_426]
 type=^iftype_model
-x=-121
+x=135
 y=16
 width=35
 height=32
@@ -55,7 +55,7 @@ width=145
 height=190
 
 [if_425:com_431]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -64,12 +64,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_425:com_432]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -78,12 +78,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_425:com_433]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -92,12 +92,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_425:com_434]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_graphic
 x=22
 y=103
@@ -106,7 +106,7 @@ height=24
 graphic=combaticons2,0
 
 [if_425:com_435]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_graphic
 x=21
 y=11
@@ -115,7 +115,7 @@ height=24
 graphic=combaticons2,2
 
 [if_425:com_436]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_graphic
 x=22
 y=57
@@ -124,7 +124,7 @@ height=24
 graphic=combaticons2,3
 
 [if_425:com_437]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_text
 x=78
 y=5
@@ -136,7 +136,7 @@ text=Pound
 colour=0xffff00
 
 [if_425:com_438]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_text
 x=78
 y=51
@@ -148,7 +148,7 @@ text=Pummel
 colour=0xffff00
 
 [if_425:com_439]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_text
 x=78
 y=97
@@ -160,7 +160,7 @@ text=Block
 colour=0xffff00
 
 [if_425:com_440]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_text
 x=78
 y=64
@@ -171,7 +171,7 @@ text=(Aggressive)
 colour=0xffff00
 
 [if_425:com_441]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_text
 x=78
 y=18
@@ -182,7 +182,7 @@ text=(Accurate)
 colour=0xffff00
 
 [if_425:com_442]
-layer=if_425:com_430
+layer=com_430
 type=^iftype_text
 x=78
 y=110
@@ -205,7 +205,7 @@ colour=0xffff00
 [if_425:com_444]
 type=^iftype_text
 x=82
-y=-120
+y=136
 width=36
 height=11
 font=^p11
@@ -215,7 +215,7 @@ colour=0xffff00
 [if_425:com_445]
 type=^iftype_text
 x=82
-y=-74
+y=182
 width=36
 height=11
 font=^p11

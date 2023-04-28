@@ -5,17 +5,17 @@ height=334
 
 [if_6976:com_6977]
 type=^iftype_layer
-x=-93
+x=163
 y=48
 width=194
 height=192
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 hide=yes
 
 [if_6976:com_6985]
-layer=if_6976:com_6977
+layer=com_6977
 type=^iftype_inventory
 x=8
 y=6
@@ -27,7 +27,7 @@ invyof=5
 [if_6976:com_6978]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-82
+x=430
 y=8
 width=74
 height=14
@@ -39,8 +39,8 @@ overcolour=0xffffff
 
 [if_6976:com_6979]
 type=^iftype_model
-x=-9
-y=-111
+x=247
+y=145
 width=32
 height=32
 model=model_3437
@@ -49,7 +49,7 @@ xan=512
 
 [if_6976:com_6980]
 type=^iftype_inventory
-x=-85
+x=171
 y=54
 width=5
 height=5
@@ -60,12 +60,12 @@ invyof=5
 [if_6976:com_6984]
 type=^iftype_layer
 x=13
-y=-13
+y=243
 width=93
 height=77
 
 [if_6976:com_6981]
-layer=if_6976:com_6984
+layer=com_6984
 type=^iftype_model
 buttontype=^if_button
 x=28
@@ -75,13 +75,13 @@ height=32
 overlayer=com_6977
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 zoom=2486
 xan=288
 yan=2046
 
 [if_6976:com_6982]
-layer=if_6976:com_6984
+layer=com_6984
 type=^iftype_text
 x=32
 y=25
@@ -89,13 +89,13 @@ width=4
 height=2
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 font=^p12
 activetext=Show
 colour=0xfad782
 
 [if_6976:com_6983]
-layer=if_6976:com_6984
+layer=com_6984
 type=^iftype_text
 x=23
 y=41
@@ -103,15 +103,15 @@ width=4
 height=2
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 font=^p12
 activetext=Finished
 colour=0xfad782
 
 [if_6976:com_6986]
 type=^iftype_model
-x=-9
-y=-111
+x=247
+y=145
 width=32
 height=32
 model=model_3438

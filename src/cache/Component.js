@@ -21,13 +21,12 @@ export default class Component {
     static dat = null;
     static count = 0;
     static instances = [];
-    static ids = [];
 
     static unpack(data) {
         Component.count = data.g2();
 
         let parent = -1;
-        while (data.available) {
+        while (data.available > 0) {
             let id = data.g2();
             if (id === 65535) {
                 parent = data.g2();

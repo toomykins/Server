@@ -22,7 +22,7 @@ graphic=tradebacking,0
 [if_2007:com_2010]
 type=^iftype_graphic
 x=12
-y=-116
+y=140
 width=88
 height=60
 graphic=tradebacking,0
@@ -30,7 +30,7 @@ graphic=tradebacking,0
 [if_2007:com_2011]
 type=^iftype_graphic
 x=12
-y=-56
+y=200
 width=88
 height=60
 graphic=tradebacking,0
@@ -38,7 +38,7 @@ graphic=tradebacking,0
 [if_2007:com_2012]
 type=^iftype_graphic
 x=12
-y=4
+y=260
 width=88
 height=60
 graphic=tradebacking,0
@@ -62,7 +62,7 @@ graphic=tradebacking,0
 [if_2007:com_2015]
 type=^iftype_graphic
 x=100
-y=-116
+y=140
 width=88
 height=60
 graphic=tradebacking,0
@@ -70,14 +70,14 @@ graphic=tradebacking,0
 [if_2007:com_2016]
 type=^iftype_graphic
 x=100
-y=-56
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2017]
 type=^iftype_graphic
-x=-68
+x=188
 y=20
 width=88
 height=60
@@ -86,14 +86,14 @@ graphic=tradebacking,0
 [if_2007:com_2018]
 type=^iftype_graphic
 x=100
-y=4
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2019]
 type=^iftype_graphic
-x=-68
+x=188
 y=80
 width=88
 height=60
@@ -101,31 +101,31 @@ graphic=tradebacking,0
 
 [if_2007:com_2020]
 type=^iftype_graphic
-x=-68
-y=-116
+x=188
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2021]
 type=^iftype_graphic
-x=-68
-y=-56
+x=188
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2022]
 type=^iftype_graphic
-x=-68
-y=4
+x=188
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2023]
 type=^iftype_graphic
-x=20
+x=276
 y=20
 width=88
 height=60
@@ -133,7 +133,7 @@ graphic=tradebacking,0
 
 [if_2007:com_2024]
 type=^iftype_graphic
-x=108
+x=364
 y=80
 width=88
 height=60
@@ -141,7 +141,7 @@ graphic=tradebacking,0
 
 [if_2007:com_2025]
 type=^iftype_graphic
-x=20
+x=276
 y=80
 width=88
 height=60
@@ -149,39 +149,39 @@ graphic=tradebacking,0
 
 [if_2007:com_2026]
 type=^iftype_graphic
-x=20
-y=-116
+x=276
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2027]
 type=^iftype_graphic
-x=20
-y=-56
+x=276
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2028]
 type=^iftype_graphic
-x=20
-y=4
+x=276
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2029]
 type=^iftype_graphic
-x=108
-y=-116
+x=364
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2030]
 type=^iftype_graphic
-x=108
+x=364
 y=20
 width=88
 height=60
@@ -189,23 +189,23 @@ graphic=tradebacking,0
 
 [if_2007:com_2031]
 type=^iftype_graphic
-x=108
-y=-56
+x=364
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2032]
 type=^iftype_graphic
-x=108
-y=4
+x=364
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2033]
 type=^iftype_graphic
-x=-100
+x=412
 y=20
 width=88
 height=60
@@ -213,7 +213,7 @@ graphic=tradebacking,0
 
 [if_2007:com_2034]
 type=^iftype_graphic
-x=-100
+x=412
 y=80
 width=88
 height=60
@@ -221,24 +221,24 @@ graphic=tradebacking,0
 
 [if_2007:com_2035]
 type=^iftype_graphic
-x=-100
-y=-116
+x=412
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2036]
 type=^iftype_graphic
-x=-100
-y=-56
+x=412
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_2007:com_2037]
 type=^iftype_graphic
-x=-100
-y=4
+x=412
+y=260
 width=88
 height=60
 graphic=tradebacking,0
@@ -278,7 +278,7 @@ graphic=miscgraphics,2
 [if_2007:com_2042]
 type=^iftype_graphic
 x=-3
-y=-99
+y=157
 width=36
 height=36
 graphic=miscgraphics,2
@@ -286,7 +286,7 @@ graphic=miscgraphics,2
 [if_2007:com_2043]
 type=^iftype_graphic
 x=-3
-y=-63
+y=193
 width=36
 height=36
 graphic=miscgraphics,2
@@ -294,7 +294,7 @@ graphic=miscgraphics,2
 [if_2007:com_2044]
 type=^iftype_graphic
 x=-3
-y=-27
+y=229
 width=36
 height=36
 graphic=miscgraphics,2
@@ -302,14 +302,14 @@ graphic=miscgraphics,2
 [if_2007:com_2045]
 type=^iftype_graphic
 x=-3
-y=9
+y=265
 width=36
 height=36
 graphic=miscgraphics,2
 
 [if_2007:com_2046]
 type=^iftype_graphic
-x=-33
+x=479
 y=50
 width=36
 height=36
@@ -317,7 +317,7 @@ graphic=steelborder2,1
 
 [if_2007:com_2047]
 type=^iftype_graphic
-x=-33
+x=479
 y=86
 width=36
 height=36
@@ -325,7 +325,7 @@ graphic=steelborder2,1
 
 [if_2007:com_2048]
 type=^iftype_graphic
-x=-33
+x=479
 y=122
 width=36
 height=36
@@ -333,32 +333,32 @@ graphic=steelborder2,1
 
 [if_2007:com_2049]
 type=^iftype_graphic
-x=-33
-y=-98
+x=479
+y=158
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_2007:com_2050]
 type=^iftype_graphic
-x=-33
-y=-62
+x=479
+y=194
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_2007:com_2051]
 type=^iftype_graphic
-x=-33
-y=-26
+x=479
+y=230
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_2007:com_2052]
 type=^iftype_graphic
-x=-33
-y=10
+x=479
+y=266
 width=36
 height=36
 graphic=steelborder2,1
@@ -366,7 +366,7 @@ graphic=steelborder2,1
 [if_2007:com_2053]
 type=^iftype_graphic
 x=73
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -374,79 +374,79 @@ graphic=miscgraphics,3
 [if_2007:com_2054]
 type=^iftype_graphic
 x=109
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2055]
 type=^iftype_graphic
-x=-111
-y=43
+x=145
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2056]
 type=^iftype_graphic
-x=-75
-y=43
+x=181
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2057]
 type=^iftype_graphic
-x=-39
-y=43
+x=217
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2058]
 type=^iftype_graphic
-x=-3
-y=43
+x=253
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2059]
 type=^iftype_graphic
-x=33
-y=43
+x=289
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2060]
 type=^iftype_graphic
-x=69
-y=43
+x=325
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2061]
 type=^iftype_graphic
-x=105
-y=43
+x=361
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2062]
 type=^iftype_graphic
-x=-115
-y=43
+x=397
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2063]
 type=^iftype_graphic
-x=-79
-y=43
+x=433
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -469,7 +469,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2066]
 type=^iftype_graphic
-x=-112
+x=144
 y=5
 width=36
 height=36
@@ -477,7 +477,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2067]
 type=^iftype_graphic
-x=-76
+x=180
 y=5
 width=36
 height=36
@@ -485,7 +485,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2068]
 type=^iftype_graphic
-x=-40
+x=216
 y=5
 width=36
 height=36
@@ -493,7 +493,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2069]
 type=^iftype_graphic
-x=-4
+x=252
 y=5
 width=36
 height=36
@@ -501,7 +501,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2070]
 type=^iftype_graphic
-x=32
+x=288
 y=5
 width=36
 height=36
@@ -509,7 +509,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2071]
 type=^iftype_graphic
-x=68
+x=324
 y=5
 width=36
 height=36
@@ -517,7 +517,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2072]
 type=^iftype_graphic
-x=104
+x=360
 y=5
 width=36
 height=36
@@ -525,7 +525,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2073]
 type=^iftype_graphic
-x=-116
+x=396
 y=5
 width=36
 height=36
@@ -533,7 +533,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2074]
 type=^iftype_graphic
-x=-80
+x=432
 y=5
 width=36
 height=36
@@ -541,7 +541,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2075]
 type=^iftype_graphic
-x=-4
+x=252
 y=34
 width=36
 height=36
@@ -558,7 +558,7 @@ graphic=steelborder2,0
 [if_2007:com_2077]
 type=^iftype_graphic
 x=37
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -566,14 +566,14 @@ graphic=miscgraphics,3
 [if_2007:com_2078]
 type=^iftype_graphic
 x=12
-y=34
+y=290
 width=25
 height=30
 graphic=steelborder,2
 
 [if_2007:com_2079]
 type=^iftype_graphic
-x=-37
+x=475
 y=20
 width=25
 height=30
@@ -581,7 +581,7 @@ graphic=steelborder,1
 
 [if_2007:com_2080]
 type=^iftype_graphic
-x=-73
+x=439
 y=5
 width=36
 height=36
@@ -589,23 +589,23 @@ graphic=steelborder2,0
 
 [if_2007:com_2081]
 type=^iftype_graphic
-x=-37
-y=34
+x=475
+y=290
 width=25
 height=30
 graphic=steelborder,3
 
 [if_2007:com_2082]
 type=^iftype_graphic
-x=-73
-y=43
+x=439
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_2007:com_2083]
 type=^iftype_text
-x=-66
+x=190
 y=30
 width=130
 height=14
@@ -618,7 +618,7 @@ colour=0xffff00
 [if_2007:com_2084]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-92
+x=420
 y=29
 width=68
 height=11
@@ -630,7 +630,7 @@ overcolour=0xffffff
 
 [if_2007:com_2085]
 type=^iftype_graphic
-x=32
+x=288
 y=34
 width=36
 height=36
@@ -638,7 +638,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2086]
 type=^iftype_graphic
-x=68
+x=324
 y=34
 width=36
 height=36
@@ -646,7 +646,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2087]
 type=^iftype_graphic
-x=104
+x=360
 y=34
 width=36
 height=36
@@ -654,7 +654,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2088]
 type=^iftype_graphic
-x=-116
+x=396
 y=34
 width=36
 height=36
@@ -662,7 +662,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2089]
 type=^iftype_graphic
-x=-80
+x=432
 y=34
 width=36
 height=36
@@ -670,7 +670,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2090]
 type=^iftype_graphic
-x=-53
+x=459
 y=34
 width=36
 height=36
@@ -678,7 +678,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2091]
 type=^iftype_graphic
-x=-40
+x=216
 y=34
 width=36
 height=36
@@ -686,7 +686,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2092]
 type=^iftype_graphic
-x=-76
+x=180
 y=34
 width=36
 height=36
@@ -694,7 +694,7 @@ graphic=steelborder2,0
 
 [if_2007:com_2093]
 type=^iftype_graphic
-x=-112
+x=144
 y=34
 width=36
 height=36
@@ -744,7 +744,7 @@ yan=200
 
 [if_2007:com_2099]
 type=^iftype_model
-x=-106
+x=150
 y=95
 width=32
 height=32
@@ -754,7 +754,7 @@ yan=200
 
 [if_2007:com_2100]
 type=^iftype_model
-x=-21
+x=235
 y=95
 width=32
 height=32
@@ -764,7 +764,7 @@ yan=200
 
 [if_2007:com_2101]
 type=^iftype_model
-x=64
+x=320
 y=95
 width=32
 height=32
@@ -774,7 +774,7 @@ yan=200
 
 [if_2007:com_2102]
 type=^iftype_model
-x=-107
+x=405
 y=95
 width=32
 height=32
@@ -784,8 +784,8 @@ yan=200
 
 [if_2007:com_2103]
 type=^iftype_model
-x=-106
-y=-81
+x=150
+y=175
 width=32
 height=32
 model=model_63
@@ -794,8 +794,8 @@ yan=200
 
 [if_2007:com_2104]
 type=^iftype_model
-x=-21
-y=-81
+x=235
+y=175
 width=32
 height=32
 model=model_63
@@ -804,8 +804,8 @@ yan=200
 
 [if_2007:com_2105]
 type=^iftype_model
-x=64
-y=-81
+x=320
+y=175
 width=32
 height=32
 model=model_63
@@ -824,7 +824,7 @@ yan=200
 
 [if_2007:com_2107]
 type=^iftype_model
-x=-106
+x=150
 y=95
 width=32
 height=32
@@ -834,7 +834,7 @@ yan=200
 
 [if_2007:com_2108]
 type=^iftype_model
-x=-21
+x=235
 y=95
 width=32
 height=32
@@ -844,7 +844,7 @@ yan=200
 
 [if_2007:com_2109]
 type=^iftype_model
-x=64
+x=320
 y=95
 width=32
 height=32
@@ -854,7 +854,7 @@ yan=200
 
 [if_2007:com_2110]
 type=^iftype_model
-x=-107
+x=405
 y=95
 width=32
 height=32
@@ -864,8 +864,8 @@ yan=200
 
 [if_2007:com_2111]
 type=^iftype_model
-x=-106
-y=-81
+x=150
+y=175
 width=32
 height=32
 model=model_83
@@ -874,8 +874,8 @@ yan=200
 
 [if_2007:com_2112]
 type=^iftype_model
-x=64
-y=-81
+x=320
+y=175
 width=32
 height=32
 model=model_85
@@ -885,8 +885,8 @@ yan=200
 [if_2007:com_2113]
 type=^iftype_text
 buttontype=^if_button
-x=-122
-y=34
+x=390
+y=290
 width=55
 height=14
 font=^b12
@@ -897,16 +897,16 @@ overcolour=0xff0000
 
 [if_2007:com_2114]
 type=^iftype_rectangle
-x=-122
-y=3
+x=134
+y=259
 width=243
 height=23
 fill=yes
 
 [if_2007:com_2115]
 type=^iftype_rectangle
-x=-121
-y=4
+x=135
+y=260
 width=20
 height=20
 fill=yes
@@ -914,8 +914,8 @@ colour=0x494034
 
 [if_2007:com_2116]
 type=^iftype_rectangle
-x=-101
-y=4
+x=155
+y=260
 width=20
 height=20
 fill=yes
@@ -923,8 +923,8 @@ colour=0xd6d1d1
 
 [if_2007:com_2117]
 type=^iftype_rectangle
-x=-81
-y=4
+x=175
+y=260
 width=20
 height=20
 fill=yes
@@ -932,8 +932,8 @@ colour=0x76756c
 
 [if_2007:com_2118]
 type=^iftype_rectangle
-x=-61
-y=4
+x=195
+y=260
 width=20
 height=20
 fill=yes
@@ -941,8 +941,8 @@ colour=0x2f2a2a
 
 [if_2007:com_2119]
 type=^iftype_rectangle
-x=-41
-y=4
+x=215
+y=260
 width=20
 height=20
 fill=yes
@@ -950,8 +950,8 @@ colour=0xcb823e
 
 [if_2007:com_2120]
 type=^iftype_rectangle
-x=-21
-y=4
+x=235
+y=260
 width=20
 height=20
 fill=yes
@@ -959,8 +959,8 @@ colour=0xcdad53
 
 [if_2007:com_2121]
 type=^iftype_rectangle
-x=-1
-y=4
+x=255
+y=260
 width=20
 height=20
 fill=yes
@@ -968,8 +968,8 @@ colour=0x885f29
 
 [if_2007:com_2122]
 type=^iftype_rectangle
-x=19
-y=4
+x=275
+y=260
 width=20
 height=20
 fill=yes
@@ -977,8 +977,8 @@ colour=0x50321e
 
 [if_2007:com_2123]
 type=^iftype_rectangle
-x=39
-y=4
+x=295
+y=260
 width=20
 height=20
 fill=yes
@@ -986,8 +986,8 @@ colour=0x8383
 
 [if_2007:com_2124]
 type=^iftype_rectangle
-x=59
-y=4
+x=315
+y=260
 width=20
 height=20
 fill=yes
@@ -995,8 +995,8 @@ colour=0x8300
 
 [if_2007:com_2125]
 type=^iftype_rectangle
-x=79
-y=4
+x=335
+y=260
 width=20
 height=20
 fill=yes
@@ -1004,8 +1004,8 @@ colour=0x9f2800
 
 [if_2007:com_2126]
 type=^iftype_rectangle
-x=99
-y=4
+x=355
+y=260
 width=20
 height=20
 fill=yes
@@ -1013,8 +1013,8 @@ colour=0xbe00c0
 
 [if_2007:com_2127]
 type=^iftype_text
-x=-58
-y=-23
+x=198
+y=233
 width=114
 height=14
 halign=yes
@@ -1031,228 +1031,228 @@ width=25
 height=25
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 activegraphic=headicons,1
 
 [if_2007:com_2129]
 type=^iftype_graphic
-x=-86
+x=170
 y=115
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 activegraphic=headicons,1
 
 [if_2007:com_2130]
 type=^iftype_graphic
-x=4
+x=260
 y=115
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 activegraphic=headicons,1
 
 [if_2007:com_2131]
 type=^iftype_graphic
-x=89
+x=345
 y=115
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=4
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 activegraphic=headicons,1
 
 [if_2007:com_2132]
 type=^iftype_graphic
-x=-82
+x=430
 y=115
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=5
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 activegraphic=headicons,1
 
 [if_2007:com_2133]
 type=^iftype_graphic
-x=-86
-y=-61
+x=170
+y=195
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=6
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 activegraphic=headicons,1
 
 [if_2007:com_2134]
 type=^iftype_graphic
-x=4
-y=-61
+x=260
+y=195
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=7
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 activegraphic=headicons,1
 
 [if_2007:com_2135]
 type=^iftype_graphic
-x=89
-y=-61
+x=345
+y=195
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=8
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 activegraphic=headicons,1
 
 [if_2007:com_2136]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-121
-y=4
+x=135
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2137]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-101
-y=4
+x=155
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2138]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-81
-y=4
+x=175
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2139]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-61
-y=4
+x=195
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=4
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2140]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-41
-y=4
+x=215
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=5
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2141]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-21
-y=4
+x=235
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=6
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2142]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-1
-y=4
+x=255
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=7
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2143]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=19
-y=4
+x=275
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=8
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2144]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=39
-y=4
+x=295
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=9
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2145]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=59
-y=4
+x=315
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=10
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2146]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=79
-y=4
+x=335
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=11
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2147]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=99
-y=4
+x=355
+y=260
 width=20
 height=20
 scriptc1=^op_neq
 scriptv1=12
-script1op1=^load_var,^varp_262
+script1op1=^load_var,varp_262
 activegraphic=headicons,1
 
 [if_2007:com_2148]
@@ -1264,81 +1264,81 @@ width=50
 height=50
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 
 [if_2007:com_2149]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-115
+x=141
 y=83
 width=50
 height=50
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 
 [if_2007:com_2150]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-32
+x=224
 y=82
 width=50
 height=50
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 
 [if_2007:com_2151]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=54
+x=310
 y=83
 width=50
 height=50
 scriptc1=^op_neq
 scriptv1=4
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 
 [if_2007:com_2152]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-118
+x=394
 y=84
 width=50
 height=50
 scriptc1=^op_neq
 scriptv1=5
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 
 [if_2007:com_2153]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-115
-y=-93
+x=141
+y=163
 width=50
 height=50
 scriptc1=^op_neq
 scriptv1=6
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 
 [if_2007:com_2154]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-32
-y=-94
+x=224
+y=162
 width=50
 height=50
 scriptc1=^op_neq
 scriptv1=7
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261
 
 [if_2007:com_2155]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=54
-y=-93
+x=310
+y=163
 width=50
 height=50
 scriptc1=^op_neq
 scriptv1=8
-script1op1=^load_var,^varp_261
+script1op1=^load_var,varp_261

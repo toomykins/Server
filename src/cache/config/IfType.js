@@ -1,6 +1,11 @@
 import Jagfile from '#cache/Jagfile.js';
 import Packet from '#util/Packet.js';
 import fs from 'fs';
+import PackOrder from './PackOrder.js';
+import Constants from './Constants.js';
+import SequenceType from './SequenceType.js';
+import VarpType from './VarpType.js';
+import ObjectType from './ObjectType.js';
 
 function statToName(stat) {
     switch (stat) {
@@ -90,7 +95,48 @@ export default class IfType {
 
     static config = {};
     static ids = [];
-    static count = 0;
+
+    type = 0;
+    buttontype = 0;
+    contenttype = 0;
+    width = 0;
+    height = 0;
+    scriptComparator = [];
+    scriptOperand = [];
+    script = [];
+    children = [];
+    childX = [];
+    childY = [];
+    inventoryDummy = false;
+    inventoryHasOptions = false;
+    inventoryIsUsable = false;
+    inventoryMarginX = 0;
+    inventoryMarginY = 0;
+    inventoryOffsetX = [];
+    inventoryOffsetY = [];
+    inventoryGraphic = [];
+    inventoryOptions = ['', '', '', '', ''];
+    fill = false;
+    halign = false;
+    font = 0;
+    shadow = false;
+    text = '';
+    activeText = '';
+    colour = 0;
+    activecolour = 0;
+    overcolour = 0;
+    graphic = '';
+    activeGraphic = '';
+    optionCircumfix = '';
+    optionSuffix = '';
+    optionFlags = 0;
+    option = '';
+    hide = false;
+    scrollheight = 0;
+    xan = 0;
+    yan = 0;
+    layer = -1;
+    overlayer = -1;
 
     static get(id) {
         if (IfType.config[id]) {
@@ -100,26 +146,282 @@ export default class IfType {
         return null;
     }
 
+    static max() {
+        let max = 0;
+        for (let i = 0; i < IfType.ids.length; i++) {
+            if (IfType.ids[i] > max) {
+                max = IfType.ids[i];
+            }
+        }
+        return max + 3;
+    }
+
     static loadDirectory(path) {
+        let files = fs.readdirSync(path);
+
+        for (let i = 0; i < files.length; i++) {
+            IfType.load(fs.readFileSync(`${path}/${files[i]}`, 'utf8'));
+        }
+
+        // fixup children now that all types are loaded
+        let max = IfType.max();
+        for (let i = 0; i < max; i++) {
+            const config = IfType.get(i);
+            if (!config || config.layer === config.id) {
+                continue;
+            }
+
+            const parent = IfType.get(config.layer);
+            if (!parent) {
+                continue;
+            }
+
+            if (parent.children.indexOf(config.id) === -1) {
+                parent.children.push(config.id);
+                parent.childX.push(config.x ?? 0);
+                parent.childY.push(config.y ?? 0);
+            }
+
+            delete config.x;
+            delete config.y;
+        }
+    }
+
+    static load(src) {
+        const lines = src.replaceAll('\r\n', '\n').split('\n');
+        let offset = 0;
+
+        let config;
+        while (offset < lines.length) {
+            if (!lines[offset] || lines[offset].startsWith('//')) {
+                offset++;
+                continue;
+            }
+
+            if (lines[offset].startsWith('[')) {
+                // extract text in brackets
+                let name = lines[offset].substring(1, lines[offset].indexOf(']')).split(':');
+
+                let rootLayer = -1;
+                let id = -1;
+
+                if (name.length > 1) {
+                    // component
+                    rootLayer = parseInt(PackOrder.get(name[0]));
+                    id = parseInt(PackOrder.get(name[1]));
+                } else {
+                    // root layer
+                    rootLayer = parseInt(PackOrder.get(name[0]));
+                    id = rootLayer;
+                }
+
+                IfType.ids.push(id);
+                config = new IfType();
+                config.id = id;
+                config.rootLayer = rootLayer;
+                config.layer = rootLayer; // can be overwritten by layer= in config
+
+                offset++;
+                continue;
+            }
+
+            while (lines[offset] && !lines[offset].startsWith('[')) {
+                if (!lines[offset] || lines[offset].startsWith('//')) {
+                    offset++;
+                    continue;
+                }
+
+                const parts = lines[offset].split('=');
+                const key = parts[0].trim();
+                let value = parts.slice(1).join('='); // text can have = in it
+
+                // if value contains a constant, replace all instances of it
+                // value may be permitted a comma so we need to extract the constant
+                // in a loop
+                if (value.indexOf(',') !== -1) {
+                    const values = value.split(',');
+
+                    for (let i = 0; i < values.length; i++) {
+                        let val = values[i];
+
+                        while (val.indexOf('^') !== -1) {
+                            const index = val.indexOf('^');
+                            const constant = val.substring(index);
+
+                            let match = Constants.get(constant);
+                            if (typeof match !== 'undefined') {
+                                val = val.replace(constant, match);
+                            } else {
+                                console.error(`Could not find constant for ${constant}`);
+                            }
+                        }
+
+                        values[i] = val;
+                    }
+
+                    value = values.join(',');
+                } else {
+                    while (value.indexOf('^') !== -1) {
+                        const index = value.indexOf('^');
+                        const constant = value.substring(index);
+
+                        let match = Constants.get(constant);
+                        if (typeof match !== 'undefined') {
+                            value = value.replace(constant, match);
+                        } else {
+                            console.error(`Could not find constant for ${constant}`);
+                        }
+                    }
+                }
+
+                if (key === 'layer') {
+                    config.layer = parseInt(PackOrder.get(value));
+                } else if (key === 'type') {
+                    config.type = parseInt(value);
+                } else if (key === 'buttontype') {
+                    config.buttontype = parseInt(value);
+                } else if (key === 'contenttype') {
+                    config.contenttype = parseInt(value);
+                } else if (key === 'x') {
+                    config.x = parseInt(value);
+                } else if (key === 'y') {
+                    config.y = parseInt(value);
+                } else if (key === 'width') {
+                    config.width = parseInt(value);
+                } else if (key === 'height') {
+                    config.height = parseInt(value);
+                } else if (key === 'overlayer') {
+                    config.overlayer = parseInt(PackOrder.get(value));
+                } else if (key === 'scrollheight') {
+                    config.scrollheight = parseInt(value);
+                } else if (key === 'hide') {
+                    config.hide = value === 'yes';
+                } else if (key === 'invdummy') {
+                    config.inventoryDummy = value === 'yes';
+                } else if (key === 'invoptions') {
+                    config.inventoryHasOptions = value === 'yes';
+                } else if (key === 'invusable') {
+                    config.inventoryIsUsable = value === 'yes';
+                } else if (key === 'invxof') {
+                    config.inventoryMarginX = parseInt(value);
+                } else if (key === 'invyof') {
+                    config.inventoryMarginY = parseInt(value);
+                } else if (key === 'fill') {
+                    config.fill = value === 'yes';
+                } else if (key === 'halign') {
+                    config.halign = value === 'yes';
+                } else if (key === 'font') {
+                    config.font = parseInt(value);
+                } else if (key === 'shadow') {
+                    config.shadow = value === 'yes';
+                } else if (key === 'text') {
+                    config.text = value;
+                } else if (key === 'activetext') {
+                    config.activeText = value;
+                } else if (key === 'colour') {
+                    config.colour = parseInt(value, 16);
+                } else if (key === 'activecolour') {
+                    config.activecolour = parseInt(value, 16);
+                } else if (key === 'overcolour') {
+                    config.overcolour = parseInt(value, 16);
+                } else if (key === 'graphic') {
+                    config.graphic = value;
+                } else if (key === 'activegraphic') {
+                    config.activeGraphic = value;
+                } else if (key === 'model') {
+                    config.model = parseInt(PackOrder.get(value));
+                } else if (key === 'activemodel') {
+                    config.activeModel = parseInt(PackOrder.get(value));
+                } else if (key === 'seq') {
+                    config.seq = parseInt(SequenceType.getId(value));
+                } else if (key === 'activeseq') {
+                    config.activeSeq = parseInt(SequenceType.getId(value));
+                } else if (key === 'zoom') {
+                    config.zoom = parseInt(value);
+                } else if (key === 'xan') {
+                    config.xan = parseInt(value);
+                } else if (key === 'yan') {
+                    config.yan = parseInt(value);
+                } else if (key === 'optioncircumfix') {
+                    config.optionCircumfix = value;
+                } else if (key === 'optionsuffix') {
+                    config.optionSuffix = value;
+                } else if (key === 'optionflags') {
+                    config.optionFlags = parseInt(value);
+                } else if (key === 'option') {
+                    config.option = value;
+                } else if (key.startsWith('invgraphic')) {
+                    config.inventoryOffsetX = config.inventoryOffsetX || [];
+                    config.inventoryOffsetY = config.inventoryOffsetY || [];
+                    config.inventoryGraphic = config.inventoryGraphic || [];
+
+                    // this one is split up into 3 parts, x, y, and the graphic
+                    const index = parseInt(key.substring('invgraphic'.length)) - 1;
+                    const subparts = value.split(',');
+
+                    config.inventoryOffsetX[index] = parseInt(subparts[0]);
+                    config.inventoryOffsetY[index] = parseInt(subparts[1]);
+                    config.inventoryGraphic[index] = subparts.slice(2).join(','); // the graphic actually has a comma in it
+                } else if (key.startsWith('invoption')) {
+                    const index = parseInt(key.substring('invoption'.length)) - 1;
+                    config.inventoryOptions[index] = value;
+                } else if (key.startsWith('scriptc')) {
+                    config.scriptComparator = config.scriptComparator || [];
+
+                    const index = parseInt(key.substring('scriptc'.length)) - 1;
+                    config.scriptComparator[index] = parseInt(value);
+                } else if (key.startsWith('scriptv')) {
+                    config.scriptOperand = config.scriptOperand || [];
+
+                    const index = parseInt(key.substring('scriptv'.length)) - 1;
+                    config.scriptOperand[index] = parseInt(value);
+                } else if (key.startsWith('script')) {
+                    // format: script<id>op<opcode>=<value>
+
+                    const index = key.substring('script'.length, key.indexOf('op')) - 1;
+                    const opIndex = key.substring(key.indexOf('op') + 2) - 1;
+                    const params = value.split(',');
+
+                    config.script = config.script || [];
+                    config.script[index] = config.script[index] || [];
+
+                    config.script[index].push(parseInt(params[0]));
+
+                    for (let i = 1; i < params.length; i++) {
+                        if (PackOrder.get(params[i])) {
+                            config.script[index].push(PackOrder.get(params[i]));
+                        } else if (VarpType.getId(params[i]) !== -1) {
+                            config.script[index].push(VarpType.getId(params[i]));
+                        } else if (ObjectType.getId(params[i]) !== -1) {
+                            config.script[index].push(ObjectType.getId(params[i]));
+                        } else {
+                            if (isNaN(params[i])) {
+                                continue;
+                            }
+
+                            config.script[index].push(parseInt(params[i]));
+                        }
+                    }
+                } else {
+                    console.log(`Unrecognized if config "${key}" in ${config.namedId}`);
+                }
+
+                offset++;
+            }
+
+            IfType.config[config.id] = config;
+        }
     }
 
     static pack() {
-        const dat = new Packet();
+        let max = IfType.max();
 
-        let max = 0;
-        for (let i = 0; i < IfType.count; i++) {
-            const config = IfType.get(i);
-            if (config && config.id > max) {
-                max = config.id;
-            }
-        }
+        const dat = new Packet();
         dat.p2(max);
 
-        // TODO: this works, but the original cache doesn't include root layers in ascending order
-        for (let i = 0; i < IfType.count; i++) {
+        for (let i = 0; i < max; i++) {
             const config = IfType.get(i);
-            if (!config || config.layer !== config.id) {
-                // we only want root layers
+            if (!config || config.type !== IfType.TYPE_LAYER || config.rootLayer != config.id) {
                 continue;
             }
 
@@ -141,10 +443,12 @@ export default class IfType {
         dat.p2(config.id);
         dat.pdata(packed);
 
+        // ----
+
         if (config.type === IfType.TYPE_LAYER) {
             for (let i = 0; i < config.children.length; i++) {
                 const child = IfType.get(config.children[i]);
-                IfType.packInner(dat, child, config.layer);
+                IfType.packInner(dat, child, config.id);
             }
         }
     }
@@ -158,7 +462,7 @@ export default class IfType {
         dat.p2(this.width);
         dat.p2(this.height);
 
-        if (typeof this.overlayer !== 'undefined') {
+        if (this.overlayer != -1) {
             dat.p1((this.overlayer >> 8) + 1);
             dat.p1(this.overlayer & 0xFF);
         } else {
@@ -173,10 +477,14 @@ export default class IfType {
 
         dat.p1(this.script.length);
         for (let i = 0; i < this.script.length; ++i) {
-            dat.p2(this.script[i].length);
+            dat.p2(this.script[i].length + 1);
 
-            for (let j = 0; j < this.script[i].length; ++j) {
-                dat.p2(this.script[i][j]);
+            if (this.script[i].length) {
+                for (let j = 0; j < this.script[i].length; ++j) {
+                    dat.p2(this.script[i][j]);
+                }
+
+                dat.p2(0);
             }
         }
 
@@ -200,9 +508,9 @@ export default class IfType {
             dat.p1(this.inventoryMarginY);
 
             for (let i = 0; i < 20; i++) {
-                dat.pbool(typeof this.inventoryGraphic[i] !== 'undefined');
+                dat.pbool(this.inventoryGraphic[i]);
 
-                if (typeof this.inventoryGraphic[i] !== 'undefined') {
+                if (this.inventoryGraphic[i]) {
                     dat.p2(this.inventoryOffsetX[i]);
                     dat.p2(this.inventoryOffsetY[i]);
                     dat.pjstr(this.inventoryGraphic[i]);
@@ -304,7 +612,7 @@ export default class IfType {
     }
 
     static unpack(dat) {
-        IfType.count = dat.g2();
+        let _count = dat.g2();
 
         let rootLayer = -1;
         let layer = -1;
@@ -321,9 +629,11 @@ export default class IfType {
                 rootLayer = layer;
             }
 
+            IfType.ids.push(id);
             config.id = id;
             config.rootLayer = rootLayer;
             config.layer = layer;
+
             config.type = dat.g1();
             config.buttontype = dat.g1();
             config.contenttype = dat.g2();
@@ -349,18 +659,16 @@ export default class IfType {
                 let opcodeCount = dat.g2();
                 config.script[i] = [];
 
-                for (let j = 0; j < opcodeCount; ++j) {
+                for (let j = 0; j < opcodeCount - 1; ++j) {
                     config.script[i][j] = dat.g2();
                 }
+
+                dat.g2(); // should be 0
             }
 
             if (config.type === IfType.TYPE_LAYER) {
                 config.scrollheight = dat.g2();
                 config.hide = dat.gbool();
-
-                config.children = [];
-                config.childX = [];
-                config.childY = [];
 
                 let childrenCount = dat.g1();
                 for (let i = 0; i < childrenCount; ++i) {
@@ -377,10 +685,6 @@ export default class IfType {
                 config.inventoryMarginX = dat.g1();
                 config.inventoryMarginY = dat.g1();
 
-                config.inventoryOffsetX = [];
-                config.inventoryOffsetY = [];
-                config.inventoryGraphic = [];
-
                 for (let i = 0; i < 20; ++i) {
                     let hasSprite = dat.gbool();
                     if (hasSprite) {
@@ -390,7 +694,6 @@ export default class IfType {
                     }
                 }
 
-                config.inventoryOptions = [];
                 for (let i = 0; i < 5; ++i) {
                     config.inventoryOptions[i] = dat.gjstr();
                 }
@@ -458,7 +761,6 @@ export default class IfType {
                 config.inventoryMarginY = dat.g2s();
                 config.inventoryHasOptions = dat.gbool();
 
-                config.inventoryOptions = [];
                 for (let i = 0; i < 5; i++) {
                     config.inventoryOptions[i] = dat.gjstr();
                 }
@@ -481,7 +783,9 @@ export default class IfType {
     static dumpToDirectory(path) {
         fs.mkdirSync(path, { recursive: true });
 
-        for (let i = 0; i < IfType.count; i++) {
+        let max = IfType.max();
+
+        for (let i = 0; i < max; i++) {
             const config = IfType.get(i);
             if (!config || config.layer !== config.id) {
                 // we only want root layers
@@ -502,7 +806,7 @@ export default class IfType {
         }
 
         if (layer !== null && config.rootLayer !== layer) {
-            def += `layer=if_${config.rootLayer}:com_${layer}\n`;
+            def += `layer=com_${layer}\n`;
         }
 
         if (config.type === IfType.TYPE_LAYER) {
@@ -550,7 +854,7 @@ export default class IfType {
         def += `width=${config.width}\n`;
         def += `height=${config.height}\n`;
 
-        if (typeof config.overlayer !== 'undefined') {
+        if (config.overlayer !== -1) {
             def += `overlayer=com_${config.overlayer}\n`;
         }
 
@@ -603,7 +907,7 @@ export default class IfType {
                         def += `^load_inv_count,com_${config.script[i][++j]},obj_${config.script[i][++j]}`;
                         break;
                     case IfType.LOAD_VAR:
-                        def += `^load_var,^varp_${config.script[i][++j]}`;
+                        def += `^load_var,varp_${config.script[i][++j]}`;
                         break;
                     case IfType.LOAD_STAT_XP_REMAINING:
                         def += `^load_stat_xp_remaining,^${statToName(config.script[i][++j])}`;
@@ -627,7 +931,7 @@ export default class IfType {
                         def += `^load_runweight`;
                         break;
                     case IfType.LOAD_BOOL:
-                        def += `^load_bool,^varp_${config.script[i][++j]},${config.script[i][++j]}`;
+                        def += `^load_bool,varp_${config.script[i][++j]},${config.script[i][++j]}`;
                         break;
                     default:
                         def += `${config.script[i][j]}`;
@@ -835,30 +1139,13 @@ export default class IfType {
         if (config.type === IfType.TYPE_LAYER) {
             for (let i = 0; i < config.children.length; i++) {
                 def += '\n';
-                def += IfType.dumpInner(IfType.get(config.children[i]), config.id, config.childX[i], config.childY[i]);
+                if (!IfType.get(config.children[i])) {
+                    console.log('Missing child: ' + config.children[i]);
+                }
+                def += IfType.dumpInner(IfType.get(config.children[i]), config.id, config.childX[i] ?? 0, config.childY[i] ?? 0);
             }
         }
 
         return def;
     }
 }
-
-// let data = Jagfile.fromFile('data/cache/interface').read('data', true);
-// IfType.unpack(data);
-// IfType.dumpToDirectory('data/src/ifs');
-
-// fs.writeFileSync('dump/test', JSON.stringify(IfType.ids, null, 2));
-
-// data.toFile('dump/old');
-// let packed = IfType.pack();
-// packed.toFile('dump/new');
-
-// IfType.config = {};
-// IfType.ids = [];
-
-// IfType.unpack(packed);
-// fs.writeFileSync('dump/test2', JSON.stringify(IfType.ids, null, 2));
-
-// let test = new Jagfile();
-// test.write('data', IfType.pack());
-// test.pack().toFile('data/cache/interface');

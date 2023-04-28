@@ -23,6 +23,10 @@ export default class PackOrder {
     }
 
     static get(name) {
+        if (!name) {
+            return null;
+        }
+
         if (name[0] === '^') {
             name = name.substring(1);
         }

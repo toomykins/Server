@@ -22,7 +22,7 @@ graphic=tradebacking,0
 [if_3559:com_3562]
 type=^iftype_graphic
 x=12
-y=-116
+y=140
 width=88
 height=60
 graphic=tradebacking,0
@@ -30,7 +30,7 @@ graphic=tradebacking,0
 [if_3559:com_3563]
 type=^iftype_graphic
 x=12
-y=-56
+y=200
 width=88
 height=60
 graphic=tradebacking,0
@@ -38,7 +38,7 @@ graphic=tradebacking,0
 [if_3559:com_3564]
 type=^iftype_graphic
 x=12
-y=4
+y=260
 width=88
 height=60
 graphic=tradebacking,0
@@ -62,7 +62,7 @@ graphic=tradebacking,0
 [if_3559:com_3567]
 type=^iftype_graphic
 x=100
-y=-116
+y=140
 width=88
 height=60
 graphic=tradebacking,0
@@ -70,14 +70,14 @@ graphic=tradebacking,0
 [if_3559:com_3568]
 type=^iftype_graphic
 x=100
-y=-56
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3569]
 type=^iftype_graphic
-x=-68
+x=188
 y=20
 width=88
 height=60
@@ -86,14 +86,14 @@ graphic=tradebacking,0
 [if_3559:com_3570]
 type=^iftype_graphic
 x=100
-y=4
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3571]
 type=^iftype_graphic
-x=-68
+x=188
 y=80
 width=88
 height=60
@@ -101,31 +101,31 @@ graphic=tradebacking,0
 
 [if_3559:com_3572]
 type=^iftype_graphic
-x=-68
-y=-116
+x=188
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3573]
 type=^iftype_graphic
-x=-68
-y=-56
+x=188
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3574]
 type=^iftype_graphic
-x=-68
-y=4
+x=188
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3575]
 type=^iftype_graphic
-x=20
+x=276
 y=20
 width=88
 height=60
@@ -133,7 +133,7 @@ graphic=tradebacking,0
 
 [if_3559:com_3576]
 type=^iftype_graphic
-x=108
+x=364
 y=80
 width=88
 height=60
@@ -141,7 +141,7 @@ graphic=tradebacking,0
 
 [if_3559:com_3577]
 type=^iftype_graphic
-x=20
+x=276
 y=80
 width=88
 height=60
@@ -149,39 +149,39 @@ graphic=tradebacking,0
 
 [if_3559:com_3578]
 type=^iftype_graphic
-x=20
-y=-116
+x=276
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3579]
 type=^iftype_graphic
-x=20
-y=-56
+x=276
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3580]
 type=^iftype_graphic
-x=20
-y=4
+x=276
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3581]
 type=^iftype_graphic
-x=108
-y=-116
+x=364
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3582]
 type=^iftype_graphic
-x=108
+x=364
 y=20
 width=88
 height=60
@@ -189,23 +189,23 @@ graphic=tradebacking,0
 
 [if_3559:com_3583]
 type=^iftype_graphic
-x=108
-y=-56
+x=364
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3584]
 type=^iftype_graphic
-x=108
-y=4
+x=364
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3585]
 type=^iftype_graphic
-x=-100
+x=412
 y=20
 width=88
 height=60
@@ -213,7 +213,7 @@ graphic=tradebacking,0
 
 [if_3559:com_3586]
 type=^iftype_graphic
-x=-100
+x=412
 y=80
 width=88
 height=60
@@ -221,24 +221,24 @@ graphic=tradebacking,0
 
 [if_3559:com_3587]
 type=^iftype_graphic
-x=-100
-y=-116
+x=412
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3588]
 type=^iftype_graphic
-x=-100
-y=-56
+x=412
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_3559:com_3589]
 type=^iftype_graphic
-x=-100
-y=4
+x=412
+y=260
 width=88
 height=60
 graphic=tradebacking,0
@@ -278,7 +278,7 @@ graphic=miscgraphics,2
 [if_3559:com_3594]
 type=^iftype_graphic
 x=-3
-y=-99
+y=157
 width=36
 height=36
 graphic=miscgraphics,2
@@ -286,7 +286,7 @@ graphic=miscgraphics,2
 [if_3559:com_3595]
 type=^iftype_graphic
 x=-3
-y=-63
+y=193
 width=36
 height=36
 graphic=miscgraphics,2
@@ -294,7 +294,7 @@ graphic=miscgraphics,2
 [if_3559:com_3596]
 type=^iftype_graphic
 x=-3
-y=-27
+y=229
 width=36
 height=36
 graphic=miscgraphics,2
@@ -302,14 +302,14 @@ graphic=miscgraphics,2
 [if_3559:com_3597]
 type=^iftype_graphic
 x=-3
-y=9
+y=265
 width=36
 height=36
 graphic=miscgraphics,2
 
 [if_3559:com_3598]
 type=^iftype_graphic
-x=-33
+x=479
 y=50
 width=36
 height=36
@@ -317,7 +317,7 @@ graphic=steelborder2,1
 
 [if_3559:com_3599]
 type=^iftype_graphic
-x=-33
+x=479
 y=86
 width=36
 height=36
@@ -325,7 +325,7 @@ graphic=steelborder2,1
 
 [if_3559:com_3600]
 type=^iftype_graphic
-x=-33
+x=479
 y=122
 width=36
 height=36
@@ -333,32 +333,32 @@ graphic=steelborder2,1
 
 [if_3559:com_3601]
 type=^iftype_graphic
-x=-33
-y=-98
+x=479
+y=158
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_3559:com_3602]
 type=^iftype_graphic
-x=-33
-y=-62
+x=479
+y=194
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_3559:com_3603]
 type=^iftype_graphic
-x=-33
-y=-26
+x=479
+y=230
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_3559:com_3604]
 type=^iftype_graphic
-x=-33
-y=10
+x=479
+y=266
 width=36
 height=36
 graphic=steelborder2,1
@@ -366,7 +366,7 @@ graphic=steelborder2,1
 [if_3559:com_3605]
 type=^iftype_graphic
 x=73
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -374,79 +374,79 @@ graphic=miscgraphics,3
 [if_3559:com_3606]
 type=^iftype_graphic
 x=109
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3607]
 type=^iftype_graphic
-x=-111
-y=43
+x=145
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3608]
 type=^iftype_graphic
-x=-75
-y=43
+x=181
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3609]
 type=^iftype_graphic
-x=-39
-y=43
+x=217
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3610]
 type=^iftype_graphic
-x=-3
-y=43
+x=253
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3611]
 type=^iftype_graphic
-x=33
-y=43
+x=289
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3612]
 type=^iftype_graphic
-x=69
-y=43
+x=325
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3613]
 type=^iftype_graphic
-x=105
-y=43
+x=361
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3614]
 type=^iftype_graphic
-x=-115
-y=43
+x=397
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3615]
 type=^iftype_graphic
-x=-79
-y=43
+x=433
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -469,7 +469,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3618]
 type=^iftype_graphic
-x=-112
+x=144
 y=5
 width=36
 height=36
@@ -477,7 +477,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3619]
 type=^iftype_graphic
-x=-76
+x=180
 y=5
 width=36
 height=36
@@ -485,7 +485,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3620]
 type=^iftype_graphic
-x=-40
+x=216
 y=5
 width=36
 height=36
@@ -493,7 +493,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3621]
 type=^iftype_graphic
-x=-4
+x=252
 y=5
 width=36
 height=36
@@ -501,7 +501,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3622]
 type=^iftype_graphic
-x=32
+x=288
 y=5
 width=36
 height=36
@@ -509,7 +509,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3623]
 type=^iftype_graphic
-x=68
+x=324
 y=5
 width=36
 height=36
@@ -517,7 +517,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3624]
 type=^iftype_graphic
-x=104
+x=360
 y=5
 width=36
 height=36
@@ -525,7 +525,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3625]
 type=^iftype_graphic
-x=-116
+x=396
 y=5
 width=36
 height=36
@@ -533,7 +533,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3626]
 type=^iftype_graphic
-x=-80
+x=432
 y=5
 width=36
 height=36
@@ -541,7 +541,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3627]
 type=^iftype_graphic
-x=-4
+x=252
 y=34
 width=36
 height=36
@@ -558,7 +558,7 @@ graphic=steelborder2,0
 [if_3559:com_3629]
 type=^iftype_graphic
 x=37
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -566,14 +566,14 @@ graphic=miscgraphics,3
 [if_3559:com_3630]
 type=^iftype_graphic
 x=12
-y=34
+y=290
 width=25
 height=30
 graphic=steelborder,2
 
 [if_3559:com_3631]
 type=^iftype_graphic
-x=-37
+x=475
 y=20
 width=25
 height=30
@@ -581,7 +581,7 @@ graphic=steelborder,1
 
 [if_3559:com_3632]
 type=^iftype_graphic
-x=-73
+x=439
 y=5
 width=36
 height=36
@@ -589,23 +589,23 @@ graphic=steelborder2,0
 
 [if_3559:com_3633]
 type=^iftype_graphic
-x=-37
-y=34
+x=475
+y=290
 width=25
 height=30
 graphic=steelborder,3
 
 [if_3559:com_3634]
 type=^iftype_graphic
-x=-73
-y=43
+x=439
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3635]
 type=^iftype_graphic
-x=32
+x=288
 y=34
 width=36
 height=36
@@ -613,7 +613,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3636]
 type=^iftype_graphic
-x=68
+x=324
 y=34
 width=36
 height=36
@@ -621,7 +621,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3637]
 type=^iftype_graphic
-x=104
+x=360
 y=34
 width=36
 height=36
@@ -629,7 +629,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3638]
 type=^iftype_graphic
-x=-116
+x=396
 y=34
 width=36
 height=36
@@ -637,7 +637,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3639]
 type=^iftype_graphic
-x=-80
+x=432
 y=34
 width=36
 height=36
@@ -645,7 +645,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3640]
 type=^iftype_graphic
-x=-53
+x=459
 y=34
 width=36
 height=36
@@ -653,7 +653,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3641]
 type=^iftype_graphic
-x=-40
+x=216
 y=34
 width=36
 height=36
@@ -661,7 +661,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3642]
 type=^iftype_graphic
-x=-76
+x=180
 y=34
 width=36
 height=36
@@ -669,7 +669,7 @@ graphic=steelborder2,0
 
 [if_3559:com_3643]
 type=^iftype_graphic
-x=-112
+x=144
 y=34
 width=36
 height=36
@@ -728,8 +728,8 @@ colour=0xffff00
 [if_3559:com_3650]
 type=^iftype_model
 contenttype=327
-x=-66
-y=-101
+x=190
+y=155
 width=136
 height=168
 model=model_2930
@@ -740,8 +740,8 @@ xan=150
 type=^iftype_rectangle
 buttontype=^if_button
 contenttype=326
-x=-33
-y=10
+x=223
+y=266
 width=66
 height=31
 fill=yes
@@ -749,8 +749,8 @@ option=Accept
 
 [if_3559:com_3652]
 type=^iftype_text
-x=-19
-y=18
+x=237
+y=274
 width=39
 height=14
 font=^p12
@@ -760,32 +760,32 @@ colour=0xc000
 
 [if_3559:com_3653]
 type=^iftype_graphic
-x=-39
-y=4
+x=217
+y=260
 width=25
 height=30
 graphic=steelborder,0
 
 [if_3559:com_3654]
 type=^iftype_graphic
-x=14
-y=4
+x=270
+y=260
 width=25
 height=30
 graphic=steelborder,1
 
 [if_3559:com_3655]
 type=^iftype_graphic
-x=-39
-y=17
+x=217
+y=273
 width=25
 height=30
 graphic=steelborder,2
 
 [if_3559:com_3656]
 type=^iftype_graphic
-x=14
-y=17
+x=270
+y=273
 width=25
 height=30
 graphic=steelborder,3
@@ -794,7 +794,7 @@ graphic=steelborder,3
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=314
-x=70
+x=326
 y=74
 width=45
 height=36
@@ -804,7 +804,7 @@ option=Recolour hair
 [if_3559:com_3658]
 type=^iftype_text
 x=90
-y=-105
+y=151
 width=31
 height=14
 font=^p12
@@ -839,7 +839,7 @@ type=^iftype_graphic
 buttontype=^if_button
 contenttype=304
 x=27
-y=-118
+y=138
 width=45
 height=36
 graphic=leftarrow,0
@@ -850,7 +850,7 @@ type=^iftype_graphic
 buttontype=^if_button
 contenttype=306
 x=27
-y=-83
+y=173
 width=45
 height=36
 graphic=leftarrow,0
@@ -861,7 +861,7 @@ type=^iftype_graphic
 buttontype=^if_button
 contenttype=308
 x=27
-y=-48
+y=208
 width=45
 height=36
 graphic=leftarrow,0
@@ -872,7 +872,7 @@ type=^iftype_graphic
 buttontype=^if_button
 contenttype=310
 x=27
-y=-13
+y=243
 width=45
 height=36
 graphic=leftarrow,0
@@ -883,7 +883,7 @@ type=^iftype_graphic
 buttontype=^if_button
 contenttype=312
 x=27
-y=22
+y=278
 width=45
 height=36
 graphic=leftarrow,0
@@ -893,7 +893,7 @@ option=Change feet
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=301
-x=-116
+x=140
 y=68
 width=45
 height=36
@@ -904,7 +904,7 @@ option=Change head
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=303
-x=-116
+x=140
 y=103
 width=45
 height=36
@@ -915,8 +915,8 @@ option=Change jaw
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=305
-x=-116
-y=-118
+x=140
+y=138
 width=45
 height=36
 graphic=rightarrow,0
@@ -926,8 +926,8 @@ option=Change torso
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=307
-x=-116
-y=-83
+x=140
+y=173
 width=45
 height=36
 graphic=rightarrow,0
@@ -937,8 +937,8 @@ option=Change arms
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=309
-x=-116
-y=-48
+x=140
+y=208
 width=45
 height=36
 graphic=rightarrow,0
@@ -948,8 +948,8 @@ option=Change hands
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=311
-x=-116
-y=-13
+x=140
+y=243
 width=45
 height=36
 graphic=rightarrow,0
@@ -959,8 +959,8 @@ option=Change legs
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=313
-x=-116
-y=22
+x=140
+y=278
 width=45
 height=36
 graphic=rightarrow,0
@@ -969,7 +969,7 @@ option=Change feet
 [if_3559:com_3673]
 type=^iftype_text
 x=90
-y=-72
+y=184
 width=29
 height=14
 font=^p12
@@ -980,7 +980,7 @@ colour=0xffff00
 [if_3559:com_3674]
 type=^iftype_text
 x=91
-y=-2
+y=254
 width=27
 height=14
 font=^p12
@@ -1002,7 +1002,7 @@ colour=0xffff00
 [if_3559:com_3676]
 type=^iftype_text
 x=88
-y=-37
+y=219
 width=35
 height=14
 font=^p12
@@ -1013,7 +1013,7 @@ colour=0xffff00
 [if_3559:com_3677]
 type=^iftype_text
 x=91
-y=32
+y=288
 width=25
 height=14
 font=^p12
@@ -1036,7 +1036,7 @@ colour=0xffff00
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=315
-x=-72
+x=440
 y=74
 width=45
 height=36
@@ -1047,8 +1047,8 @@ option=Recolour hair
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=318
-x=70
-y=-112
+x=326
+y=144
 width=45
 height=36
 graphic=leftarrow,0
@@ -1058,7 +1058,7 @@ option=Recolour legs
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=316
-x=70
+x=326
 y=109
 width=45
 height=36
@@ -1069,8 +1069,8 @@ option=Recolour torso
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=320
-x=70
-y=-77
+x=326
+y=179
 width=45
 height=36
 graphic=leftarrow,0
@@ -1080,8 +1080,8 @@ option=Recolour feet
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=322
-x=70
-y=-42
+x=326
+y=214
 width=45
 height=36
 graphic=leftarrow,0
@@ -1102,7 +1102,7 @@ colour=0xffffff
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=317
-x=-72
+x=440
 y=109
 width=45
 height=36
@@ -1111,7 +1111,7 @@ option=Recolour torso
 
 [if_3559:com_3686]
 type=^iftype_text
-x=-121
+x=391
 y=55
 width=33
 height=11
@@ -1124,8 +1124,8 @@ colour=0xffffff
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=319
-x=-72
-y=-112
+x=440
+y=144
 width=45
 height=36
 graphic=rightarrow,0
@@ -1135,8 +1135,8 @@ option=Recolour legs
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=321
-x=-72
-y=-77
+x=440
+y=179
 width=45
 height=36
 graphic=rightarrow,0
@@ -1146,8 +1146,8 @@ option=Recolour feet
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=323
-x=-72
-y=-42
+x=440
+y=214
 width=45
 height=36
 graphic=rightarrow,0
@@ -1155,7 +1155,7 @@ option=Recolour skin
 
 [if_3559:com_3690]
 type=^iftype_text
-x=-118
+x=394
 y=86
 width=22
 height=14
@@ -1166,7 +1166,7 @@ colour=0xffff00
 
 [if_3559:com_3691]
 type=^iftype_text
-x=-122
+x=390
 y=121
 width=31
 height=14
@@ -1177,8 +1177,8 @@ colour=0xffff00
 
 [if_3559:com_3692]
 type=^iftype_text
-x=-120
-y=-101
+x=392
+y=155
 width=27
 height=14
 font=^p12
@@ -1188,8 +1188,8 @@ colour=0xffff00
 
 [if_3559:com_3693]
 type=^iftype_text
-x=-119
-y=-31
+x=393
+y=225
 width=23
 height=14
 font=^p12
@@ -1199,8 +1199,8 @@ colour=0xffff00
 
 [if_3559:com_3694]
 type=^iftype_text
-x=-119
-y=-65
+x=393
+y=191
 width=25
 height=14
 font=^p12
@@ -1210,24 +1210,24 @@ colour=0xffff00
 
 [if_3559:com_3695]
 type=^iftype_graphic
-x=-21
-y=-11
+x=235
+y=245
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_3559:com_3696]
 type=^iftype_graphic
-x=-20
-y=26
+x=236
+y=282
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_3559:com_3697]
 type=^iftype_text
-x=-122
-y=2
+x=390
+y=258
 width=36
 height=11
 font=^p11
@@ -1239,8 +1239,8 @@ colour=0xffffff
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=324
-x=69
-y=15
+x=325
+y=271
 width=72
 height=36
 graphic=combatboxes,0
@@ -1251,8 +1251,8 @@ option=Male
 type=^iftype_graphic
 buttontype=^if_button
 contenttype=325
-x=-95
-y=15
+x=417
+y=271
 width=72
 height=36
 graphic=combatboxes,0
@@ -1261,8 +1261,8 @@ option=Female
 
 [if_3559:com_3700]
 type=^iftype_text
-x=92
-y=25
+x=348
+y=281
 width=26
 height=14
 font=^p12
@@ -1272,8 +1272,8 @@ colour=0xffff00
 
 [if_3559:com_3701]
 type=^iftype_text
-x=-77
-y=25
+x=435
+y=281
 width=39
 height=14
 font=^p12

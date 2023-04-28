@@ -30,7 +30,7 @@ graphic=miscgraphics,2
 [if_1644:com_1648]
 type=^iftype_graphic
 x=78
-y=-110
+y=146
 width=36
 height=36
 graphic=miscgraphics,2
@@ -46,14 +46,14 @@ graphic=miscgraphics,2
 [if_1644:com_1650]
 type=^iftype_graphic
 x=22
-y=-102
+y=154
 width=36
 height=36
 graphic=miscgraphics,2
 
 [if_1644:com_1651]
 type=^iftype_graphic
-x=-122
+x=134
 y=118
 width=36
 height=36
@@ -61,8 +61,8 @@ graphic=miscgraphics,2
 
 [if_1644:com_1652]
 type=^iftype_graphic
-x=-122
-y=-102
+x=134
+y=154
 width=36
 height=36
 graphic=miscgraphics,2
@@ -149,7 +149,7 @@ graphic=miscgraphics,0
 
 [if_1644:com_1663]
 type=^iftype_graphic
-x=-122
+x=134
 y=82
 width=36
 height=36
@@ -166,7 +166,7 @@ graphic=miscgraphics,0
 [if_1644:com_1665]
 type=^iftype_graphic
 x=78
-y=-94
+y=162
 width=36
 height=36
 graphic=miscgraphics,0
@@ -174,15 +174,15 @@ graphic=miscgraphics,0
 [if_1644:com_1666]
 type=^iftype_graphic
 x=22
-y=-94
+y=162
 width=36
 height=36
 graphic=miscgraphics,0
 
 [if_1644:com_1667]
 type=^iftype_graphic
-x=-122
-y=-94
+x=134
+y=162
 width=36
 height=36
 graphic=miscgraphics,0
@@ -190,13 +190,13 @@ graphic=miscgraphics,0
 [if_1644:com_1668]
 type=^iftype_layer
 x=8
-y=-56
+y=200
 width=161
 height=57
 scrollheight=110
 
 [if_1644:com_1672]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_rectangle
 x=2
 y=2
@@ -205,7 +205,7 @@ height=130
 fill=yes
 
 [if_1644:com_1673]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=10
 y=3
@@ -218,7 +218,7 @@ text=Attack bonus
 colour=0xffff00
 
 [if_1644:com_1674]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=84
 y=3
@@ -231,7 +231,7 @@ text=Defence bonus
 colour=0xffff00
 
 [if_1644:com_1675]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=16
 y=15
@@ -244,7 +244,7 @@ text=Stab: +120
 colour=0x6b6f33
 
 [if_1644:com_1676]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=15
 y=27
@@ -257,7 +257,7 @@ text=Slash:+120
 colour=0x6b6f33
 
 [if_1644:com_1677]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=14
 y=39
@@ -270,7 +270,7 @@ text=Crush:+120
 colour=0x6b6f33
 
 [if_1644:com_1678]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=13
 y=51
@@ -283,7 +283,7 @@ text=Magic: +120
 colour=0x6b6f33
 
 [if_1644:com_1679]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=12
 y=63
@@ -296,7 +296,7 @@ text=Range: +120
 colour=0x6b6f33
 
 [if_1644:com_1680]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=96
 y=15
@@ -309,7 +309,7 @@ text=Stab: +120
 colour=0x6b6f33
 
 [if_1644:com_1681]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=93
 y=27
@@ -322,7 +322,7 @@ text=Slash: +120
 colour=0x6b6f33
 
 [if_1644:com_1682]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=92
 y=39
@@ -335,7 +335,7 @@ text=Crush: +120
 colour=0x6b6f33
 
 [if_1644:com_1683]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=92
 y=51
@@ -348,7 +348,7 @@ text=Magic: +120
 colour=0x6b6f33
 
 [if_1644:com_1684]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=91
 y=63
@@ -361,7 +361,7 @@ text=Range: +120
 colour=0x6b6f33
 
 [if_1644:com_1685]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=48
 y=80
@@ -374,7 +374,7 @@ text=Other bonuses
 colour=0xffff00
 
 [if_1644:com_1686]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=9
 y=92
@@ -387,7 +387,7 @@ text=Strength: +120
 colour=0x6b6f33
 
 [if_1644:com_1687]
-layer=if_1644:com_1668
+layer=com_1668
 type=^iftype_text
 x=90
 y=92
@@ -402,7 +402,7 @@ colour=0x6b6f33
 [if_1644:com_1669]
 type=^iftype_rectangle
 x=8
-y=-56
+y=200
 width=161
 height=57
 colour=0x726451
@@ -410,7 +410,7 @@ colour=0x726451
 [if_1644:com_1670]
 type=^iftype_rectangle
 x=9
-y=-55
+y=201
 width=161
 height=55
 colour=0x726451
@@ -418,7 +418,7 @@ colour=0x726451
 [if_1644:com_1671]
 type=^iftype_rectangle
 x=9
-y=-55
+y=201
 width=161
 height=56
 colour=0x2e2b23
@@ -441,5 +441,5 @@ invgraphic8=0,0,wornicons,7
 invgraphic10=0,0,wornicons,8
 invgraphic11=0,0,wornicons,9
 invgraphic13=112,-40,wornicons,4
-invgraphic14=41,97,wornicons,10
+invgraphic14=41,-159,wornicons,10
 invoption1=Remove

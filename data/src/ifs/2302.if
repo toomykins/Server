@@ -5,8 +5,8 @@ height=334
 
 [if_2302:com_2303]
 type=^iftype_model
-x=-13
-y=-118
+x=243
+y=138
 width=35
 height=35
 model=model_3032
@@ -15,7 +15,7 @@ xan=400
 
 [if_2302:com_6166]
 type=^iftype_text
-x=-47
+x=209
 y=108
 width=106
 height=17
@@ -28,7 +28,7 @@ colour=0xffff00
 [if_2302:com_2305]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-88
+x=424
 y=28
 width=68
 height=11
@@ -41,7 +41,7 @@ overcolour=0xffffff
 [if_2302:com_6167]
 type=^iftype_text
 x=123
-y=-119
+y=137
 width=282
 height=17
 halign=yes
@@ -52,8 +52,8 @@ colour=0xffff00
 
 [if_2302:com_6168]
 type=^iftype_model
-x=-74
-y=-16
+x=182
+y=240
 width=50
 height=105
 model=model_3006
@@ -63,8 +63,8 @@ yan=160
 
 [if_2302:com_2308]
 type=^iftype_text
-x=-44
-y=-15
+x=212
+y=241
 width=69
 height=14
 halign=yes
@@ -75,11 +75,11 @@ colour=0x99ff
 
 [if_2302:com_2309]
 type=^iftype_text
-x=29
-y=-15
+x=285
+y=241
 width=17
 height=14
-script1op1=^load_var,^varp_101
+script1op1=^load_var,varp_101
 halign=yes
 font=^p12
 shadow=yes
@@ -88,8 +88,8 @@ colour=0x99ff
 
 [if_2302:com_6169]
 type=^iftype_model
-x=85
-y=-61
+x=341
+y=195
 width=32
 height=32
 model=model_3037
@@ -98,8 +98,8 @@ xan=500
 
 [if_2302:com_6170]
 type=^iftype_text
-x=-44
-y=-76
+x=212
+y=180
 width=93
 height=14
 font=^p12
@@ -109,7 +109,8 @@ colour=0xc000
 
 [if_2302:com_6171]
 type=^iftype_text
-y=-59
+x=256
+y=197
 width=6
 height=14
 halign=yes
@@ -120,8 +121,8 @@ colour=0xff0000
 
 [if_2302:com_6172]
 type=^iftype_text
-x=-34
-y=-42
+x=222
+y=214
 width=76
 height=14
 halign=yes

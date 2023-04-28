@@ -6,7 +6,7 @@ height=334
 [if_6960:com_6961]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-82
+x=430
 y=8
 width=74
 height=14
@@ -18,8 +18,8 @@ overcolour=0xffffff
 
 [if_6960:com_6962]
 type=^iftype_model
-x=-24
-y=-98
+x=232
+y=158
 width=32
 height=32
 model=model_3395
@@ -29,15 +29,15 @@ yan=2047
 
 [if_6960:com_6963]
 type=^iftype_inventory
-x=-17
+x=239
 y=89
 width=3
 height=2
 
 [if_6960:com_6964]
 type=^iftype_model
-x=-82
-y=-44
+x=174
+y=212
 width=32
 height=32
 model=model_1226

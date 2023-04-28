@@ -12,7 +12,7 @@ height=190
 scrollheight=2710
 
 [if_962:com_3206]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 x=9
 y=8
@@ -24,7 +24,7 @@ text=Click the tune to play.
 colour=0xffff00
 
 [if_962:com_4287]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
@@ -33,7 +33,7 @@ width=60
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,0
+script1op1=^load_bool,varp_20,0
 font=^p12
 shadow=yes
 text=Adventure
@@ -41,7 +41,7 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4288]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
@@ -50,7 +50,7 @@ width=50
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,1
+script1op1=^load_bool,varp_20,1
 font=^p12
 shadow=yes
 text=Al Kharid
@@ -58,7 +58,7 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4289]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
@@ -67,7 +67,7 @@ width=32
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,2
+script1op1=^load_bool,varp_20,2
 font=^p12
 shadow=yes
 text=Alone
@@ -75,7 +75,7 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4290]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
@@ -84,7 +84,7 @@ width=87
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,3
+script1op1=^load_bool,varp_20,3
 font=^p12
 shadow=yes
 text=Ambient Jungle
@@ -92,7 +92,7 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4291]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
@@ -101,7 +101,7 @@ width=44
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,4
+script1op1=^load_bool,varp_20,4
 font=^p12
 shadow=yes
 text=Arabian
@@ -109,7 +109,7 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4292]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
@@ -118,7 +118,7 @@ width=52
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,5
+script1op1=^load_bool,varp_20,5
 font=^p12
 shadow=yes
 text=Arabian2
@@ -126,16 +126,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4293]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-124
+y=132
 width=51
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,6
+script1op1=^load_bool,varp_20,6
 font=^p12
 shadow=yes
 text=Arabian3
@@ -143,16 +143,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4294]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-108
+y=148
 width=51
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,7
+script1op1=^load_bool,varp_20,7
 font=^p12
 shadow=yes
 text=Arabique
@@ -160,16 +160,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4295]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-93
+y=163
 width=102
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,8
+script1op1=^load_bool,varp_20,8
 font=^p12
 shadow=yes
 text=Army Of Darkness
@@ -177,16 +177,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4296]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-78
+y=178
 width=38
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,9
+script1op1=^load_bool,varp_20,9
 font=^p12
 shadow=yes
 text=Arrival
@@ -194,16 +194,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4297]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-63
+y=193
 width=43
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,10
+script1op1=^load_bool,varp_20,10
 font=^p12
 shadow=yes
 text=Attack1
@@ -211,16 +211,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4298]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-48
+y=208
 width=45
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,11
+script1op1=^load_bool,varp_20,11
 font=^p12
 shadow=yes
 text=Attack2
@@ -228,16 +228,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4299]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-33
+y=223
 width=44
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,12
+script1op1=^load_bool,varp_20,12
 font=^p12
 shadow=yes
 text=Attack3
@@ -245,16 +245,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4300]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-17
+y=239
 width=44
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,13
+script1op1=^load_bool,varp_20,13
 font=^p12
 shadow=yes
 text=Attack4
@@ -262,16 +262,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4301]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-1
+y=255
 width=44
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,14
+script1op1=^load_bool,varp_20,14
 font=^p12
 shadow=yes
 text=Attack5
@@ -279,16 +279,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4302]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=15
+y=271
 width=45
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,15
+script1op1=^load_bool,varp_20,15
 font=^p12
 shadow=yes
 text=Attack6
@@ -296,16 +296,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4303]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=32
+y=288
 width=54
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,16
+script1op1=^load_bool,varp_20,16
 font=^p12
 shadow=yes
 text=Attention
@@ -313,16 +313,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4304]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=48
+y=304
 width=88
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,17
+script1op1=^load_bool,varp_20,17
 font=^p12
 shadow=yes
 text=Autumn Voyage
@@ -330,16 +330,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4305]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=66
+y=322
 width=74
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,18
+script1op1=^load_bool,varp_20,18
 font=^p12
 shadow=yes
 text=Background2
@@ -347,16 +347,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4306]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=84
+y=340
 width=127
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,19
+script1op1=^load_bool,varp_20,19
 font=^p12
 shadow=yes
 text=Ballad Of Enchantment
@@ -364,16 +364,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4307]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=100
+y=356
 width=47
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,20
+script1op1=^load_bool,varp_20,20
 font=^p12
 shadow=yes
 text=Baroque
@@ -381,16 +381,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4308]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=116
+y=372
 width=42
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,21
+script1op1=^load_bool,varp_20,21
 font=^p12
 shadow=yes
 text=Beyond
@@ -398,16 +398,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4309]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-124
+y=388
 width=60
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,22
+script1op1=^load_bool,varp_20,22
 font=^p12
 shadow=yes
 text=Big Chords
@@ -415,16 +415,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4310]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-108
+y=404
 width=81
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,23
+script1op1=^load_bool,varp_20,23
 font=^p12
 shadow=yes
 text=Book Of Spells
@@ -432,16 +432,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4311]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-92
+y=420
 width=45
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,24
+script1op1=^load_bool,varp_20,24
 font=^p12
 shadow=yes
 text=Camelot
@@ -449,16 +449,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4312]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-76
+y=436
 width=103
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,25
+script1op1=^load_bool,varp_20,25
 font=^p12
 shadow=yes
 text=Cave Background1
@@ -466,16 +466,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4313]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-60
+y=452
 width=40
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,26
+script1op1=^load_bool,varp_20,26
 font=^p12
 shadow=yes
 text=Cavern
@@ -483,16 +483,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4314]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-29
+y=483
 width=104
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,27
+script1op1=^load_bool,varp_20,27
 font=^p12
 shadow=yes
 text=Chain Of Command
@@ -500,16 +500,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4315]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=17
+y=529
 width=72
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,28
+script1op1=^load_bool,varp_20,28
 font=^p12
 shadow=yes
 text=Crystal Cave
@@ -517,16 +517,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4316]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=34
+y=546
 width=77
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,29
+script1op1=^load_bool,varp_20,29
 font=^p12
 shadow=yes
 text=Crystal Sword
@@ -534,16 +534,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4317]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=65
+y=577
 width=61
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,30
+script1op1=^load_bool,varp_20,30
 font=^p12
 shadow=yes
 text=Dangerous
@@ -551,16 +551,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4318]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=82
+y=594
 width=33
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_20,31
+script1op1=^load_bool,varp_20,31
 font=^p12
 shadow=yes
 text=Dark2
@@ -568,16 +568,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4319]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=98
+y=610
 width=60
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,0
+script1op1=^load_bool,varp_21,0
 font=^p12
 shadow=yes
 text=Deep Wildy
@@ -585,16 +585,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4320]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=114
+y=626
 width=83
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,1
+script1op1=^load_bool,varp_21,1
 font=^p12
 shadow=yes
 text=Desert Voyage
@@ -602,16 +602,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4321]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-126
+y=642
 width=54
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,2
+script1op1=^load_bool,varp_21,2
 font=^p12
 shadow=yes
 text=Doorways
@@ -619,16 +619,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4322]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-110
+y=658
 width=41
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,3
+script1op1=^load_bool,varp_21,3
 font=^p12
 shadow=yes
 text=Dream1
@@ -636,16 +636,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4323]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-78
+y=690
 width=41
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,4
+script1op1=^load_bool,varp_21,4
 font=^p12
 shadow=yes
 text=Dunjun
@@ -653,16 +653,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4324]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-62
+y=706
 width=32
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,5
+script1op1=^load_bool,varp_21,5
 font=^p12
 shadow=yes
 text=Egypt
@@ -670,16 +670,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4325]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-46
+y=722
 width=44
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,6
+script1op1=^load_bool,varp_21,6
 font=^p12
 shadow=yes
 text=Emotion
@@ -687,15 +687,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4326]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
+y=768
 width=48
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,8
+script1op1=^load_bool,varp_21,8
 font=^p12
 shadow=yes
 text=Expanse
@@ -703,16 +704,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4327]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=16
+y=784
 width=55
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,9
+script1op1=^load_bool,varp_21,9
 font=^p12
 shadow=yes
 text=Expecting
@@ -720,16 +721,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4328]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=49
+y=817
 width=35
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,11
+script1op1=^load_bool,varp_21,11
 font=^p12
 shadow=yes
 text=Faerie
@@ -737,16 +738,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4329]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=65
+y=833
 width=45
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,12
+script1op1=^load_bool,varp_21,12
 font=^p12
 shadow=yes
 text=Fanfare
@@ -754,16 +755,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4330]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=81
+y=849
 width=53
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,2
+script1op1=^load_bool,varp_25,2
 font=^p12
 shadow=yes
 text=Fanfare2
@@ -771,16 +772,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4331]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=97
+y=865
 width=52
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,13
+script1op1=^load_bool,varp_21,13
 font=^p12
 shadow=yes
 text=Fanfare3
@@ -788,16 +789,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4332]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=113
+y=881
 width=40
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,14
+script1op1=^load_bool,varp_21,14
 font=^p12
 shadow=yes
 text=Fishing
@@ -805,16 +806,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4333]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-127
+y=897
 width=62
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,15
+script1op1=^load_bool,varp_21,15
 font=^p12
 shadow=yes
 text=Flute Salad
@@ -822,16 +823,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4334]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-96
+y=928
 width=44
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,16
+script1op1=^load_bool,varp_21,16
 font=^p12
 shadow=yes
 text=Forever
@@ -839,16 +840,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4335]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-80
+y=944
 width=25
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,17
+script1op1=^load_bool,varp_21,17
 font=^p12
 shadow=yes
 text=Gaol
@@ -856,16 +857,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4336]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-63
+y=961
 width=41
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,18
+script1op1=^load_bool,varp_21,18
 font=^p12
 shadow=yes
 text=Garden
@@ -873,16 +874,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4337]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-47
+y=977
 width=65
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,19
+script1op1=^load_bool,varp_21,19
 font=^p12
 shadow=yes
 text=Gnome King
@@ -890,16 +891,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4338]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-31
+y=993
 width=76
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,20
+script1op1=^load_bool,varp_21,20
 font=^p12
 shadow=yes
 text=Gnome Theme
@@ -907,16 +908,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4339]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-16
+y=1008
 width=78
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,21
+script1op1=^load_bool,varp_21,21
 font=^p12
 shadow=yes
 text=Gnome Village
@@ -924,16 +925,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4340]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-1
+y=1023
 width=86
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,22
+script1op1=^load_bool,varp_21,22
 font=^p12
 shadow=yes
 text=Gnome Village2
@@ -941,16 +942,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4341]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=14
+y=1038
 width=38
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,23
+script1op1=^load_bool,varp_21,23
 font=^p12
 shadow=yes
 text=Gnome
@@ -958,16 +959,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4342]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=29
+y=1053
 width=58
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,24
+script1op1=^load_bool,varp_21,24
 font=^p12
 shadow=yes
 text=Gnomeball
@@ -975,16 +976,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4343]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=44
+y=1068
 width=60
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,25
+script1op1=^load_bool,varp_21,25
 font=^p12
 shadow=yes
 text=Greatness
@@ -992,16 +993,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4344]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=75
+y=1099
 width=49
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,26
+script1op1=^load_bool,varp_21,26
 font=^p12
 shadow=yes
 text=Harmony
@@ -1009,16 +1010,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4345]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=120
+y=1144
 width=55
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,27
+script1op1=^load_bool,varp_21,27
 font=^p12
 shadow=yes
 text=High Seas
@@ -1026,16 +1027,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4346]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-121
+y=1159
 width=43
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,28
+script1op1=^load_bool,varp_21,28
 font=^p12
 shadow=yes
 text=Horizon
@@ -1043,16 +1044,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4347]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-106
+y=1174
 width=24
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,29
+script1op1=^load_bool,varp_21,29
 font=^p12
 shadow=yes
 text=Iban
@@ -1060,16 +1061,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4348]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-76
+y=1204
 width=70
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,30
+script1op1=^load_bool,varp_21,30
 font=^p12
 shadow=yes
 text=In The Manor
@@ -1077,16 +1078,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4349]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-61
+y=1219
 width=61
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,31
+script1op1=^load_bool,varp_21,31
 font=^p12
 shadow=yes
 text=Inspiration
@@ -1094,16 +1095,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4350]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-46
+y=1234
 width=44
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,0
+script1op1=^load_bool,varp_22,0
 font=^p12
 shadow=yes
 text=Intrepid
@@ -1111,16 +1112,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4351]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-30
+y=1250
 width=40
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,1
+script1op1=^load_bool,varp_22,1
 font=^p12
 shadow=yes
 text=Jolly-R
@@ -1128,16 +1129,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4352]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-15
+y=1265
 width=75
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,2
+script1op1=^load_bool,varp_22,2
 font=^p12
 shadow=yes
 text=Jungle Island
@@ -1145,15 +1146,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4353]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
+y=1280
 width=44
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,3
+script1op1=^load_bool,varp_22,3
 font=^p12
 shadow=yes
 text=Jungly1
@@ -1161,16 +1163,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4354]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=15
+y=1295
 width=46
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,4
+script1op1=^load_bool,varp_22,4
 font=^p12
 shadow=yes
 text=Jungly2
@@ -1178,16 +1180,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4355]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=30
+y=1310
 width=45
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,5
+script1op1=^load_bool,varp_22,5
 font=^p12
 shadow=yes
 text=Jungly3
@@ -1195,16 +1197,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4356]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=45
+y=1325
 width=46
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,6
+script1op1=^load_bool,varp_22,6
 font=^p12
 shadow=yes
 text=Knightly
@@ -1212,16 +1214,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4357]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=77
+y=1357
 width=42
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,7
+script1op1=^load_bool,varp_22,7
 font=^p12
 shadow=yes
 text=Lasting
@@ -1229,16 +1231,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4358]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=92
+y=1372
 width=37
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,8
+script1op1=^load_bool,varp_22,8
 font=^p12
 shadow=yes
 text=Legion
@@ -1246,16 +1248,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4359]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=107
+y=1387
 width=56
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,9
+script1op1=^load_bool,varp_22,9
 font=^p12
 shadow=yes
 text=Lightness
@@ -1263,16 +1265,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4360]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=122
+y=1402
 width=51
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,10
+script1op1=^load_bool,varp_22,10
 font=^p12
 shadow=yes
 text=Lightwalk
@@ -1280,16 +1282,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4361]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-104
+y=1432
 width=52
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,11
+script1op1=^load_bool,varp_22,11
 font=^p12
 shadow=yes
 text=Long Ago
@@ -1297,16 +1299,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4362]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-89
+y=1447
 width=86
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,12
+script1op1=^load_bool,varp_22,12
 font=^p12
 shadow=yes
 text=Long Way Home
@@ -1314,16 +1316,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4363]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-14
+y=1522
 width=42
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,17
+script1op1=^load_bool,varp_22,17
 font=^p12
 shadow=yes
 text=March2
@@ -1331,16 +1333,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4364]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-74
+y=1462
 width=40
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,13
+script1op1=^load_bool,varp_22,13
 font=^p12
 shadow=yes
 text=Lullaby
@@ -1348,16 +1350,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4365]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-59
+y=1477
 width=67
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,14
+script1op1=^load_bool,varp_22,14
 font=^p12
 shadow=yes
 text=Mage Arena
@@ -1365,16 +1367,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4366]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-44
+y=1492
 width=69
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,15
+script1op1=^load_bool,varp_22,15
 font=^p12
 shadow=yes
 text=Magic Dance
@@ -1382,16 +1384,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4367]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-29
+y=1507
 width=92
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,16
+script1op1=^load_bool,varp_22,16
 font=^p12
 shadow=yes
 text=Magical Journey
@@ -1399,16 +1401,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4368]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=1
+y=1537
 width=50
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,18
+script1op1=^load_bool,varp_22,18
 font=^p12
 shadow=yes
 text=Medieval
@@ -1416,16 +1418,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4369]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=16
+y=1552
 width=36
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,19
+script1op1=^load_bool,varp_22,19
 font=^p12
 shadow=yes
 text=Mellow
@@ -1433,16 +1435,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4370]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=31
+y=1567
 width=61
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,20
+script1op1=^load_bool,varp_22,20
 font=^p12
 shadow=yes
 text=Miles Away
@@ -1450,16 +1452,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4371]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=46
+y=1582
 width=77
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,21
+script1op1=^load_bool,varp_22,21
 font=^p12
 shadow=yes
 text=Miracle Dance
@@ -1467,16 +1469,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4372]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=61
+y=1597
 width=82
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,22
+script1op1=^load_bool,varp_22,22
 font=^p12
 shadow=yes
 text=Monarch Waltz
@@ -1484,16 +1486,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4373]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=76
+y=1612
 width=37
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,23
+script1op1=^load_bool,varp_22,23
 font=^p12
 shadow=yes
 text=Moody
@@ -1501,16 +1503,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4374]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=91
+y=1627
 width=58
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,24
+script1op1=^load_bool,varp_22,24
 font=^p12
 shadow=yes
 text=Neverland
@@ -1518,11 +1520,11 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4375]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=106
+y=1642
 width=82
 height=14
 font=^p12
@@ -1532,16 +1534,16 @@ colour=0xff00
 activecolour=0xff00
 
 [if_962:com_4376]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=121
+y=1657
 width=49
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,26
+script1op1=^load_bool,varp_22,26
 font=^p12
 shadow=yes
 text=Nightfall
@@ -1549,16 +1551,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4377]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-104
+y=1688
 width=45
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,27
+script1op1=^load_bool,varp_22,27
 font=^p12
 shadow=yes
 text=Oriental
@@ -1566,16 +1568,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4378]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-89
+y=1703
 width=51
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,28
+script1op1=^load_bool,varp_22,28
 font=^p12
 shadow=yes
 text=Overture
@@ -1583,16 +1585,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4379]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-74
+y=1718
 width=40
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,29
+script1op1=^load_bool,varp_22,29
 font=^p12
 shadow=yes
 text=Parade
@@ -1600,16 +1602,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4380]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-59
+y=1733
 width=34
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,30
+script1op1=^load_bool,varp_22,30
 font=^p12
 shadow=yes
 text=Quest
@@ -1617,16 +1619,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4381]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-44
+y=1748
 width=39
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_22,31
+script1op1=^load_bool,varp_22,31
 font=^p12
 shadow=yes
 text=Regal2
@@ -1634,16 +1636,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4382]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-29
+y=1763
 width=42
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,0
+script1op1=^load_bool,varp_23,0
 font=^p12
 shadow=yes
 text=Reggae
@@ -1651,16 +1653,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4383]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-14
+y=1778
 width=50
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,1
+script1op1=^load_bool,varp_23,1
 font=^p12
 shadow=yes
 text=Reggae2
@@ -1668,16 +1670,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4384]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=1
+y=1793
 width=53
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,2
+script1op1=^load_bool,varp_23,2
 font=^p12
 shadow=yes
 text=Riverside
@@ -1685,16 +1687,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4385]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=16
+y=1808
 width=38
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,3
+script1op1=^load_bool,varp_23,3
 font=^p12
 shadow=yes
 text=Royale
@@ -1702,16 +1704,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4386]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=31
+y=1823
 width=78
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,4
+script1op1=^load_bool,varp_23,4
 font=^p12
 shadow=yes
 text=Rune Essence
@@ -1719,16 +1721,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4387]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=46
+y=1838
 width=68
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,5
+script1op1=^load_bool,varp_23,5
 font=^p12
 shadow=yes
 text=Sad Meadow
@@ -1736,16 +1738,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4388]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=61
+y=1853
 width=65
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,6
+script1op1=^load_bool,varp_23,6
 font=^p12
 shadow=yes
 text=Scape Cave
@@ -1753,11 +1755,11 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4389]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=76
+y=1868
 width=63
 height=14
 font=^p12
@@ -1767,16 +1769,16 @@ colour=0xff00
 activecolour=0xff00
 
 [if_962:com_4390]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=106
+y=1898
 width=64
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,8
+script1op1=^load_bool,varp_23,8
 font=^p12
 shadow=yes
 text=Scape Sad1
@@ -1784,16 +1786,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4391]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=121
+y=1913
 width=65
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,9
+script1op1=^load_bool,varp_23,9
 font=^p12
 shadow=yes
 text=Scape Wild1
@@ -1801,16 +1803,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4392]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-120
+y=1928
 width=64
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,10
+script1op1=^load_bool,varp_23,10
 font=^p12
 shadow=yes
 text=Sea Shanty
@@ -1818,16 +1820,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4393]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-105
+y=1943
 width=72
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,11
+script1op1=^load_bool,varp_23,11
 font=^p12
 shadow=yes
 text=Sea Shanty2
@@ -1835,16 +1837,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4394]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-90
+y=1958
 width=54
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,12
+script1op1=^load_bool,varp_23,12
 font=^p12
 shadow=yes
 text=Serenade
@@ -1852,16 +1854,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4395]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-75
+y=1973
 width=40
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,13
+script1op1=^load_bool,varp_23,13
 font=^p12
 shadow=yes
 text=Serene
@@ -1869,16 +1871,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4396]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-60
+y=1988
 width=31
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,14
+script1op1=^load_bool,varp_23,14
 font=^p12
 shadow=yes
 text=Shine
@@ -1886,16 +1888,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4397]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-30
+y=2018
 width=69
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,15
+script1op1=^load_bool,varp_23,15
 font=^p12
 shadow=yes
 text=Soundscape
@@ -1903,16 +1905,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4398]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-15
+y=2033
 width=30
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,16
+script1op1=^load_bool,varp_23,16
 font=^p12
 shadow=yes
 text=Spirit
@@ -1920,15 +1922,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4399]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
+y=2048
 width=57
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,17
+script1op1=^load_bool,varp_23,17
 font=^p12
 shadow=yes
 text=Splendour
@@ -1936,16 +1939,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4400]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=15
+y=2063
 width=49
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,18
+script1op1=^load_bool,varp_23,18
 font=^p12
 shadow=yes
 text=Spooky2
@@ -1953,16 +1956,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4401]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=30
+y=2078
 width=82
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,19
+script1op1=^load_bool,varp_23,19
 font=^p12
 shadow=yes
 text=Spooky Jungle
@@ -1970,16 +1973,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4402]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=62
+y=2110
 width=49
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,20
+script1op1=^load_bool,varp_23,20
 font=^p12
 shadow=yes
 text=Starlight
@@ -1987,16 +1990,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4403]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=79
+y=2127
 width=54
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,22
+script1op1=^load_bool,varp_23,22
 font=^p12
 shadow=yes
 text=Still Night
@@ -2004,16 +2007,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4404]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=111
+y=2159
 width=60
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,24
+script1op1=^load_bool,varp_23,24
 font=^p12
 shadow=yes
 text=The Desert
@@ -2021,16 +2024,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4405]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=126
+y=2174
 width=64
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,25
+script1op1=^load_bool,varp_23,25
 font=^p12
 shadow=yes
 text=The Shadow
@@ -2038,16 +2041,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4406]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-115
+y=2189
 width=53
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,26
+script1op1=^load_bool,varp_23,26
 font=^p12
 shadow=yes
 text=The Tower
@@ -2055,16 +2058,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4407]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-67
+y=2237
 width=39
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,28
+script1op1=^load_bool,varp_23,28
 font=^p12
 shadow=yes
 text=Trawler
@@ -2072,16 +2075,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4408]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-52
+y=2252
 width=73
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,29
+script1op1=^load_bool,varp_23,29
 font=^p12
 shadow=yes
 text=Trawler Minor
@@ -2089,16 +2092,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4409]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-37
+y=2267
 width=64
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,30
+script1op1=^load_bool,varp_23,30
 font=^p12
 shadow=yes
 text=Tree Spirits
@@ -2106,16 +2109,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4410]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-22
+y=2282
 width=99
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,31
+script1op1=^load_bool,varp_23,31
 font=^p12
 shadow=yes
 text=Tribal Background
@@ -2123,16 +2126,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4411]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-7
+y=2297
 width=30
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,0
+script1op1=^load_bool,varp_24,0
 font=^p12
 shadow=yes
 text=Tribal
@@ -2140,16 +2143,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4412]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=8
+y=2312
 width=38
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,1
+script1op1=^load_bool,varp_24,1
 font=^p12
 shadow=yes
 text=Tribal2
@@ -2157,16 +2160,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4413]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=23
+y=2327
 width=35
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,2
+script1op1=^load_bool,varp_24,2
 font=^p12
 shadow=yes
 text=Trinity
@@ -2174,16 +2177,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4414]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=38
+y=2342
 width=48
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,3
+script1op1=^load_bool,varp_24,3
 font=^p12
 shadow=yes
 text=Troubled
@@ -2191,16 +2194,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4415]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=69
+y=2373
 width=74
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,4
+script1op1=^load_bool,varp_24,4
 font=^p12
 shadow=yes
 text=Underground
@@ -2208,16 +2211,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4418]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=99
+y=2403
 width=79
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,5
+script1op1=^load_bool,varp_24,5
 font=^p12
 shadow=yes
 text=Unknown Land
@@ -2225,16 +2228,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4419]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=114
+y=2418
 width=42
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,6
+script1op1=^load_bool,varp_24,6
 font=^p12
 shadow=yes
 text=Upass1
@@ -2242,16 +2245,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4420]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-127
+y=2433
 width=54
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,7
+script1op1=^load_bool,varp_24,7
 font=^p12
 shadow=yes
 text=Upcoming
@@ -2259,16 +2262,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4421]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-112
+y=2448
 width=45
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,8
+script1op1=^load_bool,varp_24,8
 font=^p12
 shadow=yes
 text=Venture
@@ -2276,16 +2279,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4422]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-82
+y=2478
 width=34
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,9
+script1op1=^load_bool,varp_24,9
 font=^p12
 shadow=yes
 text=Vision
@@ -2293,16 +2296,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4423]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-67
+y=2493
 width=67
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,10
+script1op1=^load_bool,varp_24,10
 font=^p12
 shadow=yes
 text=Voodoo Cult
@@ -2310,16 +2313,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4424]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-52
+y=2508
 width=42
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,11
+script1op1=^load_bool,varp_24,11
 font=^p12
 shadow=yes
 text=Voyage
@@ -2327,16 +2330,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4425]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-37
+y=2523
 width=42
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,12
+script1op1=^load_bool,varp_24,12
 font=^p12
 shadow=yes
 text=Wander
@@ -2344,16 +2347,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4426]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-22
+y=2538
 width=52
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,13
+script1op1=^load_bool,varp_24,13
 font=^p12
 shadow=yes
 text=Waterfall
@@ -2361,16 +2364,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4427]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-7
+y=2553
 width=70
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,14
+script1op1=^load_bool,varp_24,14
 font=^p12
 shadow=yes
 text=Wilderness2
@@ -2378,16 +2381,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4428]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=8
+y=2568
 width=69
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,15
+script1op1=^load_bool,varp_24,15
 font=^p12
 shadow=yes
 text=Wilderness3
@@ -2395,16 +2398,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4429]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=23
+y=2583
 width=69
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,16
+script1op1=^load_bool,varp_24,16
 font=^p12
 shadow=yes
 text=Wilderness4
@@ -2412,16 +2415,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4430]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=38
+y=2598
 width=47
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,17
+script1op1=^load_bool,varp_24,17
 font=^p12
 shadow=yes
 text=Witching
@@ -2429,16 +2432,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4431]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=68
+y=2628
 width=42
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,18
+script1op1=^load_bool,varp_24,18
 font=^p12
 shadow=yes
 text=Wonder
@@ -2446,16 +2449,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4432]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=83
+y=2643
 width=63
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,19
+script1op1=^load_bool,varp_24,19
 font=^p12
 shadow=yes
 text=Wonderous
@@ -2463,16 +2466,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4433]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=98
+y=2658
 width=55
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,20
+script1op1=^load_bool,varp_24,20
 font=^p12
 shadow=yes
 text=Workshop
@@ -2480,16 +2483,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4434]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=46
+y=2094
 width=29
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,21
+script1op1=^load_bool,varp_23,21
 font=^p12
 shadow=yes
 text=Start
@@ -2497,16 +2500,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4435]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=94
+y=2142
 width=78
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,23
+script1op1=^load_bool,varp_23,23
 font=^p12
 shadow=yes
 text=Talking Forest
@@ -2514,16 +2517,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4436]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-100
+y=2204
 width=35
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_23,27
+script1op1=^load_bool,varp_23,27
 font=^p12
 shadow=yes
 text=Theme
@@ -2531,16 +2534,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_4437]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=33
+y=801
 width=59
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,10
+script1op1=^load_bool,varp_21,10
 font=^p12
 shadow=yes
 text=Expedition
@@ -2548,7 +2551,7 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_5449]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 x=9
 y=23
@@ -2560,16 +2563,16 @@ text=Green=Unlocked
 colour=0xff00
 
 [if_962:com_4441]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-30
+y=738
 width=46
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_21,7
+script1op1=^load_bool,varp_21,7
 font=^p12
 shadow=yes
 text=Emperor
@@ -2577,16 +2580,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_5988]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=91
+y=1883
 width=62
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,31
+script1op1=^load_bool,varp_24,31
 font=^p12
 shadow=yes
 text=Scape Soft
@@ -2594,16 +2597,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_5989]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=113
+y=2673
 width=64
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,1
+script1op1=^load_bool,varp_25,1
 font=^p12
 shadow=yes
 text=Yesteryear
@@ -2611,16 +2614,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_5990]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-45
+y=2003
 width=41
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,0
+script1op1=^load_bool,varp_25,0
 font=^p12
 shadow=yes
 text=Shining
@@ -2628,16 +2631,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_6185]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-119
+y=1417
 width=57
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_24,21
+script1op1=^load_bool,varp_24,21
 font=^p12
 shadow=yes
 text=Lonesome
@@ -2645,16 +2648,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_6297]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-83
+y=2221
 width=52
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,3
+script1op1=^load_bool,varp_25,3
 font=^p12
 shadow=yes
 text=Tomorrow
@@ -2662,16 +2665,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_6298]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-94
+y=674
 width=61
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,4
+script1op1=^load_bool,varp_25,4
 font=^p12
 shadow=yes
 text=Duel Arena
@@ -2679,16 +2682,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_961]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-91
+y=1189
 width=59
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,5
+script1op1=^load_bool,varp_25,5
 font=^p12
 shadow=yes
 text=Ice Melody
@@ -2696,16 +2699,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_6842]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=53
+y=2613
 width=80
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,6
+script1op1=^load_bool,varp_25,6
 font=^p12
 shadow=yes
 text=Wolf Mountain
@@ -2713,16 +2716,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_6843]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=90
+y=1114
 width=57
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,7
+script1op1=^load_bool,varp_25,7
 font=^p12
 shadow=yes
 text=Harmony2
@@ -2730,16 +2733,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_6867]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-97
+y=2463
 width=53
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,8
+script1op1=^load_bool,varp_25,8
 font=^p12
 shadow=yes
 text=Venture2
@@ -2747,16 +2750,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_1883]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=61
+y=1341
 width=63
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,9
+script1op1=^load_bool,varp_25,9
 font=^p12
 shadow=yes
 text=Landlubber
@@ -2764,16 +2767,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_1890]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=53
+y=2357
 width=76
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,10
+script1op1=^load_bool,varp_25,10
 font=^p12
 shadow=yes
 text=Undercurrent
@@ -2781,16 +2784,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_1898]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-128
+y=2688
 width=36
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,12
+script1op1=^load_bool,varp_25,12
 font=^p12
 shadow=yes
 text=Zealot
@@ -2798,16 +2801,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_1901]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-44
+y=468
 width=69
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,13
+script1op1=^load_bool,varp_25,13
 font=^p12
 shadow=yes
 text=Cellar Song1
@@ -2815,16 +2818,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_6943]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-15
+y=753
 width=40
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,16
+script1op1=^load_bool,varp_25,16
 font=^p12
 shadow=yes
 text=Escape
@@ -2832,16 +2835,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_6944]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=2
+y=514
 width=85
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,15
+script1op1=^load_bool,varp_25,15
 font=^p12
 shadow=yes
 text=Close Quarters
@@ -2849,16 +2852,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_6945]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=105
+y=1129
 width=84
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,14
+script1op1=^load_bool,varp_25,14
 font=^p12
 shadow=yes
 text=Heart and Mind
@@ -2866,16 +2869,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_1893]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-119
+y=1673
 width=38
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,11
+script1op1=^load_bool,varp_25,11
 font=^p12
 shadow=yes
 text=Nomad
@@ -2883,16 +2886,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_674]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-14
+y=498
 width=73
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,18
+script1op1=^load_bool,varp_25,18
 font=^p12
 shadow=yes
 text=Chompy Hunt
@@ -2900,16 +2903,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_675]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=59
+y=1083
 width=43
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,17
+script1op1=^load_bool,varp_25,17
 font=^p12
 shadow=yes
 text=Grumpy
@@ -2917,16 +2920,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_676]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=-112
+y=912
 width=56
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,25
+script1op1=^load_bool,varp_25,25
 font=^p12
 shadow=yes
 text=Forbidden
@@ -2934,16 +2937,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_677]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=49
+y=561
 width=40
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,26
+script1op1=^load_bool,varp_25,26
 font=^p12
 shadow=yes
 text=Cursed
@@ -2951,16 +2954,16 @@ colour=0xff0000
 activecolour=0xff00
 
 [if_962:com_678]
-layer=if_962:com_4262
+layer=com_4262
 type=^iftype_text
 buttontype=^if_button
 x=10
-y=84
+y=2388
 width=84
 height=14
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_bool,^varp_25,27
+script1op1=^load_bool,varp_25,27
 font=^p12
 shadow=yes
 text=Understanding
@@ -2981,15 +2984,15 @@ colour=0xff999
 [if_962:com_964]
 type=^iftype_graphic
 x=-12
-y=-62
+y=194
 width=36
 height=36
 graphic=miscgraphics,2
 
 [if_962:com_965]
 type=^iftype_graphic
-x=-106
-y=-62
+x=150
+y=194
 width=36
 height=36
 graphic=steelborder2,1
@@ -3004,7 +3007,7 @@ graphic=steelborder,0
 
 [if_962:com_967]
 type=^iftype_graphic
-x=-110
+x=146
 y=53
 width=25
 height=30
@@ -3013,15 +3016,15 @@ graphic=steelborder,1
 [if_962:com_1691]
 type=^iftype_graphic
 x=3
-y=-37
+y=219
 width=25
 height=30
 graphic=steelborder,2
 
 [if_962:com_1693]
 type=^iftype_graphic
-x=-110
-y=-37
+x=146
+y=219
 width=25
 height=30
 graphic=steelborder,3
@@ -3060,7 +3063,7 @@ graphic=steelborder2,0
 
 [if_962:com_2307]
 type=^iftype_graphic
-x=-106
+x=150
 y=72
 width=36
 height=36
@@ -3068,7 +3071,7 @@ graphic=steelborder2,1
 
 [if_962:com_2310]
 type=^iftype_graphic
-x=-106
+x=150
 y=86
 width=36
 height=36
@@ -3076,7 +3079,7 @@ graphic=steelborder2,1
 
 [if_962:com_3196]
 type=^iftype_graphic
-x=-106
+x=150
 y=122
 width=36
 height=36
@@ -3084,8 +3087,8 @@ graphic=steelborder2,1
 
 [if_962:com_3197]
 type=^iftype_graphic
-x=-106
-y=-98
+x=150
+y=158
 width=36
 height=36
 graphic=steelborder2,1
@@ -3117,7 +3120,7 @@ graphic=miscgraphics,2
 [if_962:com_3201]
 type=^iftype_graphic
 x=-12
-y=-98
+y=158
 width=36
 height=36
 graphic=miscgraphics,2
@@ -3125,21 +3128,21 @@ graphic=miscgraphics,2
 [if_962:com_3202]
 type=^iftype_graphic
 x=28
-y=-28
+y=228
 width=36
 height=36
 
 [if_962:com_3203]
 type=^iftype_graphic
 x=63
-y=-28
+y=228
 width=36
 height=36
 
 [if_962:com_3204]
 type=^iftype_graphic
 x=99
-y=-28
+y=228
 width=36
 height=36
 graphic=miscgraphics,3
@@ -3147,7 +3150,7 @@ graphic=miscgraphics,3
 [if_962:com_3205]
 type=^iftype_graphic
 x=124
-y=-28
+y=228
 width=36
 height=36
 graphic=miscgraphics,3
@@ -3155,7 +3158,7 @@ graphic=miscgraphics,3
 [if_962:com_3207]
 type=^iftype_graphic
 x=63
-y=-28
+y=228
 width=36
 height=36
 graphic=miscgraphics,3
@@ -3163,7 +3166,7 @@ graphic=miscgraphics,3
 [if_962:com_5448]
 type=^iftype_graphic
 x=27
-y=-28
+y=228
 width=36
 height=36
 graphic=miscgraphics,3
@@ -3199,26 +3202,26 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_18
+script1op1=^load_var,varp_18
 graphic=miscgraphics2,0
 activegraphic=miscgraphics2,1
 
 [if_962:com_6270]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-113
+x=143
 y=7
 width=36
 height=36
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_18
+script1op1=^load_var,varp_18
 graphic=miscgraphics2,0
 activegraphic=miscgraphics2,1
 
 [if_962:com_6271]
 type=^iftype_text
-x=-108
+x=148
 y=12
 width=25
 height=14

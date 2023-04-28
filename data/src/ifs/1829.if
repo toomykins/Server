@@ -87,7 +87,7 @@ activegraphic=magicon,4
 [if_1829:com_1833]
 type=^iftype_graphic
 buttontype=^if_button
-x=-112
+x=144
 y=12
 width=20
 height=20
@@ -197,7 +197,7 @@ activegraphic=magicon,14
 [if_1829:com_1837]
 type=^iftype_graphic
 buttontype=^if_button
-x=-112
+x=144
 y=54
 width=20
 height=20
@@ -307,7 +307,7 @@ activegraphic=magicon,25
 [if_1829:com_1841]
 type=^iftype_graphic
 buttontype=^if_button
-x=-112
+x=144
 y=96
 width=20
 height=20
@@ -337,7 +337,7 @@ activegraphic=magicon,29
 type=^iftype_graphic
 buttontype=^if_button
 x=24
-y=-118
+y=138
 width=20
 height=20
 overlayer=com_1965
@@ -360,7 +360,7 @@ activegraphic=magicon,31
 type=^iftype_graphic
 buttontype=^if_button
 x=64
-y=-118
+y=138
 width=20
 height=20
 overlayer=com_1973
@@ -389,7 +389,7 @@ activegraphic=magicon,33
 type=^iftype_graphic
 buttontype=^if_button
 x=104
-y=-118
+y=138
 width=20
 height=20
 overlayer=com_1983
@@ -417,8 +417,8 @@ activegraphic=magicon,36
 [if_1829:com_1845]
 type=^iftype_graphic
 buttontype=^if_button
-x=-112
-y=-118
+x=144
+y=138
 width=20
 height=20
 overlayer=com_1994
@@ -446,12 +446,12 @@ activegraphic=magicon,37
 [if_1829:com_1846]
 type=^iftype_layer
 x=3
-y=-78
+y=178
 width=186
 height=85
 
 [if_1829:com_1848]
-layer=if_1829:com_1846
+layer=com_1846
 type=^iftype_rectangle
 x=3
 y=9
@@ -460,7 +460,7 @@ height=72
 colour=0x726451
 
 [if_1829:com_1849]
-layer=if_1829:com_1846
+layer=com_1846
 type=^iftype_rectangle
 x=4
 y=10
@@ -469,7 +469,7 @@ height=70
 colour=0x726451
 
 [if_1829:com_1850]
-layer=if_1829:com_1846
+layer=com_1846
 type=^iftype_rectangle
 x=4
 y=10
@@ -478,7 +478,7 @@ height=71
 colour=0x2e2b23
 
 [if_1829:com_1851]
-layer=if_1829:com_1846
+layer=com_1846
 type=^iftype_rectangle
 x=5
 y=11
@@ -489,7 +489,7 @@ fill=yes
 [if_1829:com_1847]
 type=^iftype_text
 x=34
-y=-43
+y=213
 width=120
 height=14
 halign=yes
@@ -501,13 +501,13 @@ colour=0xb0a392
 [if_1829:com_1852]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_1853]
-layer=if_1829:com_1852
+layer=com_1852
 type=^iftype_rectangle
 x=3
 y=5
@@ -516,7 +516,7 @@ height=68
 fill=yes
 
 [if_1829:com_1854]
-layer=if_1829:com_1852
+layer=com_1852
 type=^iftype_text
 x=3
 y=4
@@ -529,7 +529,7 @@ text=Level 1 : Wind Strike
 colour=0xfff000
 
 [if_1829:com_1855]
-layer=if_1829:com_1852
+layer=com_1852
 type=^iftype_text
 x=3
 y=17
@@ -542,7 +542,7 @@ text=A basic Air missile
 colour=0x6b6f33
 
 [if_1829:com_1856]
-layer=if_1829:com_1852
+layer=com_1852
 type=^iftype_model
 x=38
 y=35
@@ -553,7 +553,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1857]
-layer=if_1829:com_1852
+layer=com_1852
 type=^iftype_model
 x=114
 y=35
@@ -564,7 +564,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1858]
-layer=if_1829:com_1852
+layer=com_1852
 type=^iftype_text
 x=40
 y=62
@@ -584,7 +584,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1859]
-layer=if_1829:com_1852
+layer=com_1852
 type=^iftype_text
 x=116
 y=62
@@ -603,13 +603,13 @@ activecolour=0xc000
 [if_1829:com_1860]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_1861]
-layer=if_1829:com_1860
+layer=com_1860
 type=^iftype_rectangle
 x=3
 y=5
@@ -618,7 +618,7 @@ height=68
 fill=yes
 
 [if_1829:com_1862]
-layer=if_1829:com_1860
+layer=com_1860
 type=^iftype_text
 x=3
 y=4
@@ -631,7 +631,7 @@ text=Level 5 : Water Strike
 colour=0xfff000
 
 [if_1829:com_1863]
-layer=if_1829:com_1860
+layer=com_1860
 type=^iftype_text
 x=3
 y=17
@@ -644,7 +644,7 @@ text=A basic Water missile
 colour=0x6b6f33
 
 [if_1829:com_1864]
-layer=if_1829:com_1860
+layer=com_1860
 type=^iftype_model
 x=25
 y=35
@@ -655,7 +655,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1865]
-layer=if_1829:com_1860
+layer=com_1860
 type=^iftype_model
 x=78
 y=35
@@ -666,9 +666,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1866]
-layer=if_1829:com_1860
+layer=com_1860
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -677,7 +677,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1867]
-layer=if_1829:com_1860
+layer=com_1860
 type=^iftype_text
 x=27
 y=62
@@ -697,7 +697,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1868]
-layer=if_1829:com_1860
+layer=com_1860
 type=^iftype_text
 x=80
 y=62
@@ -717,9 +717,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1869]
-layer=if_1829:com_1860
+layer=com_1860
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -736,13 +736,13 @@ activecolour=0xc000
 [if_1829:com_1870]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_1871]
-layer=if_1829:com_1870
+layer=com_1870
 type=^iftype_rectangle
 x=3
 y=5
@@ -751,7 +751,7 @@ height=68
 fill=yes
 
 [if_1829:com_1872]
-layer=if_1829:com_1870
+layer=com_1870
 type=^iftype_text
 x=3
 y=4
@@ -764,7 +764,7 @@ text=Level 9 : Earth Strike
 colour=0xfff000
 
 [if_1829:com_1873]
-layer=if_1829:com_1870
+layer=com_1870
 type=^iftype_text
 x=3
 y=17
@@ -777,7 +777,7 @@ text=A basic Earth missile
 colour=0x6b6f33
 
 [if_1829:com_1874]
-layer=if_1829:com_1870
+layer=com_1870
 type=^iftype_model
 x=26
 y=35
@@ -788,7 +788,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1875]
-layer=if_1829:com_1870
+layer=com_1870
 type=^iftype_model
 x=78
 y=35
@@ -799,9 +799,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1876]
-layer=if_1829:com_1870
+layer=com_1870
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -810,7 +810,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1877]
-layer=if_1829:com_1870
+layer=com_1870
 type=^iftype_text
 x=27
 y=62
@@ -830,7 +830,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1878]
-layer=if_1829:com_1870
+layer=com_1870
 type=^iftype_text
 x=80
 y=62
@@ -850,9 +850,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1879]
-layer=if_1829:com_1870
+layer=com_1870
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -869,13 +869,13 @@ activecolour=0xc000
 [if_1829:com_1880]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_1881]
-layer=if_1829:com_1880
+layer=com_1880
 type=^iftype_rectangle
 x=3
 y=5
@@ -884,7 +884,7 @@ height=68
 fill=yes
 
 [if_1829:com_1882]
-layer=if_1829:com_1880
+layer=com_1880
 type=^iftype_text
 x=3
 y=4
@@ -897,7 +897,7 @@ text=Level 13 : Fire Strike
 colour=0xfff000
 
 [if_1829:com_1990]
-layer=if_1829:com_1880
+layer=com_1880
 type=^iftype_text
 x=3
 y=17
@@ -910,7 +910,7 @@ text=A basic Fire missile
 colour=0x6b6f33
 
 [if_1829:com_1884]
-layer=if_1829:com_1880
+layer=com_1880
 type=^iftype_model
 x=26
 y=35
@@ -921,7 +921,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1885]
-layer=if_1829:com_1880
+layer=com_1880
 type=^iftype_model
 x=78
 y=35
@@ -932,9 +932,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1886]
-layer=if_1829:com_1880
+layer=com_1880
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -943,7 +943,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1887]
-layer=if_1829:com_1880
+layer=com_1880
 type=^iftype_text
 x=27
 y=62
@@ -963,7 +963,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1888]
-layer=if_1829:com_1880
+layer=com_1880
 type=^iftype_text
 x=79
 y=62
@@ -983,9 +983,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6844]
-layer=if_1829:com_1880
+layer=com_1880
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1002,13 +1002,13 @@ activecolour=0xc000
 [if_1829:com_1889]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6845]
-layer=if_1829:com_1889
+layer=com_1889
 type=^iftype_rectangle
 x=3
 y=5
@@ -1017,7 +1017,7 @@ height=68
 fill=yes
 
 [if_1829:com_1891]
-layer=if_1829:com_1889
+layer=com_1889
 type=^iftype_text
 x=3
 y=4
@@ -1030,7 +1030,7 @@ text=Level 17 : Wind Bolt
 colour=0xfff000
 
 [if_1829:com_1892]
-layer=if_1829:com_1889
+layer=com_1889
 type=^iftype_text
 x=3
 y=17
@@ -1043,7 +1043,7 @@ text=A low level Air missile
 colour=0x6b6f33
 
 [if_1829:com_1894]
-layer=if_1829:com_1889
+layer=com_1889
 type=^iftype_model
 x=38
 y=35
@@ -1054,7 +1054,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1895]
-layer=if_1829:com_1889
+layer=com_1889
 type=^iftype_model
 x=114
 y=35
@@ -1065,7 +1065,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1896]
-layer=if_1829:com_1889
+layer=com_1889
 type=^iftype_text
 x=40
 y=62
@@ -1085,7 +1085,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6846]
-layer=if_1829:com_1889
+layer=com_1889
 type=^iftype_text
 x=116
 y=62
@@ -1104,13 +1104,13 @@ activecolour=0xc000
 [if_1829:com_1897]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6847]
-layer=if_1829:com_1897
+layer=com_1897
 type=^iftype_rectangle
 x=3
 y=5
@@ -1119,7 +1119,7 @@ height=68
 fill=yes
 
 [if_1829:com_1899]
-layer=if_1829:com_1897
+layer=com_1897
 type=^iftype_text
 x=3
 y=4
@@ -1132,7 +1132,7 @@ text=Level 23 : Water Bolt
 colour=0xfff000
 
 [if_1829:com_1900]
-layer=if_1829:com_1897
+layer=com_1897
 type=^iftype_text
 x=3
 y=17
@@ -1145,7 +1145,7 @@ text=A low level Water missile
 colour=0x6b6f33
 
 [if_1829:com_1902]
-layer=if_1829:com_1897
+layer=com_1897
 type=^iftype_model
 x=26
 y=35
@@ -1156,7 +1156,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1903]
-layer=if_1829:com_1897
+layer=com_1897
 type=^iftype_model
 x=78
 y=35
@@ -1167,9 +1167,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1904]
-layer=if_1829:com_1897
+layer=com_1897
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1178,7 +1178,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1905]
-layer=if_1829:com_1897
+layer=com_1897
 type=^iftype_text
 x=27
 y=62
@@ -1198,7 +1198,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1906]
-layer=if_1829:com_1897
+layer=com_1897
 type=^iftype_text
 x=80
 y=62
@@ -1218,9 +1218,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6848]
-layer=if_1829:com_1897
+layer=com_1897
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1237,13 +1237,13 @@ activecolour=0xc000
 [if_1829:com_1907]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6849]
-layer=if_1829:com_1907
+layer=com_1907
 type=^iftype_rectangle
 x=3
 y=5
@@ -1252,7 +1252,7 @@ height=68
 fill=yes
 
 [if_1829:com_1909]
-layer=if_1829:com_1907
+layer=com_1907
 type=^iftype_text
 x=3
 y=4
@@ -1265,7 +1265,7 @@ text=Level 29 : Earth Bolt
 colour=0xfff000
 
 [if_1829:com_1910]
-layer=if_1829:com_1907
+layer=com_1907
 type=^iftype_text
 x=3
 y=17
@@ -1278,7 +1278,7 @@ text=A low level Earth missile
 colour=0x6b6f33
 
 [if_1829:com_1912]
-layer=if_1829:com_1907
+layer=com_1907
 type=^iftype_model
 x=26
 y=35
@@ -1289,7 +1289,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1913]
-layer=if_1829:com_1907
+layer=com_1907
 type=^iftype_model
 x=78
 y=35
@@ -1300,9 +1300,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1914]
-layer=if_1829:com_1907
+layer=com_1907
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1311,7 +1311,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1915]
-layer=if_1829:com_1907
+layer=com_1907
 type=^iftype_text
 x=27
 y=62
@@ -1331,7 +1331,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1916]
-layer=if_1829:com_1907
+layer=com_1907
 type=^iftype_text
 x=80
 y=62
@@ -1351,9 +1351,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6850]
-layer=if_1829:com_1907
+layer=com_1907
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1370,13 +1370,13 @@ activecolour=0xc000
 [if_1829:com_1917]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6851]
-layer=if_1829:com_1917
+layer=com_1917
 type=^iftype_rectangle
 x=3
 y=5
@@ -1385,7 +1385,7 @@ height=68
 fill=yes
 
 [if_1829:com_1919]
-layer=if_1829:com_1917
+layer=com_1917
 type=^iftype_text
 x=3
 y=4
@@ -1398,7 +1398,7 @@ text=Level 35 : Fire Bolt
 colour=0xfff000
 
 [if_1829:com_1920]
-layer=if_1829:com_1917
+layer=com_1917
 type=^iftype_text
 x=3
 y=17
@@ -1411,7 +1411,7 @@ text=A low level Fire missile
 colour=0x6b6f33
 
 [if_1829:com_1922]
-layer=if_1829:com_1917
+layer=com_1917
 type=^iftype_model
 x=26
 y=35
@@ -1422,7 +1422,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1923]
-layer=if_1829:com_1917
+layer=com_1917
 type=^iftype_model
 x=78
 y=35
@@ -1433,9 +1433,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1924]
-layer=if_1829:com_1917
+layer=com_1917
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1444,7 +1444,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1925]
-layer=if_1829:com_1917
+layer=com_1917
 type=^iftype_text
 x=27
 y=62
@@ -1464,7 +1464,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1926]
-layer=if_1829:com_1917
+layer=com_1917
 type=^iftype_text
 x=80
 y=62
@@ -1484,9 +1484,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6852]
-layer=if_1829:com_1917
+layer=com_1917
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1503,13 +1503,13 @@ activecolour=0xc000
 [if_1829:com_1927]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6853]
-layer=if_1829:com_1927
+layer=com_1927
 type=^iftype_rectangle
 x=3
 y=5
@@ -1518,7 +1518,7 @@ height=68
 fill=yes
 
 [if_1829:com_1929]
-layer=if_1829:com_1927
+layer=com_1927
 type=^iftype_text
 x=3
 y=4
@@ -1531,7 +1531,7 @@ text=Level 41 : Wind Blast
 colour=0xfff000
 
 [if_1829:com_1930]
-layer=if_1829:com_1927
+layer=com_1927
 type=^iftype_text
 x=3
 y=17
@@ -1544,7 +1544,7 @@ text=A medium level Air missile
 colour=0x6b6f33
 
 [if_1829:com_1932]
-layer=if_1829:com_1927
+layer=com_1927
 type=^iftype_model
 x=38
 y=35
@@ -1555,7 +1555,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1933]
-layer=if_1829:com_1927
+layer=com_1927
 type=^iftype_model
 x=114
 y=35
@@ -1566,7 +1566,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1934]
-layer=if_1829:com_1927
+layer=com_1927
 type=^iftype_text
 x=40
 y=62
@@ -1586,7 +1586,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6854]
-layer=if_1829:com_1927
+layer=com_1927
 type=^iftype_text
 x=116
 y=62
@@ -1605,13 +1605,13 @@ activecolour=0xc000
 [if_1829:com_1935]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6855]
-layer=if_1829:com_1935
+layer=com_1935
 type=^iftype_rectangle
 x=3
 y=5
@@ -1620,7 +1620,7 @@ height=68
 fill=yes
 
 [if_1829:com_1937]
-layer=if_1829:com_1935
+layer=com_1935
 type=^iftype_text
 x=3
 y=4
@@ -1633,7 +1633,7 @@ text=Level 47 : Water Blast
 colour=0xfff000
 
 [if_1829:com_1938]
-layer=if_1829:com_1935
+layer=com_1935
 type=^iftype_text
 x=3
 y=17
@@ -1646,7 +1646,7 @@ text=A medium level Water missile
 colour=0x6b6f33
 
 [if_1829:com_1940]
-layer=if_1829:com_1935
+layer=com_1935
 type=^iftype_model
 x=26
 y=35
@@ -1657,7 +1657,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1941]
-layer=if_1829:com_1935
+layer=com_1935
 type=^iftype_model
 x=78
 y=35
@@ -1668,9 +1668,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1942]
-layer=if_1829:com_1935
+layer=com_1935
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1679,7 +1679,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1943]
-layer=if_1829:com_1935
+layer=com_1935
 type=^iftype_text
 x=28
 y=62
@@ -1699,7 +1699,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1944]
-layer=if_1829:com_1935
+layer=com_1935
 type=^iftype_text
 x=80
 y=62
@@ -1719,9 +1719,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6856]
-layer=if_1829:com_1935
+layer=com_1935
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1738,13 +1738,13 @@ activecolour=0xc000
 [if_1829:com_1945]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6857]
-layer=if_1829:com_1945
+layer=com_1945
 type=^iftype_rectangle
 x=3
 y=5
@@ -1753,7 +1753,7 @@ height=68
 fill=yes
 
 [if_1829:com_1947]
-layer=if_1829:com_1945
+layer=com_1945
 type=^iftype_text
 x=3
 y=4
@@ -1766,7 +1766,7 @@ text=Level 53 : Earth Blast
 colour=0xfff000
 
 [if_1829:com_1948]
-layer=if_1829:com_1945
+layer=com_1945
 type=^iftype_text
 x=3
 y=17
@@ -1779,7 +1779,7 @@ text=A low level Earth missile
 colour=0x6b6f33
 
 [if_1829:com_1950]
-layer=if_1829:com_1945
+layer=com_1945
 type=^iftype_model
 x=26
 y=35
@@ -1790,7 +1790,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1951]
-layer=if_1829:com_1945
+layer=com_1945
 type=^iftype_model
 x=78
 y=35
@@ -1801,9 +1801,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1952]
-layer=if_1829:com_1945
+layer=com_1945
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1812,7 +1812,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1953]
-layer=if_1829:com_1945
+layer=com_1945
 type=^iftype_text
 x=28
 y=62
@@ -1832,7 +1832,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1954]
-layer=if_1829:com_1945
+layer=com_1945
 type=^iftype_text
 x=80
 y=62
@@ -1852,9 +1852,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6858]
-layer=if_1829:com_1945
+layer=com_1945
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -1871,13 +1871,13 @@ activecolour=0xc000
 [if_1829:com_1955]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6859]
-layer=if_1829:com_1955
+layer=com_1955
 type=^iftype_rectangle
 x=3
 y=5
@@ -1886,7 +1886,7 @@ height=68
 fill=yes
 
 [if_1829:com_1957]
-layer=if_1829:com_1955
+layer=com_1955
 type=^iftype_text
 x=3
 y=4
@@ -1899,7 +1899,7 @@ text=Level 59 : Fire Blast
 colour=0xfff000
 
 [if_1829:com_1958]
-layer=if_1829:com_1955
+layer=com_1955
 type=^iftype_text
 x=3
 y=17
@@ -1912,7 +1912,7 @@ text=A low level Fire missile
 colour=0x6b6f33
 
 [if_1829:com_1960]
-layer=if_1829:com_1955
+layer=com_1955
 type=^iftype_model
 x=26
 y=35
@@ -1923,7 +1923,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1961]
-layer=if_1829:com_1955
+layer=com_1955
 type=^iftype_model
 x=78
 y=35
@@ -1934,9 +1934,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1962]
-layer=if_1829:com_1955
+layer=com_1955
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -1945,7 +1945,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1963]
-layer=if_1829:com_1955
+layer=com_1955
 type=^iftype_text
 x=27
 y=62
@@ -1965,7 +1965,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1964]
-layer=if_1829:com_1955
+layer=com_1955
 type=^iftype_text
 x=80
 y=62
@@ -1985,9 +1985,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6860]
-layer=if_1829:com_1955
+layer=com_1955
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -2004,13 +2004,13 @@ activecolour=0xc000
 [if_1829:com_1965]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6861]
-layer=if_1829:com_1965
+layer=com_1965
 type=^iftype_rectangle
 x=3
 y=5
@@ -2019,7 +2019,7 @@ height=68
 fill=yes
 
 [if_1829:com_1967]
-layer=if_1829:com_1965
+layer=com_1965
 type=^iftype_text
 x=3
 y=4
@@ -2032,7 +2032,7 @@ text=Level 62 : Wind Wave
 colour=0xfff000
 
 [if_1829:com_1968]
-layer=if_1829:com_1965
+layer=com_1965
 type=^iftype_text
 x=3
 y=17
@@ -2045,7 +2045,7 @@ text=A high level Air missile
 colour=0x6b6f33
 
 [if_1829:com_1970]
-layer=if_1829:com_1965
+layer=com_1965
 type=^iftype_model
 x=38
 y=35
@@ -2056,7 +2056,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1971]
-layer=if_1829:com_1965
+layer=com_1965
 type=^iftype_model
 x=114
 y=35
@@ -2067,7 +2067,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1972]
-layer=if_1829:com_1965
+layer=com_1965
 type=^iftype_text
 x=40
 y=62
@@ -2087,7 +2087,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6862]
-layer=if_1829:com_1965
+layer=com_1965
 type=^iftype_text
 x=116
 y=62
@@ -2106,13 +2106,13 @@ activecolour=0xc000
 [if_1829:com_1973]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6863]
-layer=if_1829:com_1973
+layer=com_1973
 type=^iftype_rectangle
 x=3
 y=5
@@ -2121,7 +2121,7 @@ height=68
 fill=yes
 
 [if_1829:com_1975]
-layer=if_1829:com_1973
+layer=com_1973
 type=^iftype_text
 x=3
 y=4
@@ -2134,7 +2134,7 @@ text=Level 65 : Water Wave
 colour=0xfff000
 
 [if_1829:com_1976]
-layer=if_1829:com_1973
+layer=com_1973
 type=^iftype_text
 x=3
 y=17
@@ -2147,7 +2147,7 @@ text=A high level Water missile
 colour=0x6b6f33
 
 [if_1829:com_1978]
-layer=if_1829:com_1973
+layer=com_1973
 type=^iftype_model
 x=26
 y=35
@@ -2158,7 +2158,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1979]
-layer=if_1829:com_1973
+layer=com_1973
 type=^iftype_model
 x=78
 y=35
@@ -2169,9 +2169,9 @@ zoom=900
 xan=512
 
 [if_1829:com_1980]
-layer=if_1829:com_1973
+layer=com_1973
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -2180,7 +2180,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1981]
-layer=if_1829:com_1973
+layer=com_1973
 type=^iftype_text
 x=28
 y=62
@@ -2200,7 +2200,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1982]
-layer=if_1829:com_1973
+layer=com_1973
 type=^iftype_text
 x=80
 y=62
@@ -2220,9 +2220,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_6864]
-layer=if_1829:com_1973
+layer=com_1973
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -2239,13 +2239,13 @@ activecolour=0xc000
 [if_1829:com_1983]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_6865]
-layer=if_1829:com_1983
+layer=com_1983
 type=^iftype_rectangle
 x=3
 y=5
@@ -2254,7 +2254,7 @@ height=68
 fill=yes
 
 [if_1829:com_1985]
-layer=if_1829:com_1983
+layer=com_1983
 type=^iftype_text
 x=2
 y=4
@@ -2267,7 +2267,7 @@ text=Level 70 : Earth Wave
 colour=0xfff000
 
 [if_1829:com_1986]
-layer=if_1829:com_1983
+layer=com_1983
 type=^iftype_text
 x=3
 y=17
@@ -2280,7 +2280,7 @@ text=A low level Earth missile
 colour=0x6b6f33
 
 [if_1829:com_1988]
-layer=if_1829:com_1983
+layer=com_1983
 type=^iftype_model
 x=26
 y=35
@@ -2291,7 +2291,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1989]
-layer=if_1829:com_1983
+layer=com_1983
 type=^iftype_model
 x=78
 y=35
@@ -2302,9 +2302,9 @@ zoom=900
 xan=512
 
 [if_1829:com_6866]
-layer=if_1829:com_1983
+layer=com_1983
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -2313,7 +2313,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1991]
-layer=if_1829:com_1983
+layer=com_1983
 type=^iftype_text
 x=28
 y=62
@@ -2333,7 +2333,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1992]
-layer=if_1829:com_1983
+layer=com_1983
 type=^iftype_text
 x=80
 y=62
@@ -2353,9 +2353,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_1993]
-layer=if_1829:com_1983
+layer=com_1983
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -2372,13 +2372,13 @@ activecolour=0xc000
 [if_1829:com_1994]
 type=^iftype_layer
 x=5
-y=-72
+y=184
 width=182
 height=76
 hide=yes
 
 [if_1829:com_1995]
-layer=if_1829:com_1994
+layer=com_1994
 type=^iftype_rectangle
 x=3
 y=5
@@ -2387,7 +2387,7 @@ height=68
 fill=yes
 
 [if_1829:com_1996]
-layer=if_1829:com_1994
+layer=com_1994
 type=^iftype_text
 x=2
 y=4
@@ -2400,7 +2400,7 @@ text=Level 75 : Fire Wave
 colour=0xfff000
 
 [if_1829:com_1997]
-layer=if_1829:com_1994
+layer=com_1994
 type=^iftype_text
 x=3
 y=17
@@ -2413,7 +2413,7 @@ text=A high level Fire missile
 colour=0x6b6f33
 
 [if_1829:com_1998]
-layer=if_1829:com_1994
+layer=com_1994
 type=^iftype_model
 x=26
 y=35
@@ -2424,7 +2424,7 @@ zoom=900
 xan=512
 
 [if_1829:com_1999]
-layer=if_1829:com_1994
+layer=com_1994
 type=^iftype_model
 x=78
 y=35
@@ -2435,9 +2435,9 @@ zoom=900
 xan=512
 
 [if_1829:com_2000]
-layer=if_1829:com_1994
+layer=com_1994
 type=^iftype_model
-x=-126
+x=130
 y=35
 width=28
 height=28
@@ -2446,7 +2446,7 @@ zoom=900
 xan=512
 
 [if_1829:com_2001]
-layer=if_1829:com_1994
+layer=com_1994
 type=^iftype_text
 x=28
 y=62
@@ -2466,7 +2466,7 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_2002]
-layer=if_1829:com_1994
+layer=com_1994
 type=^iftype_text
 x=80
 y=62
@@ -2486,9 +2486,9 @@ colour=0xc00000
 activecolour=0xc000
 
 [if_1829:com_2003]
-layer=if_1829:com_1994
+layer=com_1994
 type=^iftype_text
-x=-124
+x=132
 y=62
 width=23
 height=11
@@ -2505,8 +2505,8 @@ activecolour=0xc000
 [if_1829:com_2004]
 type=^iftype_text
 buttontype=^if_button
-x=-113
-y=-87
+x=143
+y=169
 width=36
 height=14
 font=^p12

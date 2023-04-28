@@ -25,7 +25,7 @@ yan=100
 [if_2798:com_2801]
 type=^iftype_model
 buttontype=^if_button
-x=-49
+x=207
 y=13
 width=64
 height=64
@@ -34,7 +34,7 @@ zoom=400
 [if_2798:com_2802]
 type=^iftype_model
 buttontype=^if_button
-x=104
+x=360
 y=13
 width=64
 height=64
@@ -53,7 +53,7 @@ font=^q8
 [if_2798:com_2804]
 type=^iftype_text
 buttontype=^if_button
-x=-92
+x=164
 y=76
 width=152
 height=17
@@ -63,7 +63,7 @@ font=^q8
 [if_2798:com_2805]
 type=^iftype_text
 buttontype=^if_button
-x=60
+x=316
 y=76
 width=152
 height=17
@@ -84,7 +84,7 @@ colour=0x800000
 [if_2798:com_2807]
 type=^iftype_text
 buttontype=^if_button
-x=-116
+x=396
 y=5
 width=72
 height=14

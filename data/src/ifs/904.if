@@ -11,7 +11,7 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_166
+script1op1=^load_var,varp_166
 graphic=miscgraphics,4
 activegraphic=miscgraphics,7
 
@@ -24,7 +24,7 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_166
+script1op1=^load_var,varp_166
 graphic=miscgraphics,6
 activegraphic=miscgraphics,8
 
@@ -37,7 +37,7 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_166
+script1op1=^load_var,varp_166
 graphic=miscgraphics,4
 activegraphic=miscgraphics,7
 
@@ -50,7 +50,7 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_166
+script1op1=^load_var,varp_166
 graphic=miscgraphics,6
 activegraphic=miscgraphics,8
 
@@ -63,7 +63,7 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_166
+script1op1=^load_var,varp_166
 graphic=miscgraphics,4
 activegraphic=miscgraphics,7
 
@@ -76,33 +76,33 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_166
+script1op1=^load_var,varp_166
 graphic=miscgraphics,6
 activegraphic=miscgraphics,8
 
 [if_904:com_911]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-117
+x=139
 y=40
 width=36
 height=36
 scriptc1=^op_neq
 scriptv1=4
-script1op1=^load_var,^varp_166
+script1op1=^load_var,varp_166
 graphic=miscgraphics,4
 activegraphic=miscgraphics,7
 
 [if_904:com_912]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-103
+x=153
 y=40
 width=36
 height=36
 scriptc1=^op_neq
 scriptv1=4
-script1op1=^load_var,^varp_166
+script1op1=^load_var,varp_166
 graphic=miscgraphics,6
 activegraphic=miscgraphics,8
 
@@ -115,7 +115,7 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_170
+script1op1=^load_var,varp_170
 graphic=miscgraphics,0
 activegraphic=miscgraphics,9
 
@@ -128,7 +128,7 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_170
+script1op1=^load_var,varp_170
 graphic=miscgraphics,0
 activegraphic=miscgraphics,9
 
@@ -141,20 +141,20 @@ width=36
 height=36
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_171
+script1op1=^load_var,varp_171
 graphic=miscgraphics,0
 activegraphic=miscgraphics,9
 
 [if_904:com_916]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-113
+x=143
 y=100
 width=36
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_171
+script1op1=^load_var,varp_171
 graphic=miscgraphics,0
 activegraphic=miscgraphics,9
 
@@ -218,7 +218,7 @@ activecolour=0xff8000
 
 [if_904:com_922]
 type=^iftype_text
-x=-114
+x=142
 y=53
 width=43
 height=11
@@ -276,7 +276,7 @@ colour=0xffffff
 
 [if_904:com_927]
 type=^iftype_text
-x=-105
+x=151
 y=110
 width=20
 height=14
@@ -301,7 +301,7 @@ activecolour=0xff8000
 [if_904:com_929]
 type=^iftype_text
 x=6
-y=-60
+y=196
 width=40
 height=26
 halign=yes
@@ -314,12 +314,12 @@ colour=0xffffff
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=52
-y=-59
+y=197
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=4
-script1op1=^load_var,^varp_168
+script1op1=^load_var,varp_168
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
@@ -327,12 +327,12 @@ activegraphic=miscgraphics3,1
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=78
-y=-59
+y=197
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_168
+script1op1=^load_var,varp_168
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
@@ -340,45 +340,45 @@ activegraphic=miscgraphics3,1
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=104
-y=-59
+y=197
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_168
+script1op1=^load_var,varp_168
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
 [if_904:com_933]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-126
-y=-59
+x=130
+y=197
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_168
+script1op1=^load_var,varp_168
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
 [if_904:com_934]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-100
-y=-59
+x=156
+y=197
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_168
+script1op1=^load_var,varp_168
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
 [if_904:com_935]
 type=^iftype_text
 x=56
-y=-52
+y=204
 width=17
 height=11
 font=^p11
@@ -390,7 +390,7 @@ activecolour=0xff8000
 [if_904:com_936]
 type=^iftype_text
 x=88
-y=-52
+y=204
 width=4
 height=11
 font=^p11
@@ -401,7 +401,7 @@ colour=0xffff00
 [if_904:com_937]
 type=^iftype_text
 x=113
-y=-52
+y=204
 width=7
 height=11
 font=^p11
@@ -411,8 +411,8 @@ colour=0xffff00
 
 [if_904:com_938]
 type=^iftype_text
-x=-117
-y=-52
+x=139
+y=204
 width=6
 height=11
 font=^p11
@@ -422,8 +422,8 @@ colour=0xffff00
 
 [if_904:com_939]
 type=^iftype_text
-x=-90
-y=-52
+x=166
+y=204
 width=5
 height=11
 font=^p11
@@ -434,7 +434,7 @@ colour=0xffff00
 [if_904:com_940]
 type=^iftype_text
 x=6
-y=-30
+y=226
 width=40
 height=26
 halign=yes
@@ -447,12 +447,12 @@ colour=0xffffff
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=52
-y=-29
+y=227
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=4
-script1op1=^load_var,^varp_169
+script1op1=^load_var,varp_169
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
@@ -460,12 +460,12 @@ activegraphic=miscgraphics3,1
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=78
-y=-29
+y=227
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_169
+script1op1=^load_var,varp_169
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
@@ -473,45 +473,45 @@ activegraphic=miscgraphics3,1
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=104
-y=-29
+y=227
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_169
+script1op1=^load_var,varp_169
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
 [if_904:com_944]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-126
-y=-29
+x=130
+y=227
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_169
+script1op1=^load_var,varp_169
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
 [if_904:com_945]
 type=^iftype_graphic
 buttontype=^if_selectbutton
-x=-100
-y=-29
+x=156
+y=227
 width=25
 height=25
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_169
+script1op1=^load_var,varp_169
 graphic=miscgraphics3,0
 activegraphic=miscgraphics3,1
 
 [if_904:com_946]
 type=^iftype_text
 x=56
-y=-22
+y=234
 width=17
 height=11
 font=^p11
@@ -523,7 +523,7 @@ activecolour=0xff8000
 [if_904:com_947]
 type=^iftype_text
 x=88
-y=-22
+y=234
 width=4
 height=11
 font=^p11
@@ -534,7 +534,7 @@ colour=0xffff00
 [if_904:com_948]
 type=^iftype_text
 x=113
-y=-22
+y=234
 width=7
 height=11
 font=^p11
@@ -544,8 +544,8 @@ colour=0xffff00
 
 [if_904:com_949]
 type=^iftype_text
-x=-117
-y=-22
+x=139
+y=234
 width=6
 height=11
 font=^p11
@@ -555,8 +555,8 @@ colour=0xffff00
 
 [if_904:com_950]
 type=^iftype_text
-x=-90
-y=-22
+x=166
+y=234
 width=5
 height=11
 font=^p11
@@ -567,7 +567,7 @@ colour=0xffff00
 [if_904:com_956]
 type=^iftype_text
 x=46
-y=-118
+y=138
 width=100
 height=14
 font=^p12
@@ -579,12 +579,12 @@ colour=0xffffff
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=56
-y=-102
+y=154
 width=36
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_287
+script1op1=^load_var,varp_287
 graphic=miscgraphics,0
 activegraphic=miscgraphics,9
 
@@ -592,19 +592,19 @@ activegraphic=miscgraphics,9
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=98
-y=-102
+y=154
 width=36
 height=36
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_287
+script1op1=^load_var,varp_287
 graphic=miscgraphics,0
 activegraphic=miscgraphics,9
 
 [if_904:com_959]
 type=^iftype_text
 x=66
-y=-91
+y=165
 width=15
 height=14
 font=^p12
@@ -615,7 +615,7 @@ colour=0xffff00
 [if_904:com_960]
 type=^iftype_text
 x=106
-y=-92
+y=164
 width=20
 height=14
 font=^p12

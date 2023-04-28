@@ -5,7 +5,7 @@ height=334
 
 [if_5570:com_5571]
 type=^iftype_model
-x=-121
+x=135
 y=16
 width=35
 height=32
@@ -55,7 +55,7 @@ width=145
 height=190
 
 [if_5570:com_5576]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -64,26 +64,26 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_5570:com_5577]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
-y=-113
+y=143
 width=72
 height=36
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_5570:com_5578]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -92,12 +92,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_5570:com_5579]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -106,21 +106,21 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_5570:com_5580]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_graphic
 x=22
-y=-107
+y=149
 width=34
 height=24
 graphic=combaticons3,0
 
 [if_5570:com_5581]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_graphic
 x=22
 y=11
@@ -129,7 +129,7 @@ height=24
 graphic=combaticons3,1
 
 [if_5570:com_5582]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_graphic
 x=21
 y=57
@@ -138,7 +138,7 @@ height=24
 graphic=combaticons3,3
 
 [if_5570:com_5583]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_graphic
 x=22
 y=103
@@ -147,7 +147,7 @@ height=24
 graphic=combaticons3,2
 
 [if_5570:com_5584]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_text
 x=78
 y=5
@@ -159,7 +159,7 @@ text=Spike
 colour=0xffff00
 
 [if_5570:com_5585]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_text
 x=78
 y=51
@@ -171,7 +171,7 @@ text=Impale
 colour=0xffff00
 
 [if_5570:com_5586]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_text
 x=78
 y=97
@@ -183,10 +183,10 @@ text=Smash
 colour=0xffff00
 
 [if_5570:com_5587]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_text
 x=78
-y=-113
+y=143
 width=26
 height=11
 font=^p11
@@ -195,7 +195,7 @@ text=Block
 colour=0xffff00
 
 [if_5570:com_5588]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_text
 x=78
 y=18
@@ -206,7 +206,7 @@ text=(Accurate)
 colour=0xffff00
 
 [if_5570:com_5589]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_text
 x=78
 y=110
@@ -217,7 +217,7 @@ text=(Aggressive)
 colour=0xffff00
 
 [if_5570:com_5590]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_text
 x=78
 y=64
@@ -228,10 +228,10 @@ text=(Aggressive)
 colour=0xffff00
 
 [if_5570:com_5591]
-layer=if_5570:com_5575
+layer=com_5575
 type=^iftype_text
 x=78
-y=-100
+y=156
 width=58
 height=11
 font=^p11
@@ -251,7 +251,7 @@ colour=0xffff00
 [if_5570:com_5593]
 type=^iftype_text
 x=82
-y=-120
+y=136
 width=29
 height=11
 font=^p11
@@ -261,7 +261,7 @@ colour=0xffff00
 [if_5570:com_5594]
 type=^iftype_text
 x=82
-y=-74
+y=182
 width=36
 height=11
 font=^p11
@@ -271,7 +271,7 @@ colour=0xffff00
 [if_5570:com_5595]
 type=^iftype_text
 x=82
-y=-28
+y=228
 width=29
 height=11
 font=^p11

@@ -22,7 +22,7 @@ graphic=tradebacking,0
 [if_994:com_997]
 type=^iftype_graphic
 x=12
-y=-116
+y=140
 width=88
 height=60
 graphic=tradebacking,0
@@ -30,7 +30,7 @@ graphic=tradebacking,0
 [if_994:com_998]
 type=^iftype_graphic
 x=12
-y=-56
+y=200
 width=88
 height=60
 graphic=tradebacking,0
@@ -38,7 +38,7 @@ graphic=tradebacking,0
 [if_994:com_999]
 type=^iftype_graphic
 x=12
-y=4
+y=260
 width=88
 height=60
 graphic=tradebacking,0
@@ -62,7 +62,7 @@ graphic=tradebacking,0
 [if_994:com_1002]
 type=^iftype_graphic
 x=100
-y=-116
+y=140
 width=88
 height=60
 graphic=tradebacking,0
@@ -70,14 +70,14 @@ graphic=tradebacking,0
 [if_994:com_1003]
 type=^iftype_graphic
 x=100
-y=-56
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1004]
 type=^iftype_graphic
-x=-68
+x=188
 y=20
 width=88
 height=60
@@ -86,14 +86,14 @@ graphic=tradebacking,0
 [if_994:com_1005]
 type=^iftype_graphic
 x=100
-y=4
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1006]
 type=^iftype_graphic
-x=-68
+x=188
 y=80
 width=88
 height=60
@@ -101,31 +101,31 @@ graphic=tradebacking,0
 
 [if_994:com_1007]
 type=^iftype_graphic
-x=-68
-y=-116
+x=188
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1008]
 type=^iftype_graphic
-x=-68
-y=-56
+x=188
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1009]
 type=^iftype_graphic
-x=-68
-y=4
+x=188
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1010]
 type=^iftype_graphic
-x=20
+x=276
 y=20
 width=88
 height=60
@@ -133,7 +133,7 @@ graphic=tradebacking,0
 
 [if_994:com_1011]
 type=^iftype_graphic
-x=108
+x=364
 y=80
 width=88
 height=60
@@ -141,7 +141,7 @@ graphic=tradebacking,0
 
 [if_994:com_1012]
 type=^iftype_graphic
-x=20
+x=276
 y=80
 width=88
 height=60
@@ -149,39 +149,39 @@ graphic=tradebacking,0
 
 [if_994:com_1013]
 type=^iftype_graphic
-x=20
-y=-116
+x=276
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1014]
 type=^iftype_graphic
-x=20
-y=-56
+x=276
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1015]
 type=^iftype_graphic
-x=20
-y=4
+x=276
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1016]
 type=^iftype_graphic
-x=108
-y=-116
+x=364
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1017]
 type=^iftype_graphic
-x=108
+x=364
 y=20
 width=88
 height=60
@@ -189,23 +189,23 @@ graphic=tradebacking,0
 
 [if_994:com_1018]
 type=^iftype_graphic
-x=108
-y=-56
+x=364
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1019]
 type=^iftype_graphic
-x=108
-y=4
+x=364
+y=260
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1020]
 type=^iftype_graphic
-x=-100
+x=412
 y=20
 width=88
 height=60
@@ -213,7 +213,7 @@ graphic=tradebacking,0
 
 [if_994:com_1021]
 type=^iftype_graphic
-x=-100
+x=412
 y=80
 width=88
 height=60
@@ -221,24 +221,24 @@ graphic=tradebacking,0
 
 [if_994:com_1022]
 type=^iftype_graphic
-x=-100
-y=-116
+x=412
+y=140
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1023]
 type=^iftype_graphic
-x=-100
-y=-56
+x=412
+y=200
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_994:com_1024]
 type=^iftype_graphic
-x=-100
-y=4
+x=412
+y=260
 width=88
 height=60
 graphic=tradebacking,0
@@ -278,7 +278,7 @@ graphic=miscgraphics,2
 [if_994:com_1029]
 type=^iftype_graphic
 x=-3
-y=-99
+y=157
 width=36
 height=36
 graphic=miscgraphics,2
@@ -286,7 +286,7 @@ graphic=miscgraphics,2
 [if_994:com_1030]
 type=^iftype_graphic
 x=-3
-y=-63
+y=193
 width=36
 height=36
 graphic=miscgraphics,2
@@ -294,7 +294,7 @@ graphic=miscgraphics,2
 [if_994:com_1031]
 type=^iftype_graphic
 x=-3
-y=-27
+y=229
 width=36
 height=36
 graphic=miscgraphics,2
@@ -302,14 +302,14 @@ graphic=miscgraphics,2
 [if_994:com_1032]
 type=^iftype_graphic
 x=-3
-y=9
+y=265
 width=36
 height=36
 graphic=miscgraphics,2
 
 [if_994:com_1033]
 type=^iftype_graphic
-x=-33
+x=479
 y=50
 width=36
 height=36
@@ -317,7 +317,7 @@ graphic=steelborder2,1
 
 [if_994:com_1034]
 type=^iftype_graphic
-x=-33
+x=479
 y=86
 width=36
 height=36
@@ -325,7 +325,7 @@ graphic=steelborder2,1
 
 [if_994:com_1035]
 type=^iftype_graphic
-x=-33
+x=479
 y=122
 width=36
 height=36
@@ -333,32 +333,32 @@ graphic=steelborder2,1
 
 [if_994:com_1036]
 type=^iftype_graphic
-x=-33
-y=-98
+x=479
+y=158
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_994:com_1037]
 type=^iftype_graphic
-x=-33
-y=-62
+x=479
+y=194
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_994:com_1038]
 type=^iftype_graphic
-x=-33
-y=-26
+x=479
+y=230
 width=36
 height=36
 graphic=steelborder2,1
 
 [if_994:com_1039]
 type=^iftype_graphic
-x=-33
-y=10
+x=479
+y=266
 width=36
 height=36
 graphic=steelborder2,1
@@ -366,7 +366,7 @@ graphic=steelborder2,1
 [if_994:com_1040]
 type=^iftype_graphic
 x=73
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -374,79 +374,79 @@ graphic=miscgraphics,3
 [if_994:com_1041]
 type=^iftype_graphic
 x=109
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1042]
 type=^iftype_graphic
-x=-111
-y=43
+x=145
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1043]
 type=^iftype_graphic
-x=-75
-y=43
+x=181
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1044]
 type=^iftype_graphic
-x=-39
-y=43
+x=217
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1045]
 type=^iftype_graphic
-x=-3
-y=43
+x=253
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1046]
 type=^iftype_graphic
-x=33
-y=43
+x=289
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1047]
 type=^iftype_graphic
-x=69
-y=43
+x=325
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1048]
 type=^iftype_graphic
-x=105
-y=43
+x=361
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1049]
 type=^iftype_graphic
-x=-115
-y=43
+x=397
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1050]
 type=^iftype_graphic
-x=-79
-y=43
+x=433
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -469,7 +469,7 @@ graphic=steelborder2,0
 
 [if_994:com_1053]
 type=^iftype_graphic
-x=-112
+x=144
 y=5
 width=36
 height=36
@@ -477,7 +477,7 @@ graphic=steelborder2,0
 
 [if_994:com_1054]
 type=^iftype_graphic
-x=-76
+x=180
 y=5
 width=36
 height=36
@@ -485,7 +485,7 @@ graphic=steelborder2,0
 
 [if_994:com_1055]
 type=^iftype_graphic
-x=-40
+x=216
 y=5
 width=36
 height=36
@@ -493,7 +493,7 @@ graphic=steelborder2,0
 
 [if_994:com_1056]
 type=^iftype_graphic
-x=-4
+x=252
 y=5
 width=36
 height=36
@@ -501,7 +501,7 @@ graphic=steelborder2,0
 
 [if_994:com_1057]
 type=^iftype_graphic
-x=32
+x=288
 y=5
 width=36
 height=36
@@ -509,7 +509,7 @@ graphic=steelborder2,0
 
 [if_994:com_1058]
 type=^iftype_graphic
-x=68
+x=324
 y=5
 width=36
 height=36
@@ -517,7 +517,7 @@ graphic=steelborder2,0
 
 [if_994:com_1059]
 type=^iftype_graphic
-x=104
+x=360
 y=5
 width=36
 height=36
@@ -525,7 +525,7 @@ graphic=steelborder2,0
 
 [if_994:com_1060]
 type=^iftype_graphic
-x=-116
+x=396
 y=5
 width=36
 height=36
@@ -533,7 +533,7 @@ graphic=steelborder2,0
 
 [if_994:com_1061]
 type=^iftype_graphic
-x=-80
+x=432
 y=5
 width=36
 height=36
@@ -541,7 +541,7 @@ graphic=steelborder2,0
 
 [if_994:com_1062]
 type=^iftype_graphic
-x=-4
+x=252
 y=34
 width=36
 height=36
@@ -558,7 +558,7 @@ graphic=steelborder2,0
 [if_994:com_1064]
 type=^iftype_graphic
 x=37
-y=43
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
@@ -566,14 +566,14 @@ graphic=miscgraphics,3
 [if_994:com_1065]
 type=^iftype_graphic
 x=12
-y=34
+y=290
 width=25
 height=30
 graphic=steelborder,2
 
 [if_994:com_1066]
 type=^iftype_graphic
-x=-37
+x=475
 y=20
 width=25
 height=30
@@ -581,7 +581,7 @@ graphic=steelborder,1
 
 [if_994:com_1067]
 type=^iftype_graphic
-x=-73
+x=439
 y=5
 width=36
 height=36
@@ -589,23 +589,23 @@ graphic=steelborder2,0
 
 [if_994:com_1068]
 type=^iftype_graphic
-x=-37
-y=34
+x=475
+y=290
 width=25
 height=30
 graphic=steelborder,3
 
 [if_994:com_1069]
 type=^iftype_graphic
-x=-73
-y=43
+x=439
+y=299
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_994:com_1070]
 type=^iftype_graphic
-x=32
+x=288
 y=34
 width=36
 height=36
@@ -613,7 +613,7 @@ graphic=steelborder2,0
 
 [if_994:com_1071]
 type=^iftype_graphic
-x=68
+x=324
 y=34
 width=36
 height=36
@@ -621,7 +621,7 @@ graphic=steelborder2,0
 
 [if_994:com_1072]
 type=^iftype_graphic
-x=104
+x=360
 y=34
 width=36
 height=36
@@ -629,7 +629,7 @@ graphic=steelborder2,0
 
 [if_994:com_1073]
 type=^iftype_graphic
-x=-116
+x=396
 y=34
 width=36
 height=36
@@ -637,7 +637,7 @@ graphic=steelborder2,0
 
 [if_994:com_1074]
 type=^iftype_graphic
-x=-80
+x=432
 y=34
 width=36
 height=36
@@ -645,7 +645,7 @@ graphic=steelborder2,0
 
 [if_994:com_1075]
 type=^iftype_graphic
-x=-53
+x=459
 y=34
 width=36
 height=36
@@ -653,7 +653,7 @@ graphic=steelborder2,0
 
 [if_994:com_1076]
 type=^iftype_graphic
-x=-40
+x=216
 y=34
 width=36
 height=36
@@ -661,7 +661,7 @@ graphic=steelborder2,0
 
 [if_994:com_1077]
 type=^iftype_graphic
-x=-76
+x=180
 y=34
 width=36
 height=36
@@ -669,7 +669,7 @@ graphic=steelborder2,0
 
 [if_994:com_1078]
 type=^iftype_graphic
-x=-112
+x=144
 y=34
 width=36
 height=36
@@ -710,12 +710,12 @@ graphic=steelborder2,0
 [if_994:com_1083]
 type=^iftype_text
 x=116
-y=-65
+y=191
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=9
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Warhammer
@@ -724,7 +724,7 @@ activecolour=0xffffff
 [if_994:com_1084]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-88
+x=424
 y=28
 width=68
 height=11
@@ -737,12 +737,12 @@ overcolour=0xffffff
 [if_994:com_1085]
 type=^iftype_text
 x=18
-y=-115
+y=141
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=4
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Sword
@@ -751,12 +751,12 @@ activecolour=0xffffff
 [if_994:com_1086]
 type=^iftype_text
 x=18
-y=-15
+y=241
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=6
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Long sword
@@ -765,12 +765,12 @@ activecolour=0xffffff
 [if_994:com_1087]
 type=^iftype_text
 x=18
-y=-65
+y=191
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=5
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Scimitar
@@ -779,12 +779,12 @@ activecolour=0xffffff
 [if_994:com_1088]
 type=^iftype_text
 x=18
-y=35
+y=291
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=14
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=2 hand sword
@@ -793,12 +793,12 @@ activecolour=0xffffff
 [if_994:com_1089]
 type=^iftype_text
 x=73
-y=-37
+y=219
 width=34
 height=14
 scriptc1=^op_leq
 scriptv1=1
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -809,12 +809,12 @@ activecolour=0xc000
 [if_994:com_1090]
 type=^iftype_text
 x=73
-y=13
+y=269
 width=33
 height=14
 scriptc1=^op_leq
 scriptv1=2
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 font=^p12
 shadow=yes
 text=3bars
@@ -829,7 +829,7 @@ width=80
 height=14
 scriptc1=^op_leq
 scriptv1=1
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Axe
@@ -838,12 +838,12 @@ activecolour=0xffffff
 [if_994:com_1092]
 type=^iftype_text
 x=116
-y=-15
+y=241
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=10
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Battle axe
@@ -852,12 +852,12 @@ activecolour=0xffffff
 [if_994:com_1093]
 type=^iftype_text
 x=116
-y=-115
+y=141
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=2
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Mace
@@ -871,7 +871,7 @@ width=80
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Dagger
@@ -879,13 +879,13 @@ activecolour=0xffffff
 
 [if_994:com_1095]
 type=^iftype_text
-x=-85
-y=-37
+x=171
+y=219
 width=33
 height=14
 scriptc1=^op_leq
 scriptv1=2
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 font=^p12
 shadow=yes
 text=3bars
@@ -894,27 +894,27 @@ activecolour=0xc000
 
 [if_994:com_1097]
 type=^iftype_layer
-x=-102
-y=-47
+x=410
+y=209
 width=80
 height=46
 
 [if_994:com_1096]
-layer=if_994:com_1097
+layer=com_1097
 type=^iftype_text
 y=32
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=4
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=other
 activecolour=0xffffff
 
 [if_994:com_1132]
-layer=if_994:com_1097
+layer=com_1097
 type=^iftype_text
 x=55
 y=10
@@ -922,7 +922,7 @@ width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -932,13 +932,13 @@ activecolour=0xc000
 
 [if_994:com_1098]
 type=^iftype_text
-x=-42
+x=214
 y=91
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=11
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Chain body
@@ -946,13 +946,13 @@ activecolour=0xffffff
 
 [if_994:com_1099]
 type=^iftype_text
-x=-42
-y=-115
+x=214
+y=141
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=16
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Plate legs
@@ -960,13 +960,13 @@ activecolour=0xffffff
 
 [if_994:com_1100]
 type=^iftype_text
-x=-42
-y=-65
+x=214
+y=191
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=16
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Plate skirt
@@ -974,13 +974,13 @@ activecolour=0xffffff
 
 [if_994:com_1101]
 type=^iftype_text
-x=-42
-y=-15
+x=214
+y=241
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=18
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Plate body
@@ -988,13 +988,13 @@ activecolour=0xffffff
 
 [if_994:com_1102]
 type=^iftype_text
-x=56
+x=312
 y=91
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=3
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Medium helm
@@ -1002,13 +1002,13 @@ activecolour=0xffffff
 
 [if_994:com_1103]
 type=^iftype_text
-x=56
-y=-115
+x=312
+y=141
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=7
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Full helm
@@ -1016,13 +1016,13 @@ activecolour=0xffffff
 
 [if_994:com_1104]
 type=^iftype_text
-x=56
-y=-65
+x=312
+y=191
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=8
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Square shield
@@ -1030,13 +1030,13 @@ activecolour=0xffffff
 
 [if_994:com_1105]
 type=^iftype_text
-x=56
-y=-15
+x=312
+y=241
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=12
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Kite shield
@@ -1044,13 +1044,13 @@ activecolour=0xffffff
 
 [if_994:com_1106]
 type=^iftype_text
-x=-106
-y=-65
+x=406
+y=191
 width=88
 height=14
 scriptc1=^op_leq
 scriptv1=7
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Throwing knives
@@ -1058,16 +1058,16 @@ activecolour=0xffffff
 
 [if_994:com_1107]
 type=^iftype_text
-x=-102
+x=410
 y=91
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=4
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 scriptc2=^op_neq
 scriptv2=1
-script2op1=^load_var,^varp_261
+script2op1=^load_var,varp_261
 halign=yes
 font=^p12
 text=Dart tips
@@ -1075,13 +1075,13 @@ activecolour=0xffffff
 
 [if_994:com_1108]
 type=^iftype_text
-x=-102
-y=-115
+x=410
+y=141
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=5
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Arrow heads
@@ -1089,13 +1089,13 @@ activecolour=0xffffff
 
 [if_994:com_1109]
 type=^iftype_text
-x=13
+x=269
 y=69
 width=33
 height=14
 scriptc1=^op_leq
 scriptv1=2
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 font=^p12
 shadow=yes
 text=3bars
@@ -1104,13 +1104,13 @@ activecolour=0xc000
 
 [if_994:com_1110]
 type=^iftype_text
-x=13
+x=269
 y=119
 width=33
 height=14
 scriptc1=^op_leq
 scriptv1=2
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 font=^p12
 shadow=yes
 text=3bars
@@ -1119,13 +1119,13 @@ activecolour=0xc000
 
 [if_994:com_1111]
 type=^iftype_text
-x=13
-y=-87
+x=269
+y=169
 width=33
 height=14
 scriptc1=^op_leq
 scriptv1=2
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 font=^p12
 shadow=yes
 text=3bars
@@ -1134,13 +1134,13 @@ activecolour=0xc000
 
 [if_994:com_1112]
 type=^iftype_text
-x=13
-y=-37
+x=269
+y=219
 width=33
 height=14
 scriptc1=^op_leq
 scriptv1=4
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 font=^p12
 shadow=yes
 text=5bars
@@ -1149,13 +1149,13 @@ activecolour=0xc000
 
 [if_994:com_1113]
 type=^iftype_text
-x=111
+x=367
 y=119
 width=34
 height=14
 scriptc1=^op_leq
 scriptv1=1
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1165,13 +1165,13 @@ activecolour=0xc000
 
 [if_994:com_1114]
 type=^iftype_text
-x=111
-y=-87
+x=367
+y=169
 width=34
 height=14
 scriptc1=^op_leq
 scriptv1=1
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1181,13 +1181,13 @@ activecolour=0xc000
 
 [if_994:com_1115]
 type=^iftype_text
-x=111
-y=-37
+x=367
+y=219
 width=33
 height=14
 scriptc1=^op_leq
 scriptv1=2
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 font=^p12
 shadow=yes
 text=3bars
@@ -1197,12 +1197,12 @@ activecolour=0xc000
 [if_994:com_1116]
 type=^iftype_text
 x=73
-y=-87
+y=169
 width=34
 height=14
 scriptc1=^op_leq
 scriptv1=1
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1224,13 +1224,13 @@ colour=0xffff00
 
 [if_994:com_1118]
 type=^iftype_text
-x=-85
-y=-87
+x=171
+y=169
 width=33
 height=14
 scriptc1=^op_leq
 scriptv1=2
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 font=^p12
 shadow=yes
 text=3bars
@@ -1251,7 +1251,7 @@ invoption3=Make 10
 
 [if_994:com_1120]
 type=^iftype_inventory
-x=-116
+x=140
 y=60
 width=1
 height=5
@@ -1263,7 +1263,7 @@ invoption3=Make 10
 
 [if_994:com_1121]
 type=^iftype_inventory
-x=-18
+x=238
 y=60
 width=1
 height=5
@@ -1275,7 +1275,7 @@ invoption3=Make 10
 
 [if_994:com_1122]
 type=^iftype_inventory
-x=80
+x=336
 y=60
 width=1
 height=5
@@ -1287,7 +1287,7 @@ invoption3=Make 10
 
 [if_994:com_1123]
 type=^iftype_inventory
-x=-78
+x=434
 y=60
 width=1
 height=5
@@ -1305,7 +1305,7 @@ width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1321,7 +1321,7 @@ width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1331,13 +1331,13 @@ activecolour=0xc000
 
 [if_994:com_1126]
 type=^iftype_text
-x=-85
+x=171
 y=69
 width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1347,13 +1347,13 @@ activecolour=0xc000
 
 [if_994:com_1127]
 type=^iftype_text
-x=111
+x=367
 y=69
 width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1363,13 +1363,13 @@ activecolour=0xc000
 
 [if_994:com_1128]
 type=^iftype_text
-x=-47
+x=465
 y=69
 width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1379,13 +1379,13 @@ activecolour=0xc000
 
 [if_994:com_1129]
 type=^iftype_text
-x=-85
+x=171
 y=119
 width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1395,13 +1395,13 @@ activecolour=0xc000
 
 [if_994:com_1130]
 type=^iftype_text
-x=-47
+x=465
 y=119
 width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1411,13 +1411,13 @@ activecolour=0xc000
 
 [if_994:com_1131]
 type=^iftype_text
-x=-47
-y=-87
+x=465
+y=169
 width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes
@@ -1427,27 +1427,27 @@ activecolour=0xc000
 
 [if_994:com_1133]
 type=^iftype_layer
-x=-102
-y=3
+x=410
+y=259
 width=80
 height=46
 
 [if_994:com_1134]
-layer=if_994:com_1133
+layer=com_1133
 type=^iftype_text
 y=32
 width=80
 height=14
 scriptc1=^op_leq
 scriptv1=4
-script1op1=^load_var,^varp_211
+script1op1=^load_var,varp_211
 halign=yes
 font=^p12
 text=Studs
 activecolour=0xffffff
 
 [if_994:com_1135]
-layer=if_994:com_1133
+layer=com_1133
 type=^iftype_text
 x=55
 y=10
@@ -1455,7 +1455,7 @@ width=25
 height=14
 scriptc1=^op_leq
 scriptv1=0
-script1op1=^load_var,^varp_210
+script1op1=^load_var,varp_210
 halign=yes
 font=^p12
 shadow=yes

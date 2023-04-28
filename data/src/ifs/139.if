@@ -13,7 +13,7 @@ graphic=sworddecor,1
 
 [if_139:com_141]
 type=^iftype_graphic
-x=-91
+x=421
 y=5
 width=57
 height=13
@@ -31,7 +31,7 @@ zoom=400
 [if_139:com_143]
 type=^iftype_model
 buttontype=^if_button
-x=67
+x=323
 y=13
 width=64
 height=96
@@ -50,7 +50,7 @@ font=^q8
 [if_139:com_145]
 type=^iftype_text
 buttontype=^if_button
-x=24
+x=280
 y=76
 width=152
 height=17

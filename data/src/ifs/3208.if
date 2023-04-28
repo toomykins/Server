@@ -5,7 +5,7 @@ height=334
 
 [if_3208:com_3209]
 type=^iftype_text
-x=-75
+x=181
 y=8
 width=134
 height=14
@@ -25,7 +25,7 @@ xan=500
 
 [if_3208:com_3211]
 type=^iftype_text
-x=89
+x=345
 y=63
 width=76
 height=14
@@ -36,7 +36,7 @@ colour=0xffff00
 
 [if_3208:com_3212]
 type=^iftype_model
-x=115
+x=371
 y=81
 width=20
 height=20

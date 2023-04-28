@@ -5,7 +5,7 @@ height=334
 
 [if_3281:com_3282]
 type=^iftype_text
-x=-81
+x=175
 y=6
 width=149
 height=14
@@ -16,8 +16,8 @@ colour=0xffff00
 
 [if_3281:com_3283]
 type=^iftype_model
-x=-2
-y=-116
+x=254
+y=140
 width=38
 height=37
 model=model_3040
@@ -38,7 +38,7 @@ colour=0xf3cc99
 
 [if_3281:com_3285]
 type=^iftype_text
-x=-125
+x=387
 y=49
 width=56
 height=17
@@ -49,7 +49,7 @@ colour=0xf3cc99
 
 [if_3281:com_3286]
 type=^iftype_text
-x=16
+x=272
 y=116
 width=56
 height=17
@@ -60,7 +60,7 @@ colour=0xf3cc99
 
 [if_3281:com_3287]
 type=^iftype_text
-x=-54
+x=202
 y=105
 width=55
 height=17
@@ -71,7 +71,7 @@ colour=0xf3cc99
 
 [if_3281:com_3288]
 type=^iftype_text
-x=-66
+x=190
 y=78
 width=56
 height=17
@@ -82,7 +82,7 @@ colour=0xf3cc99
 
 [if_3281:com_3289]
 type=^iftype_text
-x=84
+x=340
 y=74
 width=31
 height=17
@@ -93,7 +93,7 @@ colour=0xf3cc99
 
 [if_3281:com_3290]
 type=^iftype_text
-x=82
+x=338
 y=90
 width=38
 height=17
@@ -104,7 +104,7 @@ colour=0xf3cc99
 
 [if_3281:com_3291]
 type=^iftype_model
-x=124
+x=380
 y=93
 width=32
 height=32
@@ -115,7 +115,7 @@ yan=199
 
 [if_3281:com_3292]
 type=^iftype_model
-x=-7
+x=249
 y=73
 width=32
 height=32
@@ -126,8 +126,8 @@ yan=199
 
 [if_3281:com_3293]
 type=^iftype_model
-x=97
-y=-92
+x=353
+y=164
 width=32
 height=32
 model=model_3046
@@ -138,7 +138,7 @@ yan=1833
 [if_3281:com_3294]
 type=^iftype_model
 x=49
-y=-100
+y=156
 width=32
 height=32
 model=model_3046
@@ -160,7 +160,7 @@ colour=0xf3cc99
 [if_3281:com_3296]
 type=^iftype_text
 x=24
-y=-124
+y=132
 width=62
 height=17
 font=^q8
@@ -170,8 +170,8 @@ colour=0xf3cc99
 
 [if_3281:com_3297]
 type=^iftype_text
-x=82
-y=-85
+x=338
+y=171
 width=26
 height=17
 font=^q8
@@ -181,8 +181,8 @@ colour=0xf3cc99
 
 [if_3281:com_3298]
 type=^iftype_text
-x=76
-y=-70
+x=332
+y=186
 width=33
 height=17
 font=^q8
@@ -203,8 +203,8 @@ yan=199
 
 [if_3281:com_3300]
 type=^iftype_model
-x=-89
-y=-57
+x=167
+y=199
 width=32
 height=32
 model=model_3046
@@ -214,8 +214,8 @@ yan=199
 
 [if_3281:com_3301]
 type=^iftype_text
-x=-59
-y=-61
+x=197
+y=195
 width=36
 height=17
 font=^q8
@@ -225,8 +225,8 @@ colour=0xf3cc99
 
 [if_3281:com_3302]
 type=^iftype_text
-x=-59
-y=-46
+x=197
+y=210
 width=23
 height=17
 font=^q8
@@ -236,7 +236,7 @@ colour=0xf3cc99
 
 [if_3281:com_3303]
 type=^iftype_model
-x=-103
+x=153
 y=117
 width=32
 height=32
@@ -247,8 +247,8 @@ yan=199
 
 [if_3281:com_3304]
 type=^iftype_text
-x=-125
-y=-117
+x=131
+y=139
 width=70
 height=17
 font=^q8
@@ -269,7 +269,7 @@ colour=0xf3cc99
 
 [if_3281:com_3306]
 type=^iftype_model
-x=-7
+x=249
 y=96
 width=32
 height=32
@@ -280,13 +280,13 @@ yan=199
 
 [if_3281:com_3307]
 type=^iftype_model
-x=-1
-y=-116
+x=255
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_632
 zoom=485
@@ -295,13 +295,13 @@ yan=1983
 
 [if_3281:com_3308]
 type=^iftype_model
-x=-1
-y=-116
+x=255
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_633
 zoom=485
@@ -310,13 +310,13 @@ yan=1983
 
 [if_3281:com_3309]
 type=^iftype_model
-x=-1
-y=-116
+x=255
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=3
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_630
 zoom=485
@@ -325,13 +325,13 @@ yan=1983
 
 [if_3281:com_3310]
 type=^iftype_model
-x=-1
-y=-116
+x=255
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=4
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_631
 zoom=485
@@ -340,13 +340,13 @@ yan=1983
 
 [if_3281:com_3311]
 type=^iftype_model
-x=-1
-y=-116
+x=255
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=5
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_634
 zoom=485
@@ -355,13 +355,13 @@ yan=1983
 
 [if_3281:com_3312]
 type=^iftype_model
-x=-1
-y=-117
+x=255
+y=139
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=6
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_635
 zoom=485
@@ -370,13 +370,13 @@ yan=1983
 
 [if_3281:com_3313]
 type=^iftype_model
-x=-1
-y=-116
+x=255
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=7
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_636
 zoom=485
@@ -385,13 +385,13 @@ yan=1983
 
 [if_3281:com_3314]
 type=^iftype_model
-x=-1
-y=-116
+x=255
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=8
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_637
 zoom=485
@@ -400,13 +400,13 @@ yan=1983
 
 [if_3281:com_3315]
 type=^iftype_model
-x=-1
-y=-116
+x=255
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=9
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 zoom=485
 xan=229
@@ -414,13 +414,13 @@ yan=1983
 
 [if_3281:com_3316]
 type=^iftype_model
-x=-1
-y=-116
+x=255
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=10
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_638
 zoom=485
@@ -429,12 +429,13 @@ yan=1983
 
 [if_3281:com_3317]
 type=^iftype_model
-y=-116
+x=256
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=11
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_639
 zoom=485
@@ -443,12 +444,13 @@ yan=1983
 
 [if_3281:com_3318]
 type=^iftype_model
-y=-116
+x=256
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=12
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_640
 zoom=485
@@ -457,12 +459,13 @@ yan=1983
 
 [if_3281:com_3319]
 type=^iftype_model
-y=-116
+x=256
+y=140
 width=36
 height=37
 scriptc1=^op_neq
 scriptv1=13
-script1op1=^load_var,^varp_75
+script1op1=^load_var,varp_75
 activemodel=model_3065
 activeseq=seq_641
 zoom=485
@@ -471,7 +474,7 @@ yan=1983
 
 [if_3281:com_3320]
 type=^iftype_model
-x=78
+x=334
 y=116
 width=32
 height=32

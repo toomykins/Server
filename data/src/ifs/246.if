@@ -11,7 +11,7 @@ width=488
 height=36
 
 [if_246:com_248]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 x=94
 y=-3
@@ -20,43 +20,43 @@ height=60
 graphic=tradebacking,0
 
 [if_246:com_249]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-74
+x=182
 y=6
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_246:com_250]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=14
+x=270
 y=6
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_246:com_251]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=102
+x=358
 y=6
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_246:com_252]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-118
+x=394
 y=6
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_246:com_253]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 x=6
 y=-1
@@ -65,7 +65,7 @@ height=60
 graphic=tradebacking,0
 
 [if_246:com_254]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 x=60
 y=16
@@ -74,7 +74,7 @@ height=36
 graphic=miscgraphics,3
 
 [if_246:com_255]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 x=96
 y=16
@@ -83,104 +83,104 @@ height=36
 graphic=miscgraphics,3
 
 [if_246:com_256]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-124
+x=132
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_257]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-88
+x=168
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_258]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-52
+x=204
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_259]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-16
+x=240
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_260]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=20
+x=276
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_261]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=56
+x=312
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_262]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=92
+x=348
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_263]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-128
+x=384
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_264]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-92
+x=420
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_265]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-84
+x=428
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_246:com_266]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 width=25
 height=30
 graphic=steelborder,0
 
 [if_246:com_267]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 x=60
 y=-15
@@ -189,7 +189,7 @@ height=36
 graphic=steelborder2,0
 
 [if_246:com_268]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 x=96
 y=-15
@@ -198,88 +198,88 @@ height=36
 graphic=steelborder2,0
 
 [if_246:com_269]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-124
+x=132
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_270]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-88
+x=168
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_271]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-52
+x=204
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_272]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-16
+x=240
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_273]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=20
+x=276
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_274]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=56
+x=312
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_275]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=92
+x=348
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_276]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-128
+x=384
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_277]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-92
+x=420
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_278]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 x=25
 y=-15
@@ -288,33 +288,33 @@ height=36
 graphic=steelborder2,0
 
 [if_246:com_279]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-49
+x=463
 width=25
 height=30
 graphic=steelborder,1
 
 [if_246:com_280]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-85
+x=427
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_246:com_281]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
-x=-49
+x=463
 y=7
 width=25
 height=30
 graphic=steelborder,3
 
 [if_246:com_282]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 x=25
 y=16
@@ -323,7 +323,7 @@ height=36
 graphic=miscgraphics,3
 
 [if_246:com_283]
-layer=if_246:com_247
+layer=com_247
 type=^iftype_graphic
 y=7
 width=25
@@ -332,8 +332,8 @@ graphic=steelborder,2
 
 [if_246:com_284]
 type=^iftype_model
-x=-17
-y=-111
+x=239
+y=145
 width=35
 height=35
 model=model_3035
@@ -355,7 +355,7 @@ colour=0xffff00
 [if_246:com_286]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-88
+x=424
 y=28
 width=68
 height=11
@@ -377,7 +377,7 @@ text=line1\nline2\nline3\nline4\nline5\nline6\nline7\nline8
 [if_246:com_290]
 type=^iftype_model
 x=75
-y=-56
+y=200
 width=32
 height=32
 zoom=283
@@ -397,7 +397,7 @@ colour=0x800000
 
 [if_246:com_292]
 type=^iftype_text
-x=29
+x=285
 y=80
 width=200
 height=182
@@ -407,12 +407,12 @@ text=line1\nline2\nline3\nline4\nline5\nline6\nline7\nline8\nline9\nline10\nline
 [if_246:com_293]
 type=^iftype_layer
 x=34
-y=3
+y=259
 width=45
 height=36
 
 [if_246:com_287]
-layer=if_246:com_293
+layer=com_293
 type=^iftype_graphic
 buttontype=^if_button
 width=45
@@ -421,13 +421,13 @@ graphic=leftarrow,0
 
 [if_246:com_294]
 type=^iftype_layer
-x=-80
-y=3
+x=432
+y=259
 width=45
 height=36
 
 [if_246:com_288]
-layer=if_246:com_294
+layer=com_294
 type=^iftype_graphic
 buttontype=^if_button
 width=45

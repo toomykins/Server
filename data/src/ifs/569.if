@@ -5,8 +5,8 @@ height=334
 
 [if_569:com_570]
 type=^iftype_model
-x=-17
-y=-111
+x=239
+y=145
 width=35
 height=35
 model=model_3035
@@ -15,14 +15,14 @@ xan=395
 
 [if_569:com_571]
 type=^iftype_layer
-x=44
+x=300
 y=80
 width=135
 height=167
 hide=yes
 
 [if_569:com_574]
-layer=if_569:com_571
+layer=com_571
 type=^iftype_text
 width=135
 height=17
@@ -32,7 +32,7 @@ text=Cocktail Index
 colour=0x80
 
 [if_569:com_575]
-layer=if_569:com_571
+layer=com_571
 type=^iftype_text
 buttontype=^if_button
 y=30
@@ -43,7 +43,7 @@ font=^q8
 text=Blurberry Special
 
 [if_569:com_576]
-layer=if_569:com_571
+layer=com_571
 type=^iftype_text
 buttontype=^if_button
 y=50
@@ -54,7 +54,7 @@ font=^q8
 text=Chocolate Saturday
 
 [if_569:com_577]
-layer=if_569:com_571
+layer=com_571
 type=^iftype_text
 buttontype=^if_button
 y=70
@@ -65,7 +65,7 @@ font=^q8
 text=Drunk Dragon
 
 [if_569:com_578]
-layer=if_569:com_571
+layer=com_571
 type=^iftype_text
 buttontype=^if_button
 y=90
@@ -76,7 +76,7 @@ font=^q8
 text=Fruit Blast
 
 [if_569:com_579]
-layer=if_569:com_571
+layer=com_571
 type=^iftype_text
 buttontype=^if_button
 y=110
@@ -87,10 +87,10 @@ font=^q8
 text=Pineapple Punch
 
 [if_569:com_580]
-layer=if_569:com_571
+layer=com_571
 type=^iftype_text
 buttontype=^if_button
-y=-126
+y=130
 width=135
 height=17
 halign=yes
@@ -98,10 +98,10 @@ font=^q8
 text=Short Green Guy
 
 [if_569:com_581]
-layer=if_569:com_571
+layer=com_571
 type=^iftype_text
 buttontype=^if_button
-y=-106
+y=150
 width=135
 height=17
 halign=yes
@@ -110,13 +110,13 @@ text=Wizard Blizzard
 
 [if_569:com_573]
 type=^iftype_layer
-x=-80
-y=3
+x=432
+y=259
 width=45
 height=36
 
 [if_569:com_572]
-layer=if_569:com_573
+layer=com_573
 type=^iftype_graphic
 buttontype=^if_button
 width=45
@@ -131,7 +131,7 @@ width=409
 height=209
 
 [if_569:com_583]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 x=15
 width=163
@@ -142,7 +142,7 @@ text=Gnome Bowls
 colour=0x80
 
 [if_569:com_584]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
 x=12
@@ -154,7 +154,7 @@ font=^q8
 text=Chocolate Bomb
 
 [if_569:com_585]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
 x=11
@@ -166,7 +166,7 @@ font=^q8
 text=Tangled Toad's Legs
 
 [if_569:com_586]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
 x=10
@@ -178,7 +178,7 @@ font=^q8
 text=Worm Hole
 
 [if_569:com_587]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
 x=9
@@ -190,7 +190,7 @@ font=^q8
 text=Veg Ball
 
 [if_569:com_588]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 x=6
 y=112
@@ -202,11 +202,11 @@ text=Gnome Crunchies
 colour=0x80
 
 [if_569:com_589]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
 x=3
-y=-112
+y=144
 width=163
 height=17
 halign=yes
@@ -214,11 +214,11 @@ font=^q8
 text=Worm Crunchies
 
 [if_569:com_590]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
 x=2
-y=-96
+y=160
 width=163
 height=17
 halign=yes
@@ -226,11 +226,11 @@ font=^q8
 text=Choc Chip Crunchies
 
 [if_569:com_591]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
 x=1
-y=-80
+y=176
 width=163
 height=17
 halign=yes
@@ -238,10 +238,10 @@ font=^q8
 text=Spicy Crunchies
 
 [if_569:com_592]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
-y=-64
+y=192
 width=163
 height=17
 halign=yes
@@ -249,9 +249,9 @@ font=^q8
 text=Toad Crunchies
 
 [if_569:com_593]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
-x=-17
+x=239
 width=163
 height=17
 halign=yes
@@ -260,10 +260,10 @@ text=Gnome Battas
 colour=0x80
 
 [if_569:com_594]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
-x=-14
+x=242
 y=32
 width=163
 height=17
@@ -272,10 +272,10 @@ font=^q8
 text=Worm Batta
 
 [if_569:com_595]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
-x=-13
+x=243
 y=48
 width=163
 height=17
@@ -284,10 +284,10 @@ font=^q8
 text=Toad's Legs Batta
 
 [if_569:com_596]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
-x=-12
+x=244
 y=64
 width=163
 height=17
@@ -296,10 +296,10 @@ font=^q8
 text=Cheese & Tomato Batta
 
 [if_569:com_597]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
-x=-11
+x=245
 y=80
 width=163
 height=17
@@ -308,10 +308,10 @@ font=^q8
 text=Fruit Batta
 
 [if_569:com_598]
-layer=if_569:com_582
+layer=com_582
 type=^iftype_text
 buttontype=^if_button
-x=-10
+x=246
 y=96
 width=163
 height=17
@@ -327,7 +327,7 @@ width=488
 height=36
 
 [if_569:com_600]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 x=94
 y=-3
@@ -336,43 +336,43 @@ height=60
 graphic=tradebacking,0
 
 [if_569:com_601]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-74
+x=182
 y=6
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_569:com_602]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=14
+x=270
 y=6
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_569:com_603]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=102
+x=358
 y=6
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_569:com_604]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-118
+x=394
 y=6
 width=88
 height=60
 graphic=tradebacking,0
 
 [if_569:com_605]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 x=6
 y=-1
@@ -381,7 +381,7 @@ height=60
 graphic=tradebacking,0
 
 [if_569:com_606]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 x=60
 y=16
@@ -390,7 +390,7 @@ height=36
 graphic=miscgraphics,3
 
 [if_569:com_607]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 x=96
 y=16
@@ -399,104 +399,104 @@ height=36
 graphic=miscgraphics,3
 
 [if_569:com_608]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-124
+x=132
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_609]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-88
+x=168
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_610]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-52
+x=204
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_611]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-16
+x=240
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_612]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=20
+x=276
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_613]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=56
+x=312
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_614]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=92
+x=348
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_615]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-128
+x=384
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_616]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-92
+x=420
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_617]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-84
+x=428
 y=16
 width=36
 height=36
 graphic=miscgraphics,3
 
 [if_569:com_618]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 width=25
 height=30
 graphic=steelborder,0
 
 [if_569:com_619]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 x=60
 y=-15
@@ -505,7 +505,7 @@ height=36
 graphic=steelborder2,0
 
 [if_569:com_620]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 x=96
 y=-15
@@ -514,88 +514,88 @@ height=36
 graphic=steelborder2,0
 
 [if_569:com_621]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-124
+x=132
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_622]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-88
+x=168
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_623]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-52
+x=204
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_624]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-16
+x=240
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_625]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=20
+x=276
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_626]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=56
+x=312
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_627]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=92
+x=348
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_628]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-128
+x=384
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_629]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-92
+x=420
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_630]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 x=25
 y=-15
@@ -604,33 +604,33 @@ height=36
 graphic=steelborder2,0
 
 [if_569:com_631]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-49
+x=463
 width=25
 height=30
 graphic=steelborder,1
 
 [if_569:com_632]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-85
+x=427
 y=-15
 width=36
 height=36
 graphic=steelborder2,0
 
 [if_569:com_633]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
-x=-49
+x=463
 y=7
 width=25
 height=30
 graphic=steelborder,3
 
 [if_569:com_634]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 x=25
 y=16
@@ -639,7 +639,7 @@ height=36
 graphic=miscgraphics,3
 
 [if_569:com_635]
-layer=if_569:com_599
+layer=com_599
 type=^iftype_graphic
 y=7
 width=25
@@ -661,7 +661,7 @@ colour=0xffff00
 [if_569:com_637]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-88
+x=424
 y=28
 width=68
 height=11

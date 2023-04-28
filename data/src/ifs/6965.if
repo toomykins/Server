@@ -5,8 +5,8 @@ height=334
 
 [if_6965:com_6966]
 type=^iftype_model
-x=-29
-y=-94
+x=227
+y=162
 width=32
 height=32
 model=model_3395
@@ -17,7 +17,7 @@ yan=1
 [if_6965:com_6967]
 type=^iftype_text
 buttontype=^if_closebutton
-x=-82
+x=430
 y=8
 width=74
 height=14
@@ -29,7 +29,7 @@ overcolour=0xffffff
 
 [if_6965:com_6968]
 type=^iftype_text
-x=-125
+x=131
 y=62
 width=256
 height=21
@@ -40,7 +40,7 @@ colour=0xf0bb5e
 
 [if_6965:com_6969]
 type=^iftype_text
-x=-125
+x=131
 y=87
 width=256
 height=21
@@ -51,7 +51,7 @@ colour=0xf0bb5e
 
 [if_6965:com_6970]
 type=^iftype_text
-x=-125
+x=131
 y=112
 width=256
 height=21
@@ -62,8 +62,8 @@ colour=0xf0bb5e
 
 [if_6965:com_6971]
 type=^iftype_text
-x=-125
-y=-119
+x=131
+y=137
 width=256
 height=21
 font=^q8
@@ -73,8 +73,8 @@ colour=0xf0bb5e
 
 [if_6965:com_6972]
 type=^iftype_text
-x=-125
-y=-94
+x=131
+y=162
 width=256
 height=21
 font=^q8
@@ -84,8 +84,8 @@ colour=0xf0bb5e
 
 [if_6965:com_6973]
 type=^iftype_text
-x=-125
-y=-69
+x=131
+y=187
 width=256
 height=21
 font=^q8
@@ -95,8 +95,8 @@ colour=0xf0bb5e
 
 [if_6965:com_6974]
 type=^iftype_text
-x=-125
-y=-44
+x=131
+y=212
 width=256
 height=21
 font=^q8
@@ -106,8 +106,8 @@ colour=0xf0bb5e
 
 [if_6965:com_6975]
 type=^iftype_text
-x=-125
-y=-19
+x=131
+y=237
 width=256
 height=21
 font=^q8

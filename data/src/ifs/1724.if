@@ -5,7 +5,7 @@ height=334
 
 [if_1724:com_1725]
 type=^iftype_model
-x=-121
+x=135
 y=23
 width=35
 height=32
@@ -55,7 +55,7 @@ width=145
 height=190
 
 [if_1724:com_1730]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -64,12 +64,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=2
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_1724:com_1731]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -78,12 +78,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=1
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_1724:com_1732]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
@@ -92,12 +92,12 @@ width=72
 height=36
 scriptc1=^op_neq
 scriptv1=0
-script1op1=^load_var,^varp_43
+script1op1=^load_var,varp_43
 graphic=combatboxes,0
 activegraphic=combatboxes,1
 
 [if_1724:com_1733]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_graphic
 x=22
 y=103
@@ -106,7 +106,7 @@ height=24
 graphic=combaticons,19
 
 [if_1724:com_1734]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_graphic
 x=21
 y=11
@@ -115,7 +115,7 @@ height=24
 graphic=combaticons2,13
 
 [if_1724:com_1735]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_graphic
 x=22
 y=57
@@ -124,7 +124,7 @@ height=24
 graphic=combaticons2,14
 
 [if_1724:com_1736]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_text
 x=78
 y=5
@@ -136,7 +136,7 @@ text=Jab
 colour=0xffff00
 
 [if_1724:com_1737]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_text
 x=78
 y=51
@@ -148,7 +148,7 @@ text=Pound
 colour=0xffff00
 
 [if_1724:com_1738]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_text
 x=78
 y=97
@@ -160,7 +160,7 @@ text=Focus - Block
 colour=0xffff00
 
 [if_1724:com_1739]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_text
 x=78
 y=64
@@ -171,7 +171,7 @@ text=(Aggressive)
 colour=0xffff00
 
 [if_1724:com_1740]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_text
 x=78
 y=18
@@ -182,7 +182,7 @@ text=(Accurate)
 colour=0xffff00
 
 [if_1724:com_1741]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_text
 x=78
 y=110
@@ -193,29 +193,29 @@ text=(Defensive)
 colour=0xffff00
 
 [if_1724:com_1745]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_graphic
 buttontype=^if_selectbutton
 x=5
-y=-114
+y=142
 width=72
 height=36
 graphic=combatboxes,0
 
 [if_1724:com_1746]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_graphic
 x=24
-y=-111
+y=145
 width=30
 height=30
 graphic=prayeron,12
 
 [if_1724:com_1747]
-layer=if_1724:com_1729
+layer=com_1729
 type=^iftype_text
 x=78
-y=-108
+y=148
 width=41
 height=11
 font=^p11
@@ -236,7 +236,7 @@ colour=0xffff00
 [if_1724:com_1743]
 type=^iftype_text
 x=82
-y=-120
+y=136
 width=36
 height=11
 font=^p11
@@ -246,7 +246,7 @@ colour=0xffff00
 [if_1724:com_1744]
 type=^iftype_text
 x=82
-y=-74
+y=182
 width=36
 height=11
 font=^p11
@@ -256,7 +256,7 @@ colour=0xffff00
 [if_1724:com_1748]
 type=^iftype_text
 x=82
-y=-35
+y=221
 width=49
 height=11
 font=^p11
