@@ -3737,7 +3737,7 @@ frame62=animframe_5690
 frame63=animframe_5700
 frame64=animframe_5709
 
-[seq_363]
+[seq_363_obj_741]
 frame1=animframe_1689
 frame2=animframe_1987
 frame3=animframe_2286
@@ -3758,7 +3758,7 @@ frame17=animframe_1689
 mainhand=obj_741
 offhand=obj_1309
 
-[seq_364]
+[seq_364_obj_1309]
 frame1=animframe_1707
 frame2=animframe_2003
 frame3=animframe_2302
@@ -3778,7 +3778,7 @@ frame16=animframe_2003
 mainhand=obj_1309
 offhand=obj_1310
 
-[seq_365]
+[seq_365_obj_1308]
 frame1=animframe_1538
 frame2=animframe_1832
 frame3=animframe_2132
@@ -14839,7 +14839,7 @@ iframe89=animframe_19
 iframe90=animframe_66
 replayoff=12
 
-[seq_618]
+[seq_618_obj_823]
 frame1=animframe_534
 frame2=animframe_831
 frame3=animframe_1114
@@ -14867,7 +14867,7 @@ replaycount=4
 mainhand=obj_823
 offhand=obj_823
 
-[seq_619]
+[seq_619_obj_813]
 frame1=animframe_1594
 frame2=animframe_1887
 frame3=animframe_2185
@@ -14886,7 +14886,7 @@ replaycount=3
 mainhand=hide
 offhand=obj_813
 
-[seq_620]
+[seq_620_obj_817]
 frame1=animframe_1594
 frame2=animframe_1887
 frame3=animframe_2185
@@ -14905,7 +14905,7 @@ replaycount=3
 mainhand=obj_817
 offhand=obj_817
 
-[seq_621]
+[seq_621_obj_815]
 frame1=animframe_1594
 frame2=animframe_1887
 frame3=animframe_2185
@@ -14924,7 +14924,7 @@ replaycount=3
 mainhand=obj_815
 offhand=obj_815
 
-[seq_622]
+[seq_622_obj_819]
 frame1=animframe_1786
 frame2=animframe_2085
 frame3=animframe_2384
@@ -14950,7 +14950,7 @@ stretches=yes
 mainhand=obj_819
 offhand=obj_819
 
-[seq_623]
+[seq_623_obj_819]
 frame1=animframe_1517
 frame2=animframe_1812
 priority=0
@@ -14960,7 +14960,7 @@ replaycount=8
 mainhand=obj_819
 offhand=obj_819
 
-[seq_624]
+[seq_624_obj_1787]
 frame1=animframe_584
 frame2=animframe_876
 frame3=animframe_1156
@@ -14979,7 +14979,7 @@ replaycount=3
 mainhand=obj_1787
 offhand=obj_1787
 
-[seq_625]
+[seq_625_obj_1777]
 frame1=animframe_584
 frame2=animframe_876
 frame3=animframe_1156
@@ -14998,7 +14998,7 @@ replaycount=8
 mainhand=obj_1777
 offhand=obj_1777
 
-[seq_626]
+[seq_626_obj_1779]
 frame1=animframe_584
 frame2=animframe_876
 frame3=animframe_1156
@@ -15017,7 +15017,7 @@ replaycount=7
 mainhand=obj_1779
 offhand=obj_1779
 
-[seq_627]
+[seq_627_obj_1781]
 frame1=animframe_584
 frame2=animframe_876
 frame3=animframe_1156
@@ -15036,7 +15036,7 @@ replaycount=6
 mainhand=obj_1781
 offhand=obj_1781
 
-[seq_628]
+[seq_628_obj_1783]
 frame1=animframe_584
 frame2=animframe_876
 frame3=animframe_1156
@@ -15055,7 +15055,7 @@ replaycount=4
 mainhand=obj_1783
 offhand=obj_1783
 
-[seq_629]
+[seq_629_obj_1785]
 frame1=animframe_584
 frame2=animframe_876
 frame3=animframe_1156
@@ -15954,7 +15954,7 @@ frame87=animframe_5916
 frame88=animframe_5977
 delay88=20000
 
-[seq_642]
+[seq_642_obj_978]
 frame1=animframe_2161
 frame2=animframe_1866
 frame3=animframe_1572
@@ -15984,7 +15984,7 @@ frame16=animframe_3011
 frame17=animframe_3014
 replayoff=17
 
-[seq_644]
+[seq_644_obj_1004]
 frame1=animframe_1752
 frame2=animframe_2052
 frame3=animframe_2355
@@ -17059,7 +17059,7 @@ priority=6
 mainhand=hide
 offhand=hide
 
-[seq_708]
+[seq_708_obj_1921]
 frame1=animframe_2395
 frame2=animframe_674
 frame3=animframe_964
@@ -17553,7 +17553,7 @@ frame10=animframe_2648
 frame11=animframe_2651
 frame12=animframe_2654
 
-[seq_733]
+[seq_733_obj_1102]
 frame1=animframe_513
 frame2=animframe_811
 frame3=animframe_1093
@@ -18151,7 +18151,7 @@ frame5=animframe_2399
 mainhand=hide
 offhand=hide
 
-[seq_775]
+[seq_775_obj_1457]
 frame1=animframe_1635
 frame2=animframe_1926
 frame3=animframe_2227
@@ -18248,7 +18248,7 @@ frame8=animframe_1377
 frame9=animframe_1667
 frame10=animframe_1165
 
-[seq_783]
+[seq_783_obj_1263]
 frame1=animframe_1506
 frame2=animframe_1803
 frame3=animframe_2100
@@ -18598,7 +18598,7 @@ frame14=animframe_1262
 frame15=animframe_1543
 offhand=hide
 
-[seq_799]
+[seq_799_obj_790]
 frame1=animframe_597
 frame2=animframe_894
 frame3=animframe_1174
@@ -18713,7 +18713,7 @@ frame18=animframe_1747
 frame19=animframe_2047
 offhand=hide
 
-[seq_806]
+[seq_806_obj_2061]
 frame1=animframe_1506
 frame2=animframe_1803
 frame3=animframe_2100
@@ -19090,7 +19090,7 @@ walkmerge11=label_41
 walkmerge12=label_43
 walkmerge13=label_45
 
-[seq_830]
+[seq_830_obj_1464]
 frame1=animframe_1621
 frame2=animframe_1914
 frame3=animframe_2215
@@ -19102,7 +19102,7 @@ frame8=animframe_1659
 mainhand=hide
 offhand=obj_1464
 
-[seq_831]
+[seq_831_obj_1464]
 frame1=animframe_1621
 frame2=animframe_1914
 frame3=animframe_2215
@@ -19654,7 +19654,7 @@ priority=2
 mainhand=hide
 offhand=hide
 
-[seq_867]
+[seq_867_obj_1871]
 frame1=animframe_2020
 frame2=animframe_2321
 frame3=animframe_599
@@ -19667,7 +19667,7 @@ replaycount=4
 mainhand=obj_1871
 offhand=hide
 
-[seq_868]
+[seq_868_obj_1871]
 frame1=animframe_688
 frame2=animframe_978
 frame3=animframe_1263
@@ -19679,7 +19679,7 @@ frame8=animframe_722
 mainhand=obj_1871
 offhand=hide
 
-[seq_869]
+[seq_869_obj_1869]
 frame1=animframe_2020
 frame2=animframe_2321
 frame3=animframe_599
@@ -19692,7 +19692,7 @@ replaycount=4
 mainhand=obj_1869
 offhand=hide
 
-[seq_870]
+[seq_870_obj_1869]
 frame1=animframe_688
 frame2=animframe_978
 frame3=animframe_1263
@@ -19704,7 +19704,7 @@ frame8=animframe_722
 mainhand=obj_1869
 offhand=hide
 
-[seq_871]
+[seq_871_obj_1867]
 frame1=animframe_2020
 frame2=animframe_2321
 frame3=animframe_599
@@ -19717,7 +19717,7 @@ replaycount=4
 mainhand=obj_1867
 offhand=hide
 
-[seq_872]
+[seq_872_obj_1867]
 frame1=animframe_688
 frame2=animframe_978
 frame3=animframe_1263
@@ -19729,7 +19729,7 @@ frame8=animframe_722
 mainhand=obj_1867
 offhand=hide
 
-[seq_873]
+[seq_873_obj_1873]
 frame1=animframe_2020
 frame2=animframe_2321
 frame3=animframe_599
@@ -19742,7 +19742,7 @@ replaycount=4
 mainhand=obj_1873
 offhand=hide
 
-[seq_874]
+[seq_874_obj_1873]
 frame1=animframe_688
 frame2=animframe_978
 frame3=animframe_1263
@@ -19754,7 +19754,7 @@ frame8=animframe_722
 mainhand=obj_1873
 offhand=hide
 
-[seq_875]
+[seq_875_obj_1865]
 frame1=animframe_2020
 frame2=animframe_2321
 frame3=animframe_599
@@ -19767,7 +19767,7 @@ replaycount=4
 mainhand=obj_1865
 offhand=hide
 
-[seq_876]
+[seq_876_obj_1865]
 frame1=animframe_688
 frame2=animframe_978
 frame3=animframe_1263
@@ -19779,7 +19779,7 @@ frame8=animframe_722
 mainhand=obj_1865
 offhand=hide
 
-[seq_877]
+[seq_877_obj_1861]
 frame1=animframe_2020
 frame2=animframe_2321
 frame3=animframe_599
@@ -19792,7 +19792,7 @@ replaycount=4
 mainhand=obj_1861
 offhand=hide
 
-[seq_878]
+[seq_878_obj_1861]
 frame1=animframe_688
 frame2=animframe_978
 frame3=animframe_1263
@@ -19804,7 +19804,7 @@ frame8=animframe_722
 mainhand=obj_1861
 offhand=hide
 
-[seq_879]
+[seq_879_obj_1863]
 frame1=animframe_2020
 frame2=animframe_2321
 frame3=animframe_599
@@ -19817,7 +19817,7 @@ replaycount=4
 mainhand=obj_1863
 offhand=hide
 
-[seq_880]
+[seq_880_obj_1863]
 frame1=animframe_688
 frame2=animframe_978
 frame3=animframe_1263
@@ -19895,7 +19895,7 @@ frame23=animframe_2425
 mainhand=hide
 offhand=hide
 
-[seq_884]
+[seq_884_obj_2297]
 frame1=animframe_608
 frame2=animframe_903
 frame3=animframe_1185
@@ -19920,7 +19920,7 @@ frame21=animframe_608
 mainhand=hide
 offhand=obj_2297
 
-[seq_885]
+[seq_885_obj_2127]
 frame1=animframe_838
 frame2=animframe_1121
 frame3=animframe_1404
@@ -19945,7 +19945,7 @@ frame21=animframe_1121
 mainhand=hide
 offhand=obj_2127
 
-[seq_886]
+[seq_886_obj_2113]
 frame1=animframe_838
 frame2=animframe_1121
 frame3=animframe_1404
@@ -19970,7 +19970,7 @@ frame21=animframe_1121
 mainhand=hide
 offhand=obj_2113
 
-[seq_887]
+[seq_887_obj_2115]
 frame1=animframe_838
 frame2=animframe_1121
 frame3=animframe_1404
@@ -19995,7 +19995,7 @@ frame21=animframe_1121
 mainhand=hide
 offhand=obj_2115
 
-[seq_888]
+[seq_888_obj_2119]
 frame1=animframe_838
 frame2=animframe_1121
 frame3=animframe_1404
@@ -20020,7 +20020,7 @@ frame21=animframe_1121
 mainhand=hide
 offhand=obj_2119
 
-[seq_889]
+[seq_889_obj_2117]
 frame1=animframe_838
 frame2=animframe_1121
 frame3=animframe_1404
@@ -20045,7 +20045,7 @@ frame21=animframe_1121
 mainhand=hide
 offhand=obj_2117
 
-[seq_890]
+[seq_890_obj_2121]
 frame1=animframe_838
 frame2=animframe_1121
 frame3=animframe_1404
@@ -20070,7 +20070,7 @@ frame21=animframe_1121
 mainhand=hide
 offhand=obj_2121
 
-[seq_891]
+[seq_891_obj_2123]
 frame1=animframe_838
 frame2=animframe_1121
 frame3=animframe_1404
@@ -20095,7 +20095,7 @@ frame21=animframe_1121
 mainhand=hide
 offhand=obj_2123
 
-[seq_892]
+[seq_892_obj_2125]
 frame1=animframe_838
 frame2=animframe_1121
 frame3=animframe_1404
@@ -20120,7 +20120,7 @@ frame21=animframe_1121
 mainhand=hide
 offhand=obj_2125
 
-[seq_893]
+[seq_893_obj_2247]
 frame1=animframe_1575
 frame2=animframe_1869
 frame3=animframe_2164
@@ -20168,7 +20168,7 @@ frame21=animframe_2240
 mainhand=hide
 offhand=hide
 
-[seq_895]
+[seq_895_obj_2437]
 frame1=animframe_2472
 frame2=animframe_760
 frame3=animframe_1047
@@ -20242,7 +20242,7 @@ frame19=animframe_1233
 mainhand=hide
 offhand=hide
 
-[seq_898]
+[seq_898_obj_2859]
 frame1=animframe_1728
 frame2=animframe_2028
 frame3=animframe_2332
@@ -20386,7 +20386,7 @@ frame3=animframe_6953
 frame4=animframe_6954
 replayoff=4
 
-[seq_908]
+[seq_908_obj_1228]
 frame1=animframe_2137
 frame2=animframe_2435
 frame3=animframe_723
@@ -20424,7 +20424,7 @@ frame34=animframe_2137
 mainhand=obj_1228
 offhand=hide
 
-[seq_909]
+[seq_909_obj_1485]
 frame1=animframe_1014
 frame2=animframe_1299
 frame3=animframe_1579
@@ -20449,7 +20449,7 @@ frame21=animframe_1014
 mainhand=obj_1485
 offhand=obj_1482
 
-[seq_910]
+[seq_910_obj_1487]
 frame1=animframe_2027
 frame2=animframe_2331
 frame3=animframe_613
@@ -20474,7 +20474,7 @@ walkmerge11=label_41
 walkmerge12=label_43
 walkmerge13=label_45
 
-[seq_911]
+[seq_911_obj_1375]
 frame1=animframe_2027
 frame2=animframe_2331
 frame3=animframe_613
@@ -20660,7 +20660,7 @@ frame21=animframe_7061
 frame22=animframe_7064
 replayoff=22
 
-[seq_918]
+[seq_918_obj_3032]
 frame1=animframe_7076
 frame2=animframe_7078
 frame3=animframe_7080
@@ -20682,7 +20682,7 @@ stretches=yes
 mainhand=hide
 offhand=obj_3032
 
-[seq_919]
+[seq_919_obj_3034]
 frame1=animframe_7076
 frame2=animframe_7078
 frame3=animframe_7080
@@ -20704,7 +20704,7 @@ stretches=yes
 mainhand=hide
 offhand=obj_3034
 
-[seq_920]
+[seq_920_obj_3036]
 frame1=animframe_7076
 frame2=animframe_7078
 frame3=animframe_7080
@@ -20726,7 +20726,7 @@ stretches=yes
 mainhand=hide
 offhand=obj_3036
 
-[seq_921]
+[seq_921_obj_3038]
 frame1=animframe_7076
 frame2=animframe_7078
 frame3=animframe_7080
