@@ -1,0 +1,21 @@
+[opnpc1,thessaila]
+chatnpc("default", "Do you want to buy any fine clothes?");
+
+// multi2("What have you got?", "No, thank you.");
+
+// chatplayer("default", "What have you got?");
+// chatnpc("default", "Well, I have a number of fine pieces of clothing on sale\nor, if you prefer, I can offer you an exclusive, total-\nclothing makeover?");
+
+// multi3("Tell me more about this makeover.", "I'd just like to buy some clothes.", "No thank you.");
+
+// chatplayer("default", "Tell me more about this makeover.");
+// chatnpc("default", "Certainly!");
+// chatnpc("default", "Here at Thessalia's fine clothing boutique, we offer a\nunique service where we will totally revamp your outfit\nto your choosing.");
+// chatnpc("default", "So what do you say? Interested? We can change either\nyour top or your legwear!");
+
+// multi3("I'd like to change my top please.", "I'd like to change my legwear please.", "I'd just like to buy some clothes.", "No, thank you.");
+
+// chatnpc("default", "Just select what style and colour you would like from\nthis catalogue.");
+
+// chatplayer("default", "No, thank you.");
+// chatnpc("default", "Well, please return if you change your mind.");

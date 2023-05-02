@@ -10066,9 +10066,10 @@ walkanim=seq_269
 op2=Attack
 vislevel=12
 
-[npc_494]
+[banker]
 name=Banker
 desc=He can look after my money.
+category=banker
 model1=model_215
 model2=model_246
 model3=model_292
@@ -10094,9 +10095,10 @@ recol4d=41
 op1=Talk-to
 vislevel=0
 
-[npc_495]
+[banker2]
 name=Banker
 desc=Good with money.
+category=banker
 model1=model_378
 model2=model_470
 model3=model_343
@@ -10120,9 +10122,10 @@ recol4d=45
 op1=Talk-to
 vislevel=0
 
-[npc_496]
+[banker3]
 name=Banker
 desc=A financial expert.
+category=banker
 model1=model_215
 model2=model_246
 model3=model_292
@@ -10150,9 +10153,10 @@ recol5d=4647
 op1=Talk-to
 vislevel=0
 
-[npc_497]
+[banker4]
 name=Banker
 desc=Looks after your money.
+category=banker
 model1=model_378
 model2=model_470
 model3=model_343
@@ -10178,9 +10182,10 @@ recol5d=4647
 op1=Talk-to
 vislevel=0
 
-[npc_498]
+[banker4]
 name=Banker
 desc=Manages money momentarily.
+category=banker
 model1=model_2860
 head1=model_14
 readyanim=seq_112
@@ -10188,9 +10193,10 @@ walkanim=seq_106
 op1=Talk-to
 vislevel=0
 
-[npc_499]
+[banker5]
 name=Banker
 desc=He can look after my money.
+category=banker
 model1=model_206
 model2=model_246
 model3=model_292
@@ -21288,9 +21294,10 @@ op3=hidden
 vislevel=0
 visonmap=no
 
-[npc_953]
+[banker6]
 name=Banker
 desc=He can look after my money.
+category=banker
 model1=model_215
 model2=model_246
 model3=model_292

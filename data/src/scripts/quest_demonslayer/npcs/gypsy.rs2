@@ -1,0 +1,32 @@
+[opnpc1,gypsy]
+chatnpc("default", "Greetings young one.");
+chatnpc("default", "You're a hero now. That was a good bit of demonslaying.");
+
+@multi3("How do you know I killed it?", gypsy_how, "Thanks.", gypsy_thanks, "Stop calling me that!", gypsy_stop);
+
+// branch 1
+[label,gypsy_how]
+chatplayer("default", "How do you know I killed it?");
+chatnpc("default", "You forget. I'm good at knowing things.");
+
+// branch 2
+[label,gypsy_thanks]
+chatplayer("default", "Thanks.");
+
+// branch 3
+[label,gypsy_stop]
+chatplayer("default", "Stop calling me that!");
+chatnpc("default", "In the scheme of things you are very young.");
+
+@multi2("Ok but how old are you?", gypsy_age, "Oh if it's in the shceme of things that's ok.", gypsy_scheme);
+
+// branch 3 -> branch 1
+[label,gypsy_age]
+chatplayer("default", "Ok but how old are you?");
+chatnpc("default", "Count the number of legs on the stools in the Blue\nMoon inn, and multiply that number by seven.");
+chatplayer("default", "Er, yeah, whatever.");
+
+// branch 3 -> branch 2
+[label,gypsy_scheme]
+chatplayer("default", "Oh if it's in the scheme of things that's ok.");
+chatnpc("default", "You show wisdom for one so young.");

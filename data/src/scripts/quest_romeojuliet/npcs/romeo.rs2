@@ -1,0 +1,23 @@
+[opnpc1,romeo]
+chatnpc("default", "Juliet, Juliet, Juliet!  Wherefore Art thou?");
+chatnpc("default", "Kind friend, have you seen Juliet?");
+chatnpc("default", "She's disappeared and I can't find her anywhere.");
+
+@multi3("Yes, I have seen her.", romeo_yes, "No, but that's girls for you.", romeo_no, "Can I help find her for you?", romeo_help);
+
+// branch 1
+[romeo_yes]
+chatplayer("default", "Yes, I have seen her.");
+
+// branch 2
+[romeo_no]
+chatplayer("default", "No, but that's girls for you.");
+
+// branch 3
+[romeo_help]
+chatplayer("default", "CAn I help find her for you?");
+chatnpc("default", "Oh would you? That would be wonderful!");
+chatnpc("default", "Please tell her I long to be with her.");
+chatplayer("default", "Yes, I will tell her how you feel.");
+chatnpc("default", "You are the saviour of my heart, thank you.");
+chatplayer("default", "Err, yes. Ok. Thats... Nice.");
