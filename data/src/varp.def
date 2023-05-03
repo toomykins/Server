@@ -38,27 +38,27 @@
 
 [fight_arena]
 
-[varp_18]
+[music_autoplay]
 transmit=yes
 
 [varp_19]
 
-[varp_20]
+[music_varp_20]
 transmit=yes
 
-[varp_21]
+[music_varp_21]
 transmit=yes
 
-[varp_22]
+[music_varp_22]
 transmit=yes
 
-[varp_23]
+[music_varp_23]
 transmit=yes
 
-[varp_24]
+[music_varp_24]
 transmit=yes
 
-[varp_25]
+[music_varp_25]
 transmit=yes
 
 [temple_of_ikov]
@@ -95,7 +95,7 @@ transmit=yes
 
 [varp_42]
 
-[varp_43]
+[attack_style]
 transmit=yes
 
 [varp_44]
@@ -160,7 +160,7 @@ transmit=yes
 
 [varp_74]
 
-[varp_75]
+[boat_travel_varp_75]
 transmit=yes
 
 [scorpion_catcher]
@@ -169,7 +169,7 @@ transmit=yes
 
 [varp_78]
 
-[varp_79]
+[xp_lamp_varp_79]
 transmit=yes
 
 [druidic_ritual]
@@ -178,49 +178,49 @@ transmit=yes
 
 [varp_82]
 
-[varp_83]
+[prayer_varp_83]
 transmit=yes
 
-[varp_84]
+[prayer_varp_84]
 transmit=yes
 
-[varp_85]
+[prayer_varp_85]
 transmit=yes
 
-[varp_86]
+[prayer_varp_86]
 transmit=yes
 
-[varp_87]
+[prayer_varp_87]
 transmit=yes
 
-[varp_88]
+[prayer_varp_88]
 transmit=yes
 
-[varp_89]
+[prayer_varp_89]
 transmit=yes
 
-[varp_90]
+[prayer_varp_90]
 transmit=yes
 
-[varp_91]
+[prayer_varp_91]
 transmit=yes
 
-[varp_92]
+[prayer_varp_92]
 transmit=yes
 
-[varp_93]
+[prayer_varp_93]
 transmit=yes
 
-[varp_94]
+[prayer_varp_94]
 transmit=yes
 
-[varp_95]
+[prayer_varp_95]
 transmit=yes
 
-[varp_96]
+[prayer_varp_96]
 transmit=yes
 
-[varp_97]
+[prayer_varp_97]
 transmit=yes
 
 [varp_98]
@@ -229,7 +229,7 @@ transmit=yes
 
 [varp_100]
 
-[varp_101]
+[total_quest_points]
 transmit=yes
 
 [varp_102]
@@ -240,12 +240,12 @@ transmit=yes
 
 [varp_105]
 
-[varp_106]
+[map_varp_106]
 transmit=yes
 
 [the_restless_ghost]
 
-[varp_108]
+[attack_style_spell]
 transmit=yes
 
 [varp_109]
@@ -260,7 +260,7 @@ transmit=yes
 
 [varp_114]
 
-[varp_115]
+[bank_withdraw_mode]
 transmit=yes
 
 [shilo_village]
@@ -317,7 +317,7 @@ transmit=yes
 
 [varp_142]
 
-[varp_143]
+[gnomeball_action]
 
 [romeo_juliet]
 
@@ -337,20 +337,20 @@ transmit=yes
 
 [varp_152]
 
-[varp_153]
+[map_varp_153]
 transmit=yes
 
 [varp_154]
 
 [varp_155]
 
-[varp_156]
+[darts_varp_156]
 transmit=yes
 
-[varp_157]
+[darts_varp_157]
 transmit=yes
 
-[varp_158]
+[darts_varp_158]
 transmit=yes
 
 [sea_slug]
@@ -367,33 +367,34 @@ transmit=yes
 
 [varp_165]
 
-[varp_166]
+[options_varp_166]
 clientcode=1
 transmit=yes
 
-[varp_167]
+[options_varp_167]
 clientcode=2
 transmit=yes
 
-[varp_168]
+[options_varp_168]
 clientcode=3
 transmit=yes
 
-[varp_169]
+[options_varp_169]
 clientcode=4
 transmit=yes
 
-[varp_170]
+[options_varp_170]
 clientcode=5
 transmit=yes
 
-[varp_171]
+[options_varp_171]
 clientcode=6
 transmit=yes
 
-[varp_172]
+[auto_retaliate]
+transmit=yes
 
-[varp_173]
+[move_speed]
 clientcode=7
 transmit=yes
 
@@ -469,10 +470,10 @@ transmit=yes
 
 [varp_209]
 
-[varp_210]
+[smithing_varp_210]
 transmit=yes
 
-[varp_211]
+[smithing_varp_211]
 transmit=yes
 
 [watchtower]
@@ -573,13 +574,13 @@ transmit=yes
 
 [varp_260]
 
-[varp_261]
+[makeover_varp_261]
 transmit=yes
 
-[varp_262]
+[makeover_varp_262]
 transmit=yes
 
-[varp_263]
+[makeover_varp_263]
 transmit=yes
 
 [varp_264]
@@ -626,10 +627,10 @@ transmit=yes
 
 [varp_285]
 
-[varp_286]
+[duel_varp_286]
 transmit=yes
 
-[varp_287]
+[options_varp_287]
 clientcode=8
 transmit=yes
 
