@@ -4,7 +4,9 @@
 
 [command,if_chatselect](string $options)
 [command,chatnpc](string $expression, string $text)
+[command,chatplayer](string $expression, string $text)
 [command,error](string $text)
+[command,objbox](obj $obj, string $text)
 
 // leaks
 
@@ -43,7 +45,7 @@
 [command,inv_size](inv $inv)(int)
 [command,inv_total](inv $inv, obj $obj)(int)
 [command,inzone](coord $coord1, coord $coord2, coord $pos)(int)
-[command,jump](string $label)
+[command,jump](label $label)
 [command,last_comsubid]()(int)
 [command,last_int]()(int)
 [command,last_item]()(obj) // unconfirmed, inferred from useitem and useslot

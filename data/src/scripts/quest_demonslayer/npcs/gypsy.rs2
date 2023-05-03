@@ -18,12 +18,12 @@ chatplayer("default", "Thanks.");
 chatplayer("default", "Stop calling me that!");
 chatnpc("default", "In the scheme of things you are very young.");
 
-@multi2("Ok but how old are you?", gypsy_age, "Oh if it's in the shceme of things that's ok.", gypsy_scheme);
+@multi2("Ok but how old are you?", gypsy_age, "Oh if it's in the scheme of things that's ok.", gypsy_scheme);
 
 // branch 3 -> branch 1
 [label,gypsy_age]
 chatplayer("default", "Ok but how old are you?");
-chatnpc("default", "Count the number of legs on the stools in the Blue\nMoon inn, and multiply that number by seven.");
+chatnpc("default", "Count the number of legs on the stools in the Blue|Moon inn, and multiply that number by seven.");
 chatplayer("default", "Er, yeah, whatever.");
 
 // branch 3 -> branch 2

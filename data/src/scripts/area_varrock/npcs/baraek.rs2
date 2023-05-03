@@ -1,8 +1,8 @@
 [opnpc1,baraek]
 if (inv_total(inv, fur) > 0) {
-    @multi3("Can you sell me some furs?", baraek_sell, "Hello. I am in search of a quest.", baraek_quest);
-} else {
     @multi3("Can you sell me some furs?", baraek_sell, "Hello. I am in search of a quest.", baraek_quest, "Would you like to buy my fur?", baraek_buy);
+} else {
+    @multi2("Can you sell me some furs?", baraek_sell, "Hello. I am in search of a quest.", baraek_quest);
 }
 
 // branch 1
@@ -37,7 +37,7 @@ if (inv_total(inv, coins) >= 18) {
     objbox(fur, "Baraek sells you a fur.");
 } else {
     chatplayer("default", "Oh dear, I don't have that either.");
-    chatnpc("default", "Well, I can't go any cheaper than that mate. I have a\nfamily to feed.");
+    chatnpc("default", "Well, I can't go any cheaper than that mate. I have a|family to feed.");
     chatplayer("default", "Oh well, never mind.");
 }
 
@@ -49,7 +49,7 @@ chatnpc("default", "It's your loss mate.");
 // branch 1 -> branch 2
 [label,baraek_sell_no]
 chatplayer("default", "20 gold coins? That's an outrage!");
-chatnpc("default", "Well, I can't go any cheaper than that mate. I have a\nfamily to feed.");
+chatnpc("default", "Well, I can't go any cheaper than that mate. I have a|family to feed.");
 
 // branch 2
 [label,baraek_quest]
@@ -72,8 +72,8 @@ chatnpc("default", "It's not in the best condition. I guess I could give you 12 
 [label,baraek_buy_yes]
 p_delay(1);
 
-def $furs = inv_total(inv, fur);
-def $price = calc($furs * 12);
+def_int $furs = inv_total(inv, fur);
+def_int $price = calc($furs * 12);
 
 inv_del(inv, fur, $furs);
 inv_add(inv, coins, $price);

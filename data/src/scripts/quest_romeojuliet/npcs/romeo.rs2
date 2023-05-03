@@ -6,16 +6,16 @@ chatnpc("default", "She's disappeared and I can't find her anywhere.");
 @multi3("Yes, I have seen her.", romeo_yes, "No, but that's girls for you.", romeo_no, "Can I help find her for you?", romeo_help);
 
 // branch 1
-[romeo_yes]
+[label,romeo_yes]
 chatplayer("default", "Yes, I have seen her.");
 
 // branch 2
-[romeo_no]
+[label,romeo_no]
 chatplayer("default", "No, but that's girls for you.");
 
 // branch 3
-[romeo_help]
-chatplayer("default", "CAn I help find her for you?");
+[label,romeo_help]
+chatplayer("default", "Can I help find her for you?");
 chatnpc("default", "Oh would you? That would be wonderful!");
 chatnpc("default", "Please tell her I long to be with her.");
 chatplayer("default", "Yes, I will tell her how you feel.");
