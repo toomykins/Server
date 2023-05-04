@@ -1,0 +1,380 @@
+[obj_39]
+name=Bronze arrowtips
+desc=I can make an arrow with these.
+model=model_2551
+2dxof=4
+2dyof=4
+2dzoom=780
+2dyan=176
+2dxan=440
+members=yes
+stackable=yes
+cost=1
+recol1s=61
+recol1d=5652
+recol2s=57
+recol2d=5652
+
+[obj_40]
+name=Iron arrowtips
+desc=I can make an arrow with these.
+model=model_2551
+2dxof=4
+2dyof=4
+2dzoom=780
+2dyan=176
+2dxan=440
+members=yes
+stackable=yes
+cost=2
+recol1s=61
+recol1d=33
+recol2s=57
+recol2d=33
+
+[obj_41]
+name=Steel arrowtips
+desc=I can make an arrow with these.
+model=model_2551
+2dxof=4
+2dyof=4
+2dzoom=780
+2dyan=176
+2dxan=440
+members=yes
+stackable=yes
+cost=6
+
+[obj_42]
+name=Mithril arrowtips
+desc=I can make an arrow with these.
+model=model_2551
+2dxof=4
+2dyof=4
+2dzoom=780
+2dyan=176
+2dxan=440
+members=yes
+stackable=yes
+cost=16
+recol1s=61
+recol1d=43297
+recol2s=57
+recol2d=43297
+
+[obj_43]
+name=Adamant arrowtips
+desc=I can make an arrow with these.
+model=model_2551
+2dxof=4
+2dyof=4
+2dzoom=780
+2dyan=176
+2dxan=440
+members=yes
+stackable=yes
+cost=40
+recol1s=61
+recol1d=21662
+recol2s=57
+recol2d=21662
+
+[obj_44]
+name=Rune arrowtips
+desc=I can make an arrow with these.
+model=model_2551
+2dxof=4
+2dyof=4
+2dzoom=780
+2dyan=176
+2dxan=440
+members=yes
+stackable=yes
+cost=200
+recol1s=61
+recol1d=36133
+recol2s=57
+recol2d=36133
+
+[obj_45]
+name=Opal bolttips
+desc=I can make bolts with these.
+model=model_2780
+2dxof=-1
+2dyof=7
+2dzoom=490
+2dyan=608
+2dxan=492
+members=yes
+stackable=yes
+cost=30
+recol1s=41191
+recol1d=10465
+
+[obj_46]
+name=Pearl bolttips
+desc=I can make bolts with these.
+model=model_2780
+2dxof=-1
+2dyof=7
+2dzoom=490
+2dyan=608
+2dxan=492
+members=yes
+stackable=yes
+cost=56
+
+[obj_47]
+name=Barb bolttips
+desc=I can make bolts with these.
+model=model_2445
+members=yes
+stackable=yes
+cost=95
+2dxof=-1
+2dyof=7
+2dzoom=490
+2dyan=608
+2dxan=492
+
+[obj_48]
+name=Longbow
+desc=I need to find a string for this.
+cost=60
+members=yes
+model=model_2401
+2dxof=2
+2dyof=15
+2dzoom=1820
+2dyan=1004
+2dxan=460
+recol1s=6798
+recol1d=8109
+
+[obj_49]
+certlink=obj_48
+certtemplate=obj_799
+
+[obj_50]
+name=Shortbow
+desc=I need to find a string for this.
+cost=23
+members=yes
+model=model_2435
+2dxof=7
+2dyof=2
+2dzoom=1200
+2dyan=124
+2dxan=508
+recol1s=6798
+recol1d=8109
+
+[obj_51]
+certlink=obj_50
+certtemplate=obj_799
+
+[obj_52]
+name=Arrow shaft
+desc=A wooden arrow shaft
+cost=1
+stackable=yes
+members=yes
+model=model_2616
+2dxof=6
+2dyof=-29
+2dzoom=1220
+2dyan=100
+2dxan=216
+
+[obj_53]
+name=Headless arrow
+desc=A wooden arrow shaft with flights attached
+cost=1
+stackable=yes
+members=yes
+model=model_2764
+2dxof=6
+2dyof=-29
+2dzoom=1220
+2dyan=100
+2dxan=216
+
+[obj_54]
+name=Oak shortbow
+cost=50
+members=yes
+desc=An unstrung oak shortbow, I need a bowstring for this.
+model=model_2435
+2dxof=7
+2dyof=2
+2dzoom=1200
+2dyan=124
+2dxan=508
+recol1s=6798
+recol1d=8111
+
+[obj_55]
+certlink=obj_54
+certtemplate=obj_799
+
+[obj_56]
+name=Oak longbow
+cost=80
+members=yes
+desc=An unstrung oak longbow, I need a bowstring for this.
+model=model_2401
+2dxof=2
+2dyof=15
+2dzoom=1820
+2dyan=1004
+2dxan=460
+recol1s=6798
+recol1d=8111
+
+[obj_57]
+certlink=obj_56
+certtemplate=obj_799
+
+[obj_58]
+name=Willow longbow
+cost=160
+members=yes
+desc=An unstrung willow longbow, I need a bowstring for this.
+model=model_2401
+2dxof=2
+2dyof=15
+2dzoom=1820
+2dyan=1004
+2dxan=460
+recol1s=6798
+recol1d=9903
+
+[obj_59]
+certlink=obj_58
+certtemplate=obj_799
+
+[obj_60]
+name=Willow shortbow
+cost=100
+members=yes
+desc=An unstrung willow shortbow, I need a bowstring for this.
+model=model_2435
+2dxof=7
+2dyof=2
+2dzoom=1200
+2dyan=124
+2dxan=508
+recol1s=6798
+recol1d=9903
+
+[obj_61]
+certlink=obj_60
+certtemplate=obj_799
+
+[obj_62]
+name=Maple longbow
+cost=320
+members=yes
+desc=An unstrung maple longbow, I need a bowstring for this.
+model=model_2401
+2dxof=2
+2dyof=15
+2dzoom=1820
+2dyan=1004
+2dxan=460
+recol1s=6798
+recol1d=2250
+
+[obj_63]
+certlink=obj_62
+certtemplate=obj_799
+
+[obj_64]
+name=Maple shortbow
+cost=200
+members=yes
+desc=An unstrung maple shortbow, I need a bowstring for this.
+model=model_2435
+2dxof=7
+2dyof=2
+2dzoom=1200
+2dyan=124
+2dxan=508
+recol1s=6798
+recol1d=2250
+
+[obj_65]
+certlink=obj_64
+certtemplate=obj_799
+
+[obj_66]
+name=Yew longbow
+cost=640
+members=yes
+desc=An unstrung yew longbow, I need a bowstring for this.
+model=model_2401
+2dxof=2
+2dyof=15
+2dzoom=1820
+2dyan=1004
+2dxan=460
+recol1s=6798
+recol1d=9135
+
+[obj_67]
+certlink=obj_66
+certtemplate=obj_799
+
+[obj_68]
+name=Yew shortbow
+cost=400
+members=yes
+desc=An unstrung yew shortbow, I need a bowstring for this.
+model=model_2435
+2dxof=7
+2dyof=2
+2dzoom=1200
+2dyan=124
+2dxan=508
+recol1s=6798
+recol1d=9135
+
+[obj_69]
+certlink=obj_68
+certtemplate=obj_799
+
+[obj_70]
+name=Magic longbow
+cost=1280
+members=yes
+desc=An unstrung magic longbow, I need a bowstring for this.
+model=model_2401
+2dxof=2
+2dyof=15
+2dzoom=1820
+2dyan=1004
+2dxan=460
+recol1s=6798
+recol1d=31516
+
+[obj_71]
+certlink=obj_70
+certtemplate=obj_799
+
+[obj_72]
+name=Magic shortbow
+cost=800
+members=yes
+desc=An unstrung magic shortbow, I need a bowstring for this.
+model=model_2435
+2dxof=7
+2dyof=2
+2dzoom=1200
+2dyan=124
+2dxan=508
+recol1s=6798
+recol1d=31516
+
+[obj_73]
+certlink=obj_72
+certtemplate=obj_799
