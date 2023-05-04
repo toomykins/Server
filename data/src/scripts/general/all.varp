@@ -1,18 +1,14 @@
-// 18 free quests
-// 34 members quests
-// 52 total quests
-
-[dwarf_cannon]
+[varp_0]
 
 [varp_1]
 
 [varp_2]
 
-[cannonball_count]
+[varp_3]
 
 [varp_4]
 
-[holy_grail]
+[varp_5]
 
 [varp_6]
 
@@ -22,58 +18,51 @@
 
 [varp_9]
 
-[clock_tower]
+[varp_10]
 
-[fishing_contest]
+[varp_11]
 
 [varp_12]
 
 [varp_13]
 
-[merlins_crystal]
+[varp_14]
 
 [varp_15]
 
 [varp_16]
 
-[fight_arena]
+[varp_17]
 
-[music_autoplay]
-transmit=yes
+[varp_18]
 
 [varp_19]
 
-[music_varp_20]
-transmit=yes
+[varp_20]
 
-[music_varp_21]
-transmit=yes
+[varp_21]
 
-[music_varp_22]
-transmit=yes
+[varp_22]
 
-[music_varp_23]
-transmit=yes
+[varp_23]
 
-[music_varp_24]
-transmit=yes
+[varp_24]
 
-[music_varp_25]
-transmit=yes
+[varp_25]
 
-[temple_of_ikov]
+[varp_26]
 
 [varp_27]
 
 [varp_28]
 
-[cooks_assistant]
+[varp_29]
 
-[monks_friend]
+[varp_30]
 
-[dorics_quest]
+[varp_31]
 
-[ernest_the_chicken]
+[varp_32]
 
 [varp_33]
 
@@ -95,8 +84,7 @@ transmit=yes
 
 [varp_42]
 
-[attack_style]
-transmit=yes
+[varp_43]
 
 [varp_44]
 
@@ -130,29 +118,29 @@ transmit=yes
 
 [varp_59]
 
-[sheep_herder]
+[varp_60]
 
 [varp_61]
 
-[goblin_diplomacy]
+[varp_62]
 
-[rune_mysteries]
+[varp_63]
 
 [varp_64]
 
-[waterfall_quest]
+[varp_65]
 
 [varp_66]
 
-[witches_potion]
+[varp_67]
 
-[biohazard]
+[varp_68]
 
 [varp_69]
 
 [varp_70]
 
-[pirates_treasure]
+[varp_71]
 
 [varp_72]
 
@@ -160,68 +148,51 @@ transmit=yes
 
 [varp_74]
 
-[boat_travel_varp_75]
-transmit=yes
+[varp_75]
 
-[scorpion_catcher]
+[varp_76]
 
-[alfred_grimhands_barcrawl]
+[varp_77]
 
 [varp_78]
 
-[xp_lamp_varp_79]
-transmit=yes
+[varp_79]
 
-[druidic_ritual]
+[varp_80]
 
 [varp_81]
 
 [varp_82]
 
-[prayer_varp_83]
-transmit=yes
+[varp_83]
 
-[prayer_varp_84]
-transmit=yes
+[varp_84]
 
-[prayer_varp_85]
-transmit=yes
+[varp_85]
 
-[prayer_varp_86]
-transmit=yes
+[varp_86]
 
-[prayer_varp_87]
-transmit=yes
+[varp_87]
 
-[prayer_varp_88]
-transmit=yes
+[varp_88]
 
-[prayer_varp_89]
-transmit=yes
+[varp_89]
 
-[prayer_varp_90]
-transmit=yes
+[varp_90]
 
-[prayer_varp_91]
-transmit=yes
+[varp_91]
 
-[prayer_varp_92]
-transmit=yes
+[varp_92]
 
-[prayer_varp_93]
-transmit=yes
+[varp_93]
 
-[prayer_varp_94]
-transmit=yes
+[varp_94]
 
-[prayer_varp_95]
-transmit=yes
+[varp_95]
 
-[prayer_varp_96]
-transmit=yes
+[varp_96]
 
-[prayer_varp_97]
-transmit=yes
+[varp_97]
 
 [varp_98]
 
@@ -229,8 +200,7 @@ transmit=yes
 
 [varp_100]
 
-[total_quest_points]
-transmit=yes
+[varp_101]
 
 [varp_102]
 
@@ -240,30 +210,27 @@ transmit=yes
 
 [varp_105]
 
-[map_varp_106]
-transmit=yes
+[varp_106]
 
-[the_restless_ghost]
+[varp_107]
 
-[attack_style_spell]
-transmit=yes
+[varp_108]
 
 [varp_109]
 
 [varp_110]
 
-[tree_gnome_village]
+[varp_111]
 
-[observatory_quest]
+[varp_112]
 
 [varp_113]
 
 [varp_114]
 
-[bank_withdraw_mode]
-transmit=yes
+[varp_115]
 
-[shilo_village]
+[varp_116]
 
 [varp_117]
 
@@ -275,7 +242,7 @@ transmit=yes
 
 [varp_121]
 
-[the_knights_sword]
+[varp_122]
 
 [varp_123]
 
@@ -291,9 +258,9 @@ transmit=yes
 
 [varp_129]
 
-[black_knights_fortress]
+[varp_130]
 
-[the_dig_site]
+[varp_131]
 
 [varp_132]
 
@@ -309,7 +276,7 @@ transmit=yes
 
 [varp_138]
 
-[legends_quest]
+[varp_139]
 
 [varp_140]
 
@@ -317,47 +284,43 @@ transmit=yes
 
 [varp_142]
 
-[gnomeball_action]
+[varp_143]
 
-[romeo_juliet]
+[varp_144]
 
 [varp_145]
 
 [varp_146]
 
-[lost_city]
+[varp_147]
 
-[family_crest]
+[varp_148]
 
 [varp_149]
 
-[the_grand_tree]
+[varp_150]
 
 [varp_151]
 
 [varp_152]
 
-[map_varp_153]
-transmit=yes
+[varp_153]
 
 [varp_154]
 
 [varp_155]
 
-[darts_varp_156]
-transmit=yes
+[varp_156]
 
-[darts_varp_157]
-transmit=yes
+[varp_157]
 
-[darts_varp_158]
-transmit=yes
+[varp_158]
 
-[sea_slug]
+[varp_159]
 
-[imp_catcher]
+[varp_160]
 
-[underground_pass]
+[varp_161]
 
 [varp_162]
 
@@ -367,50 +330,42 @@ transmit=yes
 
 [varp_165]
 
-[options_varp_166]
+[varp_166]
 clientcode=1
-transmit=yes
 
-[options_varp_167]
+[varp_167]
 clientcode=2
-transmit=yes
 
-[options_varp_168]
+[varp_168]
 clientcode=3
-transmit=yes
 
-[options_varp_169]
+[varp_169]
 clientcode=4
-transmit=yes
 
-[options_varp_170]
+[varp_170]
 clientcode=5
-transmit=yes
 
-[options_varp_171]
+[varp_171]
 clientcode=6
-transmit=yes
 
-[auto_retaliate]
-transmit=yes
+[varp_172]
 
-[move_speed]
+[varp_173]
 clientcode=7
-transmit=yes
 
 [varp_174]
 
-[jungle_potion]
+[varp_175]
 
-[dragon_slayer]
+[varp_176]
 
 [varp_177]
 
-[vampyre_slayer]
+[varp_178]
 
-[sheep_shearer]
+[varp_179]
 
-[gertrudes_cat]
+[varp_180]
 
 [varp_181]
 
@@ -426,7 +381,7 @@ transmit=yes
 
 [varp_187]
 
-[heroes_quest]
+[varp_188]
 
 [varp_189]
 
@@ -434,7 +389,7 @@ transmit=yes
 
 [varp_191]
 
-[murder_mystery]
+[varp_192]
 
 [varp_193]
 
@@ -444,13 +399,13 @@ transmit=yes
 
 [varp_196]
 
-[the_tourist_trap]
+[varp_197]
 
 [varp_198]
 
 [varp_199]
 
-[tribal_totem]
+[varp_200]
 
 [varp_201]
 
@@ -470,13 +425,11 @@ transmit=yes
 
 [varp_209]
 
-[smithing_varp_210]
-transmit=yes
+[varp_210]
 
-[smithing_varp_211]
-transmit=yes
+[varp_211]
 
-[watchtower]
+[varp_212]
 
 [varp_213]
 
@@ -496,15 +449,15 @@ transmit=yes
 
 [varp_221]
 
-[demon_slayer]
+[varp_222]
 
-[hazeel_cult]
+[varp_223]
 
 [varp_224]
 
 [varp_225]
 
-[witches_house]
+[varp_226]
 
 [varp_227]
 
@@ -574,14 +527,11 @@ transmit=yes
 
 [varp_260]
 
-[makeover_varp_261]
-transmit=yes
+[varp_261]
 
-[makeover_varp_262]
-transmit=yes
+[varp_262]
 
-[makeover_varp_263]
-transmit=yes
+[varp_263]
 
 [varp_264]
 
@@ -589,7 +539,7 @@ transmit=yes
 
 [varp_266]
 
-[mage_arena]
+[varp_267]
 
 [varp_268]
 
@@ -601,7 +551,7 @@ transmit=yes
 
 [varp_272]
 
-[prince_ali_rescue]
+[varp_273]
 
 [varp_274]
 
@@ -627,12 +577,10 @@ transmit=yes
 
 [varp_285]
 
-[duel_varp_286]
-transmit=yes
+[varp_286]
 
-[options_varp_287]
+[varp_287]
 clientcode=8
-transmit=yes
 
 [varp_288]
 
@@ -644,6 +592,6 @@ transmit=yes
 
 [varp_292]
 
-[big_chompy_bird_hunting]
+[varp_293]
 
 [varp_294]

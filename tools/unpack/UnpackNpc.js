@@ -1,6 +1,8 @@
 import fs from 'fs';
 import Jagfile from '#io/Jagfile.js';
 
+console.log('Unpacking npc.dat...');
+
 const config = Jagfile.fromFile('dump/config');
 const dat = config.read('npc.dat');
 
@@ -11,7 +13,7 @@ const count = dat.g2();
 for (let i = 0; i < count; i++) {
     fs.appendFileSync('dump/npc.order', `npc_${i}=${i}\n`);
 
-    if (i > 1) {
+    if (i > 0) {
         fs.appendFileSync('dump/all.npc', `\n[npc_${i}]\n`);
     } else {
         fs.appendFileSync('dump/all.npc', `[npc_${i}]\n`);
@@ -40,7 +42,7 @@ for (let i = 0; i < count; i++) {
         } else if (code === 14) {
             fs.appendFileSync('dump/all.npc', `walkanim=seq_${dat.g2()}\n`);
         } else if (code === 16) {
-            fs.appendFileSync('dump/all.npc', `disposeAlpha=yes\n`);
+            fs.appendFileSync('dump/all.npc', `alpha=yes\n`);
         } else if (code === 17) {
             fs.appendFileSync('dump/all.npc', `walkanim=seq_${dat.g2()}\nwalkanim_b=seq_${dat.g2()}\nwalkanim_r=seq_${dat.g2()}\nwalkanim_l=seq_${dat.g2()}\n`);
         } else if (code >= 30 && code < 40) {
@@ -71,8 +73,8 @@ for (let i = 0; i < count; i++) {
             fs.appendFileSync('dump/all.npc', `resizeh=${dat.g2()}\n`);
         } else if (code === 98) {
             fs.appendFileSync('dump/all.npc', `resizev=${dat.g2()}\n`);
+        } else {
+            throw new Error(`Unrecognized npc config code: ${code}`);
         }
     }
-
-    fs.appendFileSync('dump/all.npc', '\n');
 }

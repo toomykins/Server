@@ -48,7 +48,6 @@ model6=model_254
 model7=model_181
 head1=model_53
 
-
 [npc_2]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -73,7 +72,6 @@ model5=model_176
 model6=model_254
 model7=model_181
 head1=model_55
-
 
 [npc_3]
 walkanim=seq_819
@@ -102,7 +100,6 @@ model6=model_254
 model7=model_181
 head1=model_67
 
-
 [npc_4]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -128,7 +125,6 @@ model4=model_353
 model5=model_421
 model6=model_358
 head1=model_113
-
 
 [npc_5]
 walkanim=seq_819
@@ -161,7 +157,6 @@ model6=model_358
 model7=model_414
 head1=model_114
 head2=model_131
-
 
 [npc_6]
 walkanim=seq_819
@@ -197,7 +192,6 @@ model6=model_414
 head1=model_115
 head2=model_131
 
-
 [npc_7]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -223,7 +217,6 @@ model7=model_185
 model8=model_495
 head1=model_55
 
-
 [npc_8]
 desc=Known for his lightfingered qualities.
 walkanim=seq_819
@@ -247,7 +240,6 @@ model6=model_254
 model7=model_185
 model8=model_320
 head1=model_53
-
 
 [npc_9]
 desc=He tries to keep order around here.
@@ -276,7 +268,6 @@ model7=model_185
 model8=model_519
 model9=model_541
 
-
 [npc_10]
 desc=He tries to keep order around here.
 walkanim=seq_819
@@ -303,7 +294,6 @@ model6=model_254
 model7=model_185
 model8=model_508
 
-
 [npc_11]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -328,7 +318,6 @@ model5=model_176
 model6=model_275
 model7=model_181
 head1=model_52
-
 
 [npc_12]
 desc=Not very civilised looking.
@@ -362,7 +351,6 @@ head1=model_57
 head2=model_84
 head3=model_75
 
-
 [npc_13]
 desc=Slightly magical.
 walkanim=seq_819
@@ -390,7 +378,6 @@ model8=model_202
 head1=model_53
 head2=model_44
 
-
 [npc_14]
 desc=Loves nature.
 walkanim=seq_819
@@ -414,7 +401,6 @@ model4=model_292
 model5=model_170
 model6=model_176
 model7=model_260
-
 
 [npc_15]
 desc=Not very fashion conscious.
@@ -440,7 +426,6 @@ model6=model_361
 model7=model_376
 model8=model_519
 model9=model_541
-
 
 [npc_16]
 desc=One of the citizens of Al-Kharid.
@@ -469,7 +454,6 @@ model5=model_176
 model6=model_254
 model7=model_181
 
-
 [npc_17]
 desc=Scary in an argument!
 walkanim=seq_819
@@ -497,7 +481,6 @@ model8=model_540
 model9=model_414
 head1=model_113
 head2=model_101
-
 
 [npc_18]
 desc=Part of Al-Kharid's elite fighting force.
@@ -531,7 +514,6 @@ model8=model_181
 model9=model_541
 model10=model_191
 
-
 [npc_19]
 desc=Nice armour!
 walkanim=seq_819
@@ -559,7 +541,6 @@ model4=model_179
 model5=model_268
 model6=model_185
 model7=model_546
-
 
 [npc_20]
 desc=A holy warrior.
@@ -590,7 +571,6 @@ model7=model_185
 model8=model_518
 model9=model_541
 model10=model_3330
-
 
 [npc_21]
 desc=Heroic!
@@ -625,7 +605,6 @@ model7=model_518
 model8=model_246
 model9=model_541
 
-
 [npc_22]
 desc=They love the forests.
 walkanim=seq_819
@@ -656,7 +635,6 @@ model9=model_326
 model10=model_323
 model11=model_510
 
-
 [npc_23]
 desc=A member of Ardougne's militia.
 walkanim=seq_819
@@ -684,7 +662,6 @@ model5=model_268
 model6=model_185
 model7=model_518
 model8=model_3330
-
 
 [npc_24]
 desc=One of RuneScape's many citizens.
@@ -716,7 +693,6 @@ head1=model_63
 head2=model_84
 head3=model_28
 
-
 [npc_25]
 desc=One of RuneScape's many citizens.
 op2=Attack
@@ -743,7 +719,6 @@ model6=model_428
 model7=model_483
 model8=model_445
 head1=model_103
-
 
 [npc_26]
 desc=To protect and serve the populace of Ardougne.
@@ -772,7 +747,6 @@ model6=model_185
 model7=model_518
 model8=model_3330
 
-
 [npc_27]
 desc=Good with arrows.
 walkanim=seq_819
@@ -793,7 +767,6 @@ model5=model_151
 model6=model_179
 model7=model_262
 model8=model_563
-
 
 [npc_28]
 desc=Enjoys locking up animals in small pens.
@@ -827,7 +800,6 @@ head1=model_53
 head2=model_82
 head3=model_37
 
-
 [npc_29]
 desc=He's a lumberjack, and he's ok.
 walkanim=seq_819
@@ -849,7 +821,6 @@ model7=model_185
 model8=model_196
 model9=model_510
 model10=model_280
-
 
 [npc_30]
 vislevel=0
@@ -875,7 +846,6 @@ model6=model_254
 model7=model_185
 model8=model_321
 
-
 [npc_31]
 vislevel=0
 desc=A holy man.
@@ -900,7 +870,6 @@ model6=model_265
 model7=model_185
 model8=model_325
 
-
 [npc_32]
 desc=Keeps the peace... kind of.
 walkanim=seq_819
@@ -923,7 +892,6 @@ model4=model_179
 model5=model_274
 model6=model_185
 model7=model_502
-
 
 [npc_33]
 vislevel=0
@@ -957,7 +925,6 @@ model9=model_183
 head1=model_52
 head2=model_84
 
-
 [npc_34]
 desc=Watches stuff. But who watches him?
 walkanim=seq_819
@@ -980,7 +947,6 @@ model4=model_179
 model5=model_274
 model6=model_185
 model7=model_249
-
 
 [npc_35]
 desc=A soldier of the town of Yanille.
@@ -1005,7 +971,6 @@ model6=model_185
 model7=model_249
 model8=model_518
 
-
 [npc_36]
 desc=An old gardener.
 walkanim=seq_819
@@ -1029,7 +994,6 @@ model7=model_274
 model8=model_185
 model9=model_495
 head1=model_63
-
 
 [npc_37]
 vislevel=0
@@ -1064,7 +1028,6 @@ model10=model_3330
 head1=model_48
 head2=model_82
 
-
 [npc_38]
 desc=Builds ships for a living.
 walkanim=seq_819
@@ -1092,7 +1055,6 @@ model7=model_185
 head1=model_53
 head2=model_79
 
-
 [npc_39]
 desc=Builds ships for a living.
 walkanim=seq_819
@@ -1118,14 +1080,12 @@ model7=model_185
 model8=model_491
 head1=model_63
 
-
 [npc_40]
 desc=Let's not go skinny dipping eh?
 walkanim=seq_10
 vislevel=1
 name=Shark
 model1=model_2848
-
 
 [npc_41]
 desc=Yep, definitely a chicken.
@@ -1136,7 +1096,6 @@ vislevel=1
 name=Chicken
 model1=model_2849
 
-
 [npc_42]
 vislevel=0
 desc=Freshly sheared.
@@ -1145,7 +1104,6 @@ readyanim=seq_252
 name=Sheep
 model1=model_2928
 
-
 [npc_43]
 vislevel=0
 desc=White and fluffy.
@@ -1153,7 +1111,6 @@ walkanim=seq_249
 readyanim=seq_252
 name=Sheep
 model1=model_2929
-
 
 [npc_44]
 desc=Quackers.
@@ -1164,7 +1121,6 @@ visonmap=no
 vislevel=1
 name=Duck
 model1=model_2847
-
 
 [npc_45]
 desc=She quackers.
@@ -1181,7 +1137,6 @@ recol3s=86
 recol3d=5910
 name=Duck
 model1=model_2847
-
 
 [npc_46]
 desc=Mini quackers.
@@ -1201,7 +1156,6 @@ recol3d=5910
 name=Duckling
 model1=model_2847
 
-
 [npc_47]
 desc=A popular dwarven delicacy.
 walkanim=seq_239
@@ -1211,7 +1165,6 @@ visonmap=no
 vislevel=1
 name=Rat
 model1=model_2927
-
 
 [npc_48]
 desc=A jungle version of the chicken, but more vicious.
@@ -1232,7 +1185,6 @@ recol4d=926
 name=Oomlie Bird
 model1=model_2849
 
-
 [npc_49]
 size=2
 walkanim=seq_157
@@ -1242,7 +1194,6 @@ op2=Attack
 vislevel=122
 name=Hellhound
 model1=model_2997
-
 
 [npc_50]
 size=5
@@ -1267,7 +1218,6 @@ name=King black dragon
 model1=model_2853
 model2=model_2855
 
-
 [npc_51]
 size=2
 walkanim=seq_21
@@ -1277,7 +1227,6 @@ op2=Attack
 vislevel=43
 name=Baby dragon
 model1=model_2998
-
 
 [npc_52]
 size=2
@@ -1290,7 +1239,6 @@ recol1s=61
 recol1d=40487
 name=Baby blue dragon
 model1=model_2998
-
 
 [npc_53]
 size=4
@@ -1305,7 +1253,6 @@ name=Red dragon
 model1=model_2853
 model2=model_2854
 
-
 [npc_54]
 size=4
 walkanim=seq_79
@@ -1318,7 +1265,6 @@ recol1d=16
 name=Black dragon
 model1=model_2853
 model2=model_2854
-
 
 [npc_55]
 size=4
@@ -1333,7 +1279,6 @@ name=Blue dragon
 model1=model_2853
 model2=model_2854
 
-
 [npc_56]
 desc=A wood nymph.
 walkanim=seq_93
@@ -1341,7 +1286,6 @@ readyanim=seq_96
 vislevel=1
 name=Dryad
 model1=model_2856
-
 
 [npc_57]
 vislevel=0
@@ -1351,18 +1295,16 @@ readyanim=seq_112
 name=Fairy
 model1=model_2857
 
-
 [npc_58]
 walkanim=seq_142
 readyanim=seq_145
 visonmap=no
-disposeAlpha=yes
+alpha=yes
 desc=Is it a spider or is it a shadow?
 op2=Attack
 vislevel=49
 name=Shadow spider
 model1=model_2884
-
 
 [npc_59]
 walkanim=seq_142
@@ -1375,7 +1317,6 @@ recol1d=8084
 name=Giant spider
 model1=model_2884
 
-
 [npc_60]
 walkanim=seq_142
 readyanim=seq_145
@@ -1387,7 +1328,6 @@ recol1d=8084
 name=Giant spider
 model1=model_2884
 
-
 [npc_61]
 walkanim=seq_279
 desc=Incey wincey.
@@ -1395,7 +1335,6 @@ op2=Attack
 vislevel=1
 name=Spider
 model1=model_2996
-
 
 [npc_62]
 walkanim=seq_142
@@ -1409,7 +1348,6 @@ recol1d=16945
 name=Jungle spider
 model1=model_2884
 
-
 [npc_63]
 walkanim=seq_142
 readyanim=seq_145
@@ -1421,7 +1359,6 @@ recol1d=64414
 name=Deadly red spider
 model1=model_2884
 
-
 [npc_64]
 walkanim=seq_142
 readyanim=seq_145
@@ -1431,7 +1368,6 @@ op2=Attack
 vislevel=61
 name=Ice spider
 model1=model_2885
-
 
 [npc_65]
 walkanim=seq_189
@@ -1443,7 +1379,6 @@ name=Leprechaun
 model1=model_2909
 model2=model_2896
 model3=model_2915
-
 
 [npc_66]
 desc=Like a mini man!
@@ -1458,7 +1393,6 @@ model1=model_2909
 model2=model_2890
 model3=model_2915
 head1=model_21
-
 
 [npc_67]
 desc=Like a mini man!
@@ -1475,7 +1409,6 @@ model1=model_2909
 model2=model_2890
 model3=model_2915
 head1=model_21
-
 
 [npc_68]
 desc=Like a mini man!
@@ -1497,7 +1430,6 @@ model2=model_2890
 model3=model_2915
 head1=model_21
 
-
 [npc_69]
 desc=A scaly reptilian creature.
 size=2
@@ -1508,7 +1440,6 @@ vislevel=22
 name=Lizard man
 model1=model_2888
 
-
 [npc_70]
 desc=A tightly wrapped monster.
 walkanim=seq_224
@@ -1517,7 +1448,6 @@ op2=attack
 vislevel=47
 name=Mummy
 model1=model_2925
-
 
 [npc_71]
 desc=A hideous malformed elf.
@@ -1528,7 +1458,6 @@ vislevel=20
 name=Orc
 model1=model_2926
 
-
 [npc_72]
 desc=A hideously deformed creature.
 walkanim=seq_283
@@ -1537,7 +1466,6 @@ op2=Attack
 vislevel=69
 name=Troll
 model1=model_2930
-
 
 [npc_73]
 desc=Dead man walking.
@@ -1548,7 +1476,6 @@ vislevel=13
 name=Zombie
 model1=model_2931
 
-
 [npc_74]
 desc=Dead man walking.
 walkanim=seq_298
@@ -1557,7 +1484,6 @@ op2=Attack
 vislevel=18
 name=Zombie
 model1=model_2931
-
 
 [npc_75]
 desc=The walking dead.
@@ -1569,7 +1495,6 @@ name=Zombie
 model1=model_2931
 model2=model_2932
 
-
 [npc_76]
 desc=The walking dead.
 walkanim=seq_298
@@ -1580,7 +1505,6 @@ name=Zombie
 model1=model_2931
 model2=model_2932
 
-
 [npc_77]
 desc=The living dead.
 walkanim=seq_298
@@ -1589,7 +1513,6 @@ op2=Attack
 vislevel=13
 name=Summoned Zombie
 model1=model_2931
-
 
 [npc_78]
 desc=Annoying flappy thing.
@@ -1601,11 +1524,10 @@ vislevel=27
 name=Giant bat
 model1=model_2941
 
-
 [npc_79]
 desc=A shadowy, barely visible flying entity from some evil place.
 size=2
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_29
 readyanim=seq_35
 op2=Attack
@@ -1621,7 +1543,6 @@ recol4d=20
 name=Death wing
 model1=model_2940
 
-
 [npc_80]
 vislevel=0
 size=2
@@ -1630,7 +1551,6 @@ readyanim=seq_51
 desc=Oh, it's a camel.
 name=Camel
 model1=model_2939
-
 
 [npc_81]
 size=2
@@ -1643,7 +1563,6 @@ name=Cow
 model1=model_3341
 model2=model_3342
 
-
 [npc_82]
 size=2
 walkanim=seq_63
@@ -1653,7 +1572,6 @@ op2=Attack
 vislevel=82
 name=Lesser demon
 model1=model_2943
-
 
 [npc_83]
 size=3
@@ -1666,7 +1584,6 @@ op2=Attack
 vislevel=92
 name=Greater demon
 model1=model_2942
-
 
 [npc_84]
 size=3
@@ -1684,7 +1601,6 @@ recol3d=931
 name=Black Demon
 model1=model_2942
 
-
 [npc_85]
 desc=A creature made from clay.
 size=2
@@ -1694,7 +1610,6 @@ op2=Attack
 vislevel=55
 name=Golem
 model1=model_2969
-
 
 [npc_86]
 size=2
@@ -1706,7 +1621,6 @@ vislevel=3
 name=Giant rat
 model1=model_2959
 
-
 [npc_87]
 size=2
 walkanim=seq_137
@@ -1716,7 +1630,6 @@ op2=Attack
 vislevel=6
 name=Giant rat
 model1=model_2959
-
 
 [npc_88]
 size=2
@@ -1730,7 +1643,6 @@ recol1d=70
 name=Dungeon rat
 model1=model_2959
 
-
 [npc_89]
 size=2
 walkanim=seq_288
@@ -1741,7 +1653,6 @@ vislevel=15
 name=Unicorn
 model1=model_2933
 
-
 [npc_90]
 desc=Could do with gaining a few pounds.
 walkanim=seq_259
@@ -1750,7 +1661,6 @@ op2=Attack
 vislevel=18
 name=Skeleton
 model1=model_2944
-
 
 [npc_91]
 desc=Could do with gaining a few pounds.
@@ -1761,7 +1671,6 @@ vislevel=20
 name=Skeleton
 model1=model_2944
 
-
 [npc_92]
 desc=Could do with gaining a few pounds.
 walkanim=seq_259
@@ -1771,7 +1680,6 @@ vislevel=22
 name=Skeleton
 model1=model_2944
 model2=model_2946
-
 
 [npc_93]
 desc=Could do with gaining a few pounds.
@@ -1784,7 +1692,6 @@ vislevel=45
 name=Skeleton
 model1=model_2944
 model2=model_2946
-
 
 [npc_94]
 desc=An undead worker of dark magic.
@@ -1809,7 +1716,6 @@ model4=model_170
 model5=model_256
 model6=model_325
 
-
 [npc_95]
 desc=Not mans' best friend.
 size=2
@@ -1819,7 +1725,6 @@ op2=Attack
 vislevel=64
 name=Wolf
 model1=model_2937
-
 
 [npc_96]
 size=2
@@ -1835,7 +1740,6 @@ recol2d=127
 name=White wolf
 model1=model_2937
 
-
 [npc_97]
 size=2
 walkanim=seq_74
@@ -1850,7 +1754,6 @@ recol2d=127
 name=White wolf
 model1=model_2937
 
-
 [npc_98]
 desc=Bow wow.
 walkanim=seq_74
@@ -1858,7 +1761,6 @@ readyanim=seq_77
 vislevel=0
 name=Dog
 model1=model_2935
-
 
 [npc_99]
 desc=Beware of the dog!
@@ -1869,7 +1771,6 @@ op2=Attack
 vislevel=44
 name=Guard dog
 model1=model_2936
-
 
 [npc_100]
 desc=An ugly green creature.
@@ -1882,7 +1783,6 @@ model1=model_2951
 model2=model_2953
 model3=model_2955
 model4=model_2956
-
 
 [npc_101]
 desc=An ugly green creature.
@@ -1897,7 +1797,6 @@ model3=model_2955
 model4=model_2956
 model5=model_2957
 
-
 [npc_102]
 desc=These goblins have grown strong.
 walkanim=seq_308
@@ -1910,34 +1809,31 @@ model2=model_2953
 model3=model_2955
 model4=model_2956
 
-
 [npc_103]
 desc=Eeek! A ghost!
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op2=Attack
 vislevel=19
 name=Ghost
 model1=model_2961
 model2=model_2964
 model3=model_2965
-
 
 [npc_104]
 desc=Eeek! A ghost!
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op2=Attack
 vislevel=19
 name=Ghost
 model1=model_2961
 model2=model_2964
 model3=model_2965
-
 
 [npc_105]
 size=2
@@ -1948,7 +1844,6 @@ op2=Attack
 vislevel=21
 name=Bear
 model1=model_2966
-
 
 [npc_106]
 size=2
@@ -1962,7 +1857,6 @@ recol1d=12
 name=Bear
 model1=model_2966
 
-
 [npc_107]
 size=2
 walkanim=seq_244
@@ -1972,7 +1866,6 @@ op2=Attack
 vislevel=14
 name=Scorpion
 model1=model_2967
-
 
 [npc_108]
 size=2
@@ -1984,7 +1877,6 @@ vislevel=20
 name=Poison Scorpion
 model1=model_2967
 
-
 [npc_109]
 desc=Tiny, annoying, stinging thing.
 walkanim=seq_269
@@ -1993,7 +1885,6 @@ op2=Attack
 vislevel=32
 name=Pit Scorpion
 model1=model_2968
-
 
 [npc_110]
 size=2
@@ -2010,7 +1901,6 @@ name=Fire giant
 model1=model_2870
 model2=model_2864
 
-
 [npc_111]
 size=2
 walkanim=seq_127
@@ -2023,7 +1913,6 @@ recol1d=36075
 name=Ice giant
 model1=model_2870
 model2=model_2868
-
 
 [npc_112]
 size=2
@@ -2039,7 +1928,6 @@ recol2d=10130
 name=Moss giant
 model1=model_2870
 model2=model_2865
-
 
 [npc_113]
 size=2
@@ -2058,7 +1946,6 @@ name=Jogre
 model1=model_2870
 model2=model_2866
 
-
 [npc_114]
 size=2
 walkanim=seq_358
@@ -2069,7 +1956,6 @@ vislevel=48
 name=Ogre
 model1=model_2878
 model2=model_2874
-
 
 [npc_115]
 size=2
@@ -2082,7 +1968,6 @@ name=Ogre
 model1=model_2878
 model2=model_2876
 
-
 [npc_116]
 size=2
 walkanim=seq_127
@@ -2094,7 +1979,6 @@ name=Cyclops
 model1=model_2870
 model2=model_2867
 
-
 [npc_117]
 size=2
 walkanim=seq_127
@@ -2105,7 +1989,6 @@ vislevel=28
 name=Giant
 model1=model_2870
 model2=model_2862
-
 
 [npc_118]
 walkanim=seq_98
@@ -2122,7 +2005,6 @@ model3=model_2979
 model4=model_2983
 model5=model_2985
 model6=model_2990
-
 
 [npc_119]
 walkanim=seq_98
@@ -2144,7 +2026,6 @@ model6=model_2989
 model7=model_2993
 model8=model_2991
 
-
 [npc_120]
 walkanim=seq_98
 readyanim=seq_101
@@ -2158,7 +2039,6 @@ model3=model_2978
 model4=model_2984
 model5=model_2985
 model6=model_2993
-
 
 [npc_121]
 walkanim=seq_98
@@ -2174,7 +2054,6 @@ model4=model_2984
 model5=model_2985
 model6=model_2993
 
-
 [npc_122]
 walkanim=seq_162
 readyanim=seq_166
@@ -2183,7 +2062,6 @@ op2=Attack
 vislevel=28
 name=Hobgoblin
 model1=model_2994
-
 
 [npc_123]
 walkanim=seq_162
@@ -2195,9 +2073,8 @@ name=Hobgoblin
 model1=model_2994
 model2=model_2995
 
-
 [npc_124]
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_841
 readyanim=seq_842
 walkanim=seq_819
@@ -2229,9 +2106,8 @@ model5=model_268
 model6=model_184
 model7=model_520
 
-
 [npc_125]
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_841
 readyanim=seq_842
 desc=A cold hearted elemental warrior.
@@ -2258,7 +2134,6 @@ model5=model_268
 model6=model_184
 model7=model_511
 
-
 [npc_126]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -2280,7 +2155,6 @@ model2=model_170
 model3=model_260
 model4=model_202
 
-
 [npc_127]
 walkanim=seq_181
 readyanim=seq_187
@@ -2289,7 +2163,6 @@ op2=Attack
 vislevel=42
 name=Magic axe
 model1=model_3000
-
 
 [npc_128]
 desc=A slithering serpent.
@@ -2300,7 +2173,6 @@ vislevel=5
 name=Snake
 model1=model_3002
 
-
 [npc_129]
 walkanim=seq_254
 readyanim=seq_257
@@ -2309,7 +2181,6 @@ op2=Attack
 vislevel=2
 name=Skavid
 model1=model_2999
-
 
 [npc_130]
 desc=The abominable snowman.
@@ -2321,7 +2192,6 @@ vislevel=58
 name=Yeti
 model1=model_3001
 
-
 [npc_131]
 desc=An inhabitant of icy regions.
 walkanim=seq_234
@@ -2331,7 +2201,6 @@ vislevel=2
 name=Penguin
 model1=model_3003
 
-
 [npc_132]
 desc=Perhaps our oldest relatives?
 walkanim=seq_219
@@ -2340,7 +2209,6 @@ op2=Attack
 vislevel=3
 name=Monkey
 model1=model_3004
-
 
 [npc_133]
 size=2
@@ -2356,7 +2224,6 @@ recol2d=41
 name=Black unicorn
 model1=model_2933
 
-
 [npc_134]
 walkanim=seq_142
 readyanim=seq_145
@@ -2365,7 +2232,6 @@ op2=Attack
 vislevel=64
 name=Poison spider
 model1=model_2883
-
 
 [npc_135]
 size=3
@@ -2377,7 +2243,6 @@ vislevel=41
 name=Mammoth
 model1=model_3005
 
-
 [npc_136]
 desc=A giant raptor.
 size=2
@@ -2387,7 +2252,6 @@ op2=Attack
 vislevel=28
 name=Terrorbird
 model1=model_3011
-
 
 [npc_137]
 desc=These gnomes know how to get around!
@@ -2399,7 +2263,6 @@ vislevel=29
 name=Mounted terrorbird gnome
 model1=model_3012
 
-
 [npc_138]
 desc=These gnomes know how to get around!
 size=2
@@ -2410,7 +2273,6 @@ vislevel=46
 name=Mounted terrorbird gnome
 model1=model_3013
 
-
 [npc_139]
 desc=Probably not a chicken.
 walkanim=seq_114
@@ -2420,7 +2282,6 @@ vislevel=2
 name=Entrana Fire Bird
 model1=model_2861
 
-
 [npc_140]
 walkanim=seq_336
 readyanim=seq_337
@@ -2429,7 +2290,6 @@ op2=Attack
 vislevel=18
 name=Souless
 model1=model_2958
-
 
 [npc_141]
 size=2
@@ -2447,7 +2307,6 @@ recol2d=127
 name=Big Wolf
 model1=model_2937
 
-
 [npc_142]
 size=2
 walkanim=seq_74
@@ -2461,7 +2320,6 @@ recol2s=61
 recol2d=127
 name=Wolf
 model1=model_2937
-
 
 [npc_143]
 desc=A rare jungle wolf - specific to the Kharazi jungle.
@@ -2477,7 +2335,6 @@ recol2d=8751
 name=Jungle Wolf
 model1=model_2937
 
-
 [npc_144]
 size=2
 walkanim=seq_244
@@ -2490,9 +2347,8 @@ vislevel=32
 name=King Scorpion
 model1=model_2967
 
-
 [npc_145]
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_841
 readyanim=seq_842
 desc=The Ice Queen's Royal Guard.
@@ -2519,7 +2375,6 @@ model5=model_268
 model6=model_184
 model7=model_511
 
-
 [npc_146]
 desc=A sea bird.
 size=2
@@ -2529,7 +2384,6 @@ visonmap=no
 vislevel=26
 name=Gull
 model1=model_2850
-
 
 [npc_147]
 desc=A sea bird.
@@ -2541,7 +2395,6 @@ vislevel=26
 name=Cormorant
 model1=model_2850
 
-
 [npc_148]
 desc=A sea bird.
 size=2
@@ -2551,7 +2404,6 @@ visonmap=no
 vislevel=26
 name=Albatross
 model1=model_2850
-
 
 [npc_149]
 desc=A sea bird.
@@ -2567,7 +2419,6 @@ recol2d=35361
 name=Gull
 model1=model_2850
 
-
 [npc_150]
 desc=A sea bird.
 size=2
@@ -2578,14 +2429,12 @@ visonmap=no
 name=Gull
 model1=model_2850
 
-
 [npc_151]
 vislevel=0
 desc=No flies on me.
 visonmap=no
 name=Fly trap
 model1=model_2295
-
 
 [npc_152]
 vislevel=0
@@ -2598,7 +2447,6 @@ recol2d=5388
 name=Tree
 model1=model_3014
 
-
 [npc_153]
 desc=These look much better in the wild.
 walkanim=seq_362
@@ -2608,7 +2456,6 @@ vislevel=0
 name=Butterfly
 model1=model_3022
 
-
 [npc_154]
 desc=I love butterflies.
 walkanim=seq_362
@@ -2617,7 +2464,6 @@ visonmap=no
 vislevel=0
 name=Butterfly
 model1=model_3023
-
 
 [npc_155]
 desc=It's a Blue Morpho Butterfly.
@@ -2634,7 +2480,6 @@ recol3d=5648
 name=Butterfly
 model1=model_3023
 
-
 [npc_156]
 desc=It's a Tiger Swallowtail Butterfly.
 walkanim=seq_362
@@ -2649,7 +2494,6 @@ recol3s=32889
 recol3d=24
 name=Butterfly
 model1=model_3023
-
 
 [npc_157]
 desc=It's a Viceroy Butterfly.
@@ -2666,12 +2510,11 @@ recol3d=6798
 name=Butterfly
 model1=model_3023
 
-
 [npc_158]
 desc=A fighter from the supernatural world, he's a shadow of his former self.
 walkanim=seq_841
 readyanim=seq_842
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 op2=Attack
 vislevel=48
@@ -2696,7 +2539,6 @@ model5=model_268
 model6=model_184
 model7=model_550
 
-
 [npc_159]
 desc=Small, even by gnome standards.
 resizeh=100
@@ -2714,7 +2556,6 @@ model1=model_2909
 model2=model_2899
 model3=model_2918
 head1=model_16
-
 
 [npc_160]
 desc=Small, even by gnome standards.
@@ -2734,7 +2575,6 @@ model2=model_2899
 model3=model_2918
 head1=model_16
 
-
 [npc_161]
 desc=Small, even by gnome standards.
 resizeh=100
@@ -2751,7 +2591,6 @@ model2=model_2899
 model3=model_2918
 head1=model_16
 
-
 [npc_162]
 desc=He can advise on training.
 vislevel=0
@@ -2765,7 +2604,6 @@ model1=model_2909
 model2=model_2890
 model3=model_2922
 head1=model_21
-
 
 [npc_163]
 desc=A tree gnome guard.
@@ -2781,7 +2619,6 @@ model2=model_2893
 model3=model_2915
 head1=model_21
 
-
 [npc_164]
 desc=A tree gnome guard.
 walkanim=seq_189
@@ -2796,7 +2633,6 @@ model2=model_2892
 model3=model_2922
 head1=model_21
 
-
 [npc_165]
 desc=Sells gnomish things.
 vislevel=0
@@ -2809,7 +2645,6 @@ model1=model_2909
 model2=model_2901
 model3=model_2917
 head1=model_17
-
 
 [npc_166]
 desc=Banks gnomish things.
@@ -2825,7 +2660,6 @@ model2=model_2900
 model3=model_2915
 head1=model_23
 
-
 [npc_167]
 desc=A professional gnome baller.
 vislevel=0
@@ -2836,7 +2670,6 @@ model1=model_2914
 model2=model_2905
 model3=model_2924
 head1=model_21
-
 
 [npc_168]
 desc=A female gnome.
@@ -2855,7 +2688,6 @@ model1=model_2911
 model2=model_2907
 model3=model_2917
 head1=model_21
-
 
 [npc_169]
 desc=A female gnome.
@@ -2881,7 +2713,6 @@ model2=model_2907
 model3=model_2917
 head1=model_21
 
-
 [npc_170]
 desc=He can fly the glider.
 vislevel=0
@@ -2893,7 +2724,6 @@ model1=model_2909
 model2=model_2908
 model3=model_2922
 head1=model_19
-
 
 [npc_171]
 desc=Small but powerful.
@@ -2914,7 +2744,6 @@ model1=model_2909
 model2=model_2898
 model3=model_2915
 head1=model_18
-
 
 [npc_172]
 desc=A practicer of dark arts.
@@ -2940,7 +2769,6 @@ model5=model_170
 model6=model_176
 model7=model_265
 
-
 [npc_173]
 desc=An evil user of Magic powers
 walkanim=seq_819
@@ -2964,7 +2792,6 @@ model4=model_292
 model5=model_170
 model6=model_176
 model7=model_265
-
 
 [npc_174]
 desc=He works evil magic.
@@ -2990,7 +2817,6 @@ model5=model_170
 model6=model_176
 model7=model_265
 
-
 [npc_175]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -3015,7 +2841,6 @@ model5=model_176
 model6=model_254
 model7=model_185
 model8=model_243
-
 
 [npc_176]
 desc=The hat's a dead give away.
@@ -3045,7 +2870,6 @@ model5=model_428
 model6=model_361
 model7=model_377
 
-
 [npc_177]
 desc=The hat's a dead give away.
 walkanim=seq_819
@@ -3071,7 +2895,6 @@ model4=model_353
 model5=model_428
 model6=model_361
 model7=model_377
-
 
 [npc_178]
 desc=A dark-hearted knight.
@@ -3101,7 +2924,6 @@ model5=model_268
 model6=model_185
 model7=model_518
 
-
 [npc_179]
 desc=A dark-hearted knight.
 walkanim=seq_819
@@ -3129,7 +2951,6 @@ model4=model_179
 model5=model_268
 model6=model_185
 model7=model_518
-
 
 [npc_180]
 walkanim=seq_819
@@ -3160,7 +2981,6 @@ model10=model_519
 head1=model_53
 head2=model_76
 
-
 [npc_181]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -3184,7 +3004,6 @@ model4=model_292
 model5=model_170
 model6=model_176
 model7=model_260
-
 
 [npc_182]
 desc=Yar! Shiver me timbers!
@@ -3212,7 +3031,6 @@ model8=model_490
 model9=model_236
 head1=model_50
 head2=model_68
-
 
 [npc_183]
 desc=Avast ye scurvy land lubbers!
@@ -3245,7 +3063,6 @@ head2=model_84
 head3=model_68
 head4=model_36
 
-
 [npc_184]
 desc=This ones had too much to drink!
 walkanim=seq_819
@@ -3276,7 +3093,6 @@ head2=model_82
 head3=model_68
 head4=model_31
 
-
 [npc_185]
 desc=A fine example of piracys' equal opportunities program.
 walkanim=seq_819
@@ -3306,7 +3122,6 @@ head1=model_111
 head2=model_136
 head3=model_126
 
-
 [npc_186]
 desc=Low on brains, high on aggression.
 walkanim=seq_819
@@ -3329,7 +3144,6 @@ model5=model_176
 model6=model_254
 model7=model_181
 model8=model_533
-
 
 [npc_187]
 desc=Rogueish.
@@ -3357,7 +3171,6 @@ model6=model_254
 model7=model_181
 model8=model_533
 
-
 [npc_188]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -3380,7 +3193,6 @@ model3=model_292
 model4=model_170
 model5=model_176
 model6=model_256
-
 
 [npc_189]
 walkanim=seq_819
@@ -3406,7 +3218,6 @@ model5=model_170
 model6=model_176
 model7=model_260
 
-
 [npc_190]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -3429,7 +3240,6 @@ model3=model_292
 model4=model_170
 model5=model_176
 model6=model_256
-
 
 [npc_191]
 desc=A primitive warrior.
@@ -3454,7 +3264,6 @@ model6=model_176
 model7=model_279
 model8=model_540
 model9=model_201
-
 
 [npc_192]
 desc=A warrior touched by chaos.
@@ -3487,7 +3296,6 @@ model6=model_185
 model7=model_518
 model8=model_246
 
-
 [npc_193]
 desc=A crazy evil druid.
 walkanim=seq_819
@@ -3513,7 +3321,6 @@ model6=model_176
 model7=model_260
 model8=model_502
 
-
 [npc_194]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -3538,7 +3345,6 @@ model5=model_170
 model6=model_176
 model7=model_260
 model8=model_328
-
 
 [npc_195]
 desc=A wilderness outlaw.
@@ -3569,7 +3375,6 @@ model8=model_243
 model9=model_323
 model10=model_518
 
-
 [npc_196]
 desc=Bandit Camp guard.
 walkanim=seq_819
@@ -3599,7 +3404,6 @@ model8=model_243
 model9=model_323
 model10=model_518
 model11=model_517
-
 
 [npc_197]
 desc=Not very civilised looking.
@@ -3633,7 +3437,6 @@ model7=model_242
 model8=model_185
 model9=model_550
 
-
 [npc_198]
 vislevel=0
 desc=Master of the guild.
@@ -3657,7 +3460,6 @@ model6=model_268
 model7=model_185
 model8=model_518
 head1=model_52
-
 
 [npc_199]
 desc=A mighty warrior!
@@ -3692,7 +3494,6 @@ head1=model_57
 head2=model_83
 head3=model_75
 
-
 [npc_200]
 desc=Wears a stylish suit of armour.
 walkanim=seq_819
@@ -3725,7 +3526,6 @@ model6=model_156
 model7=model_179
 model8=model_323
 
-
 [npc_201]
 desc=Guards prisoners for the black knights.
 walkanim=seq_819
@@ -3752,7 +3552,6 @@ model4=model_253
 model5=model_185
 model6=model_156
 model7=model_179
-
 
 [npc_202]
 desc=Has a fearsome scowl.
@@ -3782,7 +3581,6 @@ model4=model_353
 model5=model_435
 model6=model_490
 model7=model_481
-
 
 [npc_203]
 desc=Has a fearsome posture.
@@ -3814,7 +3612,6 @@ model8=model_243
 model9=model_323
 model10=model_490
 
-
 [npc_204]
 desc=Nice hair.
 walkanim=seq_819
@@ -3845,7 +3642,6 @@ model8=model_243
 model9=model_323
 model10=model_490
 
-
 [npc_205]
 desc=Twisted by name, twisted by nature.
 walkanim=seq_819
@@ -3871,7 +3667,6 @@ model5=model_170
 model6=model_176
 model7=model_260
 
-
 [npc_206]
 walkanim=seq_98
 readyanim=seq_101
@@ -3893,7 +3688,6 @@ model8=model_2991
 head1=model_0
 head2=model_6
 
-
 [npc_207]
 vislevel=0
 resizev=70
@@ -3912,7 +3706,6 @@ model4=model_2983
 model5=model_2985
 head1=model_5
 
-
 [npc_208]
 vislevel=0
 walkanim=seq_98
@@ -3928,7 +3721,6 @@ model3=model_2979
 model4=model_2983
 model5=model_2985
 head1=model_0
-
 
 [npc_209]
 vislevel=0
@@ -3946,7 +3738,6 @@ model3=model_2979
 model4=model_2983
 model5=model_2985
 head1=model_0
-
 
 [npc_210]
 vislevel=0
@@ -3976,7 +3767,6 @@ model5=model_421
 model6=model_358
 model7=model_446
 head1=model_108
-
 
 [npc_211]
 vislevel=0
@@ -4009,7 +3799,6 @@ model6=model_185
 model7=model_246
 model8=model_318
 head1=model_65
-
 
 [npc_212]
 vislevel=0
@@ -4045,7 +3834,6 @@ model9=model_192
 model10=model_323
 head1=model_65
 head2=model_35
-
 
 [npc_213]
 vislevel=0
@@ -4084,7 +3872,6 @@ head1=model_52
 head2=model_82
 head3=model_44
 
-
 [npc_214]
 vislevel=0
 desc=He looks unhappy...
@@ -4115,7 +3902,6 @@ model7=model_247
 head1=model_63
 head2=model_79
 
-
 [npc_215]
 vislevel=0
 desc=He looks happy...
@@ -4145,7 +3931,6 @@ model6=model_185
 model7=model_247
 head1=model_63
 head2=model_79
-
 
 [npc_216]
 vislevel=0
@@ -4179,7 +3964,6 @@ model7=model_284
 model8=model_246
 head1=model_59
 
-
 [npc_217]
 vislevel=0
 desc=A crone.
@@ -4207,7 +3991,6 @@ model4=model_356
 model5=model_426
 model6=model_361
 head1=model_103
-
 
 [npc_218]
 vislevel=0
@@ -4239,7 +4022,6 @@ model7=model_284
 model8=model_249
 head1=model_59
 head2=model_81
-
 
 [npc_219]
 vislevel=0
@@ -4279,7 +4061,6 @@ head2=model_37
 head3=model_68
 head4=model_83
 
-
 [npc_220]
 vislevel=0
 desc=He doesn't look very well...
@@ -4316,7 +4097,6 @@ head1=model_53
 head2=model_35
 head3=model_84
 
-
 [npc_221]
 desc=He looks mean and powerful.
 walkanim=seq_127
@@ -4339,7 +4119,6 @@ recol6d=0
 name=Black Knight Titan
 model1=model_2864
 model2=model_2872
-
 
 [npc_222]
 desc=A holy man.
@@ -4365,7 +4144,6 @@ model6=model_176
 model7=model_260
 head1=model_63
 
-
 [npc_223]
 vislevel=0
 desc=A peaceful monk.
@@ -4389,7 +4167,6 @@ model6=model_176
 model7=model_260
 head1=model_59
 
-
 [npc_224]
 resizeh=64
 resizev=64
@@ -4402,7 +4179,6 @@ recol1s=43299
 recol1d=70
 name=Dungeon rat
 model1=model_2959
-
 
 [npc_225]
 vislevel=0
@@ -4434,7 +4210,6 @@ model7=model_185
 model8=model_198
 head1=model_63
 head2=model_40
-
 
 [npc_226]
 vislevel=0
@@ -4470,7 +4245,6 @@ model9=model_562
 model10=model_324
 head1=model_62
 
-
 [npc_227]
 vislevel=0
 desc=He checks the entrants to the fishing contest.
@@ -4495,7 +4269,6 @@ model7=model_185
 model8=model_327
 head1=model_53
 head2=model_79
-
 
 [npc_228]
 vislevel=0
@@ -4522,7 +4295,6 @@ model8=model_321
 model9=model_562
 head1=model_45
 head2=model_84
-
 
 [npc_229]
 vislevel=0
@@ -4555,7 +4327,6 @@ model8=model_290
 model9=model_562
 head1=model_67
 
-
 [npc_230]
 vislevel=0
 desc=He looks elderly.
@@ -4586,7 +4357,6 @@ model7=model_181
 model8=model_323
 head1=model_46
 head2=model_82
-
 
 [npc_231]
 vislevel=0
@@ -4621,7 +4391,6 @@ head1=model_55
 head2=model_79
 head3=model_39
 
-
 [npc_232]
 vislevel=0
 desc=He looks short and grumpy.
@@ -4637,54 +4406,49 @@ model5=model_2985
 model6=model_2993
 head1=model_0
 
-
 [npc_233]
 vislevel=0
 desc=I can fish here.
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 op1=Fish
 name=Fishing spot
 model1=model_1491
-
 
 [npc_234]
 vislevel=0
 desc=I can fish here.
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 op1=Fish
 name=Fishing spot
 model1=model_1491
-
 
 [npc_235]
 vislevel=0
 desc=I can fish here.
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 op1=Fish
 name=Fishing spot
 model1=model_1491
-
 
 [npc_236]
 vislevel=0
 desc=I can fish here.
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 op1=Fish
 name=Fishing spot
 model1=model_1491
-
 
 [npc_237]
 desc=He isn't very friendly.
@@ -4716,12 +4480,11 @@ model7=model_518
 model8=model_246
 head1=model_65
 
-
 [npc_238]
 desc=A scary looking spirit.
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op2=Attack
 vislevel=92
 recol1s=61
@@ -4737,7 +4500,6 @@ model1=model_2961
 model2=model_2964
 model3=model_2965
 head1=model_10
-
 
 [npc_239]
 vislevel=0
@@ -4773,7 +4535,6 @@ model9=model_246
 model10=model_318
 head1=model_46
 
-
 [npc_240]
 vislevel=0
 desc=One of the Knights of the Round Table.
@@ -4807,7 +4568,6 @@ model8=model_248
 model9=model_318
 head1=model_65
 head2=model_80
-
 
 [npc_241]
 vislevel=0
@@ -4843,7 +4603,6 @@ model9=model_318
 model10=model_521
 head1=model_60
 
-
 [npc_242]
 vislevel=0
 desc=One of the Knights of the Round Table.
@@ -4878,7 +4637,6 @@ model9=model_318
 head1=model_49
 head2=model_81
 
-
 [npc_243]
 vislevel=0
 desc=One of the Knights of the Round Table.
@@ -4911,7 +4669,6 @@ model7=model_490
 model8=model_486
 model9=model_318
 head1=model_56
-
 
 [npc_244]
 vislevel=0
@@ -4948,7 +4705,6 @@ model10=model_318
 head1=model_65
 head2=model_83
 
-
 [npc_245]
 vislevel=0
 desc=One of the Knights of the Round Table.
@@ -4983,7 +4739,6 @@ model9=model_248
 model10=model_318
 head1=model_66
 head2=model_80
-
 
 [npc_246]
 vislevel=0
@@ -5020,7 +4775,6 @@ model10=model_318
 head1=model_57
 head2=model_80
 
-
 [npc_247]
 desc=Leader of the Renegade Knights.
 walkanim=seq_819
@@ -5056,7 +4810,6 @@ model9=model_541
 model10=model_240
 head1=model_60
 
-
 [npc_248]
 vislevel=0
 desc=An evil and powerful sorceress.
@@ -5086,7 +4839,6 @@ model6=model_358
 model7=model_534
 model8=model_414
 head1=model_113
-
 
 [npc_249]
 vislevel=0
@@ -5125,7 +4877,6 @@ head1=model_52
 head2=model_82
 head3=model_44
 
-
 [npc_250]
 vislevel=0
 desc=A powerful sorceress who guards Excalibur.
@@ -5154,7 +4905,6 @@ model5=model_421
 model6=model_358
 model7=model_417
 head1=model_113
-
 
 [npc_251]
 vislevel=0
@@ -5193,7 +4943,6 @@ head1=model_53
 head2=model_84
 head3=model_43
 
-
 [npc_252]
 vislevel=0
 desc=He looks very hungry...
@@ -5224,7 +4973,6 @@ model7=model_250
 head1=model_63
 head2=model_82
 
-
 [npc_253]
 desc=It's one of General Khazard's guards.
 walkanim=seq_819
@@ -5250,7 +4998,6 @@ model7=model_185
 model8=model_550
 head1=model_63
 head2=model_84
-
 
 [npc_254]
 desc=It's one of General Khazard's guards.
@@ -5278,7 +5025,6 @@ model8=model_550
 head1=model_63
 head2=model_85
 
-
 [npc_255]
 desc=It's one of General Khazard's guards.
 walkanim=seq_819
@@ -5303,7 +5049,6 @@ model6=model_254
 model7=model_185
 model8=model_550
 head1=model_57
-
 
 [npc_256]
 desc=It's one of General Khazard's guards.
@@ -5331,7 +5076,6 @@ model8=model_550
 head1=model_57
 head2=model_85
 
-
 [npc_257]
 desc=It's one of General Khazard's guards.
 walkanim=seq_819
@@ -5355,7 +5099,6 @@ model7=model_185
 model8=model_550
 head1=model_63
 head2=model_84
-
 
 [npc_258]
 desc=He looks really nasty. Smells bad too.
@@ -5381,7 +5124,6 @@ model6=model_185
 model7=model_546
 model8=model_323
 head1=model_149
-
 
 [npc_259]
 vislevel=0
@@ -5410,7 +5152,6 @@ model8=model_326
 head1=model_63
 head2=model_79
 
-
 [npc_260]
 vislevel=0
 desc=A fightslave. He looks mistreated and weak.
@@ -5435,7 +5176,6 @@ model5=model_176
 model6=model_275
 model7=model_181
 head1=model_52
-
 
 [npc_261]
 vislevel=0
@@ -5467,7 +5207,6 @@ model7=model_181
 model8=model_326
 head1=model_46
 
-
 [npc_262]
 vislevel=0
 desc=A fightslave. He looks mistreated and weak.
@@ -5490,7 +5229,6 @@ model5=model_176
 model6=model_275
 model7=model_181
 head1=model_52
-
 
 [npc_263]
 vislevel=0
@@ -5517,7 +5255,6 @@ model6=model_275
 model7=model_181
 head1=model_63
 
-
 [npc_264]
 vislevel=0
 desc=She looks wealthy.
@@ -5542,7 +5279,6 @@ model5=model_428
 model6=model_358
 head1=model_103
 
-
 [npc_265]
 vislevel=0
 desc=A young squire. He looks worse for wear.
@@ -5559,7 +5295,6 @@ model2=model_2910
 model3=model_2906
 head1=model_53
 
-
 [npc_266]
 vislevel=0
 desc=A young squire. He looks worse for wear.
@@ -5575,7 +5310,6 @@ model1=model_2918
 model2=model_2910
 model3=model_2906
 head1=model_53
-
 
 [npc_267]
 vislevel=0
@@ -5600,7 +5334,6 @@ model6=model_275
 model7=model_181
 head1=model_63
 head2=model_82
-
 
 [npc_268]
 vislevel=0
@@ -5627,7 +5360,6 @@ model8=model_185
 head1=model_63
 head2=model_68
 
-
 [npc_269]
 size=2
 walkanim=seq_157
@@ -5637,7 +5369,6 @@ op2=Attack
 vislevel=132
 name=Bouncer
 model1=model_2997
-
 
 [npc_270]
 desc=Khazard's strongest ogre warrior.
@@ -5649,7 +5380,6 @@ vislevel=55
 name=Khazard Ogre
 model1=model_2880
 model2=model_2876
-
 
 [npc_271]
 desc=A large angry scorpion.
@@ -5664,7 +5394,6 @@ recol2s=3738
 recol2d=24
 name=Khazard Scorpion
 model1=model_2967
-
 
 [npc_272]
 desc=He walks with a slight limp.
@@ -5698,7 +5427,6 @@ model6=model_265
 model7=model_533
 head1=model_56
 
-
 [npc_273]
 desc=He walks with a slight limp.
 walkanim=seq_819
@@ -5728,7 +5456,6 @@ model4=model_170
 model5=model_179
 model6=model_265
 head1=model_56
-
 
 [npc_274]
 desc=A guard who has devoted their life to Armadyl.
@@ -5767,7 +5494,6 @@ model11=model_3330
 head1=model_52
 head2=model_82
 
-
 [npc_275]
 desc=A guard who has devoted their life to Armadyl.
 walkanim=seq_819
@@ -5803,7 +5529,6 @@ model9=model_518
 model10=model_523
 head1=model_113
 
-
 [npc_276]
 desc=A witch.
 walkanim=seq_819
@@ -5837,7 +5562,6 @@ model8=model_454
 model9=model_534
 head1=model_115
 head2=model_102
-
 
 [npc_277]
 desc=Intimidating!
@@ -5873,7 +5597,6 @@ model8=model_246
 model9=model_184
 head1=model_63
 
-
 [npc_278]
 vislevel=0
 desc=The head cook of Lumbridge castle.
@@ -5902,7 +5625,6 @@ head1=model_53
 head2=model_41
 head3=model_79
 
-
 [npc_279]
 vislevel=0
 desc=An old monk.
@@ -5926,7 +5648,6 @@ model5=model_170
 model6=model_176
 model7=model_260
 head1=model_59
-
 
 [npc_280]
 vislevel=0
@@ -5952,7 +5673,6 @@ model6=model_176
 model7=model_260
 head1=model_59
 
-
 [npc_281]
 desc=An Ardougne Monk.
 walkanim=seq_819
@@ -5977,7 +5697,6 @@ model6=model_176
 model7=model_260
 head1=model_59
 
-
 [npc_282]
 desc=A dastardly blanket thief.
 walkanim=seq_819
@@ -5998,7 +5717,6 @@ model5=model_179
 model6=model_254
 model7=model_185
 model8=model_519
-
 
 [npc_283]
 desc=The head of the treacherous blanket stealing gang.
@@ -6021,7 +5739,6 @@ model6=model_254
 model7=model_185
 model8=model_518
 
-
 [npc_284]
 vislevel=0
 walkanim=seq_98
@@ -6039,7 +5756,6 @@ model3=model_2979
 model4=model_2983
 model5=model_2985
 head1=model_4
-
 
 [npc_285]
 vislevel=0
@@ -6064,7 +5780,6 @@ model4=model_353
 model5=model_428
 model6=model_358
 head1=model_118
-
 
 [npc_286]
 vislevel=0
@@ -6093,7 +5808,6 @@ model6=model_254
 model7=model_185
 head1=model_63
 
-
 [npc_287]
 vislevel=0
 desc=A former chicken.
@@ -6119,7 +5833,6 @@ model7=model_181
 model8=model_320
 head1=model_53
 
-
 [npc_288]
 vislevel=0
 desc=Yep, definitely a chicken.
@@ -6128,7 +5841,6 @@ readyanim=seq_54
 name=Chicken
 model1=model_2849
 head1=model_53
-
 
 [npc_289]
 vislevel=0
@@ -6165,7 +5877,6 @@ head1=model_53
 head2=model_70
 head3=model_79
 
-
 [npc_290]
 vislevel=0
 desc=Seems very serious.
@@ -6192,7 +5903,6 @@ model7=model_245
 model8=model_561
 head1=model_63
 head2=model_245
-
 
 [npc_291]
 vislevel=0
@@ -6224,7 +5934,6 @@ head1=model_55
 head2=model_37
 head3=model_83
 
-
 [npc_292]
 vislevel=0
 desc=Even from here you can see this sheep's not well.
@@ -6237,7 +5946,6 @@ recol2s=10351
 recol2d=11489
 name=Diseased sheep
 model1=model_2929
-
 
 [npc_293]
 vislevel=0
@@ -6252,7 +5960,6 @@ recol2d=11489
 name=Diseased sheep
 model1=model_2929
 
-
 [npc_294]
 vislevel=0
 desc=Even from here you can see this sheep's not well.
@@ -6266,7 +5973,6 @@ recol2d=11489
 name=Diseased sheep
 model1=model_2929
 
-
 [npc_295]
 vislevel=0
 desc=Even from here you can see this sheep's not well.
@@ -6279,7 +5985,6 @@ recol2s=10351
 recol2d=11489
 name=Diseased sheep
 model1=model_2929
-
 
 [npc_296]
 vislevel=0
@@ -6300,7 +6005,6 @@ model3=model_2955
 model4=model_2956
 head1=model_145
 
-
 [npc_297]
 vislevel=0
 desc=An ugly green creature.
@@ -6317,7 +6021,6 @@ model2=model_2953
 model3=model_2955
 model4=model_2956
 head1=model_144
-
 
 [npc_298]
 desc=An ugly green creature.
@@ -6336,7 +6039,6 @@ model4=model_2956
 model5=model_2957
 head1=model_142
 
-
 [npc_299]
 desc=An ugly green creature.
 walkanim=seq_308
@@ -6353,7 +6055,6 @@ model3=model_2955
 model4=model_2956
 model5=model_2957
 head1=model_144
-
 
 [npc_300]
 vislevel=0
@@ -6387,13 +6088,11 @@ head1=model_52
 head2=model_44
 head3=model_82
 
-
 [npc_301]
 vislevel=0
 desc=Reminds me of playing pooh sticks.
 name=Twig
 model1=model_1644
-
 
 [npc_302]
 desc=Could do with losing a bit of weight.
@@ -6421,7 +6120,6 @@ model9=model_245
 head1=model_53
 head2=model_82
 
-
 [npc_303]
 desc=Looks suspiciously like a fisherman.
 walkanim=seq_819
@@ -6445,7 +6143,6 @@ model6=model_254
 model7=model_181
 head1=model_63
 head2=model_82
-
 
 [npc_304]
 desc=Nice hair.
@@ -6473,7 +6170,6 @@ model5=model_429
 model6=model_358
 head1=model_113
 
-
 [npc_305]
 desc=Looks young.
 walkanim=seq_189
@@ -6488,7 +6184,6 @@ model2=model_2910
 model3=model_2918
 head1=model_139
 
-
 [npc_306]
 desc=It's a tree gnome
 walkanim=seq_189
@@ -6500,7 +6195,6 @@ model1=model_2900
 model2=model_2914
 model3=model_2915
 head1=model_23
-
 
 [npc_307]
 desc=An old motherly witch with a curious smile and a hooked nose.
@@ -6532,7 +6226,6 @@ model7=model_377
 head1=model_122
 head2=model_102
 
-
 [npc_308]
 vislevel=0
 desc=The man in charge of the fishing guild.
@@ -6563,12 +6256,11 @@ head1=model_63
 head2=model_77
 head3=model_80
 
-
 [npc_309]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6577,13 +6269,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_310]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6592,13 +6283,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_311]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6607,13 +6297,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_312]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Cage
@@ -6622,13 +6311,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_313]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6637,13 +6325,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_314]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6652,13 +6339,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_315]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6667,13 +6353,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_316]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6682,13 +6367,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_317]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6697,13 +6381,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_318]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6712,13 +6395,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_319]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6727,13 +6409,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_320]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6742,13 +6423,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_321]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Cage
@@ -6757,13 +6437,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_322]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6772,13 +6451,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_323]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6787,13 +6465,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_324]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Cage
@@ -6802,13 +6479,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_325]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6817,13 +6493,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_326]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6832,13 +6507,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_327]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6847,13 +6521,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_328]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6862,13 +6535,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_329]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6877,13 +6549,12 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_330]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6893,12 +6564,11 @@ op5=hidden
 name=Fishing spot
 model1=model_1491
 
-
 [npc_331]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -6908,12 +6578,11 @@ op5=hidden
 name=Fishing spot
 model1=model_1491
 
-
 [npc_332]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6923,12 +6592,11 @@ op5=hidden
 name=Fishing spot
 model1=model_1491
 
-
 [npc_333]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Cage
@@ -6938,12 +6606,11 @@ op5=hidden
 name=Fishing spot
 model1=model_1491
 
-
 [npc_334]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Net
@@ -6952,7 +6619,6 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_335]
 vislevel=0
@@ -6982,7 +6648,6 @@ model5=model_440
 model6=model_445
 head1=model_113
 
-
 [npc_336]
 vislevel=0
 walkanim=seq_819
@@ -7005,7 +6670,6 @@ head1=model_53
 head2=model_85
 head3=model_40
 
-
 [npc_337]
 vislevel=0
 walkanim=seq_819
@@ -7027,7 +6691,6 @@ model8=model_198
 head1=model_53
 head2=model_85
 head3=model_40
-
 
 [npc_338]
 vislevel=0
@@ -7055,7 +6718,6 @@ model7=model_254
 model8=model_320
 head1=model_46
 
-
 [npc_339]
 vislevel=0
 walkanim=seq_819
@@ -7081,7 +6743,6 @@ model6=model_176
 model7=model_254
 model8=model_320
 head1=model_46
-
 
 [npc_340]
 vislevel=0
@@ -7111,7 +6772,6 @@ model7=model_254
 head1=model_55
 head2=model_80
 
-
 [npc_341]
 vislevel=0
 walkanim=seq_819
@@ -7140,7 +6800,6 @@ model7=model_254
 head1=model_55
 head2=model_80
 
-
 [npc_342]
 vislevel=0
 desc=She looks rather concerned.
@@ -7166,7 +6825,6 @@ model4=model_353
 model5=model_421
 model6=model_358
 head1=model_103
-
 
 [npc_343]
 vislevel=0
@@ -7201,7 +6859,6 @@ model8=model_323
 head1=model_63
 head2=model_85
 
-
 [npc_344]
 vislevel=0
 desc=He tries to keep order around here.
@@ -7227,7 +6884,6 @@ model10=model_541
 head1=model_48
 head2=model_80
 
-
 [npc_345]
 vislevel=0
 desc=He tries to keep order around here.
@@ -7252,7 +6908,6 @@ model9=model_508
 head1=model_48
 head2=model_80
 
-
 [npc_346]
 vislevel=0
 desc=He tries to keep order around here.
@@ -7276,7 +6931,6 @@ model8=model_276
 model9=model_508
 head1=model_48
 head2=model_80
-
 
 [npc_347]
 desc=A mourner, or plague healer.
@@ -7308,7 +6962,6 @@ model6=model_323
 model7=model_553
 head1=model_51
 
-
 [npc_348]
 desc=A mourner, or plague healer.
 walkanim=seq_819
@@ -7336,7 +6989,6 @@ model5=model_185
 model6=model_323
 head1=model_51
 
-
 [npc_349]
 vislevel=0
 desc=He looks shifty.
@@ -7360,7 +7012,6 @@ model6=model_179
 model7=model_274
 head1=model_48
 head2=model_82
-
 
 [npc_350]
 vislevel=0
@@ -7390,7 +7041,6 @@ model7=model_274
 head1=model_47
 head2=model_84
 
-
 [npc_351]
 desc=One of RuneScapes' many citizens.
 walkanim=seq_819
@@ -7418,7 +7068,6 @@ model7=model_275
 head1=model_53
 head2=model_81
 
-
 [npc_352]
 desc=One of RuneScapes' many citizens.
 walkanim=seq_819
@@ -7444,7 +7093,6 @@ model5=model_353
 model6=model_438
 head1=model_125
 
-
 [npc_353]
 desc=One of RuneScapes' many citizens.
 walkanim=seq_819
@@ -7467,7 +7115,6 @@ model4=model_353
 model5=model_438
 model6=model_358
 head1=model_113
-
 
 [npc_354]
 desc=One of RuneScapes' many citizens.
@@ -7494,7 +7141,6 @@ model5=model_438
 model6=model_358
 head1=model_103
 
-
 [npc_355]
 vislevel=0
 desc=One of RuneScapes' many citizens.
@@ -7510,7 +7156,6 @@ model1=model_2897
 model2=model_2909
 model3=model_2918
 head1=model_139
-
 
 [npc_356]
 vislevel=0
@@ -7529,7 +7174,6 @@ model1=model_2897
 model2=model_2909
 model3=model_2918
 head1=model_139
-
 
 [npc_357]
 desc=A mourner, or plague healer.
@@ -7558,7 +7202,6 @@ model6=model_323
 model7=model_555
 head1=model_51
 
-
 [npc_358]
 vislevel=0
 desc=A holy man.
@@ -7584,7 +7227,6 @@ model6=model_176
 model7=model_260
 head1=model_63
 head2=model_82
-
 
 [npc_359]
 vislevel=0
@@ -7613,7 +7255,6 @@ model7=model_275
 head1=model_63
 head2=model_82
 
-
 [npc_360]
 desc=One of RuneScapes' many citizens.
 walkanim=seq_819
@@ -7638,7 +7279,6 @@ model4=model_353
 model5=model_437
 model6=model_358
 head1=model_118
-
 
 [npc_361]
 desc=One of RuneScapes' many citizens.
@@ -7665,7 +7305,6 @@ model5=model_437
 model6=model_358
 head1=model_121
 
-
 [npc_362]
 desc=One of RuneScapes' many citizens.
 walkanim=seq_819
@@ -7689,7 +7328,6 @@ model5=model_437
 model6=model_358
 head1=model_121
 
-
 [npc_363]
 desc=One of RuneScapes' many citizens.
 walkanim=seq_819
@@ -7712,7 +7350,6 @@ model4=model_353
 model5=model_437
 model6=model_358
 head1=model_121
-
 
 [npc_364]
 vislevel=0
@@ -7749,7 +7386,6 @@ head1=model_63
 head2=model_83
 head3=model_2938
 
-
 [npc_365]
 desc=A military man.
 op2=Attack
@@ -7784,7 +7420,6 @@ model9=model_518
 model10=model_523
 model11=model_3330
 
-
 [npc_366]
 vislevel=0
 desc=He looks friendly enough.
@@ -7811,7 +7446,6 @@ model7=model_185
 model8=model_280
 head1=model_52
 head2=model_82
-
 
 [npc_367]
 vislevel=0
@@ -7846,7 +7480,6 @@ head1=model_63
 head2=model_79
 head3=model_78
 
-
 [npc_368]
 vislevel=0
 desc=He tries to keep order around here.
@@ -7875,7 +7508,6 @@ model7=model_185
 model8=model_555
 head1=model_66
 head2=model_80
-
 
 [npc_369]
 desc=A mourner, or plague healer.
@@ -7906,7 +7538,6 @@ model5=model_323
 model6=model_499
 head1=model_51
 
-
 [npc_370]
 desc=A mourner, or plague healer.
 walkanim=seq_819
@@ -7933,7 +7564,6 @@ model4=model_273
 model5=model_185
 model6=model_323
 head1=model_51
-
 
 [npc_371]
 desc=A mourner, or plague healer.
@@ -7964,7 +7594,6 @@ model5=model_185
 model6=model_323
 head1=model_51
 
-
 [npc_372]
 vislevel=0
 desc=A mourner, or plague healer.
@@ -7993,7 +7622,6 @@ model5=model_185
 model6=model_323
 head1=model_51
 
-
 [npc_373]
 vislevel=0
 desc=She's quite a looker!
@@ -8020,7 +7648,6 @@ model5=model_429
 model6=model_358
 head1=model_113
 
-
 [npc_374]
 desc=Big, ugly, and smelly.
 size=2
@@ -8031,7 +7658,6 @@ vislevel=53
 name=Ogre
 model1=model_2878
 model2=model_2874
-
 
 [npc_375]
 vislevel=0
@@ -8064,7 +7690,6 @@ head1=model_53
 head2=model_83
 head3=model_68
 
-
 [npc_376]
 vislevel=0
 desc=An old sea dog.
@@ -8095,7 +7720,6 @@ head1=model_53
 head2=model_85
 head3=model_37
 
-
 [npc_377]
 vislevel=0
 desc=A young sailor.
@@ -8124,7 +7748,6 @@ model7=model_181
 model8=model_194
 head1=model_55
 head2=model_37
-
 
 [npc_378]
 vislevel=0
@@ -8155,7 +7778,6 @@ model8=model_194
 head1=model_55
 head2=model_37
 
-
 [npc_379]
 vislevel=0
 desc=The owner of the banana plantation.
@@ -8184,7 +7806,6 @@ model7=model_185
 model8=model_324
 head1=model_53
 head2=model_82
-
 
 [npc_380]
 vislevel=0
@@ -8219,7 +7840,6 @@ model8=model_480
 head1=model_115
 head2=model_95
 
-
 [npc_381]
 vislevel=0
 desc=An old sailor.
@@ -8253,7 +7873,6 @@ model8=model_326
 head1=model_52
 head2=model_82
 
-
 [npc_382]
 vislevel=0
 walkanim=seq_98
@@ -8275,7 +7894,6 @@ model7=model_2988
 head1=model_0
 head2=model_8
 
-
 [npc_383]
 vislevel=0
 walkanim=seq_98
@@ -8296,7 +7914,6 @@ model6=model_2990
 model7=model_2988
 head1=model_0
 head2=model_8
-
 
 [npc_384]
 vislevel=0
@@ -8333,7 +7950,6 @@ head1=model_57
 head2=model_84
 head3=model_75
 
-
 [npc_385]
 vislevel=0
 desc=Looks vicious!
@@ -8342,7 +7958,6 @@ readyanim=seq_272
 op1=Pick-up
 name=Kharid Scorpion
 model1=model_2968
-
 
 [npc_386]
 vislevel=0
@@ -8353,7 +7968,6 @@ op1=Pick-up
 name=Kharid Scorpion
 model1=model_2968
 
-
 [npc_387]
 vislevel=0
 desc=Looks vicious!
@@ -8362,7 +7976,6 @@ readyanim=seq_272
 op1=Pick-up
 name=Kharid Scorpion
 model1=model_2968
-
 
 [npc_388]
 vislevel=0
@@ -8389,7 +8002,6 @@ model6=model_176
 model7=model_260
 head1=model_55
 head2=model_82
-
 
 [npc_389]
 vislevel=0
@@ -8427,17 +8039,15 @@ head1=model_44
 head2=model_52
 head3=model_82
 
-
 [npc_390]
 desc=A big fish with a bigger mouth.
 vislevel=0
 readyanim=seq_4
 resizeh=64
 resizev=64
-disposeAlpha=yes
+alpha=yes
 name=Big fish
 model1=model_2845
-
 
 [npc_391]
 desc=
@@ -8447,13 +8057,12 @@ resizeh=160
 walkanim=seq_283
 readyanim=seq_286
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=14
 recol1s=61
 recol1d=26925
 name=River troll
 model1=model_2930
-
 
 [npc_392]
 desc=
@@ -8463,13 +8072,12 @@ resizeh=160
 walkanim=seq_283
 readyanim=seq_286
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=29
 recol1s=61
 recol1d=26925
 name=River troll
 model1=model_2930
-
 
 [npc_393]
 desc=
@@ -8479,13 +8087,12 @@ resizeh=160
 walkanim=seq_283
 readyanim=seq_286
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=49
 recol1s=61
 recol1d=26925
 name=River troll
 model1=model_2930
-
 
 [npc_394]
 desc=
@@ -8495,13 +8102,12 @@ resizeh=160
 walkanim=seq_283
 readyanim=seq_286
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=79
 recol1s=61
 recol1d=26925
 name=River troll
 model1=model_2930
-
 
 [npc_395]
 desc=
@@ -8511,13 +8117,12 @@ resizeh=160
 walkanim=seq_283
 readyanim=seq_286
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=120
 recol1s=61
 recol1d=26925
 name=River troll
 model1=model_2930
-
 
 [npc_396]
 desc=
@@ -8527,13 +8132,12 @@ resizeh=160
 walkanim=seq_283
 readyanim=seq_286
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=159
 recol1s=61
 recol1d=26925
 name=River troll
 model1=model_2930
-
 
 [npc_397]
 size=2
@@ -8551,7 +8155,6 @@ recol3d=4409
 name=Cow
 model1=model_3341
 model2=model_3342
-
 
 [npc_398]
 vislevel=0
@@ -8587,7 +8190,6 @@ model9=model_317
 head1=model_57
 head2=model_85
 
-
 [npc_399]
 vislevel=0
 desc=A Legends Guild Guard, he protects the entrance to the Legends Guild.
@@ -8622,7 +8224,6 @@ model9=model_317
 head1=model_57
 head2=model_85
 
-
 [npc_400]
 vislevel=0
 desc=Radimus is the Grand Vizier of the Legends Guild.
@@ -8656,7 +8257,6 @@ model8=model_317
 head1=model_53
 head2=model_82
 
-
 [npc_401]
 vislevel=0
 desc=He deals in exotic types of wood.
@@ -8688,7 +8288,6 @@ model10=model_566
 head1=model_47
 head2=model_82
 
-
 [npc_402]
 vislevel=0
 desc=She deals in exotic types of wood.
@@ -8718,12 +8317,11 @@ model8=model_482
 model9=model_566
 head1=model_107
 
-
 [npc_403]
 vislevel=0
 desc=I can see fish swimming in the water.
 readyanim=seq_456
-disposeAlpha=yes
+alpha=yes
 resizeh=32
 resizev=32
 op1=Lure
@@ -8733,12 +8331,11 @@ op5=hidden
 name=Fishing spot
 model1=model_2320
 
-
 [npc_404]
 vislevel=0
 desc=I can see fish swimming in the water.
 readyanim=seq_456
-disposeAlpha=yes
+alpha=yes
 resizeh=32
 resizev=32
 op1=Net
@@ -8748,12 +8345,11 @@ op5=hidden
 name=Fishing spot
 model1=model_2320
 
-
 [npc_405]
 vislevel=0
 desc=I can see fish swimming in the water.
 readyanim=seq_456
-disposeAlpha=yes
+alpha=yes
 resizeh=32
 resizev=32
 op1=Cage
@@ -8763,12 +8359,11 @@ op5=hidden
 name=Fishing spot
 model1=model_2320
 
-
 [npc_406]
 vislevel=0
 desc=I can see fish swimming in the water.
 readyanim=seq_456
-disposeAlpha=yes
+alpha=yes
 resizeh=32
 resizev=32
 op1=Net
@@ -8778,7 +8373,6 @@ op5=hidden
 name=Fishing spot
 model1=model_2320
 
-
 [npc_407]
 vislevel=0
 desc=A very strange plant.
@@ -8786,7 +8380,6 @@ readyanim=seq_349
 op1=Pick
 name=Strange plant
 model1=model_3371
-
 
 [npc_408]
 vislevel=0
@@ -8797,13 +8390,12 @@ op2=Attack
 name=Strange plant
 model1=model_3371
 
-
 [npc_409]
 vislevel=0
 desc=Maybe he'll grant me a wish...
 walkanim=seq_792
 readyanim=seq_792
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 recol1s=4550
 recol1d=39888
@@ -8829,7 +8421,6 @@ model8=model_270
 head1=model_64
 head2=model_73
 head3=model_84
-
 
 [npc_410]
 vislevel=0
@@ -8865,7 +8456,6 @@ model9=model_185
 head1=model_48
 head2=model_82
 
-
 [npc_411]
 vislevel=0
 desc=A swarm of vicious insects!
@@ -8877,7 +8467,6 @@ recol1s=12
 recol1d=3988
 name=Swarm
 model1=model_2950
-
 
 [npc_412]
 vislevel=0
@@ -8902,14 +8491,13 @@ recol6d=565
 name=Savage bird
 model1=model_3011
 
-
 [npc_413]
 desc=Rock with attitude.
 size=2
 readyanim=seq_155
 walkanim=seq_152
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=14
 recol1s=3280
 recol1d=7841
@@ -8919,7 +8507,6 @@ recol3s=0
 recol3d=920
 name=Rock Golem
 model1=model_2969
-
 
 [npc_414]
 desc=Rock with attitude.
@@ -8927,7 +8514,7 @@ size=2
 readyanim=seq_155
 walkanim=seq_152
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=29
 recol1s=3280
 recol1d=7841
@@ -8937,7 +8524,6 @@ recol3s=0
 recol3d=920
 name=Rock Golem
 model1=model_2969
-
 
 [npc_415]
 desc=Rock with attitude.
@@ -8945,7 +8531,7 @@ size=2
 readyanim=seq_155
 walkanim=seq_152
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=49
 recol1s=3280
 recol1d=7841
@@ -8955,7 +8541,6 @@ recol3s=0
 recol3d=920
 name=Rock Golem
 model1=model_2969
-
 
 [npc_416]
 desc=Rock with attitude.
@@ -8963,7 +8548,7 @@ size=2
 readyanim=seq_155
 walkanim=seq_152
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=79
 recol1s=3280
 recol1d=7841
@@ -8973,7 +8558,6 @@ recol3s=0
 recol3d=920
 name=Rock Golem
 model1=model_2969
-
 
 [npc_417]
 desc=Rock with attitude.
@@ -8981,7 +8565,7 @@ size=2
 readyanim=seq_155
 walkanim=seq_152
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=120
 recol1s=3280
 recol1d=7841
@@ -8991,7 +8575,6 @@ recol3s=0
 recol3d=920
 name=Rock Golem
 model1=model_2969
-
 
 [npc_418]
 desc=Rock with attitude.
@@ -8999,7 +8582,7 @@ size=2
 readyanim=seq_155
 walkanim=seq_152
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=159
 recol1s=3280
 recol1d=7841
@@ -9010,18 +8593,16 @@ recol3d=920
 name=Rock Golem
 model1=model_2969
 
-
 [npc_419]
 visonmap=no
 desc=The walking dead!
 readyanim=seq_301
 walkanim=seq_298
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=14
 name=Zombie
 model1=model_2931
-
 
 [npc_420]
 visonmap=no
@@ -9029,11 +8610,10 @@ desc=The walking dead!
 readyanim=seq_301
 walkanim=seq_298
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=29
 name=Zombie
 model1=model_2931
-
 
 [npc_421]
 visonmap=no
@@ -9041,11 +8621,10 @@ desc=The walking dead!
 readyanim=seq_301
 walkanim=seq_298
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=49
 name=Zombie
 model1=model_2931
-
 
 [npc_422]
 visonmap=no
@@ -9053,11 +8632,10 @@ desc=The walking dead!
 readyanim=seq_301
 walkanim=seq_298
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=79
 name=Zombie
 model1=model_2931
-
 
 [npc_423]
 visonmap=no
@@ -9065,11 +8643,10 @@ desc=The walking dead!
 readyanim=seq_301
 walkanim=seq_298
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=120
 name=Zombie
 model1=model_2931
-
 
 [npc_424]
 visonmap=no
@@ -9077,20 +8654,19 @@ desc=The walking dead!
 readyanim=seq_301
 walkanim=seq_298
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=159
 name=Zombie
 model1=model_2931
 
-
 [npc_425]
 visonmap=no
 desc=The angry dead!
-disposeAlpha=yes
+alpha=yes
 readyanim=seq_15
 walkanim=seq_13
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=14
 recol1s=4550
 recol1d=0
@@ -9108,15 +8684,14 @@ model2=model_306
 model3=model_174
 model4=model_265
 
-
 [npc_426]
 visonmap=no
 desc=The angry dead!
-disposeAlpha=yes
+alpha=yes
 readyanim=seq_15
 walkanim=seq_13
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=29
 recol1s=4550
 recol1d=0
@@ -9134,15 +8709,14 @@ model2=model_306
 model3=model_174
 model4=model_265
 
-
 [npc_427]
 visonmap=no
 desc=The angry dead!
-disposeAlpha=yes
+alpha=yes
 readyanim=seq_15
 walkanim=seq_13
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=49
 recol1s=4550
 recol1d=0
@@ -9160,15 +8734,14 @@ model2=model_306
 model3=model_174
 model4=model_265
 
-
 [npc_428]
 visonmap=no
 desc=The angry dead!
-disposeAlpha=yes
+alpha=yes
 readyanim=seq_15
 walkanim=seq_13
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=79
 recol1s=4550
 recol1d=0
@@ -9186,15 +8759,14 @@ model2=model_306
 model3=model_174
 model4=model_265
 
-
 [npc_429]
 visonmap=no
 desc=The angry dead!
-disposeAlpha=yes
+alpha=yes
 readyanim=seq_15
 walkanim=seq_13
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=120
 recol1s=4550
 recol1d=0
@@ -9212,15 +8784,14 @@ model2=model_306
 model3=model_174
 model4=model_265
 
-
 [npc_430]
 visonmap=no
 desc=The angry dead!
-disposeAlpha=yes
+alpha=yes
 readyanim=seq_15
 walkanim=seq_13
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=159
 recol1s=4550
 recol1d=0
@@ -9237,7 +8808,6 @@ model1=model_226
 model2=model_306
 model3=model_174
 model4=model_265
-
 
 [npc_431]
 desc=The strong arm of the law.
@@ -9247,7 +8817,7 @@ walkanim_r=seq_821
 walkanim_l=seq_822
 readyanim=seq_808
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=14
 recol1s=43072
 recol1d=7446
@@ -9262,7 +8832,6 @@ model7=model_185
 model8=model_502
 model9=model_523
 
-
 [npc_432]
 desc=The strong arm of the law.
 walkanim=seq_819
@@ -9271,7 +8840,7 @@ walkanim_r=seq_821
 walkanim_l=seq_822
 readyanim=seq_808
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=29
 recol1s=43072
 recol1d=7446
@@ -9286,7 +8855,6 @@ model7=model_185
 model8=model_502
 model9=model_523
 
-
 [npc_433]
 desc=The strong arm of the law.
 walkanim=seq_819
@@ -9295,7 +8863,7 @@ walkanim_r=seq_821
 walkanim_l=seq_822
 readyanim=seq_808
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=49
 recol1s=43072
 recol1d=7446
@@ -9310,7 +8878,6 @@ model7=model_185
 model8=model_502
 model9=model_523
 
-
 [npc_434]
 desc=The strong arm of the law.
 walkanim=seq_819
@@ -9319,7 +8886,7 @@ walkanim_r=seq_821
 walkanim_l=seq_822
 readyanim=seq_808
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=79
 recol1s=43072
 recol1d=7446
@@ -9334,7 +8901,6 @@ model7=model_185
 model8=model_502
 model9=model_523
 
-
 [npc_435]
 desc=The strong arm of the law.
 walkanim=seq_819
@@ -9343,7 +8909,7 @@ walkanim_r=seq_821
 walkanim_l=seq_822
 readyanim=seq_808
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=120
 recol1s=43072
 recol1d=7446
@@ -9358,7 +8924,6 @@ model7=model_185
 model8=model_502
 model9=model_523
 
-
 [npc_436]
 desc=The strong arm of the law.
 walkanim=seq_819
@@ -9367,7 +8932,7 @@ walkanim_r=seq_821
 walkanim_l=seq_822
 readyanim=seq_808
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=159
 recol1s=43072
 recol1d=7446
@@ -9381,7 +8946,6 @@ model6=model_274
 model7=model_185
 model8=model_502
 model9=model_523
-
 
 [npc_437]
 walkanim=seq_168
@@ -9400,13 +8964,12 @@ recol4d=7056
 name=Brownie
 model1=model_2887
 
-
 [npc_438]
 desc=A very angry nymph.
 readyanim=seq_96
 walkanim=seq_93
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 vislevel=14
 recol1s=7717
@@ -9420,13 +8983,12 @@ recol4d=22430
 name=Tree spirit
 model1=model_2856
 
-
 [npc_439]
 desc=A very angry nymph.
 readyanim=seq_96
 walkanim=seq_93
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 vislevel=29
 recol1s=7717
@@ -9440,13 +9002,12 @@ recol4d=22430
 name=Tree spirit
 model1=model_2856
 
-
 [npc_440]
 desc=A very angry nymph.
 readyanim=seq_96
 walkanim=seq_93
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 vislevel=49
 recol1s=7717
@@ -9460,13 +9021,12 @@ recol4d=22430
 name=Tree spirit
 model1=model_2856
 
-
 [npc_441]
 desc=A very angry nymph.
 readyanim=seq_96
 walkanim=seq_93
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 vislevel=79
 recol1s=7717
@@ -9480,13 +9040,12 @@ recol4d=22430
 name=Tree spirit
 model1=model_2856
 
-
 [npc_442]
 desc=A very angry nymph.
 readyanim=seq_96
 walkanim=seq_93
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 vislevel=120
 recol1s=7717
@@ -9500,13 +9059,12 @@ recol4d=22430
 name=Tree spirit
 model1=model_2856
 
-
 [npc_443]
 desc=A very angry nymph.
 readyanim=seq_96
 walkanim=seq_93
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 visonmap=no
 vislevel=159
 recol1s=7717
@@ -9520,14 +9078,13 @@ recol4d=22430
 name=Tree spirit
 model1=model_2856
 
-
 [npc_444]
 vislevel=0
 desc=One of the most common trees in RuneScape.
 readyanim=seq_334
 vislevel=0
 size=2
-disposeAlpha=yes
+alpha=yes
 op1=Chop down
 op3=hidden
 visonmap=no
@@ -9535,7 +9092,6 @@ recol1s=5916
 recol1d=3470
 name=Tree
 model1=model_2851
-
 
 [npc_445]
 vislevel=0
@@ -9543,7 +9099,7 @@ desc=This would make good firewood.
 readyanim=seq_334
 vislevel=0
 size=3
-disposeAlpha=yes
+alpha=yes
 op1=Chop down
 op3=hidden
 visonmap=no
@@ -9552,14 +9108,13 @@ recol1d=3470
 name=Tree
 model1=model_2851
 
-
 [npc_446]
 vislevel=0
 desc=It's only useful for firewood now.
 readyanim=seq_334
 vislevel=0
 size=2
-disposeAlpha=yes
+alpha=yes
 op1=Chop down
 op3=hidden
 visonmap=no
@@ -9567,14 +9122,13 @@ recol1s=5916
 recol1d=5388
 name=Dead tree
 model1=model_2851
-
 
 [npc_447]
 vislevel=0
 desc=It's only useful for firewood now.
 readyanim=seq_334
 vislevel=0
-disposeAlpha=yes
+alpha=yes
 op1=Chop down
 op3=hidden
 visonmap=no
@@ -9582,7 +9136,6 @@ recol1s=5916
 recol1d=5388
 name=Dead tree
 model1=model_2851
-
 
 [npc_448]
 vislevel=0
@@ -9590,7 +9143,7 @@ desc=A beautiful old oak.
 readyanim=seq_334
 vislevel=0
 size=3
-disposeAlpha=yes
+alpha=yes
 op1=Chop down
 op3=hidden
 visonmap=no
@@ -9599,14 +9152,13 @@ recol1d=3470
 name=Oak
 model1=model_2851
 
-
 [npc_449]
 vislevel=0
 desc=These trees are found near water.
 readyanim=seq_334
 vislevel=0
 size=2
-disposeAlpha=yes
+alpha=yes
 op1=Chop down
 op3=hidden
 visonmap=no
@@ -9615,14 +9167,13 @@ recol1d=5786
 name=Willow
 model1=model_2851
 
-
 [npc_450]
 vislevel=0
 desc=A splendid tree.
 readyanim=seq_334
 vislevel=0
 size=3
-disposeAlpha=yes
+alpha=yes
 op1=Chop down
 op3=hidden
 visonmap=no
@@ -9631,14 +9182,13 @@ recol1d=5388
 name=Yew
 model1=model_2851
 
-
 [npc_451]
 vislevel=0
 desc=I bet this makes good syrup!
 readyanim=seq_334
 vislevel=0
 size=2
-disposeAlpha=yes
+alpha=yes
 op1=Chop down
 op3=hidden
 visonmap=no
@@ -9647,14 +9197,13 @@ recol1d=6814
 name=Maple tree
 model1=model_2851
 
-
 [npc_452]
 vislevel=0
 desc=The tree shimmers with a magical force.
 readyanim=seq_334
 vislevel=0
 size=2
-disposeAlpha=yes
+alpha=yes
 op1=Chop down
 op3=hidden
 visonmap=no
@@ -9662,7 +9211,6 @@ recol1s=5916
 recol1d=3470
 name=Magic tree
 model1=model_2851
-
 
 [npc_453]
 desc=A dusty old suit of armour.
@@ -9695,7 +9243,6 @@ model7=model_518
 model8=model_486
 model9=model_3330
 
-
 [npc_454]
 vislevel=0
 desc=An old druid.
@@ -9721,7 +9268,6 @@ model6=model_176
 model7=model_260
 head1=model_55
 head2=model_82
-
 
 [npc_455]
 vislevel=0
@@ -9749,7 +9295,6 @@ model7=model_260
 head1=model_55
 head2=model_82
 
-
 [npc_456]
 vislevel=0
 desc=Looks a bit holy.
@@ -9775,13 +9320,12 @@ model8=model_181
 head1=model_59
 head2=model_80
 
-
 [npc_457]
 vislevel=0
 desc=Eek! A ghost!
 walkanim=seq_13
 readyanim=seq_15
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 recol1s=25238
 recol1d=24
@@ -9807,7 +9351,6 @@ model8=model_245
 head1=model_28
 head2=model_78
 
-
 [npc_458]
 vislevel=0
 desc=Looks very holy.
@@ -9832,7 +9375,6 @@ model7=model_254
 model8=model_181
 head1=model_59
 
-
 [npc_459]
 desc=It rattles when it walks.
 walkanim=seq_259
@@ -9841,7 +9383,6 @@ op2=Attack
 vislevel=13
 name=Skeleton
 model1=model_2944
-
 
 [npc_460]
 desc=A Wizard of the Magic Guild.
@@ -9871,7 +9412,6 @@ head1=model_52
 head2=model_44
 head3=model_81
 
-
 [npc_461]
 desc=A Supplier of Magical items.
 walkanim=seq_819
@@ -9899,7 +9439,6 @@ model7=model_265
 model8=model_202
 head1=model_53
 head2=model_44
-
 
 [npc_462]
 vislevel=0
@@ -9932,7 +9471,6 @@ model10=model_290
 head1=model_52
 head2=model_44
 head3=model_82
-
 
 [npc_463]
 vislevel=0
@@ -9970,7 +9508,6 @@ head1=model_55
 head2=model_81
 head3=model_37
 
-
 [npc_464]
 vislevel=0
 desc=Salty old sea dog.
@@ -10006,7 +9543,6 @@ model10=model_249
 head1=model_55
 head2=model_81
 head3=model_37
-
 
 [npc_465]
 vislevel=0
@@ -10044,7 +9580,6 @@ head1=model_55
 head2=model_81
 head3=model_37
 
-
 [npc_466]
 desc=Salty old sea dog.
 walkanim=seq_819
@@ -10081,7 +9616,6 @@ head1=model_55
 head2=model_81
 head3=model_37
 
-
 [npc_467]
 desc=Let's not go skinny dipping eh?
 vislevel=0
@@ -10090,7 +9624,6 @@ readyanim=seq_10
 name=Shark
 model1=model_2848
 
-
 [npc_468]
 desc=Let's not go skinny dipping eh?
 vislevel=0
@@ -10098,7 +9631,6 @@ walkanim=seq_10
 readyanim=seq_10
 name=Shark
 model1=model_2848
-
 
 [npc_469]
 vislevel=0
@@ -10113,7 +9645,6 @@ model1=model_2909
 model2=model_2891
 model3=model_2916
 head1=model_20
-
 
 [npc_470]
 vislevel=0
@@ -10131,7 +9662,6 @@ model2=model_2903
 model3=model_2919
 head1=model_22
 
-
 [npc_471]
 vislevel=0
 desc=It's a tree gnome.
@@ -10144,7 +9674,6 @@ model1=model_2909
 model2=model_2901
 model3=model_2917
 head1=model_17
-
 
 [npc_472]
 vislevel=0
@@ -10162,7 +9691,6 @@ model2=model_2890
 model3=model_2917
 head1=model_21
 
-
 [npc_473]
 vislevel=0
 desc=It's a tree gnome.
@@ -10179,7 +9707,6 @@ model2=model_2890
 model3=model_2917
 head1=model_21
 
-
 [npc_474]
 vislevel=0
 desc=It's a tree gnome.
@@ -10195,7 +9722,6 @@ model1=model_2909
 model2=model_2890
 model3=model_2917
 head1=model_21
-
 
 [npc_475]
 desc=It's one of General Khazard's warriors.
@@ -10219,7 +9745,6 @@ model7=model_185
 model8=model_502
 model9=model_523
 
-
 [npc_476]
 desc=It's one of General Khazard's warriors.
 walkanim=seq_819
@@ -10240,7 +9765,6 @@ model5=model_176
 model6=model_269
 model7=model_185
 model8=model_540
-
 
 [npc_477]
 desc=He looks real nasty, smells bad too.
@@ -10271,7 +9795,6 @@ model9=model_523
 model10=model_323
 head1=model_60
 
-
 [npc_478]
 desc=It's one of General Khazard's commanders.
 walkanim=seq_819
@@ -10296,7 +9819,6 @@ model7=model_185
 model8=model_540
 model9=model_323
 
-
 [npc_479]
 desc=It's a tree gnome trooper.
 walkanim=seq_189
@@ -10309,7 +9831,6 @@ model1=model_2914
 model2=model_2903
 model3=model_2919
 head1=model_22
-
 
 [npc_480]
 desc=It's a tree gnome trooper.
@@ -10332,7 +9853,6 @@ model2=model_2903
 model3=model_2919
 head1=model_22
 
-
 [npc_481]
 vislevel=0
 desc=Looks like a gnome to me.
@@ -10348,7 +9868,6 @@ model1=model_2909
 model2=model_2890
 model3=model_2915
 head1=model_21
-
 
 [npc_482]
 vislevel=0
@@ -10366,7 +9885,6 @@ model2=model_2890
 model3=model_2915
 head1=model_21
 
-
 [npc_483]
 vislevel=0
 desc=Looks like a gnome to me.
@@ -10383,7 +9901,6 @@ model2=model_2890
 model3=model_2915
 head1=model_21
 
-
 [npc_484]
 vislevel=0
 desc=It's a young tree gnome.
@@ -10395,7 +9912,6 @@ model1=model_2909
 model2=model_2890
 model3=model_2917
 head1=model_21
-
 
 [npc_485]
 vislevel=0
@@ -10409,7 +9925,6 @@ model2=model_2890
 model3=model_2917
 head1=model_21
 
-
 [npc_486]
 vislevel=0
 desc=He looks lost.
@@ -10421,7 +9936,6 @@ model1=model_2909
 model2=model_2890
 model3=model_2917
 head1=model_21
-
 
 [npc_487]
 vislevel=0
@@ -10449,7 +9963,6 @@ model7=model_254
 model8=model_181
 head1=model_67
 head2=model_80
-
 
 [npc_488]
 vislevel=0
@@ -10480,7 +9993,6 @@ model8=model_181
 head1=model_63
 head2=model_78
 
-
 [npc_489]
 desc=I will have to kill him to get past him.
 walkanim=seq_308
@@ -10495,7 +10007,6 @@ model3=model_2955
 model4=model_2956
 model5=model_2957
 head1=model_142
-
 
 [npc_490]
 vislevel=0
@@ -10524,12 +10035,11 @@ model8=model_181
 head1=model_63
 head2=model_78
 
-
 [npc_491]
 desc=Spooky!
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 op2=Attack
 vislevel=24
@@ -10539,20 +10049,18 @@ model2=model_2964
 model3=model_2965
 head1=model_10
 
-
 [npc_492]
 vislevel=0
 desc=The essence of evil.
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 name=Spirit of Scorpius
 model1=model_2961
 model2=model_2964
 model3=model_2965
 head1=model_10
-
 
 [npc_493]
 desc=A vicious little stinging thing.
@@ -10562,7 +10070,6 @@ op2=Attack
 vislevel=12
 name=Grave Scorpion
 model1=model_2968
-
 
 [npc_494]
 vislevel=0
@@ -10592,7 +10099,6 @@ model7=model_181
 model8=model_320
 head1=model_53
 
-
 [npc_495]
 vislevel=0
 desc=Good with money.
@@ -10618,7 +10124,6 @@ model4=model_353
 model5=model_419
 model6=model_358
 head1=model_103
-
 
 [npc_496]
 vislevel=0
@@ -10650,7 +10155,6 @@ model7=model_181
 model8=model_320
 head1=model_53
 
-
 [npc_497]
 vislevel=0
 desc=Looks after your money.
@@ -10679,7 +10183,6 @@ model5=model_419
 model6=model_358
 head1=model_103
 
-
 [npc_498]
 vislevel=0
 desc=Manages money momentarily.
@@ -10689,7 +10192,6 @@ op1=Talk-to
 name=Banker
 model1=model_2860
 head1=model_14
-
 
 [npc_499]
 vislevel=0
@@ -10721,7 +10223,6 @@ model7=model_181
 model8=model_320
 head1=model_46
 
-
 [npc_500]
 vislevel=0
 desc=Slightly under dressed.
@@ -10749,21 +10250,19 @@ model8=model_553
 head1=model_46
 head2=model_81
 
-
 [npc_501]
 vislevel=0
 desc=The animated spirit of a soul not at rest.
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 name=Zadimus' spirit.
 model1=model_2962
 model2=model_2964
 model3=model_2965
 head1=model_27
-
 
 [npc_502]
 desc=It rattles when it walks.
@@ -10776,7 +10275,6 @@ recol1d=11714
 name=Undead One
 model1=model_2944
 
-
 [npc_503]
 desc=A minion of Rashiliyia.
 walkanim=seq_259
@@ -10788,7 +10286,6 @@ recol1d=14561
 name=Undead One
 model1=model_2944
 model2=model_2946
-
 
 [npc_504]
 desc=The animated dead, one of Rashiliyias' minions.
@@ -10808,7 +10305,6 @@ recol5s=262
 recol5d=8082
 name=Undead One
 model1=model_2931
-
 
 [npc_505]
 desc=The animated dead, one of Rashiliyias' minions.
@@ -10830,13 +10326,12 @@ name=Undead One
 model1=model_2931
 model2=model_2932
 
-
 [npc_506]
 vislevel=0
 desc=The animated spirit of Rashiliyia the Zombie Queen.
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 recol1s=908
 recol1d=22040
@@ -10855,7 +10350,6 @@ model1=model_2960
 model2=model_2963
 model3=model_2965
 head1=model_113
-
 
 [npc_507]
 desc=A giant zombie of huge strength and devastating power.
@@ -10878,7 +10372,6 @@ recol5d=8082
 name=Nazastarool
 model1=model_2931
 
-
 [npc_508]
 desc=A giant skeleton of huge strength and devastating power.
 walkanim=seq_259
@@ -10893,10 +10386,9 @@ name=Nazastarool
 model1=model_2944
 model2=model_2946
 
-
 [npc_509]
 desc=A giant ghost of huge strength and devastating power.
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_119
 readyanim=seq_125
 resizev=190
@@ -10908,7 +10400,6 @@ model1=model_2961
 model2=model_2964
 model3=model_2965
 head1=model_10
-
 
 [npc_510]
 vislevel=0
@@ -10937,7 +10428,6 @@ model6=model_274
 model7=model_185
 head1=model_63
 head2=model_79
-
 
 [npc_511]
 vislevel=0
@@ -10969,7 +10459,6 @@ model7=model_185
 head1=model_63
 head2=model_79
 
-
 [npc_512]
 vislevel=0
 desc=This is Kaleb Paramaya - a warm and friendly inn owner.
@@ -10997,7 +10486,6 @@ model6=model_254
 model7=model_181
 head1=model_55
 head2=model_84
-
 
 [npc_513]
 vislevel=0
@@ -11031,7 +10519,6 @@ model7=model_181
 head1=model_52
 head2=model_83
 
-
 [npc_514]
 vislevel=0
 desc=This is Seravel - he sells tickets for the 'Lady of the Waves'.
@@ -11062,7 +10549,6 @@ model7=model_181
 head1=model_53
 head2=model_85
 
-
 [npc_515]
 vislevel=0
 desc=Yanni Salika - He buys and sells antiques.
@@ -11091,7 +10577,6 @@ model7=model_181
 head1=model_53
 head2=model_79
 
-
 [npc_516]
 vislevel=0
 desc=An intelligent looking shop owner.
@@ -11116,7 +10601,6 @@ model6=model_274
 model7=model_181
 head1=model_59
 head2=model_79
-
 
 [npc_517]
 vislevel=0
@@ -11144,7 +10628,6 @@ model6=model_267
 model7=model_181
 head1=model_45
 head2=model_80
-
 
 [npc_518]
 vislevel=0
@@ -11178,7 +10661,6 @@ head1=model_52
 head2=model_81
 head3=model_37
 
-
 [npc_519]
 vislevel=0
 desc=An expert on axes.
@@ -11207,7 +10689,6 @@ model6=model_176
 model7=model_276
 model8=model_185
 head1=model_67
-
 
 [npc_520]
 vislevel=0
@@ -11240,7 +10721,6 @@ model6=model_176
 model7=model_181
 head1=model_53
 
-
 [npc_521]
 vislevel=0
 desc=Helps people part with their money.
@@ -11271,7 +10751,6 @@ model5=model_151
 model6=model_176
 model7=model_181
 head1=model_67
-
 
 [npc_522]
 vislevel=0
@@ -11305,7 +10784,6 @@ model8=model_245
 head1=model_53
 head2=model_78
 
-
 [npc_523]
 vislevel=0
 desc=Likes helping sell stuff.
@@ -11335,7 +10813,6 @@ model5=model_151
 model6=model_176
 model7=model_181
 head1=model_55
-
 
 [npc_524]
 vislevel=0
@@ -11369,7 +10846,6 @@ model6=model_176
 model7=model_181
 head1=model_53
 
-
 [npc_525]
 vislevel=0
 desc=Likes you more the more you spend.
@@ -11400,7 +10876,6 @@ model4=model_332
 model5=model_353
 model6=model_358
 head1=model_113
-
 
 [npc_526]
 vislevel=0
@@ -11434,7 +10909,6 @@ model6=model_176
 model7=model_181
 head1=model_53
 
-
 [npc_527]
 vislevel=0
 desc=Likes you more the more you spend.
@@ -11466,7 +10940,6 @@ model5=model_353
 model6=model_358
 head1=model_113
 
-
 [npc_528]
 vislevel=0
 desc=If he doesn't have it, he can't sell it!
@@ -11497,7 +10970,6 @@ model6=model_176
 model7=model_181
 head1=model_67
 
-
 [npc_529]
 vislevel=0
 desc=Is here on work experience.
@@ -11526,7 +10998,6 @@ model4=model_332
 model5=model_353
 model6=model_358
 head1=model_113
-
 
 [npc_530]
 vislevel=0
@@ -11560,7 +11031,6 @@ model8=model_245
 head1=model_53
 head2=model_78
 
-
 [npc_531]
 vislevel=0
 desc=Works on commission.
@@ -11590,7 +11060,6 @@ model5=model_151
 model6=model_176
 model7=model_181
 head1=model_55
-
 
 [npc_532]
 vislevel=0
@@ -11626,7 +11095,6 @@ model8=model_245
 head1=model_53
 head2=model_78
 
-
 [npc_533]
 vislevel=0
 desc=Needs a haircut.
@@ -11659,7 +11127,6 @@ model6=model_176
 model7=model_181
 head1=model_55
 
-
 [npc_534]
 vislevel=0
 desc=Sells stuff.
@@ -11675,7 +11142,6 @@ name=Fairy shop keeper
 model1=model_2857
 head1=model_13
 
-
 [npc_535]
 vislevel=0
 desc=Sells stuff.
@@ -11690,7 +11156,6 @@ recol2d=5045
 name=Fairy shop assistant
 model1=model_2857
 head1=model_13
-
 
 [npc_536]
 vislevel=0
@@ -11718,7 +11183,6 @@ model4=model_353
 model5=model_421
 model6=model_358
 head1=model_113
-
 
 [npc_537]
 vislevel=0
@@ -11748,7 +11212,6 @@ model6=model_176
 model7=model_181
 head1=model_46
 head2=model_85
-
 
 [npc_538]
 vislevel=0
@@ -11782,7 +11245,6 @@ model8=model_185
 head1=model_57
 head2=model_84
 
-
 [npc_539]
 vislevel=0
 desc=Very snappily dressed!
@@ -11810,7 +11272,6 @@ model6=model_181
 model7=model_292
 head1=model_53
 head2=model_82
-
 
 [npc_540]
 vislevel=0
@@ -11843,7 +11304,6 @@ model9=model_188
 head1=model_53
 head2=model_82
 head3=model_30
-
 
 [npc_541]
 vislevel=0
@@ -11879,7 +11339,6 @@ head1=model_53
 head2=model_82
 head3=model_34
 
-
 [npc_542]
 vislevel=0
 desc=For the finest in armoured legware.
@@ -11908,7 +11367,6 @@ model6=model_185
 model7=model_292
 head1=model_47
 head2=model_81
-
 
 [npc_543]
 vislevel=0
@@ -11941,7 +11399,6 @@ model6=model_176
 model7=model_181
 head1=model_67
 head2=model_81
-
 
 [npc_544]
 vislevel=0
@@ -11976,7 +11433,6 @@ model7=model_376
 head1=model_113
 head2=model_43
 
-
 [npc_545]
 vislevel=0
 desc=If crafting's your thing, he's your man!
@@ -12010,7 +11466,6 @@ model7=model_181
 head1=model_55
 head2=model_85
 
-
 [npc_546]
 vislevel=0
 desc=Sells superior staffs.
@@ -12040,7 +11495,6 @@ model7=model_265
 model8=model_553
 head1=model_53
 head2=model_83
-
 
 [npc_547]
 vislevel=0
@@ -12073,7 +11527,6 @@ head1=model_63
 head2=model_80
 head3=model_77
 
-
 [npc_548]
 vislevel=0
 desc=Interesting assortment of clothes on offer...
@@ -12099,7 +11552,6 @@ model3=model_348
 model4=model_353
 model5=model_435
 head1=model_113
-
 
 [npc_549]
 vislevel=0
@@ -12130,7 +11582,6 @@ model7=model_181
 model8=model_491
 head1=model_53
 
-
 [npc_550]
 vislevel=0
 desc=Sells arrows.
@@ -12157,7 +11608,6 @@ model4=model_173
 model5=model_176
 model6=model_257
 head1=model_67
-
 
 [npc_551]
 vislevel=0
@@ -12190,7 +11640,6 @@ model7=model_181
 head1=model_53
 head2=model_80
 
-
 [npc_552]
 vislevel=0
 desc=Helps the shop keeper sell swords.
@@ -12221,7 +11670,6 @@ model6=model_176
 model7=model_181
 head1=model_67
 
-
 [npc_553]
 vislevel=0
 desc=Runes are his passion.
@@ -12249,7 +11697,6 @@ model7=model_254
 model8=model_327
 head1=model_53
 head2=model_80
-
 
 [npc_554]
 vislevel=0
@@ -12284,7 +11731,6 @@ head2=model_83
 head3=model_78
 head4=model_28
 
-
 [npc_555]
 vislevel=0
 desc=Has a fine moustache!
@@ -12312,7 +11758,6 @@ model7=model_181
 model8=model_326
 head1=model_63
 head2=model_79
-
 
 [npc_556]
 vislevel=0
@@ -12342,7 +11787,6 @@ model6=model_176
 head1=model_53
 head2=model_79
 
-
 [npc_557]
 vislevel=0
 desc=Likes his food to be kept fresh.
@@ -12370,7 +11814,6 @@ model5=model_151
 model6=model_176
 model7=model_181
 head1=model_55
-
 
 [npc_558]
 vislevel=0
@@ -12403,7 +11846,6 @@ model9=model_186
 head1=model_55
 head2=model_28
 
-
 [npc_559]
 vislevel=0
 desc=An expert on axes.
@@ -12430,7 +11872,6 @@ model6=model_176
 model7=model_181
 head1=model_63
 head2=model_79
-
 
 [npc_560]
 vislevel=0
@@ -12464,7 +11905,6 @@ model6=model_358
 model7=model_453
 head1=model_121
 
-
 [npc_561]
 vislevel=0
 desc=Could stand to lose a few pounds.
@@ -12492,7 +11932,6 @@ model7=model_181
 model8=model_329
 head1=model_48
 head2=model_85
-
 
 [npc_562]
 vislevel=0
@@ -12527,7 +11966,6 @@ model7=model_249
 head1=model_55
 head2=model_81
 
-
 [npc_563]
 vislevel=0
 desc=He looks fairly well-to-do.
@@ -12560,7 +11998,6 @@ model6=model_185
 model7=model_246
 head1=model_53
 
-
 [npc_564]
 vislevel=0
 desc=A being from a mysterious other realm.
@@ -12575,7 +12012,6 @@ recol2d=38854
 name=Jakut
 model1=model_2857
 head1=model_13
-
 
 [npc_565]
 vislevel=0
@@ -12594,7 +12030,6 @@ recol4d=11191
 name=Lunderwin
 model1=model_2857
 head1=model_14
-
 
 [npc_566]
 vislevel=0
@@ -12619,7 +12054,6 @@ model3=model_260
 model4=model_202
 head1=model_44
 
-
 [npc_567]
 vislevel=0
 desc=Looks strange and mysterious.
@@ -12635,7 +12069,6 @@ recol3d=6055
 name=Fairy
 model1=model_2857
 head1=model_11
-
 
 [npc_568]
 vislevel=0
@@ -12667,7 +12100,6 @@ model6=model_176
 model7=model_185
 head1=model_53
 head2=model_81
-
 
 [npc_569]
 vislevel=0
@@ -12703,7 +12135,6 @@ head1=model_52
 head2=model_84
 head3=model_70
 
-
 [npc_570]
 vislevel=0
 desc=Seems very well off.
@@ -12738,7 +12169,6 @@ head1=model_63
 head2=model_70
 head3=model_28
 
-
 [npc_571]
 vislevel=0
 desc=So where are the butcher and the candlestick maker?
@@ -12768,7 +12198,6 @@ model9=model_199
 head1=model_46
 head2=model_41
 head3=model_79
-
 
 [npc_572]
 vislevel=0
@@ -12804,7 +12233,6 @@ head1=model_55
 head2=model_43
 head3=model_82
 
-
 [npc_573]
 vislevel=0
 desc=Knows how to keep warm in the winter.
@@ -12825,7 +12253,6 @@ model6=model_260
 model7=model_185
 head1=model_63
 head2=model_82
-
 
 [npc_574]
 vislevel=0
@@ -12860,7 +12287,6 @@ head1=model_53
 head2=model_40
 head3=model_80
 
-
 [npc_575]
 vislevel=0
 desc=A master fletcher.
@@ -12894,7 +12320,6 @@ model9=model_322
 head1=model_63
 head2=model_79
 
-
 [npc_576]
 vislevel=0
 desc=Something fishy about him.
@@ -12924,7 +12349,6 @@ model5=model_176
 model6=model_185
 model7=model_302
 head1=model_53
-
 
 [npc_577]
 vislevel=0
@@ -12958,7 +12382,6 @@ model6=model_414
 head1=model_115
 head2=model_131
 
-
 [npc_578]
 vislevel=0
 desc=Kind of funny looking.
@@ -12983,7 +12406,6 @@ model6=model_176
 model7=model_260
 head1=model_63
 
-
 [npc_579]
 vislevel=0
 desc=He runs a mining store.
@@ -13001,7 +12423,6 @@ model4=model_2983
 model5=model_2985
 model6=model_2990
 head1=model_0
-
 
 [npc_580]
 vislevel=0
@@ -13031,7 +12452,6 @@ model6=model_185
 model7=model_305
 head1=model_53
 head2=model_81
-
 
 [npc_581]
 vislevel=0
@@ -13063,7 +12483,6 @@ model8=model_491
 head1=model_53
 head2=model_84
 
-
 [npc_582]
 vislevel=0
 desc=I wonder if he wants to buy my junk?
@@ -13085,7 +12504,6 @@ model4=model_2983
 model5=model_2985
 model6=model_2990
 head1=model_1
-
 
 [npc_583]
 vislevel=0
@@ -13119,7 +12537,6 @@ model6=model_361
 model7=model_482
 model8=model_446
 head1=model_103
-
 
 [npc_584]
 vislevel=0
@@ -13155,7 +12572,6 @@ head1=model_63
 head2=model_70
 head3=model_28
 
-
 [npc_585]
 vislevel=0
 desc=If craftings your thing, he's your man!
@@ -13185,7 +12601,6 @@ model7=model_181
 model8=model_529
 head1=model_55
 head2=model_85
-
 
 [npc_586]
 vislevel=0
@@ -13217,7 +12632,6 @@ model8=model_491
 head1=model_52
 head2=model_82
 
-
 [npc_587]
 vislevel=0
 desc=He runs the Herblore Shop
@@ -13247,7 +12661,6 @@ model7=model_181
 model8=model_552
 head1=model_47
 head2=model_82
-
 
 [npc_588]
 vislevel=0
@@ -13282,7 +12695,6 @@ model10=model_181
 head1=model_63
 head2=model_78
 
-
 [npc_589]
 vislevel=0
 desc=Sells top quality plate mail armour.
@@ -13307,7 +12719,6 @@ model6=model_414
 model7=model_361
 head1=model_115
 head2=model_131
-
 
 [npc_590]
 vislevel=0
@@ -13343,7 +12754,6 @@ model8=model_323
 head1=model_46
 head2=model_85
 
-
 [npc_591]
 vislevel=0
 desc=He helps to run the adventurers' shop.
@@ -13376,7 +12786,6 @@ model6=model_176
 model7=model_181
 head1=model_53
 head2=model_85
-
 
 [npc_592]
 vislevel=0
@@ -13417,7 +12826,6 @@ head2=model_37
 head3=model_68
 head4=model_83
 
-
 [npc_593]
 vislevel=0
 desc=A recipe for success...in cooking.
@@ -13450,7 +12858,6 @@ model6=model_358
 head1=model_103
 head2=model_137
 
-
 [npc_594]
 vislevel=0
 desc=He runs a pickaxe store.
@@ -13473,7 +12880,6 @@ model3=model_2979
 model4=model_2981
 model5=model_2985
 head1=model_0
-
 
 [npc_595]
 vislevel=0
@@ -13506,7 +12912,6 @@ model7=model_181
 head1=model_67
 head2=model_79
 
-
 [npc_596]
 vislevel=0
 desc=An expert on Pizzas. Both making and eating.
@@ -13537,7 +12942,6 @@ head1=model_63
 head2=model_79
 head3=model_41
 
-
 [npc_597]
 vislevel=0
 desc=The lawless shop keeper.
@@ -13564,7 +12968,6 @@ model8=model_326
 head1=model_47
 head2=model_79
 
-
 [npc_598]
 vislevel=0
 desc=Anyone fancy a trim?
@@ -13590,7 +12993,6 @@ model6=model_176
 model7=model_274
 model8=model_244
 head1=model_67
-
 
 [npc_599]
 vislevel=0
@@ -13624,7 +13026,6 @@ head1=model_52
 head2=model_44
 head3=model_82
 
-
 [npc_600]
 desc=It's another jolly tree gnome.
 readyanim=seq_195
@@ -13645,7 +13046,6 @@ model1=model_2901
 model2=model_2909
 model3=model_2915
 head1=model_17
-
 
 [npc_601]
 desc=It's a well dressed tree gnome.
@@ -13670,7 +13070,6 @@ model2=model_2909
 model3=model_2916
 head1=model_23
 
-
 [npc_602]
 desc=He sells weapons.
 readyanim=seq_195
@@ -13687,7 +13086,6 @@ model1=model_2892
 model2=model_2909
 model3=model_2915
 head1=model_21
-
 
 [npc_603]
 desc=It's another jolly tree gnome.
@@ -13710,7 +13108,6 @@ model2=model_2909
 model3=model_2915
 head1=model_17
 
-
 [npc_604]
 vislevel=0
 desc=Dwarvish.
@@ -13728,7 +13125,6 @@ model3=model_2979
 model4=model_2983
 model5=model_2985
 head1=model_1
-
 
 [npc_605]
 vislevel=0
@@ -13763,7 +13159,6 @@ model8=model_236
 head1=model_46
 head2=model_79
 head3=model_68
-
 
 [npc_606]
 vislevel=0
@@ -13800,7 +13195,6 @@ head1=model_55
 head2=model_85
 head3=model_34
 
-
 [npc_607]
 vislevel=0
 desc=He maintains this agility course
@@ -13831,7 +13225,6 @@ model9=model_550
 head1=model_57
 head2=model_75
 head3=model_80
-
 
 [npc_608]
 vislevel=0
@@ -13870,7 +13263,6 @@ head1=model_53
 head2=model_81
 head3=model_43
 
-
 [npc_609]
 desc=A generic evil henchman.
 walkanim=seq_819
@@ -13897,7 +13289,6 @@ model6=model_254
 model7=model_185
 model8=model_540
 head1=model_66
-
 
 [npc_610]
 vislevel=0
@@ -13928,7 +13319,6 @@ model6=model_185
 model7=model_518
 head1=model_56
 
-
 [npc_611]
 vislevel=0
 desc=The Black Knights' resident witch.
@@ -13958,7 +13348,6 @@ model7=model_377
 head1=model_122
 head2=model_102
 
-
 [npc_612]
 vislevel=0
 desc=An ugly green creature.
@@ -13970,7 +13359,6 @@ model2=model_2953
 model3=model_2955
 model4=model_2956
 head1=model_144
-
 
 [npc_613]
 vislevel=0
@@ -13997,7 +13385,6 @@ model7=model_181
 model8=model_185
 head1=model_67
 
-
 [npc_614]
 vislevel=0
 desc=This person is working on the site.
@@ -14023,7 +13410,6 @@ model7=model_181
 model8=model_185
 head1=model_67
 
-
 [npc_615]
 vislevel=0
 desc=A student busily digging.
@@ -14048,7 +13434,6 @@ model7=model_254
 model8=model_185
 head1=model_55
 head2=model_81
-
 
 [npc_616]
 vislevel=0
@@ -14078,7 +13463,6 @@ model7=model_257
 model8=model_276
 head1=model_53
 
-
 [npc_617]
 vislevel=0
 desc=A student busily digging.
@@ -14103,7 +13487,6 @@ model5=model_356
 model6=model_429
 model7=model_185
 head1=model_113
-
 
 [npc_618]
 vislevel=0
@@ -14130,7 +13513,6 @@ model6=model_348
 model7=model_353
 head1=model_103
 head2=model_137
-
 
 [npc_619]
 vislevel=0
@@ -14161,7 +13543,6 @@ model8=model_185
 head1=model_55
 head2=model_82
 
-
 [npc_620]
 vislevel=0
 desc=A specialist in panning for gold.
@@ -14189,7 +13570,6 @@ model8=model_185
 model9=model_326
 head1=model_53
 
-
 [npc_621]
 desc=A professional gnome baller.
 vislevel=0
@@ -14203,7 +13583,6 @@ model1=model_2914
 model2=model_2905
 model3=model_2924
 head1=model_21
-
 
 [npc_622]
 desc=A professional gnome baller.
@@ -14219,7 +13598,6 @@ model2=model_2905
 model3=model_2921
 head1=model_21
 
-
 [npc_623]
 desc=A professional gnome baller.
 vislevel=0
@@ -14233,7 +13611,6 @@ model2=model_2905
 model3=model_2924
 head1=model_21
 
-
 [npc_624]
 desc=A professional gnome baller.
 vislevel=0
@@ -14246,7 +13623,6 @@ model1=model_2914
 model2=model_2905
 model3=model_2924
 head1=model_21
-
 
 [npc_625]
 desc=A professional gnome baller.
@@ -14262,7 +13638,6 @@ model2=model_2905
 model3=model_2924
 head1=model_21
 
-
 [npc_626]
 desc=A professional gnome baller.
 vislevel=0
@@ -14277,7 +13652,6 @@ model2=model_2905
 model3=model_2921
 head1=model_21
 
-
 [npc_627]
 desc=A professional gnome baller.
 vislevel=0
@@ -14291,7 +13665,6 @@ model2=model_2905
 model3=model_2924
 head1=model_21
 
-
 [npc_628]
 desc=A professional gnome baller.
 vislevel=0
@@ -14304,7 +13677,6 @@ model1=model_2914
 model2=model_2905
 model3=model_2924
 head1=model_21
-
 
 [npc_629]
 desc=A professional gnome baller.
@@ -14320,7 +13692,6 @@ model2=model_2905
 model3=model_2924
 head1=model_21
 
-
 [npc_630]
 desc=A professional gnome baller.
 vislevel=0
@@ -14335,7 +13706,6 @@ model2=model_2905
 model3=model_2921
 head1=model_21
 
-
 [npc_631]
 desc=A professional gnome baller.
 vislevel=0
@@ -14349,7 +13719,6 @@ model2=model_2905
 model3=model_2924
 head1=model_21
 
-
 [npc_632]
 desc=A professional gnome baller.
 vislevel=0
@@ -14362,7 +13731,6 @@ model1=model_2914
 model2=model_2905
 model3=model_2924
 head1=model_21
-
 
 [npc_633]
 desc=A professional gnome baller.
@@ -14378,7 +13746,6 @@ model2=model_2905
 model3=model_2924
 head1=model_21
 
-
 [npc_634]
 desc=A professional gnome baller.
 vislevel=0
@@ -14392,7 +13759,6 @@ model1=model_2914
 model2=model_2905
 model3=model_2921
 head1=model_21
-
 
 [npc_635]
 desc=Keeps the game fair.
@@ -14414,7 +13780,6 @@ model2=model_2900
 model3=model_2915
 head1=model_23
 
-
 [npc_636]
 desc=Cheerleading is a real sport!
 vislevel=0
@@ -14426,7 +13791,6 @@ model1=model_2913
 model2=model_2904
 model3=model_2923
 head1=model_21
-
 
 [npc_637]
 desc=A tearful damsel, maybe I can help her?
@@ -14453,7 +13817,6 @@ model4=model_353
 model5=model_428
 model6=model_358
 head1=model_118
-
 
 [npc_638]
 desc=A dealer in potions.
@@ -14484,7 +13847,6 @@ head1=model_53
 head2=model_40
 head3=model_78
 
-
 [npc_639]
 desc=Rather dense and soppy looking.
 op1=Talk-to
@@ -14512,7 +13874,6 @@ model8=model_201
 head1=model_53
 head2=model_43
 
-
 [npc_640]
 desc=A religious man... And occasional drunk.
 op1=Talk-to
@@ -14537,7 +13898,6 @@ model7=model_260
 model8=model_181
 head1=model_59
 
-
 [npc_641]
 vislevel=0
 desc=Looks down on his luck.
@@ -14561,7 +13921,6 @@ model6=model_275
 model7=model_181
 head1=model_52
 head2=model_81
-
 
 [npc_642]
 vislevel=0
@@ -14592,7 +13951,6 @@ model8=model_533
 head1=model_115
 head2=model_131
 
-
 [npc_643]
 desc=Looks kind of obsessive...
 walkanim=seq_819
@@ -14619,7 +13977,6 @@ model8=model_518
 head1=model_63
 head2=model_81
 
-
 [npc_644]
 desc=Kind of funny looking.
 walkanim=seq_819
@@ -14644,7 +14001,6 @@ model6=model_254
 model7=model_181
 model8=model_322
 head1=model_53
-
 
 [npc_645]
 desc=Looks kind of shifty...
@@ -14672,7 +14028,6 @@ model6=model_254
 model7=model_181
 head1=model_53
 head2=model_83
-
 
 [npc_646]
 vislevel=0
@@ -14704,7 +14059,6 @@ model7=model_254
 model8=model_238
 head1=model_53
 head2=model_70
-
 
 [npc_647]
 vislevel=0
@@ -14741,7 +14095,6 @@ head2=model_80
 head3=model_78
 head4=model_77
 
-
 [npc_648]
 vislevel=0
 desc=Varrocks' resident monarch.
@@ -14770,7 +14123,6 @@ model9=model_323
 model10=model_326
 head1=model_53
 head2=model_35
-
 
 [npc_649]
 vislevel=0
@@ -14801,7 +14153,6 @@ model8=model_563
 head1=model_113
 head2=model_131
 
-
 [npc_650]
 vislevel=0
 desc=He looks big and dumb.
@@ -14828,7 +14179,6 @@ model7=model_185
 model8=model_550
 head1=model_53
 
-
 [npc_651]
 vislevel=0
 desc=He looks holy.
@@ -14853,7 +14203,6 @@ model5=model_170
 model6=model_176
 model7=model_260
 head1=model_53
-
 
 [npc_652]
 vislevel=0
@@ -14882,7 +14231,6 @@ model8=model_534
 head1=model_53
 head2=model_83
 
-
 [npc_653]
 vislevel=0
 desc=Looks otherworldy...
@@ -14892,7 +14240,6 @@ op1=Talk-to
 name=Fairy Queen
 model1=model_2858
 head1=model_12
-
 
 [npc_654]
 vislevel=0
@@ -14906,12 +14253,11 @@ model2=model_2896
 model3=model_2915
 head1=model_24
 
-
 [npc_655]
 desc=Guardian of the dramen tree.
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op2=Attack
 vislevel=101
 recol1s=39025
@@ -14922,7 +14268,6 @@ name=Tree spirit
 model1=model_2961
 model2=model_2965
 model3=model_2964
-
 
 [npc_656]
 vislevel=0
@@ -14946,7 +14291,6 @@ model5=model_170
 model6=model_176
 model7=model_260
 head1=model_59
-
 
 [npc_657]
 vislevel=0
@@ -14974,7 +14318,6 @@ model7=model_260
 head1=model_59
 head2=model_83
 
-
 [npc_658]
 vislevel=0
 desc=Holy looking.
@@ -15000,7 +14343,6 @@ model6=model_176
 model7=model_260
 head1=model_59
 head2=model_83
-
 
 [npc_659]
 desc=He likes to paaaarty!
@@ -15031,7 +14373,6 @@ head1=model_63
 head2=model_77
 head3=model_29
 
-
 [npc_660]
 desc=You'd need a tin opener to get him out.
 walkanim=seq_819
@@ -15049,7 +14390,6 @@ model4=model_179
 model5=model_268
 model6=model_185
 head1=model_56
-
 
 [npc_661]
 desc=Pretty barmaid.
@@ -15074,7 +14414,6 @@ model6=model_429
 model7=model_358
 head1=model_113
 head2=model_87
-
 
 [npc_662]
 desc=Pretty barmaid.
@@ -15101,7 +14440,6 @@ model6=model_429
 model7=model_358
 head1=model_113
 head2=model_87
-
 
 [npc_663]
 vislevel=0
@@ -15133,7 +14471,6 @@ model7=model_254
 model8=model_181
 model9=model_323
 head1=model_53
-
 
 [npc_664]
 vislevel=0
@@ -15170,7 +14507,6 @@ model10=model_324
 head1=model_55
 head2=model_79
 
-
 [npc_665]
 vislevel=0
 walkanim=seq_98
@@ -15185,7 +14521,6 @@ model4=model_2983
 model5=model_2985
 model6=model_2990
 head1=model_1
-
 
 [npc_666]
 vislevel=0
@@ -15219,7 +14554,6 @@ model9=model_199
 head1=model_53
 head2=model_41
 
-
 [npc_667]
 size=3
 walkanim=seq_63
@@ -15235,7 +14569,6 @@ recol2s=929
 recol2d=559
 name=Chronozon
 model1=model_2942
-
 
 [npc_668]
 vislevel=0
@@ -15269,7 +14602,6 @@ model9=model_202
 head1=model_53
 head2=model_44
 
-
 [npc_669]
 desc=An ancient looking gnome.
 walkanim=seq_189
@@ -15290,7 +14622,6 @@ model2=model_2901
 model3=model_2916
 head1=model_17
 
-
 [npc_670]
 desc=An important looking gnome.
 vislevel=0
@@ -15302,7 +14633,6 @@ model1=model_2909
 model2=model_2891
 model3=model_2916
 head1=model_20
-
 
 [npc_671]
 desc=A rough looking gnome.
@@ -15318,7 +14648,6 @@ model2=model_2903
 model3=model_2919
 head1=model_22
 
-
 [npc_672]
 desc=Glough's girlfriend.
 vislevel=0
@@ -15332,7 +14661,6 @@ model1=model_2911
 model2=model_2907
 model3=model_2917
 head1=model_21
-
 
 [npc_673]
 desc=Poor guy, he looks frightened.
@@ -15358,7 +14686,6 @@ model5=model_176
 model6=model_254
 model7=model_181
 head1=model_53
-
 
 [npc_674]
 desc=The boss!
@@ -15387,7 +14714,6 @@ model7=model_185
 head1=model_52
 head2=model_79
 
-
 [npc_675]
 desc=Builds ships for a living.
 vislevel=0
@@ -15414,7 +14740,6 @@ model7=model_185
 head1=model_53
 head2=model_79
 
-
 [npc_676]
 desc=A gnome trader.
 walkanim=seq_189
@@ -15433,7 +14758,6 @@ model2=model_2911
 model3=model_2922
 head1=model_21
 
-
 [npc_677]
 size=3
 walkanim=seq_63
@@ -15449,7 +14773,6 @@ recol3s=0
 recol3d=931
 name=Black Demon
 model1=model_2942
-
 
 [npc_678]
 desc=Keeps order in the ranging guild.
@@ -15476,7 +14799,6 @@ head1=model_63
 head2=model_85
 head3=model_32
 
-
 [npc_679]
 vislevel=0
 desc=The keeper of the gates to the ranging guild.
@@ -15500,7 +14822,6 @@ model8=model_563
 head1=model_63
 head2=model_85
 head3=model_32
-
 
 [npc_680]
 vislevel=0
@@ -15533,7 +14854,6 @@ model8=model_444
 head1=model_120
 head2=model_90
 
-
 [npc_681]
 vislevel=0
 desc=Supplier of deadly liquids.
@@ -15557,7 +14877,6 @@ model6=model_179
 model7=model_262
 head1=model_58
 head2=model_79
-
 
 [npc_682]
 vislevel=0
@@ -15589,7 +14908,6 @@ model6=model_262
 model7=model_179
 head1=model_58
 
-
 [npc_683]
 vislevel=0
 desc=Supplier of Archery equipment.
@@ -15614,7 +14932,6 @@ model8=model_317
 head1=model_63
 head2=model_32
 
-
 [npc_684]
 vislevel=0
 desc=Tower keeper and competition judge.
@@ -15636,7 +14953,6 @@ model8=model_563
 model9=model_317
 head1=model_48
 head2=model_85
-
 
 [npc_685]
 vislevel=0
@@ -15660,7 +14976,6 @@ model9=model_317
 head1=model_48
 head2=model_85
 
-
 [npc_686]
 vislevel=0
 desc=Tower keeper and competition judge.
@@ -15683,7 +14998,6 @@ model9=model_317
 head1=model_48
 head2=model_85
 
-
 [npc_687]
 vislevel=0
 desc=Tower keeper and competition judge.
@@ -15705,7 +15019,6 @@ model8=model_563
 model9=model_317
 head1=model_48
 head2=model_85
-
 
 [npc_688]
 desc=Defender of the north tower.
@@ -15732,7 +15045,6 @@ model6=model_262
 model7=model_185
 model8=model_563
 
-
 [npc_689]
 desc=Defender of the east tower.
 walkanim=seq_819
@@ -15755,7 +15067,6 @@ model5=model_176
 model6=model_262
 model7=model_185
 model8=model_563
-
 
 [npc_690]
 desc=Defender of the south tower.
@@ -15780,7 +15091,6 @@ model6=model_277
 model7=model_185
 model8=model_563
 
-
 [npc_691]
 desc=Defender of the west tower.
 walkanim=seq_819
@@ -15803,7 +15113,6 @@ model5=model_176
 model6=model_258
 model7=model_185
 model8=model_563
-
 
 [npc_692]
 vislevel=0
@@ -15832,7 +15141,6 @@ model9=model_201
 head1=model_64
 head2=model_43
 
-
 [npc_693]
 vislevel=0
 desc=Overseer of the Archery competition.
@@ -15856,7 +15164,6 @@ model8=model_563
 head1=model_63
 head2=model_85
 head3=model_32
-
 
 [npc_694]
 vislevel=0
@@ -15887,7 +15194,6 @@ model6=model_262
 model7=model_179
 head1=model_58
 
-
 [npc_695]
 vislevel=0
 walkanim=seq_819
@@ -15915,7 +15221,6 @@ head1=model_63
 head2=model_82
 head3=model_73
 
-
 [npc_696]
 vislevel=0
 walkanim=seq_819
@@ -15941,7 +15246,6 @@ model6=model_358
 model7=model_483
 head1=model_114
 
-
 [npc_697]
 vislevel=0
 walkanim=seq_189
@@ -15957,7 +15261,6 @@ model1=model_2897
 model2=model_2918
 model3=model_2909
 head1=model_53
-
 
 [npc_698]
 vislevel=0
@@ -15985,7 +15288,6 @@ model9=model_326
 head1=model_58
 head2=model_82
 
-
 [npc_699]
 vislevel=0
 walkanim=seq_819
@@ -16011,7 +15313,6 @@ model8=model_534
 model9=model_326
 head1=model_58
 head2=model_82
-
 
 [npc_700]
 vislevel=0
@@ -16039,7 +15340,6 @@ model9=model_326
 head1=model_58
 head2=model_82
 
-
 [npc_701]
 vislevel=0
 walkanim=seq_819
@@ -16066,7 +15366,6 @@ model9=model_326
 head1=model_53
 head2=model_81
 
-
 [npc_702]
 vislevel=0
 walkanim=seq_819
@@ -16091,7 +15390,6 @@ model7=model_181
 model8=model_562
 head1=model_48
 head2=model_82
-
 
 [npc_703]
 vislevel=0
@@ -16118,7 +15416,6 @@ model8=model_562
 head1=model_48
 head2=model_82
 
-
 [npc_704]
 vislevel=0
 walkanim=seq_819
@@ -16144,7 +15441,6 @@ model8=model_562
 head1=model_63
 head2=model_82
 
-
 [npc_705]
 vislevel=0
 desc=Something fishy about him...
@@ -16167,7 +15463,6 @@ model6=model_265
 model7=model_181
 model8=model_241
 model9=model_323
-
 
 [npc_706]
 desc=An old wizard.
@@ -16199,7 +15494,6 @@ head1=model_53
 head2=model_44
 head3=model_81
 
-
 [npc_707]
 desc=Master of imps.
 walkanim=seq_819
@@ -16227,7 +15521,6 @@ model6=model_176
 model7=model_265
 model8=model_202
 
-
 [npc_708]
 desc=A cheeky little imp.
 walkanim=seq_168
@@ -16236,7 +15529,6 @@ op2=Attack
 vislevel=2
 name=Imp
 model1=model_2887
-
 
 [npc_709]
 desc=A vicious little imp.
@@ -16254,7 +15546,6 @@ recol4s=18316
 recol4d=555
 name=Imp
 model1=model_2887
-
 
 [npc_710]
 vislevel=0
@@ -16288,7 +15579,6 @@ model7=model_481
 model8=model_447
 head1=model_113
 
-
 [npc_711]
 vislevel=0
 desc=The city warder of West Ardougne.
@@ -16315,7 +15605,6 @@ model7=model_252
 model8=model_176
 head1=model_46
 head2=model_84
-
 
 [npc_712]
 vislevel=0
@@ -16346,7 +15635,6 @@ model4=model_353
 model5=model_428
 model6=model_358
 head1=model_113
-
 
 [npc_713]
 vislevel=0
@@ -16379,7 +15667,6 @@ head1=model_63
 head2=model_79
 head3=model_78
 
-
 [npc_714]
 vislevel=0
 desc=A local civilian.
@@ -16411,7 +15698,6 @@ model10=model_495
 head1=model_63
 head2=model_82
 
-
 [npc_715]
 vislevel=0
 desc=She doesn't look too happy.
@@ -16437,7 +15723,6 @@ model4=model_353
 model5=model_438
 model6=model_358
 head1=model_113
-
 
 [npc_716]
 vislevel=0
@@ -16468,7 +15753,6 @@ model6=model_323
 model7=model_536
 head1=model_51
 
-
 [npc_717]
 vislevel=0
 desc=A mourner, or plague healer.
@@ -16496,7 +15780,6 @@ model4=model_273
 model5=model_323
 model6=model_499
 head1=model_51
-
 
 [npc_718]
 vislevel=0
@@ -16526,7 +15809,6 @@ model5=model_323
 model6=model_499
 head1=model_51
 
-
 [npc_719]
 vislevel=0
 desc=A mourner, or plague healer.
@@ -16555,7 +15837,6 @@ model5=model_323
 model6=model_499
 head1=model_51
 
-
 [npc_720]
 vislevel=0
 desc=A member of the Ardougne Royal Army.
@@ -16577,7 +15858,6 @@ model8=model_201
 model9=model_553
 head1=model_63
 head2=model_85
-
 
 [npc_721]
 vislevel=0
@@ -16603,7 +15883,6 @@ model7=model_275
 head1=model_63
 head2=model_82
 
-
 [npc_722]
 vislevel=0
 desc=A fairly poor looking woman.
@@ -16628,7 +15907,6 @@ model5=model_353
 model6=model_438
 head1=model_103
 
-
 [npc_723]
 vislevel=0
 desc=The Rehnisons' eldest son.
@@ -16647,7 +15925,6 @@ model2=model_2909
 model3=model_2918
 head1=model_53
 
-
 [npc_724]
 vislevel=0
 desc=She doesn't seem very happy.
@@ -16665,7 +15942,6 @@ model1=model_2902
 model2=model_2911
 model3=model_2918
 head1=model_118
-
 
 [npc_725]
 vislevel=0
@@ -16695,7 +15971,6 @@ model7=model_185
 head1=model_67
 head2=model_84
 
-
 [npc_726]
 vislevel=0
 desc=One of RuneScapes' many citizens.
@@ -16719,7 +15994,6 @@ model6=model_176
 model7=model_275
 head1=model_67
 head2=model_82
-
 
 [npc_727]
 vislevel=0
@@ -16747,7 +16021,6 @@ model7=model_275
 head1=model_67
 head2=model_82
 
-
 [npc_728]
 vislevel=0
 desc=One of RuneScapes' many citizens.
@@ -16774,7 +16047,6 @@ model7=model_271
 head1=model_52
 head2=model_82
 
-
 [npc_729]
 vislevel=0
 desc=One of RuneScapes' many citizens.
@@ -16800,7 +16072,6 @@ model6=model_179
 model7=model_275
 head1=model_52
 head2=model_82
-
 
 [npc_730]
 vislevel=0
@@ -16830,7 +16101,6 @@ model7=model_275
 head1=model_52
 head2=model_82
 
-
 [npc_731]
 vislevel=0
 desc=I could get a beer from him.
@@ -16856,7 +16126,6 @@ model6=model_254
 model7=model_181
 head1=model_67
 head2=model_80
-
 
 [npc_732]
 vislevel=0
@@ -16885,7 +16154,6 @@ model8=model_245
 head1=model_67
 head2=model_79
 
-
 [npc_733]
 vislevel=0
 desc=I could get a beer from him.
@@ -16912,7 +16180,6 @@ model7=model_181
 head1=model_67
 head2=model_79
 
-
 [npc_734]
 vislevel=0
 desc=I could get a beer from him.
@@ -16938,7 +16205,6 @@ model4=model_151
 model5=model_176
 model6=model_259
 head1=model_55
-
 
 [npc_735]
 vislevel=0
@@ -16967,7 +16233,6 @@ model8=model_185
 head1=model_45
 head2=model_85
 
-
 [npc_736]
 vislevel=0
 desc=I could get a beer from her.
@@ -16985,7 +16250,6 @@ model4=model_356
 model5=model_419
 model6=model_358
 head1=model_103
-
 
 [npc_737]
 vislevel=0
@@ -17007,7 +16271,6 @@ model7=model_181
 head1=model_52
 head2=model_80
 
-
 [npc_738]
 vislevel=0
 desc=I could get a beer from him.
@@ -17028,7 +16291,6 @@ model7=model_181
 head1=model_55
 head2=model_82
 
-
 [npc_739]
 vislevel=0
 desc=I could get a beer from him.
@@ -17047,7 +16309,6 @@ model5=model_176
 model6=model_254
 model7=model_181
 head1=model_53
-
 
 [npc_740]
 vislevel=0
@@ -17082,7 +16343,6 @@ model8=model_553
 head1=model_49
 head2=model_82
 
-
 [npc_741]
 vislevel=0
 desc=Duke Horacio of Lumbridge.
@@ -17109,7 +16369,6 @@ model9=model_323
 head1=model_67
 head2=model_83
 
-
 [npc_742]
 desc=Rawr! A dragon!
 size=4
@@ -17122,7 +16381,6 @@ recol1d=22049
 name=Elvarg
 model1=model_2853
 model2=model_2854
-
 
 [npc_743]
 vislevel=0
@@ -17153,7 +16411,6 @@ model8=model_194
 head1=model_53
 head2=model_85
 head3=model_37
-
 
 [npc_744]
 vislevel=0
@@ -17187,7 +16444,6 @@ head1=model_53
 head2=model_85
 head3=model_37
 
-
 [npc_745]
 desc=A badly behaved goblin.
 walkanim=seq_308
@@ -17201,7 +16457,6 @@ model2=model_2953
 model3=model_2955
 model4=model_2956
 head1=model_144
-
 
 [npc_746]
 vislevel=0
@@ -17235,7 +16490,6 @@ model7=model_181
 model8=model_318
 head1=model_64
 
-
 [npc_747]
 vislevel=0
 desc=A strange little man.
@@ -17266,7 +16520,6 @@ model8=model_323
 head1=model_45
 head2=model_79
 
-
 [npc_748]
 size=2
 walkanim=seq_137
@@ -17277,20 +16530,18 @@ vislevel=6
 name=Giant rat
 model1=model_2959
 
-
 [npc_749]
 desc=Eeek! A ghost!
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op2=Attack
 vislevel=19
 name=Ghost
 model1=model_2961
 model2=model_2964
 model3=model_2965
-
 
 [npc_750]
 desc=Could do with gaining a few pounds.
@@ -17302,7 +16553,6 @@ name=Skeleton
 model1=model_2944
 model2=model_2946
 
-
 [npc_751]
 desc=The walking dead.
 walkanim=seq_298
@@ -17313,7 +16563,6 @@ name=Zombie
 model1=model_2931
 model2=model_2932
 
-
 [npc_752]
 size=2
 walkanim=seq_63
@@ -17323,7 +16572,6 @@ op2=Attack
 vislevel=82
 name=Lesser demon
 model1=model_2943
-
 
 [npc_753]
 desc=He looks totally insane!
@@ -17348,7 +16596,6 @@ model4=model_292
 model5=model_170
 model6=model_176
 model7=model_265
-
 
 [npc_754]
 vislevel=0
@@ -17378,7 +16625,6 @@ model7=model_181
 head1=model_50
 head2=model_81
 
-
 [npc_755]
 vislevel=0
 walkanim=seq_819
@@ -17403,7 +16649,6 @@ model5=model_176
 model6=model_254
 model7=model_181
 head1=model_53
-
 
 [npc_756]
 vislevel=0
@@ -17436,7 +16681,6 @@ model8=model_245
 head1=model_55
 head2=model_78
 
-
 [npc_757]
 walkanim=seq_819
 walkanim_b=seq_820
@@ -17467,7 +16711,6 @@ model7=model_176
 model8=model_238
 model9=model_283
 
-
 [npc_758]
 vislevel=0
 desc=A well fed looking farmer.
@@ -17493,7 +16736,6 @@ model6=model_274
 model7=model_181
 head1=model_55
 
-
 [npc_759]
 vislevel=0
 desc=A friendly feline?
@@ -17507,7 +16749,6 @@ name=Gertrudes cat
 model1=model_3010
 model2=model_3006
 
-
 [npc_760]
 vislevel=0
 desc=It looks lost.
@@ -17518,7 +16759,6 @@ resizev=40
 name=Kitten
 model1=model_3010
 model2=model_3006
-
 
 [npc_761]
 vislevel=0
@@ -17534,7 +16774,6 @@ resizev=40
 name=Kitten
 model1=model_3010
 model2=model_3006
-
 
 [npc_762]
 vislevel=0
@@ -17557,7 +16796,6 @@ name=Kitten
 model1=model_3010
 model2=model_3006
 
-
 [npc_763]
 vislevel=0
 desc=A friendly little pet.
@@ -17578,7 +16816,6 @@ recol3d=5673
 name=Kitten
 model1=model_3010
 model2=model_3006
-
 
 [npc_764]
 vislevel=0
@@ -17601,7 +16838,6 @@ name=Kitten
 model1=model_3010
 model2=model_3006
 
-
 [npc_765]
 vislevel=0
 desc=A friendly little pet.
@@ -17620,7 +16856,6 @@ recol2d=61
 name=Kitten
 model1=model_3010
 model2=model_3006
-
 
 [npc_766]
 vislevel=0
@@ -17641,7 +16876,6 @@ name=Kitten
 model1=model_3010
 model2=model_3006
 
-
 [npc_767]
 vislevel=0
 desc=Can I hear kittens?
@@ -17649,7 +16883,6 @@ op1=Search
 visonmap=no
 name=Crate
 model1=model_2141
-
 
 [npc_768]
 vislevel=0
@@ -17665,7 +16898,6 @@ resizev=60
 name=Cat
 model1=model_3010
 model2=model_3006
-
 
 [npc_769]
 vislevel=0
@@ -17688,7 +16920,6 @@ name=Cat
 model1=model_3010
 model2=model_3006
 
-
 [npc_770]
 vislevel=0
 desc=A fully grown feline.
@@ -17709,7 +16940,6 @@ recol3d=5673
 name=Cat
 model1=model_3010
 model2=model_3006
-
 
 [npc_771]
 vislevel=0
@@ -17732,7 +16962,6 @@ name=Cat
 model1=model_3010
 model2=model_3006
 
-
 [npc_772]
 vislevel=0
 desc=A fully grown feline.
@@ -17751,7 +16980,6 @@ recol2d=61
 name=Cat
 model1=model_3010
 model2=model_3006
-
 
 [npc_773]
 vislevel=0
@@ -17772,7 +17000,6 @@ name=Cat
 model1=model_3010
 model2=model_3006
 
-
 [npc_774]
 vislevel=0
 desc=A friendly not-so little pet.
@@ -17787,7 +17014,6 @@ resizev=65
 name=Overgrown cat
 model1=model_3010
 model2=model_3006
-
 
 [npc_775]
 vislevel=0
@@ -17810,7 +17036,6 @@ name=Overgrown cat
 model1=model_3010
 model2=model_3006
 
-
 [npc_776]
 vislevel=0
 desc=A friendly not-so little pet.
@@ -17831,7 +17056,6 @@ recol3d=5673
 name=Overgrown cat
 model1=model_3010
 model2=model_3006
-
 
 [npc_777]
 vislevel=0
@@ -17854,7 +17078,6 @@ name=Overgrown cat
 model1=model_3010
 model2=model_3006
 
-
 [npc_778]
 vislevel=0
 desc=A friendly not-so little pet.
@@ -17874,7 +17097,6 @@ name=Overgrown cat
 model1=model_3010
 model2=model_3006
 
-
 [npc_779]
 vislevel=0
 desc=A friendly not-so little pet.
@@ -17893,7 +17115,6 @@ recol2d=10304
 name=Overgrown cat
 model1=model_3010
 model2=model_3006
-
 
 [npc_780]
 vislevel=0
@@ -17924,7 +17145,6 @@ model6=model_358
 model7=model_444
 head1=model_113
 
-
 [npc_781]
 vislevel=0
 desc=One of Gertrude's Sons.
@@ -17945,7 +17165,6 @@ model2=model_2909
 model3=model_2918
 head1=model_139
 
-
 [npc_782]
 vislevel=0
 desc=One of Gertrude's Sons.
@@ -17961,7 +17180,6 @@ model1=model_2897
 model2=model_2909
 model3=model_2918
 head1=model_139
-
 
 [npc_783]
 vislevel=0
@@ -17979,7 +17197,6 @@ model2=model_2909
 model3=model_2918
 head1=model_139
 
-
 [npc_784]
 vislevel=0
 desc=One of Gertrude's Sons.
@@ -17995,7 +17212,6 @@ model1=model_2897
 model2=model_2909
 model3=model_2918
 head1=model_139
-
 
 [npc_785]
 vislevel=0
@@ -18022,7 +17238,6 @@ model6=model_185
 model7=model_329
 head1=model_55
 
-
 [npc_786]
 vislevel=0
 desc=A citizen of Ardougne.
@@ -18047,7 +17262,6 @@ model5=model_263
 model6=model_185
 head1=model_52
 
-
 [npc_787]
 vislevel=0
 desc=A citizen of Ardougne.
@@ -18071,7 +17285,6 @@ model4=model_179
 model5=model_271
 model6=model_185
 head1=model_63
-
 
 [npc_788]
 vislevel=0
@@ -18098,7 +17311,6 @@ model6=model_179
 model7=model_246
 model8=model_550
 head1=model_57
-
 
 [npc_789]
 vislevel=0
@@ -18133,7 +17345,6 @@ model8=model_176
 head1=model_53
 head2=model_82
 
-
 [npc_790]
 vislevel=0
 desc=A well dressed thief.
@@ -18167,7 +17378,6 @@ model10=model_518
 model11=model_326
 head1=model_67
 
-
 [npc_791]
 vislevel=0
 desc=Slightly fishy smelling.
@@ -18198,7 +17408,6 @@ model7=model_151
 model8=model_176
 head1=model_53
 
-
 [npc_792]
 desc=Looks like he's been in the wars...
 walkanim=seq_819
@@ -18223,7 +17432,6 @@ model4=model_165
 model5=model_259
 model6=model_550
 head1=model_56
-
 
 [npc_793]
 vislevel=0
@@ -18255,7 +17463,6 @@ model8=model_320
 head1=model_67
 head2=model_79
 
-
 [npc_794]
 vislevel=0
 desc=Distinctly cook-like.
@@ -18283,7 +17490,6 @@ model8=model_249
 head1=model_67
 head2=model_81
 head3=model_41
-
 
 [npc_795]
 desc=A cold hearted lady.
@@ -18316,7 +17522,6 @@ model6=model_339
 head1=model_104
 head2=model_93
 
-
 [npc_796]
 vislevel=0
 desc=Distinctly heroic.
@@ -18346,7 +17551,6 @@ model10=model_518
 head1=model_115
 head2=model_136
 head3=model_101
-
 
 [npc_797]
 vislevel=0
@@ -18381,7 +17585,6 @@ model7=model_251
 head1=model_67
 head2=model_80
 
-
 [npc_798]
 vislevel=0
 desc=He looks cold and hungry.
@@ -18414,7 +17617,6 @@ model7=model_168
 head1=model_52
 head2=model_82
 
-
 [npc_799]
 desc=A morally ambiguous guard.
 walkanim=seq_819
@@ -18442,19 +17644,17 @@ model7=model_246
 model8=model_518
 head1=model_57
 
-
 [npc_800]
 vislevel=0
 readyanim=seq_525
 walkanim=seq_525
-disposeAlpha=yes
+alpha=yes
 desc=I can see eels swimming in the water.
 visonmap=no
 op1=Bait
 op3=hidden
 name=Fishing spot
 model1=model_2331
-
 
 [npc_801]
 vislevel=0
@@ -18484,7 +17684,6 @@ model9=model_284
 head1=model_59
 head2=model_80
 
-
 [npc_802]
 vislevel=0
 desc=A holy man.
@@ -18512,7 +17711,6 @@ model8=model_280
 model9=model_284
 head1=model_59
 
-
 [npc_803]
 desc=A holy man.
 walkanim=seq_819
@@ -18536,7 +17734,6 @@ model5=model_170
 model6=model_176
 model7=model_260
 head1=model_63
-
 
 [npc_804]
 vislevel=0
@@ -18569,7 +17766,6 @@ model6=model_176
 model7=model_181
 head1=model_55
 
-
 [npc_805]
 desc=The man in charge of the crafter's guild.
 vislevel=0
@@ -18599,7 +17795,6 @@ model8=model_245
 head1=model_63
 head2=model_79
 head3=model_78
-
 
 [npc_806]
 vislevel=0
@@ -18633,7 +17828,6 @@ model9=model_320
 head1=model_52
 head2=model_84
 
-
 [npc_807]
 vislevel=0
 desc=His job doesn't look very fun...
@@ -18663,7 +17857,6 @@ model8=model_236
 model9=model_322
 head1=model_63
 head2=model_68
-
 
 [npc_808]
 vislevel=0
@@ -18698,7 +17891,6 @@ model8=model_327
 head1=model_53
 head2=model_79
 
-
 [npc_809]
 vislevel=0
 desc=She looks like she enjoys her job.
@@ -18725,7 +17917,6 @@ model5=model_419
 model6=model_358
 model7=model_483
 head1=model_103
-
 
 [npc_810]
 vislevel=0
@@ -18754,7 +17945,6 @@ model6=model_358
 model7=model_483
 model8=model_414
 head1=model_114
-
 
 [npc_811]
 vislevel=0
@@ -18788,7 +17978,6 @@ model9=model_283
 head1=model_45
 head2=model_83
 
-
 [npc_812]
 vislevel=0
 desc=An officer of the Law.
@@ -18818,7 +18007,6 @@ model10=model_323
 head1=model_57
 head2=model_80
 
-
 [npc_813]
 vislevel=0
 desc=One of those people who love to gossip!
@@ -18844,7 +18032,6 @@ model6=model_254
 model7=model_181
 head1=model_55
 head2=model_81
-
 
 [npc_814]
 vislevel=0
@@ -18875,7 +18062,6 @@ model6=model_358
 model7=model_417
 head1=model_113
 
-
 [npc_815]
 vislevel=0
 desc=He's dressed all in red.
@@ -18903,7 +18089,6 @@ model6=model_267
 model7=model_185
 head1=model_53
 head2=model_80
-
 
 [npc_816]
 vislevel=0
@@ -18934,7 +18119,6 @@ model6=model_358
 model7=model_414
 head1=model_114
 
-
 [npc_817]
 vislevel=0
 desc=He's dressed all in green.
@@ -18961,7 +18145,6 @@ model5=model_176
 model6=model_267
 model7=model_185
 head1=model_53
-
 
 [npc_818]
 vislevel=0
@@ -18991,7 +18174,6 @@ model5=model_419
 model6=model_358
 head1=model_113
 
-
 [npc_819]
 vislevel=0
 desc=He's dressed all in blue.
@@ -19020,7 +18202,6 @@ model7=model_185
 head1=model_53
 head2=model_83
 
-
 [npc_820]
 vislevel=0
 desc=He sure likes to sell stuff!
@@ -19047,7 +18228,6 @@ model5=model_176
 model6=model_261
 head1=model_55
 
-
 [npc_821]
 desc=Big, noisy, and scary looking!
 walkanim=seq_74
@@ -19055,7 +18235,6 @@ readyanim=seq_77
 vislevel=1
 name=Sinclair Guard dog
 model1=model_2936
-
 
 [npc_822]
 vislevel=0
@@ -19082,7 +18261,6 @@ model6=model_361
 model7=model_509
 head1=model_118
 
-
 [npc_823]
 vislevel=0
 op1=Talk-to
@@ -19096,7 +18274,6 @@ name=anabarrel
 model1=model_361
 head1=model_118
 head2=model_135
-
 
 [npc_824]
 vislevel=0
@@ -19120,7 +18297,6 @@ model5=model_428
 model6=model_361
 model7=model_509
 head1=model_115
-
 
 [npc_825]
 vislevel=0
@@ -19146,7 +18322,6 @@ model7=model_185
 model8=model_509
 head1=model_55
 head2=model_82
-
 
 [npc_826]
 vislevel=0
@@ -19179,7 +18354,6 @@ model7=model_185
 head1=model_55
 head2=model_82
 
-
 [npc_827]
 desc=He looks a bit aggressive.
 walkanim=seq_819
@@ -19209,7 +18383,6 @@ model7=model_185
 model8=model_509
 head1=model_55
 head2=model_82
-
 
 [npc_828]
 desc=He looks a bit aggressive.
@@ -19243,7 +18416,6 @@ model10=model_191
 head1=model_63
 head2=model_34
 
-
 [npc_829]
 desc=He looks a bit aggressive.
 walkanim=seq_819
@@ -19275,7 +18447,6 @@ model9=model_490
 model10=model_517
 head1=model_34
 head2=model_63
-
 
 [npc_830]
 desc=He looks a bit aggressive.
@@ -19314,7 +18485,6 @@ head1=model_63
 head2=model_34
 head3=model_79
 
-
 [npc_831]
 desc=He's in control of the whole mining camp.
 walkanim=seq_819
@@ -19347,7 +18517,6 @@ model9=model_185
 head1=model_53
 head2=model_43
 head3=model_80
-
 
 [npc_832]
 vislevel=0
@@ -19386,7 +18555,6 @@ head1=model_53
 head2=model_30
 head3=model_85
 
-
 [npc_833]
 vislevel=0
 desc=A bedabin nomad, they live in the harshest extremes in the desert.
@@ -19421,7 +18589,6 @@ model7=model_265
 model8=model_185
 head1=model_55
 head2=model_30
-
 
 [npc_834]
 desc=A bedabin nomad guard - it looks like he's protecting an area.
@@ -19459,7 +18626,6 @@ head1=model_63
 head2=model_30
 head3=model_80
 
-
 [npc_835]
 vislevel=0
 desc=A resident of Al-Kharid.
@@ -19485,7 +18651,6 @@ model4=model_353
 model5=model_429
 model6=model_361
 head1=model_113
-
 
 [npc_836]
 vislevel=0
@@ -19514,7 +18679,6 @@ model7=model_254
 model8=model_185
 head1=model_55
 head2=model_79
-
 
 [npc_837]
 desc=He patrols the Shantay Pass.
@@ -19548,7 +18712,6 @@ model8=model_185
 model9=model_519
 head1=model_63
 
-
 [npc_838]
 desc=He patrols the Shantay Pass.
 walkanim=seq_819
@@ -19580,7 +18743,6 @@ model8=model_185
 model9=model_519
 head1=model_63
 
-
 [npc_839]
 desc=A vicious Desert wolf
 walkanim=seq_74
@@ -19593,7 +18755,6 @@ recol2s=90
 recol2d=8633
 name=Desert Wolf
 model1=model_2937
-
 
 [npc_840]
 desc=A vicious attaking camel.
@@ -19608,7 +18769,6 @@ recol2s=127
 recol2d=953
 name=Ugthanki
 model1=model_2939
-
 
 [npc_841]
 vislevel=0
@@ -19639,7 +18799,6 @@ model6=model_265
 model7=model_185
 head1=model_55
 
-
 [npc_842]
 desc=He looks a bit aggressive and rowdy.
 walkanim=seq_819
@@ -19667,7 +18826,6 @@ model7=model_185
 model8=model_490
 model9=model_517
 head1=model_57
-
 
 [npc_843]
 vislevel=0
@@ -19700,7 +18858,6 @@ head1=model_53
 head2=model_81
 head3=model_37
 
-
 [npc_844]
 vislevel=0
 desc=The hat is a dead give away.
@@ -19728,7 +18885,6 @@ model8=model_202
 head1=model_53
 head2=model_44
 
-
 [npc_845]
 vislevel=0
 desc=Could do with losing a few pounds.
@@ -19753,7 +18909,6 @@ model9=model_329
 model10=model_495
 head1=model_52
 head2=model_82
-
 
 [npc_846]
 vislevel=0
@@ -19781,7 +18936,6 @@ model7=model_185
 model8=model_254
 model9=model_326
 head1=model_53
-
 
 [npc_847]
 vislevel=0
@@ -19811,7 +18965,6 @@ head1=model_53
 head2=model_41
 head3=model_83
 
-
 [npc_848]
 vislevel=0
 desc=He seems to run the cocktail bar.
@@ -19830,7 +18983,6 @@ model2=model_2900
 model3=model_2917
 head1=model_23
 
-
 [npc_849]
 vislevel=0
 desc=He serves cocktails.
@@ -19844,7 +18996,6 @@ model2=model_2900
 model3=model_2915
 head1=model_23
 
-
 [npc_850]
 desc=It's a tree gnome chef.
 walkanim=seq_189
@@ -19856,7 +19007,6 @@ model1=model_2909
 model2=model_2889
 model3=model_2917
 head1=model_15
-
 
 [npc_851]
 desc=He can serve you gnome food.
@@ -19877,7 +19027,6 @@ model2=model_2900
 model3=model_2915
 head1=model_23
 
-
 [npc_852]
 desc=Tough looking.
 size=2
@@ -19891,7 +19040,6 @@ model1=model_2880
 model2=model_2876
 head1=model_141
 
-
 [npc_853]
 vislevel=0
 desc=A senior member of the ogre community.
@@ -19903,7 +19051,6 @@ name=Og
 model1=model_2880
 model2=model_2874
 head1=model_141
-
 
 [npc_854]
 vislevel=0
@@ -19917,7 +19064,6 @@ model1=model_2880
 model2=model_2874
 head1=model_141
 
-
 [npc_855]
 vislevel=0
 desc=Ogre-ish.
@@ -19929,7 +19075,6 @@ name=Toban
 model1=model_2880
 model2=model_2874
 head1=model_141
-
 
 [npc_856]
 desc=Big, dumb and ugly.
@@ -19944,7 +19089,6 @@ model1=model_2880
 model2=model_2876
 head1=model_141
 
-
 [npc_857]
 desc=An ogre that guards.
 size=2
@@ -19956,7 +19100,6 @@ name=Ogre guard
 model1=model_2880
 model2=model_2874
 head1=model_141
-
 
 [npc_858]
 desc=These ogres protect the city.
@@ -19970,7 +19113,6 @@ model1=model_2880
 model2=model_2874
 head1=model_141
 
-
 [npc_859]
 desc=An ogre that guards.
 size=2
@@ -19982,7 +19124,6 @@ name=Ogre guard
 model1=model_2880
 model2=model_2874
 head1=model_141
-
 
 [npc_860]
 desc=An ogre that guards.
@@ -19996,7 +19137,6 @@ model1=model_2880
 model2=model_2874
 head1=model_141
 
-
 [npc_861]
 desc=An ogre that guards.
 size=2
@@ -20008,7 +19148,6 @@ name=Ogre guard
 model1=model_2880
 model2=model_2874
 head1=model_141
-
 
 [npc_862]
 desc=Tries to keep the peace.
@@ -20023,7 +19162,6 @@ model1=model_2878
 model2=model_2876
 head1=model_141
 
-
 [npc_863]
 vislevel=0
 desc=Frightened looking.
@@ -20034,7 +19172,6 @@ op1=Talk-to
 name=Scared skavid
 model1=model_2999
 head1=model_146
-
 
 [npc_864]
 vislevel=0
@@ -20049,7 +19186,6 @@ name=Mad skavid
 model1=model_2999
 head1=model_146
 
-
 [npc_865]
 vislevel=0
 desc=A skavid.
@@ -20060,7 +19196,6 @@ op1=Talk-to
 name=Skavid
 model1=model_2999
 head1=model_146
-
 
 [npc_866]
 vislevel=0
@@ -20073,7 +19208,6 @@ name=Skavid
 model1=model_2999
 head1=model_146
 
-
 [npc_867]
 vislevel=0
 desc=A skavid.
@@ -20084,7 +19218,6 @@ op1=Talk-to
 name=Skavid
 model1=model_2999
 head1=model_146
-
 
 [npc_868]
 vislevel=0
@@ -20097,7 +19230,6 @@ name=Skavid
 model1=model_2999
 head1=model_146
 
-
 [npc_869]
 vislevel=0
 desc=A skavid.
@@ -20108,7 +19240,6 @@ op1=Talk-to
 name=Skavid
 model1=model_2999
 head1=model_146
-
 
 [npc_870]
 desc=Big and ugly looking.
@@ -20123,7 +19254,6 @@ model1=model_2880
 model2=model_2876
 head1=model_141
 
-
 [npc_871]
 desc=Seems intelligent... for an ogre.
 size=2
@@ -20136,7 +19266,6 @@ name=Ogre shaman
 model1=model_2879
 model2=model_2877
 head1=model_141
-
 
 [npc_872]
 vislevel=0
@@ -20168,7 +19297,6 @@ head1=model_52
 head2=model_82
 head3=model_44
 
-
 [npc_873]
 desc=Funnily enough, doesn't actually buy or sell ogres.
 size=2
@@ -20183,7 +19311,6 @@ name=Ogre trader
 model1=model_2878
 model2=model_2874
 head1=model_141
-
 
 [npc_874]
 desc=Funnily enough, doesn't actually buy or sell ogres.
@@ -20200,7 +19327,6 @@ model1=model_2878
 model2=model_2874
 head1=model_141
 
-
 [npc_875]
 desc=Funnily enough, doesn't actually buy or sell ogres.
 size=2
@@ -20216,7 +19342,6 @@ model1=model_2878
 model2=model_2874
 head1=model_141
 
-
 [npc_876]
 desc=Funnily enough, doesn't actually buy or sell ogres.
 size=2
@@ -20231,7 +19356,6 @@ name=Ogre trader
 model1=model_2878
 model2=model_2874
 head1=model_141
-
 
 [npc_877]
 desc=Tries to keep the peace.
@@ -20258,7 +19382,6 @@ model7=model_185
 model8=model_517
 model9=model_519
 head1=model_66
-
 
 [npc_878]
 desc=A military man.
@@ -20292,7 +19415,6 @@ head1=model_52
 head2=model_77
 head3=model_82
 
-
 [npc_879]
 size=2
 desc=A freshly summoned demon.
@@ -20303,21 +19425,19 @@ vislevel=27
 name=Delrith
 model1=model_2943
 
-
 [npc_880]
 size=2
 desc=The demon doesn't look so strong now.
 resizeh=100
 resizev=100
 readyanim=seq_70
-disposeAlpha=yes
+alpha=yes
 vislevel=1
 recol1s=918
 recol1d=3486
 name=Weakened Delrith
 model1=model_2943
 model2=model_3019
-
 
 [npc_881]
 vislevel=107
@@ -20350,7 +19470,6 @@ head2=model_83
 head3=model_78
 head4=model_44
 
-
 [npc_882]
 vislevel=1
 desc=An old gypsy lady.
@@ -20378,7 +19497,6 @@ model5=model_431
 model6=model_358
 head1=model_103
 
-
 [npc_883]
 vislevel=124
 desc=One of the king's knights.
@@ -20400,7 +19518,6 @@ model4=model_176
 model5=model_254
 model6=model_185
 head1=model_56
-
 
 [npc_884]
 vislevel=52
@@ -20435,7 +19552,6 @@ model9=model_323
 head1=model_63
 head2=model_79
 
-
 [npc_885]
 vislevel=0
 desc=Head of the Carnillean household.
@@ -20466,7 +19582,6 @@ model9=model_281
 model10=model_201
 head1=model_55
 head2=model_43
-
 
 [npc_886]
 vislevel=0
@@ -20499,7 +19614,6 @@ model8=model_199
 head1=model_63
 head2=model_41
 
-
 [npc_887]
 vislevel=0
 desc=On special duty to protect the Carnilleans.
@@ -20522,7 +19636,6 @@ model5=model_274
 model6=model_185
 head1=model_60
 
-
 [npc_888]
 vislevel=0
 desc=The newest member of the Carnillean family.
@@ -20544,7 +19657,6 @@ model1=model_2894
 model2=model_2909
 model3=model_2918
 head1=model_53
-
 
 [npc_889]
 vislevel=0
@@ -20579,7 +19691,6 @@ model9=model_412
 head1=model_103
 head2=model_128
 
-
 [npc_890]
 vislevel=0
 desc=The Carnillean family butler.
@@ -20613,7 +19724,6 @@ model8=model_327
 head1=model_67
 head2=model_79
 
-
 [npc_891]
 desc=Leader of the Hazeel cult.
 op1=Talk-to
@@ -20642,7 +19752,6 @@ model6=model_256
 model7=model_286
 head1=model_48
 head2=model_83
-
 
 [npc_892]
 vislevel=296
@@ -20675,7 +19784,6 @@ model8=model_328
 model9=model_239
 head1=model_64
 head2=model_71
-
 
 [npc_893]
 desc=A member of the Hazeel cult.
@@ -20712,7 +19820,6 @@ model8=model_534
 model9=model_567
 head1=model_61
 
-
 [npc_894]
 desc=A member of the Hazeel cult.
 readyanim=seq_813
@@ -20743,7 +19850,6 @@ model7=model_286
 model8=model_534
 head1=model_61
 
-
 [npc_895]
 vislevel=0
 desc=A sad looking child...
@@ -20763,7 +19869,6 @@ model1=model_2897
 model2=model_2909
 model3=model_2917
 head1=model_53
-
 
 [npc_896]
 vislevel=0
@@ -20794,7 +19899,6 @@ model7=model_377
 head1=model_122
 head2=model_102
 
-
 [npc_897]
 desc=Looks unnatural.
 walkanim=seq_254
@@ -20808,7 +19912,6 @@ recol2d=23506
 name=Witches experiment
 model1=model_2999
 
-
 [npc_898]
 desc=Looks unnatural.
 walkanim=seq_142
@@ -20821,7 +19924,6 @@ recol2s=8128
 recol2d=23506
 name=Witches experiment second form
 model1=model_2884
-
 
 [npc_899]
 desc=Looks unnatural.
@@ -20839,7 +19941,6 @@ recol3d=23506
 name=Witches experiment third form
 model1=model_2966
 
-
 [npc_900]
 desc=Looks unnatural.
 walkanim=seq_74
@@ -20855,7 +19956,6 @@ recol3d=23506
 name=Witches experiment fourth form
 model1=model_2937
 
-
 [npc_901]
 vislevel=0
 desc=Deceptively mouse shaped.
@@ -20866,7 +19966,6 @@ recol1s=61
 recol1d=21588
 name=Mouse
 model1=model_2927
-
 
 [npc_902]
 vislevel=0
@@ -20894,7 +19993,6 @@ head1=model_53
 head2=model_85
 head3=model_78
 
-
 [npc_903]
 vislevel=0
 desc=He sells rune stones.
@@ -20915,7 +20013,6 @@ model6=model_274
 model7=model_185
 head1=model_63
 head2=model_84
-
 
 [npc_904]
 vislevel=0
@@ -20946,7 +20043,6 @@ model7=model_185
 model8=model_317
 head1=model_52
 head2=model_82
-
 
 [npc_905]
 vislevel=0
@@ -20983,7 +20079,6 @@ head1=model_48
 head2=model_82
 head3=model_68
 
-
 [npc_906]
 vislevel=0
 desc=He runs the mage arena.
@@ -21017,7 +20112,6 @@ model9=model_290
 head1=model_48
 head2=model_82
 head3=model_68
-
 
 [npc_907]
 vislevel=0
@@ -21054,7 +20148,6 @@ head1=model_48
 head2=model_82
 head3=model_68
 
-
 [npc_908]
 vislevel=0
 desc=He's a shape shifter.
@@ -21077,7 +20170,6 @@ name=Kolodion
 model1=model_2863
 model2=model_2871
 
-
 [npc_909]
 vislevel=0
 desc=He's a shape shifter.
@@ -21092,13 +20184,12 @@ recol1d=43197
 name=Kolodion
 model1=model_2884
 
-
 [npc_910]
 vislevel=0
 desc=He's a shape shifter.
 walkanim=seq_841
 readyanim=seq_842
-disposeAlpha=yes
+alpha=yes
 resizeh=192
 resizev=224
 op2=Attack
@@ -21123,14 +20214,13 @@ model5=model_176
 model6=model_267
 model7=model_181
 
-
 [npc_911]
 size=3
 walkanim=seq_63
 readyanim=seq_66
 desc=He's a shape shifter.
 op2=Attack
-disposeAlpha=yes
+alpha=yes
 vislevel=113
 recol1s=918
 recol1d=4
@@ -21140,7 +20230,6 @@ recol3s=0
 recol3d=931
 name=Kolodion
 model1=model_2942
-
 
 [npc_912]
 desc=He kills in the name of Zamorak.
@@ -21175,7 +20264,6 @@ model8=model_323
 model9=model_185
 model10=model_544
 
-
 [npc_913]
 desc=He kills in the name of Saradomin.
 walkanim=seq_819
@@ -21208,7 +20296,6 @@ model7=model_323
 model8=model_185
 model9=model_554
 
-
 [npc_914]
 desc=He kills in the name of Guthix.
 walkanim=seq_189
@@ -21223,7 +20310,6 @@ name=Battle mage
 model1=model_2909
 model2=model_2898
 model3=model_2920
-
 
 [npc_915]
 desc=She comes from Al-Kharid.
@@ -21253,7 +20339,6 @@ model7=model_376
 head1=model_115
 head2=model_101
 
-
 [npc_916]
 desc=Lady Keli's head guard.
 walkanim=seq_819
@@ -21279,7 +20364,6 @@ model6=model_268
 model7=model_185
 model8=model_502
 head1=model_55
-
 
 [npc_917]
 desc=I wonder who he's guarding?
@@ -21308,7 +20392,6 @@ model5=model_179
 model6=model_257
 model7=model_502
 head1=model_55
-
 
 [npc_918]
 desc=An old sailor.
@@ -21340,7 +20423,6 @@ head1=model_53
 head2=model_85
 head3=model_37
 
-
 [npc_919]
 desc=An infamous bandit.
 walkanim=seq_819
@@ -21364,7 +20446,6 @@ model4=model_353
 model5=model_428
 model6=model_358
 head1=model_113
-
 
 [npc_920]
 desc=A young prince.
@@ -21396,7 +20477,6 @@ model9=model_201
 head1=model_53
 head2=model_43
 
-
 [npc_921]
 desc=Now that's an effective disguise!
 walkanim=seq_819
@@ -21419,7 +20499,6 @@ model4=model_292
 model5=model_151
 model6=model_176
 model7=model_265
-
 
 [npc_922]
 desc=A witch.
@@ -21448,7 +20527,6 @@ model6=model_361
 model7=model_377
 head1=model_115
 head2=model_102
-
 
 [npc_923]
 desc=The chancellor to the Emir.
@@ -21486,7 +20564,6 @@ head1=model_53
 head2=model_80
 head3=model_30
 
-
 [npc_924]
 desc=He looks a little shifty.
 walkanim=seq_819
@@ -21514,7 +20591,6 @@ model6=model_181
 model7=model_292
 head1=model_48
 head2=model_81
-
 
 [npc_925]
 desc=Guards the border.
@@ -21547,7 +20623,6 @@ head1=model_53
 head2=model_81
 head3=model_34
 
-
 [npc_926]
 desc=Guards the border.
 walkanim=seq_819
@@ -21579,12 +20654,11 @@ head1=model_53
 head2=model_81
 head3=model_34
 
-
 [npc_927]
 vislevel=0
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 desc=I can see fish swimming in the water.
 visonmap=no
 op1=Lure
@@ -21593,7 +20667,6 @@ op4=hidden
 op5=hidden
 name=Fishing spot
 model1=model_1491
-
 
 [npc_928]
 vislevel=0
@@ -21628,7 +20701,6 @@ model7=model_181
 model8=model_540
 head1=model_64
 
-
 [npc_929]
 desc=The Kharazi tribes elusive Shaman.
 walkanim=seq_819
@@ -21660,7 +20732,6 @@ model7=model_181
 model8=model_534
 head1=model_52
 head2=model_82
-
 
 [npc_930]
 desc=The Kharazi tribes elusive Shaman - something doesn't look quite right with him.
@@ -21698,7 +20769,6 @@ model8=model_534
 head1=model_52
 head2=model_82
 
-
 [npc_931]
 desc=An aggresive native of the Kharazi jungle.
 walkanim=seq_819
@@ -21730,7 +20800,6 @@ model6=model_266
 model7=model_181
 model8=model_540
 head1=model_64
-
 
 [npc_932]
 vislevel=0
@@ -21766,7 +20835,6 @@ model8=model_376
 head1=model_113
 head2=model_101
 
-
 [npc_933]
 vislevel=0
 desc=An eccentric shop keeper - related to the Grand Vizier of the Legends Guild.
@@ -21800,7 +20868,6 @@ model8=model_185
 head1=model_63
 head2=model_82
 
-
 [npc_934]
 desc=An ancient powerful demon of the underworld.
 size=3
@@ -21816,7 +20883,6 @@ recol3s=0
 recol3d=931
 name=Nezikchened
 model1=model_2942
-
 
 [npc_935]
 desc=The spirit of a long dead wizard.
@@ -21840,12 +20906,11 @@ model6=model_209
 head1=model_54
 head2=model_44
 
-
 [npc_936]
 desc=The spirit of a long dead warrior.
 walkanim=seq_264
 readyanim=seq_267
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 op2=Attack
 vislevel=106
@@ -21861,12 +20926,11 @@ model2=model_2945
 head1=model_54
 head2=model_38
 
-
 [npc_937]
 desc=The spirit of a long dead warrior.
 walkanim=seq_264
 readyanim=seq_267
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 op2=Attack
 vislevel=100
@@ -21882,12 +20946,11 @@ model2=model_2947
 head1=model_54
 head2=model_38
 
-
 [npc_938]
 desc=The spirit of a long dead warrior.
 walkanim=seq_264
 readyanim=seq_267
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 op2=Attack
 vislevel=95
@@ -21905,7 +20968,6 @@ model2=model_2948
 head1=model_54
 head2=model_34
 
-
 [npc_939]
 desc=I wonder what this is doing here.
 size=2
@@ -21916,13 +20978,12 @@ visonmap=no
 name=Boulder
 model1=model_2846
 
-
 [npc_940]
 desc=A spirit of the underworld.
-disposeAlpha=yes
+alpha=yes
 walkanim=seq_119
 readyanim=seq_125
-disposeAlpha=yes
+alpha=yes
 op1=Talk-to
 vislevel=187
 name=Echned Zekin
@@ -21930,7 +20991,6 @@ model1=model_2961
 model2=model_2964
 model3=model_2965
 head1=model_10
-
 
 [npc_941]
 size=4
@@ -21944,7 +21004,6 @@ recol1d=22051
 name=Green dragon
 model1=model_2853
 model2=model_2854
-
 
 [npc_942]
 vislevel=0
@@ -21982,7 +21041,6 @@ head1=model_67
 head2=model_82
 head3=model_41
 
-
 [npc_943]
 vislevel=0
 desc=Very much an outdoors type.
@@ -22014,7 +21072,6 @@ model6=model_431
 model7=model_361
 model8=model_482
 head1=model_108
-
 
 [npc_944]
 vislevel=146
@@ -22052,7 +21109,6 @@ model11=model_201
 head1=model_64
 head2=model_84
 
-
 [npc_945]
 vislevel=0
 desc=Your introduction to the world of RuneScape.
@@ -22087,7 +21143,6 @@ model9=model_3330
 head1=model_63
 head2=model_81
 head3=model_40
-
 
 [npc_946]
 vislevel=0
@@ -22125,7 +21180,6 @@ head1=model_52
 head2=model_82
 head3=model_44
 
-
 [npc_947]
 vislevel=0
 desc=An official representative from the First National Bank of RuneScape.
@@ -22159,7 +21213,6 @@ model8=model_327
 head1=model_53
 head2=model_79
 
-
 [npc_948]
 vislevel=0
 desc=An expert on mining related skills.
@@ -22191,7 +21244,6 @@ model8=model_280
 model9=model_179
 head1=model_50
 head2=model_81
-
 
 [npc_949]
 vislevel=0
@@ -22225,7 +21277,6 @@ model7=model_176
 head1=model_63
 head2=model_81
 
-
 [npc_950]
 vislevel=3
 size=2
@@ -22236,7 +21287,6 @@ op2=Attack
 name=Giant rat
 model1=model_2959
 
-
 [npc_951]
 vislevel=3
 desc=Yep definitely a chicken.
@@ -22246,7 +21296,6 @@ op2=Attack
 name=Chicken
 model1=model_2849
 
-
 [npc_952]
 vislevel=0
 desc=I can see fish swimming in the water.
@@ -22255,10 +21304,9 @@ op3=hidden
 visonmap=no
 readyanim=seq_447
 walkanim=seq_448
-disposeAlpha=yes
+alpha=yes
 name=Fishing spot
 model1=model_1491
-
 
 [npc_953]
 vislevel=0
@@ -22288,7 +21336,6 @@ model7=model_181
 model8=model_320
 head1=model_53
 
-
 [npc_954]
 vislevel=0
 desc=A holy man.
@@ -22316,7 +21363,6 @@ model8=model_280
 model9=model_284
 head1=model_59
 
-
 [npc_955]
 size=2
 walkanim=seq_58
@@ -22334,7 +21380,6 @@ name=Cow
 model1=model_3341
 model2=model_3342
 
-
 [npc_956]
 vislevel=0
 desc=He's had a fair bit to drink...
@@ -22351,7 +21396,6 @@ model6=model_2985
 model7=model_2992
 head1=model_4
 head2=model_6
-
 
 [npc_957]
 desc=Tough looking combat type.
@@ -22387,7 +21431,6 @@ head1=model_63
 head2=model_84
 head3=model_43
 
-
 [npc_958]
 desc=Looks kinda bored.
 walkanim=seq_819
@@ -22417,7 +21460,6 @@ model6=model_254
 model7=model_185
 head1=model_49
 head2=model_81
-
 
 [npc_959]
 desc=Trained to deal with all sorts of injuries.
@@ -22453,7 +21495,6 @@ head1=model_115
 head2=model_136
 head3=model_3186
 
-
 [npc_960]
 desc=Wow! She's made a statement with that hair!
 walkanim=seq_819
@@ -22486,7 +21527,6 @@ model8=model_3191
 head1=model_114
 head2=model_3186
 
-
 [npc_961]
 desc=Looks after injured fighters.
 walkanim=seq_819
@@ -22518,7 +21558,6 @@ model7=model_3193
 model8=model_3191
 head1=model_113
 head2=model_3186
-
 
 [npc_962]
 desc=Has the messy job of putting players back together again.
@@ -22555,7 +21594,6 @@ model9=model_3190
 head1=model_63
 head2=model_82
 
-
 [npc_963]
 desc='Battle scarred'.
 walkanim=seq_819
@@ -22587,7 +21625,6 @@ model8=model_236
 head1=model_46
 head2=model_85
 head3=model_68
-
 
 [npc_964]
 desc=A citizen of Al Kharid.
@@ -22621,7 +21658,6 @@ head1=model_53
 head2=model_85
 head3=model_30
 
-
 [npc_965]
 desc=A citizen of Al Kharid.
 walkanim=seq_819
@@ -22653,7 +21689,6 @@ model8=model_181
 head1=model_53
 head2=model_82
 head3=model_30
-
 
 [npc_966]
 desc=A citizen of Al Kharid.
@@ -22687,7 +21722,6 @@ head1=model_53
 head2=model_82
 head3=model_30
 
-
 [npc_967]
 desc=A citizen of Al Kharid.
 walkanim=seq_819
@@ -22717,7 +21751,6 @@ model6=model_428
 model7=model_358
 head1=model_114
 head2=model_88
-
 
 [npc_968]
 desc=A citizen of Al Kharid.
@@ -22749,7 +21782,6 @@ model7=model_358
 head1=model_114
 head2=model_88
 
-
 [npc_969]
 desc=A citizen of Al Kharid.
 walkanim=seq_819
@@ -22777,7 +21809,6 @@ model4=model_353
 model5=model_428
 model6=model_358
 head1=model_113
-
 
 [npc_970]
 vislevel=0
@@ -22815,7 +21846,6 @@ head1=model_28
 head2=model_55
 head3=model_85
 
-
 [npc_971]
 vislevel=0
 desc=Shop keeper.
@@ -22834,7 +21864,6 @@ model5=model_173
 model6=model_181
 model7=model_176
 head1=model_63
-
 
 [npc_972]
 vislevel=0
@@ -22857,7 +21886,6 @@ model8=model_326
 head1=model_48
 head2=model_81
 
-
 [npc_973]
 vislevel=0
 desc=The cave guide.
@@ -22878,7 +21906,6 @@ model7=model_292
 model8=model_326
 head1=model_48
 head2=model_81
-
 
 [npc_974]
 vislevel=0
@@ -22901,7 +21928,6 @@ model8=model_326
 head1=model_48
 head2=model_81
 
-
 [npc_975]
 vislevel=0
 desc=The cave guide.
@@ -22922,7 +21948,6 @@ model7=model_292
 model8=model_326
 head1=model_48
 head2=model_81
-
 
 [npc_976]
 vislevel=0
@@ -22945,7 +21970,6 @@ model8=model_326
 head1=model_48
 head2=model_81
 
-
 [npc_977]
 walkanim=seq_142
 readyanim=seq_145
@@ -22954,7 +21978,6 @@ op2=Attack
 vislevel=31
 name=Blessed spider
 model1=model_2884
-
 
 [npc_978]
 size=2
@@ -22965,7 +21988,6 @@ op2=Attack
 vislevel=9
 name=Blessed Giant rat
 model1=model_2959
-
 
 [npc_979]
 vislevel=0
@@ -22992,7 +22014,6 @@ model6=model_181
 model7=model_176
 head1=model_63
 
-
 [npc_980]
 vislevel=0
 walkanim=seq_819
@@ -23017,7 +22038,6 @@ model5=model_173
 model6=model_181
 model7=model_176
 head1=model_52
-
 
 [npc_981]
 vislevel=0
@@ -23044,7 +22064,6 @@ model6=model_181
 model7=model_176
 head1=model_49
 
-
 [npc_982]
 vislevel=0
 walkanim=seq_819
@@ -23069,7 +22088,6 @@ model5=model_173
 model6=model_181
 model7=model_176
 head1=model_47
-
 
 [npc_983]
 vislevel=0
@@ -23098,7 +22116,6 @@ model6=model_181
 model7=model_176
 head1=model_45
 
-
 [npc_984]
 vislevel=0
 walkanim=seq_819
@@ -23123,7 +22140,6 @@ model5=model_173
 model6=model_181
 model7=model_176
 head1=model_48
-
 
 [npc_985]
 vislevel=0
@@ -23150,7 +22166,6 @@ model6=model_181
 model7=model_176
 head1=model_52
 
-
 [npc_986]
 desc=Precariously balanced....
 size=2
@@ -23161,7 +22176,6 @@ visonmap=no
 name=Boulder
 model1=model_2846
 
-
 [npc_987]
 size=2
 walkanim=seq_288
@@ -23170,7 +22184,6 @@ desc=The animal is caged here.
 vislevel=15
 name=Unicorn
 model1=model_2933
-
 
 [npc_988]
 desc=A mighty looking warrior.
@@ -23203,7 +22216,6 @@ model9=model_541
 model10=model_3330
 head1=model_55
 
-
 [npc_989]
 desc=A mighty looking warrior.
 walkanim=seq_819
@@ -23232,7 +22244,6 @@ model8=model_518
 model9=model_541
 model10=model_3330
 head1=model_52
-
 
 [npc_990]
 desc=A mighty looking warrior.
@@ -23263,7 +22274,6 @@ model9=model_541
 model10=model_3330
 head1=model_52
 
-
 [npc_991]
 size=2
 desc=A creature empty of emotion.
@@ -23288,7 +22298,6 @@ model4=model_246
 model5=model_168
 model6=model_181
 model7=model_176
-
 
 [npc_992]
 vislevel=0
@@ -23321,7 +22330,6 @@ model8=model_447
 model9=model_534
 model10=model_377
 
-
 [npc_993]
 vislevel=0
 desc=Curiosity is yet to kill this one...
@@ -23335,7 +22343,6 @@ recol1d=16
 name=Witches cat
 model1=model_3010
 model2=model_3006
-
 
 [npc_994]
 vislevel=0
@@ -23361,7 +22368,6 @@ model5=model_2985
 model6=model_2990
 head1=model_0
 
-
 [npc_995]
 vislevel=0
 walkanim=seq_98
@@ -23383,7 +22389,6 @@ model4=model_2979
 model5=model_2985
 head1=model_1
 
-
 [npc_996]
 vislevel=0
 walkanim=seq_98
@@ -23404,7 +22409,6 @@ model5=model_2985
 model6=model_2990
 head1=model_2
 
-
 [npc_997]
 desc=A giant spider.
 walkanim=seq_142
@@ -23416,7 +22420,6 @@ op2=Attack
 vislevel=78
 name=Kalrag
 model1=model_2884
-
 
 [npc_998]
 size=3
@@ -23430,7 +22433,6 @@ vislevel=91
 name=Othainian
 model1=model_2942
 
-
 [npc_999]
 size=3
 walkanim=seq_63
@@ -23443,7 +22445,6 @@ vislevel=91
 name=Doomion
 model1=model_2942
 
-
 [npc_1000]
 size=3
 walkanim=seq_63
@@ -23455,7 +22456,6 @@ resizev=110
 vislevel=91
 name=Holthion
 model1=model_2942
-
 
 [npc_1001]
 walkanim=seq_819
@@ -23482,7 +22482,6 @@ model6=model_176
 model7=model_260
 head1=model_67
 head2=model_81
-
 
 [npc_1002]
 walkanim=seq_819
@@ -23511,7 +22510,6 @@ model5=model_170
 model6=model_176
 model7=model_260
 head1=model_67
-
 
 [npc_1003]
 vislevel=0
@@ -23545,7 +22543,6 @@ model7=model_251
 model8=model_265
 head1=model_83
 
-
 [npc_1004]
 walkanim=seq_279
 desc=Incey wincey.
@@ -23556,7 +22553,6 @@ recol1d=10258
 name=Spider
 model1=model_2996
 
-
 [npc_1005]
 desc=Annoying flappy thing.
 size=2
@@ -23566,7 +22562,6 @@ vislevel=0
 name=Giant bat
 model1=model_2941
 
-
 [npc_1006]
 vislevel=0
 desc=A rather nasty looking crustacean.
@@ -23575,7 +22570,6 @@ readyanim=seq_932
 op1=Take
 name=Sea slug
 model1=model_560
-
 
 [npc_1007]
 desc=A servant of Zamorak.
@@ -23607,7 +22601,6 @@ model7=model_176
 model8=model_265
 model9=model_544
 
-
 [npc_1008]
 desc=A holy man.
 walkanim=seq_819
@@ -23633,7 +22626,6 @@ model6=model_176
 model7=model_260
 head1=model_63
 
-
 [npc_1009]
 walkanim=seq_142
 readyanim=seq_145
@@ -23642,7 +22634,6 @@ op2=Attack
 vislevel=29
 name=Poison spider
 model1=model_2883
-
 
 [npc_1010]
 vislevel=0
@@ -23655,7 +22646,6 @@ name=Rantz
 model1=model_2878
 model2=model_3442
 head1=model_141
-
 
 [npc_1011]
 vislevel=0
@@ -23674,7 +22664,6 @@ model1=model_2878
 model2=model_3441
 head1=model_3444
 
-
 [npc_1012]
 vislevel=0
 desc=This must be Rantz's son.
@@ -23692,7 +22681,6 @@ model1=model_2878
 model2=model_3441
 head1=model_3444
 
-
 [npc_1013]
 vislevel=0
 desc=A green skinned croaker, loves the swamp.
@@ -23701,7 +22689,6 @@ walkanim=seq_1021
 name=Swamp toad
 model1=model_3447
 
-
 [npc_1014]
 vislevel=0
 desc=A green skinned croaker.
@@ -23709,7 +22696,6 @@ readyanim=seq_1020
 walkanim=seq_1020
 name=Bloated Toad
 model1=model_3447
-
 
 [npc_1015]
 desc=A large boisterous bird, a delicacy for ogres.
@@ -23722,7 +22708,6 @@ vislevel=6
 name=Chompy bird
 model1=model_3445
 
-
 [npc_1016]
 vislevel=0
 desc=A once boisterous bird, closer to being an ogre delicacy.
@@ -23733,4 +22718,3 @@ resizeh=180
 resizev=180
 name=Chompy bird
 model1=model_3445
-

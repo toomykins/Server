@@ -1,6 +1,8 @@
 import fs from 'fs';
 import Jagfile from '#io/Jagfile.js';
 
+console.log('Unpacking loc.dat...');
+
 const config = Jagfile.fromFile('dump/config');
 const dat = config.read('loc.dat');
 
@@ -11,7 +13,7 @@ const count = dat.g2();
 for (let i = 0; i < count; i++) {
     fs.appendFileSync('dump/loc.order', `loc_${i}=${i}\n`);
 
-    if (i > 1) {
+    if (i > 0) {
         fs.appendFileSync('dump/all.loc', `\n[loc_${i}]\n`);
     } else {
         fs.appendFileSync('dump/all.loc', `[loc_${i}]\n`);
@@ -26,16 +28,15 @@ for (let i = 0; i < count; i++) {
         if (code === 1) {
             const models = dat.g1();
 
-            for (let i = 1; i <= models; i++) {
+            for (let j = 1; j <= models; j++) {
                 const model = dat.g2();
                 let shape = dat.g1();
 
+                // shape is part of the model filename, but we can't edit the model packorder names here
                 switch (shape) {
                     case 10:
-                        // default (shape omitted) is ^centrepiece_straight
-                        // shape = '^centrepiece_straight';
-                        fs.appendFileSync('dump/all.loc', `model${i}=model_${model}\n`);
-                        continue;
+                        shape = '^centrepiece_straight';
+                        break;
                     case 0:
                         shape = '^wall_straight';
                         break;
@@ -104,7 +105,7 @@ for (let i = 0; i < count; i++) {
                         break;
                 }
 
-                fs.appendFileSync('dump/all.loc', `model${i}=model_${model},${shape}\n`);
+                fs.appendFileSync('dump/all.loc', `model${j}=model_${model},${shape}\n`);
             }
         } else if (code === 2) {
             fs.appendFileSync('dump/all.loc', `name=${dat.gjstr()}\n`);
@@ -119,7 +120,8 @@ for (let i = 0; i < count; i++) {
         } else if (code === 18) {
             fs.appendFileSync('dump/all.loc', `blockrange=no\n`);
         } else if (code === 19) {
-            const active = dat.g1();
+            const active = dat.gbool();
+
             fs.appendFileSync('dump/all.loc', `active=${active ? 'yes' : 'no'}\n`);
         } else if (code === 21) {
             fs.appendFileSync('dump/all.loc', `hillskew=yes\n`);
@@ -130,7 +132,7 @@ for (let i = 0; i < count; i++) {
         } else if (code === 24) {
             fs.appendFileSync('dump/all.loc', `anim=seq_${dat.g2()}\n`);
         } else if (code === 25) {
-            fs.appendFileSync('dump/all.loc', `disposeAlpha=yes\n`);
+            fs.appendFileSync('dump/all.loc', `alpha=yes\n`);
         } else if (code === 28) {
             fs.appendFileSync('dump/all.loc', `walloff=${dat.g1()}\n`);
         } else if (code === 29) {
@@ -169,6 +171,8 @@ for (let i = 0; i < count; i++) {
             fs.appendFileSync('dump/all.loc', `zoff=${dat.g2s()}\n`);
         } else if (code === 73) {
             fs.appendFileSync('dump/all.loc', `forcedecor=yes\n`);
+        } else {
+            throw new Error(`Unrecognized loc config code: ${code}`);
         }
     }
 }

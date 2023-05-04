@@ -1,6 +1,8 @@
 import fs from 'fs';
 import Jagfile from '#io/Jagfile.js';
 
+console.log('Unpacking obj.dat...');
+
 const config = Jagfile.fromFile('dump/config');
 const dat = config.read('obj.dat');
 
@@ -11,7 +13,7 @@ const count = dat.g2();
 for (let i = 0; i < count; i++) {
     fs.appendFileSync('dump/obj.order', `obj_${i}=${i}\n`);
 
-    if (i > 1) {
+    if (i > 0) {
         fs.appendFileSync('dump/all.obj', `\n[obj_${i}]\n`);
     } else {
         fs.appendFileSync('dump/all.obj', `[obj_${i}]\n`);
@@ -87,8 +89,8 @@ for (let i = 0; i < count; i++) {
             fs.appendFileSync('dump/all.obj', `certtemplate=obj_${dat.g2()}\n`);
         } else if (code >= 100 && code < 110) {
             fs.appendFileSync('dump/all.obj', `count${(code - 100) + 1}=${dat.g2()},${dat.g2()}\n`);
+        } else {
+            throw new Error(`Unrecognized obj config code: ${code}`);
         }
     }
-
-    fs.appendFileSync('dump/all.obj', '\n');
 }
