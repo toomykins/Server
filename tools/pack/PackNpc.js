@@ -71,9 +71,8 @@ function packConfig(config) {
     let heads = [];
 
     while (offset < config.length) {
-        let line = config[offset].split('=');
-        let key = line[0];
-        let value = line[1];
+        let key = config[offset].substring(0, config[offset].indexOf('='));
+        let value = config[offset].substring(config[offset].indexOf('=') + 1);
 
         if (key === 'name') {
             name = value;

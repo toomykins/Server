@@ -69,9 +69,8 @@ function packConfig(config) {
     let name = '';
 
     while (offset < config.length) {
-        let line = config[offset].split('=');
-        let key = line[0];
-        let value = line[1];
+        let key = config[offset].substring(0, config[offset].indexOf('='));
+        let value = config[offset].substring(config[offset].indexOf('=') + 1);
 
         if (key === 'name') {
             name = value;
@@ -175,8 +174,6 @@ function packConfig(config) {
             dat.p1(100 + index);
             dat.p2(countobj);
             dat.p2(countco);
-        } else {
-            console.log(`Unrecognized obj config key ${key} in ${configName}`);
         }
 
         offset++;
