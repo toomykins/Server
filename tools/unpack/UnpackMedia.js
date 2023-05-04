@@ -1,20 +1,27 @@
 import fs from 'fs';
 import Jagfile from '#io/Jagfile.js';
+import Pix from './Pix.js';
 
 console.log('Unpacking media...');
 
 const jag = Jagfile.fromFile('dump/media');
 
-if (!fs.existsSync('dump/media.raw')) {
-    fs.mkdirSync('dump/media.raw', { recursive: true });
-}
-
 for (let file of jag.files) {
-    let name = file.name;
-    if (!name) {
-        console.log('No known name for file', file.hashName);
+    if (file.name === 'index.dat') {
         continue;
     }
 
-    jag.read(name).toFile('dump/media.raw/' + name);
+    let name = file.name.substring(0, file.name.length - '.dat'.length);
+    let count = Pix.count(jag, name);
+
+    if (count > 1) {
+        for (let i = 0; i < count; i++) {
+            let sprite = new Pix(jag, name, i);
+            fs.mkdirSync(`data/src/sprites/media/${name}`, { recursive: true });
+            fs.writeFileSync(`data/src/sprites/media/${name}/${i}.png`, await sprite.toPng());
+        }
+    } else {
+        let sprite = new Pix(jag, name);
+        fs.writeFileSync(`data/src/sprites/media/${name}.png`, await sprite.toPng());
+    }
 }
