@@ -18,7 +18,10 @@ for (let file of jag.files) {
         for (let i = 0; i < count; i++) {
             let sprite = new Pix(jag, name, i);
             fs.mkdirSync(`data/src/sprites/media/${name}`, { recursive: true });
-            fs.writeFileSync(`data/src/sprites/media/${name}/${i}.png`, await sprite.toPng());
+            let png = await sprite.toPng();
+            if (png) {
+                fs.writeFileSync(`data/src/sprites/media/${name}/${i}.png`, await sprite.toPng());
+            }
         }
     } else {
         let sprite = new Pix(jag, name);

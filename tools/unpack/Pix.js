@@ -19,6 +19,10 @@ export default class Pix {
 
         index.pos = data.g2();
 
+        if (index.available <= 0 || data.available <= 0) {
+            return;
+        }
+
         index.g2();
         index.g2();
 
@@ -28,7 +32,7 @@ export default class Pix {
         }
 
         let count = 0;
-        while (index.pos < index.length && data.available > 0) {
+        while (index.available > 0 && data.available > 0) {
             index.pos += 2; // cropX, cropY
             data.pos += index.g2() * index.g2(); // width * height
             index.pos += 1; // pixelOrder
@@ -44,6 +48,10 @@ export default class Pix {
 
         index.pos = data.g2();
 
+        if (index.available <= 0 || data.available <= 0) {
+            return;
+        }
+
         this.cropW = index.g2();
         this.cropH = index.g2();
 
@@ -57,6 +65,10 @@ export default class Pix {
         }
 
         for (let i = 0; i < id; i++) {
+            if (index.available <= 0 || data.available <= 0) {
+                return;
+            }
+
             index.pos += 2; // cropX, cropY
             data.pos += index.g2() * index.g2(); // width * height
             index.pos += 1; // pixelOrder
@@ -82,12 +94,19 @@ export default class Pix {
     }
 
     async toPng() {
+        if (!this.pixels.length) {
+            return null;
+        }
+
         let image = new Jimp(this.width, this.height, 0x00000000);
 
+        let hasColor = false;
         for (let i = 0; i < this.width * this.height; i++) {
             let color = this.palette[this.pixels[i]];
 
             if (color !== 0) {
+                hasColor = true;
+
                 // make opaque
                 color <<= 8;
                 color |= 0xFF;
@@ -95,6 +114,10 @@ export default class Pix {
 
             color >>>= 0;
             image.setPixelColor(color, i % this.width, Math.floor(i / this.width));
+        }
+
+        if (!hasColor) {
+            return null;
         }
 
         return image.getBufferAsync(Jimp.MIME_PNG);
