@@ -183,8 +183,8 @@ function packConfig(config) {
             let parts = models[i].split(',');
             dat.p2(modelOrder[parts[0]]);
 
-            // for now, we read the model shape as a constant...
-            // it should actually be inferred by the model files under that name.
+            // for now, we read the model shape as a constant... and I don't want to search for constants yet.
+            // it should really be inferred by the model files under that name, a single model= line can create multiple entries
             let shape = 0;
             switch (parts[1]) {
                 case '^wall_straight':
