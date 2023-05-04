@@ -1,8 +1,8 @@
 import World from '#engine/World.js';
 import ClientWrapper from '#network/ClientWrapper.js';
 import { crcTable } from '#util/GlobalCache.js';
-import { IsaacRandom } from '#util/IsaacRandom.js';
-import Packet from '#util/Packet.js';
+import { IsaacRandom } from '#io/Isaac.js';
+import Packet from '#io/Packet.js';
 import axios from 'axios';
 
 class Login {

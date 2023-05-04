@@ -1,4 +1,4 @@
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 
 export default class SequenceBase {
     static instances = [];

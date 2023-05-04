@@ -3,7 +3,7 @@ import fs from 'fs';
 
 import bz2 from 'bz2';
 
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 
 export function decompressBz2(data, prepend = true) {
     if (data.data) {

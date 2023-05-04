@@ -3,7 +3,7 @@ import { WebSocketServer } from 'ws';
 import Login from '#engine/Login.js';
 import World from '#engine/World.js';
 
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import ClientWrapper from '#network/ClientWrapper.js';
 
 // TODO: keepalive

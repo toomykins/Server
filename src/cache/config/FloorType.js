@@ -1,4 +1,4 @@
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import Constants from './Constants.js';
 
 export default class FloorType {

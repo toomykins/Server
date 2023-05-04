@@ -1,5 +1,5 @@
 import SequenceBase from '#cache/SequenceBase.js';
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 
 export default class SequenceFrame {
     static instances = [];

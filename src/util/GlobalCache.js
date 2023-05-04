@@ -1,4 +1,4 @@
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 
 let crcTable = new Packet(9 * 4);
 

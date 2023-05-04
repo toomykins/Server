@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import fs from 'fs';
 
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import { fromBase37, toBase37 } from '#util/Base37.js';
 import { Skills, getExpByLevel, getLevelByExp } from '#util/Experience.js';
 import { Position } from '#util/Position.js';

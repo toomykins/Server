@@ -1,4 +1,4 @@
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import Constants from './Constants.js';
 import PackOrder from './PackOrder.js';
 import SequenceType from './SequenceType.js';

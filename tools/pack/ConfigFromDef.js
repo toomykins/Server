@@ -1,5 +1,5 @@
 import fs from 'fs';
-import Jagfile from '#cache/Jagfile.js';
+import Jagfile from '#io/Jagfile.js';
 import FloorType from '#cache/config/FloorType.js';
 import IdentityKitType from '#cache/config/IdentityKitType.js';
 import LocationType from '#cache/config/LocationType.js';

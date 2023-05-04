@@ -1,7 +1,7 @@
 import { Player } from '#engine/Player.js';
 import World from '#engine/World.js';
 import { ServerProt, ServerProtOpcodeFromID } from '#enum/ServerProt.js';
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import { Position } from '#util/Position.js';
 
 export default class PlayerInfo {

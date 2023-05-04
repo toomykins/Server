@@ -1,4 +1,4 @@
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import _ from 'lodash';
 import Constants from './Constants.js';
 import PackOrder from './PackOrder.js';

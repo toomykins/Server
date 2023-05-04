@@ -1,6 +1,6 @@
 import fs from 'fs';
-import Packet from '#util/Packet.js';
-import { compressManyBz2 } from '#util/Bzip2.js';
+import Packet from '#io/Packet.js';
+import { compressManyBz2 } from '#io/Bzip2.js';
 
 function encode(map) {
     let locs = {};

@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import Script from '#engine/Script.js';
 
 // maintains a list of scripts (id <-> name)

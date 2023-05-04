@@ -1,5 +1,5 @@
 import Constants from '#cache/config/Constants.js';
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import PackOrder from './PackOrder.js';
 import SequenceType from './SequenceType.js';
 

@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import { Position } from '#util/Position.js';
 
 import { ServerProt, ServerProtOpcodeFromID } from '#enum/ServerProt.js';

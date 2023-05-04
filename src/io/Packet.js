@@ -1,7 +1,7 @@
 import fs from 'fs';
 import child_process from 'child_process';
 import zlib from 'zlib';
-import { decompressBz2 } from '#util/Bzip2.js';
+import { decompressBz2 } from '#io/Bzip2.js';
 import forge from 'node-forge';
 
 const priv = forge.pki.privateKeyFromPem(fs.readFileSync('data/config/private.pem'));

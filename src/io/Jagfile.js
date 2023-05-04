@@ -1,5 +1,5 @@
 import Hashes from '#enum/Hashes.js';
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 
 function genHash(name) {
     let hash = new DataView(new ArrayBuffer(4));

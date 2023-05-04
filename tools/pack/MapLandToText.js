@@ -1,4 +1,4 @@
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import fs from 'fs';
 
 fs.mkdirSync('data/src/maps', { recursive: true });

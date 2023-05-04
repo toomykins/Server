@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 import CollisionMap from '#cache/CollisionMap.js';
-import Packet from '#util/Packet.js';
+import Packet from '#io/Packet.js';
 import LocationType from '#cache/config/LocationType.js';
 
 class SceneBuilder {

@@ -17,7 +17,7 @@ import SceneBuilder from '#cache/SceneBuilder.js';
 import Server from '#network/Server.js';
 import WSServer from '#network/WSServer.js';
 import { crcTable, loadCrcTable } from '#util/GlobalCache.js';
-import Jagfile from '#cache/Jagfile.js';
+import Jagfile from '#io/Jagfile.js';
 
 import Constants from '#cache/config/Constants.js';
 import PackOrder from '#cache/config/PackOrder.js';

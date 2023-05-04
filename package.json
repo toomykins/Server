@@ -19,6 +19,7 @@
     "#engine/*": "./src/engine/*",
     "#enum/*": "./src/enum/*",
     "#formats/*": "./src/formats/*",
+    "#io/*": "./src/io/*",
     "#network/*": "./src/network/*",
     "#scripts/*": "./src/scripts/*",
     "#util/*": "./src/util/*"
