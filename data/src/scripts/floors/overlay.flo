@@ -1,322 +1,293 @@
 [cliff]
-name=cliff
-colour=0xAAAAAA
+opcode3=yes
+rgb=0xaaaaaa
 
 [cliff2]
-name=cliff2
-colour=0x444444
+opcode3=yes
+rgb=0x444444
 
 [cliff3]
-name=cliff3
-colour=0x666666
+opcode3=yes
+rgb=0x666666
 
 [cliff4]
-name=cliff4
-colour=0x888888
+opcode3=yes
+rgb=0x888888
 
 [woodenfloor]
-name=woodenfloor
-texture=^planks
+opcode3=yes
+texture=3
 
 [water]
-name=water
-texture=^water
+opcode3=yes
+texture=1
 
 [gungywater]
-name=gungywater
-texture=^gungywater
+opcode3=yes
+texture=25
 
 [greyroof]
-name=greyroof
-colour=0x5B5B5B
+opcode3=yes
+rgb=0x5b5b5b
 
 [desertroof]
-name=desertroof
-colour=0xFFFFF5
+opcode3=yes
+rgb=0xfffff5
 
 [road]
-name=road
-colour=0x505050
+opcode3=yes
+rgb=0x505050
 
 [darkstone]
-name=darkstone
-colour=0x222222
+opcode3=yes
+rgb=0x222222
 
 [pebblefloor]
-name=pebblefloor
-texture=^pebblefloor
+opcode3=yes
+texture=46
 
 [redfloor]
-name=redfloor
-colour=0x993333
+opcode3=yes
+rgb=0x993333
 
 [mudfloor]
-name=mudfloor
-colour=0x3D2B0B
+opcode3=yes
+rgb=0x3d2b0b
 
 [mudfloor_bump]
-name=mudfloor_bump
-colour=0x3D2B0B
+opcode3=yes
+rgb=0x3d2b0b
 
 [mudfloor2]
-name=mudfloor2
-colour=0x663300
+opcode3=yes
+rgb=0x663300
 
 [mudfloor2_bump]
-name=mudfloor2_bump
-colour=0x663300
+opcode3=yes
+rgb=0x663300
 
 [bluefloor]
-name=bluefloor
-colour=0x0000CC
+opcode3=yes
+rgb=0x0000cc
 
 [lava]
-name=lava
-texture=^lava
+opcode3=yes
+texture=31
 
 [marble]
-name=marble
-texture=^marble
+opcode3=yes
+texture=15
 
 [sandfloor]
-name=sandfloor
-colour=0x996600
+opcode3=yes
+rgb=0x996600
 
 [l_brownfloor1]
-name=l_brownfloor1
-colour=0x6D5B2B
+opcode3=yes
+rgb=0x6d5b2b
 
 [l_brownfloor1_bump]
-name=l_brownfloor1_bump
-colour=0x6D5B2B
+opcode3=yes
+rgb=0x6d5b2b
 
 [cliff_textured]
-name=cliff_textured
-texture=^rockwall
+opcode3=yes
+texture=47
 
 [sand_cliff]
-name=sand_cliff
-colour=0xCBBA76
+opcode3=yes
+rgb=0xcbba76
 
 [sand_rock]
-name=sand_rock
-colour=0x827944
+opcode3=yes
+rgb=0x827944
 
 [oldbrick]
-name=oldbrick
-texture=^mossybricks
+opcode3=yes
+texture=23
 
 [brick]
-name=brick
-texture=^wall
+opcode3=yes
+texture=2
 
 [grass]
-name=grass
-colour=0x35720A
+opcode3=yes
+rgb=0x35720a
 
 [ice_overlay]
-name=ice_overlay
-colour=0xEEEEEE
+opcode3=yes
+rgb=0xeeeeee
 
 [upass_floor]
-name=upass_floor
-colour=0x654D0B
+opcode3=yes
+rgb=0x654d0b
 
 [stone_texture]
-name=stone_texture
-texture=^mossy
+opcode3=yes
+texture=11
 
 [ice_overlay_blue]
-name=ice_overlay_blue
-colour=0xC9DDF7
+opcode3=yes
+rgb=0xc9ddf7
 
 [road_bridge]
-name=road_bridge
-colour=0x505050
+opcode3=yes
+rgb=0x505050
 
 [woodenfloor_bridge]
-name=woodenfloor_bridge
-texture=^planks
+opcode3=yes
+texture=3
 
 [mud5_overlay]
-name=mud5_overlay
-colour=0x664411
+opcode3=yes
+rgb=0x664411
 
 [black]
-name=black
-colour=0x000000
+opcode3=yes
+rgb=0x000000
 
 [lightblue]
-name=lightblue
-colour=0x557799
+opcode3=yes
+rgb=0x557799
 
 [water_fountain]
-name=water_fountain
-texture=^fountain
+opcode3=yes
+texture=17
 
 [bluefloor2]
-name=bluefloor2
-colour=0x4749A3
+opcode3=yes
+rgb=0x4749a3
 
 [waterfallblue]
-name=waterfallblue
-colour=0x3F6181
+opcode3=yes
+rgb=0x3f6181
 
 [invisible]
-name=invisible
-colour=0xFF00FF
+opcode3=yes
 occlude=no
+rgb=0xff00ff
 
 [invisible_occ]
-name=invisible_occ
-colour=0xFF00FF
+opcode3=yes
+rgb=0xff00ff
 
 [road_no_occlude]
-name=road_no_occlude
-colour=0x505050
+opcode3=yes
+rgb=0x505050
 occlude=no
 
 [woodenfloor_no_occlude]
-name=woodenfloor_no_occlude
-texture=^planks
+opcode3=yes
+texture=3
 occlude=no
 
 [oldbrick_no_occlude]
-name=oldbrick_no_occlude
-texture=^mossybricks
+opcode3=yes
+texture=23
 occlude=no
 
 [brick_no_occlude]
-name=brick_no_occlude
-texture=^wall
+opcode3=yes
+texture=2
 occlude=no
 
 [grassland]
-name=grassland
-colour=0x35720A
+rgb=0x35720a
 
 [muddygrass]
-name=muddygrass
-colour=0x58680B
+rgb=0x58680b
 
 [vmuddygrass]
-name=vmuddygrass
-colour=0x78680B
+rgb=0x78680b
 
 [lightgrass]
-name=lightgrass
-colour=0x6CAC10
+rgb=0x6cac10
 
 [sandygrass]
-name=sandygrass
-colour=0x819531
+rgb=0x819531
 
 [swamp]
-name=swamp
-colour=0x55520A
+rgb=0x55520a
 
 [swamp2]
-name=swamp2
-colour=0x125841
+rgb=0x125841
 
 [lightrock]
-name=lightrock
-colour=0x767676
+rgb=0x767676
 
 [darkrock]
-name=darkrock
-colour=0x4D4D4D
+rgb=0x4d4d4d
 
 [verydarkrock]
-name=verydarkrock
-colour=0x2E2E2E
+rgb=0x2e2e2e
 
 [ice]
-name=ice
-colour=0xEEEEEE
+rgb=0xeeeeee
 occlude=no
 
 [blueice]
-name=blueice
-colour=0xD1D6E7
+rgb=0xd1d6e7
 
 [greenice]
-name=greenice
-colour=0xD1E7D6
+rgb=0xd1e7d6
 
 [desert1]
-name=desert1
-colour=0xADA055
+rgb=0xada055
 
 [desert2]
-name=desert2
-colour=0xD0C074
+rgb=0xd0c074
 
 [mud1]
-name=mud1
-colour=0x3D2B0B
+rgb=0x3d2b0b
 
 [mud2]
-name=mud2
-colour=0x644E1E
+rgb=0x644e1e
 
 [mud3]
-name=mud3
-colour=0x654D0B
+rgb=0x654d0b
 
 [mud4]
-name=mud4
-colour=0x663300
+rgb=0x663300
 
 [mud5]
-name=mud5
-colour=0x664411
+rgb=0x664411
 occlude=no
 
 [sand]
-name=sand
-colour=0xCBBA76
+rgb=0xcbba76
 
 [mud2_skew]
-name=mud2_skew
-colour=0x644E1E
+rgb=0x644e1e
 occlude=no
 
 [mud3_skew]
-name=mud3_skew
-colour=0x654D0B
+rgb=0x654d0b
 occlude=no
 
 [mud4_skew]
-name=mud4_skew
-colour=0x663300
+rgb=0x663300
 occlude=no
 
 [black_rock]
-name=black_rock
-colour=0x030303
+rgb=0x30303
 occlude=no
 
 [dullblue]
-name=dullblue
-colour=0x557799
+rgb=0x557799
 
 [purple_pink]
-name=purple_pink
-colour=0x995566
+rgb=0x995566
 
 [lightblue_underlay]
-name=lightblue_underlay
-colour=0x557799
+rgb=0x557799
 
 [desert_shadow]
-name=desert_shadow
-colour=0xC4AC4E
+opcode3=yes
+rgb=0xc4ac4e
 
 [duel_arena]
-name=duel_arena
-colour=0xB79767
+opcode3=yes
+rgb=0xb79767
 
 [duelarena]
-name=duelarena
-colour=0xD9BB93
+rgb=0xd9bb93

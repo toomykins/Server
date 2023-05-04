@@ -76,13 +76,13 @@ function packConfig(config) {
             dat.p1(3);
         } else if (key === 'occlude' && value === 'no') {
             dat.p1(5);
-        } else if (key === 'editname') {
-            dat.p1(6);
-            dat.pjstr(value);
         }
 
         offset++;
     }
+
+    dat.p1(6);
+    dat.pjstr(configName);
 
     dat.p1(0);
     idx.p2(dat.pos - start);
