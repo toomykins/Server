@@ -6,8 +6,7 @@ node_modules/
 
 /public/client/
 
-/data/cache/config
-/data/cache/interface
+/data/pack/client/
 
 /data/maps/
 /data/scripts/
