@@ -82,13 +82,13 @@ for (let i = 0; i < count; i++) {
         } else if (code === 93) {
             fs.appendFileSync('dump/all.obj', `womanhead2=model_${dat.g2()}\n`);
         } else if (code === 95) {
-            fs.appendFileSync('dump/all.obj', `zan2d=${dat.g2()}\n`);
+            fs.appendFileSync('dump/all.obj', `2dzan=${dat.g2()}\n`);
         } else if (code === 97) {
             fs.appendFileSync('dump/all.obj', `certlink=obj_${dat.g2()}\n`);
         } else if (code === 98) {
             fs.appendFileSync('dump/all.obj', `certtemplate=obj_${dat.g2()}\n`);
         } else if (code >= 100 && code < 110) {
-            fs.appendFileSync('dump/all.obj', `count${(code - 100) + 1}=${dat.g2()},${dat.g2()}\n`);
+            fs.appendFileSync('dump/all.obj', `count${(code - 100) + 1}=obj_${dat.g2()},${dat.g2()}\n`);
         } else {
             throw new Error(`Unrecognized obj config code: ${code}`);
         }

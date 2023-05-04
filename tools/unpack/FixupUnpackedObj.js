@@ -9,7 +9,7 @@ function findConfigFiles(srcPath) {
 
         if (stat.isDirectory()) {
             findConfigFiles(`${srcPath}/${files[i]}`);
-        } else if (files[i].endsWith('.npc')) {
+        } else if (files[i].endsWith('.obj')) {
             configFiles.push(`${srcPath}/${files[i]}`);
         }
     }
@@ -35,16 +35,16 @@ function loadPackOrder(srcPath) {
     return packOrder;
 }
 
-let npcOrder = loadPackOrder('data/pack/npc.order');
+let objOrder = loadPackOrder('data/pack/obj.order');
 
 // read through all files
-let npcConfigs = [];
+let objConfigs = [];
 for (let i = 0; i < configFiles.length; i++) {
     let src = fs.readFileSync(configFiles[i], 'utf8').replaceAll('\r\n', '\n').split('\n');
     let offset = 0;
 
-    let npc = null;
-    let npcConfig = [];
+    let obj = null;
+    let objConfig = [];
 
     let comment = false;
     while (offset < src.length) {
@@ -64,54 +64,47 @@ for (let i = 0; i < configFiles.length; i++) {
         }
 
         if (line.startsWith('[')) {
-            if (npc) {
-                npcConfigs[npcOrder[npc]] = npcConfig;
+            if (obj) {
+                objConfigs[objOrder[obj]] = objConfig;
             }
 
-            npc = line.substring(1, line.length - 1);
-            npcConfig = [];
+            obj = line.substring(1, line.length - 1);
+            objConfig = [];
         }
 
-        npcConfig.push(line);
+        objConfig.push(line);
         offset++;
     }
 
-    if (npc) {
-        npcConfigs[npcOrder[npc]] = npcConfig;
+    if (obj) {
+        objConfigs[objOrder[obj]] = objConfig;
     }
 }
 
 // sort in ascending pack order and pack everything
-for (let i = 0; i < npcConfigs.length; i++) {
-    let config = npcConfigs[i];
+for (let i = 0; i < objConfigs.length; i++) {
+    let config = objConfigs[i];
     let nameIndex = config.findIndex(x => x.startsWith('name'));
     let descIndex = config.findIndex(x => x.startsWith('desc'));
 
-    // if (nameIndex !== -1 && descIndex === -1) {
+    if (nameIndex !== -1) {
         // place name after config
         let temp = config[1];
         config[1] = config[nameIndex];
         config.splice(nameIndex, 1);
         config.splice(2, 0, temp);
-    // } else if (nameIndex !== -1 && descIndex !== -1) {
-    //     // place name before desc
-    //     if (nameIndex > descIndex) {
-    //         let name = config[nameIndex];
-    //         config.splice(nameIndex, 1);
-    //         config.splice(descIndex, 0, name);
-    //     }
-    // }
+    }
 }
 
-fs.writeFileSync('dump/all.npc', '');
-for (let i = 0; i < npcConfigs.length; i++) {
-    let config = npcConfigs[i];
+fs.writeFileSync('dump/all.obj', '');
+for (let i = 0; i < objConfigs.length; i++) {
+    let config = objConfigs[i];
 
     if (i > 0) {
-        fs.appendFileSync('dump/all.npc', '\n');
+        fs.appendFileSync('dump/all.obj', '\n');
     }
 
     for (let j = 0; j < config.length; j++) {
-        fs.appendFileSync('dump/all.npc', `${config[j]}\n`);
+        fs.appendFileSync('dump/all.obj', `${config[j]}\n`);
     }
 }

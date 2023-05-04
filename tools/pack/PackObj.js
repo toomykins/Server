@@ -10,7 +10,7 @@ function findConfigFiles(srcPath) {
 
         if (stat.isDirectory()) {
             findConfigFiles(`${srcPath}/${files[i]}`);
-        } else if (files[i].endsWith('.npc')) {
+        } else if (files[i].endsWith('.obj')) {
             configFiles.push(`${srcPath}/${files[i]}`);
         }
     }
@@ -38,13 +38,13 @@ function loadPackOrder(srcPath) {
 
 let modelOrder = loadPackOrder('data/pack/model.order');
 let seqOrder = loadPackOrder('data/pack/seq.order');
-let npcOrder = loadPackOrder('data/pack/npc.order');
+let objOrder = loadPackOrder('data/pack/obj.order');
 
 let dat = new Packet();
 let idx = new Packet();
 
-dat.p2(Object.keys(npcOrder).length);
-idx.p2(Object.keys(npcOrder).length);
+dat.p2(Object.keys(objOrder).length);
+idx.p2(Object.keys(objOrder).length);
 
 // pack configs into dat file
 function packConfig(config) {
@@ -55,9 +55,9 @@ function packConfig(config) {
 
     let configName = config[0].substring(1, config[0].length - 1);
 
-    let id = npcOrder[configName];
+    let id = objOrder[configName];
     if (typeof id === 'undefined') {
-        console.log(`Unknown NPC: ${configName}`);
+        console.log(`Unknown obj: ${configName}`);
         return;
     }
 
@@ -67,8 +67,6 @@ function packConfig(config) {
     let recols = [];
     let recold = [];
     let name = '';
-    let models = [];
-    let heads = [];
 
     while (offset < config.length) {
         let line = config[offset].split('=');
@@ -77,72 +75,108 @@ function packConfig(config) {
 
         if (key === 'name') {
             name = value;
-        } else if (key.startsWith('model')) {
-            let index = parseInt(key.substring('model'.length)) - 1;
-            models[index] = modelOrder[value];
-        } else if (key.startsWith('head')) {
-            let index = parseInt(key.substring('head'.length)) - 1;
-            heads[index] = modelOrder[value];
         } else if (key.startsWith('recol') && key.endsWith('s')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
             recols[index] = parseInt(value);
         } else if (key.startsWith('recol') && key.endsWith('d')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
             recold[index] = parseInt(value);
+        } else if (key === 'model') {
+            dat.p1(1);
+            dat.p2(modelOrder[value]);
         } else if (key === 'desc') {
             dat.p1(3);
             dat.pjstr(value);
-        } else if (key === 'size') {
+        } else if (key === '2dzoom') {
+            dat.p1(4);
+            dat.p2(parseInt(value));
+        } else if (key === '2dxan') {
+            dat.p1(5);
+            dat.p2(parseInt(value));
+        } else if (key === '2dyan') {
+            dat.p1(6);
+            dat.p2(parseInt(value));
+        } else if (key === '2dxof') {
+            dat.p1(7);
+            dat.p2(parseInt(value));
+        } else if (key === '2dyof') {
+            dat.p1(8);
+            dat.p2(parseInt(value));
+        } else if (key === 'code9' && value === 'yes') {
+            dat.p1(9);
+        } else if (key === 'code10') {
+            dat.p1(10);
+            dat.p2(seqOrder[value]);
+        } else if (key === 'stackable' && value === 'yes') {
+            dat.p1(11);
+        } else if (key === 'cost') {
             dat.p1(12);
-            dat.p1(parseInt(value));
-        } else if (key === 'readyanim') {
-            dat.p1(13);
-            dat.p2(seqOrder[value]);
-        } else if (key === 'walkanim' && !config[offset + 1].startsWith('walkanim_b')) {
-            // save some space if only one walkanim is defined
-            dat.p1(14);
-            dat.p2(seqOrder[value]);
-        } else if (key === 'alpha' && value === 'yes') {
+            dat.p4(parseInt(value));
+        } else if (key === 'members' && value === 'yes') {
             dat.p1(16);
-        } else if (key === 'walkanim_l') {
-            dat.p1(17);
-
-            // this relies on walkanims to be in a very very specific order!
-            let walkanim = config[offset - 3].split('=')[1];
-            dat.p2(seqOrder[walkanim]);
-
-            let walkanim_b = config[offset - 2].split('=')[1];
-            dat.p2(seqOrder[walkanim_b]);
-
-            let walkanim_r = config[offset - 1].split('=')[1];
-            dat.p2(seqOrder[walkanim_r]);
-
-            let walkanim_l = value;
-            dat.p2(seqOrder[walkanim_l]);
+        } else if (key === 'manwear') {
+            let parts = value.split(',');
+            dat.p1(23);
+            dat.p2(modelOrder[parts[0]]);
+            dat.p1(parseInt(parts[1]));
+        } else if (key === 'manwear2') {
+            dat.p1(24);
+            dat.p2(modelOrder[value]);
+        } else if (key === 'womanwear') {
+            let parts = value.split(',');
+            dat.p1(25);
+            dat.p2(modelOrder[parts[0]]);
+            dat.p1(parseInt(parts[1]));
+        } else if (key === 'womanwear2') {
+            dat.p1(26);
+            dat.p2(modelOrder[value]);
         } else if (key.startsWith('op')) {
             let index = parseInt(key.substring('op'.length)) - 1;
             dat.p1(30 + index);
             dat.pjstr(value);
-        } else if (key.startsWith('code90')) {
+        } else if (key.startsWith('iop')) {
+            let index = parseInt(key.substring('iop'.length)) - 1;
+            dat.p1(35 + index);
+            dat.pjstr(value);
+        } else if (key === 'manwear3') {
+            dat.p1(78);
+            dat.p2(modelOrder[value]);
+        } else if (key === 'womanwear3') {
+            dat.p1(79);
+            dat.p2(modelOrder[value]);
+        } else if (key === 'manhead') {
             dat.p1(90);
-            dat.p2(parseInt(value));
-        } else if (key.startsWith('code91')) {
+            dat.p2(modelOrder[value]);
+        } else if (key === 'womanhead') {
             dat.p1(91);
-            dat.p2(parseInt(value));
-        } else if (key.startsWith('code92')) {
+            dat.p2(modelOrder[value]);
+        } else if (key === 'manhead2') {
             dat.p1(92);
-            dat.p2(parseInt(value));
-        } else if (key.startsWith('visonmap') && value === 'no') {
+            dat.p2(modelOrder[value]);
+        } else if (key === 'womanhead2') {
             dat.p1(93);
-        } else if (key.startsWith('vislevel')) {
+            dat.p2(modelOrder[value]);
+        } else if (key === '2dzan') {
             dat.p1(95);
             dat.p2(parseInt(value));
-        } else if (key.startsWith('resizeh')) {
+        } else if (key === 'certlink') {
             dat.p1(97);
-            dat.p2(parseInt(value));
-        } else if (key.startsWith('resizev')) {
+            dat.p2(objOrder[value]);
+        } else if (key === 'certtemplate') {
             dat.p1(98);
-            dat.p2(parseInt(value));
+            dat.p2(objOrder[value]);
+        } else if (key.startsWith('count')) {
+            let index = parseInt(key.substring('count'.length)) - 1;
+
+            let parts = value.split(',');
+            let countobj = objOrder[parts[0]];
+            let countco = parseInt(parts[1]);
+
+            dat.p1(100 + index);
+            dat.p2(countobj);
+            dat.p2(countco);
+        } else {
+            console.log(`Unrecognized obj config key ${key} in ${configName}`);
         }
 
         offset++;
@@ -163,36 +197,18 @@ function packConfig(config) {
         dat.pjstr(name);
     }
 
-    if (models.length) {
-        dat.p1(1);
-        dat.p1(models.length);
-
-        for (let i = 0; i < models.length; i++) {
-            dat.p2(models[i]);
-        }
-    }
-
-    if (heads.length) {
-        dat.p1(60);
-        dat.p1(heads.length);
-
-        for (let i = 0; i < heads.length; i++) {
-            dat.p2(heads[i]);
-        }
-    }
-
     dat.p1(0);
     idx.p2(dat.pos - start);
 }
 
 // read through all files
-let npcConfigs = [];
+let objConfigs = [];
 for (let i = 0; i < configFiles.length; i++) {
     let src = fs.readFileSync(configFiles[i], 'utf8').replaceAll('\r\n', '\n').split('\n');
     let offset = 0;
 
-    let npc = null;
-    let npcConfig = [];
+    let obj = null;
+    let objConfig = [];
 
     let comment = false;
     while (offset < src.length) {
@@ -212,28 +228,28 @@ for (let i = 0; i < configFiles.length; i++) {
         }
 
         if (line.startsWith('[')) {
-            if (npc) {
-                npcConfigs[npcOrder[npc]] = npcConfig;
+            if (obj) {
+                objConfigs[objOrder[obj]] = objConfig;
             }
 
-            npc = line.substring(1, line.length - 1);
-            npcConfig = [];
+            obj = line.substring(1, line.length - 1);
+            objConfig = [];
         }
 
-        npcConfig.push(line);
+        objConfig.push(line);
         offset++;
     }
 
-    if (npc) {
-        npcConfigs[npcOrder[npc]] = npcConfig;
+    if (obj) {
+        objConfigs[objOrder[obj]] = objConfig;
     }
 }
 
 // sort in ascending pack order and pack everything
-for (let i = 0; i < npcConfigs.length; i++) {
-    let config = npcConfigs[i];
+for (let i = 0; i < objConfigs.length; i++) {
+    let config = objConfigs[i];
     packConfig(config);
 }
 
-dat.toFile('data/pack/client/config/npc.dat');
-idx.toFile('data/pack/client/config/npc.idx');
+dat.toFile('data/pack/client/config/obj.dat');
+idx.toFile('data/pack/client/config/obj.idx');
