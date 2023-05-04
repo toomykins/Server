@@ -1,3 +1,4 @@
+import path from 'path';
 import fs from 'fs';
 import child_process from 'child_process';
 import zlib from 'zlib';
@@ -37,8 +38,8 @@ export default class Packet {
         }
     }
 
-    static fromFile(path) {
-        return new Packet(fs.readFileSync(path));
+    static fromFile(src) {
+        return new Packet(fs.readFileSync(src));
     }
 
     static crc32(src, length = src.length, offset = 0) {
@@ -60,14 +61,14 @@ export default class Packet {
             src = src.data;
         }
 
-        let path = `dump/${Date.now()}.tmp`;
+        let dest = `dump/${Date.now()}.tmp`;
 
-        fs.writeFileSync(path, src.slice(offset, offset + length));
-        child_process.execSync(`java -jar JagCompress.jar bz2 ${path}`);
-        fs.unlinkSync(path);
+        fs.writeFileSync(dest, src.slice(offset, offset + length));
+        child_process.execSync(`java -jar JagCompress.jar bz2 ${dest}`);
+        fs.unlinkSync(dest);
     
-        let compressed = Packet.fromFile(path + '.bz2');
-        fs.unlinkSync(path + '.bz2');
+        let compressed = Packet.fromFile(dest + '.bz2');
+        fs.unlinkSync(dest + '.bz2');
         if (prependLength) {
             // replace BZip2 header
             compressed.p4(src.length);
@@ -93,14 +94,14 @@ export default class Packet {
             src = src.data;
         }
 
-        let path = `dump/${Date.now()}.tmp`;
+        let dest = `dump/${Date.now()}.tmp`;
 
-        fs.writeFileSync(path, src.slice(offset, offset + length));
-        child_process.execSync(`java -jar JagCompress.jar gz ${path}`);
-        fs.unlinkSync(path);
+        fs.writeFileSync(dest, src.slice(offset, offset + length));
+        child_process.execSync(`java -jar JagCompress.jar gz ${dest}`);
+        fs.unlinkSync(dest);
 
-        let compressed = Packet.fromFile(path + '.gz');
-        fs.unlinkSync(path + '.gz');
+        let compressed = Packet.fromFile(dest + '.gz');
+        fs.unlinkSync(dest + '.gz');
 
         return compressed;
     }
@@ -151,8 +152,12 @@ export default class Packet {
         }
     }
 
-    toFile(path) {
-        fs.writeFileSync(path, this.gdata(this.length, 0, false));
+    toFile(dest) {
+        if (!fs.existsSync(path.dirname(dest))) {
+            fs.mkdirSync(path.dirname(dest), { recursive: true });
+        }
+
+        fs.writeFileSync(dest, this.gdata(this.length, 0, false));
     }
 
     prepend(src) {

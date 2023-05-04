@@ -3,8 +3,8 @@ import Jagfile from '#io/Jagfile.js';
 
 console.log('Unpacking seq.dat...');
 
-const config = Jagfile.fromFile('dump/config');
-const dat = config.read('seq.dat');
+const jag = Jagfile.fromFile('dump/config');
+const dat = jag.read('seq.dat');
 
 fs.writeFileSync('dump/seq.order', '');
 fs.writeFileSync('dump/all.seq', '');

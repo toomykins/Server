@@ -3,8 +3,8 @@ import Jagfile from '#io/Jagfile.js';
 
 console.log('Unpacking idk.dat...');
 
-const config = Jagfile.fromFile('dump/config');
-const dat = config.read('idk.dat');
+const jag = Jagfile.fromFile('dump/config');
+const dat = jag.read('idk.dat');
 
 fs.writeFileSync('dump/idk.order', '');
 fs.writeFileSync('dump/all.idk', '');

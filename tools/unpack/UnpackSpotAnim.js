@@ -3,8 +3,8 @@ import Jagfile from '#io/Jagfile.js';
 
 console.log('Unpacking spotanim.dat...');
 
-const config = Jagfile.fromFile('dump/config');
-const dat = config.read('spotanim.dat');
+const jag = Jagfile.fromFile('dump/config');
+const dat = jag.read('spotanim.dat');
 
 fs.writeFileSync('dump/spotanim.order', '');
 fs.writeFileSync('dump/all.spotanim', '');

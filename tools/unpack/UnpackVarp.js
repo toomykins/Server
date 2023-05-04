@@ -3,8 +3,8 @@ import Jagfile from '#io/Jagfile.js';
 
 console.log('Unpacking varp.dat...');
 
-const config = Jagfile.fromFile('dump/config');
-const dat = config.read('varp.dat');
+const jag = Jagfile.fromFile('dump/config');
+const dat = jag.read('varp.dat');
 
 fs.writeFileSync('dump/varp.order', '');
 fs.writeFileSync('dump/all.varp', '');

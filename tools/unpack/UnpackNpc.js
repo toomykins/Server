@@ -3,8 +3,8 @@ import Jagfile from '#io/Jagfile.js';
 
 console.log('Unpacking npc.dat...');
 
-const config = Jagfile.fromFile('dump/config');
-const dat = config.read('npc.dat');
+const jag = Jagfile.fromFile('dump/config');
+const dat = jag.read('npc.dat');
 
 fs.writeFileSync('dump/npc.order', '');
 fs.writeFileSync('dump/all.npc', '');

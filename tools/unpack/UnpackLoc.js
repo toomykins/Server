@@ -3,8 +3,8 @@ import Jagfile from '#io/Jagfile.js';
 
 console.log('Unpacking loc.dat...');
 
-const config = Jagfile.fromFile('dump/config');
-const dat = config.read('loc.dat');
+const jag = Jagfile.fromFile('dump/config');
+const dat = jag.read('loc.dat');
 
 fs.writeFileSync('dump/loc.order', '');
 fs.writeFileSync('dump/all.loc', '');

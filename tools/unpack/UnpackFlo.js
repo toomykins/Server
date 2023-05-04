@@ -3,8 +3,8 @@ import Jagfile from '#io/Jagfile.js';
 
 console.log('Unpacking flo.dat...');
 
-const config = Jagfile.fromFile('dump/config');
-const dat = config.read('flo.dat');
+const jag = Jagfile.fromFile('dump/config');
+const dat = jag.read('flo.dat');
 
 fs.writeFileSync('dump/flo.order', '');
 fs.writeFileSync('dump/all.flo', '');
