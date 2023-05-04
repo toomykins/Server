@@ -52,9 +52,11 @@ If you get locked out of the account server (or stuck logged in), you can use lo
 
 ## Scripting
 
-The "yield" keyword is very important. It allows NodeJS to stop executing the script immediately and check the conditions before running again. Generator functions are used to manage/restore the control flow.  
+This system is undergoing a large overhaul currently. It aims to replicate RuneScript based on the information we know from ClientScript, conversations about the limitations, and server behaviors. It currently compiles and runs some basic scripts. The compiler was forked from a newer CS2 compiler that will be open-source soon.
 
-As much as possible is inherited from the leaks on the original system designs.
+Configs are loaded recursively from `data/src/scripts`. Names inside square brackets are exposed to RuneScript.
+
+Config extensions are: `.constant`, `.enum`, `.param`, `.seq`, `.loc`, `.flo`, `.spotanim`, `.obj`, `.npc`, `.idk`, and `.varp`
 
 ## pm2 (optional)
 
