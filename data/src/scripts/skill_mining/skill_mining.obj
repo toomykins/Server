@@ -104,22 +104,6 @@ recol2d=8128
 certlink=obj_444
 certtemplate=obj_799
 
-[obj_446]
-name='perfect' gold ore
-cost=150
-desc=This needs refining.
-model=model_2748
-2dxof=1
-2dyof=15
-2dzoom=1400
-2dyan=1576
-2dxan=368
-members=yes
-recol1s=7062
-recol1d=8128
-recol2s=45
-recol2d=8128
-
 [obj_447]
 name=Mithril ore
 cost=162

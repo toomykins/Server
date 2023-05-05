@@ -1,0 +1,138 @@
+[obj_757]
+name=Book
+desc=The Shield of Arrav by A R Wright.
+iop1=Read
+model=model_2794
+2dzoom=840
+2dyan=152
+2dxan=256
+
+[obj_758]
+name=Key
+desc=The key to get into the Phoenix Gang HQ.
+model=model_2372
+2dxof=-3
+2dyof=5
+2dzoom=700
+2dyan=20
+2dxan=328
+
+[obj_759]
+name=Key
+desc=The key to the Phoenix Gang's weapons store.
+model=model_2372
+2dxof=-3
+2dyof=5
+2dzoom=700
+2dyan=20
+2dxan=328
+
+[obj_760]
+certlink=obj_759
+certtemplate=obj_799
+
+[obj_761]
+name=Scroll
+desc=An intelligence report.
+cost=5
+model=model_2600
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+
+[obj_762]
+certlink=obj_761
+certtemplate=obj_799
+
+[obj_763]
+name=Broken shield
+desc=Half of the Shield of Arrav.
+model=model_2757
+2dxof=18
+2dyof=-29
+2dzoom=1070
+2dyan=172
+2dxan=220
+
+[obj_764]
+certlink=obj_763
+certtemplate=obj_799
+
+[obj_765]
+name=Broken shield
+desc=Half of the Shield of Arrav.
+model=model_2757
+2dxof=-18
+2dzoom=990
+2dyan=1160
+2dxan=192
+
+[obj_766]
+certlink=obj_765
+certtemplate=obj_799
+
+[obj_767]
+name=Phoenix crossbow
+desc=Former property of the Phoenix Gang.
+cost=4
+model=model_2523
+2dxof=-1
+2dzoom=1030
+2dyan=1132
+2dxan=332
+iop2=Wield
+manwear=model_508,0
+womanwear=model_508,6
+recol1s=6798
+recol1d=6806
+
+[obj_768]
+certlink=obj_767
+certtemplate=obj_799
+
+[obj_769]
+name=Certificate
+desc=I can use this to claim a reward from the King.
+model=model_2600
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+
+[obj_770]
+certlink=obj_769
+certtemplate=obj_799
+
+[obj_2366]
+name=Shield left half
+cost=110000
+desc=The left half of a dragon square shield.
+model=model_2359
+2dxof=-5
+2dyof=-12
+2dzoom=1740
+2dyan=204
+2dxan=340
+members=yes
+
+[obj_2367]
+certlink=obj_2366
+certtemplate=obj_799
+
+[obj_2368]
+name=Shield right half
+cost=500000
+desc=The right half of a dragon square shield.
+model=model_2360
+2dxof=-13
+2dzoom=1800
+2dyan=140
+2dxan=392
+members=yes
+
+[obj_2369]
+certlink=obj_2368
+certtemplate=obj_799

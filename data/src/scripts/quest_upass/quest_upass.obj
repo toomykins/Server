@@ -1,0 +1,39 @@
+[obj_1481]
+name=Orb of light
+desc=A magical sphere that glimmers within.
+cost=10
+model=model_3176
+2dzoom=1390
+2dyan=1700
+2dxan=100
+members=yes
+
+[obj_1482]
+name=Orb of light
+desc=A magical sphere that glimmers within.
+cost=10
+model=model_3176
+2dzoom=1390
+2dyan=1700
+2dxan=100
+members=yes
+
+[obj_1483]
+name=Orb of light
+desc=A magical sphere that glimmers within.
+cost=10
+model=model_3176
+2dzoom=1390
+2dyan=1700
+2dxan=100
+members=yes
+
+[obj_1484]
+name=Orb of light
+desc=A magical sphere that glimmers within.
+cost=20
+model=model_3176
+2dzoom=1390
+2dyan=1700
+2dxan=100
+members=yes

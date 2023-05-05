@@ -1,0 +1,47 @@
+[npc_279]
+name=Brother Omad
+vislevel=0
+desc=An old monk.
+walkanim=seq_819
+walkanim_b=seq_820
+walkanim_r=seq_821
+walkanim_l=seq_822
+readyanim=seq_808
+vislevel=3
+op1=Talk-to
+recol1s=25238
+recol1d=4769
+recol2s=8741
+recol2d=4769
+model1=model_223
+model2=model_181
+model3=model_246
+model4=model_299
+model5=model_170
+model6=model_176
+model7=model_260
+head1=model_59
+
+[npc_280]
+name=Brother Cedric
+vislevel=0
+desc=An old drunk monk.
+walkanim=seq_819
+walkanim_b=seq_820
+walkanim_r=seq_821
+walkanim_l=seq_822
+readyanim=seq_808
+vislevel=3
+op1=Talk-to
+recol1s=25238
+recol1d=4769
+recol2s=8741
+recol2d=4769
+model1=model_223
+model2=model_181
+model3=model_246
+model4=model_299
+model5=model_170
+model6=model_176
+model7=model_260
+head1=model_59

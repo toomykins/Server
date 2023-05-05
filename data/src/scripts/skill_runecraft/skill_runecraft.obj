@@ -1,0 +1,227 @@
+[obj_1436]
+name=Rune essence
+desc=An uncharged Rune Stone.
+cost=4
+model=model_2349
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_1437]
+certlink=obj_1436
+certtemplate=obj_799
+
+[obj_1438]
+name=Air talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2441
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1439]
+certlink=obj_1438
+certtemplate=obj_799
+
+[obj_1440]
+name=Earth talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2806
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1441]
+certlink=obj_1440
+certtemplate=obj_799
+
+[obj_1442]
+name=Fire talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2624
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1443]
+certlink=obj_1442
+certtemplate=obj_799
+
+[obj_1444]
+name=Water talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2514
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1445]
+certlink=obj_1444
+certtemplate=obj_799
+
+[obj_1446]
+name=Body talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2785
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1447]
+certlink=obj_1446
+certtemplate=obj_799
+
+[obj_1448]
+name=Mind talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2685
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1449]
+certlink=obj_1448
+certtemplate=obj_799
+
+[obj_1450]
+name=Blood talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2475
+members=yes
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1451]
+certlink=obj_1450
+certtemplate=obj_799
+
+[obj_1452]
+name=Chaos talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2563
+members=yes
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1453]
+certlink=obj_1452
+certtemplate=obj_799
+
+[obj_1454]
+name=Cosmic talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2502
+members=yes
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1455]
+certlink=obj_1454
+certtemplate=obj_799
+
+[obj_1456]
+name=Death talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2473
+members=yes
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1457]
+certlink=obj_1456
+certtemplate=obj_799
+
+[obj_1458]
+name=Law talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2712
+members=yes
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1459]
+certlink=obj_1458
+certtemplate=obj_799
+
+[obj_1460]
+name=Soul talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2496
+members=yes
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1461]
+certlink=obj_1460
+certtemplate=obj_799
+
+[obj_1462]
+name=Nature talisman
+cost=4
+desc=A mysterious power emanates from the talisman...
+model=model_2346
+members=yes
+2dxof=2
+2dyof=20
+2dzoom=1160
+2dyan=160
+2dxan=352
+iop4=Locate
+
+[obj_1463]
+certlink=obj_1462
+certtemplate=obj_799

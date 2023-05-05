@@ -1,0 +1,15 @@
+[obj_751]
+name=Gnomeball
+desc=A ball from the game Gnomeball
+model=model_2644
+2dzoom=790
+2dyan=2020
+2dxan=108
+iop2=Hold
+manwear=model_528,0
+womanwear=model_528,6
+members=yes
+
+[obj_752]
+certlink=obj_751
+certtemplate=obj_799

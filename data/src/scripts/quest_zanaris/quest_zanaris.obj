@@ -1,0 +1,25 @@
+[obj_771]
+name=Dramen branch
+model=model_2412
+desc=A limb of the fabled Dramen tree.
+cost=15
+members=yes
+2dxof=-8
+2dyof=-21
+2dzoom=940
+2dyan=152
+2dxan=268
+
+[obj_772]
+name=Dramen staff
+desc=Crafted from a Dramen tree branch.
+cost=15
+members=yes
+model=model_2648
+2dyof=-23
+2dzoom=1460
+2dyan=1416
+2dxan=196
+iop2=Wield
+manwear=model_534,0
+womanwear=model_534,6

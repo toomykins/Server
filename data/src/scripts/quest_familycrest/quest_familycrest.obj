@@ -1,0 +1,164 @@
+[obj_446]
+name='perfect' gold ore
+cost=150
+desc=This needs refining.
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+members=yes
+recol1s=7062
+recol1d=8128
+recol2s=45
+recol2d=8128
+
+[obj_773]
+name='perfect' ring
+desc=A perfect ruby ring.
+cost=2025
+model=model_2677
+2dxof=3
+2dyof=-35
+2dzoom=830
+2dyan=180
+2dzan=2024
+2dxan=268
+iop2=Wear
+members=yes
+recol1s=127
+recol1d=960
+
+[obj_774]
+name='perfect' necklace
+cost=2175
+desc=A perfect ruby necklace.
+model=model_2506
+2dxof=5
+2dyof=44
+2dzoom=600
+2dyan=160
+2dxan=304
+iop2=Wear
+manwear=model_281,0
+womanwear=model_445,0
+members=yes
+recol1s=41
+recol1d=960
+
+[obj_775]
+name=Cooking gauntlets
+desc=These gauntlets empower with a greater ability to cook fish.
+members=yes
+model=model_2649
+2dxof=8
+2dyof=-8
+2dzoom=930
+2dyan=828
+2dxan=420
+iop2=Wear
+manwear=model_179,0
+womanwear=model_356,0
+recol1s=10004
+recol1d=123
+recol2s=5532
+recol2d=10299
+
+[obj_776]
+name=Goldsmith gauntlet
+desc=These gauntlets empower the bearer whilst making gold.
+members=yes
+model=model_2649
+2dxof=8
+2dyof=-8
+2dzoom=930
+2dyan=828
+2dxan=420
+iop2=Wear
+manwear=model_179,0
+womanwear=model_356,0
+recol1s=10004
+recol1d=8666
+
+[obj_777]
+name=Chaos gauntlets
+desc=These gauntlets empower spell casters.
+members=yes
+model=model_2649
+2dxof=8
+2dyof=-8
+2dzoom=930
+2dyan=828
+2dxan=420
+iop2=Wear
+manwear=model_179,0
+womanwear=model_356,0
+recol1s=10004
+recol1d=1825
+
+[obj_778]
+name=Steel gauntlets
+desc=My reward for assisting the Fitzharmon family.
+members=yes
+model=model_2649
+2dxof=8
+2dyof=-8
+2dzoom=930
+2dyan=828
+2dxan=420
+iop2=Wear
+manwear=model_179,0
+womanwear=model_356,0
+recol1s=10004
+recol1d=43072
+
+[obj_779]
+name=Crest part
+model=model_2688
+desc=A fragment of the Fitzharmon family crest.
+members=yes
+2dyof=18
+2dyan=148
+2dxan=356
+
+[obj_780]
+name=Crest part
+model=model_2691
+desc=A fragment of the Fitzharmon family crest.
+members=yes
+2dyof=18
+2dyan=148
+2dxan=356
+
+[obj_781]
+name=Crest part
+model=model_2691
+desc=A fragment of the Fitzharmon family crest.
+members=yes
+2dyof=18
+2dyan=148
+2dxan=356
+
+[obj_782]
+name=Family crest
+model=model_2369
+desc=The Fitzharmon family crest.
+members=yes
+2dyof=18
+2dyan=148
+2dxan=356
+
+[obj_2365]
+name='perfect' gold bar
+desc=It's a bar of 'perfect' gold.
+cost=300
+model=model_2408
+2dxof=1
+2dyof=-8
+2dzoom=820
+2dyan=1180
+2dxan=196
+members=yes
+recol1s=7062
+recol1d=8128

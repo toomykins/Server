@@ -1,0 +1,69 @@
+[npc_296]
+name=General Bentnoze
+vislevel=0
+desc=An ugly green creature.
+walkanim=seq_308
+readyanim=seq_311
+op1=Talk-to
+recol1s=916
+recol1d=933
+recol2s=61
+recol2d=933
+recol3s=14238
+recol3d=11158
+model1=model_2952
+model2=model_2953
+model3=model_2955
+model4=model_2956
+head1=model_145
+
+[npc_297]
+name=General Wartface
+vislevel=0
+desc=An ugly green creature.
+walkanim=seq_308
+readyanim=seq_311
+op1=Talk-to
+recol1s=916
+recol1d=22443
+recol2s=61
+recol2d=22443
+model1=model_2951
+model2=model_2953
+model3=model_2955
+model4=model_2956
+head1=model_144
+
+[npc_298]
+name=Goblin
+desc=An ugly green creature.
+walkanim=seq_308
+readyanim=seq_311
+op2=Attack
+op1=Talk-to
+vislevel=5
+recol1s=916
+recol1d=22443
+model1=model_2951
+model2=model_2953
+model3=model_2955
+model4=model_2956
+model5=model_2957
+head1=model_142
+
+[npc_299]
+name=Goblin
+desc=An ugly green creature.
+walkanim=seq_308
+readyanim=seq_311
+op2=Attack
+op1=Talk-to
+vislevel=5
+recol1s=916
+recol1d=933
+model1=model_2951
+model2=model_2953
+model3=model_2955
+model4=model_2956
+model5=model_2957
+head1=model_144

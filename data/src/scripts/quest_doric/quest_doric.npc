@@ -1,0 +1,17 @@
+[npc_284]
+name=Doric
+vislevel=0
+walkanim=seq_98
+readyanim=seq_101
+op1=Talk-to
+desc=A dwarf smith, quite handy with a hammer.
+recol1s=5784
+recol1d=5022
+recol2s=803
+recol2d=7469
+model1=model_2974
+model2=model_2981
+model3=model_2979
+model4=model_2983
+model5=model_2985
+head1=model_4
