@@ -1,0 +1,34 @@
+[obj_286]
+name=Orange goblin mail
+desc=Armour designed to fit goblins.
+model=model_2574
+cost=40
+2dyof=3
+2dzoom=1500
+2dxan=608
+recol1s=916
+recol1d=6073
+
+[obj_287]
+name=Blue goblin mail
+desc=Armour designed to fit goblins.
+model=model_2574
+cost=40
+2dyof=3
+2dzoom=1500
+2dxan=608
+recol1s=916
+recol1d=43932
+
+[obj_288]
+name=Goblin mail
+desc=Armour designed to fit goblins.
+model=model_2574
+cost=40
+2dyof=3
+2dzoom=1500
+2dxan=608
+
+[obj_289]
+certlink=obj_288
+certtemplate=obj_799

@@ -1,0 +1,495 @@
+[obj_464]
+name=Strange fruit
+desc=I wonder what this tastes like?
+model=model_2432
+members=yes
+2dzoom=940
+2dyan=56
+2dxan=116
+iop1=Eat
+
+[obj_465]
+certlink=obj_464
+certtemplate=obj_799
+
+[obj_466]
+name=Pickaxe handle
+desc=Useless without the head.
+model=model_2597
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+manwear=model_558,0
+womanwear=model_558,6
+cost=1
+
+[obj_467]
+certlink=obj_466
+certtemplate=obj_799
+
+[obj_468]
+name=Broken pickaxe
+desc=Nurmof can fix this for me.
+model=model_2662
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+manwear=model_530,0
+womanwear=model_530,6
+cost=0
+recol1s=61
+recol1d=5652
+
+[obj_469]
+certlink=obj_468
+certtemplate=obj_799
+
+[obj_470]
+name=Broken pickaxe
+desc=Nurmof can fix this for me.
+model=model_2662
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+manwear=model_530,0
+womanwear=model_530,6
+cost=0
+recol1s=61
+recol1d=33
+
+[obj_471]
+certlink=obj_470
+certtemplate=obj_799
+
+[obj_472]
+name=Broken pickaxe
+desc=Nurmof can fix this for me.
+model=model_2662
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+manwear=model_530,0
+womanwear=model_530,6
+cost=17
+
+[obj_473]
+certlink=obj_472
+certtemplate=obj_799
+
+[obj_474]
+name=Broken pickaxe
+desc=Nurmof can fix this for me.
+model=model_2662
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+manwear=model_530,0
+womanwear=model_530,6
+cost=43
+recol1s=61
+recol1d=43297
+
+[obj_475]
+certlink=obj_474
+certtemplate=obj_799
+
+[obj_476]
+name=Broken pickaxe
+desc=Nurmof can fix this for me.
+model=model_2662
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+manwear=model_530,0
+womanwear=model_530,6
+cost=107
+recol1s=61
+recol1d=21662
+
+[obj_477]
+certlink=obj_476
+certtemplate=obj_799
+
+[obj_478]
+name=Broken pickaxe
+desc=Nurmof can fix this for me.
+model=model_2662
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+manwear=model_530,0
+womanwear=model_530,6
+cost=1100
+recol1s=61
+recol1d=36133
+
+[obj_479]
+certlink=obj_478
+certtemplate=obj_799
+
+[obj_480]
+name=Pickaxe head
+desc=It's missing a handle.
+model=model_2732
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+cost=1
+recol1s=61
+recol1d=5652
+
+[obj_481]
+certlink=obj_480
+certtemplate=obj_799
+
+[obj_482]
+name=Pickaxe head
+desc=It's missing a handle.
+model=model_2732
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+cost=139
+recol1s=61
+recol1d=33
+
+[obj_483]
+certlink=obj_482
+certtemplate=obj_799
+
+[obj_484]
+name=Pickaxe head
+desc=It's missing a handle.
+model=model_2732
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+cost=499
+
+[obj_485]
+certlink=obj_484
+certtemplate=obj_799
+
+[obj_486]
+name=Pickaxe head
+desc=It's missing a handle.
+model=model_2732
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+cost=1299
+recol1s=61
+recol1d=43297
+
+[obj_487]
+certlink=obj_486
+certtemplate=obj_799
+
+[obj_488]
+name=Pickaxe head
+desc=It's missing a handle.
+model=model_2732
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+cost=3199
+recol1s=61
+recol1d=21662
+
+[obj_489]
+certlink=obj_488
+certtemplate=obj_799
+
+[obj_490]
+name=Pickaxe head
+desc=It's missing a handle.
+model=model_2732
+2dxof=-2
+2dyof=-19
+2dzoom=1070
+2dyan=1056
+2dxan=224
+cost=31999
+recol1s=61
+recol1d=36133
+
+[obj_491]
+certlink=obj_490
+certtemplate=obj_799
+
+[obj_492]
+name=Axe handle
+desc=Useless without the head.
+model=model_2597
+2dxof=-19
+2dyof=-6
+2dzoom=1220
+2dyan=84
+2dxan=440
+manwear=model_557,0
+womanwear=model_557,6
+cost=1
+recol1s=6024
+recol1d=7073
+
+[obj_493]
+certlink=obj_492
+certtemplate=obj_799
+
+[obj_494]
+name=Broken axe
+desc=Bob can fix this for me.
+model=model_2342
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+manwear=model_487,0
+womanwear=model_487,6
+cost=0
+recol1s=61
+recol1d=5652
+
+[obj_495]
+certlink=obj_494
+certtemplate=obj_799
+
+[obj_496]
+name=Broken axe
+desc=Bob can fix this for me.
+model=model_2342
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+manwear=model_487,0
+womanwear=model_487,6
+cost=0
+recol1s=61
+recol1d=33
+
+[obj_497]
+certlink=obj_496
+certtemplate=obj_799
+
+[obj_498]
+name=Broken axe
+desc=Bob can fix this for me.
+model=model_2342
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+manwear=model_487,0
+womanwear=model_487,6
+cost=0
+
+[obj_499]
+certlink=obj_498
+certtemplate=obj_799
+
+[obj_500]
+name=Broken axe
+desc=Bob can fix this for me.
+model=model_2342
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+manwear=model_487,0
+womanwear=model_487,6
+cost=10
+recol1s=61
+recol1d=0
+
+[obj_501]
+certlink=obj_500
+certtemplate=obj_799
+
+[obj_502]
+name=Broken axe
+desc=Bob can fix this for me.
+model=model_2342
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+manwear=model_487,0
+womanwear=model_487,6
+cost=18
+recol1s=61
+recol1d=43297
+
+[obj_503]
+certlink=obj_502
+certtemplate=obj_799
+
+[obj_504]
+name=Broken axe
+desc=Bob can fix this for me.
+model=model_2342
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+manwear=model_487,0
+womanwear=model_487,6
+cost=43
+recol1s=61
+recol1d=21662
+
+[obj_505]
+certlink=obj_504
+certtemplate=obj_799
+
+[obj_506]
+name=Broken axe
+desc=Bob can fix this for me.
+model=model_2342
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+manwear=model_487,0
+womanwear=model_487,6
+cost=427
+recol1s=61
+recol1d=36133
+
+[obj_507]
+certlink=obj_506
+certtemplate=obj_799
+
+[obj_508]
+name=Axe head
+desc=It's missing a handle.
+model=model_2444
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+cost=15
+recol1s=61
+recol1d=5652
+
+[obj_509]
+certlink=obj_508
+certtemplate=obj_799
+
+[obj_510]
+name=Axe head
+desc=It's missing a handle.
+model=model_2444
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+cost=55
+recol1s=61
+recol1d=33
+
+[obj_511]
+certlink=obj_510
+certtemplate=obj_799
+
+[obj_512]
+name=Axe head
+desc=It's missing a handle.
+model=model_2444
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+cost=199
+
+[obj_513]
+certlink=obj_512
+certtemplate=obj_799
+
+[obj_514]
+name=Axe head
+desc=It's missing a handle.
+model=model_2444
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+cost=383
+recol1s=61
+recol1d=0
+
+[obj_515]
+certlink=obj_514
+certtemplate=obj_799
+
+[obj_516]
+name=Axe head
+desc=It's missing a handle.
+model=model_2444
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+cost=519
+recol1s=61
+recol1d=43297
+
+[obj_517]
+certlink=obj_516
+certtemplate=obj_799
+
+[obj_518]
+name=Axe head
+desc=It's missing a handle.
+model=model_2444
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+cost=1279
+recol1s=61
+recol1d=21662
+
+[obj_519]
+certlink=obj_518
+certtemplate=obj_799
+
+[obj_520]
+name=Axe head
+desc=It's missing a handle.
+model=model_2444
+2dxof=-15
+2dzoom=1060
+2dyan=1196
+2dxan=520
+cost=12799
+recol1s=61
+recol1d=36133
+
+[obj_521]
+certlink=obj_520
+certtemplate=obj_799

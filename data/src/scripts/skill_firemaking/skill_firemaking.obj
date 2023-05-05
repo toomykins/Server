@@ -1,0 +1,33 @@
+[obj_590]
+name=Tinderbox
+desc=Useful for lighting a fire.
+model=model_2348
+manwear=model_488,0
+womanwear=model_488,0
+2dxof=1
+2dyof=-10
+2dzoom=660
+2dyan=1968
+2dxan=196
+recol1s=127
+recol1d=82
+
+[obj_591]
+certlink=obj_590
+certtemplate=obj_799
+
+[obj_592]
+name=Ashes
+desc=A heap of ashes.
+cost=2
+model=model_2742
+2dxof=-6
+2dzoom=1210
+2dyan=1892
+2dxan=264
+recol1s=82
+recol1d=111
+
+[obj_593]
+certlink=obj_592
+certtemplate=obj_799

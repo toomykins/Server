@@ -1,0 +1,96 @@
+[obj_278]
+name=Prod
+desc=An old cattle prod.
+members=yes
+cost=3
+model=model_2700
+2dxof=-5
+2dzoom=680
+2dyan=1844
+2dxan=264
+iop2=Equip
+manwear=model_537,0
+womanwear=model_537,6
+
+[obj_279]
+name=Feed
+desc=This looks nasty.
+cost=3
+model=model_2650
+members=yes
+2dyof=-3
+2dzoom=930
+2dyan=1936
+2dxan=120
+
+[obj_280]
+name=Bones
+desc=These sheep remains are infected.
+members=yes
+model=model_2674
+2dxof=2
+2dzoom=1410
+2dyan=368
+2dxan=400
+
+[obj_281]
+name=Bones
+desc=These sheep remains are infected.
+members=yes
+model=model_2674
+2dxof=2
+2dzoom=1410
+2dyan=368
+2dxan=400
+
+[obj_282]
+name=Bones
+desc=These sheep remains are infected.
+members=yes
+model=model_2674
+2dxof=2
+2dzoom=1410
+2dyan=368
+2dxan=400
+
+[obj_283]
+name=Bones
+desc=These sheep remains are infected.
+members=yes
+model=model_2674
+2dxof=2
+2dzoom=1410
+2dyan=368
+2dxan=400
+
+[obj_284]
+name=Plague jacket
+desc=A thick heavy leather top.
+members=yes
+cost=50
+model=model_2446
+2dyof=3
+2dzoom=1360
+2dyan=92
+2dzan=1932
+2dxan=416
+iop2=Wear
+manwear=model_295,0
+manwear2=model_150
+womanwear=model_459,0
+womanwear2=model_331
+
+[obj_285]
+name=Plague trousers
+desc=A thick pair of leather trousers.
+members=yes
+cost=50
+model=model_2669
+2dyof=6
+2dzoom=2060
+2dyan=1924
+2dzan=104
+2dxan=596
+iop2=Wear
+manwear=model_273,0
+womanwear=model_436,0

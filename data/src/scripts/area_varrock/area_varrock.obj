@@ -1,0 +1,14 @@
+[obj_195]
+name=Potion
+desc=This is meant to be good for spots.
+model=model_2789
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+recol1s=61
+recol1d=25026
+
+[obj_196]
+certlink=obj_195
+certtemplate=obj_799

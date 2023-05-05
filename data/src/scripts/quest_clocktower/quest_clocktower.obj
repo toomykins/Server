@@ -1,0 +1,46 @@
+[obj_20]
+name=Cog
+desc=A cog from some machinery.
+model=model_2351
+members=yes
+2dyan=2040
+2dxan=292
+
+[obj_21]
+name=Cog
+desc=A cog from some machinery.
+model=model_2351
+members=yes
+2dyan=2040
+2dxan=292
+recol1s=127
+recol1d=0
+
+[obj_22]
+name=Cog
+desc=A cog from some machinery.
+model=model_2351
+members=yes
+2dyan=2040
+2dxan=292
+recol1s=127
+recol1d=43968
+
+[obj_23]
+name=Cog
+desc=A cog from some machinery.
+model=model_2351
+members=yes
+2dyan=2040
+2dxan=292
+recol1s=127
+recol1d=960
+
+[obj_24]
+name=Rat poison
+desc=Doesn't look very tasty.
+model=model_2714
+members=yes
+2dzoom=900
+2dyan=1828
+2dxan=68

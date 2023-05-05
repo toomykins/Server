@@ -1,0 +1,375 @@
+[obj_714]
+name=Radimus notes
+desc=Notes given to you by Radimus Erkle, it includes a partially completed map.
+members=yes
+model=model_2600
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+iop1=Read
+iop2=Complete
+recol1s=10351
+recol1d=40171
+recol2s=7070
+recol2d=933
+
+[obj_715]
+name=Radimus notes
+desc=Notes given to you by Radimus Erkle, it includes a partially completed map.
+members=yes
+model=model_2600
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+iop1=Read
+recol1s=10351
+recol1d=40171
+recol2s=7070
+recol2d=22433
+
+[obj_716]
+name=Bull roarer
+desc=It makes a loud but interesting sound when swung in the air.
+model=model_2741
+members=yes
+2dzoom=1000
+2dyan=1984
+2dxan=176
+iop1=Swing
+
+[obj_717]
+name=Scrawled note
+desc=A scrawled note with spidery writing on it.
+members=yes
+model=model_2838
+manwear=model_532,0
+womanwear=model_532,6
+2dzoom=940
+2dyan=112
+2dxan=248
+iop1=Read
+recol1s=0
+recol1d=926
+recol2s=898
+recol2d=926
+recol3s=898
+recol3d=8530
+recol4s=898
+recol4d=8530
+recol5s=904
+recol5d=8530
+recol6s=5351
+recol6d=8530
+
+[obj_718]
+name=A scribbled note
+desc=A scrawled note with spidery writing on it.
+members=yes
+model=model_2838
+manwear=model_532,0
+womanwear=model_532,6
+2dzoom=940
+2dyan=112
+2dxan=248
+iop1=Read
+recol1s=0
+recol1d=8414
+recol2s=898
+recol2d=960
+recol3s=898
+recol3d=8414
+recol4s=898
+recol4d=960
+recol5s=904
+recol5d=8414
+recol6s=5351
+recol6d=8414
+
+[obj_719]
+name=Scrumpled note
+desc=A scrawled note with spidery writing on it.
+members=yes
+model=model_2838
+manwear=model_532,0
+womanwear=model_532,6
+2dzoom=940
+2dyan=112
+2dxan=248
+iop1=Read
+recol1s=0
+recol1d=36781
+recol2s=898
+recol2d=18652
+recol3s=898
+recol3d=36781
+recol4s=898
+recol4d=18652
+recol5s=904
+recol5d=36781
+recol6s=5351
+recol6d=18652
+
+[obj_720]
+name=Sketch
+desc=A rough sketch of a bowl shaped vessel given to you by Gujuo.
+cost=10
+members=yes
+model=model_2600
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+iop1=Look
+recol1s=10351
+recol1d=40171
+recol2s=7070
+recol2d=933
+
+[obj_721]
+name=Gold bowl
+desc=A specially made bowl constructed out of pure gold.
+cost=700
+members=yes
+model=model_2807
+2dzoom=910
+2dyan=1856
+2dxan=204
+recol1s=7075
+recol1d=9166
+recol2s=7081
+recol2d=9166
+
+[obj_722]
+name=Blessed gold bowl
+desc=A specially made bowl constructed out of pure gold and blessed.
+cost=700
+members=yes
+model=model_2807
+2dzoom=910
+2dyan=1856
+2dxan=204
+recol1s=7075
+recol1d=9166
+recol2s=7081
+recol2d=9166
+
+[obj_723]
+name=Golden bowl
+desc=A specially made golden bowl with water.
+cost=700
+members=yes
+model=model_2367
+2dzoom=910
+2dyan=1856
+2dxan=204
+iop1=Empty
+recol1s=7081
+recol1d=9166
+
+[obj_724]
+name=Golden bowl
+desc=A specially made bowl constructed out of pure gold. It has pure water in it.
+cost=700
+members=yes
+model=model_2367
+2dzoom=910
+2dyan=1856
+2dxan=204
+iop1=Empty
+recol1s=7081
+recol1d=9166
+
+[obj_725]
+name=Golden bowl
+desc=A blessed golden bowl. It has water in it.
+cost=700
+members=yes
+model=model_2367
+2dzoom=910
+2dyan=1856
+2dxan=204
+iop1=Empty
+recol1s=7081
+recol1d=9166
+
+[obj_726]
+name=Golden bowl
+desc=A blessed golden bowl. It has pure sacred water in it.
+cost=700
+members=yes
+model=model_2367
+2dzoom=910
+2dyan=1856
+2dxan=204
+iop1=Empty
+recol1s=7081
+recol1d=9166
+
+[obj_727]
+name=Hollow reed
+cost=2
+desc=One of nature's pipes.
+members=yes
+model=model_2344
+manwear=model_515,0
+womanwear=model_515,0
+2dxof=-2
+2dyof=-15
+2dzoom=1770
+2dyan=940
+2dxan=212
+
+[obj_728]
+certlink=obj_727
+certtemplate=obj_799
+
+[obj_729]
+name=Shamans tome
+desc=It looks like the Shamans personal notes...
+model=model_2633
+2dzoom=840
+2dyan=152
+2dxan=256
+members=yes
+iop1=Read
+recol1s=5018
+recol1d=14226
+recol2s=10351
+recol2d=14247
+
+[obj_730]
+name=Book of binding
+desc=An ancient tome on Demonology.
+model=model_2509
+2dyof=5
+2dzoom=1340
+2dyan=1940
+2dxan=412
+members=yes
+iop1=Read
+recol1s=5018
+recol1d=43544
+recol2s=41
+recol2d=41191
+recol3s=61
+recol3d=41191
+recol4s=11177
+recol4d=41191
+recol5s=10351
+recol5d=33744
+
+[obj_731]
+name=Enchanted vial
+desc=An enchanted empty glass vial.
+model=model_1736
+members=yes
+2dyof=-2
+2dzoom=710
+2dyan=1516
+2dxan=80
+manwear=model_561,0
+womanwear=model_561,6
+
+[obj_732]
+name=Holy water
+desc=A vial of holy water, good against certain demons.
+model=model_1736
+members=yes
+stackable=yes
+2dyof=-2
+2dzoom=710
+2dyan=1516
+2dxan=80
+manwear=model_552,0
+womanwear=model_552,6
+iop2=Wield
+recol1s=61
+recol1d=43959
+
+[obj_733]
+name=Smashed glass
+desc=Fragments of a broken container.
+cost=1
+members=yes
+model=model_2676
+2dxof=-1
+2dyof=1
+2dzoom=960
+2dyan=32
+2dxan=412
+
+[obj_734]
+certlink=obj_733
+certtemplate=obj_799
+
+[obj_735]
+name=Yommi tree seeds
+desc=These need to be germinated before they can be used.
+model=model_2381
+2dxof=7
+2dyof=39
+2dzoom=920
+2dyan=676
+2dxan=240
+members=yes
+stackable=yes
+op1=Look
+recol1s=43288
+recol1d=22433
+
+[obj_736]
+name=Yommi tree seeds
+desc=These are germinated and ready to be planted in fertile soil.
+model=model_2381
+2dxof=7
+2dyof=39
+2dzoom=920
+2dyan=676
+2dxan=240
+members=yes
+stackable=yes
+op1=Look
+recol1s=43288
+recol1d=17344
+
+[obj_737]
+name=Snakeweed mixture
+desc=It's a mixture of Snakeweed and water, I need another ingredient to finish this potion.
+model=model_2789
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+recol1s=61
+recol1d=17344
+
+[obj_738]
+name=Ardrigal mixture
+desc=It's a mixture of Ardrigal and water, I need another ingredient to finish this potion.
+model=model_2789
+members=yes
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+recol1s=61
+recol1d=8615
+
+[obj_739]
+name=Bravery potion
+desc=A bravery potion which Gujuo gave you the details for, let's hope it works.
+model=model_2789
+members=yes
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+iop1=Drink
+recol1s=61
+recol1d=5018

@@ -1,0 +1,63 @@
+[obj_74]
+name=Khazard helmet
+members=yes
+desc=A helmet, as worn by the minions of General Khazard.
+cost=10
+model=model_2833
+2dxof=1
+2dyof=-4
+2dzoom=640
+2dyan=156
+2dxan=108
+iop2=Wear
+manwear=model_219,0
+womanwear=model_395,0
+manhead=model_57
+womanhead=model_117
+recol1s=61
+recol1d=20
+recol2s=25238
+recol2d=3974
+
+[obj_75]
+name=Khazard armour
+members=yes
+desc=Armour, as worn by the minions of General Khazard.
+cost=12
+model=model_2605
+2dyof=14
+2dzoom=1290
+2dxan=424
+iop2=Wear
+manwear=model_306,0
+manwear2=model_157
+womanwear=model_468,0
+womanwear2=model_339
+recol1s=61
+recol1d=20
+recol2s=25238
+recol2d=3974
+
+[obj_76]
+name=Khazard cell keys
+members=yes
+desc=These keys open the cells at the Khazard fight arena.
+model=model_2424
+2dxof=6
+2dyof=7
+2dzoom=890
+2dyan=228
+2dxan=508
+
+[obj_77]
+name=Khali brew
+members=yes
+cost=5
+desc=A bottle of Khazard's worst brew.
+model=model_2660
+2dyof=-1
+2dzoom=970
+2dyan=1888
+2dxan=104
+recol1s=1942
+recol1d=22424

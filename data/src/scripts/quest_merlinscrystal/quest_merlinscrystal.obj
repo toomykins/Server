@@ -1,0 +1,102 @@
+[obj_28]
+name=Insect repellent
+desc=Drives away all known 6 legged creatures.
+cost=3
+model=model_2684
+members=yes
+2dyof=-6
+2dzoom=1430
+2dyan=1836
+2dxan=124
+
+[obj_29]
+certlink=obj_28
+certtemplate=obj_799
+
+[obj_30]
+name=Bucket of wax
+desc=It's a bucket of wax.
+cost=6
+model=model_2504
+members=yes
+2dyof=-18
+2dzoom=1020
+2dyan=1688
+2dxan=204
+recol1s=39834
+recol1d=7766
+
+[obj_31]
+certlink=obj_30
+certtemplate=obj_799
+
+[obj_32]
+name=Lit black candle
+desc=A lit spooky candle.
+members=yes
+cost=3
+model=model_2575
+2dyof=-2
+2dzoom=570
+2dyan=1864
+2dxan=168
+recol1s=127
+recol1d=8
+
+[obj_33]
+name=Lit candle
+desc=A lit candle.
+members=yes
+cost=3
+model=model_2575
+2dyof=-2
+2dzoom=570
+2dyan=1864
+2dxan=168
+
+[obj_34]
+certlink=obj_33
+certtemplate=obj_799
+
+[obj_35]
+name=Excalibur
+desc=This used to belong to King Arthur.
+members=yes
+cost=200
+model=model_2458
+2dxof=6
+2dyof=17
+2dzoom=1500
+2dyan=932
+2dxan=384
+iop2=Wield
+manwear=model_501,0
+womanwear=model_501,6
+
+[obj_36]
+name=Candle
+desc=A candle.
+members=yes
+cost=3
+model=model_2467
+2dyof=-2
+2dzoom=570
+2dyan=1864
+2dxan=168
+
+[obj_37]
+certlink=obj_36
+certtemplate=obj_799
+
+[obj_38]
+name=Black candle
+desc=A spooky candle.
+members=yes
+cost=3
+model=model_2467
+2dyof=-2
+2dzoom=570
+2dyan=1864
+2dxan=168
+recol1s=127
+recol1d=8

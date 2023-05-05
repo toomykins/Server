@@ -1,0 +1,26 @@
+[obj_552]
+name=Ghostspeak amulet
+desc=It lets me talk to ghosts.
+cost=35
+model=model_2576
+2dxof=1
+2dyof=16
+2dzoom=620
+2dyan=68
+2dxan=424
+iop2=Wear
+manwear=model_280,0
+womanwear=model_444,0
+recol1s=28
+recol1d=4032
+
+[obj_553]
+name=Skull
+desc=Ooooh spooky!
+model=model_2388
+2dxof=-1
+2dyof=-10
+2dzoom=530
+2dyan=64
+2dzan=1996
+2dxan=160

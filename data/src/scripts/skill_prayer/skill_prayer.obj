@@ -1,0 +1,85 @@
+[obj_526]
+name=Bones
+desc=Bones are for burying!
+model=model_2674
+2dxof=2
+2dzoom=1410
+2dyan=368
+2dxan=400
+iop1=Bury
+
+[obj_527]
+certlink=obj_526
+certtemplate=obj_799
+
+[obj_528]
+name=Burnt bones
+desc=Bones are for burying!
+model=model_2674
+2dxof=2
+2dzoom=1410
+2dyan=368
+2dxan=400
+iop1=Bury
+recol1s=127
+recol1d=28
+
+[obj_529]
+certlink=obj_528
+certtemplate=obj_799
+
+[obj_530]
+name=Bat bones
+desc=Bones are for burying!
+model=model_2674
+2dxof=2
+2dzoom=1410
+2dyan=368
+2dxan=400
+iop1=Bury
+members=yes
+
+[obj_531]
+certlink=obj_530
+certtemplate=obj_799
+
+[obj_532]
+name=Big bones
+desc=Ew it's a pile of bones.
+model=model_222
+2dzoom=1830
+2dyan=648
+2dxan=216
+iop1=Bury
+
+[obj_533]
+certlink=obj_532
+certtemplate=obj_799
+
+[obj_534]
+name=Babydragon bones
+members=yes
+desc=Ew it's a pile of bones.
+model=model_222
+2dzoom=1830
+2dyan=648
+2dxan=216
+iop1=Bury
+
+[obj_535]
+certlink=obj_534
+certtemplate=obj_799
+
+[obj_536]
+name=Dragon bones
+desc=These would feed a dog for months!
+model=model_2768
+2dzoom=1830
+2dyan=648
+2dxan=216
+iop1=Bury
+members=yes
+
+[obj_537]
+certlink=obj_536
+certtemplate=obj_799

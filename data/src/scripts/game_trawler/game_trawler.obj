@@ -1,0 +1,35 @@
+[obj_583]
+name=Bailing bucket
+desc=It's a bailing bucket.
+cost=10
+model=model_2397
+manwear=model_543,0
+womanwear=model_543,6
+2dyof=-18
+2dzoom=1020
+2dyan=1688
+2dxan=204
+iop1=Bail-with
+members=yes
+
+[obj_584]
+certlink=obj_583
+certtemplate=obj_799
+
+[obj_585]
+name=Bailing bucket
+desc=It's a bailing bucket full of salty water.
+cost=10
+model=model_2504
+manwear=model_543,0
+womanwear=model_543,6
+2dyof=-18
+2dzoom=1020
+2dyan=1688
+2dxan=204
+iop1=Empty
+members=yes
+
+[obj_586]
+certlink=obj_585
+certtemplate=obj_799

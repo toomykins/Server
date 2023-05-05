@@ -1,0 +1,228 @@
+[obj_604]
+name=Bone shard
+desc=A slender bone shard given to you by Zadimus.
+model=model_2654
+2dxof=6
+2dyof=-1
+2dzoom=580
+2dyan=60
+2dxan=152
+members=yes
+iop1=Inspect
+
+[obj_605]
+name=Bone key
+desc=A bone key fashioned from a shard of bone.
+model=model_2372
+2dxof=-3
+2dyof=5
+2dzoom=700
+2dyan=20
+2dxan=328
+members=yes
+recol1s=8128
+recol1d=127
+
+[obj_606]
+name=Stone-plaque
+desc=A stone plaque with carved letters in it.
+model=model_2510
+2dxof=8
+2dyof=19
+2dzoom=1580
+2dyan=136
+2dxan=200
+iop1=Read
+members=yes
+
+[obj_607]
+name=Tattered scroll
+desc=An ancient tattered scroll.
+model=model_2600
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+iop1=Read
+members=yes
+recol1s=10351
+recol1d=231
+
+[obj_608]
+name=Crumpled scroll
+desc=An ancient crumpled scroll.
+model=model_2600
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+iop1=Read
+members=yes
+recol1s=10351
+recol1d=21704
+
+[obj_609]
+name=Rashiliya corpse
+desc=The remains of the Zombie Queen.
+model=model_2595
+2dxof=-4
+2dyof=12
+2dzoom=1780
+2dyan=436
+2dxan=320
+members=yes
+
+[obj_610]
+name=Zadimus corpse
+desc=The remains of Zadimus.
+2dxof=-4
+2dyof=12
+2dzoom=1780
+2dyan=436
+2dxan=320
+model=model_2595
+iop1=Bury
+members=yes
+
+[obj_611]
+name=Locating crystal
+desc=A magical crystal sphere.
+model=model_2744
+2dxof=1
+2dyof=-8
+2dzoom=1270
+2dyan=4
+2dxan=120
+members=yes
+iop1=Activate
+
+[obj_612]
+name=Locating crystal
+desc=A magical crystal sphere.
+model=model_2744
+2dxof=1
+2dyof=-8
+2dzoom=1270
+2dyan=4
+2dxan=120
+members=yes
+recol1s=50396
+recol1d=44742
+
+[obj_613]
+name=Locating crystal
+desc=A magical crystal sphere.
+cost=1
+model=model_2744
+2dxof=1
+2dyof=-8
+2dzoom=1270
+2dyan=4
+2dxan=120
+members=yes
+recol1s=50396
+recol1d=65222
+
+[obj_614]
+name=Locating crystal
+desc=A magical crystal sphere.
+cost=1
+model=model_2744
+2dxof=1
+2dyof=-8
+2dzoom=1270
+2dyan=4
+2dxan=120
+members=yes
+recol1s=50396
+recol1d=13266
+
+[obj_615]
+name=Locating crystal
+desc=A magical crystal sphere.
+cost=1
+model=model_2744
+2dxof=1
+2dyof=-8
+2dzoom=1270
+2dyan=4
+2dxan=120
+members=yes
+recol1s=50396
+recol1d=127
+
+[obj_616]
+name=Beads of the dead
+desc=A curious looking neck ornament.
+cost=1
+model=model_2713
+2dyof=-16
+2dzoom=1020
+2dyan=2020
+2dxan=332
+iop2=Wear
+manwear=model_285,0
+womanwear=model_449,0
+members=yes
+recol1s=28
+recol1d=4032
+
+[obj_617]
+name=Coins
+cost=1
+desc=Lovely money!
+model=model_2667
+2dxof=3
+2dzoom=710
+2dyan=2012
+2dxan=184
+members=yes
+
+[obj_618]
+name=Bone beads
+desc=Beads carved out of a bone.
+model=model_2561
+2dxof=5
+2dyof=-8
+2dzoom=860
+2dxan=304
+members=yes
+
+[obj_623]
+name=Sword pommel
+desc=An ivory sword pommel.
+model=model_2547
+cost=1
+2dxof=-2
+2dyof=-2
+2dzoom=1040
+2dyan=144
+2dxan=604
+members=yes
+
+[obj_624]
+name=Bervirius notes
+desc=Notes taken from the tomb of Bervirius.
+cost=1
+model=model_2600
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+iop1=Read
+members=yes
+recol1s=10351
+recol1d=43344
+
+[obj_625]
+name=Wampum belt
+desc=A decorated belt used to trade information between distant villages.
+cost=5
+model=model_3155
+2dzoom=2190
+2dyan=2040
+2dxan=436
+members=yes

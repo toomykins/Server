@@ -1,0 +1,10 @@
+[obj_300]
+name=Rats tail
+cost=3
+desc=A bit of rat.
+model=model_2751
+2dxof=2
+2dyof=-1
+2dzoom=590
+2dyan=168
+2dxan=340

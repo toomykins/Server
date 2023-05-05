@@ -1,0 +1,189 @@
+[obj_434]
+name=Clay
+desc=Some hard dry clay.
+model=model_2742
+2dxof=-6
+2dzoom=1210
+2dyan=1892
+2dxan=264
+recol1s=82
+recol1d=6589
+
+[obj_435]
+certlink=obj_434
+certtemplate=obj_799
+
+[obj_436]
+name=Copper ore
+cost=3
+desc=This needs refining.
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+recol1s=7062
+recol1d=3912
+
+[obj_437]
+certlink=obj_436
+certtemplate=obj_799
+
+[obj_438]
+name=Tin ore
+cost=3
+desc=This needs refining.
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+recol1s=7062
+recol1d=57
+
+[obj_439]
+certlink=obj_438
+certtemplate=obj_799
+
+[obj_440]
+name=Iron ore
+cost=17
+desc=This needs refining.
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+recol1s=7062
+recol1d=2576
+recol2s=45
+recol2d=2576
+
+[obj_441]
+certlink=obj_440
+certtemplate=obj_799
+
+[obj_442]
+name=Silver ore
+cost=75
+desc=This needs refining.
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+recol1s=7062
+recol1d=33
+recol2s=45
+recol2d=33
+
+[obj_443]
+certlink=obj_442
+certtemplate=obj_799
+
+[obj_444]
+name=Gold ore
+cost=150
+desc=This needs refining.
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+recol1s=7062
+recol1d=8128
+recol2s=45
+recol2d=8128
+
+[obj_445]
+certlink=obj_444
+certtemplate=obj_799
+
+[obj_446]
+name='perfect' gold ore
+cost=150
+desc=This needs refining.
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+members=yes
+recol1s=7062
+recol1d=8128
+recol2s=45
+recol2d=8128
+
+[obj_447]
+name=Mithril ore
+cost=162
+desc=This needs refining.
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+recol1s=7062
+recol1d=43297
+
+[obj_448]
+certlink=obj_447
+certtemplate=obj_799
+
+[obj_449]
+name=Adamantite ore
+cost=400
+desc=This needs refining.
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+recol1s=7062
+recol1d=21662
+
+[obj_450]
+certlink=obj_449
+certtemplate=obj_799
+
+[obj_451]
+name=Runite ore
+desc=This needs refining.
+cost=3200
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+recol1s=7062
+recol1d=36133
+
+[obj_452]
+certlink=obj_451
+certtemplate=obj_799
+
+[obj_453]
+name=Coal
+cost=45
+desc=Hmm a non-renewable energy source!
+model=model_2748
+2dxof=1
+2dyof=15
+2dzoom=1400
+2dyan=1576
+2dxan=368
+recol1s=7062
+recol1d=10508
+
+[obj_454]
+certlink=obj_453
+certtemplate=obj_799

@@ -1,0 +1,220 @@
+[obj_554]
+name=Fire rune
+desc=One of the 4 basic elemental Runes.
+stackable=yes
+cost=4
+model=model_2399
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_555]
+name=Water rune
+desc=One of the 4 basic elemental Runes.
+stackable=yes
+cost=4
+model=model_2652
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_556]
+name=Air rune
+desc=One of the 4 basic elemental Runes.
+stackable=yes
+cost=4
+model=model_2405
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_557]
+name=Earth rune
+desc=One of the 4 basic elemental Runes.
+stackable=yes
+cost=4
+model=model_2737
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_558]
+name=Mind rune
+desc=Used for low level missile spells.
+stackable=yes
+cost=3
+model=model_2481
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_559]
+name=Body rune
+desc=Used for curse spells.
+stackable=yes
+cost=3
+model=model_2340
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_560]
+name=Death rune
+desc=Used for high level missile spells.
+stackable=yes
+cost=30
+model=model_2645
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_561]
+name=Nature rune
+desc=Used for alchemy spells.
+stackable=yes
+cost=20
+model=model_2734
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_562]
+name=Chaos rune
+desc=Used for mid level missile spells.
+stackable=yes
+cost=15
+model=model_2707
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_563]
+name=Law rune
+desc=Used for teleport spells.
+stackable=yes
+cost=40
+model=model_2382
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_564]
+name=Cosmic rune
+desc=Used for enchant spells.
+stackable=yes
+cost=15
+model=model_2735
+2dyof=1
+2dzoom=740
+2dxan=516
+
+[obj_565]
+name=Blood rune
+desc=Used for high level missile spells.
+stackable=yes
+cost=50
+model=model_2665
+2dyof=1
+2dzoom=740
+2dxan=516
+members=yes
+
+[obj_566]
+name=Soul rune
+desc=Used for high level curse spells.
+stackable=yes
+cost=1250
+model=model_2434
+2dyof=1
+2dzoom=740
+2dxan=516
+members=yes
+
+[obj_567]
+name=Unpowered orb
+model=model_2428
+2dxof=3
+2dyof=3
+2dzoom=790
+2dyan=96
+2dxan=316
+cost=100
+members=yes
+desc=I'd prefer it if it was powered.
+cost=100
+recol1s=43117
+recol1d=127
+
+[obj_568]
+certlink=obj_567
+certtemplate=obj_799
+
+[obj_569]
+name=Fire orb
+model=model_2428
+2dxof=3
+2dyof=3
+2dzoom=790
+2dyan=96
+2dxan=316
+members=yes
+desc=A magic glowing orb.
+cost=300
+recol1s=43117
+recol1d=960
+
+[obj_570]
+certlink=obj_569
+certtemplate=obj_799
+
+[obj_571]
+name=Water orb
+model=model_2428
+2dxof=3
+2dyof=3
+2dzoom=790
+2dyan=96
+2dxan=316
+members=yes
+desc=A magic glowing orb.
+cost=300
+recol1s=43117
+recol1d=43968
+
+[obj_572]
+certlink=obj_571
+certtemplate=obj_799
+
+[obj_573]
+name=Air orb
+model=model_2428
+2dxof=3
+2dyof=3
+2dzoom=790
+2dyan=96
+2dxan=316
+members=yes
+desc=A magic glowing orb.
+cost=300
+
+[obj_574]
+certlink=obj_573
+certtemplate=obj_799
+
+[obj_575]
+name=Earth orb
+model=model_2428
+2dxof=3
+2dyof=3
+2dzoom=790
+2dyan=96
+2dxan=316
+members=yes
+desc=A magic glowing orb.
+cost=300
+recol1s=43117
+recol1d=3501
+
+[obj_576]
+certlink=obj_575
+certtemplate=obj_799
