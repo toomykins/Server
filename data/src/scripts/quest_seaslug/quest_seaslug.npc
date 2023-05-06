@@ -1,0 +1,8 @@
+[npc_1006]
+name=Sea slug
+vislevel=0
+desc=A rather nasty looking crustacean.
+walkanim=seq_933
+readyanim=seq_932
+op1=Take
+model1=model_560

@@ -1,0 +1,8 @@
+[npc_1009]
+name=Poison spider
+walkanim=seq_142
+readyanim=seq_145
+desc=A nasty poisonous arachnid.
+op2=Attack
+vislevel=29
+model1=model_2883
