@@ -14,15 +14,8 @@
     ]
   },
   "imports": {
-    "#cache/*": "./src/cache/*",
-    "#config/*": "./src/cache/config/*",
-    "#engine/*": "./src/engine/*",
-    "#enum/*": "./src/enum/*",
-    "#formats/*": "./src/formats/*",
-    "#io/*": "./src/io/*",
-    "#network/*": "./src/network/*",
-    "#scripts/*": "./src/scripts/*",
-    "#util/*": "./src/util/*"
+    "#jagex2/*": "./src/jagex2/*",
+    "#lostcity/*": "./src/lostcity/*"
   },
   "dependencies": {
     "@fastify/autoload": "^5.7.1",

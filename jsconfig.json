@@ -2,32 +2,11 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "#cache/*": [
-                "src/cache/*"
+            "#jagex2/*": [
+                "src/jagex2/*"
             ],
-            "#config/*": [
-                "src/cache/config/*"
-            ],
-            "#engine/*": [
-                "src/engine/*"
-            ],
-            "#enum/*": [
-                "src/enum/*"
-            ],
-            "#formats/*": [
-                "src/formats/*"
-            ],
-            "#io/*": [
-                "src/io/*"
-            ],
-            "#network/*": [
-                "src/network/*"
-            ],
-            "#scripts/*": [
-                "src/scripts/*"
-            ],
-            "#util/*": [
-                "src/util/*"
+            "#lostcity/*": [
+                "src/lostcity/*"
             ]
         }
     },
