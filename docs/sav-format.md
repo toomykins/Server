@@ -6,16 +6,28 @@ Each offset is relative to its section.
 
 ## Header
 
+File length is the length of the file in bytes, including the header and footer. It gets used to verify the file is not truncated.
+
 | Offset | Type | Description |
 | --- | --- | --- |
 | 0 | Uint16 | Magic number: 0x2004 |
-| 1 | Uint8 | Format version |
+| 2 | Uint32 | File length |
+| 6 | Uint8 | Format version |
+
+7 bytes.
 
 ## Footer
 
+The index positions are useful to seek-ahead to specific data blocks for external analysis.  
+CRC32 is calculated from the header to the end of the file.
+
 | Offset | Type | Description |
 | --- | --- | --- |
-| 0 | Uint32 | CRC32 of file |
+| 0 | Uint32 | Player variable data index |
+| 4 | Uint32 | Inventory data index |
+| 8 | Uint32 | CRC32 of file |
+
+12 bytes.
 
 ## Format Version 1
 
@@ -33,6 +45,8 @@ Temp (boosted) levels are taken from current stat levels.
 | 18 | Uint16 | Run Energy |
 | 20 | Uint32 | Ticks logged in |
 
+24 bytes.
+
 ### Stats Data
 
 | Offset | Type | Description |
@@ -40,6 +54,8 @@ Temp (boosted) levels are taken from current stat levels.
 | 0 | Uint8 | # of stats |
 | x | Uint32 | Stat XP |
 | x | Uint8 | Temp level |
+
+21 stats * 5 = 105 bytes.
 
 ### Player Variable Data
 
@@ -64,8 +80,10 @@ note: Banks can store 400 items, so a full bank results in at least a 4KB invent
 
 ### Example of newly registered player
 
+148 bytes:
 ```
 0x2004 - magic
+0x00000000 - file length
 0x01 - format version
 
 0x0C16 - x position in world (tutorial island)
@@ -87,6 +105,8 @@ note: Banks can store 400 items, so a full bank results in at least a 4KB invent
 
 0x00 - # of invs
 
+0x00000000 - player variable index
+0x00000000 - inventory data index
 0x00000000 - CRC32
 ```
 
