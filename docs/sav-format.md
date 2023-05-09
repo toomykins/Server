@@ -2,13 +2,20 @@
 
 This save format is in big-endian.
 
+Each offset is relative to its section.
+
 ## Header
 
 | Offset | Type | Description |
 | --- | --- | --- |
 | 0 | Uint16 | Magic number: 0x2004 |
 | 2 | Uint16 | Format version |
-| 4 | Uint32 | CRC32 of player data |
+
+## Footer
+
+| Offset | Type | Description |
+| --- | --- | --- |
+| 0 | Uint32 | CRC32 of file |
 
 ## Format Version 1
 
@@ -26,7 +33,7 @@ Temp (boosted) levels are taken from current stat levels.
 | 18 | Uint16 | Run Energy |
 | 20 | Uint32 | Ticks logged in |
 
-## Stats Data
+### Stats Data
 
 | Offset | Type | Description |
 | --- | --- | --- |
@@ -61,7 +68,7 @@ note: Banks can store 400 items, so a full bank results in at least a 4KB invent
 ```
 0x2004 - magic
 0x0001 - format version
-... crc ...
+
 0x0C16 - x position in world (tutorial island)
 0x0C22 - z position in world (tutorial island)
 0x00 - world plane (tutorial island)
@@ -70,14 +77,19 @@ note: Banks can store 400 items, so a full bank results in at least a 4KB invent
 0x00 - gender
 0x2710 - run energy
 0x00000000 - ticks logged in
+
 0x13 - # of stats
 ...
 0x03 - stat ID
 0x00000482 - stat XP
 0x0A - temp level
 ...
+
 0x00 - # of varps
+
 0x00 - # of invs
+
+0x00000000 - CRC32
 ```
 
 ## Format Version 2
@@ -86,4 +98,4 @@ note: Banks can store 400 items, so a full bank results in at least a 4KB invent
 
 ideas:
 - objvars
-- extended var types (lookup to BaseVarType)
+- extended var types (lookup to BaseVarType), can support long/string
