@@ -54,6 +54,9 @@ Up to 3 recovery questions can be set.
 
 ### Player Data
 
+Base levels are calculated from stats XP.  
+Temp (boosted) levels are taken from current stat levels.
+
 | Offset | Type | Description |
 | --- | --- | --- |
 | 0 | Uint16 | x position in world |
@@ -63,8 +66,8 @@ Up to 3 recovery questions can be set.
 | 12 | Uint8[5] | Identity kit colors |
 | 17 | Uint8 | Gender |
 | 18 | Uint16 | Run Energy |
-| 20 | Uint32[19] | Stats XP (base calculated from xp) |
-| 96 | Uint8[19] | Current stat levels (boosts) |
+| 20 | Uint32[19] | Stats XP |
+| 96 | Uint8[19] | Current stat levels |
 
 ### Player Variable Data
 
@@ -72,7 +75,7 @@ Up to 3 recovery questions can be set.
 | --- | --- | --- |
 | 0 | Uint16 | # of varps |
 | x | Uint16 | Varp ID |
-| x | Uint32 | Varp Value |
+| x | Uint32 | Varp value |
 
 ### Inventory Data
 
@@ -80,15 +83,17 @@ Up to 3 recovery questions can be set.
 | --- | --- | --- |
 | 0 | Uint8 | # of invs |
 | x | Uint16 | Inv ID |
-| x | Uint16 | # objs |
-| y | Uint16 | Obj Slot |
+| x | Uint16 | # of objs |
+| y | Uint16 | Obj inv slot |
 | y | Uint16 | Obj ID |
-| y | Uint16 | Obj Amount |
+| y | Uint32 | Obj amount |
 | y | Uint8 | # of obj vars |
-| z | Uint16 | Obj Var ID |
-| z | Uint32 | Obj Var Value |
+| z | Uint16 | Obj var ID |
+| z | Uint32 | Obj var value |
 
 note: Banks can store 400 items, so a full bank results in at least a 4KB inventory block.
+
+Run weight and equipment bonuses are calculated from the `worn` inventory data.
 
 ### Example of newly registered player
 
