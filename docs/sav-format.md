@@ -1,6 +1,6 @@
 # Player Saves
 
-This save format is in big-endian. Files are `base37`.
+This save format is in big-endian.
 
 ## Header
 
@@ -62,13 +62,6 @@ note: Banks can store 400 items, so a full bank results in at least a 4KB invent
 0x2004 - magic
 0x0001 - format version
 ... crc ...
-... username ...
-... password ...
-... email ...
-... date registered ...
-0x00 - # of logins
-0x00 - # of recovery questions
-0x00 - # of messages
 0x0C16 - x position in world (tutorial island)
 0x0C22 - z position in world (tutorial island)
 0x00 - world plane (tutorial island)
@@ -89,7 +82,7 @@ note: Banks can store 400 items, so a full bank results in at least a 4KB invent
 
 ## Format Version 2
 
-- not implemented -
+\- not implemented \-
 
 ideas:
 - objvars
