@@ -1,58 +1,16 @@
 # Player Saves
 
-This save format is in big-endian.
+This save format is in big-endian. Files are `base37`.
 
 ## Header
 
 | Offset | Type | Description |
 | --- | --- | --- |
 | 0 | Uint16 | Magic number: 0x2004 |
-| 2 | Uint16 | Format Version |
-| 4 | Uint32 | CRC32 of following data |
+| 2 | Uint16 | Format version |
+| 4 | Uint32 | CRC32 of player data |
 
 ## Format Version 1
-
-*(offsets are relative to section start)*
-
-### Account Data
-
-| Offset | Type | Description |
-| --- | --- | --- |
-| 0 | Uint64 | Base37 username |
-| 8 | Uint8[60] | BCrypt2 hash of password |
-| 68 | String | Email address |
-| x | Uint64 | Date registered |
-
-### Login History Data
-
-We only maintain a list of the last 10 logins for rate limiting and moderation purposes.
-
-| Offset | Type | Description |
-| --- | --- | --- |
-| 0 | Uint8 | # of logins (loop) |
-| x | Uint32 | Login IPv4 x |
-| x | Uint64 | Login Timestamp x |
-
-### Recovery Data
-
-Up to 3 recovery questions can be set.
-
-| Offset | Type | Description |
-| --- | --- | --- |
-| 0 | Uint8 | # of recovery questions (loop) |
-| x | String | Recovery question x |
-| x | String | Recovery answer x |
-
-### Account Center Data
-
-| Offset | Type | Description |
-| --- | --- | --- |
-| 0 | Uint8 | # of messages |
-| x | Uint8 | Message type |
-| x | String | Message text |
-| x | Uint64 | Message timestamp |
-
-### Player Data
 
 Base levels are calculated from stats XP.  
 Temp (boosted) levels are taken from current stat levels.
@@ -66,8 +24,16 @@ Temp (boosted) levels are taken from current stat levels.
 | 12 | Uint8[5] | Identity kit colors |
 | 17 | Uint8 | Gender |
 | 18 | Uint16 | Run Energy |
-| 20 | Uint32[19] | Stats XP |
-| 96 | Uint8[19] | Current stat levels |
+| 20 | Uint32 | Ticks logged in |
+
+## Stats Data
+
+| Offset | Type | Description |
+| --- | --- | --- |
+| 0 | Uint16 | # of stats |
+| x | Uint8 | Stat ID |
+| x | Uint32 | Stat XP |
+| x | Uint8 | Temp level |
 
 ### Player Variable Data
 
@@ -87,13 +53,8 @@ Temp (boosted) levels are taken from current stat levels.
 | y | Uint16 | Obj inv slot |
 | y | Uint16 | Obj ID |
 | y | Uint32 | Obj amount |
-| y | Uint8 | # of obj vars |
-| z | Uint16 | Obj var ID |
-| z | Uint32 | Obj var value |
 
 note: Banks can store 400 items, so a full bank results in at least a 4KB inventory block.
-
-Run weight and equipment bonuses are calculated from the `worn` inventory data.
 
 ### Example of newly registered player
 
@@ -115,8 +76,21 @@ Run weight and equipment bonuses are calculated from the `worn` inventory data.
 0x00 0x00 0x00 0x00 0x00 - identity kit colors
 0x00 - gender
 0x2710 - run energy
-... [3] 0x00000482 ... - stats xp
-0x01 ... [3] 0x0A ... - current stat levels
+0x00000000 - ticks logged in
+0x13 - # of stats
+...
+0x03 - stat ID
+0x00000482 - stat XP
+0x0A - temp level
+...
 0x00 - # of varps
 0x00 - # of invs
 ```
+
+## Format Version 2
+
+- not implemented -
+
+ideas:
+- objvars
+- extended var types (lookup to BaseVarType)
