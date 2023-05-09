@@ -15,7 +15,7 @@ node_modules/
 /src/cache/npcs.js
 /src/cache/objs.js
 
-/data/players/
+/data/saves/
 
 /.env
 package-lock.json
