@@ -195,6 +195,10 @@ export default class Packet extends Linkable {
 
     // ----
 
+    g1isaac() {
+        return (this.data[this.pos++] - this.random.nextInt()) & 0xFF;
+    }
+
     g1() {
         return this.data[this.pos++] & 0xFF;
     }
@@ -319,8 +323,3 @@ export default class Packet extends Linkable {
     addcrc() {
     }
 }
-
-let test = Packet.alloc(1);
-test.psmarts(-1);
-test.pos = 0;
-console.log(test.gsmarts());
