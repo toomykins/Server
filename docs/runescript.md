@@ -14,7 +14,7 @@ Held = Held Object (items in backpack)
 ## Triggers
 
 These are engine triggers that the server can execute. Their format is `[name,subject]`. Subject typically refers to a config name.  
-Triggers may have multiple matches, only the most specific one is used initially. Scripts can defer to the next script by calling `default();`  
+Triggers may have multiple matches, and only the most specific one is used initially. Scripts can defer to the next script by calling `default();`  
 Subject priority is `specififc` > `_category` > `_` (catch-all)
 
 ### Player
@@ -22,7 +22,7 @@ Subject priority is `specififc` > `_category` > `_` (catch-all)
 1-5: expanded to 5 different triggers (to save space on this page)  
 1-5 correspond to the options defined in the cache for a given config.
 
-Triggers that end in `t` represent "target spell" scripts. An example may be using telegrab on an object.
+Triggers that end in `t` represent "target spell" scripts. An example may be using telegrab on an object.  
 Triggers that end in `u` represent "use" scripts, when an object is used on something.
 
 ```
