@@ -9,7 +9,7 @@ Each offset is relative to its section.
 | Offset | Type | Description |
 | --- | --- | --- |
 | 0 | Uint16 | Magic number: 0x2004 |
-| 2 | Uint16 | Format version |
+| 1 | Uint8 | Format version |
 
 ## Footer
 
@@ -37,8 +37,7 @@ Temp (boosted) levels are taken from current stat levels.
 
 | Offset | Type | Description |
 | --- | --- | --- |
-| 0 | Uint16 | # of stats |
-| x | Uint8 | Stat ID |
+| 0 | Uint8 | # of stats |
 | x | Uint32 | Stat XP |
 | x | Uint8 | Temp level |
 
@@ -67,7 +66,7 @@ note: Banks can store 400 items, so a full bank results in at least a 4KB invent
 
 ```
 0x2004 - magic
-0x0001 - format version
+0x01 - format version
 
 0x0C16 - x position in world (tutorial island)
 0x0C22 - z position in world (tutorial island)
@@ -78,9 +77,8 @@ note: Banks can store 400 items, so a full bank results in at least a 4KB invent
 0x2710 - run energy
 0x00000000 - ticks logged in
 
-0x13 - # of stats
-...
-0x03 - stat ID
+0x15 - # of stats
+... [3]
 0x00000482 - stat XP
 0x0A - temp level
 ...
