@@ -1,5 +1,19 @@
 # Database Schemas
 
+This page lists all of the schemas necessary to re-create the original runescape.com feature set.
+
+## News Posts
+
+TODO
+
+## Polls
+
+TODO
+
+## Hiscores
+
+TODO
+
 ## Account
 
 ```sql
@@ -18,6 +32,30 @@ recovery_id - int
 recovery_question - varchar
 recovery_answer - varchar
 ```
+
+## Membership
+
+```sql
+account_id - bigint
+membership_start - datetime
+membership_end - datetime
+```
+
+## Account Messages
+
+```sql
+account_id - bigint
+```
+
+TODO
+
+## Staff Appeals
+
+```sql
+account_id - bigint
+```
+
+TODO
 
 ## Login History
 
