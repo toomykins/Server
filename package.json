@@ -1,0 +1,9 @@
+{
+  "name": "2004scape",
+  "version": "1.0.0",
+  "type": "module",
+  "imports": {
+    "#jagex2/*": "./src/jagex2/*",
+    "#lostcity/*": "./src/lostcity/*"
+  }
+}

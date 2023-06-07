@@ -1,0 +1,166 @@
+import fs from 'fs';
+
+export default class Packet {
+    data = new Int8Array();
+    pos = 0;
+    bitPos = 0;
+
+    constructor(src) {
+        if (src instanceof Packet) {
+            src = src.data;
+        }
+
+        if (src) {
+            this.data = new Int8Array(src);
+        }
+    }
+
+    static file(path) {
+        return new Packet(fs.readFileSync(path));
+    }
+
+    file(path, length = this.pos, start = 0) {
+        fs.writeFileSync(path, this.data.subarray(start, start + length));
+    }
+
+    // ----
+
+    get length() {
+        return this.data.length;
+    }
+
+    get available() {
+        return this.data.length - this.pos;
+    }
+
+    // ----
+
+    g1() {
+        return this.data[this.pos++] & 0xFF;
+    }
+
+    g1b() {
+        return this.data[this.pos++];
+    }
+
+    gbool() {
+        return this.g1() === 1;
+    }
+
+    g2() {
+        return (((this.data[this.pos++] & 0xFF) << 8) | (this.data[this.pos++] & 0xFF)) >>> 0;
+    }
+
+    g2s() {
+        let value = ((this.data[this.pos++] & 0xFF) << 8) | (this.data[this.pos++] & 0xFF);
+        if (value > 32767) {
+            value -= 65536;
+        }
+        return value;
+    }
+
+    g3() {
+        return (((this.data[this.pos++] & 0xFF) << 16) | ((this.data[this.pos++] & 0xFF) << 8) | (this.data[this.pos++] & 0xFF)) >>> 0;
+    }
+
+    g4() {
+        return (((this.data[this.pos++] & 0xFF) << 24) | ((this.data[this.pos++] & 0xFF) << 16) | ((this.data[this.pos++] & 0xFF) << 8) | (this.data[this.pos++] & 0xFF)) >>> 0;
+    }
+
+    g4s() {
+        return ((this.data[this.pos++] & 0xFF) << 24) | ((this.data[this.pos++] & 0xFF) << 16) | ((this.data[this.pos++] & 0xFF) << 8) | (this.data[this.pos++] & 0xFF);
+    }
+
+    g8() {
+        let high = BigInt(this.g4());
+        let low = BigInt(this.g4());
+        return high << 32n | low;
+    }
+
+    gjstr() {
+        // newline-terminated string
+        let str = '';
+        while (this.data[this.pos] !== 10) {
+            str += String.fromCharCode(this.data[this.pos++]);
+        }
+        this.pos++;
+        return str;
+    }
+
+    gdata(length) {
+        let data = this.data.subarray(this.pos, this.pos + length);
+        this.pos += length;
+        return data;
+    }
+
+    gPacket(length) {
+        return new Packet(this.gdata(length));
+    }
+
+    // ----
+
+    p1(value) {
+        this.data[this.pos++] = value;
+    }
+
+    pbool(value) {
+        this.data[this.pos++] = value ? 1 : 0;
+    }
+
+    p2(value) {
+        this.data[this.pos++] = value >> 8;
+        this.data[this.pos++] = value;
+    }
+
+    p3(value) {
+        this.data[this.pos++] = value >> 16;
+        this.data[this.pos++] = value >> 8;
+        this.data[this.pos++] = value;
+    }
+
+    p4(value) {
+        this.data[this.pos++] = value >> 24;
+        this.data[this.pos++] = value >> 16;
+        this.data[this.pos++] = value >> 8;
+        this.data[this.pos++] = value;
+    }
+
+    p8(value) {
+        let high = value >> 32n;
+        let low = value & 0xFFFFFFFFn;
+        this.p4(Number(high));
+        this.p4(Number(low));
+    }
+
+    pjstr(str) {
+        for (let i = 0; i < str.length; i++) {
+            this.data[this.pos++] = str.charCodeAt(i);
+        }
+        this.data[this.pos++] = 10;
+    }
+
+    pdata(data) {
+        if (data instanceof Packet) {
+            data = data.data;
+        }
+
+        this.data.set(data, this.pos);
+        this.pos += data.length;
+    }
+
+    // ----
+
+    bits() {
+        this.bitPos = this.pos * 8;
+    }
+
+    bytes() {
+        this.pos = (this.bitPos + 7) / 8;
+    }
+
+    gBit(n) {
+    }
+
+    pBit(n, value) {
+    }
+}

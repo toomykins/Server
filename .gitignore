@@ -1,0 +1,6 @@
+data/pack/client/
+data/pack/server/
+
+data/unpack/
+
+node_modules/
