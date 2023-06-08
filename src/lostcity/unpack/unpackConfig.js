@@ -54,7 +54,7 @@ for (let id = 0; id < count; id++) {
         } else if (code === 5) {
             append('all.flo', `occlude=no`);
         } else if (code === 6) {
-            append('all.flo', `name=${flo.gjstr()}`);
+            append('all.flo', `editname=${flo.gjstr()}`);
         } else {
             console.error(`Unrecognized flo config code: ${code}`);
             process.exit(1);
