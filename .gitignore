@@ -1,6 +1,6 @@
 data/pack/client/
 data/pack/server/
 
-data/unpack/
+dump/
 
 node_modules/

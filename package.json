@@ -5,5 +5,9 @@
   "imports": {
     "#jagex2/*": "./src/jagex2/*",
     "#lostcity/*": "./src/lostcity/*"
+  },
+  "dependencies": {
+    "@jimp/png": "^0.22.8",
+    "jimp": "^0.22.8"
   }
 }

@@ -12,12 +12,12 @@ if (args.length < 1) {
 
 let jagName = path.basename(args[0]);
 
-fs.mkdirSync(`data/unpack/${jagName}`, { recursive: true });
+fs.mkdirSync(`dump/unpack/${jagName}`, { recursive: true });
 
 let jag = Jagfile.load(args[0]);
 for (let i = 0; i < jag.fileCount; i++) {
     let name = jag.fileName[i];
     let entry = jag.read(name);
 
-    entry.file(`data/unpack/${jagName}/${name}`, entry.length);
+    entry.file(`dump/unpack/${jagName}/${name}`, entry.length);
 }

@@ -23,6 +23,22 @@ export default class Packet {
         fs.writeFileSync(path, this.data.subarray(start, start + length));
     }
 
+    resize(size) {
+        let temp = new Int8Array(size);
+        temp.set(this.data);
+        this.data = temp;
+    }
+
+    ensure(size, aggressive = false) {
+        if (this.data.length < size) {
+            if (aggressive) {
+                this.resize(size + 1000);
+            } else {
+                this.resize(size);
+            }
+        }
+    }
+
     // ----
 
     get length() {
@@ -100,25 +116,30 @@ export default class Packet {
     // ----
 
     p1(value) {
+        this.ensure(this.pos + 1);
         this.data[this.pos++] = value;
     }
 
     pbool(value) {
+        this.ensure(this.pos + 1);
         this.data[this.pos++] = value ? 1 : 0;
     }
 
     p2(value) {
+        this.ensure(this.pos + 2);
         this.data[this.pos++] = value >> 8;
         this.data[this.pos++] = value;
     }
 
     p3(value) {
+        this.ensure(this.pos + 3);
         this.data[this.pos++] = value >> 16;
         this.data[this.pos++] = value >> 8;
         this.data[this.pos++] = value;
     }
 
     p4(value) {
+        this.ensure(this.pos + 4);
         this.data[this.pos++] = value >> 24;
         this.data[this.pos++] = value >> 16;
         this.data[this.pos++] = value >> 8;
@@ -126,6 +147,7 @@ export default class Packet {
     }
 
     p8(value) {
+        this.ensure(this.pos + 8);
         let high = value >> 32n;
         let low = value & 0xFFFFFFFFn;
         this.p4(Number(high));
@@ -133,6 +155,7 @@ export default class Packet {
     }
 
     pjstr(str) {
+        this.ensure(this.pos + str.length + 1);
         for (let i = 0; i < str.length; i++) {
             this.data[this.pos++] = str.charCodeAt(i);
         }
@@ -140,6 +163,7 @@ export default class Packet {
     }
 
     pdata(data) {
+        this.ensure(this.pos + data.length);
         if (data instanceof Packet) {
             data = data.data;
         }
