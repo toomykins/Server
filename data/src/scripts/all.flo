@@ -20,17 +20,17 @@ name=cliff4
 
 [flo_4]
 overlay=yes
-texture=3
+texture=planks
 name=woodenfloor
 
 [flo_5]
 overlay=yes
-texture=1
+texture=water
 name=water
 
 [flo_6]
 overlay=yes
-texture=25
+texture=gungywater
 name=gungywater
 
 [flo_7]
@@ -55,7 +55,7 @@ name=darkstone
 
 [flo_11]
 overlay=yes
-texture=46
+texture=pebblefloor
 name=pebblefloor
 
 [flo_12]
@@ -90,12 +90,12 @@ name=bluefloor
 
 [flo_18]
 overlay=yes
-texture=31
+texture=lava
 name=lava
 
 [flo_19]
 overlay=yes
-texture=15
+texture=marble
 name=marble
 
 [flo_20]
@@ -115,7 +115,7 @@ name=l_brownfloor1_bump
 
 [flo_23]
 overlay=yes
-texture=47
+texture=rockwall
 name=cliff_textured
 
 [flo_24]
@@ -130,12 +130,12 @@ name=sand_rock
 
 [flo_26]
 overlay=yes
-texture=23
+texture=mossybricks
 name=oldbrick
 
 [flo_27]
 overlay=yes
-texture=2
+texture=wall
 name=brick
 
 [flo_28]
@@ -155,7 +155,7 @@ name=upass_floor
 
 [flo_31]
 overlay=yes
-texture=11
+texture=mossy
 name=stone_texture
 
 [flo_32]
@@ -170,7 +170,7 @@ name=road_bridge
 
 [flo_34]
 overlay=yes
-texture=3
+texture=planks
 name=woodenfloor_bridge
 
 [flo_35]
@@ -190,7 +190,7 @@ name=lightblue
 
 [flo_38]
 overlay=yes
-texture=17
+texture=fountain
 name=water_fountain
 
 [flo_39]
@@ -222,19 +222,19 @@ name=road_no_occlude
 
 [flo_44]
 overlay=yes
-texture=3
+texture=planks
 occlude=no
 name=woodenfloor_no_occlude
 
 [flo_45]
 overlay=yes
-texture=23
+texture=mossybricks
 occlude=no
 name=oldbrick_no_occlude
 
 [flo_46]
 overlay=yes
-texture=2
+texture=wall
 occlude=no
 name=brick_no_occlude
 

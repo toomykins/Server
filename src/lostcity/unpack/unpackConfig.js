@@ -4,6 +4,11 @@ import Jagfile from '#jagex2/io/Jagfile.js';
 
 let config = Jagfile.load('data/pack/client/config');
 
+let textures = fs.readFileSync('data/pack/textures.pack', 'ascii').replaceAll('\r\n', '\n').split('\n').filter(x => x).map(x => {
+    let parts = x.split('=');
+    return { id: parseInt(parts[0]), name: parts[1] };
+});
+
 // read all ahead of time
 
 let flo = config.read('flo.dat');
@@ -22,6 +27,7 @@ function append(file, str) {
 // ----
 
 fs.writeFileSync('data/src/scripts/all.flo', '');
+fs.writeFileSync('data/pack/flo.pack', '');
 
 let count = flo.g2();
 for (let id = 0; id < count; id++) {
@@ -30,6 +36,7 @@ for (let id = 0; id < count; id++) {
     }
 
     append('all.flo', `[flo_${id}]`);
+    fs.appendFileSync('data/pack/flo.pack', `${id}=flo_${id}\n`);
 
     while (true) {
         let code = flo.g1();
@@ -40,7 +47,8 @@ for (let id = 0; id < count; id++) {
         if (code === 1) {
             append('all.flo', `rgb=0x${flo.g3().toString(16).toUpperCase()}`);
         } else if (code === 2) {
-            append('all.flo', `texture=${flo.g1()}`);
+            let texture = flo.g1();
+            append('all.flo', `texture=${textures.find(x => x.id === texture).name}`);
         } else if (code === 3) {
             append('all.flo', `overlay=yes`);
         } else if (code === 5) {
@@ -57,6 +65,7 @@ for (let id = 0; id < count; id++) {
 // ----
 
 fs.writeFileSync('data/src/scripts/all.idk', '');
+fs.writeFileSync('data/pack/idk.pack', '');
 
 count = idk.g2();
 for (let id = 0; id < count; id++) {
@@ -65,6 +74,7 @@ for (let id = 0; id < count; id++) {
     }
 
     append('all.idk', `[idk_${id}]`);
+    fs.appendFileSync('data/pack/idk.pack', `${id}=idk_${id}\n`);
 
     while (true) {
         let code = idk.g1();
@@ -73,7 +83,54 @@ for (let id = 0; id < count; id++) {
         }
 
         if (code === 1) {
-            append('all.idk', `type=${idk.g1()}`);
+            let bodypart = idk.g1();
+
+            switch (bodypart) {
+                case 0:
+                    bodypart = 'man_hair';
+                    break;
+                case 1:
+                    bodypart = 'man_jaw';
+                    break;
+                case 2:
+                    bodypart = 'man_torso';
+                    break;
+                case 3:
+                    bodypart = 'man_arms';
+                    break;
+                case 4:
+                    bodypart = 'man_hands';
+                    break;
+                case 5:
+                    bodypart = 'man_legs';
+                    break;
+                case 6:
+                    bodypart = 'man_feet';
+                    break;
+                case 7:
+                    bodypart = 'woman_hair';
+                    break;
+                case 8:
+                    bodypart = 'woman_jaw';
+                    break;
+                case 9:
+                    bodypart = 'woman_torso';
+                    break;
+                case 10:
+                    bodypart = 'woman_arms';
+                    break;
+                case 11:
+                    bodypart = 'woman_hands';
+                    break;
+                case 12:
+                    bodypart = 'woman_legs';
+                    break;
+                case 13:
+                    bodypart = 'woman_feet';
+                    break;
+            }
+
+            append('all.idk', `type=${bodypart}`);
         } else if (code === 2) {
             let models = idk.g1();
 
@@ -98,6 +155,7 @@ for (let id = 0; id < count; id++) {
 // ----
 
 fs.writeFileSync('data/src/scripts/all.loc', '');
+fs.writeFileSync('data/pack/loc.pack', '');
 
 count = loc.g2();
 for (let id = 0; id < count; id++) {
@@ -106,6 +164,7 @@ for (let id = 0; id < count; id++) {
     }
 
     append('all.loc', `[loc_${id}]`);
+    fs.appendFileSync('data/pack/loc.pack', `${id}=loc_${id}\n`);
 
     while (true) {
         let code = loc.g1();
@@ -117,7 +176,83 @@ for (let id = 0; id < count; id++) {
             let models = loc.g1();
 
             for (let i = 0; i < models; i++) {
-                append('all.loc', `model${i + 1}=model_${loc.g2()},${loc.g1()}`);
+                let model = loc.g2();
+                let shape = loc.g1();
+
+                // shape is part of the model filename, but we can't control that right now
+                switch (shape) {
+                    case 10:
+                        shape = 'centrepiece_straight';
+                        break;
+                    case 0:
+                        shape = 'wall_straight';
+                        break;
+                    case 1:
+                        shape = 'wall_diagonalcorner';
+                        break;
+                    case 2:
+                        shape = 'wall_l';
+                        break;
+                    case 3:
+                        shape = 'wall_squarecorner';
+                        break;
+                    case 9:
+                        shape = 'wall_diagonal';
+                        break;
+                    case 4:
+                        shape = 'walldecor_straight';
+                        break;
+                    case 5:
+                        shape = 'walldecor_straight_offset';
+                        break;
+                    case 6:
+                        shape = 'walldecor_diagonal_nooffset';
+                        break;
+                    case 7:
+                        shape = 'walldecor_diagonal_offset';
+                        break;
+                    case 8:
+                        shape = 'walldecor_diagonal_both';
+                        break;
+                    case 11:
+                        shape = 'centrepiece_diagonal';
+                        break;
+                    case 12:
+                        shape = 'roof_straight';
+                        break;
+                    case 13:
+                        shape = 'roof_diagonal_with_roofedge';
+                        break;
+                    case 14:
+                        shape = 'roof_diagonal';
+                        break;
+                    case 15:
+                        shape = 'roof_l_concave';
+                        break;
+                    case 16:
+                        shape = 'roof_l_convex';
+                        break;
+                    case 17:
+                        shape = 'roof_flat';
+                        break;
+                    case 18:
+                        shape = 'roofedge_straight';
+                        break;
+                    case 19:
+                        shape = 'roofedge_diagonalcorner';
+                        break;
+                    case 20:
+                        shape = 'roofedge_l';
+                        break;
+                    case 21:
+                        shape = 'roofedge_squarecorner';
+                        break;
+                    case 22:
+                        shape = 'grounddecor';
+                        break;
+                }
+
+                append('all.loc', `model${i + 1}=model_${model},${shape}`);
             }
         } else if (code === 2) {
             append('all.loc', `name=${loc.gjstr()}`);
@@ -142,7 +277,7 @@ for (let id = 0; id < count; id++) {
         } else if (code === 24) {
             append('all.loc', `anim=seq_${loc.g2()}`);
         } else if (code === 25) {
-            append('all.loc', `disposeAlpha=yes`); // temp
+            append('all.loc', `hasalpha=yes`); // TODO: inherit from anim
         } else if (code === 28) {
             append('all.loc', `walloff=${loc.g1()}`);
         } else if (code === 29) {
@@ -173,7 +308,20 @@ for (let id = 0; id < count; id++) {
         } else if (code === 68) {
             append('all.loc', `mapscene=${loc.g2()}`);
         } else if (code === 69) {
-            append('all.loc', `forceapproach=${loc.g1()}`);
+            // north = 1
+            // east = 2
+            // south = 4
+            // west = 8
+            let flags = loc.g1();
+            if ((flags & 0x1) === 0) {
+                append('all.loc', `forceapproach=north`);
+            } else if ((flags & 0x2) === 0) {
+                append('all.loc', `forceapproach=east`);
+            } else if ((flags & 0x4) === 0) {
+                append('all.loc', `forceapproach=south`);
+            } else if ((flags & 0x8) === 0) {
+                append('all.loc', `forceapproach=west`);
+            }
         } else if (code === 70) {
             append('all.loc', `xoff=${loc.g2s()}`);
         } else if (code === 71) {
@@ -192,6 +340,7 @@ for (let id = 0; id < count; id++) {
 // ----
 
 fs.writeFileSync('data/src/scripts/all.npc', '');
+fs.writeFileSync('data/pack/npc.pack', '');
 
 count = npc.g2();
 for (let id = 0; id < count; id++) {
@@ -200,6 +349,7 @@ for (let id = 0; id < count; id++) {
     }
 
     append('all.npc', `[npc_${id}]`);
+    fs.appendFileSync('data/pack/npc.pack', `${id}=npc_${id}\n`);
 
     while (true) {
         let code = npc.g1();
@@ -224,7 +374,7 @@ for (let id = 0; id < count; id++) {
         } else if (code === 14) {
             append('all.npc', `walkanim=seq_${npc.g2()}`);
         } else if (code === 16) {
-            append('all.npc', `disposeAlpha=yes`); // temp
+            append('all.npc', `hasalpha=yes`); // TODO: inherit from anim
         } else if (code === 17) {
             append('all.npc', `walkanim=seq_${npc.g2()}`);
             append('all.npc', `walkanim_b=seq_${npc.g2()}`);
@@ -254,7 +404,12 @@ for (let id = 0; id < count; id++) {
         } else if (code === 93) {
             append('all.npc', `visonmap=no`);
         } else if (code === 95) {
-            append('all.npc', `vislevel=${npc.g2()}`);
+            let level = npc.g2();
+            if (level === 0) {
+                level = 'hide';
+            }
+
+            append('all.npc', `vislevel=${level}`);
         } else if (code === 97) {
             append('all.npc', `resizeh=${npc.g2()}`);
         } else if (code === 98) {
@@ -269,6 +424,7 @@ for (let id = 0; id < count; id++) {
 // ----
 
 fs.writeFileSync('data/src/scripts/all.obj', '');
+fs.writeFileSync('data/pack/obj.pack', '');
 
 count = obj.g2();
 for (let id = 0; id < count; id++) {
@@ -277,6 +433,7 @@ for (let id = 0; id < count; id++) {
     }
 
     append('all.obj', `[obj_${id}]`);
+    fs.appendFileSync('data/pack/obj.pack', `${id}=obj_${id}\n`);
 
     while (true) {
         let code = obj.g1();
@@ -346,7 +503,7 @@ for (let id = 0; id < count; id++) {
         } else if (code === 97) {
             append('all.obj', `certlink=obj_${obj.g2()}`);
         } else if (code === 98) {
-            append('all.obj', `certlink=obj_${obj.g2()}`);
+            append('all.obj', `certtemplate=obj_${obj.g2()}`);
         } else if (code >= 100 && code < 110) {
             append('all.obj', `count${code - 100 + 1}=obj_${obj.g2()},${obj.g2()}`);
         } else {
@@ -359,6 +516,7 @@ for (let id = 0; id < count; id++) {
 // ----
 
 fs.writeFileSync('data/src/scripts/all.seq', '');
+fs.writeFileSync('data/pack/seq.pack', '');
 
 count = seq.g2();
 for (let id = 0; id < count; id++) {
@@ -367,6 +525,7 @@ for (let id = 0; id < count; id++) {
     }
 
     append('all.seq', `[seq_${id}]`);
+    fs.appendFileSync('data/pack/seq.pack', `${id}=seq_${id}\n`);
 
     while (true) {
         let code = seq.g1();
@@ -377,18 +536,29 @@ for (let id = 0; id < count; id++) {
         if (code === 1) {
             let frames = seq.g1();
 
-            for (let i = 0; i < frames; i++) {
-                append('all.seq', `frame${i + 1}=anim_${seq.g2()}`);
+            let frame = [];
+            let iframe = [];
+            let delay = [];
+            for (let j = 0; j < frames; j++) {
+                frame.push(seq.g2());
+                iframe.push(seq.g2());
+                delay.push(seq.g2());
+            }
 
-                let iframe = seq.g2();
-                if (iframe !== 65535) {
-                    append('all.seq', `iframe${i + 1}=anim_${iframe}`);
+            for (let j = 0; j < frames; j++) {
+                append('all.seq', `frame${j + 1}=anim_${frame[j]}`);
+
+                if (delay[j] !== 0) {
+                    append('all.seq', `delay${j + 1}=${delay[j]}`);
+                }
+            }
+
+            for (let j = 0; j < frames; j++) {
+                if (iframe[j] === 65535) {
+                    continue;
                 }
 
-                let delay = seq.g2();
-                if (delay !== 0) {
-                    append('all.seq', `delay${i + 1}=${delay}`);
-                }
+                append('all.seq', `iframe${j + 1}=anim_${iframe[j]}`);
             }
         } else if (code === 2) {
             append('all.seq', `replayoff=${seq.g2()}`);
@@ -410,9 +580,23 @@ for (let id = 0; id < count; id++) {
         } else if (code === 5) {
             append('all.seq', `priority=${seq.g1()}`);
         } else if (code === 6) {
-            append('all.seq', `mainhand=obj_${seq.g2()}`);
+            let obj = seq.g2();
+            if (obj === 0) {
+                obj = 'hide';
+            } else {
+                obj = `obj_${obj}`;
+            }
+
+            append('all.seq', `mainhand=${obj}`);
         } else if (code === 7) {
-            append('all.seq', `offhand=obj_${seq.g2()}`);
+            let obj = seq.g2();
+            if (obj === 0) {
+                obj = 'hide';
+            } else {
+                obj = `obj_${obj}`;
+            }
+
+            append('all.seq', `offhand=${obj}`);
         } else if (code === 8) {
             append('all.seq', `replaycount=${seq.g1()}`);
         } else {
@@ -425,6 +609,7 @@ for (let id = 0; id < count; id++) {
 // ----
 
 fs.writeFileSync('data/src/scripts/all.spotanim', '');
+fs.writeFileSync('data/pack/spotanim.pack', '');
 
 count = spotanim.g2();
 for (let id = 0; id < count; id++) {
@@ -433,6 +618,7 @@ for (let id = 0; id < count; id++) {
     }
 
     append('all.spotanim', `[spotanim_${id}]`);
+    fs.appendFileSync('data/pack/spotanim.pack', `${id}=spotanim_${id}\n`);
 
     while (true) {
         let code = spotanim.g1();
@@ -445,7 +631,7 @@ for (let id = 0; id < count; id++) {
         } else if (code === 2) {
             append('all.spotanim', `anim=seq_${spotanim.g2()}`);
         } else if (code === 3) {
-            append('all.spotanim', `disposeAlpha=yes`); // temp
+            append('all.spotanim', `hasalpha=yes`); // TODO: inherit from anim
         } else if (code === 4) {
             append('all.spotanim', `resizeh=${spotanim.g2()}`);
         } else if (code === 5) {
@@ -470,6 +656,7 @@ for (let id = 0; id < count; id++) {
 // ----
 
 fs.writeFileSync('data/src/scripts/all.varp', '');
+fs.writeFileSync('data/pack/varp.pack', '');
 
 count = varp.g2();
 for (let id = 0; id < count; id++) {
@@ -478,6 +665,7 @@ for (let id = 0; id < count; id++) {
     }
 
     append('all.varp', `[varp_${id}]`);
+    fs.appendFileSync('data/pack/varp.pack', `${id}=varp_${id}\n`);
 
     while (true) {
         let code = varp.g1();
