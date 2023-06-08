@@ -6,6 +6,11 @@ import { pixSize, unpackPix } from '#lostcity/unpack/Pix.js';
 
 let textures = Jagfile.load('data/pack/client/textures');
 
+let pack = fs.readFileSync('data/pack/textures.pack', 'ascii').replaceAll('\r\n', '\n').split('\n').filter(x => x).map(x => {
+    let parts = x.split('=');
+    return { id: parseInt(parts[0]), name: parts[1] };
+});
+
 // let sprites = [];
 
 let index = textures.read('index.dat');
@@ -22,7 +27,8 @@ for (let i = 0; i < textures.fileCount; i++) {
     // sprites[safeName] = unpackPix(data, index);
     let texture = unpackPix(data, index);
 
-    await texture.img.writeAsync(`data/src/textures/${safeName}.png`);
+    let realName = pack.find(x => x.id == safeName).name;
+    await texture.img.writeAsync(`data/src/textures/${realName}.png`);
 }
 
 // generate a spritesheet:
