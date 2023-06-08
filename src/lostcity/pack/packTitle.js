@@ -17,17 +17,17 @@ let q8 = await convertImage(index, 'data/src/fonts', 'q8', { tileX: 20, tileY: 2
 q8.file('data/pack/client/title.jag/q8.dat');
 
 // flame masks
-let runes = await convertImage(index, 'data/src/binary', 'runes', { tileX: 96, tileY: 96 });
+let runes = await convertImage(index, 'data/src/title', 'runes', { tileX: 96, tileY: 96 });
 runes.file('data/pack/client/title.jag/runes.dat');
 
 // title screen elements
-let logo = await convertImage(index, 'data/src/binary', 'logo');
+let logo = await convertImage(index, 'data/src/title', 'logo');
 logo.file('data/pack/client/title.jag/logo.dat');
 
-let titlebox = await convertImage(index, 'data/src/binary', 'titlebox');
+let titlebox = await convertImage(index, 'data/src/title', 'titlebox');
 titlebox.file('data/pack/client/title.jag/titlebox.dat');
 
-let titlebutton = await convertImage(index, 'data/src/binary', 'titlebutton');
+let titlebutton = await convertImage(index, 'data/src/title', 'titlebutton');
 titlebutton.file('data/pack/client/title.jag/titlebutton.dat');
 
 index.file('data/pack/client/title.jag/index.dat');

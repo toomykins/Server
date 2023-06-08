@@ -7,7 +7,7 @@ import { pixSize, countPix, unpackPix } from '#lostcity/unpack/Pix.js';
 let title = Jagfile.load('data/pack/client/title');
 
 let jpg = title.read('title.dat');
-jpg.p1(0xFF);
+jpg.p1(0xFF); // restore JPEG header
 jpg.file('data/src/binary/title.jpg', jpg.length);
 
 let index = title.read('index.dat');
@@ -21,20 +21,20 @@ for (let i = 0; i < title.fileCount; i++) {
     let count = countPix(data, index);
     console.log(title.fileName[i], count, size.width + 'x' + size.height);
 
-    let dest = 'binary';
+    let dest = 'title';
     let safeName = title.fileName[i].replace('.dat', '');
     if (safeName === 'p11' || safeName === 'p12' || safeName === 'b12' || safeName === 'q8') {
         dest = 'fonts';
     }
 
     if (count === 1) {
-        let pix = unpackPix(title.read(title.fileName[i]), index);
+        let pix = unpackPix(data, index);
         await pix.img.writeAsync(`data/src/${dest}/${safeName}.png`);
     } else {
         // sprite sheet!
         let sprites = [];
         for (let j = 0; j < count; j++) {
-            sprites[j] = unpackPix(title.read(title.fileName[i]), index, j);
+            sprites[j] = unpackPix(data, index, j);
         }
 
         let width = Math.ceil(Math.sqrt(count));
