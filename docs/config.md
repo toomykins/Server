@@ -1,10 +1,16 @@
-All boolean values are yes/no instead of true/false.
-
 ID <-> name mapping is done inside `data/pack/<ext>.pack`.
 
-All configs are loaded recursively from the `src/scripts` directory. They can be split up or organized in any, and will be loaded by their extension.
+All configs are loaded recursively from the `data/src/scripts` directory. They can be split up or organized in any subfolder, and will be loaded based on their extension. Ordering is preserved by maintaing a .pack file.  
+Each config gets exposed to the script engine using the named identifier inside square brackets.
 
+All boolean values are yes/no instead of true/false.
 You do not need to specify a value if it's already the default.
+
+The basic format is:
+```
+[config name]
+configkey=value
+```
 
 ## Floor
 
