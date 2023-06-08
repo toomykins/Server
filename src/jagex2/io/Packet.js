@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { dirname } from 'path';
 
 export default class Packet {
     data = new Int8Array();
@@ -16,10 +17,20 @@ export default class Packet {
     }
 
     static file(path) {
+        let dir = dirname(path);
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+        }
+
         return new Packet(fs.readFileSync(path));
     }
 
     file(path, length = this.pos, start = 0) {
+        let dir = dirname(path);
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+        }
+
         fs.writeFileSync(path, this.data.subarray(start, start + length));
     }
 
