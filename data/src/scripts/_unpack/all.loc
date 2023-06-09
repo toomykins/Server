@@ -985,7 +985,7 @@ blockwalk=no
 blockrange=no
 ambient=60
 op1=Burst
-model=model_loc_121
+model=model_loc_115
 name=Party Balloon
 desc=Aren't they pretty?
 
@@ -995,7 +995,7 @@ blockwalk=no
 blockrange=no
 ambient=60
 op1=Burst
-model=model_loc_122
+model=model_loc_115
 name=Party Balloon
 desc=Paaaarty!
 
@@ -16096,7 +16096,7 @@ desc=These doors must have been hidden here for years.
 width=2
 op1=Open
 op2=Search
-model=model_loc_2242
+model=model_loc_2240
 name=Tomb exit
 desc=Perhaps you should give them a push.
 
@@ -16105,7 +16105,7 @@ width=2
 mirror=yes
 op1=Open
 op2=Search
-model=model_loc_2242
+model=model_loc_2240
 name=Tomb exit
 desc=Perhaps you should give them a push.
 
@@ -24606,7 +24606,7 @@ blockrange=no
 mapscene=43
 recol1s=6689
 recol1d=7952
-model=model_loc_3279
+model=model_loc_3278
 
 [loc_3280]
 active=no
@@ -24655,7 +24655,7 @@ active=no
 blockrange=no
 recol1s=6689
 recol1d=7952
-model=model_loc_3285
+model=model_loc_3281
 
 [loc_3286]
 sharelight=yes
@@ -24663,7 +24663,7 @@ active=no
 blockrange=no
 recol1s=6689
 recol1d=7952
-model=model_loc_3286
+model=model_loc_3283
 
 [loc_3287]
 sharelight=yes
@@ -24671,7 +24671,7 @@ active=no
 blockrange=no
 recol1s=6689
 recol1d=7952
-model=model_loc_3287
+model=model_loc_3283
 
 [loc_3288]
 sharelight=yes
@@ -24679,7 +24679,7 @@ active=no
 blockrange=no
 recol1s=6689
 recol1d=7952
-model=model_loc_3288
+model=model_loc_3283
 
 [loc_3289]
 forcedecor=yes

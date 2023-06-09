@@ -130,13 +130,6 @@ for (let i = 0; i < locs.length; i++) {
         continue;
     }
 
-    // check if last line was model and then delete this one if so
-    if (locs[i - 1].startsWith('model')) {
-        locs.splice(i, 1);
-        i--;
-        continue;
-    }
-
     let key = line.substring(0, line.indexOf('='));
     let value = line.substring(line.indexOf('=') + 1);
 
@@ -227,8 +220,16 @@ for (let i = 0; i < locs.length; i++) {
 
         models[modelId] = `${modelId}=${target}`;
         locs[i] = `model=${newModelName[id]}`;
+
         if (fs.existsSync(`data/src/models/_unpack/${id}.ob2`)) {
             fs.renameSync(`data/src/models/_unpack/${id}.ob2`, `data/src/models/loc/${target}.ob2`);
+        }
+
+        // check if last line was model and then delete this one if so
+        if (locs[i - 1].startsWith('model')) {
+            locs.splice(i, 1);
+            i--;
+            continue;
         }
     }
 }
