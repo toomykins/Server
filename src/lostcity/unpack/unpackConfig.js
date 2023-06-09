@@ -24,6 +24,8 @@ function append(file, str) {
     fs.appendFileSync(`data/src/scripts/_unpack/${file}`, str + '\n');
 }
 
+fs.mkdirSync('data/src/scripts/_unpack', { recursive: true });
+
 // ----
 
 fs.writeFileSync('data/src/scripts/_unpack/all.flo', '');
@@ -200,7 +202,7 @@ for (let id = 0; id < count; id++) {
                         shape = 'wall_diagonal';
                         break;
                     case 4:
-                        shape = 'walldecor_straight';
+                        shape = 'walldecor_straight_nooffset';
                         break;
                     case 5:
                         shape = 'walldecor_straight_offset';
