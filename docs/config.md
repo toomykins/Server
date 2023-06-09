@@ -141,6 +141,8 @@ param=test=1234
 
 ### Model Suffixes
 
+A loc model without a suffix will be treated as centrepiece_straight.
+
 | Suffix | Shape |
 |-|-|
 | 1 | wall_straight |
@@ -153,7 +155,7 @@ param=test=1234
 | e | walldecor_diagonal_offset |
 | r | walldecor_diagonal_nooffset |
 | t | walldecor_diagonal_both |
-| 8 | centrepiece_straight |
+| 8 | centrepiece_straight (default) |
 | 9 | centrepiece_diagonal |
 | 0 | grounddecor |
 | a | roof_straight |

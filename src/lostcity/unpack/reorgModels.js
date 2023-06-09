@@ -90,7 +90,7 @@ for (let i = 0; i < npcs.length; i++) {
         if (fs.existsSync(`data/src/models/_unpack/${value}.ob2`)) {
             fs.renameSync(`data/src/models/_unpack/${value}.ob2`, `data/src/models/npc/${value}.ob2`);
         }
-    } else if (key === 'head') {
+    } else if (key.startsWith('head')) {
         if (fs.existsSync(`data/src/models/_unpack/${value}.ob2`)) {
             fs.renameSync(`data/src/models/_unpack/${value}.ob2`, `data/src/models/npc/${value}.ob2`);
         }
@@ -182,7 +182,7 @@ for (let i = 0; i < locs.length; i++) {
                 target += '_t';
                 break;
             case 'centrepiece_straight':
-                target += '_8';
+                // target += '_8';
                 break;
             case 'centrepiece_diagonal':
                 target += '_9';
