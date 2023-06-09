@@ -1,19 +1,31 @@
 import fs from 'fs';
 import Jagfile from '#jagex2/io/Jagfile.js';
 import Packet from '#jagex2/io/Packet.js';
+import Model from './Model.js';
 
 let models = Jagfile.load('data/pack/client/models');
 
 // ----
 
 {
-    let head = models.read('ob_head.dat');
+    Model.unpack(models);
 
     fs.writeFileSync('data/pack/model.pack', ``);
+    for (let i = 0; i < Model.metadata.length; i++) {
+        if (!Model.metadata[i]) {
+            continue;
+        }
 
-    let count = head.g2();
-    for (let i = 0; i < count; i++) {
         fs.appendFileSync('data/pack/model.pack', `${i}=model_${i}\n`);
+
+        let model = Model.get(i);
+        let raw = model.convert();
+        raw.save(`data/src/models/_unpack/model_${i}.ob2`);
+    }
+
+    fs.writeFileSync('data/pack/model.order', ``);
+    for (let i = 0; i < Model.order.length; i++) {
+        fs.appendFileSync('data/pack/model.order', `${Model.order[i]}\n`);
     }
 }
 

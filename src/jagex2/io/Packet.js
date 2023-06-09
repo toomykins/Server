@@ -194,6 +194,10 @@ export default class Packet {
     }
 
     pdata(data) {
+        if (!data.length) {
+            return;
+        }
+
         this.ensure(this.pos + data.length);
         if (data instanceof Packet) {
             data = data.data;
