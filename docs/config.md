@@ -68,7 +68,7 @@ extension: loc
 
 | Config | Description | Values | Default |
 |-|-|-|-|
-| model | Sets the world model | Model |
+| model | Sets the world model, see below* | Model |
 | name | Sets the display name | String |
 | desc | Sets the examine text | String |
 | width | Sets the length of this config in tiles | 1 to 255 | 1 |
@@ -136,6 +136,36 @@ zoff=140
 forcedecor=yes
 param=test=1234
 ```
+
+\* locs have multiple "shapes" to identify itself as a wall, decor, roof, etc. and that shape comes from the model filename. If multiple files are found for model_loc_0 then all of them are added to the loc.
+
+### Model Suffixes
+
+| Suffix | Shape |
+|-|-|
+| 1 | wall_straight |
+| 2 | wall_diagonalcorner |
+| 3 | wall_l |
+| 4 | wall_squarecorner |
+| 5 | wall_diagonal |
+| q | walldecor_straight_nooffset |
+| w | walldecor_straight_offset |
+| e | walldecor_diagonal_offset |
+| r | walldecor_diagonal_nooffset |
+| t | walldecor_diagonal_both |
+| 8 | centrepiece_straight |
+| 9 | centrepiece_diagonal |
+| 0 | grounddecor |
+| a | roof_straight |
+| s | roof_diagonal_with_roofedge |
+| d | roof_diagonal |
+| f | roof_l_concave |
+| g | rool_l_convex |
+| h | roof_flat |
+| z | roofedge_straight |
+| x | roofedge_diagonalcorner |
+| c | roofedge_l |
+| v | roofedge_squarecorner |
 
 ## NPC
 
