@@ -6,7 +6,7 @@ import { pixSize, unpackPix } from '#lostcity/unpack/Pix.js';
 
 let textures = Jagfile.load('data/pack/client/textures');
 
-let pack = fs.readFileSync('data/pack/textures.pack', 'ascii').replaceAll('\r\n', '\n').split('\n').filter(x => x).map(x => {
+let pack = fs.readFileSync('data/pack/texture.pack', 'ascii').replaceAll('\r\n', '\n').split('\n').filter(x => x).map(x => {
     let parts = x.split('=');
     return { id: parseInt(parts[0]), name: parts[1] };
 });

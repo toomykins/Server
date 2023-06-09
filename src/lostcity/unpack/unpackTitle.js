@@ -8,7 +8,7 @@ let title = Jagfile.load('data/pack/client/title');
 
 let jpg = title.read('title.dat');
 jpg.p1(0xFF); // restore JPEG header
-jpg.file('data/src/binary/title.jpg', jpg.length);
+jpg.save('data/src/binary/title.jpg', jpg.length);
 
 let index = title.read('index.dat');
 for (let i = 0; i < title.fileCount; i++) {

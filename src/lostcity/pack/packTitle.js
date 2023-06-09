@@ -5,34 +5,34 @@ let index = new Packet();
 
 // fonts
 let b12 = await convertImage(index, 'data/src/fonts', 'b12', { tileX: 20, tileY: 20 });
-b12.file('data/pack/client/title.jag/b12.dat');
+b12.save('data/pack/client/title.jag/b12.dat');
 
 let p11 = await convertImage(index, 'data/src/fonts', 'p11', { tileX: 20, tileY: 20 });
-p11.file('data/pack/client/title.jag/p11.dat');
+p11.save('data/pack/client/title.jag/p11.dat');
 
 let p12 = await convertImage(index, 'data/src/fonts', 'p12', { tileX: 20, tileY: 20 });
-p12.file('data/pack/client/title.jag/p12.dat');
+p12.save('data/pack/client/title.jag/p12.dat');
 
 let q8 = await convertImage(index, 'data/src/fonts', 'q8', { tileX: 20, tileY: 20 });
-q8.file('data/pack/client/title.jag/q8.dat');
+q8.save('data/pack/client/title.jag/q8.dat');
 
 // flame masks
 let runes = await convertImage(index, 'data/src/title', 'runes', { tileX: 96, tileY: 96 });
-runes.file('data/pack/client/title.jag/runes.dat');
+runes.save('data/pack/client/title.jag/runes.dat');
 
 // title screen elements
 let logo = await convertImage(index, 'data/src/title', 'logo');
-logo.file('data/pack/client/title.jag/logo.dat');
+logo.save('data/pack/client/title.jag/logo.dat');
 
 let titlebox = await convertImage(index, 'data/src/title', 'titlebox');
-titlebox.file('data/pack/client/title.jag/titlebox.dat');
+titlebox.save('data/pack/client/title.jag/titlebox.dat');
 
 let titlebutton = await convertImage(index, 'data/src/title', 'titlebutton');
-titlebutton.file('data/pack/client/title.jag/titlebutton.dat');
+titlebutton.save('data/pack/client/title.jag/titlebutton.dat');
 
-index.file('data/pack/client/title.jag/index.dat');
+index.save('data/pack/client/title.jag/index.dat');
 
 // background image
-let title = Packet.file('data/src/binary/title.jpg');
+let title = Packet.load('data/src/binary/title.jpg');
 title.p1(0); // invalidate the JPEG header so it can't be seen in a viewer
-title.file('data/pack/client/title.jag/title.dat', title.length);
+title.save('data/pack/client/title.jag/title.dat', title.length);

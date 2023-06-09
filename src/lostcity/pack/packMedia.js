@@ -9,7 +9,7 @@ let index = new Packet();
 for (let i = 0; i < sprites.length; i++) {
     let safeName = sprites[i].replace('.png', '');
     let data = await convertImage(index, 'data/src/sprites', safeName);
-    data.file(`data/pack/client/media.jag/${safeName}.dat`);
+    data.save(`data/pack/client/media.jag/${safeName}.dat`);
 }
 
-index.file('data/pack/client/media.jag/index.dat');
+index.save('data/pack/client/media.jag/index.dat');

@@ -16,7 +16,7 @@ export default class Packet {
         }
     }
 
-    static file(path) {
+    static load(path) {
         let dir = dirname(path);
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
@@ -25,7 +25,7 @@ export default class Packet {
         return new Packet(fs.readFileSync(path));
     }
 
-    file(path, length = this.pos, start = 0) {
+    save(path, length = this.pos, start = 0) {
         let dir = dirname(path);
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
@@ -114,14 +114,34 @@ export default class Packet {
         return str;
     }
 
-    gdata(length) {
-        let data = this.data.subarray(this.pos, this.pos + length);
-        this.pos += length;
+    gdata(length, offset = this.pos, advance = true) {
+        let data = this.data.subarray(offset, offset + length);
+        if (advance) {
+            this.pos += length;
+        }
         return data;
     }
 
     gPacket(length) {
         return new Packet(this.gdata(length));
+    }
+
+    gsmart() {
+        let value = this.data[this.pos] & 0xFF;
+        if (value < 128) {
+            return this.g1();
+        } else {
+            return this.g2() - 0x8000;
+        }
+    }
+
+    gsmarts() {
+        let value = this.data[this.pos] & 0xFF;
+        if (value < 128) {
+            return this.g1() - 64;
+        } else {
+            return this.g2() - 0xC000;
+        }
     }
 
     // ----

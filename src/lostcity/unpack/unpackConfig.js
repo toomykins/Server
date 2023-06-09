@@ -4,7 +4,7 @@ import Jagfile from '#jagex2/io/Jagfile.js';
 
 let config = Jagfile.load('data/pack/client/config');
 
-let textures = fs.readFileSync('data/pack/textures.pack', 'ascii').replaceAll('\r\n', '\n').split('\n').filter(x => x).map(x => {
+let textures = fs.readFileSync('data/pack/texture.pack', 'ascii').replaceAll('\r\n', '\n').split('\n').filter(x => x).map(x => {
     let parts = x.split('=');
     return { id: parseInt(parts[0]), name: parts[1] };
 });
@@ -21,12 +21,12 @@ let spotanim = config.read('spotanim.dat');
 let varp = config.read('varp.dat');
 
 function append(file, str) {
-    fs.appendFileSync(`data/src/scripts/${file}`, str + '\n');
+    fs.appendFileSync(`data/src/scripts/_unpack/${file}`, str + '\n');
 }
 
 // ----
 
-fs.writeFileSync('data/src/scripts/all.flo', '');
+fs.writeFileSync('data/src/scripts/_unpack/all.flo', '');
 fs.writeFileSync('data/pack/flo.pack', '');
 
 let count = flo.g2();
@@ -64,7 +64,7 @@ for (let id = 0; id < count; id++) {
 
 // ----
 
-fs.writeFileSync('data/src/scripts/all.idk', '');
+fs.writeFileSync('data/src/scripts/_unpack/all.idk', '');
 fs.writeFileSync('data/pack/idk.pack', '');
 
 count = idk.g2();
@@ -154,7 +154,7 @@ for (let id = 0; id < count; id++) {
 
 // ----
 
-fs.writeFileSync('data/src/scripts/all.loc', '');
+fs.writeFileSync('data/src/scripts/_unpack/all.loc', '');
 fs.writeFileSync('data/pack/loc.pack', '');
 
 count = loc.g2();
@@ -339,7 +339,7 @@ for (let id = 0; id < count; id++) {
 
 // ----
 
-fs.writeFileSync('data/src/scripts/all.npc', '');
+fs.writeFileSync('data/src/scripts/_unpack/all.npc', '');
 fs.writeFileSync('data/pack/npc.pack', '');
 
 count = npc.g2();
@@ -423,7 +423,7 @@ for (let id = 0; id < count; id++) {
 
 // ----
 
-fs.writeFileSync('data/src/scripts/all.obj', '');
+fs.writeFileSync('data/src/scripts/_unpack/all.obj', '');
 fs.writeFileSync('data/pack/obj.pack', '');
 
 count = obj.g2();
@@ -515,7 +515,7 @@ for (let id = 0; id < count; id++) {
 
 // ----
 
-fs.writeFileSync('data/src/scripts/all.seq', '');
+fs.writeFileSync('data/src/scripts/_unpack/all.seq', '');
 fs.writeFileSync('data/pack/seq.pack', '');
 
 count = seq.g2();
@@ -608,7 +608,7 @@ for (let id = 0; id < count; id++) {
 
 // ----
 
-fs.writeFileSync('data/src/scripts/all.spotanim', '');
+fs.writeFileSync('data/src/scripts/_unpack/all.spotanim', '');
 fs.writeFileSync('data/pack/spotanim.pack', '');
 
 count = spotanim.g2();
@@ -655,7 +655,7 @@ for (let id = 0; id < count; id++) {
 
 // ----
 
-fs.writeFileSync('data/src/scripts/all.varp', '');
+fs.writeFileSync('data/src/scripts/_unpack/all.varp', '');
 fs.writeFileSync('data/pack/varp.pack', '');
 
 count = varp.g2();

@@ -19,5 +19,5 @@ for (let i = 0; i < jag.fileCount; i++) {
     let name = jag.fileName[i];
     let entry = jag.read(name);
 
-    entry.file(`dump/unpack/${jagName}/${name}`, entry.length);
+    entry.save(`dump/unpack/${jagName}/${name}`, entry.length);
 }
