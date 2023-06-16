@@ -19,5 +19,3 @@ jag.write('index.dat', index);
 // index.save('data/pack/client/media.jag/index.dat');
 
 jag.save('data/pack/client/media');
-
-console.log(Jagfile.load('data/pack/client/media'));

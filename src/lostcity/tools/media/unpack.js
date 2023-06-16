@@ -41,6 +41,6 @@ for (let i = 0; i < media.fileCount; i++) {
         }
 
         await sheet.writeAsync(`data/src/sprites/${safeName}.png`);
-        fs.writeFileSync(`data/src/sprites/${safeName}.meta`, `${size.width}x${size.height}`);
+        fs.writeFileSync(`data/src/sprites/${safeName}.sprite`, `${size.width}x${size.height}`);
     }
 }

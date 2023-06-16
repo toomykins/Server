@@ -85,9 +85,9 @@ export async function convertImage(index, srcPath, safeName, meta = null) {
     let tileX = img.bitmap.width;
     let tileY = img.bitmap.height;
 
-    let tileable = fs.existsSync(`${srcPath}/${safeName}.meta`);
+    let tileable = fs.existsSync(`${srcPath}/${safeName}.sprite`);
     if (tileable) {
-        let metadata = fs.readFileSync(`${srcPath}/${safeName}.meta`, 'utf8').split('x');
+        let metadata = fs.readFileSync(`${srcPath}/${safeName}.sprite`, 'utf8').split('x');
         tileX = parseInt(metadata[0]);
         tileY = parseInt(metadata[1]);
     }
@@ -114,7 +114,7 @@ export async function convertImage(index, srcPath, safeName, meta = null) {
 
     if (colors.length > 255) {
         // TODO: automatic color quantization would be nice
-        console.error('too many colors');
+        console.error('error: too many colors', colors.length);
         return;
     }
 
