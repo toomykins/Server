@@ -99,7 +99,7 @@ extension: loc
 | yoff | y offset from tile origin | -32768 to 32767 | 0 |
 | zoff | z offset from tile origin | -32768 to 32767 | 0 |
 | forcedecor | | Boolean | no |
-| param | Parameter for scripts | key=value |
+| param | Parameter for scripts, must link to defined param | key=value |
 
 ```
 [example]
@@ -198,7 +198,7 @@ extension: npc
 | vislevel | Visible combat level | 1 to 65535, "hide" / 0 |
 | resizeh | Resize horizontally (x) | 0 to 65535 | 128 |
 | resizev | Resize vertically (y) | 0 to 65535 | 128 |
-| param | Parameter for scripts | key=value |
+| param | Parameter for scripts, must link to defined param | key=value |
 
 ```
 [example]
@@ -266,7 +266,7 @@ extension: obj
 | wearpos | Slot to equip into or override | hat, back, front, righthand, body, lefthand, arms, legs, head, hands, feet, jaw, ring, quiver |
 | wearpos2 | Slot to equip into or override | hat, back, front, righthand, body, lefthand, arms, legs, head, hands, feet, jaw, ring, quiver |
 | wearpos3 | Slot to equip into or override | hat, back, front, righthand, body, lefthand, arms, legs, head, hands, feet, jaw, ring, quiver |
-| param | Parameter for scripts | key=value |
+| param | Parameter for scripts, must link to defined param | key=value |
 
 ```
 [example]
@@ -395,4 +395,21 @@ extension: varp
 [example]
 clientcode=7
 transmit=always
+```
+
+## Param
+
+This is not packed into the client cache. These are used for data-driven scripts and configs.
+
+extension: param
+
+| Config | Description | Values | Default |
+|-|-|-|-|
+| type | Data type | int, string, any config type, namedobj | int |
+| default | Default value | | null/0 |
+
+```
+[example]
+type=int
+default=1
 ```
