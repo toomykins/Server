@@ -1,5 +1,5 @@
 import Packet from '#jagex2/io/Packet.js';
-import { convertImage } from '#lostcity/pack/Pix.js';
+import { convertImage } from '#lostcity/cache/pack/Pix.js';
 
 let index = new Packet();
 
