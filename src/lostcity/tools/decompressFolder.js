@@ -14,7 +14,11 @@ let path = args[0];
 let files = fs.readdirSync(path);
 
 for (let i = 0; i < files.length; i++) {
-    let file = Packet.load(`${path}/${files[i]}`);
-    let raw = BZip2.decompress(new Uint8Array(file.data).subarray(4));
-    fs.writeFileSync(`${path}/${files[i]}`, raw);
+    try {
+        let file = Packet.load(`${path}/${files[i]}`);
+        let raw = BZip2.decompress(new Uint8Array(file.data).subarray(4));
+        fs.writeFileSync(`${path}/${files[i]}`, raw);
+    } catch (err) {
+        console.log('Failed to decompress', files[i]);
+    }
 }
