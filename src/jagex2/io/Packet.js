@@ -19,6 +19,20 @@ export default class Packet {
         return this.data.length - this.pos;
     }
 
+    resize(length) {
+        if (this.length < length) {
+            let temp = new Uint8Array(length);
+            temp.set(this.data);
+            this.data = temp;
+        }
+    }
+
+    ensure(length) {
+        if (this.available < length) {
+            this.resize(this.length + length);
+        }
+    }
+
     // ----
 
     static load(path) {
@@ -113,9 +127,79 @@ export default class Packet {
     gsmarts() {
         let value = this.data[this.pos] & 0xFF;
         if (value < 128) {
-            return this.g1() - 64;
+            return this.g1() - 0x40;
         } else {
             return this.g2() - 0xC000;
+        }
+    }
+
+    // ----
+
+    p1(value) {
+        this.ensure(1);
+        this.data[this.pos++] = value;
+    }
+
+    pbool(value) {
+        this.p1(value ? 1 : 0);
+    }
+
+    p2(value) {
+        this.ensure(2);
+        this.data[this.pos++] = value >> 8;
+        this.data[this.pos++] = value;
+    }
+
+    p3(value) {
+        this.ensure(3);
+        this.data[this.pos++] = value >> 16;
+        this.data[this.pos++] = value >> 8;
+        this.data[this.pos++] = value;
+    }
+
+    p4(value) {
+        this.ensure(4);
+        this.data[this.pos++] = value >> 24;
+        this.data[this.pos++] = value >> 16;
+        this.data[this.pos++] = value >> 8;
+        this.data[this.pos++] = value;
+    }
+
+    pjstr(str) {
+        this.ensure(str.length + 1);
+        for (let i = 0; i < str.length; i++) {
+            this.data[this.pos++] = str.charCodeAt(i);
+        }
+        this.data[this.pos++] = 10;
+    }
+
+    pdata(src) {
+        if (src instanceof Packet) {
+            src = src.data;
+        }
+
+        if (!src.length) {
+            return;
+        }
+
+        this.ensure(src.length);
+        this.data.set(src, this.pos);
+        this.pos += src.length;
+    }
+
+    psmart(value) {
+        if (value < 128) {
+            this.p1(value);
+        } else {
+            this.p2(value + 0x8000);
+        }
+    }
+
+    psmarts(value) {
+        if (value < 128) {
+            this.p1(value + 0x40);
+        } else {
+            this.p2(value + 0xC000);
         }
     }
 }

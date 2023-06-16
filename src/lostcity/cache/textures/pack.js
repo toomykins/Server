@@ -5,7 +5,7 @@ import { convertImage } from '#lostcity/cache/pack/Pix.js';
 
 let index = new Packet();
 
-let pack = fs.readFileSync('data/pack/texture.pack', 'ascii').replaceAll('\r\n', '\n').split('\n').filter(x => x).map(x => {
+let pack = fs.readFileSync('data/pack/texture.pack', 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length).map(x => {
     let parts = x.split('=');
     return { id: parseInt(parts[0]), name: parts[1] };
 });

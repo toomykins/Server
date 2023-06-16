@@ -8,7 +8,7 @@ fs.mkdirSync('data/src/models/npc', { recursive: true });
 fs.mkdirSync('data/src/models/spotanim', { recursive: true });
 fs.mkdirSync('data/src/models/loc', { recursive: true });
 
-let idk = fs.readFileSync('data/src/scripts/_unpack/all.idk', 'ascii').split('\n');
+let idk = fs.readFileSync('data/src/scripts/_unpack/all.idk', 'ascii').replace(/\r/g, '').split('\n');
 for (let i = 0; i < idk.length; i++) {
     let line = idk[i];
     if (!line.startsWith('model') && !line.startsWith('head')) {
@@ -29,7 +29,7 @@ for (let i = 0; i < idk.length; i++) {
     }
 }
 
-let objs = fs.readFileSync('data/src/scripts/_unpack/all.obj', 'ascii').split('\n');
+let objs = fs.readFileSync('data/src/scripts/_unpack/all.obj', 'ascii').replace(/\r/g, '').split('\n');
 for (let i = 0; i < objs.length; i++) {
     let line = objs[i];
     if (!line.startsWith('model') && !line.startsWith('man') && !line.startsWith('woman')) {
@@ -76,7 +76,7 @@ for (let i = 0; i < objs.length; i++) {
     }
 }
 
-let npcs = fs.readFileSync('data/src/scripts/_unpack/all.npc', 'ascii').split('\n');
+let npcs = fs.readFileSync('data/src/scripts/_unpack/all.npc', 'ascii').replace(/\r/g, '').split('\n');
 for (let i = 0; i < npcs.length; i++) {
     let line = npcs[i];
     if (!line.startsWith('model') && !line.startsWith('head')) {
@@ -97,7 +97,7 @@ for (let i = 0; i < npcs.length; i++) {
     }
 }
 
-let spotanims = fs.readFileSync('data/src/scripts/_unpack/all.spotanim', 'ascii').split('\n');
+let spotanims = fs.readFileSync('data/src/scripts/_unpack/all.spotanim', 'ascii').replace(/\r/g, '').split('\n');
 for (let i = 0; i < spotanims.length; i++) {
     let line = spotanims[i];
     if (!line.startsWith('model')) {
@@ -116,7 +116,7 @@ for (let i = 0; i < spotanims.length; i++) {
 
 let newModelName = {};
 
-let locs = fs.readFileSync('data/src/scripts/_unpack/all.loc', 'ascii').split('\n');
+let locs = fs.readFileSync('data/src/scripts/_unpack/all.loc', 'ascii').replace(/\r/g, '').split('\n');
 let lastLoc = null;
 for (let i = 0; i < locs.length; i++) {
     let line = locs[i];
@@ -233,6 +233,6 @@ for (let i = 0; i < locs.length; i++) {
         }
     }
 }
-fs.writeFileSync('data/src/scripts/_unpack/all.loc', locs.join('\n'));
 
+fs.writeFileSync('data/src/scripts/_unpack/all.loc', locs.join('\n'));
 fs.writeFileSync('data/pack/model.pack', models.join('\n'));

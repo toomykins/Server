@@ -11,7 +11,7 @@ let tldlist = wordenc.read('tldlist.txt');
 // ----
 
 {
-    fs.writeFileSync('data/src/binary/wordenc/badenc.txt', '');
+    fs.writeFileSync('data/src/wordenc/badenc.txt', '');
 
     let total = badenc.g4();
     for (let i = 0; i < total; i++) {
@@ -20,24 +20,24 @@ let tldlist = wordenc.read('tldlist.txt');
         for (let j = 0; j < count; j++) {
             badword += String.fromCharCode(badenc.g1());
         }
-        fs.appendFileSync('data/src/binary/wordenc/badenc.txt', badword);
+        fs.appendFileSync('data/src/wordenc/badenc.txt', badword);
 
         let combinations = badenc.g1();
         for (let j = 0; j < combinations; j++) {
             let a = badenc.g1();
             let b = badenc.g1();
 
-            fs.appendFileSync('data/src/binary/wordenc/badenc.txt', ` ${a}:${b}`);
+            fs.appendFileSync('data/src/wordenc/badenc.txt', ` ${a}:${b}`);
         }
 
-        fs.appendFileSync('data/src/binary/wordenc/badenc.txt', `\n`);
+        fs.appendFileSync('data/src/wordenc/badenc.txt', `\n`);
     }
 }
 
 // ----
 
 {
-    fs.writeFileSync('data/src/binary/wordenc/domainenc.txt', '');
+    fs.writeFileSync('data/src/wordenc/domainenc.txt', '');
 
     let total = domainenc.g4();
     for (let i = 0; i < total; i++) {
@@ -47,26 +47,26 @@ let tldlist = wordenc.read('tldlist.txt');
             domain += String.fromCharCode(domainenc.g1());
         }
 
-        fs.appendFileSync('data/src/binary/wordenc/domainenc.txt', domain + '\n');
+        fs.appendFileSync('data/src/wordenc/domainenc.txt', domain + '\n');
     }
 }
 
 // ----
 
 {
-    fs.writeFileSync('data/src/binary/wordenc/fragmentsenc.txt', '');
+    fs.writeFileSync('data/src/wordenc/fragmentsenc.txt', '');
 
     let total = fragmentsenc.g4();
     for (let i = 0; i < total; i++) {
         let fragment = fragmentsenc.g2();
-        fs.appendFileSync('data/src/binary/wordenc/fragmentsenc.txt', fragment + '\n');
+        fs.appendFileSync('data/src/wordenc/fragmentsenc.txt', fragment + '\n');
     }
 }
 
 // ----
 
 {
-    fs.writeFileSync('data/src/binary/wordenc/tldlist.txt', '');
+    fs.writeFileSync('data/src/wordenc/tldlist.txt', '');
 
     let total = tldlist.g4();
     for (let i = 0; i < total; i++) {
@@ -78,6 +78,6 @@ let tldlist = wordenc.read('tldlist.txt');
             tld += String.fromCharCode(tldlist.g1());
         }
 
-        fs.appendFileSync('data/src/binary/wordenc/tldlist.txt', `${tld} ${type}\n`);
+        fs.appendFileSync('data/src/wordenc/tldlist.txt', `${tld} ${type}\n`);
     }
 }

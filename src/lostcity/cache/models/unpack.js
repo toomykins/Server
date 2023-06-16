@@ -11,23 +11,26 @@ let models = Jagfile.load('data/pack/client/models');
 {
     Model.unpack(models);
 
-    fs.writeFileSync('data/pack/model.pack', ``);
+    let pack = '';
     for (let i = 0; i < Model.metadata.length; i++) {
         if (!Model.metadata[i]) {
             continue;
         }
 
-        fs.appendFileSync('data/pack/model.pack', `${i}=model_${i}\n`);
+        pack += `${i}=model_${i}\n`;
 
         let model = Model.get(i);
         let raw = model.convert();
         raw.save(`data/src/models/_unpack/model_${i}.ob2`);
     }
 
-    fs.writeFileSync('data/pack/model.order', ``);
+    let order = '';
     for (let i = 0; i < Model.order.length; i++) {
-        fs.appendFileSync('data/pack/model.order', `${Model.order[i]}\n`);
+        order += `${Model.order[i]}\n`;
     }
+
+    fs.writeFileSync('data/pack/model.pack', pack);
+    fs.writeFileSync('data/pack/model.order', order);
 }
 
 // ----
@@ -37,8 +40,8 @@ let models = Jagfile.load('data/pack/client/models');
         fs.mkdirSync('data/src/models/_unpack/base', { recursive: true });
     }
 
-    fs.writeFileSync('data/pack/base.pack', '');
-    fs.writeFileSync('data/pack/base.order', '');
+    let pack = '';
+    let order = '';
 
     let head = models.read('base_head.dat');
     let type = models.read('base_type.dat');
@@ -48,7 +51,7 @@ let models = Jagfile.load('data/pack/client/models');
     let instances = head.g2();
 
     for (let i = 0; i < instances; i++) {
-        fs.appendFileSync('data/pack/base.pack', `${i}=base_${i}\n`);
+        pack += `${i}=base_${i}\n`;
     }
 
     for (let i = 0; i < total; i++) {
@@ -57,7 +60,7 @@ let models = Jagfile.load('data/pack/client/models');
         let labelstart = label.pos;
 
         let id = head.g2();
-        fs.appendFileSync('data/pack/base.order', `${id}\n`);
+        order += `${id}\n`;
 
         let length = head.g1();
         for (let j = 0; j < length; j++) {
@@ -82,6 +85,9 @@ let models = Jagfile.load('data/pack/client/models');
         base.p2(labelend - labelstart);
         base.save(`data/src/models/_unpack/base/base_${id}.base`);
     }
+
+    fs.writeFileSync('data/pack/base.pack', pack);
+    fs.writeFileSync('data/pack/base.order', order);
 }
 
 // ----
@@ -91,8 +97,8 @@ let models = Jagfile.load('data/pack/client/models');
         fs.mkdirSync('data/src/models/_unpack/frame', { recursive: true });
     }
 
-    fs.writeFileSync('data/pack/anim.pack', '');
-    fs.writeFileSync('data/pack/anim.order', '');
+    let pack = '';
+    let order = '';
 
     let head = models.read('frame_head.dat');
     let tran1 = models.read('frame_tran1.dat');
@@ -103,7 +109,7 @@ let models = Jagfile.load('data/pack/client/models');
     let instances = head.g2();
 
     for (let i = 0; i < instances; i++) {
-        fs.appendFileSync('data/pack/anim.pack', `${i}=anim_${i}\n`);
+        pack += `${i}=anim_${i}\n`;
     }
 
     for (let i = 0; i < total; i++) {
@@ -115,7 +121,7 @@ let models = Jagfile.load('data/pack/client/models');
         let id = head.g2();
         del.g1();
         head.g2();
-        fs.appendFileSync('data/pack/anim.order', `${id}\n`);
+        order += `${id}\n`;
 
         let labelCount = head.g1();
         for (let j = 0; j < labelCount; j++) {
@@ -153,4 +159,7 @@ let models = Jagfile.load('data/pack/client/models');
         frame.p2(dend - dstart);
         frame.save(`data/src/models/_unpack/frame/anim_${id}.frame`);
     }
+
+    fs.writeFileSync('data/pack/anim.pack', pack);
+    fs.writeFileSync('data/pack/anim.order', order);
 }

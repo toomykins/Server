@@ -1,13 +1,11 @@
 import fs from 'fs';
 
 import Jagfile from '#jagex2/io/Jagfile.js';
+import { loadPack } from '#lostcity/cache/pack/NameMap.js';
 
 let config = Jagfile.load('data/pack/client/config');
 
-let textures = fs.readFileSync('data/pack/texture.pack', 'ascii').replaceAll('\r\n', '\n').split('\n').filter(x => x).map(x => {
-    let parts = x.split('=');
-    return { id: parseInt(parts[0]), name: parts[1] };
-});
+let pack = loadPack('data/pack/texture.pack');
 
 // read all ahead of time
 
@@ -50,7 +48,7 @@ for (let id = 0; id < count; id++) {
             append('all.flo', `rgb=0x${flo.g3().toString(16).toUpperCase()}`);
         } else if (code === 2) {
             let texture = flo.g1();
-            append('all.flo', `texture=${textures.find(x => x.id === texture).name}`);
+            append('all.flo', `texture=${pack[texture]}`);
         } else if (code === 3) {
             append('all.flo', `overlay=yes`);
         } else if (code === 5) {
@@ -283,9 +281,9 @@ for (let id = 0; id < count; id++) {
         } else if (code === 28) {
             append('all.loc', `walloff=${loc.g1()}`);
         } else if (code === 29) {
-            append('all.loc', `ambient=${loc.g1b()}`);
+            append('all.loc', `ambient=${loc.g1s()}`);
         } else if (code === 39) {
-            append('all.loc', `contrast=${loc.g1b()}`);
+            append('all.loc', `contrast=${loc.g1s()}`);
         } else if (code >= 30 && code < 39) {
             append('all.loc', `op${code - 30 + 1}=${loc.gjstr()}`);
         } else if (code === 40) {

@@ -34,9 +34,9 @@ export default class Jagfile {
         let pos = src.pos + this.fileCount * 10;
         for (let i = 0; i < this.fileCount; i++) {
             this.fileHash[i] = src.g4s();
-            let hashMatch = KNOWN_HASHES.find(x => x.hash === this.fileHash[i]);
-            if (hashMatch) {
-                this.fileName[i] = hashMatch.name;
+            let hashMatch = KNOWN_HASHES.findIndex(x => x === this.fileHash[i]);
+            if (hashMatch !== -1) {
+                this.fileName[i] = KNOWN_NAMES[hashMatch];
             }
             this.fileUnpackedSize[i] = src.g3();
             this.filePackedSize[i] = src.g3();
@@ -70,7 +70,7 @@ export default class Jagfile {
     }
 }
 
-export const KNOWN_FILES = [
+export const KNOWN_NAMES = [
     // title
     'index.dat',
     'logo.dat',
@@ -306,12 +306,14 @@ export const KNOWN_FILES = [
 
 export const KNOWN_HASHES = [];
 
-for (let i = 0; i < KNOWN_FILES.length; i++) {
+for (let i = 0; i < KNOWN_NAMES.length; i++) {
     let hash = 0;
-    let name = KNOWN_FILES[i];
-    name = name.toUpperCase();
-    for (let i = 0; i < name.length; i++) {
-        hash = ((hash * 61 + name.charCodeAt(i)) - 32) | 0;
+    let str = KNOWN_NAMES[i];
+
+    str = str.toUpperCase();
+    for (let i = 0; i < str.length; i++) {
+        hash = ((hash * 61 + str.charCodeAt(i)) - 32) | 0;
     }
-    KNOWN_HASHES.push(hash);
+
+    KNOWN_HASHES[i] = hash;
 }

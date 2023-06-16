@@ -3,13 +3,11 @@ import Jimp from 'jimp';
 
 import Jagfile from '#jagex2/io/Jagfile.js';
 import { pixSize, unpackPix } from '#lostcity/cache/unpack/Pix.js';
+import { loadPack } from '#lostcity/cache/pack/NameMap.js';
 
 let textures = Jagfile.load('data/pack/client/textures');
 
-let pack = fs.readFileSync('data/pack/texture.pack', 'ascii').replaceAll('\r\n', '\n').split('\n').filter(x => x).map(x => {
-    let parts = x.split('=');
-    return { id: parseInt(parts[0]), name: parts[1] };
-});
+let pack = loadPack('data/pack/texture.pack');
 
 // let sprites = [];
 
@@ -27,7 +25,7 @@ for (let i = 0; i < textures.fileCount; i++) {
     // sprites[safeName] = unpackPix(data, index);
     let texture = unpackPix(data, index);
 
-    let realName = pack.find(x => x.id == safeName).name;
+    let realName = pack[safeName];
     await texture.img.writeAsync(`data/src/textures/${realName}.png`);
 }
 

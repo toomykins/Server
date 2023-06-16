@@ -5,8 +5,9 @@ if (!fs.existsSync('data/src/sounds')) {
     fs.mkdirSync('data/src/sounds', { recursive: true });
 }
 
-fs.writeFileSync('data/pack/sound.pack', '');
-fs.writeFileSync('data/pack/sound.order', '');
+// TODO: doesn't -need- to be global from Wave's perspective
+let pack = '';
+let order = '';
 
 class Wave {
     static tracks = [];
@@ -23,12 +24,12 @@ class Wave {
             Wave.tracks[id].decode(dat);
             let end = dat.pos;
 
-            fs.appendFileSync('data/pack/sound.order', `${id}\n`);
+            order += `${id}\n`;
             fs.writeFileSync(`data/src/sounds/sound_${id}.synth`, dat.gdata(end - start, start, false));
         }
 
         for (let i = 0; i < Wave.tracks.length; i++) {
-            fs.appendFileSync('data/pack/sound.pack', `${i}=sound_${i}\n`);
+            pack += `${i}=sound_${i}\n`;
         }
     }
 
@@ -146,3 +147,6 @@ class Envelope {
 
 let sounds = Jagfile.load('data/pack/client/sounds');
 Wave.unpack(sounds.read('sounds.dat'));
+
+fs.writeFileSync('data/pack/sound.pack', pack);
+fs.writeFileSync('data/pack/sound.order', order);
