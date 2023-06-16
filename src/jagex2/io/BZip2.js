@@ -1,4 +1,8 @@
-/*! bz2 (C) 2019-present SheetJS LLC */
+import child_process from 'child_process';
+import fs from 'fs';
+import Packet from './Packet.js';
+
+fs.mkdirSync('dump', { recursive: true });
 
 // https://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/src/util/compress/bzip2/crctable.c
 const crc32Table = [
@@ -144,7 +148,7 @@ export default class BZip2 {
             bitfield &= ~(m << bits);
             return r;
         };
-    
+
         // const magic = read(16);
         // if (magic !== 0x425A) { // 'BZ'
         //     throw new Error('Invalid magic');
@@ -153,14 +157,14 @@ export default class BZip2 {
         // if (method !== 0x68) { // h for huffman
         //     throw new Error('Invalid method');
         // }
-    
+
         // let blocksize = read(8);
         // if (blocksize >= 49 && blocksize <= 57) { // 1..9
         //     blocksize -= 48;
         // } else {
         //     throw new Error('Invalid blocksize');
         // }
-    
+
         let out = new Uint8Array(bytes.length * 1.5);
         let outIndex = 0;
         let newCRC = -1;
@@ -329,5 +333,22 @@ export default class BZip2 {
             }
         }
         return out.subarray(0, outIndex);
+    }
+
+    static compress(src) {
+        if (src instanceof Packet) {
+            src = src.data;
+        }
+
+        let time = Date.now();
+        let path = `dump/${time}.tmp`;
+
+        fs.writeFileSync(path, src);
+        child_process.execSync(`java -jar JagCompress.jar bz2 ${path}`);
+        fs.unlinkSync(path);
+
+        let compressed = fs.readFileSync(path + '.bz2');
+        fs.unlinkSync(path + '.bz2');
+        return compressed;
     }
 }

@@ -1,6 +1,15 @@
 import Packet from '#jagex2/io/Packet.js';
 import BZip2 from '#jagex2/io/BZip2.js';
 
+function genHash(name) {
+    let hash = 0;
+    name = name.toUpperCase();
+    for (let i = 0; i < name.length; i++) {
+        hash = ((hash * 61 + name.charCodeAt(i)) - 32) | 0;
+    }
+    return hash;
+}
+
 export default class Jagfile {
     data = null;
     fileCount = 0;
@@ -11,11 +20,18 @@ export default class Jagfile {
     filePos = [];
     unpacked = false;
 
+    fileQueue = [];
+    fileWrite = [];
+
     static load(path) {
         return new Jagfile(Packet.load(path));
     }
 
     constructor(src) {
+        if (!src) {
+            return;
+        }
+
         let unpackedSize = src.g3();
         let packedSize = src.g3();
 
@@ -47,11 +63,7 @@ export default class Jagfile {
     }
 
     read(name) {
-        let hash = 0;
-        name = name.toUpperCase();
-        for (let i = 0; i < name.length; i++) {
-            hash = ((hash * 61 + name.charCodeAt(i)) - 32) | 0;
-        }
+        let hash = genHash(name);
 
         for (let i = 0; i < this.fileCount; i++) {
             if (this.fileHash[i] !== hash) {
@@ -67,6 +79,96 @@ export default class Jagfile {
         }
 
         return null;
+    }
+
+    write(name, data) {
+        let hash = genHash(name);
+
+        this.fileQueue.push({ hash, name, write: true, data });
+    }
+
+    delete(name) {
+        let hash = genHash(name);
+
+        this.fileQueue.push({ hash, name, delete: true });
+    }
+
+    rename(oldName, newName) {
+        let oldHash = genHash(oldName);
+        let newHash = genHash(newName);
+
+        this.fileQueue.push({ hash: oldHash, name: oldName, rename: true, newName, newHash });
+    }
+
+    save(path) {
+        let buf = new Packet();
+
+        for (let i = 0; i < this.fileQueue.length; i++) {
+            let queued = this.fileQueue[i];
+            let index = this.fileHash.findIndex(x => x === queued.hash);
+
+            if (queued.write) {
+                if (index === -1) {
+                    index = this.fileCount++;
+                    this.fileHash[index] = queued.hash;
+                    this.fileName[index] = queued.name;
+                }
+
+                this.fileUnpackedSize[index] = queued.data.length;
+                this.filePackedSize[index] = queued.data.length;
+                this.filePos[index] = -1;
+                this.fileWrite[index] = queued.data;
+            }
+
+            if (queued.delete && index !== -1) {
+                this.fileHash.splice(index, 1);
+                this.fileName.splice(index, 1);
+                this.fileUnpackedSize.splice(index, 1);
+                this.filePackedSize.splice(index, 1);
+                this.filePos.splice(index, 1);
+                this.fileCount--;
+            }
+
+            if (queued.rename && index !== -1) {
+                this.fileHash[index] = queued.newHash;
+                this.fileName[index] = queued.newName;
+            }
+
+            this.fileQueue.splice(i, 1);
+            i--;
+        }
+
+        let compressWhole = this.fileCount === 1;
+
+        // write header
+        buf.p2(this.fileCount);
+        for (let i = 0; i < this.fileCount; i++) {
+            buf.p4(this.fileHash[i]);
+            buf.p3(this.fileUnpackedSize[i]);
+
+            if (this.fileWrite[i] && !compressWhole) {
+                this.fileWrite[i] = BZip2.compress(this.fileWrite[i]).subarray(4);
+                this.filePackedSize[i] = this.fileWrite[i].length;
+            }
+
+            buf.p3(this.filePackedSize[i]);
+        }
+
+        // write files
+        for (let i = 0; i < this.fileCount; i++) {
+            buf.pdata(this.fileWrite[i]);
+        }
+
+        let jag = new Packet();
+        jag.p3(buf.length);
+        if (compressWhole) {
+            buf = BZip2.compress(buf).subarray(4);
+        }
+        jag.p3(buf.length);
+        jag.pdata(buf);
+
+        jag.save(path);
+        return jag;
     }
 }
 
