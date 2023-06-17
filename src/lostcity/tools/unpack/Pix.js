@@ -106,10 +106,11 @@ export function unpackPix(dat, idx, id = 0) {
                 pixel = 0; // restore black colors
             }
 
-            img.bitmap.data[i * 4 + 0] = (pixel >> 16) & 0xff;
-            img.bitmap.data[i * 4 + 1] = (pixel >> 8) & 0xff;
-            img.bitmap.data[i * 4 + 2] = pixel & 0xff;
-            img.bitmap.data[i * 4 + 3] = 0xFF;
+            let pos = i * 4;
+            img.bitmap.data[pos] = (pixel >> 16) & 0xFF;
+            img.bitmap.data[pos + 1] = (pixel >> 8) & 0xFF;
+            img.bitmap.data[pos + 2] = pixel & 0xFF;
+            img.bitmap.data[pos + 3] = 0xFF;
         }
     } else if (pixelOrder === 1) {
         for (let x = 0; x < width; x++) {
@@ -121,13 +122,14 @@ export function unpackPix(dat, idx, id = 0) {
                     pixel = 0; // restore black colors
                 }
 
-                img.bitmap.data[(x + (y * width)) * 4 + 0] = (pixel >> 16) & 0xff;
-                img.bitmap.data[(x + (y * width)) * 4 + 1] = (pixel >> 8) & 0xff;
-                img.bitmap.data[(x + (y * width)) * 4 + 2] = pixel & 0xff;
-                img.bitmap.data[(x + (y * width)) * 4 + 3] = 0xFF;
+                let pos = (x + (y * width)) * 4;
+                img.bitmap.data[pos] = (pixel >> 16) & 0xFF;
+                img.bitmap.data[pos + 1] = (pixel >> 8) & 0xFF;
+                img.bitmap.data[pos + 2] = pixel & 0xFF;
+                img.bitmap.data[pos + 3] = 0xFF;
             }
         }
     }
 
-    return { img, cropX, cropY, pixelOrder };
+    return { img, cropW, cropH, cropX, cropY, width, height, pixelOrder };
 }

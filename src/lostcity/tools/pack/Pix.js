@@ -30,15 +30,25 @@ export function generatePixelOrder(img) {
     return columnMajorScore < rowMajorScore ? 0 : 1;
 }
 
-export function writeImage(img, data, index, colors) {
-    // TODO: read pixels to find the first non-transparent rgb on each axis, so the image can be shifted to begin at 0,0
-    let cropX = 0;
-    let cropY = 0;
-    index.p1(cropX);
-    index.p1(cropY);
+export function writeImage(img, data, index, colors, meta = null) {
+    let left = 0;
+    let top = 0;
+    let right = img.bitmap.width;
+    let bottom = img.bitmap.height;
 
-    index.p2(img.bitmap.width);
-    index.p2(img.bitmap.height);
+    if (meta && meta.w && meta.h) {
+        left = meta.x;
+        top = meta.y;
+        right = meta.w;
+        bottom = meta.h;
+    }
+
+    index.p1(left); // crop x offset
+    index.p1(top); // crop y offset
+    index.p2(right); // actual width
+    index.p2(bottom); // actual height
+
+    // console.log('\t', left, top, '-', right, bottom, '-', img.bitmap.width, img.bitmap.height);
 
     let pixelOrder = generatePixelOrder(img);
     index.p1(pixelOrder);
@@ -46,7 +56,13 @@ export function writeImage(img, data, index, colors) {
 
     if (pixelOrder === 0) {
         for (let j = 0; j < img.bitmap.width * img.bitmap.height; j++) {
-            let pos = j * 4;
+            let x = j % img.bitmap.width;
+            let y = Math.floor(j / img.bitmap.width);
+            if (x >= right || y >= bottom) {
+                continue;
+            }
+
+            let pos = (j * 4) + (left * 4) + (top * img.bitmap.width * 4);
             let rgb = (img.bitmap.data[pos + 0] << 24 | img.bitmap.data[pos + 1] << 16 | img.bitmap.data[pos + 2] << 8 | img.bitmap.data[pos + 3]) >>> 0;
 
             let index = colors.indexOf(rgb);
@@ -60,7 +76,11 @@ export function writeImage(img, data, index, colors) {
     } else if (pixelOrder === 1) {
         for (let x = 0; x < img.bitmap.width; x++) {
             for (let y = 0; y < img.bitmap.height; y++) {
-                let pos = (x + (y * img.bitmap.width)) * 4;
+                if (x >= right || y >= bottom) {
+                    continue;
+                }
+
+                let pos = ((x + (y * img.bitmap.width)) * 4) + (left * 4) + (top * img.bitmap.width * 4);
                 let rgb = (img.bitmap.data[pos + 0] << 24 | img.bitmap.data[pos + 1] << 16 | img.bitmap.data[pos + 2] << 8 | img.bitmap.data[pos + 3]) >>> 0;
 
                 let index = colors.indexOf(rgb);
@@ -75,7 +95,7 @@ export function writeImage(img, data, index, colors) {
     }
 }
 
-export async function convertImage(index, srcPath, safeName, meta = null) {
+export async function convertImage(index, srcPath, safeName) {
     console.log(safeName);
 
     let data = new Packet();
@@ -85,17 +105,23 @@ export async function convertImage(index, srcPath, safeName, meta = null) {
     let tileX = img.bitmap.width;
     let tileY = img.bitmap.height;
 
+    let sprites = [];
     let tileable = fs.existsSync(`${srcPath}/${safeName}.sprite`);
     if (tileable) {
-        let metadata = fs.readFileSync(`${srcPath}/${safeName}.sprite`, 'utf8').split('x');
-        tileX = parseInt(metadata[0]);
-        tileY = parseInt(metadata[1]);
-    }
+        let metadata = fs.readFileSync(`${srcPath}/${safeName}.sprite`, 'utf8').replace(/\r/g, '').split('\n');
+        let tiling = metadata[0].split('x');
+        tileX = parseInt(tiling[0]);
+        tileY = parseInt(tiling[1]);
 
-    if (meta) {
-        tileable = true;
-        tileX = meta.tileX;
-        tileY = meta.tileY;
+        for (let j = 1; j < metadata.length; j++) {
+            let sprite = metadata[j].split(',');
+            sprites.push({
+                x: parseInt(sprite[0]),
+                y: parseInt(sprite[1]),
+                w: parseInt(sprite[2]),
+                h: parseInt(sprite[3])
+            });
+        }
     }
 
     index.p2(tileX);
@@ -128,7 +154,7 @@ export async function convertImage(index, srcPath, safeName, meta = null) {
         for (let y = 0; y < img.bitmap.height / tileY; y++) {
             for (let x = 0; x < img.bitmap.width / tileX; x++) {
                 let tile = img.clone().crop(x * tileX, y * tileY, tileX, tileY);
-                writeImage(tile, data, index, colors);
+                writeImage(tile, data, index, colors, sprites[x + (y * (img.bitmap.width / tileX))]);
             }
         }
     } else {

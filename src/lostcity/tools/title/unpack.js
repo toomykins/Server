@@ -42,14 +42,19 @@ for (let i = 0; i < title.fileCount; i++) {
         let sheet = new Jimp(width * size.width, height * size.height);
         sheet.background(0xFFFFFFFF);
 
+        let meta = `${size.width}x${size.height}\n`;
         for (let j = 0; j < count; j++) {
             let x = j % width;
             let y = Math.floor(j / width);
 
-            sheet.composite(sprites[j].img, x * size.width + sprites[j].cropX, y * size.height + sprites[j].cropY);
+            sheet.composite(sprites[j].img, (x * size.width) + sprites[j].cropX, (y * size.height) + sprites[j].cropY);
+            meta += `${sprites[j].cropX},${sprites[j].cropY},${sprites[j].width},${sprites[j].height}\n`;
         }
 
         await sheet.writeAsync(`data/src/${dest}/${safeName}.png`);
-        // fs.writeFileSync(`data/src/${dest}/${safeName}.meta`, `${size.width}x${size.height}`); // we don't need to track tiling size because we can hardcode it for the title imagess
+
+        if (meta.length) {
+            fs.writeFileSync(`data/src/${dest}/${safeName}.sprite`, meta);
+        }
     }
 }

@@ -1,38 +1,43 @@
+import Jagfile from '#jagex2/io/Jagfile.js';
 import Packet from '#jagex2/io/Packet.js';
 import { convertImage } from '#lostcity/tools/pack/Pix.js';
 
 let index = new Packet();
+let jag = new Jagfile();
 
 // fonts
-let b12 = await convertImage(index, 'data/src/fonts', 'b12', { tileX: 20, tileY: 20 });
-b12.save('data/pack/client/title.jag/b12.dat');
+let b12 = await convertImage(index, 'data/src/fonts', 'b12');
+jag.write('b12.dat', b12);
 
-let p11 = await convertImage(index, 'data/src/fonts', 'p11', { tileX: 20, tileY: 20 });
-p11.save('data/pack/client/title.jag/p11.dat');
+let p11 = await convertImage(index, 'data/src/fonts', 'p11');
+jag.write('p11.dat', p11);
 
-let p12 = await convertImage(index, 'data/src/fonts', 'p12', { tileX: 20, tileY: 20 });
-p12.save('data/pack/client/title.jag/p12.dat');
+let p12 = await convertImage(index, 'data/src/fonts', 'p12');
+jag.write('p12.dat', p12);
 
-let q8 = await convertImage(index, 'data/src/fonts', 'q8', { tileX: 20, tileY: 20 });
-q8.save('data/pack/client/title.jag/q8.dat');
+let q8 = await convertImage(index, 'data/src/fonts', 'q8');
+jag.write('q8.dat', q8);
 
 // flame masks
-let runes = await convertImage(index, 'data/src/title', 'runes', { tileX: 96, tileY: 96 });
-runes.save('data/pack/client/title.jag/runes.dat');
+let runes = await convertImage(index, 'data/src/title', 'runes');
+jag.write('runes.dat', runes);
 
 // title screen elements
 let logo = await convertImage(index, 'data/src/title', 'logo');
-logo.save('data/pack/client/title.jag/logo.dat');
+// let logo = await convertImage(index, 'data/src/title', 'logo2'); // unfortunately logo was quantized to <32 colors, this is an attempt to restore it
+jag.write('logo.dat', logo);
 
 let titlebox = await convertImage(index, 'data/src/title', 'titlebox');
-titlebox.save('data/pack/client/title.jag/titlebox.dat');
+jag.write('titlebox.dat', titlebox);
 
 let titlebutton = await convertImage(index, 'data/src/title', 'titlebutton');
-titlebutton.save('data/pack/client/title.jag/titlebutton.dat');
+jag.write('titlebutton.dat', titlebutton);
 
-index.save('data/pack/client/title.jag/index.dat');
+jag.write('index.dat', index);
 
 // background image
 let title = Packet.load('data/src/binary/title.jpg');
-title.p1(0); // invalidate the JPEG header so it can't be seen in a viewer
-title.save('data/pack/client/title.jag/title.dat', title.length);
+// title.p1(0); // invalidate the JPEG header so it can't be seen in a viewer
+jag.write('title.dat', title);
+
+jag.save('data/pack/client/title');
