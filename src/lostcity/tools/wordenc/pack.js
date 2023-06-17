@@ -5,6 +5,10 @@ import Packet from '#jagex2/io/Packet.js';
 
 console.log('---- wordenc ----');
 
+/* order:
+  'badenc.txt', 'fragmentsenc.txt', 'tldlist.txt', 'domainenc.txt'
+*/
+
 let jag = new Jagfile();
 
 {
@@ -30,24 +34,6 @@ let jag = new Jagfile();
 
     // out.save('data/pack/client/wordenc.jag/badenc.txt');
     jag.write('badenc.txt', out);
-}
-
-{
-    let domainenc = fs.readFileSync('data/src/wordenc/domainenc.txt', 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length);
-
-    let out = new Packet();
-    out.p4(domainenc.length);
-    for (let i = 0; i < domainenc.length; i++) {
-        let domain = domainenc[i];
-
-        out.p1(domain.length);
-        for (let j = 0; j < domain.length; j++) {
-            out.p1(domain.charCodeAt(j));
-        }
-    }
-
-    // out.save('data/pack/client/wordenc.jag/domainenc.txt');
-    jag.write('domainenc.txt', out);
 }
 
 {
@@ -83,6 +69,24 @@ let jag = new Jagfile();
 
     // out.save('data/pack/client/wordenc.jag/tldlist.txt');
     jag.write('tldlist.txt', out);
+}
+
+{
+    let domainenc = fs.readFileSync('data/src/wordenc/domainenc.txt', 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length);
+
+    let out = new Packet();
+    out.p4(domainenc.length);
+    for (let i = 0; i < domainenc.length; i++) {
+        let domain = domainenc[i];
+
+        out.p1(domain.length);
+        for (let j = 0; j < domain.length; j++) {
+            out.p1(domain.charCodeAt(j));
+        }
+    }
+
+    // out.save('data/pack/client/wordenc.jag/domainenc.txt');
+    jag.write('domainenc.txt', out);
 }
 
 jag.save('data/pack/client/wordenc');

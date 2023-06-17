@@ -2,6 +2,36 @@ import fs from 'fs';
 import { dirname } from 'path';
 
 export default class Packet {
+    static crctable = new Int32Array(256);
+
+    static {
+        for (let i = 0; i < 256; i++) {
+            let crc = i;
+
+            for (let j = 0; j < 8; j++) {
+                if ((crc & 1) == 1) {
+                    crc = crc >>> 1 ^ 0xEDB88320;
+                } else {
+                    crc >>>= 1;
+                }
+            }
+
+            Packet.crctable[i] = crc;
+        }
+    }
+
+    static crc32(src, length = src.length, offset = 0) {
+        let crc = 0xFFFFFFFF;
+
+        for (let i = offset; i < offset + length; i++) {
+            crc = crc >>> 8 ^ Packet.crctable[(crc ^ src[i]) & 0xFF];
+        }
+
+        return ~crc;
+    }
+
+    // ----
+
     constructor(src) {
         if (src instanceof Packet) {
             src = src.data;

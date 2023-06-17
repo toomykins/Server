@@ -4,6 +4,19 @@ import { convertImage } from '#lostcity/tools/pack/Pix.js';
 
 console.log('---- title ----');
 
+/* order:
+  'p11.dat',
+  'p12.dat',
+  'titlebox.dat',
+  'title.dat',
+  'runes.dat',
+  'q8.dat',
+  'index.dat',
+  'titlebutton.dat',
+  'logo.dat',
+  'b12.dat'
+*/
+
 let index = new Packet();
 let jag = new Jagfile();
 
