@@ -1,10 +1,13 @@
 import fs from 'fs';
 
+import Jagfile from '#jagex2/io/Jagfile.js';
 import Packet from '#jagex2/io/Packet.js';
 import { loadOrder, loadPack } from '#lostcity/tools/pack/NameMap.js';
 
 let order = loadOrder('data/pack/sound.order');
 let pack = loadPack('data/pack/sound.pack');
+
+let jag = new Jagfile();
 
 let out = new Packet();
 for (let i = 0; i < order.length; i++) {
@@ -17,4 +20,8 @@ for (let i = 0; i < order.length; i++) {
 }
 out.p2(-1);
 
-out.save('data/pack/client/sounds.jag/sounds.dat');
+// out.save('data/pack/client/sounds.jag/sounds.dat');
+
+jag.write('sounds.dat', out);
+
+jag.save('data/pack/client/sounds');

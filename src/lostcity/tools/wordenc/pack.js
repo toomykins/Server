@@ -1,6 +1,9 @@
 import fs from 'fs';
 
+import Jagfile from '#jagex2/io/Jagfile.js';
 import Packet from '#jagex2/io/Packet.js';
+
+let jag = new Jagfile();
 
 {
     let badenc = fs.readFileSync('data/src/wordenc/badenc.txt', 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length);
@@ -23,7 +26,8 @@ import Packet from '#jagex2/io/Packet.js';
         }
     }
 
-    out.save('data/pack/client/wordenc.jag/badenc.txt');
+    // out.save('data/pack/client/wordenc.jag/badenc.txt');
+    jag.write('badenc.txt', out);
 }
 
 {
@@ -40,7 +44,8 @@ import Packet from '#jagex2/io/Packet.js';
         }
     }
 
-    out.save('data/pack/client/wordenc.jag/domainenc.txt');
+    // out.save('data/pack/client/wordenc.jag/domainenc.txt');
+    jag.write('domainenc.txt', out);
 }
 
 {
@@ -54,7 +59,8 @@ import Packet from '#jagex2/io/Packet.js';
         out.p2(fragment);
     }
 
-    out.save('data/pack/client/wordenc.jag/fragmentsenc.txt');
+    // out.save('data/pack/client/wordenc.jag/fragmentsenc.txt');
+    jag.write('fragmentsenc.txt', out);
 }
 
 {
@@ -73,5 +79,8 @@ import Packet from '#jagex2/io/Packet.js';
         }
     }
 
-    out.save('data/pack/client/wordenc.jag/tldlist.txt');
+    // out.save('data/pack/client/wordenc.jag/tldlist.txt');
+    jag.write('tldlist.txt', out);
 }
+
+jag.save('data/pack/client/wordenc');
