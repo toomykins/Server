@@ -4,6 +4,7 @@ import Jagfile from '#jagex2/io/Jagfile.js';
 import Packet from '#jagex2/io/Packet.js';
 import { convertImage } from '#lostcity/tools/pack/Pix.js';
 
+console.log('---- media ----');
 let sprites = fs.readdirSync('data/src/sprites').filter(x => x.endsWith('.png'));
 let index = new Packet();
 let jag = new Jagfile();

@@ -2,6 +2,8 @@ import Jagfile from '#jagex2/io/Jagfile.js';
 import Packet from '#jagex2/io/Packet.js';
 import { convertImage } from '#lostcity/tools/pack/Pix.js';
 
+console.log('---- title ----');
+
 let index = new Packet();
 let jag = new Jagfile();
 

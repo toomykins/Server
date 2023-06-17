@@ -3,6 +3,8 @@ import fs from 'fs';
 import Packet from '#jagex2/io/Packet.js';
 import { convertImage } from '#lostcity/tools/pack/Pix.js';
 
+console.log('---- textures ----');
+
 let index = new Packet();
 
 let pack = fs.readFileSync('data/pack/texture.pack', 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length).map(x => {

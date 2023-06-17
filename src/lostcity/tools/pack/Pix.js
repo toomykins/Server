@@ -96,7 +96,7 @@ export function writeImage(img, data, index, colors, meta = null) {
 }
 
 export async function convertImage(index, srcPath, safeName) {
-    console.log(safeName);
+    // console.log(safeName);
 
     let data = new Packet();
     data.p2(index.pos);

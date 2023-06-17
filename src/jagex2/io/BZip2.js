@@ -335,7 +335,7 @@ export default class BZip2 {
         return out.subarray(0, outIndex);
     }
 
-    static compress(src) {
+    static compress(src, prependLength = false) {
         if (src instanceof Packet) {
             src = src.data;
         }
@@ -349,6 +349,12 @@ export default class BZip2 {
 
         let compressed = fs.readFileSync(path + '.bz2');
         fs.unlinkSync(path + '.bz2');
+        if (prependLength) {
+            compressed[0] = src.length >> 24;
+            compressed[1] = src.length >> 16;
+            compressed[2] = src.length >> 8;
+            compressed[3] = src.length;
+        }
         return compressed;
     }
 }

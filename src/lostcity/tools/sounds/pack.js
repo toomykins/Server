@@ -4,6 +4,8 @@ import Jagfile from '#jagex2/io/Jagfile.js';
 import Packet from '#jagex2/io/Packet.js';
 import { loadOrder, loadPack } from '#lostcity/tools/pack/NameMap.js';
 
+console.log('---- sounds ----');
+
 let order = loadOrder('data/pack/sound.order');
 let pack = loadPack('data/pack/sound.pack');
 

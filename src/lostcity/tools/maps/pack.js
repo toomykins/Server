@@ -1,5 +1,6 @@
 import fs from 'fs';
 
+import BZip2 from '#jagex2/io/BZip2.js';
 import Packet from '#jagex2/io/Packet.js';
 
 function readMap(map) {
@@ -53,15 +54,18 @@ function readMap(map) {
     return { land, loc };
 }
 
+fs.mkdirSync('data/pack/server/maps', { recursive: true });
+
+console.log('---- maps ----');
 fs.readdirSync('data/src/maps').forEach(file => {
-    console.log(file);
     let [x, z] = file.slice(1).split('.').shift().split('_');
 
     let data = fs.readFileSync(`data/src/maps/${file}`, 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length);
     let map = readMap(data);
 
     // encode land data
-    {
+    // TODO: mtime check
+    if (!fs.existsSync(`data/pack/server/maps/m${x}_${z}`)) {
         let levelHeightmap = [];
         let levelTileOverlayIds = [];
         let levelTileOverlayShape = [];
@@ -214,11 +218,15 @@ fs.readdirSync('data/src/maps').forEach(file => {
             }
         }
 
-        out.save(`data/pack/client/maps/m${x}_${z}`);
+        // out.save(`data/pack/client/maps/m${x}_${z}`);
+
+        let compressed = BZip2.compress(out, true);
+        fs.writeFileSync(`data/pack/server/maps/m${x}_${z}`, compressed);
     }
 
     // encode loc data
-    {
+    // TODO: mtime check
+    if (!fs.existsSync(`data/pack/server/maps/l${x}_${z}`)) {
         let locs = {};
 
         for (let level = 0; level < 4; level++) {
@@ -238,7 +246,7 @@ fs.readdirSync('data/src/maps').forEach(file => {
 
                     let tile = map.loc[level][x][z];
                     for (let i = 0; i < tile.length; i++) {
-                        let [ id, type, rotation ] = tile[i];
+                        let [id, type, rotation] = tile[i];
 
                         if (!locs[id]) {
                             locs[id] = [];
@@ -286,6 +294,9 @@ fs.readdirSync('data/src/maps').forEach(file => {
         }
 
         out.psmart(0); // end of map
-        out.save(`data/pack/client/maps/l${x}_${z}`);
+        // out.save(`data/pack/client/maps/l${x}_${z}`);
+
+        let compressed = BZip2.compress(out, true);
+        fs.writeFileSync(`data/pack/server/maps/l${x}_${z}`, compressed);
     }
 });
