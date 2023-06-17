@@ -28,10 +28,10 @@ Java is required for 1:1 CRC matching during compression ([JagCompress](https://
 
 These jagfiles have been unpacked, decoded, and can be recreated 1:1 (pre- and post- compression!): `config`, `models`, `sounds`, and `wordenc`.
 
-Some more types of data are not encoded in jagfiles but still get sent to the client when playing. These produce 1:1 matches pre- and post- compression as well: `maps`, `jingles`, and `songs`.
+Some more types of data are not packed in jagfiles but still get sent to the client when playing. These produce 1:1 matches pre- and post- compression as well: `maps`, `jingles`*, and `songs`. (note: jingles not saved to disk on client)
 
-`media`, `textures`, and `title` will not produce identical files but are visually identical in-game.  
-This is due to a few reasons. Pixel encoding order calculation (picking column-major or row-major), auto-cropping, and adding empty trailing sprites in spritesheets.  
+`media`, `textures`, and `title` will not produce identical jagfiles but are visually identical in-game.  
+This is due to a few reasons. Pixel encoding order calculation (picking column-major or row-major), auto-cropping (using their values currently), and adding empty trailing sprites in spritesheets.  
 I attempted the pixel encoding order problem but I can't get it to produce identical decisions. I haven't bothered with the other two without having that one solved.  
 It would also be nice to figure out how to handle color quantization, Jagex has the ability to limit sprites to a max # of colors automatically this way. Not necessary to improve the output here.
 
