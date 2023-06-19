@@ -210,7 +210,7 @@ width=30
 height=30
 overlayer=com_37
 script1op1=stat_base_level,prayer
-script1=geq,0
+script1=gt,0
 graphic=prayeroff,0
 activegraphic=prayeron,0
 
@@ -222,7 +222,7 @@ width=30
 height=30
 overlayer=com_41
 script1op1=stat_base_level,prayer
-script1=geq,3
+script1=gt,3
 graphic=prayeroff,1
 activegraphic=prayeron,1
 
@@ -234,7 +234,7 @@ width=30
 height=30
 overlayer=com_45
 script1op1=stat_base_level,prayer
-script1=geq,6
+script1=gt,6
 graphic=prayeroff,2
 activegraphic=prayeron,2
 
@@ -246,7 +246,7 @@ width=30
 height=30
 overlayer=com_49
 script1op1=stat_base_level,prayer
-script1=geq,9
+script1=gt,9
 graphic=prayeroff,3
 activegraphic=prayeron,3
 
@@ -258,7 +258,7 @@ width=30
 height=30
 overlayer=com_53
 script1op1=stat_base_level,prayer
-script1=geq,12
+script1=gt,12
 graphic=prayeroff,4
 activegraphic=prayeron,4
 
@@ -270,7 +270,7 @@ width=30
 height=30
 overlayer=com_57
 script1op1=stat_base_level,prayer
-script1=geq,15
+script1=gt,15
 graphic=prayeroff,5
 activegraphic=prayeron,5
 
@@ -282,7 +282,7 @@ width=30
 height=30
 overlayer=com_61
 script1op1=stat_base_level,prayer
-script1=geq,18
+script1=gt,18
 graphic=prayeroff,6
 activegraphic=prayeron,6
 
@@ -294,7 +294,7 @@ width=30
 height=30
 overlayer=com_65
 script1op1=stat_base_level,prayer
-script1=geq,21
+script1=gt,21
 graphic=prayeroff,7
 activegraphic=prayeron,7
 
@@ -306,7 +306,7 @@ width=30
 height=30
 overlayer=com_69
 script1op1=stat_base_level,prayer
-script1=geq,24
+script1=gt,24
 graphic=prayeroff,8
 activegraphic=prayeron,8
 
@@ -318,7 +318,7 @@ width=30
 height=30
 overlayer=com_73
 script1op1=stat_base_level,prayer
-script1=geq,27
+script1=gt,27
 graphic=prayeroff,9
 activegraphic=prayeron,9
 
@@ -330,7 +330,7 @@ width=30
 height=30
 overlayer=com_77
 script1op1=stat_base_level,prayer
-script1=geq,30
+script1=gt,30
 graphic=prayeroff,10
 activegraphic=prayeron,10
 
@@ -342,7 +342,7 @@ width=30
 height=30
 overlayer=com_81
 script1op1=stat_base_level,prayer
-script1=geq,33
+script1=gt,33
 graphic=prayeroff,11
 activegraphic=prayeron,11
 
@@ -354,7 +354,7 @@ width=30
 height=30
 overlayer=com_85
 script1op1=stat_base_level,prayer
-script1=geq,36
+script1=gt,36
 graphic=prayeroff,12
 activegraphic=prayeron,12
 
@@ -366,7 +366,7 @@ width=30
 height=30
 overlayer=com_89
 script1op1=stat_base_level,prayer
-script1=geq,39
+script1=gt,39
 graphic=prayeroff,13
 activegraphic=prayeron,13
 
@@ -378,7 +378,7 @@ width=30
 height=30
 overlayer=com_93
 script1op1=stat_base_level,prayer
-script1=geq,42
+script1=gt,42
 graphic=prayeroff,14
 activegraphic=prayeron,14
 

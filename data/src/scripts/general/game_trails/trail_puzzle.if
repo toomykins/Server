@@ -65,7 +65,7 @@ width=32
 height=32
 overlayer=com_0
 script1op1=varp_261
-script1=geq,0
+script1=gt,0
 zoom=2486
 xan=288
 yan=2046
@@ -78,7 +78,7 @@ y=25
 width=4
 height=2
 script1op1=varp_261
-script1=geq,0
+script1=gt,0
 activetext=Show
 colour=0xFAD782
 
@@ -90,7 +90,7 @@ y=41
 width=4
 height=2
 script1op1=varp_261
-script1=geq,0
+script1=gt,0
 activetext=Finished
 colour=0xFAD782
 

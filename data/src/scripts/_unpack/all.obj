@@ -80,7 +80,7 @@ name=Cannon base
 
 [obj_7]
 certlink=obj_6
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_8]
 desc=The mounting for the muticannon.
@@ -95,7 +95,7 @@ name=Cannon stand
 
 [obj_9]
 certlink=obj_8
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_10]
 desc=The barrels of the multicannon.
@@ -109,7 +109,7 @@ name=Cannon barrels
 
 [obj_11]
 certlink=obj_10
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_12]
 desc=Used to make the cannon's ammo.
@@ -125,7 +125,7 @@ name=Cannon furnace
 
 [obj_13]
 certlink=obj_12
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_14]
 desc=A metal railing replacement.
@@ -297,7 +297,7 @@ name=Insect repellent
 
 [obj_29]
 certlink=obj_28
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_30]
 desc=It's a bucket of wax.
@@ -314,7 +314,7 @@ name=Bucket of wax
 
 [obj_31]
 certlink=obj_30
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_32]
 desc=A lit spooky candle.
@@ -342,7 +342,7 @@ name=Lit candle
 
 [obj_34]
 certlink=obj_33
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_35]
 desc=This used to belong to King Arthur.
@@ -372,7 +372,7 @@ name=Candle
 
 [obj_37]
 certlink=obj_36
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_38]
 desc=A spooky candle.
@@ -542,7 +542,7 @@ name=Longbow
 
 [obj_49]
 certlink=obj_48
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_50]
 desc=I need to find a string for this.
@@ -560,7 +560,7 @@ name=Shortbow
 
 [obj_51]
 certlink=obj_50
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_52]
 desc=A wooden arrow shaft
@@ -604,7 +604,7 @@ name=Oak shortbow
 
 [obj_55]
 certlink=obj_54
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_56]
 cost=80
@@ -622,7 +622,7 @@ name=Oak longbow
 
 [obj_57]
 certlink=obj_56
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_58]
 cost=160
@@ -640,7 +640,7 @@ name=Willow longbow
 
 [obj_59]
 certlink=obj_58
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_60]
 cost=100
@@ -658,7 +658,7 @@ name=Willow shortbow
 
 [obj_61]
 certlink=obj_60
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_62]
 cost=320
@@ -676,7 +676,7 @@ name=Maple longbow
 
 [obj_63]
 certlink=obj_62
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_64]
 cost=200
@@ -694,7 +694,7 @@ name=Maple shortbow
 
 [obj_65]
 certlink=obj_64
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_66]
 cost=640
@@ -712,7 +712,7 @@ name=Yew longbow
 
 [obj_67]
 certlink=obj_66
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_68]
 cost=400
@@ -730,7 +730,7 @@ name=Yew shortbow
 
 [obj_69]
 certlink=obj_68
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_70]
 cost=1280
@@ -748,7 +748,7 @@ name=Magic longbow
 
 [obj_71]
 certlink=obj_70
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_72]
 cost=800
@@ -766,7 +766,7 @@ name=Magic shortbow
 
 [obj_73]
 certlink=obj_72
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_74]
 members=yes
@@ -1070,7 +1070,7 @@ name=Unfinished potion
 
 [obj_92]
 certlink=obj_91
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_93]
 desc=I need another ingredient to finish this Marentill potion.
@@ -1087,7 +1087,7 @@ name=Unfinished potion
 
 [obj_94]
 certlink=obj_93
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_95]
 desc=I need another ingredient to finish this Tarromin potion.
@@ -1104,7 +1104,7 @@ name=Unfinished potion
 
 [obj_96]
 certlink=obj_95
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_97]
 desc=I need another ingredient to finish this Harralander potion.
@@ -1121,7 +1121,7 @@ name=Unfinished potion
 
 [obj_98]
 certlink=obj_97
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_99]
 desc=I need another ingredient to finish this Ranarr potion.
@@ -1138,7 +1138,7 @@ name=Unfinished potion
 
 [obj_100]
 certlink=obj_99
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_101]
 desc=I need another ingredient to finish this Irit potion.
@@ -1155,7 +1155,7 @@ name=Unfinished potion
 
 [obj_102]
 certlink=obj_101
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_103]
 desc=I need another ingredient to finish this Avantoe potion.
@@ -1172,7 +1172,7 @@ name=Unfinished potion
 
 [obj_104]
 certlink=obj_103
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_105]
 desc=I need another ingredient to finish this Kwuarm potion.
@@ -1189,7 +1189,7 @@ name=Unfinished potion
 
 [obj_106]
 certlink=obj_105
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_107]
 desc=I need another ingredient to finish this Cadantine potion.
@@ -1206,7 +1206,7 @@ name=Unfinished potion
 
 [obj_108]
 certlink=obj_107
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_109]
 desc=I need another ingredient to finish this Dwarf Weed potion.
@@ -1223,7 +1223,7 @@ name=Unfinished potion
 
 [obj_110]
 certlink=obj_109
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_111]
 desc=I need another ingredient to finish this Torstol potion.
@@ -1240,7 +1240,7 @@ name=Unfinished potion
 
 [obj_112]
 certlink=obj_111
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_113]
 desc=4 doses of strength potion.
@@ -1257,7 +1257,7 @@ name=Strength potion(4)
 
 [obj_114]
 certlink=obj_113
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_115]
 desc=3 doses of strength potion.
@@ -1274,7 +1274,7 @@ name=Strength potion(3)
 
 [obj_116]
 certlink=obj_115
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_117]
 desc=2 doses of strength potion.
@@ -1291,7 +1291,7 @@ name=Strength potion(2)
 
 [obj_118]
 certlink=obj_117
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_119]
 desc=1 dose of strength potion.
@@ -1308,7 +1308,7 @@ name=Strength potion(1)
 
 [obj_120]
 certlink=obj_119
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_121]
 desc=3 doses of attack potion.
@@ -1326,7 +1326,7 @@ name=Attack potion(3)
 
 [obj_122]
 certlink=obj_121
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_123]
 desc=2 doses of attack potion.
@@ -1344,7 +1344,7 @@ name=Attack potion(2)
 
 [obj_124]
 certlink=obj_123
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_125]
 desc=1 dose of attack potion.
@@ -1362,7 +1362,7 @@ name=Attack potion(1)
 
 [obj_126]
 certlink=obj_125
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_127]
 desc=3 doses of stat restoration potion.
@@ -1380,7 +1380,7 @@ name=Restore potion(3)
 
 [obj_128]
 certlink=obj_127
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_129]
 desc=2 doses of stat restoration potion.
@@ -1398,7 +1398,7 @@ name=Restore potion(2)
 
 [obj_130]
 certlink=obj_129
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_131]
 desc=1 dose of stat restoration potion.
@@ -1416,7 +1416,7 @@ name=Restore potion(1)
 
 [obj_132]
 certlink=obj_131
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_133]
 desc=3 doses of defence potion.
@@ -1434,7 +1434,7 @@ name=Defence potion(3)
 
 [obj_134]
 certlink=obj_133
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_135]
 desc=2 doses of defence potion.
@@ -1452,7 +1452,7 @@ name=Defence potion(2)
 
 [obj_136]
 certlink=obj_135
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_137]
 desc=1 dose of defence potion.
@@ -1470,7 +1470,7 @@ name=Defence potion(1)
 
 [obj_138]
 certlink=obj_137
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_139]
 desc=3 doses of restore prayer potion.
@@ -1488,7 +1488,7 @@ name=Prayer potion(3)
 
 [obj_140]
 certlink=obj_139
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_141]
 desc=2 doses of restore prayer potion.
@@ -1506,7 +1506,7 @@ name=Prayer potion(2)
 
 [obj_142]
 certlink=obj_141
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_143]
 desc=1 dose of restore prayer potion.
@@ -1524,7 +1524,7 @@ name=Prayer potion(1)
 
 [obj_144]
 certlink=obj_143
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_145]
 desc=3 doses of super attack potion.
@@ -1542,7 +1542,7 @@ name=Super attack(3)
 
 [obj_146]
 certlink=obj_145
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_147]
 desc=2 doses of super attack potion.
@@ -1560,7 +1560,7 @@ name=Super attack(2)
 
 [obj_148]
 certlink=obj_147
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_149]
 desc=1 dose of super attack potion.
@@ -1578,7 +1578,7 @@ name=Super attack(1)
 
 [obj_150]
 certlink=obj_149
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_151]
 desc=3 doses of fishing potion.
@@ -1596,7 +1596,7 @@ name=Fishing potion(3)
 
 [obj_152]
 certlink=obj_151
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_153]
 desc=2 doses of fishing potion.
@@ -1614,7 +1614,7 @@ name=Fishing potion(2)
 
 [obj_154]
 certlink=obj_153
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_155]
 desc=1 dose of fishing potion.
@@ -1632,7 +1632,7 @@ name=Fishing potion(1)
 
 [obj_156]
 certlink=obj_155
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_157]
 desc=3 doses of super strength potion.
@@ -1650,7 +1650,7 @@ name=Super strength(3)
 
 [obj_158]
 certlink=obj_157
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_159]
 desc=2 doses of super strength potion.
@@ -1668,7 +1668,7 @@ name=Super strength(2)
 
 [obj_160]
 certlink=obj_159
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_161]
 desc=1 dose of super strength potion.
@@ -1686,7 +1686,7 @@ name=Super strength(1)
 
 [obj_162]
 certlink=obj_161
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_163]
 desc=3 doses of super defence potion.
@@ -1704,7 +1704,7 @@ name=Super defence(3)
 
 [obj_164]
 certlink=obj_163
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_165]
 desc=2 doses of super defence potion.
@@ -1722,7 +1722,7 @@ name=Super defence(2)
 
 [obj_166]
 certlink=obj_165
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_167]
 desc=1 dose of super defence potion.
@@ -1740,7 +1740,7 @@ name=Super defence(1)
 
 [obj_168]
 certlink=obj_167
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_169]
 desc=3 doses of ranging potion.
@@ -1758,7 +1758,7 @@ name=Ranging potion(3)
 
 [obj_170]
 certlink=obj_169
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_171]
 desc=2 doses of ranging potion.
@@ -1776,7 +1776,7 @@ name=Ranging potion(2)
 
 [obj_172]
 certlink=obj_171
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_173]
 desc=1 dose of ranging potion.
@@ -1794,7 +1794,7 @@ name=Ranging potion(1)
 
 [obj_174]
 certlink=obj_173
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_175]
 desc=3 doses of antipoison potion.
@@ -1812,7 +1812,7 @@ name=Antipoison(3)
 
 [obj_176]
 certlink=obj_175
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_177]
 desc=2 doses of antipoison potion.
@@ -1830,7 +1830,7 @@ name=Antipoison(2)
 
 [obj_178]
 certlink=obj_177
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_179]
 desc=1 dose of antipoison potion.
@@ -1848,7 +1848,7 @@ name=Antipoison(1)
 
 [obj_180]
 certlink=obj_179
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_181]
 desc=3 doses of super antipoison potion.
@@ -1866,7 +1866,7 @@ name=Superantipoison(3)
 
 [obj_182]
 certlink=obj_181
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_183]
 desc=2 doses of super antipoison potion.
@@ -1884,7 +1884,7 @@ name=Superantipoison(2)
 
 [obj_184]
 certlink=obj_183
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_185]
 desc=1 dose of super antipoison potion.
@@ -1902,7 +1902,7 @@ name=Superantipoison(1)
 
 [obj_186]
 certlink=obj_185
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_187]
 desc=For use on daggers and projectiles.
@@ -1919,7 +1919,7 @@ name=Weapon poison
 
 [obj_188]
 certlink=obj_187
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_189]
 desc=3 doses of a potion of Zamorak.
@@ -1937,7 +1937,7 @@ name=Zamorak potion(3)
 
 [obj_190]
 certlink=obj_189
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_191]
 desc=2 doses of a potion of Zamorak.
@@ -1955,7 +1955,7 @@ name=Zamorak potion(2)
 
 [obj_192]
 certlink=obj_191
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_193]
 desc=1 dose of a potion of Zamorak.
@@ -1973,7 +1973,7 @@ name=Zamorak potion(1)
 
 [obj_194]
 certlink=obj_193
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_195]
 desc=This is meant to be good for spots.
@@ -1988,7 +1988,7 @@ name=Potion
 
 [obj_196]
 certlink=obj_195
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_197]
 desc=A cup of a strange brew...
@@ -2006,7 +2006,7 @@ name=Poison chalice
 
 [obj_198]
 certlink=obj_197
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_199]
 iop1=Identify
@@ -2021,7 +2021,7 @@ name=Herb
 
 [obj_200]
 certlink=obj_199
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_201]
 iop1=Identify
@@ -2036,7 +2036,7 @@ name=Herb
 
 [obj_202]
 certlink=obj_201
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_203]
 iop1=Identify
@@ -2051,7 +2051,7 @@ name=Herb
 
 [obj_204]
 certlink=obj_203
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_205]
 iop1=Identify
@@ -2066,7 +2066,7 @@ name=Herb
 
 [obj_206]
 certlink=obj_205
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_207]
 iop1=Identify
@@ -2081,7 +2081,7 @@ name=Herb
 
 [obj_208]
 certlink=obj_207
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_209]
 iop1=Identify
@@ -2096,7 +2096,7 @@ name=Herb
 
 [obj_210]
 certlink=obj_209
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_211]
 iop1=Identify
@@ -2111,7 +2111,7 @@ name=Herb
 
 [obj_212]
 certlink=obj_211
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_213]
 iop1=Identify
@@ -2126,7 +2126,7 @@ name=Herb
 
 [obj_214]
 certlink=obj_213
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_215]
 iop1=Identify
@@ -2141,7 +2141,7 @@ name=Herb
 
 [obj_216]
 certlink=obj_215
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_217]
 iop1=Identify
@@ -2156,7 +2156,7 @@ name=Herb
 
 [obj_218]
 certlink=obj_217
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_219]
 iop1=Identify
@@ -2171,7 +2171,7 @@ name=Herb
 
 [obj_220]
 certlink=obj_219
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_221]
 cost=3
@@ -2186,7 +2186,7 @@ name=Eye of newt
 
 [obj_222]
 certlink=obj_221
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_223]
 desc=Eewww.
@@ -2200,7 +2200,7 @@ name=Red spiders' eggs
 
 [obj_224]
 certlink=obj_223
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_225]
 desc=The root of a limpwurt plant.
@@ -2215,7 +2215,7 @@ name=Limpwurt root
 
 [obj_226]
 certlink=obj_225
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_227]
 desc=A glass vial containing water.
@@ -2231,7 +2231,7 @@ name=Vial of water
 
 [obj_228]
 certlink=obj_227
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_229]
 desc=An empty glass vial.
@@ -2247,7 +2247,7 @@ name=Vial
 
 [obj_230]
 certlink=obj_229
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_231]
 desc=Strange spikey grass.
@@ -2263,7 +2263,7 @@ name=Snape grass
 
 [obj_232]
 certlink=obj_231
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_233]
 cost=4
@@ -2279,7 +2279,7 @@ name=Pestle and mortar
 
 [obj_234]
 certlink=obj_233
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_235]
 desc=Finely ground horn of Unicorn.
@@ -2296,7 +2296,7 @@ name=Unicorn horn dust
 
 [obj_236]
 certlink=obj_235
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_237]
 model=model_2495
@@ -2312,7 +2312,7 @@ name=Unicorn horn
 
 [obj_238]
 certlink=obj_237
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_239]
 model=model_2358
@@ -2330,7 +2330,7 @@ name=White berries
 
 [obj_240]
 certlink=obj_239
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_241]
 model=model_2742
@@ -2347,7 +2347,7 @@ name=Dragon scale dust
 
 [obj_242]
 certlink=obj_241
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_243]
 cost=50
@@ -2362,7 +2362,7 @@ name=Blue dragon scale
 
 [obj_244]
 certlink=obj_243
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_245]
 desc=I wonder if stealing Zamorak's wine was a good idea.
@@ -2378,7 +2378,7 @@ name=Wine of zamorak
 
 [obj_246]
 certlink=obj_245
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_247]
 desc=They don't look very ripe.
@@ -2398,7 +2398,7 @@ name=Jangerberries
 
 [obj_248]
 certlink=obj_247
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_249]
 cost=3
@@ -2417,7 +2417,7 @@ name=Guam leaf
 
 [obj_250]
 certlink=obj_249
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_251]
 cost=5
@@ -2436,7 +2436,7 @@ name=Marrentill
 
 [obj_252]
 certlink=obj_251
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_253]
 cost=11
@@ -2455,7 +2455,7 @@ name=Tarromin
 
 [obj_254]
 certlink=obj_253
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_255]
 cost=20
@@ -2474,7 +2474,7 @@ name=Harralander
 
 [obj_256]
 certlink=obj_255
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_257]
 cost=25
@@ -2493,7 +2493,7 @@ name=Ranarr weed
 
 [obj_258]
 certlink=obj_257
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_259]
 cost=40
@@ -2512,7 +2512,7 @@ name=Irit leaf
 
 [obj_260]
 certlink=obj_259
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_261]
 cost=48
@@ -2531,7 +2531,7 @@ name=Avantoe
 
 [obj_262]
 certlink=obj_261
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_263]
 cost=54
@@ -2550,7 +2550,7 @@ name=Kwuarm
 
 [obj_264]
 certlink=obj_263
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_265]
 cost=65
@@ -2569,7 +2569,7 @@ name=Cadantine
 
 [obj_266]
 certlink=obj_265
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_267]
 cost=70
@@ -2588,7 +2588,7 @@ name=Dwarf weed
 
 [obj_268]
 certlink=obj_267
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_269]
 cost=75
@@ -2607,7 +2607,7 @@ name=Torstol
 
 [obj_270]
 certlink=obj_269
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_271]
 desc=It looks like part of a machine.
@@ -2809,7 +2809,7 @@ name=Goblin mail
 
 [obj_289]
 certlink=obj_288
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_290]
 desc=This contains some vital research results.
@@ -2956,7 +2956,7 @@ name=Lobster pot
 
 [obj_302]
 certlink=obj_301
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_303]
 model=model_2403
@@ -2973,7 +2973,7 @@ name=Small fishing net
 
 [obj_304]
 certlink=obj_303
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_305]
 desc=Useful for catching lots of fish.
@@ -2991,7 +2991,7 @@ name=Big fishing net
 
 [obj_306]
 certlink=obj_305
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_307]
 model=model_2828
@@ -3008,7 +3008,7 @@ name=Fishing rod
 
 [obj_308]
 certlink=obj_307
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_309]
 model=model_2695
@@ -3025,7 +3025,7 @@ name=Fly fishing rod
 
 [obj_310]
 certlink=obj_309
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_311]
 desc=Useful for catching really big fish.
@@ -3042,7 +3042,7 @@ name=Harpoon
 
 [obj_312]
 certlink=obj_311
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_313]
 desc=For use with a fishing rod.
@@ -3080,7 +3080,7 @@ name=Shrimps
 
 [obj_316]
 certlink=obj_315
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_317]
 desc=I should try cooking this.
@@ -3097,7 +3097,7 @@ name=Raw shrimps
 
 [obj_318]
 certlink=obj_317
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_319]
 desc=Some nicely cooked fish.
@@ -3115,7 +3115,7 @@ name=Anchovies
 
 [obj_320]
 certlink=obj_319
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_321]
 desc=I should try cooking this.
@@ -3132,7 +3132,7 @@ name=Raw anchovies
 
 [obj_322]
 certlink=obj_321
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_323]
 desc=Oops!
@@ -3149,7 +3149,7 @@ name=Burnt fish
 
 [obj_324]
 certlink=obj_323
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_325]
 desc=Some nicely cooked fish.
@@ -3170,7 +3170,7 @@ name=Sardine
 
 [obj_326]
 certlink=obj_325
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_327]
 desc=I should try cooking this.
@@ -3190,7 +3190,7 @@ name=Raw sardine
 
 [obj_328]
 certlink=obj_327
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_329]
 desc=Some nicely cooked fish.
@@ -3209,7 +3209,7 @@ name=Salmon
 
 [obj_330]
 certlink=obj_329
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_331]
 desc=I should try cooking this.
@@ -3227,7 +3227,7 @@ name=Raw salmon
 
 [obj_332]
 certlink=obj_331
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_333]
 desc=Some nicely cooked fish.
@@ -3246,7 +3246,7 @@ name=Trout
 
 [obj_334]
 certlink=obj_333
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_335]
 desc=I should try cooking this.
@@ -3264,7 +3264,7 @@ name=Raw trout
 
 [obj_336]
 certlink=obj_335
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_337]
 desc=Some nicely cooked fish.
@@ -3315,7 +3315,7 @@ name=Cod
 
 [obj_340]
 certlink=obj_339
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_341]
 desc=I should try cooking this.
@@ -3334,7 +3334,7 @@ name=Raw cod
 
 [obj_342]
 certlink=obj_341
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_343]
 desc=Oops!
@@ -3352,7 +3352,7 @@ name=Burnt fish
 
 [obj_344]
 certlink=obj_343
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_345]
 desc=I should try cooking this.
@@ -3371,7 +3371,7 @@ name=Raw herring
 
 [obj_346]
 certlink=obj_345
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_347]
 desc=Some nicely cooked fish.
@@ -3391,7 +3391,7 @@ name=Herring
 
 [obj_348]
 certlink=obj_347
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_349]
 desc=I should try cooking this.
@@ -3409,7 +3409,7 @@ name=Raw pike
 
 [obj_350]
 certlink=obj_349
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_351]
 desc=Some nicely cooked Pike.
@@ -3428,7 +3428,7 @@ name=Pike
 
 [obj_352]
 certlink=obj_351
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_353]
 desc=I should try cooking this.
@@ -3448,7 +3448,7 @@ name=Raw mackerel
 
 [obj_354]
 certlink=obj_353
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_355]
 desc=Some nicely cooked fish.
@@ -3469,7 +3469,7 @@ name=Mackerel
 
 [obj_356]
 certlink=obj_355
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_357]
 desc=Oops!
@@ -3488,7 +3488,7 @@ name=Burnt fish
 
 [obj_358]
 certlink=obj_357
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_359]
 desc=I should try cooking this.
@@ -3506,7 +3506,7 @@ name=Raw tuna
 
 [obj_360]
 certlink=obj_359
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_361]
 desc=Wow, this is a big fish.
@@ -3525,7 +3525,7 @@ name=Tuna
 
 [obj_362]
 certlink=obj_361
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_363]
 desc=I should try cooking this.
@@ -3544,7 +3544,7 @@ name=Raw bass
 
 [obj_364]
 certlink=obj_363
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_365]
 desc=Wow, this is a big fish.
@@ -3564,7 +3564,7 @@ name=Bass
 
 [obj_366]
 certlink=obj_365
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_367]
 desc=Oops!
@@ -3582,7 +3582,7 @@ name=Burnt fish
 
 [obj_368]
 certlink=obj_367
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_369]
 desc=Oops!
@@ -3602,7 +3602,7 @@ name=Burnt fish
 
 [obj_370]
 certlink=obj_369
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_371]
 desc=I should try cooking this.
@@ -3620,7 +3620,7 @@ name=Raw swordfish
 
 [obj_372]
 certlink=obj_371
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_373]
 desc=I'd better be careful eating this!
@@ -3639,7 +3639,7 @@ name=Swordfish
 
 [obj_374]
 certlink=obj_373
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_375]
 desc=Oops!
@@ -3657,7 +3657,7 @@ name=Burnt swordfish
 
 [obj_376]
 certlink=obj_375
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_377]
 desc=I should try cooking this.
@@ -3674,7 +3674,7 @@ name=Raw lobster
 
 [obj_378]
 certlink=obj_377
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_379]
 desc=This looks tricky to eat.
@@ -3690,7 +3690,7 @@ name=Lobster
 
 [obj_380]
 certlink=obj_379
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_381]
 desc=Oops!
@@ -3707,7 +3707,7 @@ name=Burnt lobster
 
 [obj_382]
 certlink=obj_381
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_383]
 desc=I should try cooking this.
@@ -3725,7 +3725,7 @@ name=Raw shark
 
 [obj_384]
 certlink=obj_383
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_385]
 desc=I'd better be careful eating this.
@@ -3746,7 +3746,7 @@ name=Shark
 
 [obj_386]
 certlink=obj_385
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_387]
 desc=Oops!
@@ -3766,7 +3766,7 @@ name=Burnt shark
 
 [obj_388]
 certlink=obj_387
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_389]
 desc=A rare catch.
@@ -3785,7 +3785,7 @@ name=Raw manta ray
 
 [obj_390]
 certlink=obj_389
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_391]
 desc=A rare catch.
@@ -3805,7 +3805,7 @@ name=Manta ray
 
 [obj_392]
 certlink=obj_391
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_393]
 desc=Oops!
@@ -3824,7 +3824,7 @@ name=Burnt manta ray
 
 [obj_394]
 certlink=obj_393
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_395]
 desc=A rare catch.
@@ -3839,7 +3839,7 @@ name=Raw sea turtle
 
 [obj_396]
 certlink=obj_395
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_397]
 desc=Tasty!
@@ -3859,7 +3859,7 @@ name=Sea turtle
 
 [obj_398]
 certlink=obj_397
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_399]
 desc=Oops!
@@ -3878,7 +3878,7 @@ name=Burnt sea turtle
 
 [obj_400]
 certlink=obj_399
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_401]
 desc=Slightly damp seaweed.
@@ -3894,7 +3894,7 @@ name=Seaweed
 
 [obj_402]
 certlink=obj_401
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_403]
 desc=Slightly damp seaweed.
@@ -3911,7 +3911,7 @@ name=Edible seaweed
 
 [obj_404]
 certlink=obj_403
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_405]
 desc=I hope there's treasure in it.
@@ -3928,7 +3928,7 @@ name=Casket
 
 [obj_406]
 certlink=obj_405
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_407]
 desc=It's a rare oyster.
@@ -3945,7 +3945,7 @@ name=Oyster
 
 [obj_408]
 certlink=obj_407
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_409]
 desc=It's empty.
@@ -3961,7 +3961,7 @@ name=Empty oyster
 
 [obj_410]
 certlink=obj_409
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_411]
 desc=I could work wonders with a chisel on this pearl.
@@ -3977,7 +3977,7 @@ name=Oyster pearl
 
 [obj_412]
 certlink=obj_411
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_413]
 desc=I could work wonders with a chisel on these pearls.
@@ -3993,7 +3993,7 @@ name=Oyster pearls
 
 [obj_414]
 certlink=obj_413
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_415]
 cost=10
@@ -4147,7 +4147,7 @@ name=Priest gown
 
 [obj_427]
 certlink=obj_426
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_428]
 desc=Bottom half of a priest suit.
@@ -4165,7 +4165,7 @@ name=Priest gown
 
 [obj_429]
 certlink=obj_428
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_430]
 desc=Medical looking.
@@ -4230,7 +4230,7 @@ name=Clay
 
 [obj_435]
 certlink=obj_434
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_436]
 cost=3
@@ -4247,7 +4247,7 @@ name=Copper ore
 
 [obj_437]
 certlink=obj_436
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_438]
 cost=3
@@ -4264,7 +4264,7 @@ name=Tin ore
 
 [obj_439]
 certlink=obj_438
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_440]
 cost=17
@@ -4283,7 +4283,7 @@ name=Iron ore
 
 [obj_441]
 certlink=obj_440
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_442]
 cost=75
@@ -4302,7 +4302,7 @@ name=Silver ore
 
 [obj_443]
 certlink=obj_442
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_444]
 cost=150
@@ -4321,7 +4321,7 @@ name=Gold ore
 
 [obj_445]
 certlink=obj_444
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_446]
 cost=150
@@ -4354,7 +4354,7 @@ name=Mithril ore
 
 [obj_448]
 certlink=obj_447
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_449]
 cost=400
@@ -4371,7 +4371,7 @@ name=Adamantite ore
 
 [obj_450]
 certlink=obj_449
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_451]
 desc=This needs refining.
@@ -4388,7 +4388,7 @@ name=Runite ore
 
 [obj_452]
 certlink=obj_451
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_453]
 cost=45
@@ -4405,7 +4405,7 @@ name=Coal
 
 [obj_454]
 certlink=obj_453
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_455]
 members=yes
@@ -4520,7 +4520,7 @@ name=Strange fruit
 
 [obj_465]
 certlink=obj_464
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_466]
 desc=Useless without the head.
@@ -4537,7 +4537,7 @@ name=Pickaxe handle
 
 [obj_467]
 certlink=obj_466
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_468]
 desc=Nurmof can fix this for me.
@@ -4556,7 +4556,7 @@ name=Broken pickaxe
 
 [obj_469]
 certlink=obj_468
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_470]
 desc=Nurmof can fix this for me.
@@ -4575,7 +4575,7 @@ name=Broken pickaxe
 
 [obj_471]
 certlink=obj_470
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_472]
 desc=Nurmof can fix this for me.
@@ -4592,7 +4592,7 @@ name=Broken pickaxe
 
 [obj_473]
 certlink=obj_472
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_474]
 desc=Nurmof can fix this for me.
@@ -4611,7 +4611,7 @@ name=Broken pickaxe
 
 [obj_475]
 certlink=obj_474
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_476]
 desc=Nurmof can fix this for me.
@@ -4630,7 +4630,7 @@ name=Broken pickaxe
 
 [obj_477]
 certlink=obj_476
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_478]
 desc=Nurmof can fix this for me.
@@ -4649,7 +4649,7 @@ name=Broken pickaxe
 
 [obj_479]
 certlink=obj_478
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_480]
 desc=It's missing a handle.
@@ -4666,7 +4666,7 @@ name=Pickaxe head
 
 [obj_481]
 certlink=obj_480
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_482]
 desc=It's missing a handle.
@@ -4683,7 +4683,7 @@ name=Pickaxe head
 
 [obj_483]
 certlink=obj_482
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_484]
 desc=It's missing a handle.
@@ -4698,7 +4698,7 @@ name=Pickaxe head
 
 [obj_485]
 certlink=obj_484
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_486]
 desc=It's missing a handle.
@@ -4715,7 +4715,7 @@ name=Pickaxe head
 
 [obj_487]
 certlink=obj_486
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_488]
 desc=It's missing a handle.
@@ -4732,7 +4732,7 @@ name=Pickaxe head
 
 [obj_489]
 certlink=obj_488
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_490]
 desc=It's missing a handle.
@@ -4749,7 +4749,7 @@ name=Pickaxe head
 
 [obj_491]
 certlink=obj_490
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_492]
 desc=Useless without the head.
@@ -4768,7 +4768,7 @@ name=Axe handle
 
 [obj_493]
 certlink=obj_492
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_494]
 desc=Bob can fix this for me.
@@ -4786,7 +4786,7 @@ name=Broken axe
 
 [obj_495]
 certlink=obj_494
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_496]
 desc=Bob can fix this for me.
@@ -4804,7 +4804,7 @@ name=Broken axe
 
 [obj_497]
 certlink=obj_496
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_498]
 desc=Bob can fix this for me.
@@ -4820,7 +4820,7 @@ name=Broken axe
 
 [obj_499]
 certlink=obj_498
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_500]
 desc=Bob can fix this for me.
@@ -4838,7 +4838,7 @@ name=Broken axe
 
 [obj_501]
 certlink=obj_500
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_502]
 desc=Bob can fix this for me.
@@ -4856,7 +4856,7 @@ name=Broken axe
 
 [obj_503]
 certlink=obj_502
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_504]
 desc=Bob can fix this for me.
@@ -4874,7 +4874,7 @@ name=Broken axe
 
 [obj_505]
 certlink=obj_504
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_506]
 desc=Bob can fix this for me.
@@ -4892,7 +4892,7 @@ name=Broken axe
 
 [obj_507]
 certlink=obj_506
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_508]
 desc=It's missing a handle.
@@ -4908,7 +4908,7 @@ name=Axe head
 
 [obj_509]
 certlink=obj_508
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_510]
 desc=It's missing a handle.
@@ -4924,7 +4924,7 @@ name=Axe head
 
 [obj_511]
 certlink=obj_510
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_512]
 desc=It's missing a handle.
@@ -4938,7 +4938,7 @@ name=Axe head
 
 [obj_513]
 certlink=obj_512
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_514]
 desc=It's missing a handle.
@@ -4954,7 +4954,7 @@ name=Axe head
 
 [obj_515]
 certlink=obj_514
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_516]
 desc=It's missing a handle.
@@ -4970,7 +4970,7 @@ name=Axe head
 
 [obj_517]
 certlink=obj_516
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_518]
 desc=It's missing a handle.
@@ -4986,7 +4986,7 @@ name=Axe head
 
 [obj_519]
 certlink=obj_518
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_520]
 desc=It's missing a handle.
@@ -5002,7 +5002,7 @@ name=Axe head
 
 [obj_521]
 certlink=obj_520
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_522]
 desc=I don't fancy eating this now.
@@ -5079,7 +5079,7 @@ name=Bones
 
 [obj_527]
 certlink=obj_526
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_528]
 desc=Bones are for burying!
@@ -5095,7 +5095,7 @@ name=Burnt bones
 
 [obj_529]
 certlink=obj_528
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_530]
 desc=Bones are for burying!
@@ -5110,7 +5110,7 @@ name=Bat bones
 
 [obj_531]
 certlink=obj_530
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_532]
 desc=Ew it's a pile of bones.
@@ -5123,7 +5123,7 @@ name=Big bones
 
 [obj_533]
 certlink=obj_532
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_534]
 members=yes
@@ -5137,7 +5137,7 @@ name=Babydragon bones
 
 [obj_535]
 certlink=obj_534
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_536]
 desc=These would feed a dog for months!
@@ -5151,7 +5151,7 @@ name=Dragon bones
 
 [obj_537]
 certlink=obj_536
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_538]
 model=model_2521
@@ -5170,7 +5170,7 @@ name=Druid's robe
 
 [obj_539]
 certlink=obj_538
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_540]
 model=model_2786
@@ -5191,7 +5191,7 @@ name=Druid's robe
 
 [obj_541]
 certlink=obj_540
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_542]
 model=model_2521
@@ -5209,7 +5209,7 @@ name=Monk's robe
 
 [obj_543]
 certlink=obj_542
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_544]
 model=model_2786
@@ -5229,7 +5229,7 @@ name=Monk's robe
 
 [obj_545]
 certlink=obj_544
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_546]
 model=model_2786
@@ -5249,7 +5249,7 @@ name=Black robe
 
 [obj_547]
 certlink=obj_546
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_548]
 model=model_2521
@@ -5267,7 +5267,7 @@ name=Black robe
 
 [obj_549]
 certlink=obj_548
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_550]
 desc=Issued by RuneScape Council to all new citizens.
@@ -5283,7 +5283,7 @@ name=Newcomer map
 
 [obj_551]
 certlink=obj_550
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_552]
 desc=It lets me talk to ghosts.
@@ -5312,7 +5312,7 @@ model=model_2388
 2dxan=160
 name=Skull
 
-[obj_554]
+[firerune]
 desc=One of the 4 basic elemental Runes.
 stackable=yes
 cost=4
@@ -5322,7 +5322,7 @@ model=model_2399
 2dxan=516
 name=Fire rune
 
-[obj_555]
+[waterrune]
 desc=One of the 4 basic elemental Runes.
 stackable=yes
 cost=4
@@ -5332,7 +5332,7 @@ model=model_2652
 2dxan=516
 name=Water rune
 
-[obj_556]
+[airrune]
 desc=One of the 4 basic elemental Runes.
 stackable=yes
 cost=4
@@ -5342,7 +5342,7 @@ model=model_2405
 2dxan=516
 name=Air rune
 
-[obj_557]
+[earthrune]
 desc=One of the 4 basic elemental Runes.
 stackable=yes
 cost=4
@@ -5352,7 +5352,7 @@ model=model_2737
 2dxan=516
 name=Earth rune
 
-[obj_558]
+[mindrune]
 desc=Used for low level missile spells.
 stackable=yes
 cost=3
@@ -5362,7 +5362,7 @@ model=model_2481
 2dxan=516
 name=Mind rune
 
-[obj_559]
+[bodyrune]
 desc=Used for curse spells.
 stackable=yes
 cost=3
@@ -5372,7 +5372,7 @@ model=model_2340
 2dxan=516
 name=Body rune
 
-[obj_560]
+[deathrune]
 desc=Used for high level missile spells.
 stackable=yes
 cost=30
@@ -5382,7 +5382,7 @@ model=model_2645
 2dxan=516
 name=Death rune
 
-[obj_561]
+[naturerune]
 desc=Used for alchemy spells.
 stackable=yes
 cost=20
@@ -5392,7 +5392,7 @@ model=model_2734
 2dxan=516
 name=Nature rune
 
-[obj_562]
+[chaosrune]
 desc=Used for mid level missile spells.
 stackable=yes
 cost=15
@@ -5402,7 +5402,7 @@ model=model_2707
 2dxan=516
 name=Chaos rune
 
-[obj_563]
+[lawrune]
 desc=Used for teleport spells.
 stackable=yes
 cost=40
@@ -5412,7 +5412,7 @@ model=model_2382
 2dxan=516
 name=Law rune
 
-[obj_564]
+[cosmicrune]
 desc=Used for enchant spells.
 stackable=yes
 cost=15
@@ -5422,7 +5422,7 @@ model=model_2735
 2dxan=516
 name=Cosmic rune
 
-[obj_565]
+[bloodrune]
 desc=Used for high level missile spells.
 stackable=yes
 cost=50
@@ -5433,7 +5433,7 @@ model=model_2665
 members=yes
 name=Blood rune
 
-[obj_566]
+[soulrune]
 desc=Used for high level curse spells.
 stackable=yes
 cost=1250
@@ -5444,7 +5444,7 @@ model=model_2434
 members=yes
 name=Soul rune
 
-[obj_567]
+[stafforb]
 model=model_2428
 2dxof=3
 2dyof=3
@@ -5459,11 +5459,11 @@ recol1s=43117
 recol1d=127
 name=Unpowered orb
 
-[obj_568]
-certlink=obj_567
-certtemplate=obj_799
+[cert_stafforb]
+certlink=stafforb
+certtemplate=template_for_cert
 
-[obj_569]
+[fire_orb]
 model=model_2428
 2dxof=3
 2dyof=3
@@ -5477,11 +5477,11 @@ recol1s=43117
 recol1d=960
 name=Fire orb
 
-[obj_570]
-certlink=obj_569
-certtemplate=obj_799
+[cert_fire_orb]
+certlink=fire_orb
+certtemplate=template_for_cert
 
-[obj_571]
+[water_orb]
 model=model_2428
 2dxof=3
 2dyof=3
@@ -5495,11 +5495,11 @@ recol1s=43117
 recol1d=43968
 name=Water orb
 
-[obj_572]
-certlink=obj_571
-certtemplate=obj_799
+[cert_water_orb]
+certlink=water_orb
+certtemplate=template_for_cert
 
-[obj_573]
+[air_orb]
 model=model_2428
 2dxof=3
 2dyof=3
@@ -5511,11 +5511,11 @@ desc=A magic glowing orb.
 cost=300
 name=Air orb
 
-[obj_574]
-certlink=obj_573
-certtemplate=obj_799
+[cert_air_orb]
+certlink=air_orb
+certtemplate=template_for_cert
 
-[obj_575]
+[earth_orb]
 model=model_2428
 2dxof=3
 2dyof=3
@@ -5529,9 +5529,9 @@ recol1s=43117
 recol1d=3501
 name=Earth orb
 
-[obj_576]
-certlink=obj_575
-certtemplate=obj_799
+[cert_earth_orb]
+certlink=earth_orb
+certtemplate=template_for_cert
 
 [obj_577]
 cost=15
@@ -5551,7 +5551,7 @@ name=Wizards robe
 
 [obj_578]
 certlink=obj_577
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_579]
 cost=2
@@ -5571,7 +5571,7 @@ name=Wizards hat
 
 [obj_580]
 certlink=obj_579
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_581]
 cost=13
@@ -5591,7 +5591,7 @@ name=Black robe
 
 [obj_582]
 certlink=obj_581
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_583]
 desc=It's a bailing bucket.
@@ -5609,7 +5609,7 @@ name=Bailing bucket
 
 [obj_584]
 certlink=obj_583
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_585]
 desc=It's a bailing bucket full of salty water.
@@ -5627,7 +5627,7 @@ name=Bailing bucket
 
 [obj_586]
 certlink=obj_585
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_587]
 desc=A strange glowing green orb.
@@ -5684,7 +5684,7 @@ name=Tinderbox
 
 [obj_591]
 certlink=obj_590
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_592]
 desc=A heap of ashes.
@@ -5700,7 +5700,7 @@ name=Ashes
 
 [obj_593]
 certlink=obj_592
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_594]
 cost=4
@@ -5715,7 +5715,7 @@ name=Torch
 
 [obj_595]
 certlink=obj_594
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_596]
 cost=4
@@ -5729,7 +5729,7 @@ name=Torch
 
 [obj_597]
 certlink=obj_596
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_598]
 desc=Unlit arrows.
@@ -5997,7 +5997,7 @@ name=Paramaya ticket
 
 [obj_620]
 certlink=obj_619
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_621]
 desc=Allows you passage on the 'Lady of the waves' ship.
@@ -6013,7 +6013,7 @@ name=Ship ticket
 
 [obj_622]
 certlink=obj_621
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_623]
 desc=An ivory sword pommel.
@@ -6071,7 +6071,7 @@ name=Boots
 
 [obj_627]
 certlink=obj_626
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_628]
 desc=They're soft and silky.
@@ -6092,7 +6092,7 @@ name=Boots
 
 [obj_629]
 certlink=obj_628
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_630]
 desc=They're soft and silky.
@@ -6113,7 +6113,7 @@ name=Boots
 
 [obj_631]
 certlink=obj_630
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_632]
 desc=They're soft and silky.
@@ -6134,7 +6134,7 @@ name=Boots
 
 [obj_633]
 certlink=obj_632
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_634]
 desc=They're soft and silky.
@@ -6155,7 +6155,7 @@ name=Boots
 
 [obj_635]
 certlink=obj_634
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_636]
 desc=The ultimate in gnome design.
@@ -6176,7 +6176,7 @@ name=Robe top
 
 [obj_637]
 certlink=obj_636
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_638]
 desc=The ultimate in gnome design.
@@ -6197,7 +6197,7 @@ name=Robe top
 
 [obj_639]
 certlink=obj_638
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_640]
 desc=The ultimate in gnome design.
@@ -6218,7 +6218,7 @@ name=Robe top
 
 [obj_641]
 certlink=obj_640
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_642]
 desc=The ultimate in gnome design.
@@ -6239,7 +6239,7 @@ name=Robe top
 
 [obj_643]
 certlink=obj_642
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_644]
 desc=The ultimate in gnome design.
@@ -6260,7 +6260,7 @@ name=Robe top
 
 [obj_645]
 certlink=obj_644
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_646]
 desc=Made by Tree Gnomes.
@@ -6279,7 +6279,7 @@ name=Robe bottoms
 
 [obj_647]
 certlink=obj_646
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_648]
 desc=Made by Tree Gnomes.
@@ -6298,7 +6298,7 @@ name=Robe bottoms
 
 [obj_649]
 certlink=obj_648
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_650]
 desc=Made by Tree Gnomes.
@@ -6317,7 +6317,7 @@ name=Robe bottoms
 
 [obj_651]
 certlink=obj_650
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_652]
 desc=Made by Tree Gnomes.
@@ -6336,7 +6336,7 @@ name=Robe bottoms
 
 [obj_653]
 certlink=obj_652
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_654]
 desc=Made by Tree Gnomes.
@@ -6355,7 +6355,7 @@ name=Robe bottoms
 
 [obj_655]
 certlink=obj_654
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_656]
 desc=A silly pointed hat.
@@ -6378,7 +6378,7 @@ name=Hat
 
 [obj_657]
 certlink=obj_656
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_658]
 desc=A silly pointed hat.
@@ -6401,7 +6401,7 @@ name=Hat
 
 [obj_659]
 certlink=obj_658
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_660]
 desc=A silly pointed hat.
@@ -6424,7 +6424,7 @@ name=Hat
 
 [obj_661]
 certlink=obj_660
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_662]
 desc=A silly pointed hat.
@@ -6447,7 +6447,7 @@ name=Hat
 
 [obj_663]
 certlink=obj_662
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_664]
 desc=A silly pointed hat.
@@ -6470,7 +6470,7 @@ name=Hat
 
 [obj_665]
 certlink=obj_664
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_666]
 desc=Picture of a posing Paladin.
@@ -7243,7 +7243,7 @@ name=Hollow reed
 
 [obj_728]
 certlink=obj_727
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_729]
 desc=It looks like the Shamans personal notes...
@@ -7322,7 +7322,7 @@ name=Smashed glass
 
 [obj_734]
 certlink=obj_733
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_735]
 desc=These need to be germinated before they can be used.
@@ -7537,7 +7537,7 @@ name=Gnomeball
 
 [obj_752]
 certlink=obj_751
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_753]
 desc=Poisonous berries.
@@ -7553,7 +7553,7 @@ name=Cadaver berries
 
 [obj_754]
 certlink=obj_753
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_755]
 desc=A message from Juliet to Romeo.
@@ -7608,7 +7608,7 @@ name=Key
 
 [obj_760]
 certlink=obj_759
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_761]
 desc=An intelligence report.
@@ -7623,7 +7623,7 @@ name=Scroll
 
 [obj_762]
 certlink=obj_761
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_763]
 desc=Half of the Shield of Arrav.
@@ -7637,7 +7637,7 @@ name=Broken shield
 
 [obj_764]
 certlink=obj_763
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_765]
 desc=Half of the Shield of Arrav.
@@ -7650,7 +7650,7 @@ name=Broken shield
 
 [obj_766]
 certlink=obj_765
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_767]
 desc=Former property of the Phoenix Gang.
@@ -7669,7 +7669,7 @@ name=Phoenix crossbow
 
 [obj_768]
 certlink=obj_767
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_769]
 desc=I can use this to claim a reward from the King.
@@ -7683,7 +7683,7 @@ name=Certificate
 
 [obj_770]
 certlink=obj_769
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_771]
 model=model_2412
@@ -8036,7 +8036,7 @@ manwear=model_529,0
 womanwear=model_529,6
 name=Grinder
 
-[obj_799]
+[template_for_cert]
 model=model_2429
 stackable=yes
 2dyof=2
@@ -8734,7 +8734,7 @@ name=Crossbow
 
 [obj_838]
 certlink=obj_837
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_839]
 cost=80
@@ -8754,7 +8754,7 @@ name=Longbow
 
 [obj_840]
 certlink=obj_839
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_841]
 cost=50
@@ -8774,7 +8774,7 @@ name=Shortbow
 
 [obj_842]
 certlink=obj_841
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_843]
 cost=100
@@ -8794,7 +8794,7 @@ name=Oak shortbow
 
 [obj_844]
 certlink=obj_843
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_845]
 cost=160
@@ -8814,7 +8814,7 @@ name=Oak longbow
 
 [obj_846]
 certlink=obj_845
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_847]
 members=yes
@@ -8835,7 +8835,7 @@ name=Willow longbow
 
 [obj_848]
 certlink=obj_847
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_849]
 members=yes
@@ -8856,7 +8856,7 @@ name=Willow shortbow
 
 [obj_850]
 certlink=obj_849
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_851]
 members=yes
@@ -8877,7 +8877,7 @@ name=Maple longbow
 
 [obj_852]
 certlink=obj_851
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_853]
 members=yes
@@ -8898,7 +8898,7 @@ name=Maple shortbow
 
 [obj_854]
 certlink=obj_853
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_855]
 members=yes
@@ -8919,7 +8919,7 @@ name=Yew longbow
 
 [obj_856]
 certlink=obj_855
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_857]
 members=yes
@@ -8940,7 +8940,7 @@ name=Yew shortbow
 
 [obj_858]
 certlink=obj_857
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_859]
 members=yes
@@ -8961,7 +8961,7 @@ name=Magic longbow
 
 [obj_860]
 certlink=obj_859
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_861]
 members=yes
@@ -8982,7 +8982,7 @@ name=Magic shortbow
 
 [obj_862]
 certlink=obj_861
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_863]
 members=yes
@@ -10286,7 +10286,7 @@ name=Worm
 
 [obj_944]
 certlink=obj_943
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_945]
 model=model_2776
@@ -10307,7 +10307,7 @@ name=Knife
 
 [obj_947]
 certlink=obj_946
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_948]
 desc=This would make warm clothing.
@@ -10322,7 +10322,7 @@ name=Fur
 
 [obj_949]
 certlink=obj_948
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_950]
 desc=It's a sheet of silk.
@@ -10337,7 +10337,7 @@ name=Silk
 
 [obj_951]
 certlink=obj_950
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_952]
 desc=A slightly muddy spade.
@@ -10355,7 +10355,7 @@ name=Spade
 
 [obj_953]
 certlink=obj_952
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_954]
 desc=A coil of rope.
@@ -10372,7 +10372,7 @@ name=Rope
 
 [obj_955]
 certlink=obj_954
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_956]
 desc=Get your axes from Bob's Axes.
@@ -10387,7 +10387,7 @@ name=Flier
 
 [obj_957]
 certlink=obj_956
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_958]
 model=model_2631
@@ -10404,7 +10404,7 @@ name=Grey wolf fur
 
 [obj_959]
 certlink=obj_958
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_960]
 model=model_2694
@@ -10416,7 +10416,7 @@ name=Plank
 
 [obj_961]
 certlink=obj_960
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_962]
 desc=I need to pull this
@@ -10430,7 +10430,7 @@ name=Christmas cracker
 
 [obj_963]
 certlink=obj_962
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_964]
 desc=Ooooh spooky!
@@ -10447,7 +10447,7 @@ name=Skull
 
 [obj_965]
 certlink=obj_964
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_966]
 desc=A fraction of a roof.
@@ -10461,7 +10461,7 @@ name=Tile
 
 [obj_967]
 certlink=obj_966
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_968]
 desc=A rock
@@ -10475,7 +10475,7 @@ name=Rock
 
 [obj_969]
 certlink=obj_968
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_970]
 desc=Used for making notes.
@@ -10491,7 +10491,7 @@ name=Papyrus
 
 [obj_971]
 certlink=obj_970
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_972]
 model=model_2838
@@ -10517,7 +10517,7 @@ name=Charcoal
 
 [obj_974]
 certlink=obj_973
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_975]
 desc=A jungle specific slashing device.
@@ -10538,7 +10538,7 @@ name=Machete
 
 [obj_976]
 certlink=obj_975
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_977]
 model=model_2241
@@ -10555,7 +10555,7 @@ name=Cooking pot
 
 [obj_978]
 certlink=obj_977
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_979]
 model=model_2500
@@ -10567,7 +10567,7 @@ name=Highwayman mask
 
 [obj_980]
 certlink=obj_979
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_981]
 desc=Used to get out of Thordur's blackhole
@@ -10582,7 +10582,7 @@ name=Disk of returning
 
 [obj_982]
 certlink=obj_981
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_983]
 desc=A mysterious key made of brass.
@@ -10598,7 +10598,7 @@ name=Brass key
 
 [obj_984]
 certlink=obj_983
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_985]
 desc=A very shiny key.
@@ -10613,7 +10613,7 @@ name=Half of a key
 
 [obj_986]
 certlink=obj_985
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_987]
 desc=A very shiny key.
@@ -10628,7 +10628,7 @@ name=Half of a key
 
 [obj_988]
 certlink=obj_987
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_989]
 desc=A very rare and mysterious key.
@@ -10645,7 +10645,7 @@ name=Crystal key
 
 [obj_990]
 certlink=obj_989
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_991]
 desc=It looks like a key to a chest.
@@ -10661,7 +10661,7 @@ name=Muddy key
 
 [obj_992]
 certlink=obj_991
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_993]
 desc=You get a sense of dread from this key.
@@ -10678,7 +10678,7 @@ name=Sinister key
 
 [obj_994]
 certlink=obj_993
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_995]
 desc=Lovely money!
@@ -10798,7 +10798,7 @@ name=White apron
 
 [obj_1006]
 certlink=obj_1005
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1007]
 cost=2
@@ -10820,7 +10820,7 @@ name=Cape
 
 [obj_1008]
 certlink=obj_1007
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1009]
 cost=30
@@ -10840,7 +10840,7 @@ name=Brass necklace
 
 [obj_1010]
 certlink=obj_1009
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1011]
 cost=2
@@ -10858,7 +10858,7 @@ name=Blue skirt
 
 [obj_1012]
 certlink=obj_1011
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1013]
 cost=2
@@ -10876,7 +10876,7 @@ name=Pink skirt
 
 [obj_1014]
 certlink=obj_1013
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1015]
 cost=2
@@ -10894,7 +10894,7 @@ name=Black skirt
 
 [obj_1016]
 certlink=obj_1015
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1017]
 cost=2
@@ -10916,7 +10916,7 @@ name=Wizards hat
 
 [obj_1018]
 certlink=obj_1017
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1019]
 cost=7
@@ -10940,7 +10940,7 @@ name=Cape
 
 [obj_1020]
 certlink=obj_1019
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1021]
 cost=32
@@ -10964,7 +10964,7 @@ name=Cape
 
 [obj_1022]
 certlink=obj_1021
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1023]
 cost=32
@@ -10988,7 +10988,7 @@ name=Cape
 
 [obj_1024]
 certlink=obj_1023
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1025]
 desc=A black piece of cloth on a string.
@@ -11007,7 +11007,7 @@ name=Eye patch
 
 [obj_1026]
 certlink=obj_1025
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1027]
 cost=32
@@ -11031,7 +11031,7 @@ name=Cape
 
 [obj_1028]
 certlink=obj_1027
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1029]
 cost=32
@@ -11055,7 +11055,7 @@ name=Cape
 
 [obj_1030]
 certlink=obj_1029
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1031]
 cost=32
@@ -11079,7 +11079,7 @@ name=Cape
 
 [obj_1032]
 certlink=obj_1031
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1033]
 desc=A robe worn by worshippers of Zamorak.
@@ -11098,7 +11098,7 @@ name=Robe of zamorak
 
 [obj_1034]
 certlink=obj_1033
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1035]
 desc=A robe worn by worshippers of Zamorak.
@@ -11119,7 +11119,7 @@ name=Robe of zamorak
 
 [obj_1036]
 certlink=obj_1035
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1037]
 desc=A rabbit-like adornment.
@@ -11151,7 +11151,7 @@ name=Red partyhat
 
 [obj_1039]
 certlink=obj_1038
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1040]
 desc=A nice hat from a cracker.
@@ -11172,7 +11172,7 @@ name=Yellow partyhat
 
 [obj_1041]
 certlink=obj_1040
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1042]
 desc=A nice hat from a cracker.
@@ -11193,7 +11193,7 @@ name=Blue partyhat
 
 [obj_1043]
 certlink=obj_1042
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1044]
 desc=A nice hat from a cracker.
@@ -11214,7 +11214,7 @@ name=Green partyhat
 
 [obj_1045]
 certlink=obj_1044
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1046]
 desc=A nice hat from a cracker.
@@ -11235,7 +11235,7 @@ name=Purple partyhat
 
 [obj_1047]
 certlink=obj_1046
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1048]
 desc=A nice hat from a cracker.
@@ -11256,7 +11256,7 @@ name=White partyhat
 
 [obj_1049]
 certlink=obj_1048
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1050]
 cost=160
@@ -11275,7 +11275,7 @@ name=Santa hat
 
 [obj_1051]
 certlink=obj_1050
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1052]
 desc=The cape worn by members of the Legends Guild.
@@ -11308,7 +11308,7 @@ name=Halloween mask
 
 [obj_1054]
 certlink=obj_1053
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1055]
 desc=Aaaarrrghhh ... i'm a monster.
@@ -11328,7 +11328,7 @@ name=Halloween mask
 
 [obj_1056]
 certlink=obj_1055
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1057]
 desc=Aaaarrrghhh ... i'm a monster.
@@ -11346,7 +11346,7 @@ name=Halloween mask
 
 [obj_1058]
 certlink=obj_1057
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1059]
 desc=These will keep my hands warm!
@@ -11364,7 +11364,7 @@ name=Leather gloves
 
 [obj_1060]
 certlink=obj_1059
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1061]
 desc=Comfortable leather boots.
@@ -11382,7 +11382,7 @@ name=Leather boots
 
 [obj_1062]
 certlink=obj_1061
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1063]
 cost=18
@@ -11400,7 +11400,7 @@ name=Leather vambraces
 
 [obj_1064]
 certlink=obj_1063
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1065]
 cost=2500
@@ -11422,7 +11422,7 @@ name=Dragon vambraces
 
 [obj_1066]
 certlink=obj_1065
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1067]
 desc=These look pretty heavy.
@@ -11444,7 +11444,7 @@ name=Iron platelegs
 
 [obj_1068]
 certlink=obj_1067
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1069]
 desc=These look pretty heavy.
@@ -11462,7 +11462,7 @@ name=Steel platelegs
 
 [obj_1070]
 certlink=obj_1069
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1071]
 desc=These look pretty heavy.
@@ -11484,7 +11484,7 @@ name=Mithril platelegs
 
 [obj_1072]
 certlink=obj_1071
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1073]
 desc=These look pretty heavy.
@@ -11506,7 +11506,7 @@ name=Adamant platelegs
 
 [obj_1074]
 certlink=obj_1073
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1075]
 desc=These look pretty heavy.
@@ -11528,7 +11528,7 @@ name=Bronze platelegs
 
 [obj_1076]
 certlink=obj_1075
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1077]
 desc=Big, black and heavy looking.
@@ -11550,7 +11550,7 @@ name=Black platelegs
 
 [obj_1078]
 certlink=obj_1077
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1079]
 desc=These look pretty heavy.
@@ -11572,7 +11572,7 @@ name=Rune platelegs
 
 [obj_1080]
 certlink=obj_1079
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1081]
 desc=Designer leg protection.
@@ -11593,7 +11593,7 @@ name=Iron plateskirt
 
 [obj_1082]
 certlink=obj_1081
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1083]
 desc=Designer leg protection.
@@ -11612,7 +11612,7 @@ name=Steel plateskirt
 
 [obj_1084]
 certlink=obj_1083
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1085]
 desc=Designer leg protection.
@@ -11633,7 +11633,7 @@ name=Mithril plateskirt
 
 [obj_1086]
 certlink=obj_1085
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1087]
 desc=Designer leg protection.
@@ -11654,7 +11654,7 @@ name=Bronze plateskirt
 
 [obj_1088]
 certlink=obj_1087
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1089]
 desc=Big, black and heavy looking.
@@ -11675,7 +11675,7 @@ name=Black plateskirt
 
 [obj_1090]
 certlink=obj_1089
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1091]
 desc=Designer leg protection.
@@ -11696,7 +11696,7 @@ name=Adamant plateskirt
 
 [obj_1092]
 certlink=obj_1091
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1093]
 desc=Designer leg protection.
@@ -11717,7 +11717,7 @@ name=Rune plateskirt
 
 [obj_1094]
 certlink=obj_1093
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1095]
 cost=20
@@ -11735,7 +11735,7 @@ name=Leather chaps
 
 [obj_1096]
 certlink=obj_1095
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1097]
 cost=750
@@ -11753,7 +11753,7 @@ name=Studded chaps
 
 [obj_1098]
 certlink=obj_1097
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1099]
 cost=3900
@@ -11771,7 +11771,7 @@ name=Dragonhide chaps
 
 [obj_1100]
 certlink=obj_1099
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1101]
 desc=A series of connected metal rings.
@@ -11789,7 +11789,7 @@ name=Iron chainbody
 
 [obj_1102]
 certlink=obj_1101
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1103]
 desc=A series of connected metal rings.
@@ -11807,7 +11807,7 @@ name=Bronze chainbody
 
 [obj_1104]
 certlink=obj_1103
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1105]
 desc=A series of connected metal rings.
@@ -11822,7 +11822,7 @@ name=Steel chainbody
 
 [obj_1106]
 certlink=obj_1105
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1107]
 desc=A series of connected metal rings.
@@ -11839,7 +11839,7 @@ name=Black chainbody
 
 [obj_1108]
 certlink=obj_1107
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1109]
 desc=A series of connected metal rings.
@@ -11857,7 +11857,7 @@ name=Mithril chainbody
 
 [obj_1110]
 certlink=obj_1109
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1111]
 desc=A series of connected metal rings.
@@ -11875,7 +11875,7 @@ name=Adamant chainbody
 
 [obj_1112]
 certlink=obj_1111
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1113]
 cost=50000
@@ -11893,7 +11893,7 @@ name=Rune chainbody
 
 [obj_1114]
 certlink=obj_1113
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1115]
 desc=Provides excellent protection.
@@ -11917,7 +11917,7 @@ name=Iron platebody
 
 [obj_1116]
 certlink=obj_1115
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1117]
 desc=Provides excellent protection.
@@ -11941,7 +11941,7 @@ name=Bronze platebody
 
 [obj_1118]
 certlink=obj_1117
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1119]
 desc=Provides excellent protection.
@@ -11961,7 +11961,7 @@ name=Steel platebody
 
 [obj_1120]
 certlink=obj_1119
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1121]
 desc=Provides excellent protection.
@@ -11985,7 +11985,7 @@ name=Mithril platebody
 
 [obj_1122]
 certlink=obj_1121
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1123]
 desc=Provides excellent protection.
@@ -12009,7 +12009,7 @@ name=Adamant platebody
 
 [obj_1124]
 certlink=obj_1123
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1125]
 desc=Provides excellent protection.
@@ -12033,7 +12033,7 @@ name=Black platebody
 
 [obj_1126]
 certlink=obj_1125
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1127]
 cost=65000
@@ -12056,7 +12056,7 @@ name=Rune platebody
 
 [obj_1128]
 certlink=obj_1127
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1129]
 desc=Better than no armour!
@@ -12072,7 +12072,7 @@ name=Leather body
 
 [obj_1130]
 certlink=obj_1129
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1131]
 cost=170
@@ -12087,7 +12087,7 @@ name=Hardleather body
 
 [obj_1132]
 certlink=obj_1131
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1133]
 cost=850
@@ -12102,7 +12102,7 @@ name=Studded body
 
 [obj_1134]
 certlink=obj_1133
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1135]
 cost=7800
@@ -12121,7 +12121,7 @@ name=Dragonhide body
 
 [obj_1136]
 certlink=obj_1135
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1137]
 desc=A medium sized helmet.
@@ -12143,7 +12143,7 @@ name=Iron med helm
 
 [obj_1138]
 certlink=obj_1137
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1139]
 desc=A medium sized helmet.
@@ -12165,7 +12165,7 @@ name=Bronze med helm
 
 [obj_1140]
 certlink=obj_1139
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1141]
 desc=A medium sized helmet.
@@ -12185,7 +12185,7 @@ name=Steel med helm
 
 [obj_1142]
 certlink=obj_1141
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1143]
 desc=A medium sized helmet.
@@ -12207,7 +12207,7 @@ name=Mithril med helm
 
 [obj_1144]
 certlink=obj_1143
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1145]
 desc=A medium sized helmet.
@@ -12229,7 +12229,7 @@ name=Adamant med helm
 
 [obj_1146]
 certlink=obj_1145
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1147]
 desc=A medium sized helmet.
@@ -12251,7 +12251,7 @@ name=Rune med helm
 
 [obj_1148]
 certlink=obj_1147
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1149]
 desc=Makes the wearer pretty intimidating.
@@ -12278,7 +12278,7 @@ name=Dragon med helm
 
 [obj_1150]
 certlink=obj_1149
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1151]
 desc=A medium sized helmet.
@@ -12304,7 +12304,7 @@ name=Black med helm
 
 [obj_1152]
 certlink=obj_1151
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1153]
 desc=A full face helmet.
@@ -12328,7 +12328,7 @@ name=Iron full helm
 
 [obj_1154]
 certlink=obj_1153
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1155]
 desc=A full face helmet.
@@ -12352,7 +12352,7 @@ name=Bronze full helm
 
 [obj_1156]
 certlink=obj_1155
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1157]
 desc=A full face helmet.
@@ -12374,7 +12374,7 @@ name=Steel full helm
 
 [obj_1158]
 certlink=obj_1157
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1159]
 desc=A full face helmet.
@@ -12398,7 +12398,7 @@ name=Mithril full helm
 
 [obj_1160]
 certlink=obj_1159
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1161]
 desc=A full face helmet.
@@ -12422,7 +12422,7 @@ name=Adamant full helm
 
 [obj_1162]
 certlink=obj_1161
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1163]
 desc=A full face helmet.
@@ -12446,7 +12446,7 @@ name=Rune full helm
 
 [obj_1164]
 certlink=obj_1163
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1165]
 desc=A full face helmet.
@@ -12470,7 +12470,7 @@ name=Black full helm
 
 [obj_1166]
 certlink=obj_1165
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1167]
 cost=24
@@ -12494,7 +12494,7 @@ name=Leather cowl
 
 [obj_1168]
 certlink=obj_1167
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1169]
 cost=200
@@ -12516,7 +12516,7 @@ name=Coif
 
 [obj_1170]
 certlink=obj_1169
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1171]
 desc=A solid wooden shield.
@@ -12536,7 +12536,7 @@ name=Wooden shield
 
 [obj_1172]
 certlink=obj_1171
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1173]
 desc=A medium square shield.
@@ -12556,7 +12556,7 @@ name=Bronze sq shield
 
 [obj_1174]
 certlink=obj_1173
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1175]
 desc=A medium square shield.
@@ -12576,7 +12576,7 @@ name=Iron sq shield
 
 [obj_1176]
 certlink=obj_1175
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1177]
 desc=A medium square shield.
@@ -12596,7 +12596,7 @@ name=Steel sq shield
 
 [obj_1178]
 certlink=obj_1177
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1179]
 desc=A medium square shield.
@@ -12616,7 +12616,7 @@ name=Black sq shield
 
 [obj_1180]
 certlink=obj_1179
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1181]
 desc=A medium square shield.
@@ -12636,7 +12636,7 @@ name=Mithril sq shield
 
 [obj_1182]
 certlink=obj_1181
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1183]
 desc=A medium square shield.
@@ -12656,7 +12656,7 @@ name=Adamant sq shield
 
 [obj_1184]
 certlink=obj_1183
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1185]
 desc=A medium square shield.
@@ -12676,7 +12676,7 @@ name=Rune sq shield
 
 [obj_1186]
 certlink=obj_1185
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1187]
 desc=An ancient and powerful looking Dragon Square shield.
@@ -12695,7 +12695,7 @@ name=Dragon sq shield
 
 [obj_1188]
 certlink=obj_1187
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1189]
 desc=A large metal shield.
@@ -12717,7 +12717,7 @@ name=Bronze kiteshield
 
 [obj_1190]
 certlink=obj_1189
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1191]
 desc=A large metal shield.
@@ -12739,7 +12739,7 @@ name=Iron kiteshield
 
 [obj_1192]
 certlink=obj_1191
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1193]
 desc=A large metal shield.
@@ -12759,7 +12759,7 @@ name=Steel kiteshield
 
 [obj_1194]
 certlink=obj_1193
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1195]
 desc=A large metal shield.
@@ -12781,7 +12781,7 @@ name=Black kiteshield
 
 [obj_1196]
 certlink=obj_1195
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1197]
 desc=A large metal shield.
@@ -12803,7 +12803,7 @@ name=Mithril kiteshield
 
 [obj_1198]
 certlink=obj_1197
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1199]
 desc=A large metal shield.
@@ -12825,7 +12825,7 @@ name=Adamant kiteshield
 
 [obj_1200]
 certlink=obj_1199
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1201]
 desc=A large metal shield.
@@ -12847,7 +12847,7 @@ name=Rune kiteshield
 
 [obj_1202]
 certlink=obj_1201
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1203]
 model=model_2672
@@ -12872,7 +12872,7 @@ name=Iron dagger
 
 [obj_1204]
 certlink=obj_1203
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1205]
 model=model_2672
@@ -12897,7 +12897,7 @@ name=Bronze dagger
 
 [obj_1206]
 certlink=obj_1205
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1207]
 model=model_2672
@@ -12914,7 +12914,7 @@ name=Steel dagger
 
 [obj_1208]
 certlink=obj_1207
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1209]
 model=model_2672
@@ -12939,7 +12939,7 @@ name=Mithril dagger
 
 [obj_1210]
 certlink=obj_1209
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1211]
 model=model_2672
@@ -12964,7 +12964,7 @@ name=Adamant dagger
 
 [obj_1212]
 certlink=obj_1211
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1213]
 model=model_2672
@@ -12989,7 +12989,7 @@ name=Rune dagger
 
 [obj_1214]
 certlink=obj_1213
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1215]
 members=yes
@@ -13009,7 +13009,7 @@ name=Dragon dagger
 
 [obj_1216]
 certlink=obj_1215
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1217]
 model=model_2672
@@ -13034,7 +13034,7 @@ name=Black dagger
 
 [obj_1218]
 certlink=obj_1217
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1219]
 members=yes
@@ -13062,7 +13062,7 @@ name=Iron dagger(p)
 
 [obj_1220]
 certlink=obj_1219
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1221]
 members=yes
@@ -13090,7 +13090,7 @@ name=Bronze dagger(p)
 
 [obj_1222]
 certlink=obj_1221
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1223]
 members=yes
@@ -13110,7 +13110,7 @@ name=Steel dagger(p)
 
 [obj_1224]
 certlink=obj_1223
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1225]
 members=yes
@@ -13138,7 +13138,7 @@ name=Mithril dagger(p)
 
 [obj_1226]
 certlink=obj_1225
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1227]
 members=yes
@@ -13166,7 +13166,7 @@ name=Adamant dagger(p)
 
 [obj_1228]
 certlink=obj_1227
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1229]
 members=yes
@@ -13194,7 +13194,7 @@ name=Rune dagger(p)
 
 [obj_1230]
 certlink=obj_1229
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1231]
 members=yes
@@ -13212,7 +13212,7 @@ name=Dragon dagger(p)
 
 [obj_1232]
 certlink=obj_1231
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1233]
 members=yes
@@ -13240,7 +13240,7 @@ name=Black dagger(p)
 
 [obj_1234]
 certlink=obj_1233
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1235]
 members=yes
@@ -13258,7 +13258,7 @@ name=Poisoned dagger(p)
 
 [obj_1236]
 certlink=obj_1235
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1237]
 members=yes
@@ -13282,7 +13282,7 @@ name=Bronze spear
 
 [obj_1238]
 certlink=obj_1237
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1239]
 members=yes
@@ -13304,7 +13304,7 @@ name=Iron spear
 
 [obj_1240]
 certlink=obj_1239
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1241]
 members=yes
@@ -13328,7 +13328,7 @@ name=Steel spear
 
 [obj_1242]
 certlink=obj_1241
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1243]
 members=yes
@@ -13352,7 +13352,7 @@ name=Mithril spear
 
 [obj_1244]
 certlink=obj_1243
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1245]
 members=yes
@@ -13376,7 +13376,7 @@ name=Adamant spear
 
 [obj_1246]
 certlink=obj_1245
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1247]
 members=yes
@@ -13400,7 +13400,7 @@ name=Rune spear
 
 [obj_1248]
 certlink=obj_1247
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1249]
 members=yes
@@ -13422,7 +13422,7 @@ name=Dragon spear
 
 [obj_1250]
 certlink=obj_1249
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1251]
 members=yes
@@ -13446,7 +13446,7 @@ name=Bronze spear(p)
 
 [obj_1252]
 certlink=obj_1251
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1253]
 members=yes
@@ -13468,7 +13468,7 @@ name=Iron spear(p)
 
 [obj_1254]
 certlink=obj_1253
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1255]
 members=yes
@@ -13492,7 +13492,7 @@ name=Steel spear(p)
 
 [obj_1256]
 certlink=obj_1255
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1257]
 members=yes
@@ -13516,7 +13516,7 @@ name=Mithril spear(p)
 
 [obj_1258]
 certlink=obj_1257
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1259]
 members=yes
@@ -13540,7 +13540,7 @@ name=Adamant spear(p)
 
 [obj_1260]
 certlink=obj_1259
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1261]
 members=yes
@@ -13564,7 +13564,7 @@ name=Rune spear(p)
 
 [obj_1262]
 certlink=obj_1261
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1263]
 members=yes
@@ -13586,7 +13586,7 @@ name=Dragon spear(p)
 
 [obj_1264]
 certlink=obj_1263
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1265]
 cost=1
@@ -13606,7 +13606,7 @@ name=Bronze pickaxe
 
 [obj_1266]
 certlink=obj_1265
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1267]
 cost=140
@@ -13626,7 +13626,7 @@ name=Iron pickaxe
 
 [obj_1268]
 certlink=obj_1267
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1269]
 cost=500
@@ -13644,7 +13644,7 @@ name=Steel pickaxe
 
 [obj_1270]
 certlink=obj_1269
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1271]
 cost=3200
@@ -13664,7 +13664,7 @@ name=Adamant pickaxe
 
 [obj_1272]
 certlink=obj_1271
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1273]
 cost=1300
@@ -13684,7 +13684,7 @@ name=Mithril pickaxe
 
 [obj_1274]
 certlink=obj_1273
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1275]
 cost=32000
@@ -13704,7 +13704,7 @@ name=Rune pickaxe
 
 [obj_1276]
 certlink=obj_1275
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1277]
 desc=A razor sharp sword.
@@ -13723,7 +13723,7 @@ name=Bronze sword
 
 [obj_1278]
 certlink=obj_1277
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1279]
 desc=A razor sharp sword.
@@ -13742,7 +13742,7 @@ name=Iron sword
 
 [obj_1280]
 certlink=obj_1279
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1281]
 desc=A razor sharp sword.
@@ -13759,7 +13759,7 @@ name=Steel sword
 
 [obj_1282]
 certlink=obj_1281
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1283]
 desc=A razor sharp sword.
@@ -13778,7 +13778,7 @@ name=Black sword
 
 [obj_1284]
 certlink=obj_1283
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1285]
 desc=A razor sharp sword.
@@ -13797,7 +13797,7 @@ name=Mithril sword
 
 [obj_1286]
 certlink=obj_1285
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1287]
 desc=A razor sharp sword.
@@ -13816,7 +13816,7 @@ name=Adamant sword
 
 [obj_1288]
 certlink=obj_1287
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1289]
 desc=A razor sharp sword.
@@ -13835,7 +13835,7 @@ name=Rune sword
 
 [obj_1290]
 certlink=obj_1289
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1291]
 desc=A razor sharp longsword.
@@ -13856,7 +13856,7 @@ name=Bronze longsword
 
 [obj_1292]
 certlink=obj_1291
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1293]
 desc=A razor sharp longsword.
@@ -13877,7 +13877,7 @@ name=Iron longsword
 
 [obj_1294]
 certlink=obj_1293
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1295]
 desc=A razor sharp longsword.
@@ -13896,7 +13896,7 @@ name=Steel longsword
 
 [obj_1296]
 certlink=obj_1295
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1297]
 desc=A razor sharp longsword.
@@ -13917,7 +13917,7 @@ name=Black longsword
 
 [obj_1298]
 certlink=obj_1297
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1299]
 desc=A razor sharp longsword.
@@ -13938,7 +13938,7 @@ name=Mithril longsword
 
 [obj_1300]
 certlink=obj_1299
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1301]
 desc=A razor sharp longsword.
@@ -13959,7 +13959,7 @@ name=Adamant longsword
 
 [obj_1302]
 certlink=obj_1301
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1303]
 desc=A razor sharp longsword.
@@ -13980,7 +13980,7 @@ name=Rune longsword
 
 [obj_1304]
 certlink=obj_1303
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1305]
 cost=100000
@@ -13998,7 +13998,7 @@ name=Dragon longsword
 
 [obj_1306]
 certlink=obj_1305
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1307]
 desc=A two handed sword.
@@ -14018,7 +14018,7 @@ name=Bronze 2h sword
 
 [obj_1308]
 certlink=obj_1307
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1309]
 desc=A two handed sword.
@@ -14038,7 +14038,7 @@ name=Iron 2h sword
 
 [obj_1310]
 certlink=obj_1309
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1311]
 desc=A two handed sword.
@@ -14056,7 +14056,7 @@ name=Steel 2h sword
 
 [obj_1312]
 certlink=obj_1311
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1313]
 desc=A two handed sword.
@@ -14076,7 +14076,7 @@ name=Black 2h sword
 
 [obj_1314]
 certlink=obj_1313
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1315]
 desc=A two handed sword.
@@ -14096,7 +14096,7 @@ name=Mithril 2h sword
 
 [obj_1316]
 certlink=obj_1315
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1317]
 desc=A two handed sword.
@@ -14116,7 +14116,7 @@ name=Adamant 2h sword
 
 [obj_1318]
 certlink=obj_1317
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1319]
 desc=A two handed sword.
@@ -14136,7 +14136,7 @@ name=Rune 2h sword
 
 [obj_1320]
 certlink=obj_1319
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1321]
 desc=A vicious curved sword.
@@ -14156,7 +14156,7 @@ name=Bronze scimitar
 
 [obj_1322]
 certlink=obj_1321
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1323]
 desc=A vicious curved sword.
@@ -14176,7 +14176,7 @@ name=Iron scimitar
 
 [obj_1324]
 certlink=obj_1323
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1325]
 desc=A vicious curved sword.
@@ -14194,7 +14194,7 @@ name=Steel scimitar
 
 [obj_1326]
 certlink=obj_1325
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1327]
 desc=A vicious curved sword.
@@ -14214,7 +14214,7 @@ name=Black scimitar
 
 [obj_1328]
 certlink=obj_1327
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1329]
 desc=A vicious curved sword.
@@ -14234,7 +14234,7 @@ name=Mithril scimitar
 
 [obj_1330]
 certlink=obj_1329
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1331]
 desc=A vicious curved sword.
@@ -14254,7 +14254,7 @@ name=Adamant scimitar
 
 [obj_1332]
 certlink=obj_1331
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1333]
 desc=A vicious curved sword.
@@ -14274,7 +14274,7 @@ name=Rune scimitar
 
 [obj_1334]
 certlink=obj_1333
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1335]
 cost=173
@@ -14294,7 +14294,7 @@ name=Iron warhammer
 
 [obj_1336]
 certlink=obj_1335
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1337]
 cost=47
@@ -14314,7 +14314,7 @@ name=Bronze warhammer
 
 [obj_1338]
 certlink=obj_1337
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1339]
 cost=640
@@ -14332,7 +14332,7 @@ name=Steel warhammer
 
 [obj_1340]
 certlink=obj_1339
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1341]
 cost=640
@@ -14352,7 +14352,7 @@ name=Black warhammer
 
 [obj_1342]
 certlink=obj_1341
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1343]
 cost=1660
@@ -14372,7 +14372,7 @@ name=Mithril warhammer
 
 [obj_1344]
 certlink=obj_1343
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1345]
 cost=4120
@@ -14392,7 +14392,7 @@ name=Adamnt warhammer
 
 [obj_1346]
 certlink=obj_1345
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1347]
 cost=41500
@@ -14412,7 +14412,7 @@ name=Rune warhammer
 
 [obj_1348]
 certlink=obj_1347
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1349]
 desc=A woodcutters axe.
@@ -14431,7 +14431,7 @@ name=Iron axe
 
 [obj_1350]
 certlink=obj_1349
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1351]
 desc=A woodcutters axe.
@@ -14450,7 +14450,7 @@ name=Bronze axe
 
 [obj_1352]
 certlink=obj_1351
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1353]
 desc=A woodcutters axe.
@@ -14467,7 +14467,7 @@ name=Steel axe
 
 [obj_1354]
 certlink=obj_1353
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1355]
 desc=A powerful axe.
@@ -14486,7 +14486,7 @@ name=Mithril axe
 
 [obj_1356]
 certlink=obj_1355
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1357]
 desc=A powerful axe.
@@ -14505,7 +14505,7 @@ name=Adamant axe
 
 [obj_1358]
 certlink=obj_1357
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1359]
 desc=A powerful axe.
@@ -14524,7 +14524,7 @@ name=Rune axe
 
 [obj_1360]
 certlink=obj_1359
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1361]
 desc=A sinister looking axe.
@@ -14544,7 +14544,7 @@ name=Black axe
 
 [obj_1362]
 certlink=obj_1361
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1363]
 desc=A vicious looking axe.
@@ -14564,7 +14564,7 @@ name=Iron battleaxe
 
 [obj_1364]
 certlink=obj_1363
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1365]
 desc=A vicious looking axe.
@@ -14582,7 +14582,7 @@ name=Steel battleaxe
 
 [obj_1366]
 certlink=obj_1365
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1367]
 desc=A vicious looking axe.
@@ -14602,7 +14602,7 @@ name=Black battleaxe
 
 [obj_1368]
 certlink=obj_1367
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1369]
 desc=A vicious looking axe.
@@ -14622,7 +14622,7 @@ name=Mithril battleaxe
 
 [obj_1370]
 certlink=obj_1369
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1371]
 desc=A vicious looking axe.
@@ -14642,7 +14642,7 @@ name=Adamant battleaxe
 
 [obj_1372]
 certlink=obj_1371
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1373]
 desc=A vicious looking axe.
@@ -14662,7 +14662,7 @@ name=Rune battleaxe
 
 [obj_1374]
 certlink=obj_1373
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1375]
 desc=A vicious looking axe.
@@ -14682,7 +14682,7 @@ name=Bronze battleaxe
 
 [obj_1376]
 certlink=obj_1375
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1377]
 desc=A vicious looking axe.
@@ -14701,9 +14701,9 @@ name=Dragon battleaxe
 
 [obj_1378]
 certlink=obj_1377
-certtemplate=obj_799
+certtemplate=template_for_cert
 
-[obj_1379]
+[plainstaff]
 desc=It's a slightly magical stick.
 cost=15
 model=model_2648
@@ -14716,11 +14716,11 @@ manwear=model_534,0
 womanwear=model_534,6
 name=Staff
 
-[obj_1380]
-certlink=obj_1379
-certtemplate=obj_799
+[cert_plainstaff]
+certlink=plainstaff
+certtemplate=template_for_cert
 
-[obj_1381]
+[air_staff]
 desc=A Magical staff.
 cost=1500
 model=model_2810
@@ -14736,11 +14736,11 @@ womanwear=model_534,6
 womanwear2=model_567
 name=Staff of air
 
-[obj_1382]
-certlink=obj_1381
-certtemplate=obj_799
+[cert_air_staff]
+certlink=air_staff
+certtemplate=template_for_cert
 
-[obj_1383]
+[water_staff]
 desc=A Magical staff.
 cost=1500
 model=model_2810
@@ -14758,11 +14758,11 @@ recol1s=43117
 recol1d=43968
 name=Staff of water
 
-[obj_1384]
-certlink=obj_1383
-certtemplate=obj_799
+[cert_water_staff]
+certlink=water_staff
+certtemplate=template_for_cert
 
-[obj_1385]
+[earth_staff]
 desc=A Magical staff.
 cost=1500
 model=model_2810
@@ -14780,11 +14780,11 @@ recol1s=43117
 recol1d=3501
 name=Staff of earth
 
-[obj_1386]
-certlink=obj_1385
-certtemplate=obj_799
+[cert_earth_staff]
+certlink=earth_staff
+certtemplate=template_for_cert
 
-[obj_1387]
+[fire_staff]
 desc=A Magical staff.
 cost=1500
 model=model_2810
@@ -14802,11 +14802,11 @@ recol1s=43117
 recol1d=960
 name=Staff of fire
 
-[obj_1388]
-certlink=obj_1387
-certtemplate=obj_799
+[cert_fire_staff]
+certlink=fire_staff
+certtemplate=template_for_cert
 
-[obj_1389]
+[magicstaff]
 desc=A Magical staff.
 cost=200
 model=model_2648
@@ -14823,11 +14823,11 @@ recol1s=43117
 recol1d=127
 name=Magic staff
 
-[obj_1390]
-certlink=obj_1389
-certtemplate=obj_799
+[cert_magicstaff]
+certlink=magicstaff
+certtemplate=template_for_cert
 
-[obj_1391]
+[battlestaff]
 members=yes
 desc=It's a slightly magical stick.
 cost=7000
@@ -14841,11 +14841,11 @@ manwear=model_534,0
 womanwear=model_534,6
 name=Battlestaff
 
-[obj_1392]
-certlink=obj_1391
-certtemplate=obj_799
+[cert_battlestaff]
+certlink=battlestaff
+certtemplate=template_for_cert
 
-[obj_1393]
+[fire_battlestaff]
 members=yes
 desc=It's a slightly magical stick.
 cost=15500
@@ -14864,11 +14864,11 @@ recol1s=43117
 recol1d=960
 name=Fire battlestaff
 
-[obj_1394]
-certlink=obj_1393
-certtemplate=obj_799
+[cert_fire_battlestaff]
+certlink=fire_battlestaff
+certtemplate=template_for_cert
 
-[obj_1395]
+[water_battlestaff]
 members=yes
 desc=It's a slightly magical stick.
 cost=15500
@@ -14887,11 +14887,11 @@ recol1s=43117
 recol1d=43968
 name=Water battlestaff
 
-[obj_1396]
-certlink=obj_1395
-certtemplate=obj_799
+[cert_water_battlestaff]
+certlink=water_battlestaff
+certtemplate=template_for_cert
 
-[obj_1397]
+[air_battlestaff]
 members=yes
 desc=It's a slightly magical stick.
 cost=15500
@@ -14908,11 +14908,11 @@ womanwear=model_534,6
 womanwear2=model_567
 name=Air battlestaff
 
-[obj_1398]
-certlink=obj_1397
-certtemplate=obj_799
+[cert_air_battlestaff]
+certlink=air_battlestaff
+certtemplate=template_for_cert
 
-[obj_1399]
+[earth_battlestaff]
 members=yes
 desc=It's a slightly magical stick.
 cost=15500
@@ -14931,11 +14931,11 @@ recol1s=43117
 recol1d=3501
 name=Earth battlestaff
 
-[obj_1400]
-certlink=obj_1399
-certtemplate=obj_799
+[cert_earth_battlestaff]
+certlink=earth_battlestaff
+certtemplate=template_for_cert
 
-[obj_1401]
+[mystic_fire_staff]
 members=yes
 desc=It's a slightly magical stick.
 cost=42500
@@ -14954,11 +14954,11 @@ recol1s=43117
 recol1d=960
 name=Mystic fire staff
 
-[obj_1402]
-certlink=obj_1401
-certtemplate=obj_799
+[cert_mystic_fire_staff]
+certlink=mystic_fire_staff
+certtemplate=template_for_cert
 
-[obj_1403]
+[mystic_water_staff]
 members=yes
 desc=It's a slightly magical stick.
 cost=42500
@@ -14977,11 +14977,11 @@ recol1s=43117
 recol1d=43968
 name=Mystic water staff
 
-[obj_1404]
-certlink=obj_1403
-certtemplate=obj_799
+[cert_mystic_water_staff]
+certlink=mystic_water_staff
+certtemplate=template_for_cert
 
-[obj_1405]
+[mystic_air_staff]
 members=yes
 desc=It's a slightly magical stick.
 cost=42500
@@ -14998,11 +14998,11 @@ womanwear=model_534,6
 womanwear2=model_567
 name=Mystic air staff
 
-[obj_1406]
-certlink=obj_1405
-certtemplate=obj_799
+[cert_mystic_air_staff]
+certlink=mystic_air_staff
+certtemplate=template_for_cert
 
-[obj_1407]
+[mystic_earth_staff]
 members=yes
 desc=It's a slightly magical stick.
 cost=42500
@@ -15021,11 +15021,11 @@ recol1s=43117
 recol1d=3501
 name=Mystic earth staff
 
-[obj_1408]
-certlink=obj_1407
-certtemplate=obj_799
+[cert_mystic_earth_staff]
+certlink=mystic_earth_staff
+certtemplate=template_for_cert
 
-[obj_1409]
+[iban_staff]
 members=yes
 model=model_2569
 2dyof=-15
@@ -15040,7 +15040,7 @@ manwear=model_514,0
 womanwear=model_514,6
 name=Staff of iban
 
-[obj_1410]
+[broken_iban_staff]
 desc=The staff is unusable in this state.
 model=model_2835
 2dxof=8
@@ -15062,7 +15062,7 @@ name=Farmers fork
 
 [obj_1412]
 certlink=obj_1411
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1413]
 model=model_2791
@@ -15075,7 +15075,7 @@ name=Halberd
 
 [obj_1414]
 certlink=obj_1413
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1415]
 model=model_2731
@@ -15088,7 +15088,7 @@ name=Warhammer
 
 [obj_1416]
 certlink=obj_1415
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1417]
 model=model_2763
@@ -15101,7 +15101,7 @@ name=Javelin
 
 [obj_1418]
 certlink=obj_1417
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1419]
 model=model_2511
@@ -15132,7 +15132,7 @@ name=Iron mace
 
 [obj_1421]
 certlink=obj_1420
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1422]
 desc=A spiky mace.
@@ -15151,7 +15151,7 @@ name=Bronze mace
 
 [obj_1423]
 certlink=obj_1422
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1424]
 desc=A spiky mace.
@@ -15168,7 +15168,7 @@ name=Steel mace
 
 [obj_1425]
 certlink=obj_1424
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1426]
 desc=A spiky mace.
@@ -15187,7 +15187,7 @@ name=Black mace
 
 [obj_1427]
 certlink=obj_1426
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1428]
 desc=A spiky mace.
@@ -15206,7 +15206,7 @@ name=Mithril mace
 
 [obj_1429]
 certlink=obj_1428
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1430]
 desc=A spiky mace.
@@ -15225,7 +15225,7 @@ name=Adamant mace
 
 [obj_1431]
 certlink=obj_1430
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1432]
 desc=A spiky mace.
@@ -15244,7 +15244,7 @@ name=Rune mace
 
 [obj_1433]
 certlink=obj_1432
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1434]
 members=yes
@@ -15263,7 +15263,7 @@ name=Dragon mace
 
 [obj_1435]
 certlink=obj_1434
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1436]
 desc=An uncharged Rune Stone.
@@ -15276,7 +15276,7 @@ name=Rune essence
 
 [obj_1437]
 certlink=obj_1436
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1438]
 cost=4
@@ -15292,7 +15292,7 @@ name=Air talisman
 
 [obj_1439]
 certlink=obj_1438
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1440]
 cost=4
@@ -15308,7 +15308,7 @@ name=Earth talisman
 
 [obj_1441]
 certlink=obj_1440
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1442]
 cost=4
@@ -15324,7 +15324,7 @@ name=Fire talisman
 
 [obj_1443]
 certlink=obj_1442
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1444]
 cost=4
@@ -15340,7 +15340,7 @@ name=Water talisman
 
 [obj_1445]
 certlink=obj_1444
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1446]
 cost=4
@@ -15356,7 +15356,7 @@ name=Body talisman
 
 [obj_1447]
 certlink=obj_1446
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1448]
 cost=4
@@ -15372,7 +15372,7 @@ name=Mind talisman
 
 [obj_1449]
 certlink=obj_1448
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1450]
 cost=4
@@ -15389,7 +15389,7 @@ name=Blood talisman
 
 [obj_1451]
 certlink=obj_1450
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1452]
 cost=4
@@ -15406,7 +15406,7 @@ name=Chaos talisman
 
 [obj_1453]
 certlink=obj_1452
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1454]
 cost=4
@@ -15423,7 +15423,7 @@ name=Cosmic talisman
 
 [obj_1455]
 certlink=obj_1454
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1456]
 cost=4
@@ -15440,7 +15440,7 @@ name=Death talisman
 
 [obj_1457]
 certlink=obj_1456
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1458]
 cost=4
@@ -15457,7 +15457,7 @@ name=Law talisman
 
 [obj_1459]
 certlink=obj_1458
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1460]
 cost=4
@@ -15474,7 +15474,7 @@ name=Soul talisman
 
 [obj_1461]
 certlink=obj_1460
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1462]
 cost=4
@@ -15491,7 +15491,7 @@ name=Nature talisman
 
 [obj_1463]
 certlink=obj_1462
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1464]
 desc=I can exchange this for equipment.
@@ -15583,7 +15583,7 @@ name=Red bead
 
 [obj_1471]
 certlink=obj_1470
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1472]
 cost=4
@@ -15598,7 +15598,7 @@ name=Yellow bead
 
 [obj_1473]
 certlink=obj_1472
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1474]
 cost=4
@@ -15613,7 +15613,7 @@ name=Black bead
 
 [obj_1475]
 certlink=obj_1474
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1476]
 cost=4
@@ -15626,7 +15626,7 @@ name=White bead
 
 [obj_1477]
 certlink=obj_1476
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1478]
 desc=It increases my aim.
@@ -15648,7 +15648,7 @@ name=Amulet of accuracy
 
 [obj_1479]
 certlink=obj_1478
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1480]
 desc=Some rocks.
@@ -16052,7 +16052,7 @@ name=Logs
 
 [obj_1512]
 certlink=obj_1511
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1513]
 desc=Logs made from magical wood.
@@ -16071,7 +16071,7 @@ name=Magic logs
 
 [obj_1514]
 certlink=obj_1513
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1515]
 desc=Logs cut from a yew tree.
@@ -16089,7 +16089,7 @@ name=Yew logs
 
 [obj_1516]
 certlink=obj_1515
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1517]
 desc=Logs cut from a maple tree.
@@ -16107,7 +16107,7 @@ name=Maple logs
 
 [obj_1518]
 certlink=obj_1517
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1519]
 desc=Logs cut from a willow tree.
@@ -16125,7 +16125,7 @@ name=Willow logs
 
 [obj_1520]
 certlink=obj_1519
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1521]
 desc=Logs cut from an oak tree.
@@ -16143,7 +16143,7 @@ name=Oak logs
 
 [obj_1522]
 certlink=obj_1521
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1523]
 model=model_2727
@@ -16158,7 +16158,7 @@ name=Lockpick
 
 [obj_1524]
 certlink=obj_1523
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1525]
 desc=An unidentified herb.
@@ -16360,7 +16360,7 @@ name=Dragonfire shield
 
 [obj_1541]
 certlink=obj_1540
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1542]
 desc=A key to Melzars' Maze.
@@ -16468,7 +16468,7 @@ name=Garlic
 
 [obj_1551]
 certlink=obj_1550
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1552]
 desc=Sardine flavoured with doogle leaves.
@@ -16489,7 +16489,7 @@ name=Seasoned sardine
 
 [obj_1553]
 certlink=obj_1552
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1554]
 desc=It looks like it's lost.
@@ -16833,7 +16833,7 @@ name=Doogle leaves
 
 [obj_1574]
 certlink=obj_1573
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1575]
 cost=350
@@ -16851,7 +16851,7 @@ name=Cat training medal
 
 [obj_1576]
 certlink=obj_1575
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1577]
 desc=Scarface Pete's Candlestick.
@@ -16866,7 +16866,7 @@ name=Pete's candlestick
 
 [obj_1578]
 certlink=obj_1577
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1579]
 desc=This denotes a Master Thief.
@@ -16978,7 +16978,7 @@ name=Miscellaneous key
 
 [obj_1587]
 certlink=obj_1586
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1588]
 desc=Some keys on a keyring.
@@ -17033,7 +17033,7 @@ name=Ring mould
 
 [obj_1593]
 certlink=obj_1592
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1594]
 desc=Used to make unholy symbols.
@@ -17059,7 +17059,7 @@ name=Amulet mould
 
 [obj_1596]
 certlink=obj_1595
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1597]
 desc=Used to make gold necklaces.
@@ -17073,7 +17073,7 @@ name=Necklace mould
 
 [obj_1598]
 certlink=obj_1597
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1599]
 desc=Used to make Holy Symbols of Saradomin.
@@ -17087,7 +17087,7 @@ name=Holy mould
 
 [obj_1600]
 certlink=obj_1599
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1601]
 cost=2000
@@ -17111,7 +17111,7 @@ name=Diamond
 
 [obj_1602]
 certlink=obj_1601
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1603]
 cost=1000
@@ -17131,7 +17131,7 @@ name=Ruby
 
 [obj_1604]
 certlink=obj_1603
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1605]
 cost=500
@@ -17157,7 +17157,7 @@ name=Emerald
 
 [obj_1606]
 certlink=obj_1605
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1607]
 cost=250
@@ -17183,7 +17183,7 @@ name=Sapphire
 
 [obj_1608]
 certlink=obj_1607
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1609]
 cost=100
@@ -17210,7 +17210,7 @@ name=Opal
 
 [obj_1610]
 certlink=obj_1609
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1611]
 cost=150
@@ -17237,7 +17237,7 @@ name=Jade
 
 [obj_1612]
 certlink=obj_1611
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1613]
 cost=200
@@ -17264,7 +17264,7 @@ name=Red topaz
 
 [obj_1614]
 certlink=obj_1613
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1615]
 cost=10000
@@ -17291,7 +17291,7 @@ name=Dragonstone
 
 [obj_1616]
 certlink=obj_1615
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1617]
 cost=200
@@ -17309,7 +17309,7 @@ name=Uncut diamond
 
 [obj_1618]
 certlink=obj_1617
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1619]
 cost=100
@@ -17327,7 +17327,7 @@ name=Uncut ruby
 
 [obj_1620]
 certlink=obj_1619
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1621]
 cost=50
@@ -17345,7 +17345,7 @@ name=Uncut emerald
 
 [obj_1622]
 certlink=obj_1621
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1623]
 cost=25
@@ -17363,7 +17363,7 @@ name=Uncut sapphire
 
 [obj_1624]
 certlink=obj_1623
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1625]
 cost=20
@@ -17382,7 +17382,7 @@ name=Uncut opal
 
 [obj_1626]
 certlink=obj_1625
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1627]
 cost=30
@@ -17401,7 +17401,7 @@ name=Uncut jade
 
 [obj_1628]
 certlink=obj_1627
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1629]
 cost=40
@@ -17420,7 +17420,7 @@ name=Uncut red topaz
 
 [obj_1630]
 certlink=obj_1629
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1631]
 cost=1000
@@ -17439,7 +17439,7 @@ name=Uncut dragonstone
 
 [obj_1632]
 certlink=obj_1631
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1633]
 desc=A gemstone that has been smashed.
@@ -17456,7 +17456,7 @@ name=Crushed gemstone
 
 [obj_1634]
 certlink=obj_1633
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1635]
 desc=A valuable ring.
@@ -17475,7 +17475,7 @@ name=Gold ring
 
 [obj_1636]
 certlink=obj_1635
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1637]
 desc=A valuable ring.
@@ -17494,7 +17494,7 @@ name=Sapphire ring
 
 [obj_1638]
 certlink=obj_1637
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1639]
 desc=A valuable ring.
@@ -17513,7 +17513,7 @@ name=Emerald ring
 
 [obj_1640]
 certlink=obj_1639
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1641]
 desc=A valuable ring.
@@ -17532,7 +17532,7 @@ name=Ruby ring
 
 [obj_1642]
 certlink=obj_1641
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1643]
 desc=A valuable ring.
@@ -17549,7 +17549,7 @@ name=Diamond ring
 
 [obj_1644]
 certlink=obj_1643
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1645]
 desc=A valuable ring.
@@ -17569,7 +17569,7 @@ name=Dragonstone ring
 
 [obj_1646]
 certlink=obj_1645
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1647]
 model=model_2677
@@ -17587,7 +17587,7 @@ name=Black ring
 
 [obj_1648]
 certlink=obj_1647
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1649]
 model=model_1105
@@ -17627,7 +17627,7 @@ name=Gold necklace
 
 [obj_1655]
 certlink=obj_1654
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1656]
 cost=1050
@@ -17647,7 +17647,7 @@ name=Sapphire necklace
 
 [obj_1657]
 certlink=obj_1656
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1658]
 cost=1425
@@ -17667,7 +17667,7 @@ name=Emerald necklace
 
 [obj_1659]
 certlink=obj_1658
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1660]
 cost=2175
@@ -17687,7 +17687,7 @@ name=Ruby necklace
 
 [obj_1661]
 certlink=obj_1660
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1662]
 cost=3675
@@ -17707,7 +17707,7 @@ name=Diamond necklace
 
 [obj_1663]
 certlink=obj_1662
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1664]
 cost=18375
@@ -17728,7 +17728,7 @@ name=Dragon necklace
 
 [obj_1665]
 certlink=obj_1664
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1666]
 model=model_2506
@@ -17745,7 +17745,7 @@ name=Black necklace
 
 [obj_1667]
 certlink=obj_1666
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1668]
 model=model_1105
@@ -17782,7 +17782,7 @@ name=Gold amulet
 
 [obj_1674]
 certlink=obj_1673
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1675]
 cost=900
@@ -17799,7 +17799,7 @@ name=Sapphire amulet
 
 [obj_1676]
 certlink=obj_1675
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1677]
 cost=1275
@@ -17816,7 +17816,7 @@ name=Emerald amulet
 
 [obj_1678]
 certlink=obj_1677
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1679]
 cost=2025
@@ -17833,7 +17833,7 @@ name=Ruby amulet
 
 [obj_1680]
 certlink=obj_1679
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1681]
 cost=3525
@@ -17848,7 +17848,7 @@ name=Diamond amulet
 
 [obj_1682]
 certlink=obj_1681
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1683]
 cost=17625
@@ -17866,7 +17866,7 @@ name=Dragonstoneamulet
 
 [obj_1684]
 certlink=obj_1683
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1685]
 model=model_2550
@@ -17883,7 +17883,7 @@ name=Black amulet
 
 [obj_1686]
 certlink=obj_1685
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1687]
 model=model_1105
@@ -17927,7 +17927,7 @@ name=Gold amulet
 
 [obj_1693]
 certlink=obj_1692
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1694]
 cost=900
@@ -17951,7 +17951,7 @@ name=Sapphire amulet
 
 [obj_1695]
 certlink=obj_1694
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1696]
 cost=1275
@@ -17975,7 +17975,7 @@ name=Emerald amulet
 
 [obj_1697]
 certlink=obj_1696
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1698]
 cost=2025
@@ -17999,7 +17999,7 @@ name=Ruby amulet
 
 [obj_1699]
 certlink=obj_1698
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1700]
 cost=3525
@@ -18021,7 +18021,7 @@ name=Diamond amulet
 
 [obj_1701]
 certlink=obj_1700
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1702]
 cost=17625
@@ -18046,7 +18046,7 @@ name=Dragonstoneamulet
 
 [obj_1703]
 certlink=obj_1702
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1704]
 cost=17625
@@ -18072,7 +18072,7 @@ name=Amulet of glory
 
 [obj_1705]
 certlink=obj_1704
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1706]
 cost=17625
@@ -18098,7 +18098,7 @@ name=Amulet of glory(1)
 
 [obj_1707]
 certlink=obj_1706
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1708]
 cost=17625
@@ -18124,7 +18124,7 @@ name=Amulet of glory(2)
 
 [obj_1709]
 certlink=obj_1708
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1710]
 cost=17625
@@ -18150,7 +18150,7 @@ name=Amulet of glory(3)
 
 [obj_1711]
 certlink=obj_1710
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1712]
 cost=17625
@@ -18176,7 +18176,7 @@ name=Amulet of glory(4)
 
 [obj_1713]
 certlink=obj_1712
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1714]
 desc=It needs a string so I can wear it.
@@ -18190,7 +18190,7 @@ name=Unstrung symbol
 
 [obj_1715]
 certlink=obj_1714
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1716]
 desc=A symbol of Saradomin.
@@ -18216,7 +18216,7 @@ name=Unblessed symbol
 
 [obj_1717]
 certlink=obj_1716
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1718]
 desc=A blessed holy symbol of Saradomin.
@@ -18242,7 +18242,7 @@ name=Holy symbol
 
 [obj_1719]
 certlink=obj_1718
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1720]
 desc=It needs a string so I can wear it.
@@ -18260,7 +18260,7 @@ name=Unstrung emblem
 
 [obj_1721]
 certlink=obj_1720
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1722]
 desc=An unholy symbol of Zamorak.
@@ -18288,7 +18288,7 @@ name=Unpowered symbol
 
 [obj_1723]
 certlink=obj_1722
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1724]
 desc=An unholy symbol of Zamorak.
@@ -18336,7 +18336,7 @@ name=Amulet of strength
 
 [obj_1726]
 certlink=obj_1725
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1727]
 desc=An enchanted sapphire amulet of magic.
@@ -18360,7 +18360,7 @@ name=Amulet of magic
 
 [obj_1728]
 certlink=obj_1727
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1729]
 desc=An enchanted emerald amulet of protection.
@@ -18384,7 +18384,7 @@ name=Amulet of defence
 
 [obj_1730]
 certlink=obj_1729
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1731]
 desc=An enchanted diamond amulet of power.
@@ -18406,7 +18406,7 @@ name=Amulet of power
 
 [obj_1732]
 certlink=obj_1731
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1733]
 desc=Used with a thread to make clothes.
@@ -18443,7 +18443,7 @@ name=Shears
 
 [obj_1736]
 certlink=obj_1735
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1737]
 desc=I think this came from a sheep.
@@ -18456,7 +18456,7 @@ name=Wool
 
 [obj_1738]
 certlink=obj_1737
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1739]
 desc=I should take this to the tannery.
@@ -18470,7 +18470,7 @@ name=Cow hide
 
 [obj_1740]
 certlink=obj_1739
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1741]
 desc=It's a piece of leather.
@@ -18486,7 +18486,7 @@ name=Leather
 
 [obj_1742]
 certlink=obj_1741
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1743]
 desc=It's a piece of hard leather.
@@ -18502,7 +18502,7 @@ name=Hard leather
 
 [obj_1744]
 certlink=obj_1743
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1745]
 desc=It's a piece of prepared dragonhide.
@@ -18519,7 +18519,7 @@ name=Dragon leather
 
 [obj_1746]
 certlink=obj_1745
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1747]
 desc=The scaly rough hide from a Dragon
@@ -18538,7 +18538,7 @@ name=Dragonhide
 
 [obj_1748]
 certlink=obj_1747
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1749]
 desc=The scaly rough hide from a Dragon
@@ -18557,7 +18557,7 @@ name=Dragonhide
 
 [obj_1750]
 certlink=obj_1749
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1751]
 desc=The scaly rough hide from a Dragon
@@ -18576,7 +18576,7 @@ name=Dragonhide
 
 [obj_1752]
 certlink=obj_1751
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1753]
 desc=The scaly rough hide from a Dragon
@@ -18591,7 +18591,7 @@ name=Dragonhide
 
 [obj_1754]
 certlink=obj_1753
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1755]
 desc=Good for detailed crafting.
@@ -18605,7 +18605,7 @@ name=Chisel
 
 [obj_1756]
 certlink=obj_1755
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1757]
 desc=A mostly clean apron.
@@ -18627,7 +18627,7 @@ name=Brown apron
 
 [obj_1758]
 certlink=obj_1757
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1759]
 desc=Spun from sheeps wool.
@@ -18642,7 +18642,7 @@ name=Ball of wool
 
 [obj_1760]
 certlink=obj_1759
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1761]
 desc=Clay soft enough to mould.
@@ -18657,7 +18657,7 @@ name=Soft clay
 
 [obj_1762]
 certlink=obj_1761
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1763]
 desc=A little bottle of red dye.
@@ -18673,7 +18673,7 @@ name=Red dye
 
 [obj_1764]
 certlink=obj_1763
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1765]
 desc=A little bottle of yellow dye.
@@ -18689,7 +18689,7 @@ name=Yellow dye
 
 [obj_1766]
 certlink=obj_1765
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1767]
 desc=A little bottle of blue dye.
@@ -18705,7 +18705,7 @@ name=Blue dye
 
 [obj_1768]
 certlink=obj_1767
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1769]
 desc=A little bottle of orange dye.
@@ -18721,7 +18721,7 @@ name=Orange dye
 
 [obj_1770]
 certlink=obj_1769
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1771]
 desc=A little bottle of green dye.
@@ -18737,7 +18737,7 @@ name=Green dye
 
 [obj_1772]
 certlink=obj_1771
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1773]
 desc=A little bottle of purple dye.
@@ -18753,7 +18753,7 @@ name=Purple dye
 
 [obj_1774]
 certlink=obj_1773
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1775]
 cost=2
@@ -18769,7 +18769,7 @@ name=Molten glass
 
 [obj_1776]
 certlink=obj_1775
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1777]
 members=yes
@@ -18785,7 +18785,7 @@ name=Bow string
 
 [obj_1778]
 certlink=obj_1777
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1779]
 desc=I should use this with a spinning wheel.
@@ -18801,7 +18801,7 @@ name=Flax
 
 [obj_1780]
 certlink=obj_1779
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1781]
 desc=One of the ingredients for making glass.
@@ -18818,7 +18818,7 @@ name=Soda ash
 
 [obj_1782]
 certlink=obj_1781
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1783]
 members=yes
@@ -18835,7 +18835,7 @@ name=Bucket of sand
 
 [obj_1784]
 certlink=obj_1783
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1785]
 cost=2
@@ -18852,7 +18852,7 @@ name=Glassblowing pipe
 
 [obj_1786]
 certlink=obj_1785
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1787]
 desc=I need to put this in a pottery oven.
@@ -18869,7 +18869,7 @@ name=Unfired pot
 
 [obj_1788]
 certlink=obj_1787
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1789]
 desc=I need to put this in a pottery oven.
@@ -18889,7 +18889,7 @@ name=Unfired pie dish
 
 [obj_1790]
 certlink=obj_1789
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1791]
 desc=I need to put this in a pottery oven.
@@ -18906,7 +18906,7 @@ name=Unfired bowl
 
 [obj_1792]
 certlink=obj_1791
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1793]
 desc=A slightly bluish leaf.
@@ -18937,7 +18937,7 @@ name=Bronze wire
 
 [obj_1795]
 certlink=obj_1794
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1796]
 desc=Annas' shiny silver coated necklace.
@@ -19281,7 +19281,7 @@ name=Waterskin(4)
 
 [obj_1824]
 certlink=obj_1823
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1825]
 desc=A nearly full waterskin with three portions of water.
@@ -19297,7 +19297,7 @@ name=Waterskin(3)
 
 [obj_1826]
 certlink=obj_1825
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1827]
 desc=A half empty waterskin with two portions of water.
@@ -19313,7 +19313,7 @@ name=Waterskin(2)
 
 [obj_1828]
 certlink=obj_1827
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1829]
 desc=A nearly empty waterskin with one portion of water.
@@ -19329,7 +19329,7 @@ name=Waterskin(1)
 
 [obj_1830]
 certlink=obj_1829
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1831]
 desc=A totaly empty waterskin - you'll need to fill it up.
@@ -19345,7 +19345,7 @@ name=Waterskin(0)
 
 [obj_1832]
 certlink=obj_1831
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1833]
 desc=A cool, light desert shirt.
@@ -19366,7 +19366,7 @@ name=Desert shirt
 
 [obj_1834]
 certlink=obj_1833
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1835]
 desc=A cool, light desert robe.
@@ -19385,7 +19385,7 @@ name=Desert robe
 
 [obj_1836]
 certlink=obj_1835
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1837]
 desc=Comfortable desert shoes.
@@ -19408,7 +19408,7 @@ name=Desert boots
 
 [obj_1838]
 certlink=obj_1837
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1839]
 desc=A metal key, it's very crudely constructed.
@@ -19702,7 +19702,7 @@ name=Raw ugthanki meat
 
 [obj_1860]
 certlink=obj_1859
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1861]
 desc=Freshly cooked ugthanki meat.
@@ -19723,7 +19723,7 @@ name=Ugthanki meat
 
 [obj_1862]
 certlink=obj_1861
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1863]
 desc=I need to cook this.
@@ -19739,7 +19739,7 @@ name=Pitta dough
 
 [obj_1864]
 certlink=obj_1863
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1865]
 desc=Mmmm, I need to add some other ingredients yet.
@@ -19755,7 +19755,7 @@ name=Pitta bread
 
 [obj_1866]
 certlink=obj_1865
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1867]
 desc=It's all burnt.
@@ -19771,7 +19771,7 @@ name=Burnt pitta bread
 
 [obj_1868]
 certlink=obj_1867
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1869]
 desc=A mixture of tomatoes in a bowl.
@@ -19786,7 +19786,7 @@ name=Chopped tomato
 
 [obj_1870]
 certlink=obj_1869
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1871]
 desc=A mixture of onions in a bowl.
@@ -19801,7 +19801,7 @@ name=Chopped onion
 
 [obj_1872]
 certlink=obj_1871
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1873]
 desc=Strips of ugthanki meat in a bowl.
@@ -19816,7 +19816,7 @@ name=Chopped ugthanki
 
 [obj_1874]
 certlink=obj_1873
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1875]
 desc=A mixture of chopped onions and tomatoes in a bowl.
@@ -19831,7 +19831,7 @@ name=Onion & tomato
 
 [obj_1876]
 certlink=obj_1875
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1877]
 desc=A mixture of chopped onions and ugthanki meat in a bowl.
@@ -19846,7 +19846,7 @@ name=Ugthanki & onion
 
 [obj_1878]
 certlink=obj_1877
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1879]
 desc=A mixture of chopped tomatoes and ugthanki meat in a bowl.
@@ -19861,7 +19861,7 @@ name=Ugthanki & tomato
 
 [obj_1880]
 certlink=obj_1879
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1881]
 desc=A mixture of chopped tomatoes, onions and ugthanki meat in a bowl.
@@ -19876,7 +19876,7 @@ name=Kebab mix
 
 [obj_1882]
 certlink=obj_1881
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1883]
 desc=A strange smelling kebab made from ugthanki meat.
@@ -19894,7 +19894,7 @@ name=Ugthanki kebab
 
 [obj_1884]
 certlink=obj_1883
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1885]
 desc=A fresh kebab made from ugthanki meat.
@@ -19912,7 +19912,7 @@ name=Ugthanki kebab
 
 [obj_1886]
 certlink=obj_1885
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1887]
 desc=Useful for baking cakes.
@@ -19925,7 +19925,7 @@ name=Cake tin
 
 [obj_1888]
 certlink=obj_1887
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1889]
 desc=Now all I need to do is cook it.
@@ -19938,7 +19938,7 @@ name=Uncooked cake
 
 [obj_1890]
 certlink=obj_1889
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1891]
 iop1=Eat
@@ -19953,7 +19953,7 @@ name=Cake
 
 [obj_1892]
 certlink=obj_1891
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1893]
 iop1=Eat
@@ -19972,7 +19972,7 @@ name=2/3 cake
 
 [obj_1894]
 certlink=obj_1893
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1895]
 iop1=Eat
@@ -19992,7 +19992,7 @@ name=Slice of cake
 
 [obj_1896]
 certlink=obj_1895
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1897]
 iop1=Eat
@@ -20013,7 +20013,7 @@ name=Chocolate cake
 
 [obj_1898]
 certlink=obj_1897
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1899]
 iop1=Eat
@@ -20034,7 +20034,7 @@ name=2/3 chocolate cake
 
 [obj_1900]
 certlink=obj_1899
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1901]
 iop1=Eat
@@ -20056,7 +20056,7 @@ name=Chocolate slice
 
 [obj_1902]
 certlink=obj_1901
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1903]
 desc=Argh what a mess!
@@ -20074,7 +20074,7 @@ name=Burnt cake
 
 [obj_1904]
 certlink=obj_1903
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1905]
 desc=Probably the finest ale in Asgarnia.
@@ -20094,7 +20094,7 @@ name=Asgarnian ale
 
 [obj_1906]
 certlink=obj_1905
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1907]
 desc=It's got strange bubbles in it.
@@ -20114,7 +20114,7 @@ name=Wizard's mind bomb
 
 [obj_1908]
 certlink=obj_1907
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1909]
 desc=A glass of frothy ale.
@@ -20135,7 +20135,7 @@ name=Greenman's ale
 
 [obj_1910]
 certlink=obj_1909
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1911]
 desc=A glass of bitter.
@@ -20156,7 +20156,7 @@ name=Dragon bitter
 
 [obj_1912]
 certlink=obj_1911
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1913]
 desc=A pint of thick dark beer.
@@ -20176,7 +20176,7 @@ name=Dwarven stout
 
 [obj_1914]
 certlink=obj_1913
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1915]
 desc=A murky glass of some sort of drink.
@@ -20197,7 +20197,7 @@ name=Grog
 
 [obj_1916]
 certlink=obj_1915
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1917]
 desc=A glass of frothy ale.
@@ -20213,7 +20213,7 @@ name=Beer
 
 [obj_1918]
 certlink=obj_1917
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1919]
 desc=I need to fill this with beer.
@@ -20228,7 +20228,7 @@ name=Beer glass
 
 [obj_1920]
 certlink=obj_1919
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1921]
 desc=It's a bowl of water.
@@ -20241,7 +20241,7 @@ name=Bowl of water
 
 [obj_1922]
 certlink=obj_1921
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1923]
 desc=Useful for mixing things.
@@ -20254,7 +20254,7 @@ name=Bowl
 
 [obj_1924]
 certlink=obj_1923
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1925]
 desc=It's a wooden bucket.
@@ -20270,7 +20270,7 @@ name=Bucket
 
 [obj_1926]
 certlink=obj_1925
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1927]
 desc=It's a bucket of milk.
@@ -20286,7 +20286,7 @@ name=Bucket of milk
 
 [obj_1928]
 certlink=obj_1927
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1929]
 desc=It's a bucket of water.
@@ -20300,7 +20300,7 @@ name=Bucket of water
 
 [obj_1930]
 certlink=obj_1929
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1931]
 desc=This pot is empty.
@@ -20315,7 +20315,7 @@ name=Pot
 
 [obj_1932]
 certlink=obj_1931
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1933]
 desc=There is flour in this pot.
@@ -20330,7 +20330,7 @@ name=Pot of flour
 
 [obj_1934]
 certlink=obj_1933
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1935]
 desc=This jug is empty.
@@ -20347,7 +20347,7 @@ name=Jug
 
 [obj_1936]
 certlink=obj_1935
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1937]
 desc=It's full of water.
@@ -20364,7 +20364,7 @@ name=Jug of water
 
 [obj_1938]
 certlink=obj_1937
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1939]
 desc=A foul smelling thick tar like substance.
@@ -20420,7 +20420,7 @@ name=Potato
 
 [obj_1943]
 certlink=obj_1942
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1944]
 desc=A nice fresh egg.
@@ -20434,7 +20434,7 @@ name=Egg
 
 [obj_1945]
 certlink=obj_1944
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1946]
 desc=A little heap of flour.
@@ -20461,7 +20461,7 @@ name=Grain
 
 [obj_1948]
 certlink=obj_1947
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1949]
 desc=What a silly hat.
@@ -20482,7 +20482,7 @@ name=Chef's hat
 
 [obj_1950]
 certlink=obj_1949
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1951]
 cost=3
@@ -20497,7 +20497,7 @@ name=Redberries
 
 [obj_1952]
 certlink=obj_1951
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1953]
 desc=Potentially pastry.
@@ -20510,7 +20510,7 @@ name=Pastry dough
 
 [obj_1954]
 certlink=obj_1953
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1955]
 desc=Keeps the doctor away.
@@ -20523,7 +20523,7 @@ name=Cooking apple
 
 [obj_1956]
 certlink=obj_1955
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1957]
 desc=A strong smelling onion.
@@ -20538,7 +20538,7 @@ name=Onion
 
 [obj_1958]
 certlink=obj_1957
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1959]
 desc=Happy Halloween.
@@ -20554,7 +20554,7 @@ name=Pumpkin
 
 [obj_1960]
 certlink=obj_1959
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1961]
 desc=Happy Easter.
@@ -20568,7 +20568,7 @@ name=Easter egg
 
 [obj_1962]
 certlink=obj_1961
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1963]
 desc=Mmm this looks tasty.
@@ -20584,7 +20584,7 @@ name=Banana
 
 [obj_1964]
 certlink=obj_1963
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1965]
 desc=Yuck I don't like cabbage.
@@ -20599,7 +20599,7 @@ name=Cabbage
 
 [obj_1966]
 certlink=obj_1965
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1967]
 desc=Yuck I don't like cabbage.
@@ -20614,7 +20614,7 @@ name=Cabbage
 
 [obj_1968]
 certlink=obj_1967
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1969]
 iop1=Eat
@@ -20628,7 +20628,7 @@ name=Spinach roll
 
 [obj_1970]
 certlink=obj_1969
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1971]
 desc=A meaty kebab.
@@ -20645,7 +20645,7 @@ name=Kebab
 
 [obj_1972]
 certlink=obj_1971
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1973]
 iop1=Eat
@@ -20661,7 +20661,7 @@ name=Chocolate bar
 
 [obj_1974]
 certlink=obj_1973
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1975]
 cost=2
@@ -20678,7 +20678,7 @@ name=Chocolate dust
 
 [obj_1976]
 certlink=obj_1975
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1977]
 iop1=Drink
@@ -20709,7 +20709,7 @@ name=Cup of tea
 
 [obj_1979]
 certlink=obj_1978
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1980]
 desc=An empty cup.
@@ -20731,7 +20731,7 @@ name=Empty cup
 
 [obj_1981]
 certlink=obj_1980
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1982]
 desc=This would make good ketchup.
@@ -20746,7 +20746,7 @@ name=Tomato
 
 [obj_1983]
 certlink=obj_1982
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1984]
 desc=Rotten!
@@ -20775,7 +20775,7 @@ name=Cheese
 
 [obj_1986]
 certlink=obj_1985
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1987]
 desc=Good grapes for wine making.
@@ -20792,7 +20792,7 @@ name=Grapes
 
 [obj_1988]
 certlink=obj_1987
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1989]
 desc=An optimist would say it's half full.
@@ -20810,7 +20810,7 @@ name=Half full wine jug
 
 [obj_1990]
 certlink=obj_1989
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1991]
 desc=Oh dear, this wine is terrible!
@@ -20828,7 +20828,7 @@ name=Jug of bad wine
 
 [obj_1992]
 certlink=obj_1991
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1993]
 cost=1
@@ -20846,7 +20846,7 @@ name=Jug of wine
 
 [obj_1994]
 certlink=obj_1993
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1995]
 cost=10
@@ -20863,7 +20863,7 @@ name=Unfermented wine
 
 [obj_1996]
 certlink=obj_1995
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1997]
 desc=I need to add some meat too.
@@ -20878,7 +20878,7 @@ name=Incomplete stew
 
 [obj_1998]
 certlink=obj_1997
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_1999]
 desc=I need to add some potato too.
@@ -20893,7 +20893,7 @@ name=Incomplete stew
 
 [obj_2000]
 certlink=obj_1999
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2001]
 desc=I need to cook this.
@@ -20908,7 +20908,7 @@ name=Uncooked stew
 
 [obj_2002]
 certlink=obj_2001
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2003]
 iop1=Eat
@@ -20924,7 +20924,7 @@ name=Stew
 
 [obj_2004]
 certlink=obj_2003
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2005]
 desc=Eew, it's horribly burnt.
@@ -20940,7 +20940,7 @@ name=Burnt stew
 
 [obj_2006]
 certlink=obj_2005
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2007]
 desc=This could liven up an otherwise bland stew.
@@ -20955,7 +20955,7 @@ name=Spice
 
 [obj_2008]
 certlink=obj_2007
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2009]
 desc=I need to cook this.
@@ -20971,7 +20971,7 @@ name=Uncooked curry
 
 [obj_2010]
 certlink=obj_2009
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2011]
 iop1=Eat
@@ -20988,7 +20988,7 @@ name=Curry
 
 [obj_2012]
 certlink=obj_2011
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2013]
 desc=Eew, it's horribly burnt.
@@ -21005,7 +21005,7 @@ name=Burnt curry
 
 [obj_2014]
 certlink=obj_2013
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2015]
 desc=A strong spirit.
@@ -21021,7 +21021,7 @@ name=Vodka
 
 [obj_2016]
 certlink=obj_2015
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2017]
 desc=A bottle of Draynor Malt.
@@ -21037,7 +21037,7 @@ name=Whisky
 
 [obj_2018]
 certlink=obj_2017
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2019]
 desc=A strong spirit.
@@ -21055,7 +21055,7 @@ name=Gin
 
 [obj_2020]
 certlink=obj_2019
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2021]
 desc=A strong spirit.
@@ -21070,7 +21070,7 @@ name=Brandy
 
 [obj_2022]
 certlink=obj_2021
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2023]
 desc=A book on tree gnome cocktails.
@@ -21087,7 +21087,7 @@ name=Cocktail guide
 
 [obj_2024]
 certlink=obj_2023
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2025]
 desc=Used for mixing cocktails.
@@ -21114,7 +21114,7 @@ name=Cocktail glass
 
 [obj_2027]
 certlink=obj_2026
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2028]
 desc=Looks good... smells strong.
@@ -21132,7 +21132,7 @@ name=Blurberry special
 
 [obj_2029]
 certlink=obj_2028
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2030]
 desc=A warm creamy alcoholic beverage.
@@ -21150,7 +21150,7 @@ name=Choc saturday
 
 [obj_2031]
 certlink=obj_2030
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2032]
 desc=A warm creamy alcoholic beverage.
@@ -21166,7 +21166,7 @@ name=Drunk dragon
 
 [obj_2033]
 certlink=obj_2032
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2034]
 desc=A cool refreshing fruit mix.
@@ -21188,7 +21188,7 @@ name=Fruit blast
 
 [obj_2035]
 certlink=obj_2034
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2036]
 desc=A fresh healthy fruit mix.
@@ -21210,7 +21210,7 @@ name=Pineapple punch
 
 [obj_2037]
 certlink=obj_2036
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2038]
 desc=A Short Green Guy... looks good.
@@ -21228,7 +21228,7 @@ name=Sgg
 
 [obj_2039]
 certlink=obj_2038
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2040]
 desc=This looks like a strange mix.
@@ -21246,7 +21246,7 @@ name=Wizard blizzard
 
 [obj_2041]
 certlink=obj_2040
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2042]
 desc=This cocktail is just missing those little finishing touches.
@@ -21264,7 +21264,7 @@ name=Unfinished cocktail
 
 [obj_2043]
 certlink=obj_2042
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2044]
 desc=This cocktail is just missing those little finishing touches.
@@ -21282,7 +21282,7 @@ name=Unfinished cocktail
 
 [obj_2045]
 certlink=obj_2044
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2046]
 desc=This cocktail is just missing those little finishing touches.
@@ -21300,7 +21300,7 @@ name=Unfinished cocktail
 
 [obj_2047]
 certlink=obj_2046
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2048]
 desc=A fresh healthy fruit mix.
@@ -21322,7 +21322,7 @@ name=Pineapple punch
 
 [obj_2049]
 certlink=obj_2048
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2050]
 desc=This cocktail is just missing those little finishing touches.
@@ -21340,7 +21340,7 @@ name=Unfinished cocktail
 
 [obj_2051]
 certlink=obj_2050
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2052]
 desc=This cocktail is just missing those little finishing touches.
@@ -21358,7 +21358,7 @@ name=Unfinished cocktail
 
 [obj_2053]
 certlink=obj_2052
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2054]
 desc=This looks like a strange mix.
@@ -21376,7 +21376,7 @@ name=Wizard blizzard
 
 [obj_2055]
 certlink=obj_2054
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2056]
 desc=This cocktail is just missing those little finishing touches.
@@ -21394,7 +21394,7 @@ name=Unfinished cocktail
 
 [obj_2057]
 certlink=obj_2056
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2058]
 desc=This cocktail is just missing those little finishing touches.
@@ -21412,7 +21412,7 @@ name=Unfinished cocktail
 
 [obj_2059]
 certlink=obj_2058
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2060]
 desc=This cocktail is just missing those little finishing touches.
@@ -21430,7 +21430,7 @@ name=Unfinished cocktail
 
 [obj_2061]
 certlink=obj_2060
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2062]
 desc=This cocktail is just missing those little finishing touches.
@@ -21448,7 +21448,7 @@ name=Unfinished cocktail
 
 [obj_2063]
 certlink=obj_2062
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2064]
 desc=Looks good... smells strong.
@@ -21466,7 +21466,7 @@ name=Blurberry special
 
 [obj_2065]
 certlink=obj_2064
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2066]
 desc=This cocktail is just missing those little finishing touches.
@@ -21484,7 +21484,7 @@ name=Unfinished cocktail
 
 [obj_2067]
 certlink=obj_2066
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2068]
 desc=This cocktail is just missing those little finishing touches.
@@ -21502,7 +21502,7 @@ name=Unfinished cocktail
 
 [obj_2069]
 certlink=obj_2068
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2070]
 desc=This cocktail is just missing those little finishing touches.
@@ -21520,7 +21520,7 @@ name=Unfinished cocktail
 
 [obj_2071]
 certlink=obj_2070
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2072]
 desc=This cocktail is just missing those little finishing touches.
@@ -21538,7 +21538,7 @@ name=Unfinished cocktail
 
 [obj_2073]
 certlink=obj_2072
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2074]
 desc=A warm creamy alcoholic beverage.
@@ -21556,7 +21556,7 @@ name=Choc saturday
 
 [obj_2075]
 certlink=obj_2074
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2076]
 desc=This cocktail is just missing those little finishing touches.
@@ -21574,7 +21574,7 @@ name=Unfinished cocktail
 
 [obj_2077]
 certlink=obj_2076
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2078]
 desc=This cocktail is just missing those little finishing touches.
@@ -21592,7 +21592,7 @@ name=Unfinished cocktail
 
 [obj_2079]
 certlink=obj_2078
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2080]
 desc=A Short Green Guy... looks good.
@@ -21610,7 +21610,7 @@ name=Sgg
 
 [obj_2081]
 certlink=obj_2080
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2082]
 desc=This cocktail is just missing those little finishing touches.
@@ -21628,7 +21628,7 @@ name=Unfinished cocktail
 
 [obj_2083]
 certlink=obj_2082
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2084]
 desc=A cool refreshing fruit mix.
@@ -21650,7 +21650,7 @@ name=Fruit blast
 
 [obj_2085]
 certlink=obj_2084
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2086]
 desc=This cocktail is just missing those little finishing touches.
@@ -21666,7 +21666,7 @@ name=Unfinished cocktail
 
 [obj_2087]
 certlink=obj_2086
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2088]
 desc=This cocktail is just missing those little finishing touches.
@@ -21684,7 +21684,7 @@ name=Unfinished cocktail
 
 [obj_2089]
 certlink=obj_2088
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2090]
 desc=This cocktail is just missing those little finishing touches.
@@ -21700,7 +21700,7 @@ name=Unfinished cocktail
 
 [obj_2091]
 certlink=obj_2090
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2092]
 desc=A warm creamy alcoholic beverage.
@@ -21716,7 +21716,7 @@ name=Drunk dragon
 
 [obj_2093]
 certlink=obj_2092
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2094]
 desc=I'm not completely sure what this contains.
@@ -21735,7 +21735,7 @@ name=Odd cocktail
 
 [obj_2095]
 certlink=obj_2094
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2096]
 desc=I'm not completely sure what this contains.
@@ -21754,7 +21754,7 @@ name=Odd cocktail
 
 [obj_2097]
 certlink=obj_2096
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2098]
 desc=I'm not completely sure what this contains.
@@ -21773,7 +21773,7 @@ name=Odd cocktail
 
 [obj_2099]
 certlink=obj_2098
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2100]
 desc=I'm not completely sure what this contains.
@@ -21796,7 +21796,7 @@ name=Odd cocktail
 
 [obj_2101]
 certlink=obj_2100
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2102]
 desc=A fresh lemon.
@@ -21811,7 +21811,7 @@ name=Lemon
 
 [obj_2103]
 certlink=obj_2102
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2104]
 desc=Fresh chunks of lemon.
@@ -21831,7 +21831,7 @@ name=Lemon chunks
 
 [obj_2105]
 certlink=obj_2104
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2106]
 desc=Fresh lemon slices.
@@ -21850,7 +21850,7 @@ name=Lemon slices
 
 [obj_2107]
 certlink=obj_2106
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2108]
 desc=A fresh orange.
@@ -21865,7 +21865,7 @@ name=Orange
 
 [obj_2109]
 certlink=obj_2108
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2110]
 desc=Fresh chunks of orange.
@@ -21883,7 +21883,7 @@ name=Orange chunks
 
 [obj_2111]
 certlink=obj_2110
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2112]
 desc=Fresh orange slices.
@@ -21900,7 +21900,7 @@ name=Orange slices
 
 [obj_2113]
 certlink=obj_2112
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2114]
 desc=It can be cut up into something more manageable with a knife.
@@ -21916,7 +21916,7 @@ name=Pineapple
 
 [obj_2115]
 certlink=obj_2114
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2116]
 desc=Fresh chunks of pineapple.
@@ -21936,7 +21936,7 @@ name=Pineapple chunks
 
 [obj_2117]
 certlink=obj_2116
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2118]
 desc=Exotic fruit.
@@ -21952,7 +21952,7 @@ name=Pineapple ring
 
 [obj_2119]
 certlink=obj_2118
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2120]
 desc=A fresh lime.
@@ -21967,7 +21967,7 @@ name=Lime
 
 [obj_2121]
 certlink=obj_2120
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2122]
 desc=Fresh chunks of lime.
@@ -21987,7 +21987,7 @@ name=Lime chunks
 
 [obj_2123]
 certlink=obj_2122
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2124]
 desc=Fresh lime slices.
@@ -22006,7 +22006,7 @@ name=Lime slices
 
 [obj_2125]
 certlink=obj_2124
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2126]
 desc=Some rather pretty blue berries.
@@ -22023,7 +22023,7 @@ name=Dwellberries
 
 [obj_2127]
 certlink=obj_2126
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2128]
 desc=Small sweet smelling leaves.
@@ -22039,7 +22039,7 @@ name=Equa leaves
 
 [obj_2129]
 certlink=obj_2128
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2130]
 desc=Fresh cream.
@@ -22056,7 +22056,7 @@ name=Pot of cream
 
 [obj_2131]
 certlink=obj_2130
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2132]
 desc=I need to cook this first.
@@ -22071,7 +22071,7 @@ name=Raw beef
 
 [obj_2133]
 certlink=obj_2132
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2134]
 desc=I need to cook this first.
@@ -22086,7 +22086,7 @@ name=Raw rat meat
 
 [obj_2135]
 certlink=obj_2134
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2136]
 desc=I need to cook this first.
@@ -22101,7 +22101,7 @@ name=Raw bear meat
 
 [obj_2137]
 certlink=obj_2136
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2138]
 desc=I need to cook this first.
@@ -22117,7 +22117,7 @@ name=Raw chicken
 
 [obj_2139]
 certlink=obj_2138
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2140]
 desc=Mmm this looks tasty.
@@ -22134,7 +22134,7 @@ name=Cooked chicken
 
 [obj_2141]
 certlink=obj_2140
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2142]
 desc=Mmm this looks tasty.
@@ -22154,7 +22154,7 @@ name=Cooked meat
 
 [obj_2143]
 certlink=obj_2142
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2144]
 desc=Oh dear, it's totally burnt!
@@ -22170,7 +22170,7 @@ name=Burnt chicken
 
 [obj_2145]
 certlink=obj_2144
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2146]
 desc=Oh dear, it's totally burnt!
@@ -22189,7 +22189,7 @@ name=Burnt meat
 
 [obj_2147]
 certlink=obj_2146
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2148]
 desc=A very strange eel.
@@ -22239,7 +22239,7 @@ name=Swamp toad
 
 [obj_2151]
 certlink=obj_2150
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2152]
 iop1=Eat
@@ -22256,7 +22256,7 @@ name=Toad's legs
 
 [obj_2153]
 certlink=obj_2152
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2154]
 iop1=Eat
@@ -22273,7 +22273,7 @@ name=Equa toad's legs
 
 [obj_2155]
 certlink=obj_2154
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2156]
 iop1=Eat
@@ -22290,7 +22290,7 @@ name=Spicy toad's legs
 
 [obj_2157]
 certlink=obj_2156
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2158]
 iop1=Eat
@@ -22307,7 +22307,7 @@ name=Seasoned legs
 
 [obj_2159]
 certlink=obj_2158
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2160]
 iop1=Eat
@@ -22324,7 +22324,7 @@ name=Spicy worm
 
 [obj_2161]
 certlink=obj_2160
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2162]
 iop1=Eat
@@ -22341,7 +22341,7 @@ name=King worm
 
 [obj_2163]
 certlink=obj_2162
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2164]
 desc=A deep tin used for baking gnome battas in.
@@ -22388,7 +22388,7 @@ name=Gianne's cook book
 
 [obj_2168]
 certlink=obj_2167
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2169]
 desc=It's Aluft Gianne's secret mix of spices.
@@ -22403,7 +22403,7 @@ name=Gnome spice
 
 [obj_2170]
 certlink=obj_2169
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2171]
 desc=It's made from a secret recipe.
@@ -22421,7 +22421,7 @@ name=Gianne dough
 
 [obj_2172]
 certlink=obj_2171
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2173]
 desc=This gnome bowl doesn't look very appetising.
@@ -22441,7 +22441,7 @@ name=Odd gnomebowl
 
 [obj_2174]
 certlink=obj_2173
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2175]
 desc=This gnome bowl has been burnt to a cinder.
@@ -22460,7 +22460,7 @@ name=Burnt gnomebowl
 
 [obj_2176]
 certlink=obj_2175
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2177]
 iop1=Inspect
@@ -22508,7 +22508,7 @@ name=Unfinished bowl
 
 [obj_2180]
 certlink=obj_2179
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2181]
 desc=This dish is just missing those little finishing touches.
@@ -22527,7 +22527,7 @@ name=Unfinished bowl
 
 [obj_2182]
 certlink=obj_2181
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2183]
 desc=This dish is just missing those little finishing touches.
@@ -22546,7 +22546,7 @@ name=Unfinished bowl
 
 [obj_2184]
 certlink=obj_2183
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2185]
 desc=Looks great!
@@ -22564,7 +22564,7 @@ name=Chocolate bomb
 
 [obj_2186]
 certlink=obj_2185
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2187]
 cost=2
@@ -22580,7 +22580,7 @@ name=Tangled toad's legs
 
 [obj_2188]
 certlink=obj_2187
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2189]
 desc=This dish is just missing those little finishing touches.
@@ -22595,7 +22595,7 @@ name=Unfinished bowl
 
 [obj_2190]
 certlink=obj_2189
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2191]
 cost=2
@@ -22611,7 +22611,7 @@ name=Worm hole
 
 [obj_2192]
 certlink=obj_2191
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2193]
 desc=This dish is just missing those little finishing touches.
@@ -22628,7 +22628,7 @@ name=Unfinished bowl
 
 [obj_2194]
 certlink=obj_2193
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2195]
 desc=This looks pretty healthy.
@@ -22644,7 +22644,7 @@ name=Veg ball
 
 [obj_2196]
 certlink=obj_2195
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2197]
 iop1=Eat
@@ -22661,7 +22661,7 @@ name=Odd crunchies
 
 [obj_2198]
 certlink=obj_2197
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2199]
 desc=These crunchies have been burnt to a cinder.
@@ -22677,7 +22677,7 @@ name=Burnt crunchies
 
 [obj_2200]
 certlink=obj_2199
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2201]
 iop1=Inspect
@@ -22720,7 +22720,7 @@ name=Unfinished crunchy
 
 [obj_2204]
 certlink=obj_2203
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2205]
 cost=2
@@ -22737,7 +22737,7 @@ name=Worm crunchies
 
 [obj_2206]
 certlink=obj_2205
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2207]
 desc=These crunchies are just missing those little finishing touches.
@@ -22751,7 +22751,7 @@ name=Unfinished crunchy
 
 [obj_2208]
 certlink=obj_2207
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2209]
 cost=2
@@ -22766,7 +22766,7 @@ name=Chocchip crunchies
 
 [obj_2210]
 certlink=obj_2209
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2211]
 desc=These crunchies are just missing those little finishing touches.
@@ -22782,7 +22782,7 @@ name=Unfinished crunchy
 
 [obj_2212]
 certlink=obj_2211
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2213]
 cost=2
@@ -22799,7 +22799,7 @@ name=Spicy crunchies
 
 [obj_2214]
 certlink=obj_2213
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2215]
 desc=These crunchies are just missing those little finishing touches.
@@ -22815,7 +22815,7 @@ name=Unfinished crunchy
 
 [obj_2216]
 certlink=obj_2215
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2217]
 desc=It actually smells quite good.
@@ -22832,7 +22832,7 @@ name=Toad crunchies
 
 [obj_2218]
 certlink=obj_2217
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2219]
 desc=It actually smells quite good.
@@ -22853,7 +22853,7 @@ name=Worm batta
 
 [obj_2220]
 certlink=obj_2219
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2221]
 desc=It actually smells quite good.
@@ -22872,7 +22872,7 @@ name=Toad batta
 
 [obj_2222]
 certlink=obj_2221
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2223]
 desc=This smells really good.
@@ -22891,7 +22891,7 @@ name=Cheese+tom batta
 
 [obj_2224]
 certlink=obj_2223
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2225]
 desc=It actually smells quite good.
@@ -22910,7 +22910,7 @@ name=Fruit batta
 
 [obj_2226]
 certlink=obj_2225
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2227]
 desc=Well... it looks healthy.
@@ -22931,7 +22931,7 @@ name=Vegetable batta
 
 [obj_2228]
 certlink=obj_2227
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2229]
 desc=Looks great!
@@ -22949,7 +22949,7 @@ name=Chocolate bomb
 
 [obj_2230]
 certlink=obj_2229
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2231]
 desc=It actually smells quite good.
@@ -22965,7 +22965,7 @@ name=Tangled toad's legs
 
 [obj_2232]
 certlink=obj_2231
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2233]
 desc=It actually smells quite good.
@@ -22981,7 +22981,7 @@ name=Worm hole
 
 [obj_2234]
 certlink=obj_2233
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2235]
 desc=This looks pretty healthy.
@@ -22997,7 +22997,7 @@ name=Veg ball
 
 [obj_2236]
 certlink=obj_2235
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2237]
 desc=It actually smells quite good.
@@ -23014,7 +23014,7 @@ name=Worm crunchies
 
 [obj_2238]
 certlink=obj_2237
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2239]
 desc=Yum... smells good.
@@ -23029,7 +23029,7 @@ name=Chocchip crunchies
 
 [obj_2240]
 certlink=obj_2239
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2241]
 desc=Yum... smells good.
@@ -23046,7 +23046,7 @@ name=Spicy crunchies
 
 [obj_2242]
 certlink=obj_2241
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2243]
 desc=It actually smells quite good.
@@ -23063,7 +23063,7 @@ name=Toad crunchies
 
 [obj_2244]
 certlink=obj_2243
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2245]
 desc=This batta doesn't look very appetising.
@@ -23086,7 +23086,7 @@ name=Odd batta
 
 [obj_2246]
 certlink=obj_2245
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2247]
 desc=This batta has been burnt to a cinder.
@@ -23104,7 +23104,7 @@ name=Burnt batta
 
 [obj_2248]
 certlink=obj_2247
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2249]
 iop1=Inspect
@@ -23151,7 +23151,7 @@ name=Unfinished batta
 
 [obj_2252]
 certlink=obj_2251
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2253]
 desc=It actually smells quite good.
@@ -23171,7 +23171,7 @@ name=Worm batta
 
 [obj_2254]
 certlink=obj_2253
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2255]
 cost=2
@@ -23190,7 +23190,7 @@ name=Toad batta
 
 [obj_2256]
 certlink=obj_2255
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2257]
 desc=This batta is just missing those little finishing touches.
@@ -23208,7 +23208,7 @@ name=Unfinished batta
 
 [obj_2258]
 certlink=obj_2257
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2259]
 cost=2
@@ -23227,7 +23227,7 @@ name=Cheese+tom batta
 
 [obj_2260]
 certlink=obj_2259
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2261]
 desc=This batta is just missing those little finishing touches.
@@ -23247,7 +23247,7 @@ name=Unfinished batta
 
 [obj_2262]
 certlink=obj_2261
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2263]
 desc=This batta is just missing those little finishing touches.
@@ -23267,7 +23267,7 @@ name=Unfinished batta
 
 [obj_2264]
 certlink=obj_2263
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2265]
 desc=This batta is just missing those little finishing touches.
@@ -23287,7 +23287,7 @@ name=Unfinished batta
 
 [obj_2266]
 certlink=obj_2265
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2267]
 desc=This batta is just missing those little finishing touches.
@@ -23307,7 +23307,7 @@ name=Unfinished batta
 
 [obj_2268]
 certlink=obj_2267
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2269]
 desc=This batta is just missing those little finishing touches.
@@ -23327,7 +23327,7 @@ name=Unfinished batta
 
 [obj_2270]
 certlink=obj_2269
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2271]
 desc=This batta is just missing those little finishing touches.
@@ -23347,7 +23347,7 @@ name=Unfinished batta
 
 [obj_2272]
 certlink=obj_2271
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2273]
 desc=This batta is just missing those little finishing touches.
@@ -23367,7 +23367,7 @@ name=Unfinished batta
 
 [obj_2274]
 certlink=obj_2273
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2275]
 desc=This batta is just missing those little finishing touches.
@@ -23385,7 +23385,7 @@ name=Unfinished batta
 
 [obj_2276]
 certlink=obj_2275
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2277]
 cost=2
@@ -23404,7 +23404,7 @@ name=Fruit batta
 
 [obj_2278]
 certlink=obj_2277
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2279]
 desc=This batta is just missing those little finishing touches.
@@ -23424,7 +23424,7 @@ name=Unfinished batta
 
 [obj_2280]
 certlink=obj_2279
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2281]
 cost=2
@@ -23445,7 +23445,7 @@ name=Vegetable batta
 
 [obj_2282]
 certlink=obj_2281
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2283]
 desc=I need to add some tomato next.
@@ -23461,7 +23461,7 @@ name=Pizza base
 
 [obj_2284]
 certlink=obj_2283
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2285]
 desc=I need to add some cheese next.
@@ -23479,7 +23479,7 @@ name=Incomplete pizza
 
 [obj_2286]
 certlink=obj_2285
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2287]
 desc=This needs cooking.
@@ -23497,7 +23497,7 @@ name=Uncooked pizza
 
 [obj_2288]
 certlink=obj_2287
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2289]
 iop1=Eat
@@ -23516,7 +23516,7 @@ name=Plain pizza
 
 [obj_2290]
 certlink=obj_2289
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2291]
 iop1=Eat
@@ -23536,7 +23536,7 @@ name=1/2 plain pizza
 
 [obj_2292]
 certlink=obj_2291
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2293]
 iop1=Eat
@@ -23557,7 +23557,7 @@ name=Meat pizza
 
 [obj_2294]
 certlink=obj_2293
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2295]
 iop1=Eat
@@ -23579,7 +23579,7 @@ name=1/2 meat pizza
 
 [obj_2296]
 certlink=obj_2295
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2297]
 iop1=Eat
@@ -23600,7 +23600,7 @@ name=Anchovy pizza
 
 [obj_2298]
 certlink=obj_2297
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2299]
 iop1=Eat
@@ -23622,7 +23622,7 @@ name=1/2 anchovy pizza
 
 [obj_2300]
 certlink=obj_2299
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2301]
 iop1=Eat
@@ -23644,7 +23644,7 @@ name=Pineapple pizza
 
 [obj_2302]
 certlink=obj_2301
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2303]
 iop1=Eat
@@ -23667,7 +23667,7 @@ name=1/2pineapple pizza
 
 [obj_2304]
 certlink=obj_2303
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2305]
 desc=Oh dear!
@@ -23687,7 +23687,7 @@ name=Burnt pizza
 
 [obj_2306]
 certlink=obj_2305
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2307]
 desc=Some uncooked dough.
@@ -23702,7 +23702,7 @@ name=Bread dough
 
 [obj_2308]
 certlink=obj_2307
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2309]
 cost=12
@@ -23717,7 +23717,7 @@ name=Bread
 
 [obj_2310]
 certlink=obj_2309
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2311]
 desc=Nice crispy bread.  Possibly too crispy.
@@ -23735,7 +23735,7 @@ name=Burnt bread
 
 [obj_2312]
 certlink=obj_2311
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2313]
 desc=Deceptively pie shaped.
@@ -23755,7 +23755,7 @@ name=Pie dish
 
 [obj_2314]
 certlink=obj_2313
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2315]
 desc=I need to find a filling for this pie.
@@ -23775,7 +23775,7 @@ name=Pie shell
 
 [obj_2316]
 certlink=obj_2315
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2317]
 desc=This would be much tastier cooked.
@@ -23795,7 +23795,7 @@ name=Uncooked apple pie
 
 [obj_2318]
 certlink=obj_2317
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2319]
 desc=This would be much healthier cooked.
@@ -23815,7 +23815,7 @@ name=Uncooked meat pie
 
 [obj_2320]
 certlink=obj_2319
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2321]
 desc=This would be much more appetising cooked.
@@ -23835,7 +23835,7 @@ name=Uncooked berry pie
 
 [obj_2322]
 certlink=obj_2321
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2323]
 desc=Mmm Apple pie.
@@ -23856,7 +23856,7 @@ name=Apple pie
 
 [obj_2324]
 certlink=obj_2323
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2325]
 desc=Looks tasty.
@@ -23877,7 +23877,7 @@ name=Redberry pie
 
 [obj_2326]
 certlink=obj_2325
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2327]
 desc=Not for vegetarians.
@@ -23898,7 +23898,7 @@ name=Meat pie
 
 [obj_2328]
 certlink=obj_2327
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2329]
 desc=I think I left it on the stove too long.
@@ -23919,7 +23919,7 @@ name=Burnt pie
 
 [obj_2330]
 certlink=obj_2329
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2331]
 desc=Half of it is suitable for vegetarians.
@@ -23946,7 +23946,7 @@ name=Half a meat pie
 
 [obj_2332]
 certlink=obj_2331
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2333]
 desc=So tasty I kept some for later.
@@ -23973,7 +23973,7 @@ name=Half a redberry pie
 
 [obj_2334]
 certlink=obj_2333
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2335]
 desc=Mmm half an apple pie.
@@ -24000,7 +24000,7 @@ name=Half an apple pie
 
 [obj_2336]
 certlink=obj_2335
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2337]
 desc=Raw meat from the oomlie bird.
@@ -24017,7 +24017,7 @@ name=Raw oomlie
 
 [obj_2338]
 certlink=obj_2337
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2339]
 desc=A thick green palm leaf used by natives to cook meat in.
@@ -24033,7 +24033,7 @@ name=Palm leaf
 
 [obj_2340]
 certlink=obj_2339
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2341]
 desc=Oomlie meat in a palm leaf pouch.  It just needs to be cooked.
@@ -24049,7 +24049,7 @@ name=Wrapped oomlie
 
 [obj_2342]
 certlink=obj_2341
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2343]
 desc=Deliciously cooked oomlie meat in a palm leaf pouch.
@@ -24074,7 +24074,7 @@ name=Cooked oomlie wrap
 
 [obj_2344]
 certlink=obj_2343
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2345]
 desc=Burnt oomlie meat in a palm leaf pouch.
@@ -24098,7 +24098,7 @@ name=Burnt oomlie wrap
 
 [obj_2346]
 certlink=obj_2345
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2347]
 desc=Good for hitting things!
@@ -24114,7 +24114,7 @@ name=Hammer
 
 [obj_2348]
 certlink=obj_2347
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2349]
 desc=It's a bar of bronze.
@@ -24131,7 +24131,7 @@ name=Bronze bar
 
 [obj_2350]
 certlink=obj_2349
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2351]
 desc=It's a bar of iron.
@@ -24148,7 +24148,7 @@ name=Iron bar
 
 [obj_2352]
 certlink=obj_2351
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2353]
 desc=It's a bar of steel.
@@ -24165,7 +24165,7 @@ name=Steel bar
 
 [obj_2354]
 certlink=obj_2353
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2355]
 desc=It's a bar of silver.
@@ -24182,7 +24182,7 @@ name=Silver bar
 
 [obj_2356]
 certlink=obj_2355
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2357]
 desc=It's a bar of gold.
@@ -24199,7 +24199,7 @@ name=Gold bar
 
 [obj_2358]
 certlink=obj_2357
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2359]
 desc=It's a bar of mithril.
@@ -24216,7 +24216,7 @@ name=Mithril bar
 
 [obj_2360]
 certlink=obj_2359
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2361]
 desc=It's a bar of adamantite.
@@ -24233,7 +24233,7 @@ name=Adamantite bar
 
 [obj_2362]
 certlink=obj_2361
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2363]
 desc=It's a bar of runite.
@@ -24250,7 +24250,7 @@ name=Runite bar
 
 [obj_2364]
 certlink=obj_2363
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2365]
 desc=It's a bar of 'perfect' gold.
@@ -24280,7 +24280,7 @@ name=Shield left half
 
 [obj_2367]
 certlink=obj_2366
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2368]
 cost=500000
@@ -24295,7 +24295,7 @@ name=Shield right half
 
 [obj_2369]
 certlink=obj_2368
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2370]
 desc=A set of studs for leather armour.
@@ -24310,7 +24310,7 @@ name=Steel studs
 
 [obj_2371]
 certlink=obj_2370
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2372]
 desc=An old statue of an ogre warrior.
@@ -24525,7 +24525,7 @@ name=Ground bat bones
 
 [obj_2392]
 certlink=obj_2391
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2393]
 desc=It's a stolen bar of gold.
@@ -24846,7 +24846,7 @@ recol4s=6032
 recol4d=926
 name=Cape of zamorak
 
-[obj_2415]
+[saradomin_staff]
 desc=It's a stick of the gods.
 cost=80000
 members=yes
@@ -24860,7 +24860,7 @@ womanwear=model_554,6
 iop2=Wield
 name=Staff of saradomin
 
-[obj_2416]
+[guthix_staff]
 desc=It's a stick of the gods.
 cost=80000
 members=yes
@@ -24874,7 +24874,7 @@ womanwear=model_527,6
 iop2=Wield
 name=Staff of guthix
 
-[obj_2417]
+[zamorak_staff]
 desc=It's a stick of the gods.
 cost=80000
 members=yes
@@ -24965,7 +24965,7 @@ name=Burnt oomlie
 
 [obj_2427]
 certlink=obj_2426
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2428]
 desc=4 doses of attack potion.
@@ -24983,7 +24983,7 @@ name=Attack potion(4)
 
 [obj_2429]
 certlink=obj_2428
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2430]
 desc=4 doses of stat restoration potion.
@@ -25001,7 +25001,7 @@ name=Restore potion(4)
 
 [obj_2431]
 certlink=obj_2430
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2432]
 desc=4 doses of defence potion.
@@ -25019,7 +25019,7 @@ name=Defence potion(4)
 
 [obj_2433]
 certlink=obj_2432
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2434]
 desc=4 doses of restore prayer potion.
@@ -25037,7 +25037,7 @@ name=Prayer potion(4)
 
 [obj_2435]
 certlink=obj_2434
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2436]
 desc=4 doses of super attack potion.
@@ -25055,7 +25055,7 @@ name=Super attack(4)
 
 [obj_2437]
 certlink=obj_2436
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2438]
 desc=4 doses of fishing potion.
@@ -25073,7 +25073,7 @@ name=Fishing potion(4)
 
 [obj_2439]
 certlink=obj_2438
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2440]
 desc=4 doses of super strength potion.
@@ -25091,7 +25091,7 @@ name=Super strength(4)
 
 [obj_2441]
 certlink=obj_2440
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2442]
 desc=4 doses of super defence potion.
@@ -25109,7 +25109,7 @@ name=Super defence(4)
 
 [obj_2443]
 certlink=obj_2442
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2444]
 desc=4 doses of ranging potion.
@@ -25127,7 +25127,7 @@ name=Ranging potion(4)
 
 [obj_2445]
 certlink=obj_2444
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2446]
 desc=4 doses of antipoison potion.
@@ -25145,7 +25145,7 @@ name=Antipoison(4)
 
 [obj_2447]
 certlink=obj_2446
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2448]
 desc=4 doses of super antipoison potion.
@@ -25163,7 +25163,7 @@ name=Superantipoison(4)
 
 [obj_2449]
 certlink=obj_2448
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2450]
 desc=4 doses of a potion of Zamorak.
@@ -25181,7 +25181,7 @@ name=Zamorak potion(4)
 
 [obj_2451]
 certlink=obj_2450
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2452]
 desc=4 doses of anti-firebreath potion.
@@ -25199,7 +25199,7 @@ name=Antifire potion(4)
 
 [obj_2453]
 certlink=obj_2452
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2454]
 desc=3 doses of anti-firebreath potion.
@@ -25217,7 +25217,7 @@ name=Antifire potion(3)
 
 [obj_2455]
 certlink=obj_2454
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2456]
 desc=2 doses of anti-firebreath potion.
@@ -25235,7 +25235,7 @@ name=Antifire potion(2)
 
 [obj_2457]
 certlink=obj_2456
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2458]
 desc=1 dose of anti-firebreath potion.
@@ -25253,7 +25253,7 @@ name=Antifire potion(1)
 
 [obj_2459]
 certlink=obj_2458
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2460]
 desc=A posy of flowers.
@@ -25271,7 +25271,7 @@ name=Flowers
 
 [obj_2461]
 certlink=obj_2460
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2462]
 desc=A posy of flowers.
@@ -25295,7 +25295,7 @@ name=Flowers
 
 [obj_2463]
 certlink=obj_2462
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2464]
 desc=A posy of flowers.
@@ -25319,7 +25319,7 @@ name=Flowers
 
 [obj_2465]
 certlink=obj_2464
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2466]
 desc=A posy of flowers.
@@ -25343,7 +25343,7 @@ name=Flowers
 
 [obj_2467]
 certlink=obj_2466
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2468]
 desc=A posy of flowers.
@@ -25367,7 +25367,7 @@ name=Flowers
 
 [obj_2469]
 certlink=obj_2468
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2470]
 desc=A posy of flowers.
@@ -25391,7 +25391,7 @@ name=Flowers
 
 [obj_2471]
 certlink=obj_2470
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2472]
 desc=A posy of flowers.
@@ -25415,7 +25415,7 @@ name=Flowers
 
 [obj_2473]
 certlink=obj_2472
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2474]
 desc=A posy of flowers.
@@ -25439,7 +25439,7 @@ name=Flowers
 
 [obj_2475]
 certlink=obj_2474
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2476]
 desc=A posy of flowers.
@@ -25463,15 +25463,15 @@ name=Flowers
 
 [obj_2477]
 certlink=obj_2476
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2478]
 certlink=obj_272
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2479]
 certlink=obj_273
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2480]
 
@@ -25488,7 +25488,7 @@ name=Lantadyme
 
 [obj_2482]
 certlink=obj_2481
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2483]
 desc=I need another ingredient to finish this Lantadyme potion.
@@ -25505,7 +25505,7 @@ name=Unfinished potion
 
 [obj_2484]
 certlink=obj_2483
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2485]
 iop1=Identify
@@ -25520,7 +25520,7 @@ name=Herb
 
 [obj_2486]
 certlink=obj_2485
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2487]
 cost=2500
@@ -25545,7 +25545,7 @@ name=Dragon vambraces
 
 [obj_2488]
 certlink=obj_2487
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2489]
 cost=2500
@@ -25570,7 +25570,7 @@ name=Dragon vambraces
 
 [obj_2490]
 certlink=obj_2489
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2491]
 cost=2500
@@ -25595,7 +25595,7 @@ name=Dragon vambraces
 
 [obj_2492]
 certlink=obj_2491
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2493]
 cost=3900
@@ -25618,7 +25618,7 @@ name=Dragonhide chaps
 
 [obj_2494]
 certlink=obj_2493
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2495]
 cost=3900
@@ -25641,7 +25641,7 @@ name=Dragonhide chaps
 
 [obj_2496]
 certlink=obj_2495
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2497]
 cost=3900
@@ -25664,7 +25664,7 @@ name=Dragonhide chaps
 
 [obj_2498]
 certlink=obj_2497
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2499]
 cost=7800
@@ -25688,7 +25688,7 @@ name=Dragonhide body
 
 [obj_2500]
 certlink=obj_2499
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2501]
 cost=7800
@@ -25712,7 +25712,7 @@ name=Dragonhide body
 
 [obj_2502]
 certlink=obj_2501
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2503]
 cost=7800
@@ -25736,7 +25736,7 @@ name=Dragonhide body
 
 [obj_2504]
 certlink=obj_2503
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2505]
 desc=It's a piece of prepared dragonhide.
@@ -25753,7 +25753,7 @@ name=Dragon leather
 
 [obj_2506]
 certlink=obj_2505
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2507]
 desc=It's a piece of prepared dragonhide.
@@ -25770,7 +25770,7 @@ name=Dragon leather
 
 [obj_2508]
 certlink=obj_2507
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2509]
 desc=It's a piece of prepared dragonhide.
@@ -25787,7 +25787,7 @@ name=Dragon leather
 
 [obj_2510]
 certlink=obj_2509
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2511]
 desc=A number of wooden logs.
@@ -25820,7 +25820,7 @@ name=Raw shrimps
 
 [obj_2515]
 certlink=obj_2514
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2516]
 desc=There is flour in this pot.
@@ -25835,7 +25835,7 @@ name=Pot of flour
 
 [obj_2517]
 certlink=obj_2516
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2518]
 model=model_2632
@@ -25854,7 +25854,7 @@ name=Rotten tomato
 
 [obj_2519]
 certlink=obj_2518
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2520]
 cost=100
@@ -25872,7 +25872,7 @@ name=Toy horsey
 
 [obj_2521]
 certlink=obj_2520
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2522]
 cost=100
@@ -25894,7 +25894,7 @@ name=Toy horsey
 
 [obj_2523]
 certlink=obj_2522
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2524]
 cost=100
@@ -25916,7 +25916,7 @@ name=Toy horsey
 
 [obj_2525]
 certlink=obj_2524
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2526]
 cost=100
@@ -25938,7 +25938,7 @@ name=Toy horsey
 
 [obj_2527]
 certlink=obj_2526
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2528]
 desc=Wonder what happens if I rub it...
@@ -25970,7 +25970,7 @@ name=Bones
 
 [obj_2531]
 certlink=obj_2530
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2532]
 desc=Arrows with iron heads and oil soaked cloth.
@@ -26233,7 +26233,7 @@ name=Ring of recoil
 
 [obj_2551]
 certlink=obj_2550
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2552]
 desc=An enchanted ring.
@@ -26254,7 +26254,7 @@ name=Ring of dueling(8)
 
 [obj_2553]
 certlink=obj_2552
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2554]
 desc=An enchanted ring.
@@ -26275,7 +26275,7 @@ name=Ring of dueling(7)
 
 [obj_2555]
 certlink=obj_2554
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2556]
 desc=An enchanted ring.
@@ -26296,7 +26296,7 @@ name=Ring of dueling(6)
 
 [obj_2557]
 certlink=obj_2556
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2558]
 desc=An enchanted ring.
@@ -26317,7 +26317,7 @@ name=Ring of dueling(5)
 
 [obj_2559]
 certlink=obj_2558
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2560]
 desc=An enchanted ring.
@@ -26338,7 +26338,7 @@ name=Ring of dueling(4)
 
 [obj_2561]
 certlink=obj_2560
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2562]
 desc=An enchanted ring.
@@ -26359,7 +26359,7 @@ name=Ring of dueling(3)
 
 [obj_2563]
 certlink=obj_2562
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2564]
 desc=An enchanted ring.
@@ -26380,7 +26380,7 @@ name=Ring of dueling(2)
 
 [obj_2565]
 certlink=obj_2564
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2566]
 desc=An enchanted ring.
@@ -26401,7 +26401,7 @@ name=Ring of dueling(1)
 
 [obj_2567]
 certlink=obj_2566
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2568]
 desc=An enchanted ring.
@@ -26421,7 +26421,7 @@ name=Ring of forging
 
 [obj_2569]
 certlink=obj_2568
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2570]
 desc=An enchanted ring.
@@ -26439,7 +26439,7 @@ name=Ring of life
 
 [obj_2571]
 certlink=obj_2570
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2572]
 desc=An enchanted ring.
@@ -26460,7 +26460,7 @@ name=Ring of wealth
 
 [obj_2573]
 certlink=obj_2572
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2574]
 desc=Used by navigators to find their position in RuneScape.
@@ -26523,7 +26523,7 @@ name=Ranger boots
 
 [obj_2578]
 certlink=obj_2577
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2579]
 desc=Slightly magical boots.
@@ -26544,7 +26544,7 @@ name=Wizard's boots
 
 [obj_2580]
 certlink=obj_2579
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2581]
 desc=Endorsed by Robin Hood.
@@ -26565,7 +26565,7 @@ name=Robin hood hat
 
 [obj_2582]
 certlink=obj_2581
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2583]
 desc=Black plate body with trim.
@@ -26589,7 +26589,7 @@ name=Black platebody (t)
 
 [obj_2584]
 certlink=obj_2583
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2585]
 desc=Black platelegs with trim.
@@ -26611,7 +26611,7 @@ name=Black platelegs (t)
 
 [obj_2586]
 certlink=obj_2585
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2587]
 desc=Black full helm with trim.
@@ -26635,7 +26635,7 @@ name=Black full helm (t)
 
 [obj_2588]
 certlink=obj_2587
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2589]
 desc=Black kiteshield with trim.
@@ -26659,7 +26659,7 @@ name=Black kiteshield (t)
 
 [obj_2590]
 certlink=obj_2589
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2591]
 desc=Black platebody with gold trim.
@@ -26683,7 +26683,7 @@ name=Black platebody (g)
 
 [obj_2592]
 certlink=obj_2591
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2593]
 desc=Black platelegs with gold trim.
@@ -26705,7 +26705,7 @@ name=Black platelegs (g)
 
 [obj_2594]
 certlink=obj_2593
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2595]
 desc=Black full helm with gold trim.
@@ -26729,7 +26729,7 @@ name=Black full helm (g)
 
 [obj_2596]
 certlink=obj_2595
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2597]
 desc=Black kiteshield with gold trim.
@@ -26753,7 +26753,7 @@ name=Black kiteshield (g)
 
 [obj_2598]
 certlink=obj_2597
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2599]
 desc=Adamant platebody with trim.
@@ -26777,7 +26777,7 @@ name=Adam platebody (t)
 
 [obj_2600]
 certlink=obj_2599
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2601]
 desc=Adamant platelegs with trim.
@@ -26799,7 +26799,7 @@ name=Adam platelegs (t)
 
 [obj_2602]
 certlink=obj_2601
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2603]
 desc=Adamant kiteshield with trim.
@@ -26823,7 +26823,7 @@ name=Adam kiteshield (t)
 
 [obj_2604]
 certlink=obj_2603
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2605]
 desc=Adamant full helm with trim.
@@ -26847,7 +26847,7 @@ name=Adam full helm (t)
 
 [obj_2606]
 certlink=obj_2605
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2607]
 desc=Adamant platebody with gold trim.
@@ -26871,7 +26871,7 @@ name=Adam platebody (g)
 
 [obj_2608]
 certlink=obj_2607
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2609]
 desc=Adamant platelegs with gold trim.
@@ -26893,7 +26893,7 @@ name=Adam platelegs (g)
 
 [obj_2610]
 certlink=obj_2609
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2611]
 desc=Adamant kiteshield with gold trim.
@@ -26917,7 +26917,7 @@ name=Adam kiteshield (g)
 
 [obj_2612]
 certlink=obj_2611
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2613]
 desc=Adamant full helm with gold trim.
@@ -26941,7 +26941,7 @@ name=Adam full helm (g)
 
 [obj_2614]
 certlink=obj_2613
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2615]
 desc=Rune plate body with gold trim.
@@ -26965,7 +26965,7 @@ name=Rune platebody (g)
 
 [obj_2616]
 certlink=obj_2615
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2617]
 desc=Rune platelegs with gold trim.
@@ -26987,7 +26987,7 @@ name=Rune platelegs (g)
 
 [obj_2618]
 certlink=obj_2617
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2619]
 desc=Rune full helm with gold trim.
@@ -27011,7 +27011,7 @@ name=Rune full helm (g)
 
 [obj_2620]
 certlink=obj_2619
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2621]
 desc=Rune kiteshield with gold trim.
@@ -27035,7 +27035,7 @@ name=Rune kiteshield (g)
 
 [obj_2622]
 certlink=obj_2621
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2623]
 desc=Rune platebody with trim.
@@ -27059,7 +27059,7 @@ name=Rune platebody (t)
 
 [obj_2624]
 certlink=obj_2623
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2625]
 desc=Rune platelegs with trim.
@@ -27081,7 +27081,7 @@ name=Rune platelegs (t)
 
 [obj_2626]
 certlink=obj_2625
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2627]
 desc=Rune full helm with trim.
@@ -27105,7 +27105,7 @@ name=Rune full helm (t)
 
 [obj_2628]
 certlink=obj_2627
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2629]
 desc=Rune kiteshield with trim.
@@ -27129,7 +27129,7 @@ name=Rune kiteshield (t)
 
 [obj_2630]
 certlink=obj_2629
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2631]
 desc=Your money or your life!
@@ -27149,7 +27149,7 @@ name=Highwayman mask
 
 [obj_2632]
 certlink=obj_2631
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2633]
 desc=Pouvez-vous parler francais?
@@ -27172,7 +27172,7 @@ name=Berret
 
 [obj_2634]
 certlink=obj_2633
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2635]
 desc=Pouvez-vous parler francais?
@@ -27195,7 +27195,7 @@ name=Berret
 
 [obj_2636]
 certlink=obj_2635
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2637]
 desc=Pouvez-vous parler francais?
@@ -27218,7 +27218,7 @@ name=Berret
 
 [obj_2638]
 certlink=obj_2637
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2639]
 desc=All for one and one for all!
@@ -27239,7 +27239,7 @@ name=Cavalier
 
 [obj_2640]
 certlink=obj_2639
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2641]
 desc=All for one and one for all!
@@ -27262,7 +27262,7 @@ name=Cavalier
 
 [obj_2642]
 certlink=obj_2641
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2643]
 desc=All for one and one for all!
@@ -27285,7 +27285,7 @@ name=Cavalier
 
 [obj_2644]
 certlink=obj_2643
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2645]
 desc=A minimilist's hat.
@@ -27309,7 +27309,7 @@ name=Headband
 
 [obj_2646]
 certlink=obj_2645
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2647]
 desc=A minimilist's hat.
@@ -27333,7 +27333,7 @@ name=Headband
 
 [obj_2648]
 certlink=obj_2647
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2649]
 desc=A minimilist's hat.
@@ -27357,7 +27357,7 @@ name=Headband
 
 [obj_2650]
 certlink=obj_2649
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2651]
 desc=Shiver me timbers!
@@ -27377,7 +27377,7 @@ name=Pirate's hat
 
 [obj_2652]
 certlink=obj_2651
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2653]
 desc=Rune platebody in the colours of Zamorak.
@@ -27403,7 +27403,7 @@ name=Zamorak platebody
 
 [obj_2654]
 certlink=obj_2653
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2655]
 desc=Rune platelegs in the colours of zamorak.
@@ -27425,7 +27425,7 @@ name=Zamorak platelegs
 
 [obj_2656]
 certlink=obj_2655
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2657]
 desc=Rune full helm in the colours of Zamorak.
@@ -27449,7 +27449,7 @@ name=Zamorak full helm
 
 [obj_2658]
 certlink=obj_2657
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2659]
 desc=Rune kiteshield in the colours of Zamorak.
@@ -27473,7 +27473,7 @@ name=Zamorak kiteshield
 
 [obj_2660]
 certlink=obj_2659
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2661]
 desc=Rune platebody in the colours of Saradomin.
@@ -27501,7 +27501,7 @@ name=Saradomin plate
 
 [obj_2662]
 certlink=obj_2661
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2663]
 desc=Rune platelegs in the colours of Saradomin.
@@ -27523,7 +27523,7 @@ name=Saradomin legs
 
 [obj_2664]
 certlink=obj_2663
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2665]
 desc=Rune full helm in the colours of Saradomin.
@@ -27547,7 +27547,7 @@ name=Saradomin full
 
 [obj_2666]
 certlink=obj_2665
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2667]
 desc=Rune kiteshield in the colours of Saradomin.
@@ -27571,7 +27571,7 @@ name=Saradomin kite
 
 [obj_2668]
 certlink=obj_2667
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2669]
 desc=Rune plate body in the colours of Guthix.
@@ -27597,7 +27597,7 @@ name=Guthix platebody
 
 [obj_2670]
 certlink=obj_2669
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2671]
 desc=Rune plate legs in the colours of Guthix.
@@ -27619,7 +27619,7 @@ name=Guthix platelegs
 
 [obj_2672]
 certlink=obj_2671
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2673]
 desc=A rune full face helmet in the colours of Guthix.
@@ -27643,7 +27643,7 @@ name=Guthix full helm
 
 [obj_2674]
 certlink=obj_2673
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2675]
 desc=Rune kiteshield in the colours of Guthix.
@@ -27667,7 +27667,7 @@ name=Guthix kiteshield
 
 [obj_2676]
 certlink=obj_2675
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2677]
 desc=A clue!
@@ -29866,7 +29866,7 @@ name=Wolf bones
 
 [obj_2860]
 certlink=obj_2859
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2861]
 desc=I can make an ogre arrow with these.
@@ -29904,7 +29904,7 @@ name=Achey tree logs
 
 [obj_2863]
 certlink=obj_2862
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2864]
 desc=A wooden arrow shaft.
@@ -30121,7 +30121,7 @@ name=Raw chompy
 
 [obj_2877]
 certlink=obj_2876
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2878]
 desc=It might look delicious to an ogre.
@@ -30139,7 +30139,7 @@ name=Cooked chompy
 
 [obj_2879]
 certlink=obj_2878
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2880]
 desc=It's really burnt.
@@ -30155,7 +30155,7 @@ name=Ruined chompy
 
 [obj_2881]
 certlink=obj_2880
-certtemplate=obj_799
+certtemplate=template_for_cert
 
 [obj_2882]
 desc=It has been deliciously seasoned to taste wonderful for ogres.
@@ -30190,4 +30190,4 @@ name=Chompy bird obj
 
 [obj_2885]
 certlink=obj_2884
-certtemplate=obj_799
+certtemplate=template_for_cert

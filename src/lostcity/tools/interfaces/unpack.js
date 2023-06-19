@@ -450,10 +450,10 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
                         str += 'eq';
                         break;
                     case 2:
-                        str += 'leq';
+                        str += 'lt';
                         break;
                     case 3:
-                        str += 'geq';
+                        str += 'gt';
                         break;
                     case 4:
                         str += 'neq';
