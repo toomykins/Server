@@ -24,6 +24,14 @@ It won't ever profit off your trademarks. Without this project, this version of 
 
 Java is required for 1:1 CRC matching during compression ([JagCompress](https://github.com/2004scape/JagCompress)). Maybe that can be rewritten in pure JS eventually.
 
+## Getting Started
+
+1. Clone the repo
+2. Install [environment dependencies](#developer-dependencies)
+3. Run `npm install` to install code dependencies
+4. Run `npm run cache:pack` to create the client cache. This may take a few minutes the first time
+5. Run `npm start` to start the server
+
 ## Cache Workflow Status
 
 These jagfiles have been unpacked, decoded, and can be recreated 1:1 (pre- and post- compression!): `config`, `models`, `sounds`, and `wordenc`.

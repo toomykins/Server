@@ -6,6 +6,9 @@
     "#jagex2/*": "./src/jagex2/*",
     "#lostcity/*": "./src/lostcity/*"
   },
+  "scripts": {
+    "cache:pack": "node src/lostcity/tools/pack/all.js"
+  },
   "dependencies": {
     "@jimp/png": "^0.22.8",
     "jimp": "^0.22.8"
