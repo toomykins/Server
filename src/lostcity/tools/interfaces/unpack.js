@@ -1,6 +1,13 @@
 import fs from 'fs';
 
 import Jagfile from '#jagex2/io/Jagfile.js';
+import { loadPack } from '../pack/NameMap.js';
+
+let pack = loadPack('data/pack/interface.pack');
+let objPack = loadPack('data/pack/obj.pack');
+let seqPack = loadPack('data/pack/seq.pack');
+let varpPack = loadPack('data/pack/varp.pack');
+let modelPack = loadPack('data/pack/model.pack');
 
 let jag = Jagfile.load('data/pack/client/interface');
 let dat = jag.read('data');
@@ -13,29 +20,28 @@ for (let i = 0; i < count; i++) {
 }
 
 // decode
-let parentId = -1;
+let rootLayer = -1;
 while (dat.available > 0) {
     let id = dat.g2();
     if (id === 65535) {
-        parentId = dat.g2();
+        rootLayer = dat.g2();
         id = dat.g2();
+        order += `${rootLayer}\n`;
     }
-
-    order += `${id}\n`;
 
     let com = {};
     com.id = id;
-    com.parentId = parentId;
+    com.rootLayer = rootLayer;
     com.type = dat.g1();
-    com.optionType = dat.g1();
-    com.contentType = dat.g2();
+    com.buttonType = dat.g1();
+    com.clientCode = dat.g2();
     com.width = dat.g2();
     com.height = dat.g2();
-    com.delegateHover = dat.g1();
-    if (com.delegateHover == 0) {
-        com.delegateHover = -1;
+    com.overLayer = dat.g1();
+    if (com.overLayer == 0) {
+        com.overLayer = -1;
     } else {
-        com.delegateHover = (com.delegateHover - 1 << 8) + dat.g1();
+        com.overLayer = (com.overLayer - 1 << 8) + dat.g1();
     }
 
     let comparatorCount = dat.g1();
@@ -64,7 +70,7 @@ while (dat.available > 0) {
     }
 
     if (com.type == 0) {
-        com.scrollableHeight = dat.g2();
+        com.scroll = dat.g2();
         com.hide = dat.gbool();
 
         let childCount = dat.g1();
@@ -88,11 +94,11 @@ while (dat.available > 0) {
         com.inventorySlotObjId = [];
         com.inventorySlotObjCount = [];
 
-        com.inventoryDraggable = dat.gbool();
-        com.inventoryInteractable = dat.gbool();
-        com.inventoryUsable = dat.gbool();
-        com.inventoryMarginX = dat.g1();
-        com.inventoryMarginY = dat.g1();
+        com.draggable = dat.gbool();
+        com.interactable = dat.gbool();
+        com.usable = dat.gbool();
+        com.marginX = dat.g1();
+        com.marginY = dat.g1();
 
         com.inventorySlotOffsetX = [];
         com.inventorySlotOffsetY = [];
@@ -119,7 +125,7 @@ while (dat.available > 0) {
     if (com.type == 4 || com.type == 1) {
         com.center = dat.gbool();
         com.font = dat.g1();
-        com.shadow = dat.gbool();
+        com.shadowed = dat.gbool();
     }
 
     if (com.type == 4) {
@@ -128,17 +134,17 @@ while (dat.available > 0) {
     }
 
     if (com.type == 1 || com.type == 3 || com.type == 4) {
-        com.color = dat.g4();
+        com.colour = dat.g4();
     }
 
     if (com.type == 3 || com.type == 4) {
-        com.activeColor = dat.g4();
-        com.hoverColor = dat.g4();
+        com.activeColour = dat.g4();
+        com.hoverColour = dat.g4();
     }
 
     if (com.type == 5) {
-        com.image = dat.gjstr();
-        com.activeImage = dat.gjstr();
+        com.graphic = dat.gjstr();
+        com.activeGraphic = dat.gjstr();
     }
 
     if (com.type == 6) {
@@ -152,23 +158,23 @@ while (dat.available > 0) {
             com.activeModel = (com.activeModel - 1 << 8) + dat.g1();
         }
 
-        com.seqId = dat.g1();
-        if (com.seqId == 0) {
-            com.seqId = -1;
+        com.anim = dat.g1();
+        if (com.anim == 0) {
+            com.anim = -1;
         } else {
-            com.seqId = (com.seqId - 1 << 8) + dat.g1();
+            com.anim = (com.anim - 1 << 8) + dat.g1();
         }
 
-        com.activeSeqId = dat.g1();
-        if (com.activeSeqId == 0) {
-            com.activeSeqId = -1;
+        com.activeAnim = dat.g1();
+        if (com.activeAnim == 0) {
+            com.activeAnim = -1;
         } else {
-            com.activeSeqId = (com.activeSeqId - 1 << 8) + dat.g1();
+            com.activeAnim = (com.activeAnim - 1 << 8) + dat.g1();
         }
 
-        com.modelZoom = dat.g2();
-        com.modelPitch = dat.g2();
-        com.modelYaw = dat.g2();
+        com.zoom = dat.g2();
+        com.xan = dat.g2();
+        com.yan = dat.g2();
     }
 
     if (com.type == 7) {
@@ -177,11 +183,11 @@ while (dat.available > 0) {
 
         com.center = dat.gbool();
         com.font = dat.g1();
-        com.shadow = dat.gbool();
-        com.color = dat.g4();
-        com.inventoryMarginX = dat.g2s();
-        com.inventoryMarginY = dat.g2s();
-        com.inventoryInteractable = dat.gbool();
+        com.shadowed = dat.gbool();
+        com.colour = dat.g4();
+        com.marginX = dat.g2s();
+        com.marginY = dat.g2s();
+        com.interactable = dat.gbool();
 
         com.inventoryOptions = [];
         for (let i = 0; i < 5; i++) {
@@ -189,28 +195,29 @@ while (dat.available > 0) {
         }
     }
 
-    if (com.optionType == 2 || com.type == 2) {
+    if (com.buttonType == 2 || com.type == 2) {
         com.spellAction = dat.gjstr();
         com.spellName = dat.gjstr();
         com.spellFlags = dat.g2();
     }
 
-    if (com.optionType == 1 || com.optionType == 4 || com.optionType == 5 || com.optionType == 6) {
+    if (com.buttonType == 1 || com.buttonType == 4 || com.buttonType == 5 || com.buttonType == 6) {
         com.option = dat.gjstr();
     }
 
     interfaces[id] = com;
 }
 
-fs.writeFileSync('data/pack/inter.order', order);
+fs.writeFileSync('data/pack/interface.order', order);
 
-let pack = [];
 let packChildren = {};
 
 // generate new names first
 function generateNames(com, rootIfName) {
-    if (com.id !== com.parentId) {
-        pack[com.id] = `${rootIfName}:com_${packChildren[com.parentId]++}`;
+    if (com.id !== com.rootLayer) {
+        if (!pack[com.id]) {
+            pack[com.id] = `${rootIfName}:com_${packChildren[com.rootLayer]++}`;
+        }
     }
 
     if (com.childId) {
@@ -229,13 +236,16 @@ function generateNames(com, rootIfName) {
 let ifId = 0;
 for (let i = 0; i < interfaces.length; i++) {
     let com = interfaces[i];
-    if (!com || com.id !== com.parentId) {
+    if (!com || com.id !== com.rootLayer) {
         // only want to iterate over root layers
         continue;
     }
 
     let name = `inter_${ifId++}`;
-    pack[com.id] = name;
+    if (!pack[com.id]) {
+        pack[com.id] = name;
+    }
+
     packChildren[com.id] = 0;
     generateNames(com, name);
 }
@@ -248,7 +258,7 @@ for (let i = 0; i < pack.length; i++) {
 
     packStr += `${i}=${pack[i]}\n`;
 }
-fs.writeFileSync('data/pack/inter.pack', packStr);
+fs.writeFileSync('data/pack/interface.pack', packStr);
 
 function statToName(stat) {
     switch (stat) {
@@ -299,7 +309,7 @@ function statToName(stat) {
 function convert(com, x = 0, y = 0, lastCom = -1) {
     let str = '';
 
-    if (com.id === com.parentId) {
+    if (com.id === com.rootLayer) {
         for (let i = 0; i < com.childId.length; i++) {
             if (i > 0) {
                 str += '\n';
@@ -347,7 +357,7 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
     str += `x=${x}\n`;
     str += `y=${y}\n`;
 
-    switch (com.optionType) {
+    switch (com.buttonType) {
         case 1:
             str += `buttontype=normal\n`;
             break;
@@ -368,8 +378,8 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
             break;
     }
 
-    if (com.contentType) {
-        str += `clientcode=${com.contentType}\n`;
+    if (com.clientCode) {
+        str += `clientcode=${com.clientCode}\n`;
     }
 
     if (com.width) {
@@ -380,8 +390,8 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
         str += `height=${com.height}\n`;
     }
 
-    if (com.delegateHover !== -1) {
-        str += `overlayer=${pack[com.delegateHover].split(':')[1]}\n`;
+    if (com.overLayer !== -1) {
+        str += `overlayer=${pack[com.overLayer].split(':')[1]}\n`;
     }
 
     if (com.scripts) {
@@ -406,10 +416,10 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
                         str += `stat_xp,${statToName(com.scripts[i][++j])}`;
                         break;
                     case 4:
-                        str += `inv_count,${pack[com.scripts[i][++j]]},obj_${com.scripts[i][++j]}`;
+                        str += `inv_count,${pack[com.scripts[i][++j]]},${objPack[com.scripts[i][++j]]}`;
                         break;
                     case 5:
-                        str += `varp_${com.scripts[i][++j]}`;
+                        str += `testvar,${varpPack[com.scripts[i][++j]]}`;
                         break;
                     case 6:
                         str += `stat_xp_remaining,${statToName(com.scripts[i][++j])}`;
@@ -424,7 +434,7 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
                         str += `op9`;
                         break;
                     case 10:
-                        str += `inv_contains,${pack[com.scripts[i][++j]]},obj_${com.scripts[i][++j]}`;
+                        str += `inv_contains,${pack[com.scripts[i][++j]]},${objPack[com.scripts[i][++j]]}`;
                         break;
                     case 11:
                         str += `runenergy`;
@@ -433,7 +443,7 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
                         str += `runweight`;
                         break;
                     case 13:
-                        str += `bool,varp_${com.scripts[i][++j]},${com.scripts[i][++j]}`;
+                        str += `testbit,${varpPack[com.scripts[i][++j]]},${com.scripts[i][++j]}`;
                         break;
                     default:
                         str += `${com.scripts[i][j]}`;
@@ -466,8 +476,8 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
     }
 
     if (com.type === 0) {
-        if (com.scrollableHeight) {
-            str += `scroll=${com.scrollableHeight}\n`;
+        if (com.scroll) {
+            str += `scroll=${com.scroll}\n`;
         }
 
         if (com.hide) {
@@ -476,20 +486,20 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
     }
 
     if (com.type === 2) {
-        if (com.inventoryDraggable) {
+        if (com.draggable) {
             str += 'draggable=yes\n';
         }
 
-        if (com.inventoryInteractable) {
+        if (com.interactable) {
             str += 'interactable=yes\n';
         }
 
-        if (com.inventoryUsable) {
+        if (com.usable) {
             str += 'usable=yes\n';
         }
 
-        if (com.inventoryMarginX || com.inventoryMarginY) {
-            str += `margin=${com.inventoryMarginX},${com.inventoryMarginY}\n`;
+        if (com.marginX || com.marginY) {
+            str += `margin=${com.marginX},${com.marginY}\n`;
         }
 
         if (com.inventoryOptions) {
@@ -527,7 +537,7 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
                 break;
         }
 
-        if (com.shadow) {
+        if (com.shadowed) {
             str += 'shadowed=yes\n';
         }
     }
@@ -543,58 +553,58 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
     }
 
     if (com.type == 1 || com.type == 3 || com.type == 4) {
-        if (com.color) {
-            str += `colour=0x${com.color.toString(16).toUpperCase().padStart(6, '0')}\n`;
+        if (com.colour) {
+            str += `colour=0x${com.colour.toString(16).toUpperCase().padStart(6, '0')}\n`;
         }
     }
 
     if (com.type == 3 || com.type == 4) {
-        if (com.activeColor) {
-            str += `activecolour=0x${com.activeColor.toString(16).toUpperCase().padStart(6, '0')}\n`;
+        if (com.activeColour) {
+            str += `activecolour=0x${com.activeColour.toString(16).toUpperCase().padStart(6, '0')}\n`;
         }
 
-        if (com.hoverColor) {
-            str += `overcolour=0x${com.hoverColor.toString(16).toUpperCase().padStart(6, '0')}\n`;
+        if (com.hoverColour) {
+            str += `overcolour=0x${com.hoverColour.toString(16).toUpperCase().padStart(6, '0')}\n`;
         }
     }
 
     if (com.type === 5) {
-        if (com.image) {
-            str += `graphic=${com.image}\n`;
+        if (com.graphic) {
+            str += `graphic=${com.graphic}\n`;
         }
 
-        if (com.activeImage) {
-            str += `activegraphic=${com.activeImage}\n`;
+        if (com.activeGraphic) {
+            str += `activegraphic=${com.activeGraphic}\n`;
         }
     }
 
     if (com.type === 6) {
         if (com.model) {
-            str += `model=model_${com.model}\n`;
+            str += `model=${modelPack[com.model]}\n`;
         }
 
         if (com.activeModel) {
-            str += `activemodel=model_${com.activeModel}\n`;
+            str += `activemodel=${modelPack[com.activeModel]}\n`;
         }
 
-        if (com.seqId !== -1) {
-            str += `anim=seq_${com.seqId}\n`;
+        if (com.anim !== -1) {
+            str += `anim=${seqPack[com.anim]}\n`;
         }
 
-        if (com.activeSeqId !== -1) {
-            str += `activeanim=seq_${com.activeSeqId}\n`;
+        if (com.activeAnim !== -1) {
+            str += `activeanim=${seqPack[com.activeAnim]}\n`;
         }
 
-        if (com.modelZoom) {
-            str += `zoom=${com.modelZoom}\n`;
+        if (com.zoom) {
+            str += `zoom=${com.zoom}\n`;
         }
 
-        if (com.modelPitch) {
-            str += `xan=${com.modelPitch}\n`;
+        if (com.xan) {
+            str += `xan=${com.xan}\n`;
         }
 
-        if (com.modelYaw) {
-            str += `yan=${com.modelYaw}\n`;
+        if (com.yan) {
+            str += `yan=${com.yan}\n`;
         }
     }
 
@@ -618,14 +628,14 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
                 break;
         }
 
-        if (com.shadow) {
+        if (com.shadowed) {
             str += 'shadowed=yes\n';
         }
 
-        str += `colour=0x${com.color.toString(16).toUpperCase().padStart(6, '0')}\n`;
+        str += `colour=0x${com.colour.toString(16).toUpperCase().padStart(6, '0')}\n`;
     }
 
-    if (com.optionType == 2 || com.type == 2) {
+    if (com.buttonType == 2 || com.type == 2) {
         if (com.spellAction) {
             str += `actionverb=${com.spellAction}\n`;
         }
@@ -656,7 +666,7 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
         }
     }
 
-    if (com.optionType == 1 || com.optionType == 4 || com.optionType == 5 || com.optionType == 6) {
+    if (com.buttonType == 1 || com.buttonType == 4 || com.buttonType == 5 || com.buttonType == 6) {
         if (com.option) {
             str += `option=${com.option}\n`;
         }
@@ -672,9 +682,10 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
     return str;
 }
 
+fs.mkdirSync('data/src/scripts/_unpack/if', { recursive: true });
 for (let i = 0; i < interfaces.length; i++) {
     let com = interfaces[i];
-    if (!com || com.id !== com.parentId) {
+    if (!com || com.id !== com.rootLayer) {
         // only want to iterate over root layers
         continue;
     }

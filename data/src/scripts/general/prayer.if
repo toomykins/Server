@@ -5,7 +5,7 @@ y=6
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_83
+script1op1=testvar,varp_83
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -16,7 +16,7 @@ y=6
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_84
+script1op1=testvar,varp_84
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -27,7 +27,7 @@ y=6
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_85
+script1op1=testvar,varp_85
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -38,7 +38,7 @@ y=42
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_86
+script1op1=testvar,varp_86
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -49,7 +49,7 @@ y=42
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_87
+script1op1=testvar,varp_87
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -60,7 +60,7 @@ y=42
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_88
+script1op1=testvar,varp_88
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -71,7 +71,7 @@ y=78
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_89
+script1op1=testvar,varp_89
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -82,7 +82,7 @@ y=78
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_90
+script1op1=testvar,varp_90
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -93,7 +93,7 @@ y=78
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_91
+script1op1=testvar,varp_91
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -104,7 +104,7 @@ y=114
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_92
+script1op1=testvar,varp_92
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -115,7 +115,7 @@ y=114
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_93
+script1op1=testvar,varp_93
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -126,7 +126,7 @@ y=114
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_94
+script1op1=testvar,varp_94
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -137,7 +137,7 @@ y=150
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_95
+script1op1=testvar,varp_95
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -148,7 +148,7 @@ y=150
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_96
+script1op1=testvar,varp_96
 script1=eq,1
 activegraphic=prayerglow,0
 
@@ -159,7 +159,7 @@ y=150
 buttontype=toggle
 width=34
 height=34
-script1op1=varp_97
+script1op1=testvar,varp_97
 script1=eq,1
 activegraphic=prayerglow,0
 

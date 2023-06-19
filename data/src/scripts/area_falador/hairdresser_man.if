@@ -1020,7 +1020,7 @@ x=85
 y=115
 width=25
 height=25
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,1
 activegraphic=headicons,1
 
@@ -1030,7 +1030,7 @@ x=170
 y=115
 width=25
 height=25
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,2
 activegraphic=headicons,1
 
@@ -1040,7 +1040,7 @@ x=260
 y=115
 width=25
 height=25
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,3
 activegraphic=headicons,1
 
@@ -1050,7 +1050,7 @@ x=345
 y=115
 width=25
 height=25
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,4
 activegraphic=headicons,1
 
@@ -1060,7 +1060,7 @@ x=430
 y=115
 width=25
 height=25
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,5
 activegraphic=headicons,1
 
@@ -1070,7 +1070,7 @@ x=170
 y=195
 width=25
 height=25
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,6
 activegraphic=headicons,1
 
@@ -1080,7 +1080,7 @@ x=260
 y=195
 width=25
 height=25
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,7
 activegraphic=headicons,1
 
@@ -1090,7 +1090,7 @@ x=345
 y=195
 width=25
 height=25
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,8
 activegraphic=headicons,1
 
@@ -1101,7 +1101,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,1
 activegraphic=headicons,1
 
@@ -1112,7 +1112,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,2
 activegraphic=headicons,1
 
@@ -1123,7 +1123,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,3
 activegraphic=headicons,1
 
@@ -1134,7 +1134,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,4
 activegraphic=headicons,1
 
@@ -1145,7 +1145,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,5
 activegraphic=headicons,1
 
@@ -1156,7 +1156,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,6
 activegraphic=headicons,1
 
@@ -1167,7 +1167,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,7
 activegraphic=headicons,1
 
@@ -1178,7 +1178,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,8
 activegraphic=headicons,1
 
@@ -1189,7 +1189,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,9
 activegraphic=headicons,1
 
@@ -1200,7 +1200,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,10
 activegraphic=headicons,1
 
@@ -1211,7 +1211,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,11
 activegraphic=headicons,1
 
@@ -1222,7 +1222,7 @@ y=260
 buttontype=select
 width=20
 height=20
-script1op1=varp_262
+script1op1=testvar,varp_262
 script1=eq,12
 activegraphic=headicons,1
 
@@ -1233,7 +1233,7 @@ y=83
 buttontype=select
 width=50
 height=50
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,1
 
 [com_141]
@@ -1243,7 +1243,7 @@ y=83
 buttontype=select
 width=50
 height=50
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,2
 
 [com_142]
@@ -1253,7 +1253,7 @@ y=82
 buttontype=select
 width=50
 height=50
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,3
 
 [com_143]
@@ -1263,7 +1263,7 @@ y=83
 buttontype=select
 width=50
 height=50
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,4
 
 [com_144]
@@ -1273,7 +1273,7 @@ y=84
 buttontype=select
 width=50
 height=50
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,5
 
 [com_145]
@@ -1283,7 +1283,7 @@ y=163
 buttontype=select
 width=50
 height=50
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,6
 
 [com_146]
@@ -1293,7 +1293,7 @@ y=162
 buttontype=select
 width=50
 height=50
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,7
 
 [com_147]
@@ -1303,5 +1303,5 @@ y=163
 buttontype=select
 width=50
 height=50
-script1op1=varp_261
+script1op1=testvar,varp_261
 script1=eq,8

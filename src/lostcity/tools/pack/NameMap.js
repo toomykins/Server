@@ -1,10 +1,18 @@
 import fs from 'fs';
 
 export function loadOrder(path) {
+    if (!fs.existsSync(path)) {
+        return [];
+    }
+
     return fs.readFileSync(path, 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length);
 }
 
 export function loadPack(path) {
+    if (!fs.existsSync(path)) {
+        return [];
+    }
+
     return fs.readFileSync(path, 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length).reduce((acc, x) => {
         let [id, name] = x.split('=');
         acc[id] = name;
