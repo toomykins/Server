@@ -494,7 +494,9 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
 
         if (com.inventoryOptions) {
             for (let i = 0; i < com.inventoryOptions.length; i++) {
-                str += `option${i + 1}=${com.inventoryOptions[i]}\n`;
+                if (com.inventoryOptions[i]) {
+                    str += `option${i + 1}=${com.inventoryOptions[i]}\n`;
+                }
             }
         }
     }

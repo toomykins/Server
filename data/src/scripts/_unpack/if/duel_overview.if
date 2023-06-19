@@ -803,11 +803,6 @@ y=16
 width=5
 height=6
 margin=10,1
-option1=
-option2=
-option3=
-option4=
-option5=
 
 [com_99]
 layer=com_97
@@ -1436,8 +1431,3 @@ x=58
 y=58
 width=4
 height=3
-option1=
-option2=
-option3=
-option4=
-option5=

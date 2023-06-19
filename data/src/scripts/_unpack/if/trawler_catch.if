@@ -607,9 +607,6 @@ height=5
 margin=15,15
 option1=Withdraw 1
 option2=Withdraw All
-option3=
-option4=
-option5=
 
 [com_76]
 type=text

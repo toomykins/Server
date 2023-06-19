@@ -1172,8 +1172,6 @@ margin=66,18
 option1=Make
 option2=Make 5
 option3=Make 10
-option4=
-option5=
 
 [com_126]
 type=inv
@@ -1185,8 +1183,6 @@ margin=66,18
 option1=Make
 option2=Make 5
 option3=Make 10
-option4=
-option5=
 
 [com_127]
 type=inv
@@ -1198,8 +1194,6 @@ margin=66,18
 option1=Make
 option2=Make 5
 option3=Make 10
-option4=
-option5=
 
 [com_128]
 type=inv
@@ -1211,8 +1205,6 @@ margin=66,18
 option1=Make
 option2=Make 5
 option3=Make 10
-option4=
-option5=
 
 [com_129]
 type=inv
@@ -1224,8 +1216,6 @@ margin=66,18
 option1=Make set
 option2=Make 5 sets
 option3=Make 10 sets
-option4=
-option5=
 
 [com_130]
 type=text

@@ -592,8 +592,6 @@ margin=15,0
 option1=Make
 option2=Make 5
 option3=Make 10
-option4=
-option5=
 
 [com_72]
 layer=com_70
@@ -700,8 +698,6 @@ margin=15,0
 option1=Make
 option2=Make 5
 option3=Make 10
-option4=
-option5=
 
 [com_83]
 layer=com_81
@@ -808,8 +804,6 @@ margin=15,0
 option1=Make
 option2=Make 5
 option3=Make 10
-option4=
-option5=
 
 [com_94]
 layer=com_92

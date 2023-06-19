@@ -403,7 +403,7 @@ width=161
 height=56
 colour=0x2E2B23
 
-[com_43]
+[wear]
 type=inv
 x=24
 y=44
@@ -411,7 +411,3 @@ width=3
 height=5
 margin=24,8
 option1=Remove
-option2=
-option3=
-option4=
-option5=
