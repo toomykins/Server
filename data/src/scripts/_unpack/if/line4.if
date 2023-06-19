@@ -1,11 +1,12 @@
 [com_0]
 type=model
-x=27
-y=20
+x=34
+y=60
 width=32
 height=32
-zoom=1360
-xan=492
+zoom=400
+xan=40
+yan=1882
 
 [com_1]
 type=text
@@ -54,12 +55,3 @@ width=350
 height=17
 center=yes
 text=Line1
-
-[com_6]
-type=model
-x=50
-y=50
-width=32
-height=32
-zoom=620
-xan=192
