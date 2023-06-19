@@ -102,13 +102,13 @@ while (dat.available > 0) {
 
         com.inventorySlotOffsetX = [];
         com.inventorySlotOffsetY = [];
-        com.inventorySlotImage = [];
+        com.inventorySlotGraphic = [];
 
         for (let i = 0; i < 20; i++) {
             if (dat.gbool()) {
                 com.inventorySlotOffsetX[i] = dat.g2s();
                 com.inventorySlotOffsetY[i] = dat.g2s();
-                com.inventorySlotImage[i] = dat.gjstr();
+                com.inventorySlotGraphic[i] = dat.gjstr();
             }
         }
 
@@ -500,6 +500,16 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
 
         if (com.marginX || com.marginY) {
             str += `margin=${com.marginX},${com.marginY}\n`;
+        }
+
+        for (let i = 0; i < 20; i++) {
+            if (com.inventorySlotGraphic[i]) {
+                if (com.inventorySlotOffsetX[i] || com.inventorySlotOffsetY[i]) {
+                    str += `slot${i + 1}=${com.inventorySlotGraphic[i]}:${com.inventorySlotOffsetX[i]},${com.inventorySlotOffsetY[i]}\n`;
+                } else {
+                    str += `slot${i + 1}=${com.inventorySlotGraphic[i]}\n`;
+                }
+            }
         }
 
         if (com.inventoryOptions) {
