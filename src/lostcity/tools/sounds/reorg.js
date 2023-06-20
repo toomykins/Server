@@ -450,3 +450,5 @@ fs.readdirSync('data/src/sounds').forEach(f => {
         fs.renameSync(`data/src/sounds/${f}`, `data/src/sounds/${match}.synth`);
     }
 });
+
+fs.writeFileSync('data/pack/sound.pack', pack.map((value, index) => `${index}=${value}`).join('\n'));
