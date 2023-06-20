@@ -142,6 +142,8 @@ for (let i = 0; i < locs.length; i++) {
             newModelName[id] = 'model_' + lastLoc;
         }
 
+        // TODO: this messes up when models are not uniquely used for a single shape (they should be!)
+        // TODO: also look into model_loc_115 using same name for 2226/2227/2228
         let target = newModelName[id];
         switch (type) {
             case 'wall_straight':

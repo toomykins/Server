@@ -986,6 +986,7 @@ blockrange=no
 ambient=60
 op1=Burst
 model=model_loc_115
+forceshape=wall_diagonalcorner
 name=Party Balloon
 desc=Aren't they pretty?
 
@@ -996,6 +997,7 @@ blockrange=no
 ambient=60
 op1=Burst
 model=model_loc_115
+forceshape=wall_l
 name=Party Balloon
 desc=Paaaarty!
 
@@ -11450,6 +11452,7 @@ desc=A wooden structure used in the process of building.
 recol1s=23
 recol1d=16
 model=model_loc_1613
+forceshape=wall_straight
 name=Timber
 desc=This timber is broken
 
@@ -11457,6 +11460,7 @@ desc=This timber is broken
 recol1s=23
 recol1d=16
 model=model_loc_1614
+forceshape=wall_straight
 name=Timber
 desc=This timber is broken
 
@@ -11542,7 +11546,7 @@ sharelight=yes
 hillskew=yes
 active=no
 blockrange=no
-model=model_loc_1626
+model=model_loc_1614
 
 [loc_1627]
 sharelight=yes
@@ -11555,7 +11559,7 @@ sharelight=yes
 hillskew=yes
 active=no
 blockrange=no
-model=model_loc_1626
+model=model_loc_1614
 
 [loc_1629]
 blockwalk=no
@@ -11970,7 +11974,7 @@ sharelight=yes
 active=no
 recol1s=23
 recol1d=11
-model=model_loc_1626
+model=model_loc_1614
 
 [loc_1691]
 sharelight=yes
@@ -11986,7 +11990,7 @@ mirror=yes
 active=no
 recol1s=23
 recol1d=11
-model=model_loc_1626
+model=model_loc_1614
 
 [loc_1693]
 sharelight=yes
@@ -12000,7 +12004,7 @@ sharelight=yes
 active=no
 recol1s=23
 recol1d=48
-model=model_loc_1626
+model=model_loc_1614
 
 [loc_1695]
 sharelight=yes
@@ -12899,6 +12903,7 @@ name=woodfloor_crumbly_r
 [loc_1820]
 active=no
 model=model_loc_33
+forceshape=walldecor_straight_nooffset
 
 [loc_1821]
 ambient=50
@@ -13117,6 +13122,7 @@ sharelight=yes
 hillskew=yes
 blockrange=no
 model=model_loc_830
+forceshape=wall_straight
 name=Timber defence
 desc=These obviously mean keep out!
 
@@ -16097,6 +16103,7 @@ width=2
 op1=Open
 op2=Search
 model=model_loc_2240
+forceshape=wall_diagonalcorner
 name=Tomb exit
 desc=Perhaps you should give them a push.
 
@@ -16106,6 +16113,7 @@ mirror=yes
 op1=Open
 op2=Search
 model=model_loc_2240
+forceshape=wall_diagonalcorner
 name=Tomb exit
 desc=Perhaps you should give them a push.
 
@@ -19484,6 +19492,7 @@ op2=Investigate
 recol1s=9152
 recol1d=82
 model=model_loc_706
+forceshape=walldecor_straight_nooffset
 name=Spiders' nest
 desc=It looks like a spiders nest to me.
 
@@ -19571,6 +19580,7 @@ recol1d=45
 recol2s=24
 recol2d=4762
 model=model_loc_1843
+forceshape=walldecor_straight_nooffset
 name=Smashed window
 desc=looks like the killer smashed this to leave the mansion.
 
@@ -20409,6 +20419,7 @@ desc=An ogre is selling cakes here.
 op1=Pull
 active=yes
 model=model_loc_34
+forceshape=walldecor_straight_nooffset
 name=Lever
 desc=A lever for activating something.
 
@@ -20416,6 +20427,7 @@ desc=A lever for activating something.
 op1=Pull
 active=yes
 model=model_loc_33
+forceshape=walldecor_straight_nooffset
 name=Lever
 desc=A lever for activating something.
 
@@ -20984,6 +20996,7 @@ name=Cupboard
 active=yes
 op1=Examine
 model=model_loc_1874
+forceshape=walldecor_straight_nooffset
 name=Mouse hole
 desc=The mouse equivalent of a door.
 
@@ -22213,6 +22226,7 @@ sharelight=yes
 hillskew=yes
 blockrange=no
 model=model_loc_831
+forceshape=wall_straight
 name=Timber defence
 desc=These obviously mean keep out!
 
@@ -22581,6 +22595,7 @@ sharelight=yes
 hillskew=yes
 blockrange=no
 model=model_loc_832
+forceshape=wall_straight
 name=Timber defence
 desc=These obviously mean keep out!
 
@@ -24179,6 +24194,7 @@ op1=Search
 recol1s=53
 recol1d=6798
 model=model_loc_3230
+forceshape=grounddecor
 name=Flat rock
 desc=Looks suspicious.
 
@@ -24607,6 +24623,7 @@ mapscene=43
 recol1s=6689
 recol1d=7952
 model=model_loc_3278
+forceshape=wall_diagonalcorner
 
 [loc_3280]
 active=no
@@ -24656,6 +24673,7 @@ blockrange=no
 recol1s=6689
 recol1d=7952
 model=model_loc_3281
+forceshape=wall_diagonalcorner
 
 [loc_3286]
 sharelight=yes
@@ -24664,6 +24682,7 @@ blockrange=no
 recol1s=6689
 recol1d=7952
 model=model_loc_3283
+forceshape=wall_diagonalcorner
 
 [loc_3287]
 sharelight=yes
@@ -24672,6 +24691,7 @@ blockrange=no
 recol1s=6689
 recol1d=7952
 model=model_loc_3283
+forceshape=wall_l
 
 [loc_3288]
 sharelight=yes
@@ -24680,6 +24700,7 @@ blockrange=no
 recol1s=6689
 recol1d=7952
 model=model_loc_3283
+forceshape=wall_squarecorner
 
 [loc_3289]
 forcedecor=yes
@@ -24693,14 +24714,17 @@ model=model_loc_3289
 [loc_3290]
 active=no
 model=model_loc_3290
+forceshape=wall_straight
 
 [loc_3291]
 active=no
-model=model_loc_3291
+model=model_loc_3290
+forceshape=wall_diagonalcorner
 
 [loc_3292]
 active=no
-model=model_loc_3292
+model=model_loc_3290
+forceshape=wall_l
 
 [loc_3293]
 forcedecor=yes

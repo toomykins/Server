@@ -5,7 +5,7 @@ export function loadOrder(path) {
         return [];
     }
 
-    return fs.readFileSync(path, 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length);
+    return fs.readFileSync(path, 'ascii').replace(/\r/g, '').split('\n').filter(x => x);
 }
 
 export function loadPack(path) {
@@ -13,9 +13,21 @@ export function loadPack(path) {
         return [];
     }
 
-    return fs.readFileSync(path, 'ascii').replace(/\r/g, '').split('\n').filter(x => x.length).reduce((acc, x) => {
+    return fs.readFileSync(path, 'ascii').replace(/\r/g, '').split('\n').filter(x => x).reduce((acc, x) => {
         let [id, name] = x.split('=');
         acc[id] = name;
         return acc;
     }, []);
+}
+
+export function loadDir(path, extension, callback) {
+    let files = fs.readdirSync(path);
+
+    for (let file of files) {
+        if (fs.statSync(`${path}/${file}`).isDirectory()) {
+            loadDir(`${path}/${file}`, extension, callback);
+        } else if (file.endsWith(extension)) {
+            callback(fs.readFileSync(`${path}/${file}`, 'ascii').replace(/\r/g, '').split('\n').filter(x => x));
+        }
+    }
 }
