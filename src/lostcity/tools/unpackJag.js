@@ -12,8 +12,6 @@ if (args.length < 1) {
 
 let jagName = path.basename(args[0]);
 
-fs.mkdirSync(`dump/unpack/${jagName}`, { recursive: true });
-
 let jag = Jagfile.load(args[0]);
 for (let i = 0; i < jag.fileCount; i++) {
     let name = jag.fileName[i];

@@ -584,7 +584,7 @@ for (let id = 0; id < count; id++) {
             if (obj === 0) {
                 obj = 'hide';
             } else {
-                obj = `obj_${obj}`;
+                obj = `obj_${obj - 512}`;
             }
 
             append('all.seq', `mainhand=${obj}`);
@@ -593,7 +593,7 @@ for (let id = 0; id < count; id++) {
             if (obj === 0) {
                 obj = 'hide';
             } else {
-                obj = `obj_${obj}`;
+                obj = `obj_${obj - 512}`;
             }
 
             append('all.seq', `offhand=${obj}`);
