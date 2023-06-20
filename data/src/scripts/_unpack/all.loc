@@ -112,7 +112,7 @@ desc=A pile of rocks is blocking my path.
 
 [loc_13]
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 op1=Climb-over
@@ -668,7 +668,7 @@ model=model_loc_83
 
 [loc_85]
 blockrange=no
-shadow=yes
+shadow=no
 mapscene=22
 model=model_loc_83
 
@@ -3513,7 +3513,7 @@ desc=A deposit of rocks.
 [loc_473]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 mapscene=25
@@ -3524,7 +3524,7 @@ desc=A deposit of rocks.
 [loc_474]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 model=model_loc_474
 name=Rockslide
@@ -3587,7 +3587,7 @@ desc=A deposit of rocks.
 [loc_481]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 mapscene=12
@@ -3601,7 +3601,7 @@ desc=A deposit of rocks.
 [loc_482]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 mapscene=12
@@ -3639,7 +3639,7 @@ desc=A deposit of rocks.
 [loc_485]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 mapscene=12
@@ -3652,7 +3652,7 @@ desc=A deposit of rocks.
 [loc_486]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 mapscene=12
@@ -3849,7 +3849,7 @@ desc=A deposit of rocks.
 [loc_509]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 mapscene=12
@@ -3863,7 +3863,7 @@ desc=A deposit of rocks.
 [loc_510]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 blockrange=no
@@ -3940,7 +3940,7 @@ desc=A deposit of rocks.
 [loc_519]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 mapscene=12
@@ -3954,7 +3954,7 @@ desc=A deposit of rocks.
 [loc_520]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 blockrange=no
@@ -3969,7 +3969,7 @@ width=2
 length=2
 active=no
 hillskew=yes
-shadow=yes
+shadow=no
 ambient=25
 contrast=25
 anim=seq_524
@@ -3979,7 +3979,7 @@ model=model_loc_521
 [loc_522]
 active=no
 hillskew=yes
-shadow=yes
+shadow=no
 ambient=25
 contrast=25
 anim=seq_524
@@ -4208,7 +4208,7 @@ desc=A deposit of rocks.
 [loc_550]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 mapscene=12
@@ -4222,7 +4222,7 @@ desc=A deposit of rocks.
 [loc_551]
 width=2
 length=2
-shadow=yes
+shadow=no
 blockrange=no
 hillskew=yes
 hillskew=yes
@@ -5143,7 +5143,7 @@ desc=Helps make human clothing.
 
 [loc_696]
 sharelight=yes
-shadow=yes
+shadow=no
 model=model_loc_696
 name=Hole
 desc=A hole.
@@ -5246,7 +5246,7 @@ anim=seq_476
 hasalpha=yes
 ambient=100
 contrast=100
-shadow=yes
+shadow=no
 model=model_loc_715
 
 [loc_716]
@@ -5254,7 +5254,7 @@ anim=seq_476
 hasalpha=yes
 ambient=100
 contrast=100
-shadow=yes
+shadow=no
 model=model_loc_716
 
 [loc_717]
@@ -5323,7 +5323,7 @@ anim=seq_473
 hasalpha=yes
 ambient=100
 contrast=100
-shadow=yes
+shadow=no
 model=model_loc_725
 name=fire_graphic
 desc=Fire !
@@ -5370,7 +5370,7 @@ model=model_loc_186
 [loc_731]
 anim=seq_493
 hasalpha=yes
-shadow=yes
+shadow=no
 active=no
 ambient=50
 contrast=25
@@ -5380,7 +5380,7 @@ model=model_loc_731
 [loc_732]
 anim=seq_494
 hasalpha=yes
-shadow=yes
+shadow=no
 active=no
 ambient=50
 contrast=25
@@ -5549,7 +5549,7 @@ model=model_loc_756
 
 [loc_760]
 sharelight=yes
-shadow=yes
+shadow=no
 active=no
 hillskew=yes
 recol1s=5400
@@ -5564,7 +5564,7 @@ model=model_loc_760
 
 [loc_761]
 sharelight=yes
-shadow=yes
+shadow=no
 active=no
 hillskew=yes
 recol1s=5400
@@ -5579,7 +5579,7 @@ model=model_loc_761
 
 [loc_762]
 sharelight=yes
-shadow=yes
+shadow=no
 active=no
 hillskew=yes
 recol1s=5400
@@ -5594,7 +5594,7 @@ model=model_loc_762
 
 [loc_763]
 sharelight=yes
-shadow=yes
+shadow=no
 active=no
 mirror=yes
 hillskew=yes
@@ -5610,7 +5610,7 @@ model=model_loc_762
 
 [loc_764]
 sharelight=yes
-shadow=yes
+shadow=no
 active=no
 hillskew=yes
 recol1s=5400
@@ -5625,7 +5625,7 @@ model=model_loc_764
 
 [loc_765]
 sharelight=yes
-shadow=yes
+shadow=no
 active=no
 mirror=yes
 hillskew=yes
@@ -8126,7 +8126,7 @@ desc=Spikey!
 [loc_1175]
 hillskew=yes
 ambient=50
-shadow=yes
+shadow=no
 blockwalk=no
 blockrange=no
 model=model_loc_1175
@@ -8136,7 +8136,7 @@ desc=A home for frogs.
 [loc_1176]
 hillskew=yes
 ambient=50
-shadow=yes
+shadow=no
 blockwalk=no
 blockrange=no
 model=model_loc_1176
@@ -8146,7 +8146,7 @@ desc=Otherwise known as a lilypad.
 [loc_1177]
 hillskew=yes
 ambient=50
-shadow=yes
+shadow=no
 blockwalk=no
 blockrange=no
 model=model_loc_1177
@@ -12727,7 +12727,7 @@ model=model_loc_1635
 
 [loc_1796]
 length=2
-shadow=yes
+shadow=no
 model=model_loc_1796
 name=magicwall
 
@@ -13905,7 +13905,7 @@ desc=Perhaps I should search it.
 
 [loc_1996]
 op1=Swim to
-shadow=yes
+shadow=no
 blockwalk=no
 model=model_loc_1996
 name=Rock
@@ -13913,14 +13913,14 @@ desc=Looks rock solid.
 
 [loc_1997]
 op1=Swim to
-shadow=yes
+shadow=no
 blockwalk=no
 model=model_loc_1997
 name=Rock
 desc=Looks rock solid.
 
 [loc_1998]
-shadow=yes
+shadow=no
 blockwalk=no
 model=model_loc_1998
 name=Rope
@@ -14058,7 +14058,7 @@ desc=A magically elevated chalice full of ash.
 width=2
 ambient=80
 contrast=80
-shadow=yes
+shadow=no
 anim=seq_522
 hasalpha=yes
 active=no
@@ -14072,7 +14072,7 @@ resizey=200
 resizez=200
 ambient=80
 contrast=80
-shadow=yes
+shadow=no
 anim=seq_522
 hasalpha=yes
 active=no
@@ -14084,7 +14084,7 @@ resizey=64
 resizez=64
 ambient=80
 contrast=80
-shadow=yes
+shadow=no
 anim=seq_522
 hasalpha=yes
 active=no
@@ -19316,7 +19316,7 @@ anim=seq_525
 hasalpha=yes
 ambient=100
 contrast=100
-shadow=yes
+shadow=no
 op1=Bait
 op3=hidden
 model=model_loc_2630
@@ -19848,7 +19848,7 @@ width=3
 active=yes
 op1=Look at
 op2=Search
-shadow=yes
+shadow=no
 model=model_loc_2702
 name=Tracks
 desc=Tracks in the sand.
@@ -19858,7 +19858,7 @@ width=3
 active=yes
 op1=Look at
 op2=Search
-shadow=yes
+shadow=no
 model=model_loc_2702
 name=Tracks
 desc=Tracks in the sand.
@@ -21640,7 +21640,7 @@ name=Table
 desc=A wonderfully dressed table.
 
 [loc_2941]
-shadow=yes
+shadow=no
 hillskew=yes
 op1=Look
 model=model_loc_42

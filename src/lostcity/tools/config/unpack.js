@@ -298,7 +298,7 @@ for (let id = 0; id < count; id++) {
         } else if (code === 62) {
             append('all.loc', `mirror=yes`);
         } else if (code === 64) {
-            append('all.loc', `shadow=yes`);
+            append('all.loc', `shadow=no`);
         } else if (code === 65) {
             append('all.loc', `resizex=${loc.g2()}`);
         } else if (code === 66) {
