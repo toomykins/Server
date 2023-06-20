@@ -16341,7 +16341,7 @@ frame15=anim_1247
 frame16=anim_1527
 
 [seq_708]
-offhand=obj_1409
+offhand=iban_staff
 mainhand=hide
 priority=6
 frame1=anim_2395
