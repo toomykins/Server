@@ -2434,7 +2434,7 @@ vislevel=hide
 desc=No flies on me.
 visonmap=no
 name=Fly trap
-model1=model_2295
+model1=model_loc_1395
 
 [npc_152]
 vislevel=hide
@@ -4415,7 +4415,7 @@ hasalpha=yes
 visonmap=no
 op1=Fish
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_234]
 vislevel=hide
@@ -4426,7 +4426,7 @@ hasalpha=yes
 visonmap=no
 op1=Fish
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_235]
 vislevel=hide
@@ -4437,7 +4437,7 @@ hasalpha=yes
 visonmap=no
 op1=Fish
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_236]
 vislevel=hide
@@ -4448,7 +4448,7 @@ hasalpha=yes
 visonmap=no
 op1=Fish
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_237]
 desc=He isn't very friendly.
@@ -6092,7 +6092,7 @@ head3=model_82
 vislevel=hide
 desc=Reminds me of playing pooh sticks.
 name=Twig
-model1=model_1644
+model1=model_loc_1247_0
 
 [npc_302]
 desc=Could do with losing a bit of weight.
@@ -6268,7 +6268,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_310]
 vislevel=hide
@@ -6282,7 +6282,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_311]
 vislevel=hide
@@ -6296,7 +6296,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_312]
 vislevel=hide
@@ -6310,7 +6310,7 @@ op3=Harpoon
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_313]
 vislevel=hide
@@ -6324,7 +6324,7 @@ op3=Harpoon
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_314]
 vislevel=hide
@@ -6338,7 +6338,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_315]
 vislevel=hide
@@ -6352,7 +6352,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_316]
 vislevel=hide
@@ -6366,7 +6366,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_317]
 vislevel=hide
@@ -6380,7 +6380,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_318]
 vislevel=hide
@@ -6394,7 +6394,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_319]
 vislevel=hide
@@ -6408,7 +6408,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_320]
 vislevel=hide
@@ -6422,7 +6422,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_321]
 vislevel=hide
@@ -6436,7 +6436,7 @@ op3=Harpoon
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_322]
 vislevel=hide
@@ -6450,7 +6450,7 @@ op3=Harpoon
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_323]
 vislevel=hide
@@ -6464,7 +6464,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_324]
 vislevel=hide
@@ -6478,7 +6478,7 @@ op3=Harpoon
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_325]
 vislevel=hide
@@ -6492,7 +6492,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_326]
 vislevel=hide
@@ -6506,7 +6506,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_327]
 vislevel=hide
@@ -6520,7 +6520,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_328]
 vislevel=hide
@@ -6534,7 +6534,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_329]
 vislevel=hide
@@ -6548,7 +6548,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_330]
 vislevel=hide
@@ -6562,7 +6562,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_331]
 vislevel=hide
@@ -6576,7 +6576,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_332]
 vislevel=hide
@@ -6590,7 +6590,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_333]
 vislevel=hide
@@ -6604,7 +6604,7 @@ op3=Harpoon
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_334]
 vislevel=hide
@@ -6618,7 +6618,7 @@ op3=Harpoon
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_335]
 vislevel=hide
@@ -8329,7 +8329,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_2320
+model1=model_loc_2019
 
 [npc_404]
 vislevel=hide
@@ -8343,7 +8343,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_2320
+model1=model_loc_2019
 
 [npc_405]
 vislevel=hide
@@ -8357,7 +8357,7 @@ op3=Harpoon
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_2320
+model1=model_loc_2019
 
 [npc_406]
 vislevel=hide
@@ -8371,7 +8371,7 @@ op3=Harpoon
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_2320
+model1=model_loc_2019
 
 [npc_407]
 vislevel=hide
@@ -9091,7 +9091,7 @@ visonmap=no
 recol1s=5916
 recol1d=3470
 name=Tree
-model1=model_2851
+model1=model_loc_1293
 
 [npc_445]
 vislevel=hide
@@ -9106,7 +9106,7 @@ visonmap=no
 recol1s=5916
 recol1d=3470
 name=Tree
-model1=model_2851
+model1=model_loc_1293
 
 [npc_446]
 vislevel=hide
@@ -9121,7 +9121,7 @@ visonmap=no
 recol1s=5916
 recol1d=5388
 name=Dead tree
-model1=model_2851
+model1=model_loc_1293
 
 [npc_447]
 vislevel=hide
@@ -9135,7 +9135,7 @@ visonmap=no
 recol1s=5916
 recol1d=5388
 name=Dead tree
-model1=model_2851
+model1=model_loc_1293
 
 [npc_448]
 vislevel=hide
@@ -9150,7 +9150,7 @@ visonmap=no
 recol1s=5916
 recol1d=3470
 name=Oak
-model1=model_2851
+model1=model_loc_1293
 
 [npc_449]
 vislevel=hide
@@ -9165,7 +9165,7 @@ visonmap=no
 recol1s=5916
 recol1d=5786
 name=Willow
-model1=model_2851
+model1=model_loc_1293
 
 [npc_450]
 vislevel=hide
@@ -9180,7 +9180,7 @@ visonmap=no
 recol1s=5916
 recol1d=5388
 name=Yew
-model1=model_2851
+model1=model_loc_1293
 
 [npc_451]
 vislevel=hide
@@ -9195,7 +9195,7 @@ visonmap=no
 recol1s=5916
 recol1d=6814
 name=Maple tree
-model1=model_2851
+model1=model_loc_1293
 
 [npc_452]
 vislevel=hide
@@ -9210,7 +9210,7 @@ visonmap=no
 recol1s=5916
 recol1d=3470
 name=Magic tree
-model1=model_2851
+model1=model_loc_1293
 
 [npc_453]
 desc=A dusty old suit of armour.
@@ -16882,7 +16882,7 @@ desc=Can I hear kittens?
 op1=Search
 visonmap=no
 name=Crate
-model1=model_2141
+model1=model_loc_0
 
 [npc_768]
 vislevel=hide
@@ -17654,7 +17654,7 @@ visonmap=no
 op1=Bait
 op3=hidden
 name=Fishing spot
-model1=model_2331
+model1=model_loc_2630
 
 [npc_801]
 vislevel=hide
@@ -20666,7 +20666,7 @@ op3=Bait
 op4=hidden
 op5=hidden
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_928]
 vislevel=hide
@@ -21306,7 +21306,7 @@ readyanim=seq_447
 walkanim=seq_448
 hasalpha=yes
 name=Fishing spot
-model1=model_1491
+model1=model_loc_42
 
 [npc_953]
 vislevel=hide
