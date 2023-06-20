@@ -21,6 +21,7 @@ console.log('---- config ----');
 let modelPack = loadPack('data/pack/model.pack');
 let animPack = loadPack('data/pack/anim.pack');
 let basePack = loadPack('data/pack/base.pack');
+let texturePack = loadPack('data/pack/texture.pack');
 
 let seqPack = loadPack('data/pack/seq.pack');
 let locPack = loadPack('data/pack/loc.pack');
@@ -35,12 +36,7 @@ let config = new Jagfile();
 
 // ----
 
-function packSeq(config, dat, idx, id) {
-    if (!config.length) {
-        console.error('Empty config', id);
-        return;
-    }
-
+function packSeq(config, dat, idx) {
     let start = dat.pos;
 
     // collect these to write at the end
@@ -172,7 +168,7 @@ function packSeq(config, dat, idx, id) {
     });
 
     for (let i = 0; i < seqPack.length; i++) {
-        packSeq(configs[i], dat, idx, i);
+        packSeq(configs[i], dat, idx);
     }
 
     config.write('seq.dat', dat);
@@ -181,12 +177,7 @@ function packSeq(config, dat, idx, id) {
 
 // ----
 
-function packLoc(config, dat, idx, id) {
-    if (!config || !config.length) {
-        console.error('Empty config', id);
-        return;
-    }
-
+function packLoc(config, dat, idx) {
     let start = dat.pos;
 
     // collect these to write at the end
@@ -593,12 +584,365 @@ function packLoc(config, dat, idx, id) {
     });
 
     for (let i = 0; i < locPack.length; i++) {
-        packLoc(configs[i], dat, idx, i);
+        packLoc(configs[i], dat, idx);
     }
 
     config.write('loc.dat', dat);
     config.write('loc.idx', idx);
+}
 
-    dat.save('dump/loc.dat');
-    idx.save('dump/loc.idx');
+// ----
+
+function packFlo(config, dat, idx, name) {
+    let start = dat.pos;
+
+    for (let i = 0; i < config.length; i++) {
+        let line = config[i];
+        let key = line.substring(0, line.indexOf('='));
+        let value = line.substring(line.indexOf('=') + 1);
+
+        if (key === 'rgb') {
+            dat.p1(1);
+            dat.p3(parseInt(value, 16));
+        } else if (key === 'texture') {
+            dat.p1(2);
+            dat.p1(texturePack.indexOf(value));
+        } else if (key === 'overlay' && value === 'yes') {
+            dat.p1(3);
+        } else if (key === 'occlude' && value === 'no') {
+            dat.p1(5);
+        }
+    }
+
+    dat.p1(6);
+    dat.pjstr(name);
+
+    dat.p1(0);
+    idx.p2(dat.pos - start);
+}
+
+{
+    let dat = new Packet();
+    let idx = new Packet();
+
+    dat.p2(floPack.length);
+    idx.p2(floPack.length);
+
+    let configs = [];
+    loadDir('data/src/scripts', '.flo', (src) => {
+        let current = null;
+        let config = [];
+
+        for (let i = 0; i < src.length; i++) {
+            let line = src[i];
+
+            if (line.startsWith('[')) {
+                if (current) {
+                    configs[floPack.indexOf(current)] = config;
+                }
+
+                current = line.substring(1, line.length - 1);
+                config = [];
+                continue;
+            }
+
+            config.push(line);
+        }
+
+        if (current) {
+            configs[floPack.indexOf(current)] = config;
+        }
+    });
+
+    for (let i = 0; i < floPack.length; i++) {
+        packFlo(configs[i], dat, idx, floPack[i]);
+    }
+
+    config.write('flo.dat', dat);
+    config.write('flo.idx', idx);
+}
+
+// ----
+
+function packSpotanim(config, dat, idx) {
+    let start = dat.pos;
+
+    // collect these to write at the end
+    let recols = [];
+    let recold = [];
+
+    for (let i = 0; i < config.length; i++) {
+        let line = config[i];
+        let key = line.substring(0, line.indexOf('='));
+        let value = line.substring(line.indexOf('=') + 1);
+
+        if (key === 'model') {
+            dat.p1(1);
+            dat.p2(modelPack.indexOf(value));
+        } else if (key === 'anim') {
+            dat.p1(2);
+            dat.p2(seqPack.indexOf(value));
+        } else if (key === 'hasalpha' && value === 'yes') {
+            dat.p1(3);
+        } else if (key === 'resizeh') {
+            dat.p1(4);
+            dat.p2(parseInt(value));
+        } else if (key === 'resizev') {
+            dat.p1(5);
+            dat.p2(parseInt(value));
+        } else if (key === 'orientation') {
+            dat.p1(6);
+            dat.p2(parseInt(value));
+        } else if (key === 'ambient') {
+            dat.p1(7);
+            dat.p1(parseInt(value));
+        } else if (key === 'contrast') {
+            dat.p1(8);
+            dat.p1(parseInt(value));
+        } else if (key.startsWith('recol') && key.endsWith('s')) {
+            let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
+            recols[index] = parseInt(value);
+        } else if (key.startsWith('recol') && key.endsWith('d')) {
+            let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
+            recold[index] = parseInt(value);
+        }
+    }
+
+    for (let i = 0; i < recols.length; i++) {
+        dat.p1(40 + i);
+        dat.p2(recols[i]);
+
+        dat.p1(50 + i);
+        dat.p2(recold[i]);
+    }
+
+    dat.p1(0);
+    idx.p2(dat.pos - start);
+}
+
+{
+    let dat = new Packet();
+    let idx = new Packet();
+
+    dat.p2(spotanimPack.length);
+    idx.p2(spotanimPack.length);
+
+    let configs = [];
+    loadDir('data/src/scripts', '.spotanim', (src) => {
+        let current = null;
+        let config = [];
+
+        for (let i = 0; i < src.length; i++) {
+            let line = src[i];
+
+            if (line.startsWith('[')) {
+                if (current) {
+                    configs[spotanimPack.indexOf(current)] = config;
+                }
+
+                current = line.substring(1, line.length - 1);
+                config = [];
+                continue;
+            }
+
+            config.push(line);
+        }
+
+        if (current) {
+            configs[spotanimPack.indexOf(current)] = config;
+        }
+    });
+
+    for (let i = 0; i < spotanimPack.length; i++) {
+        packSpotanim(configs[i], dat, idx);
+    }
+
+    config.write('spotanim.dat', dat);
+    config.write('spotanim.idx', idx);
+}
+
+// ----
+
+function packObj(config, dat, idx) {
+    let start = dat.pos;
+
+    // collect these to write at the end
+    let recols = [];
+    let recold = [];
+    let name = '';
+
+    for (let i = 0; i < config.length; i++) {
+        let line = config[i];
+        let key = line.substring(0, line.indexOf('='));
+        let value = line.substring(line.indexOf('=') + 1);
+
+        if (key === 'name') {
+            name = value;
+        } else if (key.startsWith('recol') && key.endsWith('s')) {
+            let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
+            recols[index] = parseInt(value);
+        } else if (key.startsWith('recol') && key.endsWith('d')) {
+            let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
+            recold[index] = parseInt(value);
+        } else if (key === 'model') {
+            dat.p1(1);
+            dat.p2(modelPack.indexOf(value));
+            let model = modelPack.indexOf(value);
+            if (model === -1) {
+                console.log(value);
+            }
+        } else if (key === 'desc') {
+            dat.p1(3);
+            dat.pjstr(value);
+        } else if (key === '2dzoom') {
+            dat.p1(4);
+            dat.p2(parseInt(value));
+        } else if (key === '2dxan') {
+            dat.p1(5);
+            dat.p2(parseInt(value));
+        } else if (key === '2dyan') {
+            dat.p1(6);
+            dat.p2(parseInt(value));
+        } else if (key === '2dxof') {
+            dat.p1(7);
+            dat.p2(parseInt(value));
+        } else if (key === '2dyof') {
+            dat.p1(8);
+            dat.p2(parseInt(value));
+        } else if (key === 'code9' && value === 'yes') {
+            dat.p1(9);
+        } else if (key === 'code10') {
+            dat.p1(10);
+            dat.p2(seqPack.indexOf(value));
+        } else if (key === 'stackable' && value === 'yes') {
+            dat.p1(11);
+        } else if (key === 'cost') {
+            dat.p1(12);
+            dat.p4(parseInt(value));
+        } else if (key === 'members' && value === 'yes') {
+            dat.p1(16);
+        } else if (key === 'manwear') {
+            let parts = value.split(',');
+            dat.p1(23);
+            dat.p2(modelPack.indexOf(parts[0]));
+            dat.p1(parseInt(parts[1]));
+        } else if (key === 'manwear2') {
+            dat.p1(24);
+            dat.p2(modelPack.indexOf(value));
+        } else if (key === 'womanwear') {
+            let parts = value.split(',');
+            dat.p1(25);
+            dat.p2(modelPack.indexOf(parts[0]));
+            dat.p1(parseInt(parts[1]));
+        } else if (key === 'womanwear2') {
+            dat.p1(26);
+            dat.p2(modelPack.indexOf(value));
+        } else if (key.startsWith('op')) {
+            let index = parseInt(key.substring('op'.length)) - 1;
+            dat.p1(30 + index);
+            dat.pjstr(value);
+        } else if (key.startsWith('iop')) {
+            let index = parseInt(key.substring('iop'.length)) - 1;
+            dat.p1(35 + index);
+            dat.pjstr(value);
+        } else if (key === 'manwear3') {
+            dat.p1(78);
+            dat.p2(modelPack.indexOf(value));
+        } else if (key === 'womanwear3') {
+            dat.p1(79);
+            dat.p2(modelPack.indexOf(value));
+        } else if (key === 'manhead') {
+            dat.p1(90);
+            dat.p2(modelPack.indexOf(value));
+        } else if (key === 'womanhead') {
+            dat.p1(91);
+            dat.p2(modelPack.indexOf(value));
+        } else if (key === 'manhead2') {
+            dat.p1(92);
+            dat.p2(modelPack.indexOf(value));
+        } else if (key === 'womanhead2') {
+            dat.p1(93);
+            dat.p2(modelPack.indexOf(value));
+        } else if (key === '2dzan') {
+            dat.p1(95);
+            dat.p2(parseInt(value));
+        } else if (key === 'certlink') {
+            dat.p1(97);
+            dat.p2(objPack.indexOf(value));
+        } else if (key === 'certtemplate') {
+            dat.p1(98);
+            dat.p2(objPack.indexOf(value));
+        } else if (key.startsWith('count')) {
+            let index = parseInt(key.substring('count'.length)) - 1;
+
+            let parts = value.split(',');
+            let countobj = objPack.indexOf(parts[0]);
+            let countco = parseInt(parts[1]);
+
+            dat.p1(100 + index);
+            dat.p2(countobj);
+            dat.p2(countco);
+        }
+    }
+
+    if (recols.length) {
+        dat.p1(40);
+        dat.p1(recols.length);
+
+        for (let i = 0; i < recols.length; i++) {
+            dat.p2(recols[i]);
+            dat.p2(recold[i]);
+        }
+    }
+
+    if (name.length) {
+        dat.p1(2);
+        dat.pjstr(name);
+    }
+
+    dat.p1(0);
+    idx.p2(dat.pos - start);
+}
+
+{
+    let dat = new Packet();
+    let idx = new Packet();
+
+    dat.p2(objPack.length);
+    idx.p2(objPack.length);
+
+    let configs = [];
+    loadDir('data/src/scripts', '.obj', (src) => {
+        let current = null;
+        let config = [];
+
+        for (let i = 0; i < src.length; i++) {
+            let line = src[i];
+
+            if (line.startsWith('[')) {
+                if (current) {
+                    configs[objPack.indexOf(current)] = config;
+                }
+
+                current = line.substring(1, line.length - 1);
+                config = [];
+                continue;
+            }
+
+            config.push(line);
+        }
+
+        if (current) {
+            configs[objPack.indexOf(current)] = config;
+        }
+    });
+
+    for (let i = 0; i < objPack.length; i++) {
+        packObj(configs[i], dat, idx);
+    }
+
+    config.write('obj.dat', dat);
+    config.write('obj.idx', idx);
+
+    dat.save('dump/obj.dat');
 }

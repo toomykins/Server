@@ -129,7 +129,7 @@ certtemplate=template_for_cert
 
 [obj_14]
 desc=A metal railing replacement.
-model=model_969
+model=model_loc_14_1
 2dxof=39
 2dyof=296
 2dzoom=3500
@@ -6818,7 +6818,7 @@ name=Invitation letter
 
 [obj_697]
 desc=Beyond repair.
-model=model_1306
+model=model_loc_825_0
 2dxof=-8
 2dyof=11
 2dzoom=1450
@@ -6831,7 +6831,7 @@ name=Damaged armour
 
 [obj_698]
 desc=No use to me...
-model=model_1314
+model=model_loc_826_0
 2dxof=5
 2dyof=8
 2dzoom=1510
@@ -7496,7 +7496,7 @@ name=Holy force
 [obj_749]
 desc=A well carved totem pole made from the trunk of a Yommi tree.
 members=yes
-model=model_1759
+model=model_loc_870
 2dxof=-84
 2dyof=-51
 2dzoom=4070
@@ -7506,7 +7506,7 @@ name=Yommi totem
 
 [obj_750]
 desc=A gilded totem pole from the Kharazi tribe.
-model=model_1759
+model=model_loc_870
 2dxof=-84
 2dyof=-51
 2dzoom=4070
@@ -10360,7 +10360,7 @@ certtemplate=template_for_cert
 [obj_954]
 desc=A coil of rope.
 cost=18
-model=model_1842
+model=model_loc_227
 2dxof=-2
 2dyof=-30
 2dzoom=1240
@@ -10541,7 +10541,7 @@ certlink=obj_975
 certtemplate=template_for_cert
 
 [obj_977]
-model=model_2241
+model=model_loc_692
 2dzoom=2050
 2dyan=36
 2dxan=116
@@ -15659,7 +15659,7 @@ name=Rocks
 [obj_1481]
 desc=A magical sphere that glimmers within.
 cost=10
-model=model_3176
+model=model_loc_3361
 2dzoom=1390
 2dyan=1700
 2dxan=100
@@ -15669,7 +15669,7 @@ name=Orb of light
 [obj_1482]
 desc=A magical sphere that glimmers within.
 cost=10
-model=model_3176
+model=model_loc_3361
 2dzoom=1390
 2dyan=1700
 2dxan=100
@@ -15679,7 +15679,7 @@ name=Orb of light
 [obj_1483]
 desc=A magical sphere that glimmers within.
 cost=10
-model=model_3176
+model=model_loc_3361
 2dzoom=1390
 2dyan=1700
 2dxan=100
@@ -15689,7 +15689,7 @@ name=Orb of light
 [obj_1484]
 desc=A magical sphere that glimmers within.
 cost=20
-model=model_3176
+model=model_loc_3361
 2dzoom=1390
 2dyan=1700
 2dxan=100
@@ -16460,7 +16460,7 @@ name=Stake
 [obj_1550]
 desc=A clove of garlic.
 cost=3
-model=model_2750
+model=model_loc_3366
 2dzoom=670
 2dyan=116
 2dxan=116
@@ -17590,23 +17590,23 @@ certlink=obj_1647
 certtemplate=template_for_cert
 
 [obj_1649]
-model=model_1105
+model=model_loc_2733_0
 name=Sapphire ring
 
 [obj_1650]
-model=model_1105
+model=model_loc_2733_0
 name=Emerald ring
 
 [obj_1651]
-model=model_1105
+model=model_loc_2733_0
 name=Ruby ring
 
 [obj_1652]
-model=model_1105
+model=model_loc_2733_0
 name=Diamond ring
 
 [obj_1653]
-model=model_1105
+model=model_loc_2733_0
 name=Dragonstone ring
 
 [obj_1654]
@@ -17748,23 +17748,23 @@ certlink=obj_1666
 certtemplate=template_for_cert
 
 [obj_1668]
-model=model_1105
+model=model_loc_2733_0
 name=Sapphire necklace
 
 [obj_1669]
-model=model_1105
+model=model_loc_2733_0
 name=Emerald necklace
 
 [obj_1670]
-model=model_1105
+model=model_loc_2733_0
 name=Ruby necklace
 
 [obj_1671]
-model=model_1105
+model=model_loc_2733_0
 name=Diamond necklace
 
 [obj_1672]
-model=model_1105
+model=model_loc_2733_0
 name=Dragon necklace
 
 [obj_1673]
@@ -17886,23 +17886,23 @@ certlink=obj_1685
 certtemplate=template_for_cert
 
 [obj_1687]
-model=model_1105
+model=model_loc_2733_0
 name=Sapphire amulet
 
 [obj_1688]
-model=model_1105
+model=model_loc_2733_0
 name=Emerald amulet
 
 [obj_1689]
-model=model_1105
+model=model_loc_2733_0
 name=Ruby amulet
 
 [obj_1690]
-model=model_1105
+model=model_loc_2733_0
 name=Diamond amulet
 
 [obj_1691]
-model=model_1105
+model=model_loc_2733_0
 name=Dragonstoneamulet
 
 [obj_1692]
@@ -20528,7 +20528,7 @@ certtemplate=template_for_cert
 [obj_1957]
 desc=A strong smelling onion.
 cost=3
-model=model_2750
+model=model_loc_3366
 2dzoom=670
 2dyan=116
 2dxan=116
@@ -20588,7 +20588,7 @@ certtemplate=template_for_cert
 
 [obj_1965]
 desc=Yuck I don't like cabbage.
-model=model_2739
+model=model_loc_1161
 2dxof=1
 2dzoom=1280
 2dyan=348
@@ -20603,7 +20603,7 @@ certtemplate=template_for_cert
 
 [obj_1967]
 desc=Yuck I don't like cabbage.
-model=model_2739
+model=model_loc_1161
 2dxof=1
 2dzoom=1280
 2dyan=348
@@ -25954,7 +25954,7 @@ name=Lamp
 [obj_2529]
 desc=A magical sphere that glimmers within.
 cost=1
-model=model_596
+model=model_loc_771_0
 members=yes
 name=Orb of light
 
