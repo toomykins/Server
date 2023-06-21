@@ -47,20 +47,17 @@ let models = Jagfile.load('data/pack/client/models');
     let type = models.read('base_type.dat');
     let label = models.read('base_label.dat');
 
-    let total = head.g2();
-    let instances = head.g2();
-
-    for (let i = 0; i < instances; i++) {
-        pack += `${i}=base_${i}\n`;
-    }
+    let total = head.g2(); // # to read
+    let instances = head.g2(); // highest ID
 
     for (let i = 0; i < total; i++) {
-        let hstart = head.pos;
+        // let hstart = head.pos;
         let tstart = type.pos;
         let labelstart = label.pos;
 
         let id = head.g2();
         order += `${id}\n`;
+        pack += `${id}=base_${id}\n`;
 
         let length = head.g1();
         for (let j = 0; j < length; j++) {
@@ -72,15 +69,15 @@ let models = Jagfile.load('data/pack/client/models');
             }
         }
 
-        let hend = head.pos;
+        // let hend = head.pos;
         let tend = type.pos;
         let labelend = label.pos;
 
         let base = new Packet();
-        base.pdata(head.gdata(hend - hstart, hstart, false));
+        // base.pdata(head.gdata(hend - hstart, hstart, false));
         base.pdata(type.gdata(tend - tstart, tstart, false));
         base.pdata(label.gdata(labelend - labelstart, labelstart, false));
-        base.p2(hend - hstart);
+        // base.p2(hend - hstart);
         base.p2(tend - tstart);
         base.p2(labelend - labelstart);
         base.save(`data/src/models/_unpack/base/base_${id}.base`);
@@ -108,10 +105,6 @@ let models = Jagfile.load('data/pack/client/models');
     let total = head.g2();
     let instances = head.g2();
 
-    for (let i = 0; i < instances; i++) {
-        pack += `${i}=anim_${i}\n`;
-    }
-
     for (let i = 0; i < total; i++) {
         let hstart = head.pos;
         let t1start = tran1.pos;
@@ -121,7 +114,9 @@ let models = Jagfile.load('data/pack/client/models');
         let id = head.g2();
         del.g1();
         head.g2();
+
         order += `${id}\n`;
+        pack += `${id}=anim_${id}\n`;
 
         let labelCount = head.g1();
         for (let j = 0; j < labelCount; j++) {

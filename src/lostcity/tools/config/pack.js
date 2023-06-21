@@ -173,6 +173,8 @@ function packSeq(config, dat, idx) {
 
     config.write('seq.dat', dat);
     config.write('seq.idx', idx);
+
+    // dat.save('dump/seq.dat');
 }
 
 // ----
@@ -589,6 +591,8 @@ function packLoc(config, dat, idx) {
 
     config.write('loc.dat', dat);
     config.write('loc.idx', idx);
+
+    // dat.save('dump/loc.dat');
 }
 
 // ----
@@ -660,6 +664,8 @@ function packFlo(config, dat, idx, name) {
 
     config.write('flo.dat', dat);
     config.write('flo.idx', idx);
+
+    // dat.save('dump/flo.dat');
 }
 
 // ----
@@ -759,6 +765,8 @@ function packSpotanim(config, dat, idx) {
 
     config.write('spotanim.dat', dat);
     config.write('spotanim.idx', idx);
+
+    // dat.save('dump/spotanim.dat');
 }
 
 // ----
@@ -944,7 +952,7 @@ function packObj(config, dat, idx) {
     config.write('obj.dat', dat);
     config.write('obj.idx', idx);
 
-    dat.save('dump/obj.dat');
+    // dat.save('dump/obj.dat');
 }
 
 // ----
@@ -1111,6 +1119,8 @@ function packNpc(config, dat, idx) {
 
     config.write('npc.dat', dat);
     config.write('npc.idx', idx);
+
+    // dat.save('dump/npc.dat');
 }
 
 // ----
@@ -1269,6 +1279,8 @@ function packIdk(config, dat, idx) {
 
     config.write('idk.dat', dat);
     config.write('idk.idx', idx);
+
+    // dat.save('dump/idk.dat');
 }
 
 // ----
@@ -1330,6 +1342,8 @@ function packVarp(config, dat, idx) {
 
     config.write('varp.dat', dat);
     config.write('varp.idx', idx);
+
+    // dat.save('dump/varp.dat');
 }
 
 // ----
