@@ -5,7 +5,7 @@ export function loadOrder(path) {
         return [];
     }
 
-    return fs.readFileSync(path, 'ascii').replace(/\r/g, '').split('\n').filter(x => x);
+    return fs.readFileSync(path, 'ascii').replace(/\r/g, '').split('\n').filter(x => x).map(x => parseInt(x));
 }
 
 export function loadPack(path) {
