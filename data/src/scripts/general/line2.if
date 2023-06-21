@@ -15,6 +15,7 @@ y=45
 width=350
 height=17
 center=yes
+font=q8
 text=Line1
 
 [com_2]
@@ -24,6 +25,7 @@ y=13
 width=350
 height=17
 center=yes
+font=q8
 text=Line1
 
 [com_3]
@@ -34,6 +36,7 @@ buttontype=pause
 width=350
 height=17
 center=yes
+font=q8
 text=Click here to continue
 colour=0xFFFF00
 overcolour=0x00C000

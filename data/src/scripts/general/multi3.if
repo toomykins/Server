@@ -5,6 +5,7 @@ y=-1
 width=480
 height=17
 center=yes
+font=q8
 text=Select an Option
 colour=0x800000
 
@@ -16,6 +17,7 @@ buttontype=normal
 width=480
 height=17
 center=yes
+font=q8
 text=option1
 overcolour=0x00C000
 
@@ -27,6 +29,7 @@ buttontype=normal
 width=480
 height=17
 center=yes
+font=q8
 text=option2
 overcolour=0x00C000
 
@@ -38,6 +41,7 @@ buttontype=normal
 width=480
 height=17
 center=yes
+font=q8
 text=option3
 overcolour=0x00C000
 

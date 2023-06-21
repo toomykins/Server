@@ -15,6 +15,7 @@ y=0
 width=350
 height=17
 center=yes
+font=q8
 text=Name
 colour=0x800000
 
@@ -25,6 +26,7 @@ y=40
 width=350
 height=17
 center=yes
+font=q8
 text=Line1
 
 [com_3]
@@ -35,6 +37,7 @@ buttontype=pause
 width=350
 height=17
 center=yes
+font=q8
 text=Click here to continue
 colour=0xFFFF00
 overcolour=0x00C000

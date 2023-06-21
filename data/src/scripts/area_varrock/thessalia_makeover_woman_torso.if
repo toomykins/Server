@@ -709,6 +709,7 @@ y=29
 buttontype=close
 width=68
 height=11
+font=p11
 shadowed=yes
 text=Close Window
 colour=0xFF0000
@@ -721,6 +722,7 @@ y=30
 width=199
 height=14
 center=yes
+font=b12
 shadowed=yes
 text=Thessalias' Makeovers (Torso)
 colour=0xFFFF00
@@ -948,6 +950,7 @@ y=289
 buttontype=normal
 width=127
 height=14
+font=b12
 shadowed=yes
 text=CONFIRM (500 gold)
 colour=0x00FF00
@@ -1119,6 +1122,7 @@ x=208
 y=64
 width=98
 height=14
+font=p12
 shadowed=yes
 text=Select body style
 colour=0xFFFF00
@@ -1129,6 +1133,7 @@ x=207
 y=148
 width=98
 height=14
+font=p12
 shadowed=yes
 text=Select arms style
 colour=0xFFFF00
@@ -1139,6 +1144,7 @@ x=220
 y=225
 width=73
 height=14
+font=p12
 shadowed=yes
 text=Select colour
 colour=0xFFFF00
@@ -1149,7 +1155,7 @@ x=50
 y=180
 width=32
 height=32
-model=model_456
+model=model_456_idk
 zoom=800
 
 [com_128]
@@ -1158,7 +1164,7 @@ x=145
 y=180
 width=32
 height=32
-model=model_469
+model=model_469_idk
 zoom=800
 
 [com_129]
@@ -1167,7 +1173,7 @@ x=240
 y=180
 width=32
 height=32
-model=model_470
+model=model_470_idk
 zoom=800
 
 [com_130]
@@ -1176,7 +1182,7 @@ x=325
 y=180
 width=32
 height=32
-model=model_471
+model=model_471_idk
 zoom=800
 
 [com_131]
@@ -1185,7 +1191,7 @@ x=420
 y=180
 width=32
 height=32
-model=model_474
+model=model_474_idk
 zoom=800
 
 [com_132]
@@ -1194,7 +1200,7 @@ x=50
 y=260
 width=32
 height=32
-model=model_456
+model=model_456_idk
 zoom=800
 
 [com_133]
@@ -1203,7 +1209,7 @@ x=145
 y=260
 width=32
 height=32
-model=model_456
+model=model_456_idk
 zoom=800
 
 [com_134]
@@ -1212,7 +1218,7 @@ x=240
 y=260
 width=32
 height=32
-model=model_456
+model=model_456_idk
 zoom=800
 
 [com_135]
@@ -1221,7 +1227,7 @@ x=325
 y=260
 width=32
 height=32
-model=model_456
+model=model_456_idk
 zoom=800
 
 [com_136]
@@ -1230,7 +1236,7 @@ x=420
 y=260
 width=32
 height=32
-model=model_456
+model=model_456_idk
 zoom=800
 
 [com_137]
@@ -1239,7 +1245,7 @@ x=50
 y=180
 width=32
 height=32
-model=model_332
+model=model_332_idk
 zoom=800
 
 [com_138]
@@ -1248,7 +1254,7 @@ x=145
 y=180
 width=32
 height=32
-model=model_332
+model=model_332_idk
 zoom=800
 
 [com_139]
@@ -1257,7 +1263,7 @@ x=240
 y=180
 width=32
 height=32
-model=model_332
+model=model_332_idk
 zoom=800
 
 [com_140]
@@ -1266,7 +1272,7 @@ x=325
 y=180
 width=32
 height=32
-model=model_332
+model=model_332_idk
 zoom=800
 
 [com_141]
@@ -1275,7 +1281,7 @@ x=420
 y=180
 width=32
 height=32
-model=model_332
+model=model_332_idk
 zoom=800
 
 [com_142]
@@ -1284,7 +1290,7 @@ x=50
 y=260
 width=32
 height=32
-model=model_332
+model=model_332_idk
 zoom=800
 
 [com_143]
@@ -1293,7 +1299,7 @@ x=145
 y=260
 width=32
 height=32
-model=model_351
+model=model_351_idk
 zoom=800
 
 [com_144]
@@ -1302,7 +1308,7 @@ x=240
 y=260
 width=32
 height=32
-model=model_346
+model=model_346_idk
 zoom=800
 
 [com_145]
@@ -1311,7 +1317,7 @@ x=325
 y=260
 width=32
 height=32
-model=model_348
+model=model_348_idk
 zoom=800
 
 [com_146]
@@ -1320,7 +1326,7 @@ x=420
 y=260
 width=32
 height=32
-model=model_343
+model=model_343_idk
 zoom=800
 
 [com_147]

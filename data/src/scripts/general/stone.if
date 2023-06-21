@@ -5,6 +5,7 @@ y=28
 buttontype=close
 width=68
 height=11
+font=p11
 shadowed=yes
 text=Close Window
 colour=0xC00000
@@ -26,6 +27,7 @@ y=82
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -36,6 +38,7 @@ y=98
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -46,6 +49,7 @@ y=114
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -56,6 +60,7 @@ y=131
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -66,6 +71,7 @@ y=148
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -76,6 +82,7 @@ y=165
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -86,6 +93,7 @@ y=182
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -96,6 +104,7 @@ y=199
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -106,6 +115,7 @@ y=216
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -116,6 +126,7 @@ y=233
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -126,6 +137,7 @@ y=250
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000
 
@@ -136,5 +148,6 @@ y=267
 width=354
 height=14
 center=yes
+font=q8
 shadowed=yes
 colour=0xFF0000

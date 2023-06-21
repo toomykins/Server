@@ -70,6 +70,7 @@ x=43
 y=118
 width=96
 height=17
+font=q8
 text=Ta Quir Priw
 colour=0x2B1C0F
 
@@ -79,6 +80,7 @@ x=374
 y=89
 width=103
 height=17
+font=q8
 text=Lemanto Andra
 colour=0x2B1C0F
 
@@ -88,6 +90,7 @@ x=185
 y=31
 width=63
 height=17
+font=q8
 text=Sindarpos
 colour=0x2B1C0F
 
@@ -97,6 +100,7 @@ x=217
 y=282
 width=53
 height=17
+font=q8
 text=Gandius
 colour=0x2B1C0F
 
@@ -106,6 +110,7 @@ x=356
 y=137
 width=67
 height=17
+font=q8
 text=Kar-Hewo
 colour=0x3B1C0F
 
@@ -266,6 +271,7 @@ y=3
 buttontype=close
 width=74
 height=14
+font=p12
 shadowed=yes
 text=Close Window
 colour=0x697F51

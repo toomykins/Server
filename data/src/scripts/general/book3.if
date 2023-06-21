@@ -39,6 +39,7 @@ x=66
 y=77
 width=180
 height=182
+font=b12
 text=line1\nline2\nline3\nline4\nline5\nline6\nline7\nline8\nline9\nline10\nline11\nline12\nline13\nline14\nline15
 
 [com_5]
@@ -387,6 +388,7 @@ y=30
 width=19
 height=14
 center=yes
+font=b12
 shadowed=yes
 text=%1
 colour=0xFFFF00
@@ -398,6 +400,7 @@ y=33
 buttontype=close
 width=68
 height=11
+font=p11
 shadowed=yes
 text=Close Window
 colour=0x808080

@@ -24,6 +24,7 @@ y=8
 buttontype=close
 width=74
 height=14
+font=p12
 shadowed=yes
 text=Close Window
 colour=0xFAD782
@@ -79,6 +80,7 @@ width=4
 height=2
 script1op1=testvar,varp_261
 script1=gt,0
+font=p12
 activetext=Show
 colour=0xFAD782
 
@@ -91,6 +93,7 @@ width=4
 height=2
 script1op1=testvar,varp_261
 script1=gt,0
+font=p12
 activetext=Finished
 colour=0xFAD782
 

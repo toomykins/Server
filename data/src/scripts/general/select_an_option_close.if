@@ -43,6 +43,7 @@ buttontype=normal
 width=152
 height=17
 center=yes
+font=q8
 
 [com_5]
 type=text
@@ -52,6 +53,7 @@ buttontype=normal
 width=152
 height=17
 center=yes
+font=q8
 
 [com_6]
 type=text
@@ -61,6 +63,7 @@ buttontype=normal
 width=152
 height=17
 center=yes
+font=q8
 
 [com_7]
 type=text
@@ -69,6 +72,7 @@ y=3
 width=464
 height=17
 center=yes
+font=q8
 text=Select an Option
 colour=0x800000
 
@@ -79,6 +83,7 @@ y=5
 buttontype=normal
 width=72
 height=14
+font=p12
 shadowed=yes
 text=Close window
 colour=0xFFFF00

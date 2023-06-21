@@ -16,6 +16,7 @@ y=8
 buttontype=close
 width=74
 height=14
+font=p12
 shadowed=yes
 text=Close Window
 colour=0xFAD782

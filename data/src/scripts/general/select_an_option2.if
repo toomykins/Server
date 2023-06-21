@@ -49,6 +49,7 @@ buttontype=normal
 width=152
 height=17
 center=yes
+font=q8
 
 [com_6]
 type=text
@@ -58,6 +59,7 @@ buttontype=normal
 width=152
 height=17
 center=yes
+font=q8
 
 [com_7]
 type=text
@@ -67,6 +69,7 @@ buttontype=normal
 width=152
 height=17
 center=yes
+font=q8
 
 [com_8]
 type=text
@@ -75,5 +78,6 @@ y=3
 width=464
 height=17
 center=yes
+font=q8
 text=Select an Option
 colour=0x800000

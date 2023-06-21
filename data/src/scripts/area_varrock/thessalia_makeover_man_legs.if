@@ -709,6 +709,7 @@ y=29
 buttontype=close
 width=68
 height=11
+font=p11
 shadowed=yes
 text=Close Window
 colour=0xFF0000
@@ -721,6 +722,7 @@ y=30
 width=194
 height=14
 center=yes
+font=b12
 shadowed=yes
 text=Thessalias' Makeovers (Legs)
 colour=0xFFFF00
@@ -948,6 +950,7 @@ y=289
 buttontype=normal
 width=127
 height=14
+font=b12
 shadowed=yes
 text=CONFIRM (500 gold)
 colour=0x00FF00
@@ -1119,6 +1122,7 @@ x=220
 y=225
 width=73
 height=14
+font=p12
 shadowed=yes
 text=Select colour
 colour=0xFFFF00
@@ -1129,7 +1133,7 @@ x=50
 y=220
 width=32
 height=32
-model=model_254
+model=model_254_idk
 zoom=400
 
 [com_126]
@@ -1138,7 +1142,7 @@ x=185
 y=220
 width=32
 height=32
-model=model_271
+model=model_271_idk
 zoom=400
 
 [com_127]
@@ -1147,7 +1151,7 @@ x=310
 y=210
 width=32
 height=32
-model=model_267
+model=model_267_idk
 zoom=420
 
 [com_128]
@@ -1156,7 +1160,7 @@ x=435
 y=220
 width=32
 height=32
-model=model_274
+model=model_274_idk
 zoom=400
 
 [com_129]
@@ -1249,6 +1253,7 @@ x=211
 y=62
 width=87
 height=14
+font=p12
 shadowed=yes
 text=Select leg style
 colour=0xFFFF00

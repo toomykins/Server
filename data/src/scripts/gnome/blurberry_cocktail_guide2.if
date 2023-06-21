@@ -24,6 +24,7 @@ y=0
 width=135
 height=17
 center=yes
+font=q8
 text=Cocktail Index
 colour=0x000080
 
@@ -36,6 +37,7 @@ buttontype=normal
 width=135
 height=17
 center=yes
+font=q8
 text=Blurberry Special
 
 [com_4]
@@ -47,6 +49,7 @@ buttontype=normal
 width=135
 height=17
 center=yes
+font=q8
 text=Chocolate Saturday
 
 [com_5]
@@ -58,6 +61,7 @@ buttontype=normal
 width=135
 height=17
 center=yes
+font=q8
 text=Drunk Dragon
 
 [com_6]
@@ -69,6 +73,7 @@ buttontype=normal
 width=135
 height=17
 center=yes
+font=q8
 text=Fruit Blast
 
 [com_7]
@@ -80,6 +85,7 @@ buttontype=normal
 width=135
 height=17
 center=yes
+font=q8
 text=Pineapple Punch
 
 [com_8]
@@ -91,6 +97,7 @@ buttontype=normal
 width=135
 height=17
 center=yes
+font=q8
 text=Short Green Guy
 
 [com_9]
@@ -102,6 +109,7 @@ buttontype=normal
 width=135
 height=17
 center=yes
+font=q8
 text=Wizard Blizzard
 
 [com_10]
@@ -136,6 +144,7 @@ y=0
 width=163
 height=17
 center=yes
+font=q8
 text=Gnome Bowls
 colour=0x000080
 
@@ -148,6 +157,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Chocolate Bomb
 
 [com_15]
@@ -159,6 +169,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Tangled Toad's Legs
 
 [com_16]
@@ -170,6 +181,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Worm Hole
 
 [com_17]
@@ -181,6 +193,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Veg Ball
 
 [com_18]
@@ -191,6 +204,7 @@ y=112
 width=163
 height=17
 center=yes
+font=q8
 text=Gnome Crunchies
 colour=0x000080
 
@@ -203,6 +217,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Worm Crunchies
 
 [com_20]
@@ -214,6 +229,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Choc Chip Crunchies
 
 [com_21]
@@ -225,6 +241,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Spicy Crunchies
 
 [com_22]
@@ -236,6 +253,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Toad Crunchies
 
 [com_23]
@@ -246,6 +264,7 @@ y=0
 width=163
 height=17
 center=yes
+font=q8
 text=Gnome Battas
 colour=0x000080
 
@@ -258,6 +277,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Worm Batta
 
 [com_25]
@@ -269,6 +289,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Toad's Legs Batta
 
 [com_26]
@@ -280,6 +301,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Cheese & Tomato Batta
 
 [com_27]
@@ -291,6 +313,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Fruit Batta
 
 [com_28]
@@ -302,6 +325,7 @@ buttontype=normal
 width=163
 height=17
 center=yes
+font=q8
 text=Vegetable Batta
 
 [com_29]
@@ -642,6 +666,7 @@ y=30
 width=360
 height=14
 center=yes
+font=b12
 shadowed=yes
 text=The Blurberry Cocktail Guide
 colour=0xFFFF00
@@ -653,6 +678,7 @@ y=28
 buttontype=close
 width=68
 height=11
+font=p11
 shadowed=yes
 text=Close Window
 colour=0xC00000

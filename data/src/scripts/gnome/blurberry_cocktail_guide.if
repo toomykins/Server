@@ -346,6 +346,7 @@ y=30
 width=360
 height=14
 center=yes
+font=b12
 shadowed=yes
 text=The Blurberry Cocktail Guide
 colour=0xFFFF00
@@ -357,6 +358,7 @@ y=28
 buttontype=close
 width=68
 height=11
+font=p11
 shadowed=yes
 text=Close Window
 colour=0xC00000
@@ -368,6 +370,7 @@ x=125
 y=120
 width=125
 height=122
+font=q8
 text=line1\nline2\nline3\nline4\nline5\nline6\nline7\nline8
 
 [com_41]
@@ -387,6 +390,7 @@ y=80
 width=150
 height=17
 center=yes
+font=q8
 text=title1
 colour=0x800000
 
@@ -396,6 +400,7 @@ x=285
 y=80
 width=200
 height=182
+font=q8
 text=line1\nline2\nline3\nline4\nline5\nline6\nline7\nline8\nline9\nline10\nline11\nline12
 
 [com_44]
@@ -439,6 +444,7 @@ y=28
 buttontype=normal
 width=28
 height=11
+font=p11
 shadowed=yes
 text=Index
 colour=0xC00000
