@@ -17,6 +17,10 @@ let count = dat.g2();
 let interfaces = [];
 for (let i = 0; i < count; i++) {
     interfaces[i] = null;
+
+    if (!pack[i]) {
+        pack[i] = 'null:null';
+    }
 }
 
 // decode
@@ -139,7 +143,7 @@ while (dat.available > 0) {
 
     if (com.type == 3 || com.type == 4) {
         com.activeColour = dat.g4();
-        com.hoverColour = dat.g4();
+        com.overColour = dat.g4();
     }
 
     if (com.type == 5) {
@@ -150,12 +154,12 @@ while (dat.available > 0) {
     if (com.type == 6) {
         com.model = dat.g1();
         if (com.model != 0) {
-            com.model = (com.model - 1 << 8) + dat.g1();
+            com.model = ((com.model - 1) << 8) + dat.g1();
         }
 
         com.activeModel = dat.g1();
         if (com.activeModel != 0) {
-            com.activeModel = (com.activeModel - 1 << 8) + dat.g1();
+            com.activeModel = ((com.activeModel - 1) << 8) + dat.g1();
         }
 
         com.anim = dat.g1();
@@ -196,9 +200,9 @@ while (dat.available > 0) {
     }
 
     if (com.buttonType == 2 || com.type == 2) {
-        com.spellAction = dat.gjstr();
-        com.spellName = dat.gjstr();
-        com.spellFlags = dat.g2();
+        com.actionVerb = dat.gjstr();
+        com.action = dat.gjstr();
+        com.actionTarget = dat.g2();
     }
 
     if (com.buttonType == 1 || com.buttonType == 4 || com.buttonType == 5 || com.buttonType == 6) {
@@ -215,7 +219,7 @@ let packChildren = {};
 // generate new names first
 function generateNames(com, rootIfName) {
     if (com.id !== com.rootLayer) {
-        if (!pack[com.id]) {
+        if (!pack[com.id] || pack[com.id] === 'null:null') {
             pack[com.id] = `${rootIfName}:com_${packChildren[com.rootLayer]++}`;
         }
     }
@@ -532,7 +536,7 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
             str += 'center=yes\n';
         }
 
-        switch (str.font) {
+        switch (com.font) {
             case 0:
                 str += 'font=p11\n';
                 break;
@@ -573,8 +577,8 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
             str += `activecolour=0x${com.activeColour.toString(16).toUpperCase().padStart(6, '0')}\n`;
         }
 
-        if (com.hoverColour) {
-            str += `overcolour=0x${com.hoverColour.toString(16).toUpperCase().padStart(6, '0')}\n`;
+        if (com.overColour) {
+            str += `overcolour=0x${com.overColour.toString(16).toUpperCase().padStart(6, '0')}\n`;
         }
     }
 
@@ -623,7 +627,7 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
             str += 'center=yes\n';
         }
 
-        switch (str.font) {
+        switch (com.font) {
             case 0:
                 str += 'font=p11\n';
                 break;
@@ -643,36 +647,52 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
         }
 
         str += `colour=0x${com.colour.toString(16).toUpperCase().padStart(6, '0')}\n`;
+
+        if (com.marginX || com.marginY) {
+            str += `margin=${com.marginX},${com.marginY}\n`;
+        }
+
+        if (com.interactable) {
+            str += 'interactable=yes\n';
+        }
+
+        if (com.inventoryOptions) {
+            for (let i = 0; i < com.inventoryOptions.length; i++) {
+                if (com.inventoryOptions[i]) {
+                    str += `option${i + 1}=${com.inventoryOptions[i]}\n`;
+                }
+            }
+        }
     }
 
     if (com.buttonType == 2 || com.type == 2) {
-        if (com.spellAction) {
-            str += `actionverb=${com.spellAction}\n`;
+        if (com.actionVerb) {
+            str += `actionverb=${com.actionVerb}\n`;
         }
 
-        if (com.spellFlags) {
+        if (com.actionTarget) {
             let target = [];
-            if (com.spellFlags & 0x1) {
+            if (com.actionTarget & 0x1) {
                 target.push('obj');
             }
-            if (com.spellFlags & 0x2) {
+            if (com.actionTarget & 0x2) {
                 target.push('npc');
             }
-            if (com.spellFlags & 0x4) {
+            if (com.actionTarget & 0x4) {
                 target.push('loc');
             }
-            if (com.spellFlags & 0x8) {
+            if (com.actionTarget & 0x8) {
                 target.push('player');
             }
-            if (com.spellFlags & 0x10) {
+            if (com.actionTarget & 0x10) {
                 target.push('heldobj');
             }
 
             str += `actiontarget=${target.join(',')}\n`;
         }
 
-        if (com.spellName) {
-            str += `action=${com.spellName}\n`;
+        if (com.action) {
+            str += `action=${com.action}\n`;
         }
     }
 
