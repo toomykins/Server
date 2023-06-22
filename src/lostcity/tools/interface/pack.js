@@ -529,6 +529,5 @@ for (let i = 0; i < interfaceOrder.length; i++) {
 
 // ----
 
-data.save('dump/data');
 jag.write('data', data);
 jag.save('data/pack/client/interface');

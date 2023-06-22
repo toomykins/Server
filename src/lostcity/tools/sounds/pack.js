@@ -22,8 +22,5 @@ for (let i = 0; i < order.length; i++) {
 }
 out.p2(-1);
 
-// out.save('data/pack/client/sounds.jag/sounds.dat');
-
 jag.write('sounds.dat', out);
-
-jag.save('data/pack/client/sounds');
+jag.save('data/pack/client/sounds', true);

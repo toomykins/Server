@@ -100,7 +100,7 @@ export default class Jagfile {
         this.fileQueue.push({ hash: oldHash, name: oldName, rename: true, newName, newHash });
     }
 
-    save(path) {
+    save(path, doNotCompressWhole = false) {
         let buf = new Packet();
 
         for (let i = 0; i < this.fileQueue.length; i++) {
@@ -139,6 +139,9 @@ export default class Jagfile {
         }
 
         let compressWhole = this.fileCount === 1;
+        if (doNotCompressWhole && compressWhole) {
+            compressWhole = false;
+        }
 
         // write header
         buf.p2(this.fileCount);

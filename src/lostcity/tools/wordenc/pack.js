@@ -32,7 +32,6 @@ let jag = new Jagfile();
         }
     }
 
-    // out.save('data/pack/client/wordenc.jag/badenc.txt');
     jag.write('badenc.txt', out);
 }
 
@@ -47,7 +46,6 @@ let jag = new Jagfile();
         out.p2(fragment);
     }
 
-    // out.save('data/pack/client/wordenc.jag/fragmentsenc.txt');
     jag.write('fragmentsenc.txt', out);
 }
 
@@ -67,7 +65,6 @@ let jag = new Jagfile();
         }
     }
 
-    // out.save('data/pack/client/wordenc.jag/tldlist.txt');
     jag.write('tldlist.txt', out);
 }
 
@@ -85,7 +82,6 @@ let jag = new Jagfile();
         }
     }
 
-    // out.save('data/pack/client/wordenc.jag/domainenc.txt');
     jag.write('domainenc.txt', out);
 }
 
