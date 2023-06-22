@@ -389,7 +389,8 @@ extension: varp
 | code7 | | |
 | code8 | | |
 | code10 | | |
-| transmit | How frequently to transmit changes | never, once, always |
+| transmit | How frequently to transmit changes | never, once, always | never |
+| scope | Whether to persist to the player save | temp, perm | temp |
 
 ```
 [example]

@@ -148,6 +148,9 @@ function packSeq(config, dat, idx) {
 
         for (let i = 0; i < src.length; i++) {
             let line = src[i];
+            if (line.startsWith('//')) {
+                continue;
+            }    
 
             if (line.startsWith('[')) {
                 if (current) {
@@ -564,6 +567,9 @@ function packLoc(config, dat, idx) {
 
         for (let i = 0; i < src.length; i++) {
             let line = src[i];
+            if (line.startsWith('//')) {
+                continue;
+            }
 
             if (line.startsWith('[')) {
                 if (current) {
@@ -635,6 +641,9 @@ function packFlo(config, dat, idx, name) {
 
         for (let i = 0; i < src.length; i++) {
             let line = src[i];
+            if (line.startsWith('//')) {
+                continue;
+            }
 
             if (line.startsWith('[')) {
                 if (current) {
@@ -734,6 +743,9 @@ function packSpotanim(config, dat, idx) {
 
         for (let i = 0; i < src.length; i++) {
             let line = src[i];
+            if (line.startsWith('//')) {
+                continue;
+            }
 
             if (line.startsWith('[')) {
                 if (current) {
@@ -918,6 +930,9 @@ function packObj(config, dat, idx) {
 
         for (let i = 0; i < src.length; i++) {
             let line = src[i];
+            if (line.startsWith('//')) {
+                continue;
+            }
 
             if (line.startsWith('[')) {
                 if (current) {
@@ -1084,6 +1099,9 @@ function packNpc(config, dat, idx) {
 
         for (let i = 0; i < src.length; i++) {
             let line = src[i];
+            if (line.startsWith('//')) {
+                continue;
+            }
 
             if (line.startsWith('[')) {
                 if (current) {
@@ -1242,6 +1260,9 @@ function packIdk(config, dat, idx) {
 
         for (let i = 0; i < src.length; i++) {
             let line = src[i];
+            if (line.startsWith('//')) {
+                continue;
+            }
 
             if (line.startsWith('[')) {
                 if (current) {
@@ -1303,6 +1324,9 @@ function packVarp(config, dat, idx) {
 
         for (let i = 0; i < src.length; i++) {
             let line = src[i];
+            if (line.startsWith('//')) {
+                continue;
+            }
 
             if (line.startsWith('[')) {
                 if (current) {
