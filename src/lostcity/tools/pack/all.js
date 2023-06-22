@@ -1,5 +1,5 @@
 import '../config/pack.js';
-// import '../interfaces/pack.js';
+import '../interface/pack.js';
 import '../maps/pack.js';
 import '../media/pack.js';
 import '../models/pack.js';

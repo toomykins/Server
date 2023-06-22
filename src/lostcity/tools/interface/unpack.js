@@ -30,8 +30,9 @@ while (dat.available > 0) {
     if (id === 65535) {
         rootLayer = dat.g2();
         id = dat.g2();
-        order += `${rootLayer}\n`;
+        // order += `${rootLayer}\n`; // preserve only the order of root interfaces
     }
+    order += `${id}\n`;
 
     let com = {};
     com.id = id;
@@ -402,11 +403,12 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
         for (let i = 0; i < com.scripts.length; i++) {
             let opcount = 1;
 
-            for (let j = 0; j < com.scripts[i].length; j++) {
-                if (com.scripts[i][j] === 0) {
-                    continue;
-                }
+            if (com.scripts[i].length === 1) {
+                // empty script
+                str += `script${i + 1}op1=\n`;
+            }
 
+            for (let j = 0; j < com.scripts[i].length - 1; j++) {
                 str += `script${i + 1}op${opcount++}=`;
 
                 switch (com.scripts[i][j]) {
@@ -449,15 +451,12 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
                     case 13:
                         str += `testbit,${varpPack[com.scripts[i][++j]]},${com.scripts[i][++j]}`;
                         break;
-                    default:
-                        str += `${com.scripts[i][j]}`;
-                        break;
                 }
 
                 str += '\n';
             }
 
-            if (com.scriptComparator) {
+            if (com.scriptComparator && com.scriptComparator[i]) {
                 str += `script${i + 1}=`;
                 switch (com.scriptComparator[i]) {
                     case 1:
@@ -507,7 +506,7 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
         }
 
         for (let i = 0; i < 20; i++) {
-            if (com.inventorySlotGraphic[i]) {
+            if (typeof com.inventorySlotGraphic[i] !== 'undefined') {
                 if (com.inventorySlotOffsetX[i] || com.inventorySlotOffsetY[i]) {
                     str += `slot${i + 1}=${com.inventorySlotGraphic[i]}:${com.inventorySlotOffsetX[i]},${com.inventorySlotOffsetY[i]}\n`;
                 } else {
