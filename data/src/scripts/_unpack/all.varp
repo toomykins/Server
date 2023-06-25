@@ -417,12 +417,12 @@ scope=perm
 [varp_167]
 clientcode=2
 
-[varp_168]
+[music_volume]
 clientcode=3
 transmit=always
 scope=perm
 
-[varp_169]
+[sound_volume]
 clientcode=4
 transmit=always
 scope=perm
@@ -437,11 +437,11 @@ clientcode=6
 transmit=always
 scope=perm
 
-[varp_172]
+[auto_retaliate]
 transmit=always
 scope=perm
 
-[varp_173]
+[player_run]
 clientcode=7
 transmit=always
 scope=perm

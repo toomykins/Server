@@ -35,6 +35,16 @@ function getExpByLevel(level) {
 }
 
 export default class Player {
+    static APPEARANCE = 0x1;
+    static ANIM = 0x2;
+    static FACE_ENTITY = 0x4;
+    static FORCED_CHAT = 0x8;
+    static DAMAGE = 0x10;
+    static FACE_COORD = 0x20;
+    static CHAT = 0x40;
+    static SPOTANIM = 0x100;
+    static FORCED_MOVEMENT = 0x200;
+
     username = 'invalid_name';
     x = 0;
     z = 0;
@@ -188,6 +198,8 @@ export default class Player {
     loadedZ = -1;
     walkQueue = [];
 
+    client = null;
+    netOut = [];
     mask = 0;
     faceEntity = -1;
     faceCoordX = -1;
