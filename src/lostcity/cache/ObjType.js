@@ -1,4 +1,5 @@
 import { loadDir, loadPack } from '#lostcity/tools/pack/NameMap.js';
+import ParamType from './ParamType.js';
 
 let modelPack = loadPack('data/pack/model.pack');
 
@@ -6,6 +7,7 @@ let objPack = loadPack('data/pack/obj.pack');
 let seqPack = loadPack('data/pack/seq.pack');
 
 export default class ObjType {
+    static names = [];
     static configs = [];
 
     static init() {
@@ -23,6 +25,7 @@ export default class ObjType {
                 if (line.startsWith('[')) {
                     if (current) {
                         let id = objPack.indexOf(current);
+                        ObjType.names[id] = current;
                         ObjType.configs[id] = config;
                     }
 
@@ -36,6 +39,7 @@ export default class ObjType {
 
             if (current) {
                 let id = objPack.indexOf(current);
+                ObjType.names[id] = current;
                 ObjType.configs[id] = config;
             }
         });
@@ -127,19 +131,69 @@ export default class ObjType {
 
                     config.countobj[index] = countobj;
                     config.countco[index] = countco;
+                } else if (key.startsWith('wearpos')) {
+                    config[key] = value;
+                } else if (key === 'weight') {
+                    let grams = 0;
+                    if (value.indexOf('kg') !== -1) {
+                        // in kg, convert to g
+                        grams = Number(value.substring(0, value.indexOf('kg'))) * 1000;
+                    } else if (value.indexOf('oz') !== -1) {
+                        // in oz, convert to g
+                        grams = Number(value.substring(0, value.indexOf('oz'))) * 28.3495;
+                    } else if (value.indexOf('lb') !== -1) {
+                        // in lb, convert to g
+                        grams = Number(value.substring(0, value.indexOf('lb'))) * 453.592;
+                    } else if (value.indexOf('g') !== -1) {
+                        // in g
+                        grams = Number(value.substring(0, value.indexOf('g')));
+                    }
+                    config.weight = grams;
+                } else if (key === 'param') {
+                    let parts = value.split('=');
+                    let paramName = parts[0];
+                    let paramValue = parts[1];
+
+                    let paramId = ParamType.getId(paramName);
+                    if (paramId !== -1) {
+                        let param = ParamType.get(paramId);
+                        if (param.type === 'int') {
+                            config.params[paramId] = parseInt(paramValue);
+                        } else {
+                            config.params[paramId] = paramValue;
+                        }
+                    }
                 }
             }
+
+            ObjType.configs[i] = config;
+        }
+
+        // generate noted obj data
+        for (let i = 0; i < ObjType.configs.length; i++) {
+            let config = ObjType.configs[i];
 
             if (config.certtemplate !== -1) {
                 config.toCertificate();
             }
-
-            ObjType.configs[i] = config;
         }
     }
 
     static get(id) {
         return ObjType.configs[id];
+    }
+
+    static getId(name) {
+        return ObjType.names.indexOf(name);
+    }
+
+    static getByName(name) {
+        let id = this.getId(name);
+        if (id === -1) {
+            return null;
+        }
+
+        return this.get(id);
     }
 
     // ----
@@ -178,6 +232,13 @@ export default class ObjType {
     countco = [];
     certlink = -1;
     certtemplate = -1;
+
+    // server-side
+    wearpos = -1;
+    wearpos2 = -1;
+    wearpos3 = -1;
+    weight = 0; // in grams
+    params = {};
 
     toCertificate() {
         let template = ObjType.get(this.certtemplate);

@@ -6,6 +6,7 @@ let seqPack = loadPack('data/pack/seq.pack');
 let npcPack = loadPack('data/pack/npc.pack');
 
 export default class NpcType {
+    static names = [];
     static configs = [];
 
     static init() {
@@ -13,29 +14,31 @@ export default class NpcType {
         loadDir('data/src/scripts', '.npc', (src) => {
             let current = null;
             let config = [];
-    
+
             for (let i = 0; i < src.length; i++) {
                 let line = src[i];
                 if (line.startsWith('//')) {
                     continue;
                 }
-    
+
                 if (line.startsWith('[')) {
                     if (current) {
                         let id = npcPack.indexOf(current);
+                        NpcType.names[id] = current;
                         NpcType.configs[id] = config;
                     }
-    
+
                     current = line.substring(1, line.length - 1);
                     config = [];
                     continue;
                 }
-    
+
                 config.push(line);
             }
-    
+
             if (current) {
                 let id = npcPack.indexOf(current);
+                NpcType.names[id] = current;
                 NpcType.configs[id] = config;
             }
         });
@@ -106,6 +109,19 @@ export default class NpcType {
 
     static get(id) {
         return NpcType.configs[id];
+    }
+
+    static getId(name) {
+        return NpcType.names.indexOf(name);
+    }
+
+    static getByName(name) {
+        let id = this.getId(name);
+        if (id === -1) {
+            return null;
+        }
+
+        return this.get(id);
     }
 
     // ----

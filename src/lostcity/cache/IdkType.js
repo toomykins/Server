@@ -5,6 +5,7 @@ let modelPack = loadPack('data/pack/model.pack');
 let idkPack = loadPack('data/pack/idk.pack');
 
 export default class IdkType {
+    static names = [];
     static configs = [];
 
     static init() {
@@ -12,29 +13,31 @@ export default class IdkType {
         loadDir('data/src/scripts', '.idk', (src) => {
             let current = null;
             let config = [];
-    
+
             for (let i = 0; i < src.length; i++) {
                 let line = src[i];
                 if (line.startsWith('//')) {
                     continue;
                 }
-    
+
                 if (line.startsWith('[')) {
                     if (current) {
                         let id = idkPack.indexOf(current);
+                        IdkType.names[id] = current;
                         IdkType.configs[id] = config;
                     }
-    
+
                     current = line.substring(1, line.length - 1);
                     config = [];
                     continue;
                 }
-    
+
                 config.push(line);
             }
-    
+
             if (current) {
                 let id = idkPack.indexOf(current);
+                IdkType.names[id] = current;
                 IdkType.configs[id] = config;
             }
         });
@@ -122,13 +125,26 @@ export default class IdkType {
         return IdkType.configs[id];
     }
 
+    static getId(name) {
+        return IdkType.names.indexOf(name);
+    }
+
+    static getByName(name) {
+        let id = this.getId(name);
+        if (id === -1) {
+            return null;
+        }
+
+        return this.get(id);
+    }
+
     // ----
 
     type = -1;
     models = [];
-    heads = [ -1, -1, -1, -1, -1 ];
-    recol_s = [ 0, 0, 0, 0, 0, 0 ];
-    recol_d = [ 0, 0, 0, 0, 0, 0 ];
+    heads = [-1, -1, -1, -1, -1];
+    recol_s = [0, 0, 0, 0, 0, 0];
+    recol_d = [0, 0, 0, 0, 0, 0];
     disable = false;
 }
 
