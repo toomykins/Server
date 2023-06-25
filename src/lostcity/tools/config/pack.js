@@ -1,5 +1,3 @@
-import fs from 'fs';
-
 import Jagfile from '#jagex2/io/Jagfile.js';
 import Packet from '#jagex2/io/Packet.js';
 
@@ -184,8 +182,8 @@ function packLoc(config, dat, idx) {
     let start = dat.pos;
 
     // collect these to write at the end
-    let recols = [];
-    let recold = [];
+    let recol_s = [];
+    let recol_d = [];
     let model = null;
     let name = null;
     let desc = null;
@@ -206,10 +204,10 @@ function packLoc(config, dat, idx) {
             forceshape = value;
         } else if (key.startsWith('recol') && key.endsWith('s')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recols[index] = parseInt(value);
+            recol_s[index] = parseInt(value);
         } else if (key.startsWith('recol') && key.endsWith('d')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recold[index] = parseInt(value);
+            recol_d[index] = parseInt(value);
         } else if (key === 'width') {
             dat.p1(14);
             dat.p1(parseInt(value));
@@ -300,13 +298,13 @@ function packLoc(config, dat, idx) {
         }
     }
 
-    if (recols.length) {
+    if (recol_s.length) {
         dat.p1(40);
-        dat.p1(recols.length);
+        dat.p1(recol_s.length);
 
-        for (let i = 0; i < recols.length; i++) {
-            dat.p2(recols[i]);
-            dat.p2(recold[i]);
+        for (let i = 0; i < recol_s.length; i++) {
+            dat.p2(recol_s[i]);
+            dat.p2(recol_d[i]);
         }
     }
 
@@ -677,8 +675,8 @@ function packSpotanim(config, dat, idx) {
     let start = dat.pos;
 
     // collect these to write at the end
-    let recols = [];
-    let recold = [];
+    let recol_s = [];
+    let recol_d = [];
 
     for (let i = 0; i < config.length; i++) {
         let line = config[i];
@@ -710,19 +708,19 @@ function packSpotanim(config, dat, idx) {
             dat.p1(parseInt(value));
         } else if (key.startsWith('recol') && key.endsWith('s')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recols[index] = parseInt(value);
+            recol_s[index] = parseInt(value);
         } else if (key.startsWith('recol') && key.endsWith('d')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recold[index] = parseInt(value);
+            recol_d[index] = parseInt(value);
         }
     }
 
-    for (let i = 0; i < recols.length; i++) {
+    for (let i = 0; i < recol_s.length; i++) {
         dat.p1(40 + i);
-        dat.p2(recols[i]);
+        dat.p2(recol_s[i]);
 
         dat.p1(50 + i);
-        dat.p2(recold[i]);
+        dat.p2(recol_d[i]);
     }
 
     dat.p1(0);
@@ -779,8 +777,8 @@ function packObj(config, dat, idx) {
     let start = dat.pos;
 
     // collect these to write at the end
-    let recols = [];
-    let recold = [];
+    let recol_s = [];
+    let recol_d = [];
     let name = '';
 
     for (let i = 0; i < config.length; i++) {
@@ -792,17 +790,13 @@ function packObj(config, dat, idx) {
             name = value;
         } else if (key.startsWith('recol') && key.endsWith('s')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recols[index] = parseInt(value);
+            recol_s[index] = parseInt(value);
         } else if (key.startsWith('recol') && key.endsWith('d')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recold[index] = parseInt(value);
+            recol_d[index] = parseInt(value);
         } else if (key === 'model') {
             dat.p1(1);
             dat.p2(modelPack.indexOf(value));
-            let model = modelPack.indexOf(value);
-            if (model === -1) {
-                console.log(value);
-            }
         } else if (key === 'desc') {
             dat.p1(3);
             dat.pjstr(value);
@@ -897,13 +891,13 @@ function packObj(config, dat, idx) {
         }
     }
 
-    if (recols.length) {
+    if (recol_s.length) {
         dat.p1(40);
-        dat.p1(recols.length);
+        dat.p1(recol_s.length);
 
-        for (let i = 0; i < recols.length; i++) {
-            dat.p2(recols[i]);
-            dat.p2(recold[i]);
+        for (let i = 0; i < recol_s.length; i++) {
+            dat.p2(recol_s[i]);
+            dat.p2(recol_d[i]);
         }
     }
 
@@ -966,8 +960,8 @@ function packNpc(config, dat, idx) {
     let start = dat.pos;
 
     // collect these to write at the end
-    let recols = [];
-    let recold = [];
+    let recol_s = [];
+    let recol_d = [];
     let name = '';
     let models = [];
     let heads = [];
@@ -987,10 +981,10 @@ function packNpc(config, dat, idx) {
             heads[index] = modelPack.indexOf(value);
         } else if (key.startsWith('recol') && key.endsWith('s')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recols[index] = parseInt(value);
+            recol_s[index] = parseInt(value);
         } else if (key.startsWith('recol') && key.endsWith('d')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recold[index] = parseInt(value);
+            recol_d[index] = parseInt(value);
         } else if (key === 'desc') {
             dat.p1(3);
             dat.pjstr(value);
@@ -1025,36 +1019,36 @@ function packNpc(config, dat, idx) {
             let index = parseInt(key.substring('op'.length)) - 1;
             dat.p1(30 + index);
             dat.pjstr(value);
-        } else if (key.startsWith('code90')) {
+        } else if (key === 'code90') {
             dat.p1(90);
             dat.p2(parseInt(value));
-        } else if (key.startsWith('code91')) {
+        } else if (key === 'code91') {
             dat.p1(91);
             dat.p2(parseInt(value));
-        } else if (key.startsWith('code92')) {
+        } else if (key === 'code92') {
             dat.p1(92);
             dat.p2(parseInt(value));
-        } else if (key.startsWith('visonmap') && value === 'no') {
+        } else if (key === 'visonmap' && value === 'no') {
             dat.p1(93);
-        } else if (key.startsWith('vislevel')) {
+        } else if (key === 'vislevel') {
             dat.p1(95);
             dat.p2(parseInt(value));
-        } else if (key.startsWith('resizeh')) {
+        } else if (key === 'resizeh') {
             dat.p1(97);
             dat.p2(parseInt(value));
-        } else if (key.startsWith('resizev')) {
+        } else if (key === 'resizev') {
             dat.p1(98);
             dat.p2(parseInt(value));
         }
     }
 
-    if (recols.length) {
+    if (recol_s.length) {
         dat.p1(40);
-        dat.p1(recols.length);
+        dat.p1(recol_s.length);
 
-        for (let i = 0; i < recols.length; i++) {
-            dat.p2(recols[i]);
-            dat.p2(recold[i]);
+        for (let i = 0; i < recol_s.length; i++) {
+            dat.p2(recol_s[i]);
+            dat.p2(recol_d[i]);
         }
     }
 
@@ -1135,8 +1129,8 @@ function packIdk(config, dat, idx) {
     let start = dat.pos;
 
     // collect these to write at the end
-    let recols = [];
-    let recold = [];
+    let recol_s = [];
+    let recol_d = [];
     let models = [];
     let heads = [];
 
@@ -1153,10 +1147,10 @@ function packIdk(config, dat, idx) {
             heads[index] = modelPack.indexOf(value);
         } else if (key.startsWith('recol') && key.endsWith('s')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recols[index] = parseInt(value);
+            recol_s[index] = parseInt(value);
         } else if (key.startsWith('recol') && key.endsWith('d')) {
             let index = parseInt(key.substring('recol'.length, key.length - 1)) - 1;
-            recold[index] = parseInt(value);
+            recol_d[index] = parseInt(value);
         } else if (key === 'type') {
             dat.p1(1);
 
@@ -1212,17 +1206,17 @@ function packIdk(config, dat, idx) {
         }
     }
 
-    if (recols.length) {
-        for (let i = 0; i < recols.length; i++) {
+    if (recol_s.length) {
+        for (let i = 0; i < recol_s.length; i++) {
             dat.p1(40 + i);
-            dat.p2(recols[i]);
+            dat.p2(recol_s[i]);
         }
     }
 
-    if (recold.length) {
-        for (let i = 0; i < recold.length; i++) {
+    if (recol_d.length) {
+        for (let i = 0; i < recol_d.length; i++) {
             dat.p1(50 + i);
-            dat.p2(recold[i]);
+            dat.p2(recol_d[i]);
         }
     }
 

@@ -983,23 +983,23 @@ recol1d=127
 name=Party Balloon
 desc=Aren't they pretty?
 model=model_loc_115
+forceshape=wall_diagonalcorner
 anim=seq_498
 blockwalk=no
 blockrange=no
 ambient=60
 op1=Burst
-forceshape=wall_diagonalcorner
 
 [loc_122]
 name=Party Balloon
 desc=Paaaarty!
 model=model_loc_115
+forceshape=wall_l
 anim=seq_498
 blockwalk=no
 blockrange=no
 ambient=60
 op1=Burst
-forceshape=wall_l
 
 [loc_123]
 name=Party Balloon
@@ -11452,17 +11452,17 @@ active=yes
 name=Timber
 desc=This timber is broken
 model=model_loc_1613
+forceshape=wall_straight
 recol1s=23
 recol1d=16
-forceshape=wall_straight
 
 [loc_1614]
 name=Timber
 desc=This timber is broken
 model=model_loc_1614
+forceshape=wall_straight
 recol1s=23
 recol1d=16
-forceshape=wall_straight
 
 [loc_1615]
 model=model_loc_1615
@@ -12902,8 +12902,8 @@ sharelight=yes
 
 [loc_1820]
 model=model_loc_33
-active=no
 forceshape=walldecor_straight_nooffset
+active=no
 
 [loc_1821]
 model=model_loc_1821
@@ -13121,10 +13121,10 @@ recol1d=6697
 name=Timber defence
 desc=These obviously mean keep out!
 model=model_loc_830
+forceshape=wall_straight
 sharelight=yes
 hillskew=yes
 blockrange=no
-forceshape=wall_straight
 
 [loc_1865]
 model=model_loc_717
@@ -16102,20 +16102,20 @@ op2=Search
 name=Tomb exit
 desc=Perhaps you should give them a push.
 model=model_loc_2240
+forceshape=wall_diagonalcorner
 width=2
 op1=Open
 op2=Search
-forceshape=wall_diagonalcorner
 
 [loc_2243]
 name=Tomb exit
 desc=Perhaps you should give them a push.
 model=model_loc_2240
+forceshape=wall_diagonalcorner
 width=2
 mirror=yes
 op1=Open
 op2=Search
-forceshape=wall_diagonalcorner
 
 [loc_2244]
 name=Jungle plant
@@ -19491,10 +19491,10 @@ op2=Investigate
 name=Spiders' nest
 desc=It looks like a spiders nest to me.
 model=model_loc_706
+forceshape=walldecor_straight_nooffset
 op2=Investigate
 recol1s=9152
 recol1d=82
-forceshape=walldecor_straight_nooffset
 
 [loc_2654]
 name=Sinclair family fountain
@@ -19576,13 +19576,13 @@ op1=Investigate
 name=Smashed window
 desc=looks like the killer smashed this to leave the mansion.
 model=model_loc_1843
+forceshape=walldecor_straight_nooffset
 active=yes
 op2=Investigate
 recol1s=2
 recol1d=45
 recol2s=24
 recol2d=4762
-forceshape=walldecor_straight_nooffset
 
 [loc_2667]
 name=Winch
@@ -20419,17 +20419,17 @@ op1=Steal-From
 name=Lever
 desc=A lever for activating something.
 model=model_loc_34
+forceshape=walldecor_straight_nooffset
 op1=Pull
 active=yes
-forceshape=walldecor_straight_nooffset
 
 [loc_2795]
 name=Lever
 desc=A lever for activating something.
 model=model_loc_33
+forceshape=walldecor_straight_nooffset
 op1=Pull
 active=yes
-forceshape=walldecor_straight_nooffset
 
 [loc_2796]
 name=Ladder
@@ -20996,9 +20996,9 @@ forceapproach=east
 name=Mouse hole
 desc=The mouse equivalent of a door.
 model=model_loc_1874
+forceshape=walldecor_straight_nooffset
 active=yes
 op1=Examine
-forceshape=walldecor_straight_nooffset
 
 [loc_2871]
 name=Ladder
@@ -22225,10 +22225,10 @@ active=no
 name=Timber defence
 desc=These obviously mean keep out!
 model=model_loc_831
+forceshape=wall_straight
 sharelight=yes
 hillskew=yes
 blockrange=no
-forceshape=wall_straight
 
 [loc_3001]
 model=model_loc_3001
@@ -22594,10 +22594,10 @@ blockrange=no
 name=Timber defence
 desc=These obviously mean keep out!
 model=model_loc_832
+forceshape=wall_straight
 sharelight=yes
 hillskew=yes
 blockrange=no
-forceshape=wall_straight
 
 [loc_3047]
 model=model_loc_3047
@@ -24190,13 +24190,13 @@ length=2
 name=Flat rock
 desc=Looks suspicious.
 model=model_loc_3230
+forceshape=grounddecor
 hillskew=yes
 blockwalk=no
 blockrange=no
 op1=Search
 recol1s=53
 recol1d=6798
-forceshape=grounddecor
 
 [loc_3231]
 name=Plank
@@ -24617,13 +24617,13 @@ recol1d=7952
 
 [loc_3279]
 model=model_loc_3278
+forceshape=wall_diagonalcorner
 active=no
 sharelight=yes
 blockrange=no
 mapscene=43
 recol1s=6689
 recol1d=7952
-forceshape=wall_diagonalcorner
 
 [loc_3280]
 model=model_loc_3280
@@ -24668,39 +24668,39 @@ recol1d=7952
 
 [loc_3285]
 model=model_loc_3281
+forceshape=wall_diagonalcorner
 sharelight=yes
 active=no
 blockrange=no
 recol1s=6689
 recol1d=7952
-forceshape=wall_diagonalcorner
 
 [loc_3286]
 model=model_loc_3283
+forceshape=wall_diagonalcorner
 sharelight=yes
 active=no
 blockrange=no
 recol1s=6689
 recol1d=7952
-forceshape=wall_diagonalcorner
 
 [loc_3287]
 model=model_loc_3283
+forceshape=wall_l
 sharelight=yes
 active=no
 blockrange=no
 recol1s=6689
 recol1d=7952
-forceshape=wall_l
 
 [loc_3288]
 model=model_loc_3283
+forceshape=wall_squarecorner
 sharelight=yes
 active=no
 blockrange=no
 recol1s=6689
 recol1d=7952
-forceshape=wall_squarecorner
 
 [loc_3289]
 model=model_loc_3289
@@ -24713,18 +24713,18 @@ recol1d=7952
 
 [loc_3290]
 model=model_loc_3290
-active=no
 forceshape=wall_straight
+active=no
 
 [loc_3291]
 model=model_loc_3290
-active=no
 forceshape=wall_diagonalcorner
+active=no
 
 [loc_3292]
 model=model_loc_3290
-active=no
 forceshape=wall_l
+active=no
 
 [loc_3293]
 model=model_loc_3290

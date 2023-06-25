@@ -42,6 +42,8 @@ while (dat.available > 0) {
     com.clientCode = dat.g2();
     com.width = dat.g2();
     com.height = dat.g2();
+    // com.alpha = dat.g1(); // 317
+
     com.overLayer = dat.g1();
     if (com.overLayer == 0) {
         com.overLayer = -1;
@@ -79,6 +81,7 @@ while (dat.available > 0) {
         com.hide = dat.gbool();
 
         let childCount = dat.g1();
+        // let childCount = dat.g2(); // 317
         com.childId = [];
         com.childX = [];
         com.childY = [];
@@ -90,11 +93,6 @@ while (dat.available > 0) {
         }
     }
 
-    if (com.type == 1) {
-        com.unusedShort1 = dat.g2();
-        com.unusedBoolean1 = dat.gbool();
-    }
-
     if (com.type == 2) {
         com.inventorySlotObjId = [];
         com.inventorySlotObjCount = [];
@@ -102,6 +100,7 @@ while (dat.available > 0) {
         com.draggable = dat.gbool();
         com.interactable = dat.gbool();
         com.usable = dat.gbool();
+        // com.replaces = dat.gbool(); // 317
         com.marginX = dat.g1();
         com.marginY = dat.g1();
 
@@ -145,6 +144,7 @@ while (dat.available > 0) {
     if (com.type == 3 || com.type == 4) {
         com.activeColour = dat.g4();
         com.overColour = dat.g4();
+        // com.activeOverColour = dat.g4(); // 317
     }
 
     if (com.type == 5) {
@@ -200,6 +200,11 @@ while (dat.available > 0) {
         }
     }
 
+    // 377
+    // if (com.type === 8) {
+    //     com.text = dat.gjstr();
+    // }
+
     if (com.buttonType == 2 || com.type == 2) {
         com.actionVerb = dat.gjstr();
         com.action = dat.gjstr();
@@ -247,7 +252,7 @@ for (let i = 0; i < interfaces.length; i++) {
     }
 
     let name = `inter_${ifId++}`;
-    if (!pack[com.id]) {
+    if (!pack[com.id] || pack[com.id] === 'null:null') {
         pack[com.id] = name;
     }
 
@@ -422,11 +427,13 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
                         str += `stat_xp,${statToName(com.scripts[i][++j])}`;
                         break;
                     case 4:
-                        str += `inv_count,${pack[com.scripts[i][++j]]},${objPack[com.scripts[i][++j]]}`;
+                        let obj = com.scripts[i][++j];
+                        str += `inv_count,${pack[com.scripts[i][++j]]},${obj ?? 'obj_' + obj}`;
                         break;
-                    case 5:
-                        str += `testvar,${varpPack[com.scripts[i][++j]]}`;
-                        break;
+                    case 5: {
+                        let varp = com.scripts[i][++j];
+                        str += `testvar,${varpPack[varp] ?? 'varp_' + varp}`;
+                    } break;
                     case 6:
                         str += `stat_xp_remaining,${statToName(com.scripts[i][++j])}`;
                         break;
@@ -439,18 +446,20 @@ function convert(com, x = 0, y = 0, lastCom = -1) {
                     case 9:
                         str += `op9`;
                         break;
-                    case 10:
-                        str += `inv_contains,${pack[com.scripts[i][++j]]},${objPack[com.scripts[i][++j]]}`;
-                        break;
+                    case 10: {
+                        let obj = com.scripts[i][++j];
+                        str += `inv_contains,${pack[com.scripts[i][++j]]},${objPack[obj] ?? 'obj_' + obj}`;
+                    } break;
                     case 11:
                         str += `runenergy`;
                         break;
                     case 12:
                         str += `runweight`;
                         break;
-                    case 13:
-                        str += `testbit,${varpPack[com.scripts[i][++j]]},${com.scripts[i][++j]}`;
-                        break;
+                    case 13: {
+                        let varp = com.scripts[i][++j];
+                        str += `testbit,${varpPack[varp] ?? 'varp_' + varp},${com.scripts[i][++j]}`;
+                    } break;
                 }
 
                 str += '\n';

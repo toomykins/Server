@@ -81,7 +81,7 @@ export default class Packet {
     // ----
 
     g1() {
-        return this.data[this.pos++] & 0xFF;
+        return this.data[this.pos++];
     }
 
     gbool() {
@@ -89,7 +89,7 @@ export default class Packet {
     }
 
     g1s() {
-        let value = this.data[this.pos++] & 0xFF;
+        let value = this.data[this.pos++];
         if (value > 0x7F) {
             value -= 0x100;
         }

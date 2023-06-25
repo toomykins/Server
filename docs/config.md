@@ -406,8 +406,8 @@ extension: param
 
 | Config | Description | Values | Default |
 |-|-|-|-|
-| type | Data type | int, string, any config type, namedobj | int |
-| default | Default value | | null/0 |
+| type | Data type | int, string, any config type, namedobj | |
+| default | Default value | | |
 
 ```
 [example]
