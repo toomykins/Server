@@ -376,10 +376,7 @@ for (let id = 0; id < count; id++) {
         } else if (code === 16) {
             append('all.npc', `hasalpha=yes`); // TODO: inherit from anim
         } else if (code === 17) {
-            append('all.npc', `walkanim=seq_${npc.g2()}`);
-            append('all.npc', `walkanim_b=seq_${npc.g2()}`);
-            append('all.npc', `walkanim_r=seq_${npc.g2()}`);
-            append('all.npc', `walkanim_l=seq_${npc.g2()}`);
+            append('all.npc', `walkanims=seq_${npc.g2()},seq_${npc.g2()},seq_${npc.g2()},seq_${npc.g2()}`);
         } else if (code >= 30 && code < 40) {
             append('all.npc', `op${code - 30 + 1}=${npc.gjstr()}`);
         } else if (code === 40) {

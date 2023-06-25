@@ -55,11 +55,21 @@ for (let i = 0; i < npcConfigs.length; i++) {
 
     let nameIndex = config.findIndex(x => x.startsWith('name'));
     if (nameIndex !== -1) {
-        // place name first
-        let temp = config[1];
-        config[1] = config[nameIndex];
-        config.splice(nameIndex, 1);
-        config.splice(2, 0, temp);
+        // try to place name before desc
+        let descIndex = config.findIndex(x => x.startsWith('desc'));
+
+        if (descIndex !== -1) {
+            let temp = config[descIndex];
+            config[descIndex] = config[nameIndex];
+            config.splice(nameIndex, 1);
+            config.splice(descIndex + 1, 0, temp);
+        } else {
+            // otherwise if there's no desc, place name first
+            let temp = config[1];
+            config[1] = config[nameIndex];
+            config.splice(nameIndex, 1);
+            config.splice(2, 0, temp);
+        }
     }
 }
 

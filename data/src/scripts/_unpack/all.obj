@@ -386,13 +386,13 @@ manwear=model_501_obj_wear,0
 womanwear=model_501_obj_wear,6
 weight=5lb
 wearpos=righthand
-param=stabattack=20
-param=slashattack=29
-param=crushattack=-2
-param=slashdefence=3
-param=crushdefence=2
-param=magicdefence=1
-param=strengthbonus=25
+param=stabattack,20
+param=slashattack,29
+param=crushattack,-2
+param=slashdefence,3
+param=crushdefence,2
+param=magicdefence,1
+param=strengthbonus,25
 
 [obj_36]
 name=Candle
@@ -851,9 +851,9 @@ recol2d=3974
 weight=6lb
 wearpos=hat
 wearpos2=head
-param=stabdefence=4
-param=slashdefence=5
-param=crushdefence=3
+param=stabdefence,4
+param=slashdefence,5
+param=crushdefence,3
 
 [obj_75]
 name=Khazard armour
@@ -876,9 +876,9 @@ recol2d=3974
 weight=20oz
 wearpos=torso
 wearpos2=arms
-param=stabdefence=9
-param=slashdefence=11
-param=crushdefence=10
+param=stabdefence,9
+param=slashdefence,11
+param=crushdefence,10
 
 [obj_76]
 name=Khazard cell keys
@@ -935,7 +935,7 @@ recol5s=5012
 recol5d=37340
 weight=16g
 wearpos=quiver
-param=rangedbonus=16
+param=rangedbonus,16
 
 [obj_79]
 name=Ice arrow 4
@@ -1113,9 +1113,9 @@ recol1s=4626
 recol1d=43189
 weight=12oz
 wearpos=feet
-param=stabdefence=1
-param=slashdefence=1
-param=crushdefence=1
+param=stabdefence,1
+param=slashdefence,1
+param=crushdefence,1
 
 [obj_89]
 name=Boots of lightness
@@ -1135,9 +1135,9 @@ recol1s=4626
 recol1d=43189
 weight=-10lb
 wearpos=feet
-param=stabdefence=1
-param=slashdefence=1
-param=crushdefence=1
+param=stabdefence,1
+param=slashdefence,1
+param=crushdefence,1
 
 [obj_90]
 name=Child's blanket
@@ -2886,12 +2886,12 @@ manwear=model_537_obj_wear,0
 womanwear=model_537_obj_wear,6
 weight=1lb
 wearpos=righthand
-param=stabattack=4
-param=slashattack=2
-param=crushattack=-4
-param=magicattack=1
-param=magicdefence=1
-param=strengthbonus=3
+param=stabattack,4
+param=slashattack,2
+param=crushattack,-4
+param=magicattack,1
+param=magicdefence,1
+param=strengthbonus,3
 
 [obj_279]
 name=Feed
@@ -4445,7 +4445,7 @@ recol1d=0
 weight=4lb
 wearpos=torso
 wearpos2=arms
-param=prayerbonus=3
+param=prayerbonus,3
 
 [obj_427]
 certlink=obj_426
@@ -4466,7 +4466,7 @@ recol1s=25238
 recol1d=0
 weight=4lb
 wearpos=legs
-param=prayerbonus=3
+param=prayerbonus,3
 
 [obj_429]
 certlink=obj_428
@@ -5536,7 +5536,7 @@ manwear=model_265_obj_wear,0
 womanwear=model_428_idk,0
 recol1s=25238
 recol1d=127
-param=prayerbonus=4
+param=prayerbonus,4
 weight=2lb
 
 [obj_539]
@@ -5561,7 +5561,7 @@ recol1s=8741
 recol1d=127
 wearpos=torso
 wearpos2=arms
-param=prayerbonus=4
+param=prayerbonus,4
 weight=2lb
 
 [obj_541]
@@ -5582,7 +5582,7 @@ womanwear=model_428_idk,0
 recol1s=25238
 recol1d=4769
 wearpos=legs
-param=prayerbonus=6
+param=prayerbonus,6
 weight=2lb
 
 [obj_543]
@@ -5606,7 +5606,7 @@ recol1s=8741
 recol1d=4769
 wearpos=torso
 wearpos2=arms
-param=prayerbonus=5
+param=prayerbonus,5
 weight=2lb
 
 [obj_545]
@@ -5630,7 +5630,7 @@ recol1s=8741
 recol1d=0
 wearpos=torso
 wearpos2=arms
-param=prayerbonus=5
+param=prayerbonus,5
 weight=2lb
 
 [obj_547]
@@ -5651,7 +5651,7 @@ womanwear=model_428_idk,0
 recol1s=25238
 recol1d=0
 wearpos=legs
-param=prayerbonus=4
+param=prayerbonus,4
 weight=2lb
 
 [obj_549]
@@ -5961,8 +5961,8 @@ recol1s=8741
 recol1d=38814
 wearpos=torso
 wearpos2=arms
-param=magicattack=3
-param=magicdefence=3
+param=magicattack,3
+param=magicdefence,3
 weight=2lb
 
 [obj_578]
@@ -5985,8 +5985,8 @@ womanwear=model_377_obj_wear,0
 manhead=model_44_obj_wear
 womanhead=model_102_obj_wear
 wearpos=hat
-param=magicattack=2
-param=magicdefence=2
+param=magicattack,2
+param=magicdefence,2
 weight=1lb
 
 [obj_580]
@@ -6010,8 +6010,8 @@ recol1s=8741
 recol1d=10508
 wearpos=torso
 wearpos2=arms
-param=magicattack=3
-param=magicdefence=3
+param=magicattack,3
+param=magicdefence,3
 weight=2lb
 
 [obj_582]
@@ -6097,9 +6097,9 @@ womanwear=model_447_obj_wear,0
 recol1s=11200
 recol1d=22464
 wearpos=front
-param=stabdefence=13
-param=slashdefence=13
-param=crushdefence=13
+param=stabdefence,13
+param=slashdefence,13
+param=crushdefence,13
 weight=10g
 
 [obj_590]
@@ -6185,7 +6185,7 @@ count4=obj_2545,5
 2dyan=1832
 2dxan=336
 wearpos=quiver
-param=rangedbonus=7
+param=rangedbonus,7
 weight=16g
 
 [obj_599]
@@ -6419,18 +6419,18 @@ members=yes
 recol1s=28
 recol1d=4032
 wearpos=front
-param=stabattack=1
-param=slashattack=1
-param=crushattack=1
-param=magicattack=1
-param=rangeattack=1
-param=stabdefence=1
-param=slashdefence=1
-param=crushdefence=1
-param=magicdefence=1
-param=rangedefence=1
-param=strengthbonus=1
-param=prayerbonus=1
+param=stabattack,1
+param=slashattack,1
+param=crushattack,1
+param=magicattack,1
+param=rangeattack,1
+param=stabdefence,1
+param=slashdefence,1
+param=crushdefence,1
+param=magicdefence,1
+param=rangedefence,1
+param=strengthbonus,1
+param=prayerbonus,1
 weight=10g
 
 [obj_617]
@@ -6547,8 +6547,8 @@ members=yes
 recol1s=4626
 recol1d=334
 wearpos=feet
-param=slashdefence=1
-param=crushdefence=1
+param=slashdefence,1
+param=crushdefence,1
 weight=340g
 
 [obj_627]
@@ -6572,8 +6572,8 @@ members=yes
 recol1s=4626
 recol1d=21838
 wearpos=feet
-param=slashdefence=1
-param=crushdefence=1
+param=slashdefence,1
+param=crushdefence,1
 weight=340g
 
 [obj_629]
@@ -6597,8 +6597,8 @@ members=yes
 recol1s=4626
 recol1d=43342
 wearpos=feet
-param=slashdefence=1
-param=crushdefence=1
+param=slashdefence,1
+param=crushdefence,1
 weight=340g
 
 [obj_631]
@@ -6622,8 +6622,8 @@ members=yes
 recol1s=4626
 recol1d=10475
 wearpos=feet
-param=slashdefence=1
-param=crushdefence=1
+param=slashdefence,1
+param=crushdefence,1
 weight=340g
 
 [obj_633]
@@ -6647,8 +6647,8 @@ members=yes
 recol1s=4626
 recol1d=32984
 wearpos=feet
-param=slashdefence=1
-param=crushdefence=1
+param=slashdefence,1
+param=crushdefence,1
 weight=340g
 
 [obj_635]
@@ -6673,8 +6673,8 @@ recol1s=8741
 recol1d=334
 wearpos=torso
 wearpos2=arms
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_637]
@@ -6699,8 +6699,8 @@ recol1s=8741
 recol1d=21838
 wearpos=torso
 wearpos2=arms
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_639]
@@ -6725,8 +6725,8 @@ recol1s=8741
 recol1d=43342
 wearpos=torso
 wearpos2=arms
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_641]
@@ -6751,8 +6751,8 @@ recol1s=8741
 recol1d=10475
 wearpos=torso
 wearpos2=arms
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_643]
@@ -6777,8 +6777,8 @@ recol1s=8741
 recol1d=32984
 wearpos=torso
 wearpos2=arms
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_645]
@@ -6799,8 +6799,8 @@ cost=180
 members=yes
 recol1s=25238
 recol1d=334
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_647]
@@ -6822,8 +6822,8 @@ members=yes
 recol1s=25238
 recol1d=21838
 wearpos=legs
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_649]
@@ -6845,8 +6845,8 @@ members=yes
 recol1s=25238
 recol1d=43342
 wearpos=legs
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_651]
@@ -6868,8 +6868,8 @@ members=yes
 recol1s=25238
 recol1d=10475
 wearpos=legs
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_653]
@@ -6891,8 +6891,8 @@ members=yes
 recol1s=25238
 recol1d=32984
 wearpos=legs
-param=slashdefence=2
-param=crushdefence=2
+param=slashdefence,2
+param=crushdefence,2
 weight=907g
 
 [obj_655]
@@ -6918,8 +6918,8 @@ members=yes
 recol1s=38814
 recol1d=334
 wearpos=hat
-param=magicattack=3
-param=magicdefence=3
+param=magicattack,3
+param=magicdefence,3
 weight=453g
 
 [obj_657]
@@ -6945,8 +6945,8 @@ members=yes
 recol1s=38814
 recol1d=21838
 wearpos=hat
-param=magicattack=3
-param=magicdefence=3
+param=magicattack,3
+param=magicdefence,3
 weight=453g
 
 [obj_659]
@@ -6972,8 +6972,8 @@ members=yes
 recol1s=38814
 recol1d=43342
 wearpos=hat
-param=magicattack=3
-param=magicdefence=3
+param=magicattack,3
+param=magicdefence,3
 weight=453g
 
 [obj_661]
@@ -6999,8 +6999,8 @@ members=yes
 recol1s=38814
 recol1d=10475
 wearpos=hat
-param=magicattack=3
-param=magicdefence=3
+param=magicattack,3
+param=magicdefence,3
 weight=453g
 
 [obj_663]
@@ -7026,8 +7026,8 @@ members=yes
 recol1s=38814
 recol1d=32984
 wearpos=hat
-param=magicattack=3
-param=magicdefence=3
+param=magicattack,3
+param=magicdefence,3
 weight=453g
 
 [obj_665]
@@ -7058,12 +7058,12 @@ manwear=model_522_obj_wear,0
 womanwear=model_522_obj_wear,6
 iop2=Wield
 wearpos=righthand
-param=stabattack=9
-param=slashattack=14
-param=crushattack=-2
-param=slashdefence=3
-param=crushdefence=2
-param=strengthbonus=10
+param=stabattack,9
+param=slashattack,14
+param=crushattack,-2
+param=slashdefence,3
+param=crushdefence,2
+param=strengthbonus,10
 weight=1814g
 
 [obj_668]
@@ -7941,8 +7941,8 @@ iop2=Wield
 recol1s=61
 recol1d=43959
 wearpos=righthand
-param=rangeattack=6
-param=rangedbonus=12
+param=rangeattack,6
+param=rangedbonus,12
 weight=2lb
 
 [obj_733]
@@ -8051,8 +8051,8 @@ womanwear=model_377_obj_wear,0
 manhead=model_44_obj_wear
 womanhead=model_102_obj_wear
 wearpos=hat
-param=magicattack=3
-param=magicdefence=3
+param=magicattack,3
+param=magicdefence,3
 weight=1lb
 
 [obj_741]
@@ -8121,12 +8121,12 @@ iop2=Wield
 manwear=model_524_obj_wear,0
 womanwear=model_524_obj_wear,6
 wearpos=righthand
-param=stabattack=10
-param=slashattack=5
-param=crushattack=-4
-param=magicattack=1
-param=magicdefence=1
-param=strengthbonus=7
+param=stabattack,10
+param=slashattack,5
+param=crushattack,-4
+param=magicattack,1
+param=magicdefence,1
+param=strengthbonus,7
 weight=1lb
 
 [obj_747]
@@ -8142,11 +8142,11 @@ iop2=Wield
 manwear=model_524_obj_wear,0
 womanwear=model_524_obj_wear,6
 wearpos=righthand
-param=stabattack=5
-param=slashattack=3
-param=crushattack=-4
-param=magicattack=1
-param=magicdefence=1
+param=stabattack,5
+param=slashattack,3
+param=crushattack,-4
+param=magicattack,1
+param=magicdefence,1
 weight=1lb
 
 [obj_748]
@@ -8348,7 +8348,7 @@ womanwear=model_508_obj_wear,6
 recol1s=6798
 recol1d=6806
 wearpos=righthand
-param=rangeattack=6
+param=rangeattack,6
 weight=3628g
 
 [obj_768]
@@ -8398,15 +8398,15 @@ manwear=model_534_obj_wear,0
 womanwear=model_534_obj_wear,6
 wearpos=righthand
 readyanim=seq_809
-param=stabattack=-1
-param=slashattack=-1
-param=crushattack=10
-param=magicattack=10
-param=stabdefence=2
-param=slashdefence=3
-param=crushdefence=1
-param=magicdefence=10
-param=strengthbonus=10
+param=stabattack,-1
+param=slashattack,-1
+param=crushattack,10
+param=magicattack,10
+param=stabdefence,2
+param=slashdefence,3
+param=crushdefence,1
+param=magicdefence,10
+param=strengthbonus,10
 weight=4lb
 
 [obj_773]
@@ -8463,13 +8463,13 @@ recol1d=123
 recol2s=5532
 recol2d=10299
 wearpos=hands
-param=stabattack=2
-param=slashattack=2
-param=crushattack=2
-param=stabdefence=8
-param=slashdefence=9
-param=crushdefence=7
-param=strengthbonus=2
+param=stabattack,2
+param=slashattack,2
+param=crushattack,2
+param=stabdefence,8
+param=slashdefence,9
+param=crushdefence,7
+param=strengthbonus,2
 weight=226g
 
 [obj_776]
@@ -8488,13 +8488,13 @@ womanwear=model_356_obj_wear,0
 recol1s=10004
 recol1d=8666
 wearpos=hands
-param=stabattack=2
-param=slashattack=2
-param=crushattack=2
-param=stabdefence=8
-param=slashdefence=9
-param=crushdefence=7
-param=strengthbonus=2
+param=stabattack,2
+param=slashattack,2
+param=crushattack,2
+param=stabdefence,8
+param=slashdefence,9
+param=crushdefence,7
+param=strengthbonus,2
 weight=8oz
 
 [obj_777]
@@ -8513,13 +8513,13 @@ womanwear=model_356_obj_wear,0
 recol1s=10004
 recol1d=1825
 wearpos=hands
-param=stabattack=2
-param=slashattack=2
-param=crushattack=2
-param=stabdefence=8
-param=slashdefence=9
-param=crushdefence=7
-param=strengthbonus=2
+param=stabattack,2
+param=slashattack,2
+param=crushattack,2
+param=stabdefence,8
+param=slashdefence,9
+param=crushdefence,7
+param=strengthbonus,2
 weight=8oz
 
 [obj_778]
@@ -8538,13 +8538,13 @@ womanwear=model_356_obj_wear,0
 recol1s=10004
 recol1d=43072
 wearpos=hands
-param=stabattack=2
-param=slashattack=2
-param=crushattack=2
-param=stabdefence=8
-param=slashdefence=9
-param=crushdefence=7
-param=strengthbonus=2
+param=stabattack,2
+param=slashattack,2
+param=crushattack,2
+param=stabdefence,8
+param=slashdefence,9
+param=crushdefence,7
+param=strengthbonus,2
 weight=8oz
 
 [obj_779]
@@ -8822,8 +8822,8 @@ recol1d=5652
 recol2s=57
 recol2d=5652
 wearpos=righthand
-param=rangeattack=4
-param=rangedbonus=5
+param=rangeattack,4
+param=rangedbonus,5
 weight=3lb
 
 [obj_801]
@@ -8846,8 +8846,8 @@ recol1d=24
 recol2s=57
 recol2d=24
 wearpos=righthand
-param=rangeattack=5
-param=rangedbonus=7
+param=rangeattack,5
+param=rangedbonus,7
 weight=3lb
 
 [obj_802]
@@ -8868,8 +8868,8 @@ stackable=yes
 recol1s=57
 recol1d=61
 wearpos=righthand
-param=rangeattack=8
-param=rangedbonus=11
+param=rangeattack,8
+param=rangedbonus,11
 weight=3lb
 
 [obj_803]
@@ -8892,8 +8892,8 @@ recol1d=43297
 recol2s=57
 recol2d=43297
 wearpos=righthand
-param=rangeattack=12
-param=rangedbonus=16
+param=rangeattack,12
+param=rangedbonus,16
 weight=40oz
 
 [obj_804]
@@ -8916,8 +8916,8 @@ recol1d=21662
 recol2s=57
 recol2d=21662
 wearpos=righthand
-param=rangeattack=17
-param=rangedbonus=23
+param=rangeattack,17
+param=rangedbonus,23
 
 [obj_805]
 name=Rune thrownaxe
@@ -9550,7 +9550,7 @@ recol1d=8109
 weight=3lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=8
+param=rangeattack,8
 
 [obj_842]
 certlink=obj_841
@@ -9574,7 +9574,7 @@ recol1d=8111
 weight=4lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=14
+param=rangeattack,14
 
 [obj_844]
 certlink=obj_843
@@ -9598,7 +9598,7 @@ recol1d=8111
 weight=5lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=14
+param=rangeattack,14
 
 [obj_846]
 certlink=obj_845
@@ -9623,7 +9623,7 @@ recol1d=9903
 weight=4lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=20
+param=rangeattack,20
 
 [obj_848]
 certlink=obj_847
@@ -9648,7 +9648,7 @@ recol1d=9903
 weight=3lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=20
+param=rangeattack,20
 
 [obj_850]
 certlink=obj_849
@@ -9673,7 +9673,7 @@ recol1d=2250
 weight=4lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=29
+param=rangeattack,29
 
 [obj_852]
 certlink=obj_851
@@ -9698,7 +9698,7 @@ recol1d=2250
 weight=3lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=29
+param=rangeattack,29
 
 [obj_854]
 certlink=obj_853
@@ -9723,7 +9723,7 @@ recol1d=9135
 weight=4lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=47
+param=rangeattack,47
 
 [obj_856]
 certlink=obj_855
@@ -9748,7 +9748,7 @@ recol1d=9135
 weight=3lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=47
+param=rangeattack,47
 
 [obj_858]
 certlink=obj_857
@@ -9773,7 +9773,7 @@ recol1d=31516
 weight=4lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=69
+param=rangeattack,69
 
 [obj_860]
 certlink=obj_859
@@ -9798,7 +9798,7 @@ recol1d=31516
 weight=3lb
 wearpos=righthand
 wearpos2=lefthand
-param=rangeattack=69
+param=rangeattack,69
 
 [obj_862]
 certlink=obj_861
@@ -12390,13 +12390,13 @@ recol2d=37270
 recol3s=57
 recol3d=36133
 weight=20lb
-param=magicattack=-21
-param=rangeattack=-7
-param=stabdefence=51
-param=slashdefence=49
-param=crushdefence=47
-param=magicdefence=-4
-param=rangedefence=49
+param=magicattack,-21
+param=rangeattack,-7
+param=stabdefence,51
+param=slashdefence,49
+param=crushdefence,47
+param=magicdefence,-4
+param=rangedefence,49
 
 [obj_1080]
 certlink=obj_1079
@@ -12884,13 +12884,13 @@ recol3d=37270
 weight=22lb
 wearpos=torso
 wearpos2=arms
-param=magicattack=-30
-param=rangeattack=-10
-param=stabdefence=82
-param=slashdefence=80
-param=crushdefence=72
-param=magicdefence=-6
-param=rangedefence=80
+param=magicattack,-30
+param=rangeattack,-10
+param=stabdefence,82
+param=slashdefence,80
+param=crushdefence,72
+param=magicdefence,-6
+param=rangedefence,80
 
 [obj_1128]
 certlink=obj_1127
@@ -12980,13 +12980,13 @@ recol1s=61
 recol1d=33
 wearpos=hat
 wearpos2=head
-param=magicattack=-3
-param=rangeattack=-1
-param=stabdefence=4
-param=slashdefence=5
-param=crushdefence=3
-param=magicdefence=-1
-param=rangedefence=4
+param=magicattack,-3
+param=rangeattack,-1
+param=stabdefence,4
+param=slashdefence,5
+param=crushdefence,3
+param=magicdefence,-1
+param=rangedefence,4
 weight=4lb
 
 [obj_1138]
@@ -13295,13 +13295,13 @@ weight=6lb
 wearpos=hat
 wearpos2=head
 wearpos3=jaw
-param=magicattack=-6
-param=rangeattack=-2
-param=stabdefence=30
-param=slashdefence=32
-param=crushdefence=27
-param=magicdefence=-1
-param=rangedefence=30
+param=magicattack,-6
+param=rangeattack,-2
+param=stabdefence,30
+param=slashdefence,32
+param=crushdefence,27
+param=magicdefence,-1
+param=rangedefence,30
 
 [obj_1164]
 certlink=obj_1163
@@ -13374,13 +13374,13 @@ manhead2=model_63_idk_head
 womanhead2=model_120_idk_head
 wearpos=hat
 wearpos2=head
-param=magicattack=-1
-param=rangeattack=2
-param=stabdefence=4
-param=slashdefence=6
-param=crushdefence=8
-param=magicdefence=4
-param=rangedefence=4
+param=magicattack,-1
+param=rangeattack,2
+param=stabdefence,4
+param=slashdefence,6
+param=crushdefence,8
+param=magicdefence,4
+param=rangedefence,4
 
 [obj_1170]
 certlink=obj_1169
@@ -13403,11 +13403,11 @@ recol1s=61
 recol1d=5784
 weight=5lb
 wearpos=lefthand
-param=stabdefence=4
-param=slashdefence=5
-param=crushdefence=3
-param=magicdefence=1
-param=rangedefence=4
+param=stabdefence,4
+param=slashdefence,5
+param=crushdefence,3
+param=magicdefence,1
+param=rangedefence,4
 
 [obj_1172]
 certlink=obj_1171
@@ -13430,12 +13430,12 @@ recol1s=57
 recol1d=5652
 weight=8lb
 wearpos=lefthand
-param=rangeattack=-2
-param=magicattack=-6
-param=stabdefence=5
-param=slashdefence=6
-param=crushdefence=4
-param=rangedefence=5
+param=rangeattack,-2
+param=magicattack,-6
+param=stabdefence,5
+param=slashdefence,6
+param=crushdefence,4
+param=rangedefence,5
 
 [obj_1174]
 certlink=obj_1173
@@ -13458,12 +13458,12 @@ recol1s=57
 recol1d=33
 weight=8lb
 wearpos=lefthand
-param=rangeattack=-2
-param=magicattack=-6
-param=stabdefence=8
-param=slashdefence=9
-param=crushdefence=7
-param=rangedefence=8
+param=rangeattack,-2
+param=magicattack,-6
+param=stabdefence,8
+param=slashdefence,9
+param=crushdefence,7
+param=rangedefence,8
 
 [obj_1176]
 certlink=obj_1175
@@ -13486,12 +13486,12 @@ recol1s=57
 recol1d=61
 weight=8lb
 wearpos=lefthand
-param=rangeattack=-2
-param=magicattack=-6
-param=stabdefence=12
-param=slashdefence=13
-param=crushdefence=11
-param=rangedefence=12
+param=rangeattack,-2
+param=magicattack,-6
+param=stabdefence,12
+param=slashdefence,13
+param=crushdefence,11
+param=rangedefence,12
 
 [obj_1178]
 certlink=obj_1177
@@ -13514,12 +13514,12 @@ recol1s=57
 recol1d=12
 weight=8lb
 wearpos=lefthand
-param=rangeattack=-2
-param=magicattack=-6
-param=stabdefence=15
-param=slashdefence=16
-param=crushdefence=14
-param=rangedefence=15
+param=rangeattack,-2
+param=magicattack,-6
+param=stabdefence,15
+param=slashdefence,16
+param=crushdefence,14
+param=rangedefence,15
 
 [obj_1180]
 certlink=obj_1179
@@ -13542,12 +13542,12 @@ recol1s=57
 recol1d=43297
 weight=7lb
 wearpos=lefthand
-param=rangeattack=-2
-param=magicattack=-6
-param=stabdefence=17
-param=slashdefence=19
-param=crushdefence=15
-param=rangedefence=17
+param=rangeattack,-2
+param=magicattack,-6
+param=stabdefence,17
+param=slashdefence,19
+param=crushdefence,15
+param=rangedefence,17
 
 [obj_1182]
 certlink=obj_1181
@@ -13570,12 +13570,12 @@ recol1s=57
 recol1d=21662
 weight=9lb
 wearpos=lefthand
-param=rangeattack=-2
-param=magicattack=-6
-param=stabdefence=24
-param=slashdefence=26
-param=crushdefence=22
-param=rangedefence=24
+param=rangeattack,-2
+param=magicattack,-6
+param=stabdefence,24
+param=slashdefence,26
+param=crushdefence,22
+param=rangedefence,24
 
 [obj_1184]
 certlink=obj_1183
@@ -13598,12 +13598,12 @@ recol1s=57
 recol1d=36133
 weight=8lb
 wearpos=lefthand
-param=rangeattack=-2
-param=magicattack=-6
-param=stabdefence=38
-param=slashdefence=40
-param=crushdefence=36
-param=rangedefence=38
+param=rangeattack,-2
+param=magicattack,-6
+param=stabdefence,38
+param=slashdefence,40
+param=crushdefence,36
+param=rangedefence,38
 
 [obj_1186]
 certlink=obj_1185
@@ -13625,12 +13625,12 @@ manwear=model_565_obj_wear,0
 womanwear=model_565_obj_wear,6
 weight=7lb
 wearpos=lefthand
-param=rangeattack=-2
-param=magicattack=-6
-param=stabdefence=50
-param=slashdefence=52
-param=crushdefence=48
-param=rangedefence=50
+param=rangeattack,-2
+param=magicattack,-6
+param=stabdefence,50
+param=slashdefence,52
+param=crushdefence,48
+param=rangedefence,50
 
 [obj_1188]
 certlink=obj_1187
@@ -13835,12 +13835,12 @@ recol4s=103
 recol4d=3489
 weight=1lb
 wearpos=righthand
-param=stabattack=4
-param=slashattack=2
-param=crushattack=-4
-param=magicattack=1
-param=magicdefence=1
-param=strengthbonus=3
+param=stabattack,4
+param=slashattack,2
+param=crushattack,-4
+param=magicattack,1
+param=magicdefence,1
+param=strengthbonus,3
 
 [obj_1206]
 certlink=obj_1205
@@ -14552,11 +14552,11 @@ recol1s=61
 recol1d=5652
 weight=5lb
 wearpos=righthand
-param=stabattack=4
-param=slashattack=-2
-param=crushattack=2
-param=slashdefence=1
-param=strengthbonus=5
+param=stabattack,4
+param=slashattack,-2
+param=crushattack,2
+param=slashdefence,1
+param=strengthbonus,5
 
 [obj_1266]
 certlink=obj_1265
@@ -14809,12 +14809,12 @@ recol1s=61
 recol1d=5652
 weight=4lb
 wearpos=righthand
-param=stabattack=4
-param=slashattack=5
-param=crushattack=-2
-param=slashdefence=3
-param=crushdefence=2
-param=strengthbonus=7
+param=stabattack,4
+param=slashattack,5
+param=crushattack,-2
+param=slashdefence,3
+param=crushdefence,2
+param=strengthbonus,7
 
 [obj_1292]
 certlink=obj_1291
@@ -15411,11 +15411,11 @@ recol1s=61
 recol1d=5652
 weight=3lb
 wearpos=righthand
-param=stabattack=-2
-param=slashattack=4
-param=crushattack=2
-param=slashdefence=1
-param=strengthbonus=5
+param=stabattack,-2
+param=slashattack,4
+param=crushattack,2
+param=slashdefence,1
+param=strengthbonus,5
 
 [obj_1352]
 certlink=obj_1351

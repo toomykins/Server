@@ -150,7 +150,7 @@ export default class ObjType {
                     }
                     config.weight = grams;
                 } else if (key === 'param') {
-                    let parts = value.split('=');
+                    let parts = value.split(',');
                     let paramName = parts[0];
                     let paramValue = parts[1];
 

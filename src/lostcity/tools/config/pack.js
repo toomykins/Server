@@ -994,27 +994,19 @@ function packNpc(config, dat, idx) {
         } else if (key === 'readyanim') {
             dat.p1(13);
             dat.p2(seqPack.indexOf(value));
-        } else if (key === 'walkanim' && !config[i + 1].startsWith('walkanim_b')) {
-            // save some space if only one walkanim is defined
+        } else if (key === 'walkanim') {
             dat.p1(14);
             dat.p2(seqPack.indexOf(value));
         } else if (key === 'hasalpha' && value === 'yes') {
             dat.p1(16);
-        } else if (key === 'walkanim_l') {
+        } else if (key === 'walkanims') {
             dat.p1(17);
 
-            // this relies on walkanims to be in a very very specific order!
-            let walkanim = config[i - 3].split('=')[1];
-            dat.p2(seqPack.indexOf(walkanim));
-
-            let walkanim_b = config[i - 2].split('=')[1];
-            dat.p2(seqPack.indexOf(walkanim_b));
-
-            let walkanim_r = config[i - 1].split('=')[1];
-            dat.p2(seqPack.indexOf(walkanim_r));
-
-            let walkanim_l = value;
-            dat.p2(seqPack.indexOf(walkanim_l));
+            let anims = value.split(',');
+            dat.p2(seqPack.indexOf(anims[0]));
+            dat.p2(seqPack.indexOf(anims[1]));
+            dat.p2(seqPack.indexOf(anims[2]));
+            dat.p2(seqPack.indexOf(anims[3]));
         } else if (key.startsWith('op')) {
             let index = parseInt(key.substring('op'.length)) - 1;
             dat.p1(30 + index);
