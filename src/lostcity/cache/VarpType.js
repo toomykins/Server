@@ -5,6 +5,7 @@ let varpPack = loadPack('data/pack/varp.pack');
 export default class VarpType {
     static names = [];
     static configs = [];
+    static count = 0;
 
     static init() {
         // reading
@@ -63,6 +64,8 @@ export default class VarpType {
 
             VarpType.configs[i] = config;
         }
+
+        VarpType.count = VarpType.configs.length;
     }
 
     static get(id) {
