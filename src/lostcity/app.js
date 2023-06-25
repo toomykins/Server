@@ -4,6 +4,8 @@ import { startWeb } from '#lostcity/web/app.js';
 
 startWeb();
 
+import '#lostcity/entity/World.js';
+
 import TcpServer from '#lostcity/server/TcpServer.js';
 import WSServer from '#lostcity/server/WSServer.js';
 
