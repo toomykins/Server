@@ -85,6 +85,8 @@ export default class VarpType {
     // ----
 
     clientcode = 0;
+
+    // server-side
     transmit = null;
     scope = null;
 }
