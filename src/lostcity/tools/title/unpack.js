@@ -38,24 +38,6 @@ for (let i = 0; i < title.fileCount; i++) {
 
         let meta = `${pix.cropX},${pix.cropY},${pix.width},${pix.height},${pix.pixelOrder ? 'row' : 'column'}\n`;
         fs.writeFileSync(`data/src/${dest}/meta/${safeName}.opt`, meta);
-
-        // ----
-
-        let pal = new Jimp(16, 16, 0xFF00FFFF).colorType(2);
-
-        for (let j = 0; j < pix.palette.length; j++) {
-            let x = j % 16;
-            let y = Math.floor(j / 16);
-
-            let color = pix.palette[j];
-
-            let pos = (x + (y * 16)) * 4;
-            pal.bitmap.data[pos] = (color >> 16) & 0xFF;
-            pal.bitmap.data[pos + 1] = (color >> 8) & 0xFF;
-            pal.bitmap.data[pos + 2] = color & 0xFF;
-        }
-
-        await pal.writeAsync(`data/src/${dest}/meta/${safeName}.pal.png`);
     } else {
         // sprite sheet!
         let sprites = [];
@@ -98,23 +80,5 @@ for (let i = 0; i < title.fileCount; i++) {
         }
 
         fs.writeFileSync(`data/src/${dest}/meta/${safeName}.opt`, meta);
-
-        // ----
-
-        let pal = new Jimp(16, 16, 0xFF00FFFF).colorType(2);
-
-        for (let j = 1; j < sprites[0].palette.length; j++) {
-            let x = j % 16;
-            let y = Math.floor(j / 16);
-
-            let color = sprites[0].palette[j];
-
-            let pos = (x + (y * 16)) * 4;
-            pal.bitmap.data[pos] = (color >> 16) & 0xFF;
-            pal.bitmap.data[pos + 1] = (color >> 8) & 0xFF;
-            pal.bitmap.data[pos + 2] = color & 0xFF;
-        }
-
-        await pal.writeAsync(`data/src/${dest}/meta/${safeName}.pal.png`);
     }
 }

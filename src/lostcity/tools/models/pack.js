@@ -85,9 +85,9 @@ let base_label = new Packet();
         base_label.pdata(data.gdata(labelLength));
     }
 
-    base_head.save('dump/base_head.dat');
-    base_type.save('dump/base_type.dat');
-    base_label.save('dump/base_label.dat');
+    // base_head.save('dump/base_head.dat');
+    // base_type.save('dump/base_type.dat');
+    // base_label.save('dump/base_label.dat');
 }
 
 // ----
@@ -133,10 +133,10 @@ let frame_del = new Packet();
         frame_del.pdata(data.gdata(delLength));
     }
 
-    frame_head.save('dump/frame_head.dat');
-    frame_tran1.save('dump/frame_tran1.dat');
-    frame_tran2.save('dump/frame_tran2.dat');
-    frame_del.save('dump/frame_del.dat');
+    // frame_head.save('dump/frame_head.dat');
+    // frame_tran1.save('dump/frame_tran1.dat');
+    // frame_tran2.save('dump/frame_tran2.dat');
+    // frame_del.save('dump/frame_del.dat');
 }
 
 // ----
@@ -229,20 +229,20 @@ let ob_axis = new Packet();
         ob_point4.pdata(data.gdata(vertexZLength));
     }
 
-    ob_head.save('dump/ob_head.dat');
-    ob_face1.save('dump/ob_face1.dat');
-    ob_face2.save('dump/ob_face2.dat');
-    ob_face3.save('dump/ob_face3.dat');
-    ob_face4.save('dump/ob_face4.dat');
-    ob_face5.save('dump/ob_face5.dat');
-    ob_point1.save('dump/ob_point1.dat');
-    ob_point2.save('dump/ob_point2.dat');
-    ob_point3.save('dump/ob_point3.dat');
-    ob_point4.save('dump/ob_point4.dat');
-    ob_point5.save('dump/ob_point5.dat');
-    ob_vertex1.save('dump/ob_vertex1.dat');
-    ob_vertex2.save('dump/ob_vertex2.dat');
-    ob_axis.save('dump/ob_axis.dat');
+    // ob_head.save('dump/ob_head.dat');
+    // ob_face1.save('dump/ob_face1.dat');
+    // ob_face2.save('dump/ob_face2.dat');
+    // ob_face3.save('dump/ob_face3.dat');
+    // ob_face4.save('dump/ob_face4.dat');
+    // ob_face5.save('dump/ob_face5.dat');
+    // ob_point1.save('dump/ob_point1.dat');
+    // ob_point2.save('dump/ob_point2.dat');
+    // ob_point3.save('dump/ob_point3.dat');
+    // ob_point4.save('dump/ob_point4.dat');
+    // ob_point5.save('dump/ob_point5.dat');
+    // ob_vertex1.save('dump/ob_vertex1.dat');
+    // ob_vertex2.save('dump/ob_vertex2.dat');
+    // ob_axis.save('dump/ob_axis.dat');
 }
 
 // ----

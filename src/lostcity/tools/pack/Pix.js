@@ -202,13 +202,10 @@ export async function convertImage(index, srcPath, safeName) {
     }
 
     if (sprites.length > 1) {
-        let count = 0;
         for (let y = 0; y < img.bitmap.height / tileY; y++) {
             for (let x = 0; x < img.bitmap.width / tileX; x++) {
                 let tile = img.clone().crop(x * tileX, y * tileY, tileX, tileY);
                 writeImage(tile, data, index, colors, sprites[x + (y * (img.bitmap.width / tileX))]);
-
-                count++;
             }
         }
     } else {
