@@ -66,11 +66,15 @@ export function writeImage(img, data, index, colors, meta = null) {
             }
 
             let pos = (j * 4) + (left * 4) + (top * img.bitmap.width * 4);
-            let rgb = ((img.bitmap.data[pos + 0] << 24) | (img.bitmap.data[pos + 1] << 16) | (img.bitmap.data[pos + 2] << 8) | img.bitmap.data[pos + 3]) >>> 0;
+
+            let red = img.bitmap.data[pos + 0];
+            let green = img.bitmap.data[pos + 1];
+            let blue = img.bitmap.data[pos + 2];
+            let rgb = ((red << 16) | (green << 8) | blue) >>> 0;
 
             let index = colors.indexOf(rgb);
             if (index === -1) {
-                console.error('color not found in palette');
+                console.error('color not found in palette', rgb.toString(16), colors.map(x => x.toString(16)));
                 break;
             }
 
@@ -84,11 +88,15 @@ export function writeImage(img, data, index, colors, meta = null) {
                 }
 
                 let pos = ((x + (y * img.bitmap.width)) * 4) + (left * 4) + (top * img.bitmap.width * 4);
-                let rgb = ((img.bitmap.data[pos + 0] << 24) | (img.bitmap.data[pos + 1] << 16) | (img.bitmap.data[pos + 2] << 8) | img.bitmap.data[pos + 3]) >>> 0;
+
+                let red = img.bitmap.data[pos + 0];
+                let green = img.bitmap.data[pos + 1];
+                let blue = img.bitmap.data[pos + 2];
+                let rgb = ((red << 16) | (green << 8) | blue) >>> 0;
 
                 let index = colors.indexOf(rgb);
                 if (index === -1) {
-                    console.error('color not found in palette', rgb.toString(16));
+                    console.error('color not found in palette', rgb);
                     break;
                 }
 
@@ -99,13 +107,10 @@ export function writeImage(img, data, index, colors, meta = null) {
 }
 
 export async function convertImage(index, srcPath, safeName) {
-    // console.log(safeName);
-
     let data = new Packet();
     data.p2(index.pos);
 
     let img = await Jimp.read(`${srcPath}/${safeName}.png`);
-    let tiles = 1;
     let tileX = img.bitmap.width;
     let tileY = img.bitmap.height;
 
@@ -125,8 +130,6 @@ export async function convertImage(index, srcPath, safeName) {
                 pixelOrder: sprite[4] === 'row' ? 1 : 0
             });
         } else {
-            tiles = metadata.length - 1;
-
             let tiling = metadata[0].split('x');
             tileX = parseInt(tiling[0]);
             tileY = parseInt(tiling[1]);
@@ -148,28 +151,39 @@ export async function convertImage(index, srcPath, safeName) {
     index.p2(tileX);
     index.p2(tileY);
 
-    let colors = [ 0 ]; // reserved for transparency
+    let colors = [ 0xFF00FF ]; // reserved for transparency
     if (fs.existsSync(`${srcPath}/meta/${safeName}.pal.png`)) {
         // read color palette from file to preserve order
         let pal = await Jimp.read(`${srcPath}/meta/${safeName}.pal.png`);
+
         for (let j = 0; j < pal.bitmap.width * pal.bitmap.height; j++) {
             let pos = j * 4;
-            let rgb = (pal.bitmap.data[pos + 0] << 24 | pal.bitmap.data[pos + 1] << 16 | pal.bitmap.data[pos + 2] << 8 | pal.bitmap.data[pos + 3]) >>> 0;
-            if (rgb === 0) {
-                // skip transparent pixels in palette
+
+            let red = pal.bitmap.data[pos + 0];
+            let green = pal.bitmap.data[pos + 1];
+            let blue = pal.bitmap.data[pos + 2];
+            let rgb = ((red << 16) | (green << 8) | blue) >>> 0;
+            if (rgb === 0xFF00FF) {
                 continue;
             }
 
-            if (colors.indexOf(rgb) === -1) {
-                colors.push(rgb);
-            }
+            colors[j] = rgb;
         }
     } else {
         // generate color palette by counting unique colors
+
+        console.log('generating color palette', safeName);
         for (let j = 0; j < img.bitmap.width * img.bitmap.height; j++) {
             let pos = j * 4;
-            let rgb = (img.bitmap.data[pos + 0] << 24 | img.bitmap.data[pos + 1] << 16 | img.bitmap.data[pos + 2] << 8 | img.bitmap.data[pos + 3]) >>> 0;
-    
+
+            let red = img.bitmap.data[pos + 0];
+            let green = img.bitmap.data[pos + 1];
+            let blue = img.bitmap.data[pos + 2];
+            let rgb = ((red << 16) | (green << 8) | blue) >>> 0;
+            if (rgb === 0xFF00FF) {
+                continue;
+            }
+
             if (colors.indexOf(rgb) === -1) {
                 colors.push(rgb);
             }
@@ -184,7 +198,7 @@ export async function convertImage(index, srcPath, safeName) {
 
     index.p1(colors.length);
     for (let j = 1; j < colors.length; j++) {
-        index.p3(colors[j] >> 8);
+        index.p3(colors[j]);
     }
 
     if (sprites.length > 1) {

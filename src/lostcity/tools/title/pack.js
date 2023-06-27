@@ -4,7 +4,7 @@ import { convertImage } from '#lostcity/tools/pack/Pix.js';
 
 console.log('---- title ----');
 
-/* order:
+let order = [
   'p11.dat',
   'p12.dat',
   'titlebox.dat',
@@ -15,44 +15,54 @@ console.log('---- title ----');
   'titlebutton.dat',
   'logo.dat',
   'b12.dat'
-*/
+];
+
+let files = {};
+
+let title = Packet.load('data/src/binary/title.jpg');
+title.data[0] = 0x00; // invalidate jpeg header
+
+files['title.dat'] = title;
+
+// ----
 
 let index = new Packet();
-let jag = new Jagfile();
-
-// fonts
-let b12 = await convertImage(index, 'data/src/fonts', 'b12');
-jag.write('b12.dat', b12);
 
 let p11 = await convertImage(index, 'data/src/fonts', 'p11');
-jag.write('p11.dat', p11);
+files['p11.dat'] = p11;
 
 let p12 = await convertImage(index, 'data/src/fonts', 'p12');
-jag.write('p12.dat', p12);
+files['p12.dat'] = p12;
+
+let b12 = await convertImage(index, 'data/src/fonts', 'b12');
+files['b12.dat'] = b12;
 
 let q8 = await convertImage(index, 'data/src/fonts', 'q8');
-jag.write('q8.dat', q8);
+files['q8.dat'] = q8;
 
-// flame masks
-let runes = await convertImage(index, 'data/src/title', 'runes');
-jag.write('runes.dat', runes);
-
-// title screen elements
 let logo = await convertImage(index, 'data/src/title', 'logo');
-// let logo = await convertImage(index, 'data/src/title', 'logo2'); // unfortunately logo was quantized to <32 colors, this is an attempt to restore it
-jag.write('logo.dat', logo);
+files['logo.dat'] = logo;
 
 let titlebox = await convertImage(index, 'data/src/title', 'titlebox');
-jag.write('titlebox.dat', titlebox);
+files['titlebox.dat'] = titlebox;
 
 let titlebutton = await convertImage(index, 'data/src/title', 'titlebutton');
-jag.write('titlebutton.dat', titlebutton);
+files['titlebutton.dat'] = titlebutton;
 
-jag.write('index.dat', index);
+let runes = await convertImage(index, 'data/src/title', 'runes');
+files['runes.dat'] = runes;
 
-// background image
-let title = Packet.load('data/src/binary/title.jpg');
-// title.p1(0); // invalidate the JPEG header so it can't be seen in a viewer
-jag.write('title.dat', title);
+files['index.dat'] = index;
+
+// ----
+
+let jag = new Jagfile();
+
+for (let i = 0; i < order.length; i++) {
+    let name = order[i];
+    let data = files[name];
+    // data.save(`dump/title/${name}`, data.length);
+    jag.write(name, data);
+}
 
 jag.save('data/pack/client/title');

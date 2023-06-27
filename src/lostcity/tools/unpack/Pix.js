@@ -28,7 +28,7 @@ export function countPix(dat, idx) {
     }
 
     let count = 0;
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 512; i++) {
         if (dat.available <= 0) {
             break;
         }
@@ -73,13 +73,9 @@ export function unpackPix(dat, idx, id = 0) {
     let cropH = idx.g2();
 
     let paletteCount = idx.g1();
-    let palette = [ 0 ];
+    let palette = [ 0xFF00FF ];
     for (let i = 0; i < paletteCount - 1; i++) {
         palette[i + 1] = idx.g3();
-
-        if (palette[i + 1] === 0) {
-            palette[i + 1] = 1;
-        }
     }
 
     for (let i = 0; i < id; i++) {
@@ -93,22 +89,21 @@ export function unpackPix(dat, idx, id = 0) {
     let width = idx.g2();
     let height = idx.g2();
 
-    let img = new Jimp(cropW, cropH);
-    img.background(0xFFFFFFFF);
+    let img = new Jimp(cropW, cropH, 0xFF00FFFF).colorType(2);
 
     let pixelOrder = idx.g1();
     if (pixelOrder === 0) {
         for (let i = 0; i < width * height; i++) {
-            let pixel = palette[dat.g1()];
-            if (pixel === 0) {
+            let index = dat.g1();
+            if (index === 0) {
                 continue;
-            } else if (pixel === 1) {
-                pixel = 0; // restore black colors
             }
 
             let startX = cropX + (i % width);
             let startY = cropY + Math.floor(i / width);
             let pos = (startX + (startY * cropW)) * 4;
+
+            let pixel = palette[index];
             img.bitmap.data[pos] = (pixel >> 16) & 0xFF;
             img.bitmap.data[pos + 1] = (pixel >> 8) & 0xFF;
             img.bitmap.data[pos + 2] = pixel & 0xFF;
@@ -117,16 +112,16 @@ export function unpackPix(dat, idx, id = 0) {
     } else if (pixelOrder === 1) {
         for (let x = 0; x < width; x++) {
             for (let y = 0; y < height; y++) {
-                let pixel = palette[dat.g1()];
-                if (pixel === 0) {
+                let index = dat.g1();
+                if (index === 0) {
                     continue;
-                } else if (pixel === 1) {
-                    pixel = 0; // restore black colors
                 }
 
                 let startX = cropX + x;
                 let startY = cropY + y;
                 let pos = (startX + (startY * cropW)) * 4;
+
+                let pixel = palette[index];
                 img.bitmap.data[pos] = (pixel >> 16) & 0xFF;
                 img.bitmap.data[pos + 1] = (pixel >> 8) & 0xFF;
                 img.bitmap.data[pos + 2] = pixel & 0xFF;

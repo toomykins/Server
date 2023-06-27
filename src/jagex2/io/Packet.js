@@ -89,7 +89,7 @@ export default class Packet {
     }
 
     g1s() {
-        let value = this.data[this.pos++];
+        let value = this.g1();
         if (value > 0x7F) {
             value -= 0x100;
         }
@@ -97,11 +97,11 @@ export default class Packet {
     }
 
     g2() {
-        return (this.data[this.pos++] << 8) | this.data[this.pos++];
+        return ((this.data[this.pos++] << 8) | this.data[this.pos++]) >>> 0;
     }
 
     g2s() {
-        let value = (this.data[this.pos++] << 8) | this.data[this.pos++];
+        let value = this.g2();
         if (value > 0x7FFF) {
             value -= 0x10000;
         }
@@ -109,15 +109,15 @@ export default class Packet {
     }
 
     g3() {
-        return (this.data[this.pos++] << 16) | (this.data[this.pos++] << 8) | this.data[this.pos++];
+        return ((this.data[this.pos++] << 16) | (this.data[this.pos++] << 8) | this.data[this.pos++]) >>> 0;
     }
 
     g4() {
-        return (this.data[this.pos++] << 24) | (this.data[this.pos++] << 16) | (this.data[this.pos++] << 8) | this.data[this.pos++];
+        return ((this.data[this.pos++] << 24) | (this.data[this.pos++] << 16) | (this.data[this.pos++] << 8) | this.data[this.pos++]) >>> 0;
     }
 
     g4s() {
-        let value = (this.data[this.pos++] << 24) | (this.data[this.pos++] << 16) | (this.data[this.pos++] << 8) | this.data[this.pos++];
+        let value = this.g4();
         if (value > 0x7FFFFFFF) {
             value -= 0x100000000;
         }

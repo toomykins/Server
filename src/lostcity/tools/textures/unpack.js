@@ -30,26 +30,4 @@ for (let i = 0; i < textures.fileCount; i++) {
 
     let meta = `${texture.cropX},${texture.cropY},${texture.width},${texture.height},${texture.pixelOrder ? 'row' : 'column'}\n`;
     fs.writeFileSync(`data/src/textures/meta/${realName}.opt`, meta);
-
-    // ----
-
-    // let palette = new Jimp(16, 16);
-    // palette.background(0x00000000);
-
-    // for (let j = 1; j < texture.palette.length; j++) {
-    //     let x = j % 16;
-    //     let y = Math.floor(j / 16);
-    //     let color = texture.palette[j];
-    //     if (color === 1) {
-    //         color = 0;
-    //     }
-
-    //     color <<= 8; // shift color over to fit alpha
-    //     color |= 0x000000FF; // alpha channel
-    //     color >>>= 0; // unsigned shift
-
-    //     palette.setPixelColor(color, x, y);
-    // }
-
-    // await palette.writeAsync(`data/src/textures/meta/${realName}.pal.png`);
 }
