@@ -93,7 +93,7 @@ export function unpackPix(dat, idx, id = 0) {
     let width = idx.g2();
     let height = idx.g2();
 
-    let img = new Jimp(width, height);
+    let img = new Jimp(cropW, cropH);
     img.background(0xFFFFFFFF);
 
     let pixelOrder = idx.g1();
@@ -106,7 +106,9 @@ export function unpackPix(dat, idx, id = 0) {
                 pixel = 0; // restore black colors
             }
 
-            let pos = i * 4;
+            let startX = cropX + (i % width);
+            let startY = cropY + Math.floor(i / width);
+            let pos = (startX + (startY * cropW)) * 4;
             img.bitmap.data[pos] = (pixel >> 16) & 0xFF;
             img.bitmap.data[pos + 1] = (pixel >> 8) & 0xFF;
             img.bitmap.data[pos + 2] = pixel & 0xFF;
@@ -122,7 +124,9 @@ export function unpackPix(dat, idx, id = 0) {
                     pixel = 0; // restore black colors
                 }
 
-                let pos = (x + (y * width)) * 4;
+                let startX = cropX + x;
+                let startY = cropY + y;
+                let pos = (startX + (startY * cropW)) * 4;
                 img.bitmap.data[pos] = (pixel >> 16) & 0xFF;
                 img.bitmap.data[pos + 1] = (pixel >> 8) & 0xFF;
                 img.bitmap.data[pos + 2] = pixel & 0xFF;
@@ -131,5 +135,5 @@ export function unpackPix(dat, idx, id = 0) {
         }
     }
 
-    return { img, cropW, cropH, cropX, cropY, width, height, pixelOrder };
+    return { img, cropW, cropH, cropX, cropY, width, height, pixelOrder, palette };
 }

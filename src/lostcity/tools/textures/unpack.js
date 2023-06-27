@@ -5,11 +5,10 @@ import Jagfile from '#jagex2/io/Jagfile.js';
 import { pixSize, unpackPix } from '#lostcity/tools/unpack/Pix.js';
 import { loadPack } from '#lostcity/tools/pack/NameMap.js';
 
-let textures = Jagfile.load('data/pack/client/textures');
-
+let textures = Jagfile.load('data/pack/client/official/textures');
 let pack = loadPack('data/pack/texture.pack');
 
-// let sprites = [];
+fs.mkdirSync('data/src/textures/meta', { recursive: true });
 
 let index = textures.read('index.dat');
 for (let i = 0; i < textures.fileCount; i++) {
@@ -22,24 +21,35 @@ for (let i = 0; i < textures.fileCount; i++) {
     console.log(textures.fileName[i], size.width + 'x' + size.height);
 
     let safeName = textures.fileName[i].replace('.dat', '');
-    // sprites[safeName] = unpackPix(data, index);
     let texture = unpackPix(data, index);
 
     let realName = pack[safeName];
     await texture.img.writeAsync(`data/src/textures/${realName}.png`);
+
+    // ----
+
+    let meta = `${texture.cropX},${texture.cropY},${texture.width},${texture.height},${texture.pixelOrder ? 'row' : 'column'}\n`;
+    fs.writeFileSync(`data/src/textures/meta/${realName}.opt`, meta);
+
+    // ----
+
+    // let palette = new Jimp(16, 16);
+    // palette.background(0x00000000);
+
+    // for (let j = 1; j < texture.palette.length; j++) {
+    //     let x = j % 16;
+    //     let y = Math.floor(j / 16);
+    //     let color = texture.palette[j];
+    //     if (color === 1) {
+    //         color = 0;
+    //     }
+
+    //     color <<= 8; // shift color over to fit alpha
+    //     color |= 0x000000FF; // alpha channel
+    //     color >>>= 0; // unsigned shift
+
+    //     palette.setPixelColor(color, x, y);
+    // }
+
+    // await palette.writeAsync(`data/src/textures/meta/${realName}.pal.png`);
 }
-
-// generate a spritesheet:
-// let width = Math.ceil(Math.sqrt(sprites.length));
-// let height = Math.ceil(sprites.length / width);
-// let sheet = new Jimp(width * 128, height * 128);
-// sheet.background(0xFFFFFFFF);
-
-// for (let j = 0; j < sprites.length; j++) {
-//     let x = j % width;
-//     let y = Math.floor(j / width);
-
-//     sheet.composite(sprites[j].img, x * 128 + sprites[j].cropX, y * 128 + sprites[j].cropY);
-// }
-
-// await sheet.writeAsync(`data/src/binary/textures.png`);
