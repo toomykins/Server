@@ -1,10 +1,13 @@
 import {} from 'dotenv/config';
+import fs from 'fs';
+
+fs.mkdirSync('data/players', { recursive: true });
 
 import { startWeb } from '#lostcity/web/app.js';
 
 startWeb();
 
-import World from '#lostcity/entity/World.js';
+import World from '#lostcity/engine/World.js';
 
 World.start();
 

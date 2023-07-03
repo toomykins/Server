@@ -20,7 +20,7 @@ let order = [
 let files = {};
 
 let title = Packet.load('data/src/binary/title.jpg');
-title.data[0] = 0x00; // invalidate jpeg header
+// title.data[0] = 0x00; // invalidate jpeg header
 
 files['title.dat'] = title;
 

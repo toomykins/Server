@@ -109,7 +109,7 @@ ClientProtLengths[ClientProt.ANTICHEAT_IF_BUTTON5] = 4;
 ClientProtLengths[ClientProt.ANTICHEAT_OPPLAYER2] = 2;
 ClientProtLengths[ClientProt.ANTICHEAT_IF_BUTTON4] = 1;
 
-ClientProtLengths[ClientProt.ANTICHEAT_SIDEBAR_INPUT] = -1;
+ClientProtLengths[ClientProt.ANTICHEAT_SIDEBAR_INPUT] = 1;
 ClientProtLengths[ClientProt.ANTICHEAT_DRAW] = -1;
 ClientProtLengths[ClientProt.ANTICHEAT_UPDATE] = 3;
 ClientProtLengths[ClientProt.ANTICHEAT_UPDATE2] = 4;

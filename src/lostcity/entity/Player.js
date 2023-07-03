@@ -1,3 +1,5 @@
+import fs from 'fs';
+
 import Packet from '#jagex2/io/Packet.js';
 import { fromBase37, toBase37 } from '#jagex2/jstring/JString.js';
 import VarpType from '#lostcity/cache/VarpType.js';
@@ -46,11 +48,25 @@ export default class Player {
     static FORCED_MOVEMENT = 0x200;
 
     username = 'invalid_name';
-    x = 0;
-    z = 0;
+    x = 3222;
+    z = 3222;
     level = 0;
-    body = [];
-    colors = [];
+    body = [
+        0, // hair
+        10, // beard
+        18, // body
+        26, // arms
+        33, // gloves
+        36, // legs
+        42, // boots
+    ];
+    colors = [
+        0,
+        0,
+        0,
+        0,
+        0
+    ];
     gender = 0;
     runenergy = 10000;
     runweight = 0;
@@ -76,11 +92,16 @@ export default class Player {
     static load(name) {
         let name37 = toBase37(name);
         let safeName = fromBase37(name37);
-        let sav = Packet.load(`data/players/${safeName}.sav`);
-        if (!sav) {
-            throw new Error('Player save not found');
+
+        let player = new Player();
+        player.username = safeName;
+        player.username37 = name37;
+
+        if (!fs.existsSync(`data/players/${safeName}.sav`)) {
+            return player;
         }
 
+        let sav = Packet.load(`data/players/${safeName}.sav`);
         if (sav.g2() !== 0x2004) {
             throw new Error('Invalid player save');
         }
@@ -94,10 +115,6 @@ export default class Player {
         if (crc != Packet.crc32(sav, sav.length - 4)) {
             throw new Error('Player save corrupted');
         }
-
-        let player = new Player();
-        player.username = safeName;
-        player.username37 = name37;
 
         sav.pos = 4;
         player.x = sav.g2();
@@ -190,6 +207,8 @@ export default class Player {
     // runtime variables
     uid = -1;
     username37 = -1;
+    lowMemory = false;
+    webClient = false;
     combat = 0;
     headicons = 0;
     appearance = null; // cached appearance

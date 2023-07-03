@@ -2,6 +2,8 @@ import { WebSocketServer } from 'ws';
 
 import ClientSocket from '#lostcity/server/ClientSocket.js';
 import Packet from '#jagex2/io/Packet.js';
+import World from '#lostcity/engine/World.js';
+import Login from '#lostcity/engine/Login.js';
 
 // TODO: keepalives
 export default class WSServer {
@@ -24,6 +26,13 @@ export default class WSServer {
             socket.send(seed.data);
 
             ws.on('message', (data) => {
+                data = new Packet(data);
+
+                if (socket.state === 1) {
+                    World.readIn(socket, data);
+                } else {
+                    Login.readIn(socket, data);
+                }
             });
 
             ws.on('close', () => {

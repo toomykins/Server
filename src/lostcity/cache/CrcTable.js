@@ -18,3 +18,5 @@ makeCrc('data/pack/client/models');
 makeCrc('data/pack/client/textures');
 makeCrc('data/pack/client/wordenc');
 makeCrc('data/pack/client/sounds');
+
+export const CrcBuffer32 = Packet.crc32(CrcBuffer.data);

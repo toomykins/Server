@@ -2,6 +2,8 @@ import net from 'net';
 
 import ClientSocket from '#lostcity/server/ClientSocket.js';
 import Packet from '#jagex2/io/Packet.js';
+import World from '#lostcity/engine/World.js';
+import Login from '#lostcity/engine/Login.js';
 
 export default class TcpServer {
     tcp = null;
@@ -26,6 +28,13 @@ export default class TcpServer {
             socket.send(seed.data);
 
             s.on('data', (data) => {
+                data = new Packet(data);
+
+                if (socket.state === 1) {
+                    World.readIn(socket, data);
+                } else {
+                    Login.readIn(socket, data);
+                }
             });
 
             s.on('close', () => {

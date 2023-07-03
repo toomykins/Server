@@ -1,6 +1,10 @@
 import fs from 'fs';
 import { dirname } from 'path';
 
+import forge from 'node-forge';
+
+const priv = forge.pki.privateKeyFromPem(fs.readFileSync('data/config/private.pem'));
+
 export default class Packet {
     static crctable = new Int32Array(256);
 
@@ -203,7 +207,7 @@ export default class Packet {
         this.data[this.pos++] = 10;
     }
 
-    pdata(src) {
+    pdata(src, advance = true) {
         if (src instanceof Packet) {
             src = src.data;
         }
@@ -214,7 +218,10 @@ export default class Packet {
 
         this.ensure(src.length);
         this.data.set(src, this.pos);
-        this.pos += src.length;
+
+        if (advance) {
+            this.pos += src.length;
+        }
     }
 
     psmart(value) {
@@ -231,5 +238,38 @@ export default class Packet {
         } else {
             this.p2(value + 0xC000);
         }
+    }
+
+    // ----
+
+    rsadec() {
+        let length = this.g1();
+        let encrypted = this.gdata(length);
+
+        // .modpow(...)
+        if (encrypted.length > 64) {
+            // Java BigInteger prepended a 0 to indicate it fits in 64-bytes
+            while (encrypted.length > 64) {
+                encrypted = encrypted.slice(1);
+            }
+        } else if (encrypted.length < 64) {
+            // Java BigInteger didn't prepend 0 because it fits in less than 64-bytes
+            while (encrypted.length < 64) {
+                encrypted = new Uint8Array([0, ...encrypted]);
+            }
+        }
+
+        let decrypted = new Uint8Array(Buffer.from(priv.decrypt(encrypted, 'RAW', 'NONE'), 'ascii'));
+        let pos = 0;
+
+        // .toByteArray()
+        // skipping RSA padding
+        while (decrypted[pos] == 0) {
+            pos++;
+        }
+        decrypted = decrypted.subarray(pos);
+
+        this.pos = 0;
+        this.pdata(decrypted, false);
     }
 }
