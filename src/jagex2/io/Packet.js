@@ -37,6 +37,10 @@ export default class Packet {
     }
 
     static crc32(src, length = src.length, offset = 0) {
+        if (src instanceof Packet) {
+            src = src.data;
+        }
+
         let crc = 0xFFFFFFFF;
 
         for (let i = offset; i < offset + length; i++) {

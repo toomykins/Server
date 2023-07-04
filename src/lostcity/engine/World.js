@@ -41,6 +41,9 @@ class World {
             if (!this.players[i]) {
                 continue;
             }
+
+            let player = this.players[i];
+            player.playTime++;
         }
 
         // client output
@@ -50,9 +53,9 @@ class World {
             }
 
             let player = this.players[i];
-            player.load_area();
-            player.player_info();
-            // player.npc_info();
+            player.updateBuildArea();
+            player.updatePlayers();
+            player.updateNpcs();
 
             player.encodeOut();
         }
@@ -108,6 +111,8 @@ class World {
     addPlayer(player) {
         this.players.pid = this.players.length;
         this.players.push(player);
+
+        player.onLogin();
     }
 
     getPlayerBySocket(socket) {

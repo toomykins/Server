@@ -6,6 +6,7 @@ import VarpType from '#lostcity/cache/VarpType.js';
 import { Position } from '#lostcity/entity/Position.js';
 import { ClientProt, ClientProtLengths } from '#lostcity/server/ClientProt.js';
 import { ServerProt } from '#lostcity/server/ServerProt.js';
+import IfType from '#lostcity/cache/IfType.js';
 
 const EXP_LEVELS = [
     0, 83, 174, 276, 388, 512, 650, 801, 969, 1154, 1358, 1584, 1833, 2107, 2411, 2746,
@@ -75,21 +76,21 @@ export default class Player {
     runweight = 0;
     playtime = 0;
     stats = new Int32Array(21);
-    tempLevels = new Uint8Array(21);
+    level = new Uint8Array(21);
     varps = new Int32Array(VarpType.count);
     invs = [];
 
     constructor() {
         for (let i = 0; i < 21; i++) {
             this.stats[i] = 0;
-            this.levels[i] = 1;
-            this.tempLevels[i] = 1;
+            this.baseLevel[i] = 1;
+            this.level[i] = 1;
         }
 
         // hitpoints starts at level 10
-        this.stats[4] = 1154;
-        this.levels[4] = 10;
-        this.tempLevels[4] = 10;
+        this.stats[3] = 1154;
+        this.baseLevel[3] = 10;
+        this.level[3] = 10;
 
         this.placement = true;
         this.mask = Player.APPEARANCE;
@@ -138,8 +139,8 @@ export default class Player {
 
         for (let i = 0; i < 21; i++) {
             player.stats[i] = sav.g4();
-            player.levels[i] = getLevelByExp(player.stats[i]);
-            player.tempLevels[i] = sav.g1();
+            player.baseLevel[i] = getLevelByExp(player.stats[i]);
+            player.level[i] = sav.g1();
         }
 
         let varpCount = sav.g2();
@@ -182,8 +183,8 @@ export default class Player {
         for (let i = 0; i < 21; i++) {
             sav.p4(this.stats[i]);
 
-            if (this.tempLevels[i] === 0) {
-                sav.p1(this.tempLevels[i]);
+            if (this.level[i] === 0) {
+                sav.p1(this.level[i]);
             } else {
                 sav.p1(getLevelByExp(this.stats[i]));
             }
@@ -191,7 +192,13 @@ export default class Player {
 
         sav.p2(this.varps.length);
         for (let i = 0; i < this.varps.length; i++) {
-            sav.p4(this.varps[i]);
+            let type = VarpType.get(i);
+
+            if (type.scope === 'perm') {
+                sav.p4(this.varps[i]);
+            } else {
+                sav.p4(0);
+            }
         }
 
         sav.p1(this.invs.length);
@@ -211,14 +218,14 @@ export default class Player {
     }
 
     // runtime variables
-    uid = -1;
+    pid = -1;
     username37 = -1;
     lowMemory = false;
     webClient = false;
     combatLevel = 0;
     headicons = 0;
     appearance = null; // cached appearance
-    levels = new Uint8Array(21);
+    baseLevel = new Uint8Array(21);
     loadedX = -1;
     loadedZ = -1;
     walkQueue = [];
@@ -248,8 +255,7 @@ export default class Player {
     interfaceScript = null; // used to store a paused script (waiting for input)
     countInput = 0; // p_countdialog input
 
-    // ---- client protocol ----
-    decodeIn(data) {
+    decodeIn() {
         let offset = 0;
 
         let decoded = [];
@@ -293,18 +299,18 @@ export default class Player {
                         let land = Packet.load(`data/pack/server/maps/m${x}_${z}`);
 
                         for (let off = 0; off < land.length; off += CHUNK_SIZE) {
-                            this.data_land(x, z, land.gdata(CHUNK_SIZE), off, land.length);
+                            this.dataLand(x, z, land.gdata(CHUNK_SIZE), off, land.length);
                         }
 
-                        this.data_land_done(x, z);
+                        this.dataLandDone(x, z);
                     } else if (type == 1) {
                         let loc = Packet.load(`data/pack/server/maps/l${x}_${z}`);
 
                         for (let off = 0; off < loc.length; off += CHUNK_SIZE) {
-                            this.data_loc(x, z, loc.gdata(CHUNK_SIZE), off, loc.length);
+                            this.dataLoc(x, z, loc.gdata(CHUNK_SIZE), off, loc.length);
                         }
 
-                        this.data_loc_done(x, z);
+                        this.dataLocDone(x, z);
                     }
                 }
             }
@@ -312,8 +318,6 @@ export default class Player {
 
         this.client.reset();
     }
-
-    // ---- server protocol ----
 
     encodeOut() {
         for (let j = 0; j < this.netOut.length; j++) {
@@ -330,317 +334,101 @@ export default class Player {
         this.client.flush();
     }
 
-    // sorry for the snake_case below, but it's the convention for the server protocol
-
-    if_setcolour(int1, int2) {
-        let out = new Packet();
-        out.p1(2);
-
-        out.p2(int1);
-        out.p2(int2);
-
-        this.netOut.push(out);
-    }
-
-    if_openbottom(int1) {
-        let out = new Packet();
-        out.p1(14);
-
-        out.p2(int1);
-
-        this.netOut.push(out);
-    }
-
-    if_opensub(int1, int2) {
-        let out = new Packet();
-        out.p1(28);
-
-        out.p2(int1);
-        out.p2(int2);
-
-        this.netOut.push(out);
-    }
-
-    if_sethide(int1, bool1) {
-        let out = new Packet();
-        out.p1(26);
-
-        out.p1(int1);
-        out.pbool(bool1);
-
-        this.netOut.push(out);
-    }
-
-    if_setobject(int1, int2, int3) {
-        let out = new Packet();
-        out.p1(46);
-
-        out.p2(int1);
-        out.p2(int2);
-        out.p2(int3);
-
-        this.netOut.push(out);
-    }
-
-    if_settab_active(tab) {
-        let out = new Packet();
-        out.p1(84);
-
-        out.p1(tab);
-
-        this.netOut.push(out);
-    }
-
-    if_setmodel(int1, int2) {
-        let out = new Packet();
-        out.p1(87);
-
-        out.p2(int1);
-        out.p2(int2);
-
-        this.netOut.push(out);
-    }
-
-    if_setmodel_colour(int1, int2, int3) {
-        let out = new Packet();
-        out.p1(103);
-
-        out.p2(int1);
-        out.p2(int2);
-        out.p2(int3);
-
-        this.netOut.push(out);
-    }
-
-    if_settab_flash(tab) {
-        let out = new Packet();
-        out.p1(126);
-
-        out.p1(tab);
-
-        this.netOut.push(out);
-    }
-
-    if_closesub() {
-        let out = new Packet();
-        out.p1(129);
-
-        this.netOut.push(out);
-    }
-
-    if_setanim(int1, int2) {
-        let out = new Packet();
-        out.p1(146);
-
-        out.p2(int1);
-        out.p2(int2);
-
-        this.netOut.push(out);
-    }
-
-    if_settab(int1, int2) {
-        let out = new Packet();
-        out.p1(167);
-
-        out.p2(int1);
-        out.p2(int2);
-
-        this.netOut.push(out);
-    }
-
-    if_opentop(int1) {
-        let out = new Packet();
-        out.p1(168);
-
-        out.p2(int1);
-
-        this.netOut.push(out);
-    }
-
-    if_opensticky(int1) {
-        let out = new Packet();
-        out.p1(185);
-
-        out.p2(int1);
-
-        this.netOut.push(out);
-    }
-
-    if_opensidebar(int1) {
-        let out = new Packet();
-        out.p1(195);
-
-        out.p2(int1);
-
-        this.netOut.push(out);
-    }
-
-    if_setplayerhead(int1) {
-        let out = new Packet();
-        out.p1(197);
-
-        out.p2(int1);
-
-        this.netOut.push(out);
-    }
-
-    if_settext(int1, string1) {
-        let out = new Packet();
-        out.p1(201);
-
-        out.p2(int1);
-        out.pjstr(string1);
-
-        this.netOut.push(out);
-    }
-
-    if_setnpchead(int1, int2) {
-        let out = new Packet();
-        out.p1(204);
-
-        out.p2(int1);
-        out.p2(int2);
-
-        this.netOut.push(out);
-    }
-
-    if_setposition(int1, int2, int3) {
-        let out = new Packet();
-        out.p1(209);
-
-        out.p2(int1);
-        out.p2(int2);
-        out.p2(int3);
-
-        this.netOut.push(out);
-    }
-
-    if_iamount() {
-        let out = new Packet();
-        out.p1(243);
-
-        this.netOut.push(out);
-    }
-
-    if_multizone(bool1) {
-        let out = new Packet();
-        out.p1(254);
-
-        out.pbool(bool1);
-
-        this.netOut.push(out);
-    }
-
-    update_inv_clear(int1) {
-        let out = new Packet();
-        out.p1(15);
-
-        out.p2(int1);
-
-        this.netOut.push(out);
-    }
-
-    update_inv_full(com, inv) {
-        let out = new Packet();
-        out.p1(98);
-        out.p2(0);
-        let start = out.pos;
-
-        out.p2(com);
-        out.p1(inv.length);
-        for (let i = 0; i < inv.length; i++) {
-            let obj = inv[i];
-
-            out.p2(obj.id);
-            if (obj.count >= 255) {
-                out.p1(255);
-                out.p4(obj.count);
-            } else {
-                out.p1(obj.count);
+    onLogin() {
+        this.messageGame('Welcome to RuneScape.');
+        this.updateUid192(this.pid);
+
+        // normalize client between logins
+        this.resetClientVarCache();
+        this.camReset();
+        this.ifCloseSub();
+        this.clearWalkingQueue();
+
+        for (let i = 0; i < this.varps.length; i++) {
+            let type = VarpType.get(i);
+            let varp = this.varps[i];
+            if (varp === 0) {
+                continue;
+            }
+
+            if ((type.transmit === 'always' || type.transmit === 'once') && scope === 'perm') {
+                if (varp <= 0xFF) {
+                    this.varpSmall(i, varp);
+                } else {
+                    this.varpLarge(i, varp);
+                }
             }
         }
 
-        out.psize2(out.pos - start);
-        this.netOut.push(out);
-    }
+        // send inv
+        // send worn
 
-    update_inv_partial(com, inv) {
-        let out = new Packet();
-        out.p1(213);
-        out.p2(0);
-        let start = out.pos;
-
-        out.p2(com);
-        for (let i = 0; i < inv.length; i++) {
-            let obj = inv[i];
-
-            out.p1(i);
-            out.p2(obj.id);
-            if (obj.count >= 255) {
-                out.p1(255);
-                out.p4(obj.count);
-            } else {
-                out.p1(obj.count);
-            }
+        for (let i = 0; i < this.stats.length; i++) {
+            this.updateStat(i, this.stats[i], this.level[i]);
         }
 
-        out.psize2(out.pos - start);
-        this.netOut.push(out);
+        this.updateRunEnergy(this.runenergy);
+        this.updateRunWeight(this.runweight);
+
+        // TODO: do we want this in runescript instead?
+        // - some tabs need text populated
+        this.ifSetTab('attack_unarmed', 0);
+        this.ifSetTab('skills', 1);
+        this.ifSetTab('quest_journal', 2);
+        this.ifSetTab('inventory', 3);
+        this.ifSetTab('wornitems', 4);
+        this.ifSetTab('prayer', 5);
+        this.ifSetTab('magic', 6);
+        this.ifSetTab('friends', 8);
+        this.ifSetTab('ignore', 9);
+        this.ifSetTab('logout', 10);
+        this.ifSetTab('player_controls', 12);
+
+        if (this.lowMemory) {
+            this.ifSetTab('game_options_ld', 11);
+            this.ifSetTab('musicplayer_ld', 13);
+        } else {
+            this.ifSetTab('game_options', 11);
+            this.ifSetTab('musicplayer', 13);
+        }
     }
 
-    cam_forceangle(int1, int2, int3, int4, int5) {
-        let out = new Packet();
-        out.p1(3);
+    updateBuildArea() {
+        let dx = Math.abs(this.x - this.loadedX);
+        let dz = Math.abs(this.z - this.loadedZ);
 
-        out.p1(int1);
-        out.p1(int2);
-        out.p2(int3);
-        out.p1(int4);
-        out.p1(int5);
+        if (dx >= 36 || dz >= 36) {
+            this.loadArea(Position.zone(this.x), Position.zone(this.z));
 
-        this.netOut.push(out);
+            this.loadedX = this.x;
+            this.loadedZ = this.z;
+        }
+
+        // TODO: zone updates in build area
     }
 
-    cam_shake(int1, int2, int3, int4) {
+    updatePlayers() {
         let out = new Packet();
-        out.p1(13);
+        out.bits();
 
-        out.p1(int1);
-        out.p1(int2);
-        out.p1(int3);
-        out.p1(int4);
+        out.pBit(1, (this.placement || this.mask) ? 1 : 0);
+        if (this.placement) {
+            out.pBit(2, 3);
+            out.pBit(2, this.level);
+            out.pBit(7, Position.local(this.x));
+            out.pBit(7, Position.local(this.z));
+            out.pBit(1, 1);
+            out.pBit(1, this.mask ? 1 : 0);
+        }
+        out.pBit(8, 0);
+        out.pBit(11, 2047);
+        out.bytes();
 
-        this.netOut.push(out);
-    }
+        if (this.mask) {
+            this.writeUpdate(out, true, false);
+        }
 
-    cam_moveto(int1, int2, int3, int4, int5) {
-        let out = new Packet();
-        out.p1(74);
-
-        out.p1(int1);
-        out.p1(int2);
-        out.p2(int3);
-        out.p1(int4);
-        out.p1(int5);
-
-        this.netOut.push(out);
-    }
-
-    cam_reset() {
-        let out = new Packet();
-        out.p1(239);
-
-        this.netOut.push(out);
-    }
-
-    npc_info() {
-        let out = new Packet();
-        out.p1(1);
-        out.p2(0);
-        let start = out.pos;
-
-        out.psize2(out.pos - start);
-        this.netOut.push(out);
+        this.playerInfo(out);
     }
 
     getAppearanceInSlot(slot) {
@@ -699,35 +487,6 @@ export default class Player {
         stream.p1(this.combatLevel);
 
         this.appearance = stream;
-    }
-
-    player_info() {
-        let out = new Packet();
-        out.p1(ServerProt.PLAYER_INFO);
-        out.p2(0);
-        let start = out.pos;
-
-        out.bits();
-
-        out.pBit(1, (this.placement || this.mask) ? 1 : 0);
-        if (this.placement) {
-            out.pBit(2, 3);
-            out.pBit(2, this.level);
-            out.pBit(7, Position.local(this.x));
-            out.pBit(7, Position.local(this.z));
-            out.pBit(1, 1);
-            out.pBit(1, this.mask ? 1 : 0);
-        }
-        out.pBit(8, 0);
-        out.pBit(11, 2047);
-        out.bytes();
-
-        if (this.mask) {
-            this.writeUpdate(out, true, false);
-        }
-
-        out.psize2(out.pos - start);
-        this.netOut.push(out);
     }
 
     writeUpdate(out, self = false, firstSeen = false) {
@@ -792,25 +551,379 @@ export default class Player {
         }
     }
 
-    clear_walking_queue() {
+    updateNpcs() {
+    }
+
+    // ---- raw server protocol ----
+
+    ifSetColour(int1, int2) {
         let out = new Packet();
-        out.p1(19);
+        out.p1(ServerProt.IF_SETCOLOUR);
+
+        out.p2(int1);
+        out.p2(int2);
 
         this.netOut.push(out);
     }
 
-    update_runweight(int1) {
+    ifOpenBottom(int1) {
         let out = new Packet();
-        out.p1(22);
+        out.p1(ServerProt.IF_OPENBOTTOM);
 
         out.p2(int1);
 
         this.netOut.push(out);
     }
 
-    hint_npc(nid) {
+    ifOpenSub(int1, int2) {
         let out = new Packet();
-        out.p1(25); // hint_arrow
+        out.p1(ServerProt.IF_OPENSUB);
+
+        out.p2(int1);
+        out.p2(int2);
+
+        this.netOut.push(out);
+    }
+
+    ifSetHide(int1, bool1) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETHIDE);
+
+        out.p1(int1);
+        out.pbool(bool1);
+
+        this.netOut.push(out);
+    }
+
+    ifSetObject(int1, int2, int3) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETOBJECT);
+
+        out.p2(int1);
+        out.p2(int2);
+        out.p2(int3);
+
+        this.netOut.push(out);
+    }
+
+    ifSetTabActive(tab) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETTAB_ACTIVE);
+
+        out.p1(tab);
+
+        this.netOut.push(out);
+    }
+
+    ifSetModel(int1, int2) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETMODEL);
+
+        out.p2(int1);
+        out.p2(int2);
+
+        this.netOut.push(out);
+    }
+
+    ifSetModelColour(int1, int2, int3) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETMODEL_COLOUR);
+
+        out.p2(int1);
+        out.p2(int2);
+        out.p2(int3);
+
+        this.netOut.push(out);
+    }
+
+    ifSetTabFlash(tab) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETTAB_FLASH);
+
+        out.p1(tab);
+
+        this.netOut.push(out);
+    }
+
+    ifCloseSub() {
+        let out = new Packet();
+        out.p1(ServerProt.IF_CLOSESUB);
+
+        this.netOut.push(out);
+    }
+
+    ifSetAnim(int1, int2) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETANIM);
+
+        out.p2(int1);
+        out.p2(int2);
+
+        this.netOut.push(out);
+    }
+
+    ifSetTab(com, tab) {
+        if (typeof com === 'string') {
+            com = IfType.getId(com);
+        }
+
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETTAB);
+
+        out.p2(com);
+        out.p1(tab);
+
+        this.netOut.push(out);
+    }
+
+    ifOpenTop(int1) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_OPENTOP);
+
+        out.p2(int1);
+
+        this.netOut.push(out);
+    }
+
+    ifOpenSticky(int1) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_OPENSTICKY);
+
+        out.p2(int1);
+
+        this.netOut.push(out);
+    }
+
+    ifOpenSidebar(int1) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_OPENSIDEBAR);
+
+        out.p2(int1);
+
+        this.netOut.push(out);
+    }
+
+    ifSetPlayerHead(int1) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETPLAYERHEAD);
+
+        out.p2(int1);
+
+        this.netOut.push(out);
+    }
+
+    ifSetText(int1, string1) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETTEXT);
+
+        out.p2(int1);
+        out.pjstr(string1);
+
+        this.netOut.push(out);
+    }
+
+    ifSetNpcHead(int1, int2) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETNPCHEAD);
+
+        out.p2(int1);
+        out.p2(int2);
+
+        this.netOut.push(out);
+    }
+
+    ifSetPosition(int1, int2, int3) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_SETPOSITION);
+
+        out.p2(int1);
+        out.p2(int2);
+        out.p2(int3);
+
+        this.netOut.push(out);
+    }
+
+    ifIAmount() {
+        let out = new Packet();
+        out.p1(ServerProt.IF_IAMOUNT);
+
+        this.netOut.push(out);
+    }
+
+    ifMultiZone(bool1) {
+        let out = new Packet();
+        out.p1(ServerProt.IF_MULTIZONE);
+
+        out.pbool(bool1);
+
+        this.netOut.push(out);
+    }
+
+    updateInvClear(com) {
+        if (typeof com === 'string') {
+            com = IfType.getId(com);
+        }
+
+        let out = new Packet();
+        out.p1(ServerProt.UPDATE_INV_CLEAR);
+
+        out.p2(com);
+
+        this.netOut.push(out);
+    }
+
+    updateInvFull(com, inv) {
+        if (typeof com === 'string') {
+            com = IfType.getId(com);
+        }
+
+        let out = new Packet();
+        out.p1(ServerProt.UPDATE_INV_FULL);
+        out.p2(0);
+        let start = out.pos;
+
+        out.p2(com);
+        out.p1(inv.capacity);
+        for (let i = 0; i < inv.capacity; i++) {
+            let obj = inv.get(i);
+            if (!obj) {
+                continue;
+            }
+
+            out.p2(obj.id);
+            if (obj.count >= 255) {
+                out.p1(255);
+                out.p4(obj.count);
+            } else {
+                out.p1(obj.count);
+            }
+        }
+
+        out.psize2(out.pos - start);
+        this.netOut.push(out);
+    }
+
+    updateInvPartial(com, inv, slots = []) {
+        if (typeof com === 'string') {
+            com = IfType.getId(com);
+        }
+
+        let out = new Packet();
+        out.p1(ServerProt.UPDATE_INV_PARTIAL);
+        out.p2(0);
+        let start = out.pos;
+
+        out.p2(com);
+        for (let i = 0; i < slots.length; i++) {
+            let slot = slots[i];
+            let obj = inv.get(slot);
+            if (!obj) {
+                continue;
+            }
+
+            out.p1(slot);
+            out.p2(obj.id);
+            if (obj.count >= 255) {
+                out.p1(255);
+                out.p4(obj.count);
+            } else {
+                out.p1(obj.count);
+            }
+        }
+
+        out.psize2(out.pos - start);
+        this.netOut.push(out);
+    }
+
+    camForceAngle(int1, int2, int3, int4, int5) {
+        let out = new Packet();
+        out.p1(ServerProt.CAM_FORCEANGLE);
+
+        out.p1(int1);
+        out.p1(int2);
+        out.p2(int3);
+        out.p1(int4);
+        out.p1(int5);
+
+        this.netOut.push(out);
+    }
+
+    camShake(int1, int2, int3, int4) {
+        let out = new Packet();
+        out.p1(ServerProt.CAM_SHAKE);
+
+        out.p1(int1);
+        out.p1(int2);
+        out.p1(int3);
+        out.p1(int4);
+
+        this.netOut.push(out);
+    }
+
+    camMoveTo(int1, int2, int3, int4, int5) {
+        let out = new Packet();
+        out.p1(ServerProt.CAM_MOVETO);
+
+        out.p1(int1);
+        out.p1(int2);
+        out.p2(int3);
+        out.p1(int4);
+        out.p1(int5);
+
+        this.netOut.push(out);
+    }
+
+    camReset() {
+        let out = new Packet();
+        out.p1(ServerProt.CAM_RESET);
+
+        this.netOut.push(out);
+    }
+
+    npcInfo(data) {
+        let out = new Packet();
+        out.p1(ServerProt.NPC_INFO);
+        out.p2(0);
+        let start = out.pos;
+
+        out.pdata(data);
+
+        out.psize2(out.pos - start);
+        this.netOut.push(out);
+    }
+
+    playerInfo(data) {
+        let out = new Packet();
+        out.p1(ServerProt.PLAYER_INFO);
+        out.p2(0);
+        let start = out.pos;
+
+        out.pdata(data);
+
+        out.psize2(out.pos - start);
+        this.netOut.push(out);
+    }
+
+    clearWalkingQueue() {
+        let out = new Packet();
+        out.p1(ServerProt.CLEAR_WALKING_QUEUE);
+
+        this.netOut.push(out);
+    }
+
+    updateRunWeight(int1) {
+        let out = new Packet();
+        out.p1(ServerProt.UPDATE_RUNWEIGHT);
+
+        out.p2(int1);
+
+        this.netOut.push(out);
+    }
+
+    // pseudo-packet
+    hintNpc(nid) {
+        let out = new Packet();
+        out.p1(ServerProt.HINT_ARROW);
         out.p1(0);
         let start = out.pos;
 
@@ -821,9 +934,10 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    hint_tile(x, z, height) {
+    // pseudo-packet
+    hintTile(x, z, height) {
         let out = new Packet();
-        out.p1(25); // hint_arrow
+        out.p1(ServerProt.HINT_ARROW);
         out.p1(0);
         let start = out.pos;
 
@@ -843,9 +957,10 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    hint_player(pid) {
+    // pseudo-packet
+    hintPlayer(pid) {
         let out = new Packet();
-        out.p1(25); // hint_arrow
+        out.p1(ServerProt.HINT_ARROW);
         out.p1(0);
         let start = out.pos;
 
@@ -856,18 +971,18 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    update_reboot_timer(ticks) {
+    updateRebootTimer(ticks) {
         let out = new Packet();
-        out.p1(43);
+        out.p1(ServerProt.UPDATE_REBOOT_TIMER);
 
         out.p2(ticks);
 
         this.netOut.push(out);
     }
 
-    update_stat(stat, xp, tempLevel) {
+    updateStat(stat, xp, tempLevel) {
         let out = new Packet();
-        out.p1(44);
+        out.p1(ServerProt.UPDATE_STAT);
 
         out.p1(stat);
         out.p4(xp);
@@ -876,39 +991,41 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    update_runenergy(energy) {
+    updateRunEnergy(energy) {
         let out = new Packet();
-        out.p1(68);
+        out.p1(ServerProt.UPDATE_RUNENERGY);
 
         out.p1(energy);
 
         this.netOut.push(out);
     }
 
-    finish_tracking() {
+    finishTracking() {
         let out = new Packet();
-        out.p1(133);
+        out.p1(ServerProt.FINISH_TRACKING);
 
         this.netOut.push(out);
     }
 
-    reset_anims() {
+    resetAnims() {
         let out = new Packet();
-        out.p1(136);
+        out.p1(ServerProt.RESET_ANIMS);
 
         this.netOut.push(out);
     }
 
-    update_uid192() {
+    updateUid192(pid) {
         let out = new Packet();
-        out.p1(139);
+        out.p1(ServerProt.UPDATE_UID192);
+
+        out.p2(pid);
 
         this.netOut.push(out);
     }
 
-    last_login_info(pid) {
+    lastLoginInfo(pid) {
         let out = new Packet();
-        out.p1(140);
+        out.p1(ServerProt.LAST_LOGIN_INFO);
 
         out.p2(pid);
 
@@ -917,21 +1034,21 @@ export default class Player {
 
     logout() {
         let out = new Packet();
-        out.p1(142);
+        out.p1(ServerProt.LOGOUT);
 
         this.netOut.push(out);
     }
 
-    enable_tracking() {
+    enableTracking() {
         let out = new Packet();
-        out.p1(226);
+        out.p1(ServerProt.ENABLE_TRACKING);
 
         this.netOut.push(out);
     }
 
-    message_game(str1) {
+    messageGame(str1) {
         let out = new Packet();
-        out.p1(4);
+        out.p1(ServerProt.MESSAGE_GAME);
         out.p1(0);
         let start = out.pos;
 
@@ -941,9 +1058,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    update_ignorelist(name37s) {
+    updateIgnoreList(name37s) {
         let out = new Packet();
-        out.p1(21);
+        out.p1(ServerProt.UPDATE_IGNORELIST);
 
         for (let i = 0; i < name37s.length; i++) {
             out.p8(name37s[i]);
@@ -952,9 +1069,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    chat_filter_settings(int1, int2, int3) {
+    chatFilterSettings(int1, int2, int3) {
         let out = new Packet();
-        out.p1(32);
+        out.p1(ServerProt.CHAT_FILTER_SETTINGS);
 
         out.p1(int1);
         out.p1(int2);
@@ -963,9 +1080,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    message_private(from37, messageId, fromRights, message) {
+    messagePrivate(from37, messageId, fromRights, message) {
         let out = new Packet();
-        out.p1(41);
+        out.p1(ServerProt.MESSAGE_PRIVATE);
         out.p1(0);
         let start = out.pos;
 
@@ -978,9 +1095,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    update_friendlist(username37, world) {
+    updateFriendList(username37, world) {
         let out = new Packet();
-        out.p1(152);
+        out.p1(ServerProt.UPDATE_FRIENDLIST);
 
         out.p8(username37);
         out.p1(world);
@@ -988,9 +1105,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    data_loc_done(x, z) {
+    dataLocDone(x, z) {
         let out = new Packet();
-        out.p1(20);
+        out.p1(ServerProt.DATA_LOC_DONE);
 
         out.p1(x);
         out.p1(z);
@@ -998,9 +1115,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    data_land_done(x, z) {
+    dataLandDone(x, z) {
         let out = new Packet();
-        out.p1(80);
+        out.p1(ServerProt.DATA_LAND_DONE);
 
         out.p1(x);
         out.p1(z);
@@ -1008,7 +1125,7 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    data_land(x, z, data, off, length) {
+    dataLand(x, z, data, off, length) {
         let out = new Packet();
         out.p1(ServerProt.DATA_LAND);
         out.p2(0);
@@ -1024,7 +1141,7 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    data_loc(x, z, data, off, length) {
+    dataLoc(x, z, data, off, length) {
         let out = new Packet();
         out.p1(ServerProt.DATA_LOC);
         out.p2(0);
@@ -1040,7 +1157,7 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    load_area() {
+    loadArea(zoneX, zoneZ) {
         let dx = Math.abs(this.x - this.loadedX);
         let dz = Math.abs(this.z - this.loadedZ);
         if (dx < 36 && dz < 36) {
@@ -1048,49 +1165,45 @@ export default class Player {
         }
 
         let out = new Packet();
-        out.p1(237);
+        out.p1(ServerProt.LOAD_AREA);
         out.p2(0);
         let start = out.pos;
 
-        out.p2(Position.zone(this.x));
-        out.p2(Position.zone(this.z));
+        out.p2(zoneX);
+        out.p2(zoneZ);
 
         // build area is 13x13 zones (8*13 = 104 tiles), so we need to load 6 zones in each direction
         let areas = [];
-        for (let x = Position.zone(this.x) - 6; x <= Position.zone(this.x) + 6; x++) {
-            for (let z = Position.zone(this.z) - 6; z <= Position.zone(this.z) + 6; z++) {
-                let fileX = Position.mapsquare(x << 3);
-                let fileZ = Position.mapsquare(z << 3);
+        for (let x = zoneX - 6; x <= zoneX + 6; x++) {
+            for (let z = zoneZ - 6; z <= zoneZ + 6; z++) {
+                let mapsquareX = Position.mapsquare(x << 3);
+                let mapsquareZ = Position.mapsquare(z << 3);
 
-                let landExists = fs.existsSync(`data/pack/server/maps/m${fileX}_${fileZ}`);
-                let locExists = fs.existsSync(`data/pack/server/maps/l${fileX}_${fileZ}`);
-                if ((landExists || locExists) && areas.findIndex(a => a.x === fileX && a.z === fileZ) === -1) {
-                    areas.push({ x: fileX, z: fileZ });
+                let landExists = fs.existsSync(`data/pack/server/maps/m${mapsquareX}_${mapsquareZ}`);
+                let locExists = fs.existsSync(`data/pack/server/maps/l${mapsquareX}_${mapsquareZ}`);
+
+                if ((landExists || locExists) && areas.findIndex(a => a.mapsquareX === mapsquareX && a.mapsquareZ === mapsquareZ) === -1) {
+                    areas.push({ mapsquareX, mapsquareZ, landExists, locExists });
                 }
             }
         }
 
         for (let i = 0; i < areas.length; i++) {
-            const { x, z } = areas[i];
-            out.p1(x);
-            out.p1(z);
+            const { mapsquareX, mapsquareZ, landExists, locExists } = areas[i];
 
-            let landExists = fs.existsSync(`data/pack/server/maps/m${x}_${z}`);
-            let locExists = fs.existsSync(`data/pack/server/maps/l${x}_${z}`);
-            out.p4(landExists ? Packet.crc32(Packet.load(`data/pack/server/maps/m${x}_${z}`)) : 0);
-            out.p4(locExists ? Packet.crc32(Packet.load(`data/pack/server/maps/l${x}_${z}`)) : 0);
+            out.p1(mapsquareX);
+            out.p1(mapsquareZ);
+            out.p4(landExists ? Packet.crc32(Packet.load(`data/pack/server/maps/m${mapsquareX}_${mapsquareZ}`)) : 0);
+            out.p4(locExists ? Packet.crc32(Packet.load(`data/pack/server/maps/l${mapsquareX}_${mapsquareZ}`)) : 0);
         }
 
         out.psize2(out.pos - start);
         this.netOut.push(out);
-
-        this.loadedX = this.x;
-        this.loadedZ = this.z;
     }
 
-    varp_small(varp, value) {
+    varpSmall(varp, value) {
         let out = new Packet();
-        out.p1(150);
+        out.p1(ServerProt.VARP_SMALL);
 
         out.p2(varp);
         out.p1(value);
@@ -1098,9 +1211,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    varp_large(varp, value) {
+    varpLarge(varp, value) {
         let out = new Packet();
-        out.p1(175);
+        out.p1(ServerProt.VARP_LARGE);
 
         out.p2(varp);
         out.p4(value);
@@ -1108,16 +1221,16 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    reset_client_varcache() {
+    resetClientVarCache() {
         let out = new Packet();
-        out.p1(193);
+        out.p1(ServerProt.RESET_CLIENT_VARCACHE);
 
         this.netOut.push(out);
     }
 
-    synth_sound(id, loops, delay) {
+    synthSound(id, loops, delay) {
         let out = new Packet();
-        out.p1(12);
+        out.p1(ServerProt.SYNTH_SOUND);
 
         out.p2(id);
         out.p1(loops);
@@ -1126,9 +1239,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    midi_song(name, crc, length) {
+    midiSong(name, crc, length) {
         let out = new Packet();
-        out.p1(54);
+        out.p1(ServerProt.MIDI_SONG);
         out.p1(0);
         let start = out.pos;
 
@@ -1140,9 +1253,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    midi_jingle() {
+    midiJingle() {
         let out = new Packet();
-        out.p1(212);
+        out.p1(ServerProt.MIDI_JINGLE);
         out.p2(0);
         let start = out.pos;
 
@@ -1150,9 +1263,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    update_zone_partial_follows(baseX, baseZ) {
+    updateZonePartialFollows(baseX, baseZ) {
         let out = new Packet();
-        out.p1(7);
+        out.p1(ServerProt.UPDATE_ZONE_PARTIAL_FOLLOWS);
 
         out.p1(baseX);
         out.p1(baseZ);
@@ -1160,9 +1273,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    update_zone_full_follows(baseX, baseZ) {
+    updateZoneFullFollows(baseX, baseZ) {
         let out = new Packet();
-        out.p1(135);
+        out.p1(ServerProt.UPDATE_ZONE_FULL_FOLLOWS);
 
         out.p1(baseX);
         out.p1(baseZ);
@@ -1170,9 +1283,9 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    update_zone_partial_enclosed() {
+    updateZonePartialEnclosed() {
         let out = new Packet();
-        out.p1(162);
+        out.p1(ServerProt.UPDATE_ZONE_PARTIAL_ENCLOSED);
         out.p2(0);
         let start = out.pos;
 
@@ -1180,72 +1293,72 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    loc_add_change() {
+    locAddChange() {
         let out = new Packet();
-        out.p1(23);
+        out.p1(ServerProt.LOC_ADD_CHANGE);
 
         this.netOut.push(out);
     }
 
-    loc_anim() {
+    locAnim() {
         let out = new Packet();
-        out.p1(42);
+        out.p1(ServerProt.LOC_ANIM);
 
         this.netOut.push(out);
     }
 
-    obj_del() {
+    objDel() {
         let out = new Packet();
-        out.p1(49);
+        out.p1(ServerProt.OBJ_DEL);
 
         this.netOut.push(out);
     }
 
-    obj_reveal() {
+    objReveal() {
         let out = new Packet();
-        out.p1(50);
+        out.p1(ServerProt.OBJ_REVEAL);
 
         this.netOut.push(out);
     }
 
-    loc_add() {
+    locAdd() {
         let out = new Packet();
-        out.p1(59);
+        out.p1(ServerProt.LOC_ADD);
 
         this.netOut.push(out);
     }
 
-    map_projanim() {
+    mapProjAnim() {
         let out = new Packet();
-        out.p1(69);
+        out.p1(ServerProt.MAP_PROJANIM);
 
         this.netOut.push(out);
     }
 
-    loc_del() {
+    locDel() {
         let out = new Packet();
-        out.p1(76);
+        out.p1(ServerProt.LOC_DEL);
 
         this.netOut.push(out);
     }
 
-    obj_count() {
+    objCount() {
         let out = new Packet();
-        out.p1(151);
+        out.p1(ServerProt.OBJ_COUNT);
 
         this.netOut.push(out);
     }
 
-    map_anim() {
+    mapAnim() {
         let out = new Packet();
-        out.p1(191);
+        out.p1(ServerProt.MAP_ANIM);
 
         this.netOut.push(out);
     }
 
-    obj_add() {
+    objAdd() {
         let out = new Packet();
-        out.p1(223);
+        out.p1(ServerProt.OBJ_ADD);
 
         this.netOut.push(out);
     }
