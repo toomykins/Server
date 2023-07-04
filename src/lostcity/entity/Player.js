@@ -7,6 +7,9 @@ import { Position } from '#lostcity/entity/Position.js';
 import { ClientProt, ClientProtLengths } from '#lostcity/server/ClientProt.js';
 import { ServerProt } from '#lostcity/server/ServerProt.js';
 import IfType from '#lostcity/cache/IfType.js';
+import InvType from '#lostcity/cache/InvType.js';
+import ObjType from '#lostcity/cache/ObjType.js';
+import { Inventory } from '#lostcity/engine/Inventory.js';
 
 const EXP_LEVELS = [
     0, 83, 174, 276, 388, 512, 650, 801, 969, 1154, 1358, 1584, 1833, 2107, 2411, 2746,
@@ -78,7 +81,11 @@ export default class Player {
     stats = new Int32Array(21);
     level = new Uint8Array(21);
     varps = new Int32Array(VarpType.count);
-    invs = [];
+    invs = [
+        Inventory.fromType('inv'),
+        Inventory.fromType('worn'),
+        Inventory.fromType('bank')
+    ];
 
     constructor() {
         for (let i = 0; i < 21; i++) {
@@ -92,6 +99,7 @@ export default class Player {
         this.baseLevel[3] = 10;
         this.level[3] = 10;
 
+        // temp
         this.placement = true;
         this.mask = Player.APPEARANCE;
     }
@@ -201,8 +209,8 @@ export default class Player {
             }
         }
 
-        sav.p1(this.invs.length);
-        for (let i = 0; i < this.invs.length; i++) {
+        sav.p1(0); // this.invs.length);
+        for (let i = 0; i < 0; i++) {
             sav.p1(this.invs[i].size);
 
             for (let j = 0; j < this.invs[i].size; j++) {
@@ -313,6 +321,8 @@ export default class Player {
                         this.dataLocDone(x, z);
                     }
                 }
+            } else if (opcode === ClientProt.CLIENT_CHEAT) {
+                this.onCheat(data.gjstr());
             }
         }
 
@@ -352,7 +362,7 @@ export default class Player {
             }
 
             if ((type.transmit === 'always' || type.transmit === 'once') && scope === 'perm') {
-                if (varp <= 0xFF) {
+                if (varp < 256) {
                     this.varpSmall(i, varp);
                 } else {
                     this.varpLarge(i, varp);
@@ -360,8 +370,9 @@ export default class Player {
             }
         }
 
-        // send inv
-        // send worn
+        // TODO: do this automatically when invenory and wornitems get opened
+        this.invListenOnCom('inv', 'inventory:inv');
+        this.invListenOnCom('worn', 'wornitems:wear');
 
         for (let i = 0; i < this.stats.length; i++) {
             this.updateStat(i, this.stats[i], this.level[i]);
@@ -370,13 +381,12 @@ export default class Player {
         this.updateRunEnergy(this.runenergy);
         this.updateRunWeight(this.runweight);
 
-        // TODO: do we want this in runescript instead?
-        // - some tabs need text populated
-        this.ifSetTab('attack_unarmed', 0);
+        // TODO: do we want this in runescript instead? (some tabs need text populated too)
+        this.ifSetTab('attack_unarmed', 0); // this needs to select based on weapon style equipped
         this.ifSetTab('skills', 1);
-        this.ifSetTab('quest_journal', 2);
+        this.ifSetTab('quest_journal', 2); // quest states are not displayed via varp, have to update colors manually
         this.ifSetTab('inventory', 3);
-        this.ifSetTab('wornitems', 4);
+        this.ifSetTab('wornitems', 4); // contains equip bonuses to update
         this.ifSetTab('prayer', 5);
         this.ifSetTab('magic', 6);
         this.ifSetTab('friends', 8);
@@ -390,6 +400,58 @@ export default class Player {
         } else {
             this.ifSetTab('game_options', 11);
             this.ifSetTab('musicplayer', 13);
+        }
+    }
+
+    onCheat(cheat) {
+        let args = cheat.toLowerCase().split(' ');
+        let cmd = args.shift();
+
+        switch (cmd) {
+            case 'clearinv': {
+                if (args.length > 0) {
+                    let inv = args.shift();
+                    this.invClear(inv);
+                } else {
+                    this.invClear('inv');
+                }
+            } break;
+            case 'giveitem': {
+                if (args.length < 1) {
+                    this.messageGame('Usage: ::giveitem <obj> (count) (inv)');
+                    return;
+                }
+
+                let obj = args.shift();
+                let count = args.shift() || 1;
+                let inv = args.shift() || 'inv';
+
+                this.invAdd(inv, obj, count);
+
+                let objType = ObjType.getByName(obj);
+                this.messageGame(`Added ${objType.name} x ${count}`);
+            } break;
+            case 'setvar': {
+                if (args.length < 2) {
+                    this.messageGame('Usage: ::setvar <var> <value>');
+                    return;
+                }
+
+                let varp = args.shift();
+                let value = args.shift();
+
+                let varpType = VarpType.getByName(varp);
+                if (varpType) {
+                    this.setVarp(varp, value);
+                    this.messageGame(`Setting var ${varp} to ${value}`);
+                } else {
+                    this.messageGame(`Unknown var ${varp}`);
+                }
+            } break;
+            case 'herbtest': {
+                this.invAdd('inv', 'guam_leaf', 1);
+                this.invAdd('inv', 'marrentill', 1);
+            } break;
         }
     }
 
@@ -552,6 +614,128 @@ export default class Player {
     }
 
     updateNpcs() {
+    }
+
+    updateInvs() {
+        for (let i = 0; i < this.invs.length; i++) {
+            let inv = this.invs[i];
+            if (!inv || inv.com == -1 || !inv.update) {
+                continue;
+            }
+
+            // TODO: implement partial updates
+            this.updateInvFull(inv.com, inv);
+            inv.update = false;
+        }
+    }
+
+    invListenOnCom(inv, com) {
+        if (typeof inv === 'string') {
+            inv = InvType.getId(inv);
+        }
+
+        if (typeof com === 'string') {
+            com = IfType.getId(com);
+        }
+
+        if (inv === -1 || com === -1) {
+            console.error(`Invalid invListenOnCom call: ${inv}, ${com}`);
+            return;
+        }
+
+        let container = this.invs.find(x => x.type === inv);
+        if (!container) {
+            console.error(`Invalid invListenOnCom call: ${inv}, ${com}`);
+            return;
+        }
+
+        container.com = com;
+        container.update = true;
+    }
+
+    invClear(inv) {
+        if (typeof inv === 'string') {
+            inv = InvType.getId(inv);
+        }
+
+        if (inv === -1) {
+            console.error(`Invalid invClear call: ${inv}`);
+            return;
+        }
+
+        let container = this.invs.find(x => x.type === inv);
+        if (!container) {
+            console.error(`Invalid invClear call: ${inv}`);
+            return;
+        }
+
+        container.removeAll();
+    }
+
+    invAdd(inv, obj, count) {
+        if (typeof inv === 'string') {
+            inv = InvType.getId(inv);
+        }
+
+        if (typeof obj === 'string') {
+            obj = ObjType.getId(obj);
+        }
+
+        if (inv === -1 || obj === -1) {
+            console.error(`Invalid invAdd call: ${inv}, ${obj}, ${count}`);
+            return;
+        }
+
+        let container = this.invs.find(x => x.type === inv);
+        if (!container) {
+            console.error(`Invalid invAdd call: ${inv}, ${obj}, ${count}`);
+            return;
+        }
+
+        container.add(obj, count);
+    }
+
+    invDelSlot(inv, slot) {
+        if (typeof inv === 'string') {
+            inv = InvType.getId(inv);
+        }
+
+        if (inv === -1) {
+            console.error(`Invalid invDel call: ${inv}, ${slot}`);
+            return;
+        }
+
+        let container = this.invs.find(x => x.type === inv);
+        if (!container) {
+            console.error(`Invalid invDel call: ${inv}, ${slot}`);
+            return;
+        }
+
+        container.delete(slot);
+    }
+
+    setVarp(varp, value) {
+        if (typeof varp === 'string') {
+            varp = VarpType.getId(varp);
+        }
+
+        if (varp === -1) {
+            console.error(`Invalid setVarp call: ${varp}, ${value}`);
+            return;
+        }
+
+        let varpType = VarpType.get(varp);
+        if (varpType.transmit !== 'always') {
+            return;
+        }
+
+        this.varps[varp] = value;
+
+        if (value < 256) {
+            this.varpSmall(varp, value);
+        } else {
+            this.varpLarge(varp, value);
+        }
     }
 
     // ---- raw server protocol ----
@@ -784,18 +968,21 @@ export default class Player {
 
         out.p2(com);
         out.p1(inv.capacity);
-        for (let i = 0; i < inv.capacity; i++) {
-            let obj = inv.get(i);
-            if (!obj) {
-                continue;
-            }
+        for (let slot = 0; slot < inv.capacity; slot++) {
+            let obj = inv.get(slot);
 
-            out.p2(obj.id);
-            if (obj.count >= 255) {
-                out.p1(255);
-                out.p4(obj.count);
+            if (obj) {
+                out.p2(obj.id + 1);
+
+                if (obj.count >= 255) {
+                    out.p1(255);
+                    out.p4(obj.count);
+                } else {
+                    out.p1(obj.count);
+                }
             } else {
-                out.p1(obj.count);
+                out.p2(0);
+                out.p1(0);
             }
         }
 
@@ -911,11 +1098,11 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    updateRunWeight(int1) {
+    updateRunWeight(kg) {
         let out = new Packet();
         out.p1(ServerProt.UPDATE_RUNWEIGHT);
 
-        out.p2(int1);
+        out.p2(kg);
 
         this.netOut.push(out);
     }
@@ -995,7 +1182,7 @@ export default class Player {
         let out = new Packet();
         out.p1(ServerProt.UPDATE_RUNENERGY);
 
-        out.p1(energy);
+        out.p1(Math.floor(energy / 100));
 
         this.netOut.push(out);
     }

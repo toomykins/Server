@@ -42,6 +42,8 @@ export default class ParamType {
             let lines = ParamType.configs[i];
 
             let config = new ParamType();
+            config.id = i;
+
             for (let j = 0; j < lines.length; j++) {
                 let line = lines[j];
                 let key = line.substring(0, line.indexOf('='));

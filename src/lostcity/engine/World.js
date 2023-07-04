@@ -56,6 +56,7 @@ class World {
             player.updateBuildArea();
             player.updatePlayers();
             player.updateNpcs();
+            player.updateInvs();
 
             player.encodeOut();
         }

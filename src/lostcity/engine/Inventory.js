@@ -1,3 +1,4 @@
+import InvType from '#lostcity/cache/InvType.js';
 import ObjType from '#lostcity/cache/ObjType.js';
 
 export class InventoryTransaction {
@@ -46,7 +47,21 @@ export class Inventory {
     items = [];
     update = false;
 
+    com = -1; // component to display on
     type = -1; // inv ID
+
+    static fromType(inv) {
+        let type = InvType.getByName(inv);
+
+        let stackType = Inventory.NORMAL_STACK;
+        if (type.stackall) {
+            stackType = Inventory.ALWAYS_STACK;
+        }
+
+        let container = new Inventory(type.size, stackType);
+        container.type = type.id;
+        return container;
+    }
 
     constructor(capacity, stackType = Inventory.NORMAL_STACK) {
         this.capacity = capacity;
@@ -319,12 +334,12 @@ export class Inventory {
 
         let finalItem = copy;
         if (note) {
-            let cert = ObjectType.find(i => i.certlink == item.id);
+            let cert = ObjType.find(i => i.certlink == item.id);
             if (cert) {
                 finalItem = { id: cert.id, count: count };
             }
         } else if (unnote) {
-            let type = ObjectType.get(item.id);
+            let type = ObjType.get(item.id);
             if (type.certlink != -1) {
                 finalItem = { id: type.certlink, count: count };
             }

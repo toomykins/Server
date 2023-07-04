@@ -1115,7 +1115,7 @@ size=14
 
 [bank]
 scope=perm
-size=400
+size=240
 stackall=yes
 
 [inv_96]

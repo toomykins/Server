@@ -46,6 +46,8 @@ export default class VarpType {
             let lines = VarpType.configs[i];
 
             let config = new VarpType();
+            config.id = i;
+
             for (let j = 0; j < lines.length; j++) {
                 let line = lines[j];
                 let key = line.substring(0, line.indexOf('='));
@@ -73,7 +75,7 @@ export default class VarpType {
     }
 
     static getId(name) {
-        return VarpType.names.indexOf(name);
+        return varpPack.indexOf(name);
     }
 
     static getByName(name) {

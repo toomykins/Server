@@ -47,6 +47,8 @@ export default class IdkType {
             let lines = IdkType.configs[i];
 
             let config = new IdkType();
+            config.id = i;
+
             for (let j = 0; j < lines.length; j++) {
                 let line = lines[j];
                 let key = line.substring(0, line.indexOf('='));
@@ -126,7 +128,7 @@ export default class IdkType {
     }
 
     static getId(name) {
-        return IdkType.names.indexOf(name);
+        return idkPack.indexOf(name);
     }
 
     static getByName(name) {

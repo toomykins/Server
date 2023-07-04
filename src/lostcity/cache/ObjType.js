@@ -47,8 +47,13 @@ export default class ObjType {
         // parsing
         for (let i = 0; i < ObjType.configs.length; i++) {
             let lines = ObjType.configs[i];
+            if (!lines) {
+                continue;
+            }
 
             let config = new ObjType();
+            config.id = i;
+
             for (let j = 0; j < lines.length; j++) {
                 let line = lines[j];
                 let key = line.substring(0, line.indexOf('='));
@@ -184,7 +189,7 @@ export default class ObjType {
     }
 
     static getId(name) {
-        return ObjType.names.indexOf(name);
+        return objPack.indexOf(name);
     }
 
     static getByName(name) {

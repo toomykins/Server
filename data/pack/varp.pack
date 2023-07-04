@@ -164,12 +164,12 @@
 163=varp_163
 164=varp_164
 165=varp_165
-166=varp_166
+166=game_brightness
 167=varp_167
 168=music_volume
 169=sound_volume
-170=varp_170
-171=varp_171
+170=mouse_buttons
+171=chat_effects
 172=auto_retaliate
 173=player_run
 174=varp_174
@@ -285,7 +285,7 @@
 284=varp_284
 285=varp_285
 286=duel_settings
-287=gameoptions1
+287=split_privatechat
 288=varp_288
 289=varp_289
 290=varp_290

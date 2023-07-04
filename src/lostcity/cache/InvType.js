@@ -1,7 +1,6 @@
 import { loadDir, loadPack } from '#lostcity/tools/pack/NameMap.js';
 
-let modelPack = loadPack('data/pack/model.pack');
-let seqPack = loadPack('data/pack/seq.pack');
+let objPack = loadPack('data/pack/obj.pack');
 
 let invPack = loadPack('data/pack/inv.pack');
 
@@ -46,8 +45,13 @@ export default class InvType {
         // parsing
         for (let i = 0; i < InvType.configs.length; i++) {
             let lines = InvType.configs[i];
+            if (!lines) {
+                continue;
+            }
 
             let config = new InvType();
+            config.id = i;
+
             for (let j = 0; j < lines.length; j++) {
                 let line = lines[j];
                 let key = line.substring(0, line.indexOf('='));
@@ -55,10 +59,11 @@ export default class InvType {
 
                 if (key === 'size') {
                     config.size = parseInt(value);
-                } else if (key === 'desc') {
+                } else if (key === 'scope') {
                     config.scope = value;
-                } else if (key === 'size') {
+                } else if (key === 'stackall') {
                     config.stackall = value == 'yes';
+                } else if (key.startsWith('stock')) {
                 }
             }
 

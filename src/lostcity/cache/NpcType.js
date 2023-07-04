@@ -48,6 +48,8 @@ export default class NpcType {
             let lines = NpcType.configs[i];
 
             let config = new NpcType();
+            config.id = i;
+
             for (let j = 0; j < lines.length; j++) {
                 let line = lines[j];
                 let key = line.substring(0, line.indexOf('='));
@@ -112,7 +114,7 @@ export default class NpcType {
     }
 
     static getId(name) {
-        return NpcType.names.indexOf(name);
+        return npcPack.indexOf(name);
     }
 
     static getByName(name) {

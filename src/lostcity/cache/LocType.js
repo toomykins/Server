@@ -52,6 +52,8 @@ export default class LocType {
             let active = -1;
 
             let config = new LocType();
+            config.id = i;
+
             for (let j = 0; j < lines.length; j++) {
                 let line = lines[j];
                 let key = line.substring(0, line.indexOf('='));
@@ -402,7 +404,7 @@ export default class LocType {
     }
 
     static getId(name) {
-        return LocType.names.indexOf(name);
+        return locPack.indexOf(name);
     }
 
     static getByName(name) {

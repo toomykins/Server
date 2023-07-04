@@ -409,9 +409,9 @@ scope=perm
 
 [varp_165]
 
-[varp_166]
+[game_brightness]
 clientcode=1
-transmit=always
+transmit=once
 scope=perm
 
 [varp_167]
@@ -419,31 +419,31 @@ clientcode=2
 
 [music_volume]
 clientcode=3
-transmit=always
+transmit=once
 scope=perm
 
 [sound_volume]
 clientcode=4
-transmit=always
+transmit=once
 scope=perm
 
-[varp_170]
+[mouse_buttons]
 clientcode=5
-transmit=always
+transmit=once
 scope=perm
 
-[varp_171]
+[chat_effects]
 clientcode=6
-transmit=always
+transmit=once
 scope=perm
 
 [auto_retaliate]
-transmit=always
+transmit=once
 scope=perm
 
 [player_run]
 clientcode=7
-transmit=always
+transmit=once
 scope=perm
 
 [varp_174]
@@ -693,9 +693,9 @@ scope=perm
 [duel_settings]
 transmit=always
 
-[gameoptions1]
+[split_privatechat]
 clientcode=8
-transmit=always
+transmit=once
 scope=perm
 
 [varp_288]
