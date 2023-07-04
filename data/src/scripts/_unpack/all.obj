@@ -11129,7 +11129,7 @@ model=model_2559_obj
 certlink=obj_946
 certtemplate=template_for_cert
 
-[obj_948]
+[fur]
 name=Fur
 desc=This would make warm clothing.
 model=model_2631_obj
@@ -11500,7 +11500,7 @@ recol1d=10508
 certlink=obj_993
 certtemplate=template_for_cert
 
-[obj_995]
+[coins]
 name=Coins
 desc=Lovely money!
 model=model_2484_obj

@@ -22,7 +22,7 @@ It won't ever profit off your trademarks. Without this project, this version of 
 - [NodeJS 16+](https://nodejs.org/en)
 - [Java 8+](https://adoptium.net/)
 
-Java is required for 1:1 CRC matching during compression ([JagCompress](https://github.com/2004scape/JagCompress)). Maybe that can be rewritten in pure JS eventually.
+Java is required for JagCompress.jar (a small 1:1 compression utility) and RuneScriptCompiler.jar (the content language compiler).
 
 ## Getting Started
 
@@ -30,18 +30,5 @@ Java is required for 1:1 CRC matching during compression ([JagCompress](https://
 2. Install [environment dependencies](#developer-dependencies)
 3. Run `npm install` to install code dependencies
 4. Run `npm run cache:pack` to create the client cache. This may take a few minutes the first time
-5. Run `npm start` to start the server
-
-## Cache Workflow Status
-
-These jagfiles have been unpacked, decoded, and can be recreated 1:1 (pre- and post- compression!): `config`, `models`, `sounds`, and `wordenc`.
-
-Some more types of data are not packed in jagfiles but still get sent to the client when playing. These produce 1:1 matches pre- and post- compression as well: `maps`, `jingles`*, and `songs`.  
-\* jingles not saved on client
-
-`media`, `textures`, and `title` will not produce identical jagfiles but are visually identical in-game.  
-This is due to a few reasons. Pixel encoding order calculation (picking column-major or row-major), auto-cropping (using their values currently), and adding empty trailing sprites in spritesheets.  
-I attempted the pixel encoding order problem but I can't get it to produce identical decisions. I haven't bothered with the other two without having that one solved.  
-It would also be nice to figure out how to handle color quantization, Jagex has the ability to limit sprites to a max # of colors automatically this way. Not necessary to improve the output here.
-
-See the docs folder for more info on our file formats.
+5. Run `npm run script:symbols && npm run script:compile`.
+6. Run `npm start` to start the server

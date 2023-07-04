@@ -90,6 +90,9 @@ export default class Player {
         this.stats[4] = 1154;
         this.levels[4] = 10;
         this.tempLevels[4] = 10;
+
+        this.placement = true;
+        this.mask = Player.APPEARANCE;
     }
 
     static load(name) {
@@ -223,15 +226,12 @@ export default class Player {
     client = null;
     netOut = [];
     mask = 0;
+    placement = false;
     faceEntity = -1;
     faceCoordX = -1;
     faceCoordZ = -1;
     animId = -1;
     animDelay = -1;
-    message = null;
-    messageColor = 0;
-    messageEffect = 0;
-    messageType = 0;
 
     // script variables
     delay = 0;
@@ -703,36 +703,93 @@ export default class Player {
 
     player_info() {
         let out = new Packet();
-        out.p1(184);
+        out.p1(ServerProt.PLAYER_INFO);
         out.p2(0);
         let start = out.pos;
 
         out.bits();
 
-        out.pBit(1, 1);
-        // --
-        out.pBit(2, 3);
-        out.pBit(2, this.level);
-        out.pBit(7, Position.local(this.x));
-        out.pBit(7, Position.local(this.z));
-        out.pBit(1, 1);
-        out.pBit(1, 1);
-        // --
+        out.pBit(1, (this.placement || this.mask) ? 1 : 0);
+        if (this.placement) {
+            out.pBit(2, 3);
+            out.pBit(2, this.level);
+            out.pBit(7, Position.local(this.x));
+            out.pBit(7, Position.local(this.z));
+            out.pBit(1, 1);
+            out.pBit(1, this.mask ? 1 : 0);
+        }
         out.pBit(8, 0);
-        // --
         out.pBit(11, 2047);
         out.bytes();
 
-        out.p1(Player.APPEARANCE);
-
-        if (!this.appearance) {
-            this.generateAppearance();
+        if (this.mask) {
+            this.writeUpdate(out, true, false);
         }
-        out.p1(this.appearance.length);
-        out.pdata(this.appearance);
 
         out.psize2(out.pos - start);
         this.netOut.push(out);
+    }
+
+    writeUpdate(out, self = false, firstSeen = false) {
+        let mask = this.mask;
+        if (firstSeen) {
+            mask |= Player.APPEARANCE;
+        }
+        if (firstSeen && (this.faceCoordX != -1 || this.faceCoordY != -1)) {
+            mask |= Player.FACE_COORD;
+        }
+        if (firstSeen && (this.faceEntity != -1)) {
+            mask |= Player.FACE_ENTITY;
+        }
+
+        if (mask > 0xFF) {
+            mask |= 0x80;
+        }
+
+        if (self && (mask & Player.CHAT)) {
+            mask &= ~Player.CHAT;
+        }
+
+        out.p1(mask & 0xFF);
+        if (mask & 0x80) {
+            out.p1(mask >> 8);
+        }
+
+        if (mask & Player.APPEARANCE) {
+            if (!this.appearance) {
+                this.generateAppearance();
+            }
+
+            out.p1(this.appearance.length);
+            out.pdata(this.appearance);
+        }
+
+        if (mask & Player.ANIM) {
+            out.p2(this.animId);
+            out.p2(this.animDelay);
+        }
+
+        if (mask & Player.FACE_ENTITY) {
+            out.p2(this.faceEntity);
+        }
+
+        if (mask & Player.FORCED_CHAT) {
+        }
+
+        if (mask & Player.DAMAGE) {
+        }
+
+        if (mask & Player.FACE_COORD) {
+        }
+
+        if (mask & Player.CHAT) {
+        }
+
+        if (mask & Player.SPOTANIM) {
+        }
+
+        if (mask & Player.FORCED_MOVEMENT) {
+        }
     }
 
     clear_walking_queue() {
