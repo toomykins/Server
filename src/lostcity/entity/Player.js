@@ -243,6 +243,8 @@ export default class Player {
     loadedX = -1;
     loadedZ = -1;
     walkQueue = [];
+    walkStep = -1;
+    orientation = -1;
     npcs = [];
     players = [];
 
@@ -254,14 +256,13 @@ export default class Player {
     animId = -1;
     animDelay = -1;
     faceEntity = -1;
-    forcedChat = -1;
+    forcedChat = null;
     damageTaken = -1;
     damageType = -1;
     currentHealth = -1;
     maxHealth = -1;
     faceX = -1;
     faceZ = -1;
-    orientation = -1;
     messageColor = null;
     messageEffect = null;
     messageType = null;
@@ -276,6 +277,35 @@ export default class Player {
     forceMoveStart = -1;
     forceMoveEnd = -1;
     forceFaceDirection = -1;
+
+    resetMasks() {
+        this.placement = false;
+        this.mask = 0;
+        this.animId = -1;
+        this.animDelay = -1;
+        this.faceEntity = -1;
+        this.forcedChat = null;
+        this.damageTaken = -1;
+        this.damageType = -1;
+        this.currentHealth = -1;
+        this.maxHealth = -1;
+        this.faceX = -1;
+        this.faceZ = -1;
+        this.messageColor = null;
+        this.messageEffect = null;
+        this.messageType = null;
+        this.message = null;
+        this.graphicId = -1;
+        this.graphicHeight = -1;
+        this.graphicDelay = -1;
+        this.forceStartX = -1;
+        this.forceStartZ = -1;
+        this.forceDestX = -1;
+        this.forceDestZ = -1;
+        this.forceMoveStart = -1;
+        this.forceMoveEnd = -1;
+        this.forceFaceDirection = -1;
+    }
 
     // script variables
     delay = 0;
@@ -357,8 +387,59 @@ export default class Player {
                         this.dataLocDone(x, z);
                     }
                 }
+            } else if (opcode === ClientProt.MOVE_GAMECLICK || opcode === ClientProt.MOVE_MINIMAPCLICK || opcode === ClientProt.MOVE_OPCLICK) {
+                let ctrlDown = data.g1() === 1;
+                let startX = data.g2();
+                let startZ = data.g2();
+
+                let offset = 0;
+                if (opcode == ClientProt.MOVE_MINIMAPCLICK) {
+                    offset = 14;
+                }
+                let count = (data.available - offset) / 2;
+
+                if (!this.delayed()) {
+                    this.walkQueue = [];
+                    this.walkQueue.push({ x: startX, z: startZ });
+                    for (let i = 0; i < count; ++i) {
+                        let x = data.g1s() + startX;
+                        let z = data.g1s() + startZ;
+                        this.walkQueue.push({ x, z });
+                    }
+                    this.walkQueue.reverse();
+                    this.walkStep = this.walkQueue.length - 1;
+                    this.resetInteraction();
+                    this.closeModal();
+
+                    if (ctrlDown) {
+                        this.setVarp('temp_run', 1);
+                    } else {
+                        this.setVarp('temp_run', 0);
+                    }
+                } else {
+                    this.clearWalkingQueue();
+                }
             } else if (opcode === ClientProt.CLIENT_CHEAT) {
                 this.onCheat(data.gjstr());
+            } else if (opcode == ClientProt.CLOSE_MODAL) {
+                this.closeModal(false);
+            } else if (opcode == ClientProt.IF_DESIGN) {
+                this.gender = data.g1();
+
+                this.body = [];
+                for (let i = 0; i < 7; i++) {
+                    this.body[i] = data.g1();
+
+                    if (this.body[i] === 255) {
+                        this.body[i] = -1;
+                    }
+                }
+
+                for (let i = 0; i < 5; i++) {
+                    this.colors[i] = data.g1();
+                }
+
+                this.generateAppearance();
             } else if (opcode == ClientProt.OPHELD1 || opcode == ClientProt.OPHELD2 || opcode == ClientProt.OPHELD3 || opcode == ClientProt.OPHELD4 || opcode == ClientProt.OPHELD5) {
                 this.lastVerifyObj = data.g2();
                 this.lastVerifySlot = data.g2();
@@ -392,6 +473,17 @@ export default class Player {
                 let nid = data.g2();
 
                 this.setInteraction(ClientProtNames[opcode].toLowerCase(), { nid });
+            } else if (opcode == ClientProt.RESUME_P_COUNTDIALOG) {
+                let count = data.g4();
+
+                this.lastInt = count;
+                this.resumeInterface();
+            } else if (opcode == ClientProt.MESSAGE_PUBLIC) {
+                this.messageColor = data.g1();
+                this.messageEffect = data.g1();
+                this.messageType = 0;
+                this.message = data.gdata();
+                this.mask |= Player.CHAT;
             }
         }
 
@@ -533,6 +625,63 @@ export default class Player {
 
     // ----
 
+    updateMovementStep() {
+        let dst = this.walkQueue[this.walkStep];
+        let dir = Position.face(this.x, this.z, dst.x, dst.z);
+
+        this.x = Position.moveX(this.x, dir);
+        this.z = Position.moveZ(this.z, dir);
+
+        if (dir == -1) {
+            this.walkStep--;
+
+            if (this.walkStep < this.walkQueue.length - 1 && this.walkStep != -1) {
+                dir = this.updateMovementStep();
+            }
+        }
+
+        return dir;
+    }
+
+    updateMovement() {
+        if (this.modalOpen) {
+            this.walkDir = -1;
+            this.runDir = -1;
+            return;
+        }
+
+        if (!this.placement && this.walkStep != -1 && this.walkStep < this.walkQueue.length) {
+            this.walkDir = this.updateMovementStep();
+
+            if ((this.getVarp('player_run') || this.getVarp('temp_run')) && this.walkStep != -1 && this.walkStep < this.walkQueue.length) {
+                this.runDir = this.updateMovementStep();
+
+                // run energy depletion
+                let weightKg = Math.floor(this.runweight / 1000);
+                let clampWeight = Math.min(Math.max(weightKg, 0), 64);
+                let loss = 67 + ((67 * clampWeight) / 64);
+
+                this.runenergy -= loss;
+                this.updateRunEnergy(this.runenergy);
+            } else {
+                this.runDir = -1;
+            }
+
+            if (this.runDir != -1) {
+                this.orientation = this.runDir;
+            } else if (this.walkDir != -1) {
+                this.orientation = this.walkDir;
+            }
+        } else {
+            this.walkDir = -1;
+            this.runDir = -1;
+            this.walkQueue = [];
+            this.setVarp('temp_run', 0);
+        }
+    }
+
+    // ----
+
     setInteraction(trigger, subject) {
         if (this.delayed()) {
             return;
@@ -620,8 +769,13 @@ export default class Player {
         }
     }
 
-    closeModal() {
+    closeModal(flush = true) {
         this.modalOpen = false;
+        this.interfaceScript = null;
+
+        if (flush) {
+            this.ifCloseSub();
+        }
     }
 
     delayed() {
@@ -719,7 +873,7 @@ export default class Player {
 
     processInteractions() {
         if (!this.target) {
-            // TODO: process movement and return
+            this.updateMovement();
             return;
         }
 
@@ -739,8 +893,7 @@ export default class Player {
             }
         }
 
-        // TODO: move the player if there's a queue
-
+        this.updateMovement();
         let moved = this.walkDir != -1;
 
         // fix: convert AP to OP if the player is in range
@@ -807,28 +960,133 @@ export default class Player {
         return dz < 16 && dx < 16 && this.level == other.level;
     }
 
-    updatePlayers() {
-        let out = new Packet();
-        out.bits();
+    getNearbyPlayers() {
+        // TODO: limit searching to build area zones
+        let players = [];
 
-        out.pBit(1, (this.placement || this.mask) ? 1 : 0);
-        if (this.placement) {
-            out.pBit(2, 3);
-            out.pBit(2, this.level);
-            out.pBit(7, Position.local(this.x));
-            out.pBit(7, Position.local(this.z));
-            out.pBit(1, 1);
-            out.pBit(1, this.mask ? 1 : 0);
+        for (let i = 0; i < World.players.length; i++) {
+            if (World.players[i] == null || World.players[i].pid === this.pid) {
+                continue;
+            }
+
+            let player = World.players[i];
+            if (this.isWithinDistance(player)) {
+                players.push(player);
+            }
         }
-        out.pBit(8, 0);
-        out.pBit(11, 2047);
-        out.bytes();
+
+        return players;
+    }
+
+    updatePlayers() {
+        let buffer = new Packet();
+        buffer.bits();
+
+        buffer.pBit(1, (this.placement || this.mask || this.walkDir != -1) ? 1 : 0);
+        if (this.placement) {
+            buffer.pBit(2, 3);
+            buffer.pBit(2, this.level);
+            buffer.pBit(7, Position.local(this.x));
+            buffer.pBit(7, Position.local(this.z));
+            buffer.pBit(1, 1);
+            buffer.pBit(1, this.mask ? 1 : 0);
+        } else if (this.runDir != -1) {
+            buffer.pBit(2, 2);
+            buffer.pBit(3, this.walkDir);
+            buffer.pBit(3, this.runDir);
+            buffer.pBit(1, this.mask > 0 ? 1 : 0);
+        } else if (this.walkDir != -1) {
+            buffer.pBit(2, 1);
+            buffer.pBit(3, this.walkDir);
+            buffer.pBit(1, this.mask > 0 ? 1 : 0);
+        } else if (this.mask > 0) {
+            buffer.pBit(2, 0);
+        }
+
+        let nearby = this.getNearbyPlayers();
+        this.players = this.players.filter(x => x !== null);
+
+        let newPlayers = nearby.filter(x => this.players.findIndex(y => y.pid === x.pid) === -1);
+        let removedPlayers = this.players.filter(x => nearby.findIndex(y => y.pid === x.pid) === -1);
+        this.players.filter(x => removedPlayers.findIndex(y => x.pid === y.pid) !== -1).map(x => {
+            x.type = 1;
+        });
+
+        let updates = [];
+        buffer.pBit(8, this.players.length);
+        this.players = this.players.map(x => {
+            if (x.type === 0) {
+                if (x.player.mask > 0) {
+                    updates.push(x.player);
+                }
+
+                buffer.pBit(1, (x.player.placement || x.player.mask || x.player.walkDir != -1) ? 1 : 0);
+
+                if (x.player.placement) {
+                    buffer.pBit(2, 3);
+                    buffer.pBit(2, x.player.level);
+                    buffer.pBit(7, Position.local(x.player.x));
+                    buffer.pBit(7, Position.local(x.player.z));
+                    buffer.pBit(1, 1);
+                    buffer.pBit(1, x.player.mask ? 1 : 0);
+                } if (x.player.runDir !== -1) {
+                    buffer.pBit(2, 2);
+                    buffer.pBit(3, x.player.runDir);
+                    buffer.pBit(3, x.player.walkDir);
+                    buffer.pBit(1, x.player.mask > 0 ? 1 : 0);
+                } else if (x.player.walkDir !== -1) {
+                    buffer.pBit(2, 1);
+                    buffer.pBit(3, x.player.walkDir);
+                    buffer.pBit(1, x.player.mask > 0 ? 1 : 0);
+                } else if (x.player.mask > 0) {
+                    buffer.pBit(2, 0);
+                }
+
+                return x;
+            } else if (x.type === 1) {
+                // remove
+                buffer.pBit(1, 1);
+                buffer.pBit(2, 3);
+                return null;
+            }
+        });
+
+        newPlayers.map(p => {
+            buffer.pBit(11, p.pid);
+            let xPos = p.x - this.x;
+            if (xPos < 0) {
+                xPos += 32;
+            }
+            let zPos = p.z - this.z;
+            if (zPos < 0) {
+                zPos += 32;
+            }
+            buffer.pBit(5, xPos);
+            buffer.pBit(5, zPos);
+            buffer.pBit(1, 1); // clear walking queue
+            buffer.pBit(1, 1); // update mask follows
+            updates.push(p);
+
+            this.players.push({ type: 0, pid: p.pid, player: p });
+        });
+
+        if (this.mask > 0 || updates.length) {
+            buffer.pBit(11, 2047);
+        }
+
+        buffer.bytes();
 
         if (this.mask) {
-            this.writeUpdate(out, true, false);
+            this.writeUpdate(buffer, true, false);
         }
 
-        this.playerInfo(out);
+        updates.map(p => {
+            let newlyObserved = newPlayers.find(x => x == p) != null;
+
+            p.writeUpdate(buffer, false, newlyObserved);
+        });
+
+        this.playerInfo(buffer);
     }
 
     getAppearanceInSlot(slot) {
@@ -1062,11 +1320,10 @@ export default class Player {
             x.type = 1;
         });
 
-        let updates = [];
-
         let buffer = new Packet();
         buffer.bits();
 
+        let updates = [];
         buffer.pBit(8, this.npcs.length);
         this.npcs = this.npcs.map(x => {
             if (x.type === 0) {
@@ -1388,6 +1645,24 @@ export default class Player {
         if (container == this.getInv('worn')) {
             this.generateAppearance();
         }
+    }
+
+    getVarp(varp) {
+        if (typeof varp === 'string') {
+            varp = VarpType.getId(varp);
+        }
+
+        if (varp === -1) {
+            console.error(`Invalid setVarp call: ${varp}, ${value}`);
+            return;
+        }
+
+        let varpType = VarpType.get(varp);
+        if (varpType.transmit !== 'always') {
+            return;
+        }
+
+        return this.varps[varp];
     }
 
     setVarp(varp, value) {

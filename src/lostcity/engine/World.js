@@ -104,7 +104,7 @@ class World {
             }
 
             let player = this.players[i];
-            player.playTime++;
+            player.playtime++;
 
             player.queue = player.queue.filter(s => s); // remove any null scripts
             if (player.queue.find(s => s.type === 'strong')) {
@@ -159,6 +159,16 @@ class World {
             player.updateNpcs();
 
             player.encodeOut();
+        }
+
+        // cleanup
+        for (let i = 1; i < this.players.length; i++) {
+            if (!this.players[i]) {
+                continue;
+            }
+
+            let player = this.players[i];
+            player.resetMasks();
         }
 
         let end = Date.now();
