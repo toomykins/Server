@@ -1,4 +1,4 @@
-[guam_leaf]
+[guam]
 name=Guam leaf
 cost=3
 members=yes
@@ -15,7 +15,7 @@ recol2d=22418
 weight=7g
 
 [cert_guam_leaf]
-certlink=guam_leaf
+certlink=guam
 certtemplate=template_for_cert
 
 [marrentill]

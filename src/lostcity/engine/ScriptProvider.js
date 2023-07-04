@@ -50,4 +50,4 @@ export default class ScriptProvider {
     }
 }
 
-ScriptProvider.loadDirectory('data/src/scripts/');
+ScriptProvider.loadDirectory('data/pack/server/scripts/');

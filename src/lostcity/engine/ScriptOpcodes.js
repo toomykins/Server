@@ -22,14 +22,24 @@ const ScriptOpcodes = {
     PUSH_ARRAY_INT: 45,
     POP_ARRAY_INT: 46,
     SWITCH: 60,
+    GOSUB: 90,
+    JUMP: 91,
+    JUMP_WITH_PARAMS: 92,
 
     // Server opcodes
     IF_CHATSELECT: 2000,
     P_PAUSEBUTTON: 2001,
     LAST_COMSUBID: 2002,
-    JUMP: 2003,
     CHATNPC: 2004,
     ERROR: 2005,
+    CHATPLAYER: 2006,
+    INV_TOTAL: 2007,
+    INV_ADD: 2008,
+    INV_DEL: 2009,
+    OBJBOX: 2010,
+    P_DELAY: 2011,
+    GIVEXP: 2012,
+    MES: 2013,
 
     // Math opcodes
     ADD: 4000,

@@ -2,6 +2,7 @@ import ScriptOpcodes from '#lostcity/engine/ScriptOpcodes.js';
 import ScriptState from '#lostcity/engine/ScriptState.js';
 import ScriptProvider from '#lostcity/engine/ScriptProvider.js';
 import World from '#lostcity/engine/World.js';
+import path from 'path';
 
 // script executor
 export default class ScriptRunner {
@@ -190,6 +191,40 @@ export default class ScriptRunner {
         },
 
         // Server opcodes
+        [ScriptOpcodes.INV_ADD]: (state) => {
+            const player = state.player;
+
+            let count = state.popInt();
+            let obj = state.popInt();
+            let inv = state.popInt();
+
+            player.invAdd(inv, obj, count);
+        },
+
+        [ScriptOpcodes.INV_DEL]: (state) => {
+            const player = state.player;
+
+            let count = state.popInt();
+            let obj = state.popInt();
+            let inv = state.popInt();
+
+            player.invDel(inv, obj, count);
+        },
+
+        [ScriptOpcodes.GIVEXP]: (state) => {
+            const player = state.player;
+
+            let xp = state.popInt();
+            let stat = state.popInt();
+
+            player.giveXp(stat, xp);
+        },
+
+        [ScriptOpcodes.MES]: (state) => {
+            const player = state.player;
+
+            player.messageGame(state.popString());
+        },
 
         // Math opcodes
 
@@ -261,15 +296,15 @@ export default class ScriptRunner {
                 ScriptRunner.executeInner(state, state.script.opcodes[++state.pc]);
             }
         } catch (err) {
-            console.error('script error:', err.message);
-            console.error(`file: ${state.script.info.sourceFilePath}`);
-            console.error();
+            state.player.messageGame(`script error: ${err.message}`);
+            state.player.messageGame(`file: ${path.basename(state.script.info.sourceFilePath)}`);
+            state.player.messageGame('');
 
-            console.error('stack backtrace:');
-            console.error(`\t1: ${state.script.name} - ${state.script.fileName}:${state.script.lineNumber(state.pc)}`);
+            state.player.messageGame('stack backtrace:');
+            state.player.messageGame(`    1: ${state.script.name} - ${state.script.fileName}:${state.script.lineNumber(state.pc)}`);
             for (let i = state.fp; i > 0; i--) {
                 let frame = state.frames[i];
-                console.error(`\t${state.fp - i + 2}: ${frame.script.name} - ${frame.script.fileName}:${frame.script.lineNumber(frame.pc)}`);
+                state.player.messageGame(`    ${state.fp - i + 2}: ${frame.script.name} - ${frame.script.fileName}:${frame.script.lineNumber(frame.pc)}`);
             }
 
             state.execution = ScriptState.ABORTED;

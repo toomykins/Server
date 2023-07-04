@@ -7,7 +7,6 @@ let objPack = loadPack('data/pack/obj.pack');
 let seqPack = loadPack('data/pack/seq.pack');
 
 export default class ObjType {
-    static names = [];
     static configs = [];
 
     static init() {
@@ -25,7 +24,6 @@ export default class ObjType {
                 if (line.startsWith('[')) {
                     if (current) {
                         let id = objPack.indexOf(current);
-                        ObjType.names[id] = current;
                         ObjType.configs[id] = config;
                     }
 
@@ -39,7 +37,6 @@ export default class ObjType {
 
             if (current) {
                 let id = objPack.indexOf(current);
-                ObjType.names[id] = current;
                 ObjType.configs[id] = config;
             }
         });
@@ -53,6 +50,7 @@ export default class ObjType {
 
             let config = new ObjType();
             config.id = i;
+            config.config = objPack[i];
 
             for (let j = 0; j < lines.length; j++) {
                 let line = lines[j];

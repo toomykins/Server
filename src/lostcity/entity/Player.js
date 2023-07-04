@@ -10,6 +10,9 @@ import IfType from '#lostcity/cache/IfType.js';
 import InvType from '#lostcity/cache/InvType.js';
 import ObjType from '#lostcity/cache/ObjType.js';
 import { Inventory } from '#lostcity/engine/Inventory.js';
+import ScriptProvider from '#lostcity/engine/ScriptProvider.js';
+import ScriptState from '#lostcity/engine/ScriptState.js';
+import ScriptRunner from '#lostcity/engine/ScriptRunner.js';
 
 const EXP_LEVELS = [
     0, 83, 174, 276, 388, 512, 650, 801, 969, 1154, 1358, 1584, 1833, 2107, 2411, 2746,
@@ -262,6 +265,9 @@ export default class Player {
 
     interfaceScript = null; // used to store a paused script (waiting for input)
     countInput = 0; // p_countdialog input
+    lastVerifyObj = null;
+    lastVerifySlot = null;
+    lastVerifyCom = null;
 
     decodeIn() {
         let offset = 0;
@@ -323,6 +329,35 @@ export default class Player {
                 }
             } else if (opcode === ClientProt.CLIENT_CHEAT) {
                 this.onCheat(data.gjstr());
+            } else if (opcode == ClientProt.OPHELD1 || opcode == ClientProt.OPHELD2 || opcode == ClientProt.OPHELD3 || opcode == ClientProt.OPHELD4 || opcode == ClientProt.OPHELD5) {
+                this.lastVerifyObj = data.g2();
+                this.lastVerifySlot = data.g2();
+                this.lastVerifyCom = data.g2();
+
+                let atSlot = this.invGetSlot('inv', this.lastVerifySlot);
+                if (!atSlot || atSlot.id != this.lastVerifyObj) {
+                    return;
+                }
+
+                // TODO: check com visibility
+
+                let trigger = 'opheld';
+                if (opcode == ClientProt.OPHELD1) {
+                    trigger += '1';
+                } else if (opcode == ClientProt.OPHELD2) {
+                    trigger += '2';
+                } else if (opcode == ClientProt.OPHELD3) {
+                    trigger += '3';
+                } else if (opcode == ClientProt.OPHELD4) {
+                    trigger += '4';
+                } else if (opcode == ClientProt.OPHELD5) {
+                    trigger += '5';
+                }
+
+                let objType = ObjType.get(this.lastVerifyObj);
+                let script = ScriptProvider.getByName(`[${trigger},${objType.config}]`);
+                let state = ScriptRunner.init(script, this, null, null, objType);
+                this.executeInterface(state);
             }
         }
 
@@ -449,8 +484,8 @@ export default class Player {
                 }
             } break;
             case 'herbtest': {
-                this.invAdd('inv', 'guam_leaf', 1);
-                this.invAdd('inv', 'marrentill', 1);
+                this.invAdd('inv', 'unidentified_guam', 1);
+                this.invAdd('inv', 'unidentified_marrentill', 1);
             } break;
         }
     }
@@ -653,6 +688,25 @@ export default class Player {
         container.update = true;
     }
 
+    invGetSlot(inv, slot) {
+        if (typeof inv === 'string') {
+            inv = InvType.getId(inv);
+        }
+
+        if (inv === -1) {
+            console.error(`Invalid invGetSlot call: ${inv} ${slot}`);
+            return;
+        }
+
+        let container = this.invs.find(x => x.type === inv);
+        if (!container) {
+            console.error(`Invalid invGetSlot call: ${inv} ${slot}`);
+            return;
+        }
+
+        return container.get(slot);
+    }
+
     invClear(inv) {
         if (typeof inv === 'string') {
             inv = InvType.getId(inv);
@@ -692,7 +746,32 @@ export default class Player {
             return;
         }
 
+        // probably should error if transaction != count
         container.add(obj, count);
+    }
+
+    invDel(inv, obj, count) {
+        if (typeof inv === 'string') {
+            inv = InvType.getId(inv);
+        }
+
+        if (typeof obj === 'string') {
+            obj = ObjType.getId(obj);
+        }
+
+        if (inv === -1 || obj === -1) {
+            console.error(`Invalid invDel call: ${inv}, ${obj}, ${count}`);
+            return;
+        }
+
+        let container = this.invs.find(x => x.type === inv);
+        if (!container) {
+            console.error(`Invalid invDel call: ${inv}, ${obj}, ${count}`);
+            return;
+        }
+
+        // probably should error if transaction != count
+        container.remove(obj, count);
     }
 
     invDelSlot(inv, slot) {
@@ -735,6 +814,29 @@ export default class Player {
             this.varpSmall(varp, value);
         } else {
             this.varpLarge(varp, value);
+        }
+    }
+
+    giveXp(stat, xp) {
+        this.stats[stat] += xp;
+
+        // TODO: levelup trigger
+        this.baseLevel[stat] = getLevelByExp(this.stats[stat]);
+
+        this.updateStat(stat, this.stats[stat], this.level[stat]);
+    }
+
+    // ----
+
+    executeInterface(script) {
+        if (!script) {
+            this.messageGame('Nothing interesting happens.');
+            return;
+        }
+
+        let state = ScriptRunner.execute(script);
+        if (state.execution === ScriptState.SUSPENDED) {
+            this.interfaceScript = script;
         }
     }
 
@@ -1172,7 +1274,7 @@ export default class Player {
         out.p1(ServerProt.UPDATE_STAT);
 
         out.p1(stat);
-        out.p4(xp);
+        out.p4(xp / 10);
         out.p1(tempLevel);
 
         this.netOut.push(out);

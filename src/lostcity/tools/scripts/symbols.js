@@ -21,6 +21,10 @@ fs.writeFileSync('data/symbols/objs.tsv', objSymbols);
 let invSymbols = '';
 let invs = loadPack('data/pack/inv.pack');
 for (let i = 0; i < invs.length; i++) {
+    if (!invs[i]) {
+        continue;
+    }
+
     invSymbols += `${i}\t${invs[i]}\n`;
 }
 fs.writeFileSync('data/symbols/invs.tsv', invSymbols);
@@ -35,3 +39,12 @@ for (let i = 0; i < scripts.length; i++) {
     scriptSymbols += `${i}\t${scripts[i]}\n`;
 }
 fs.writeFileSync('data/symbols/scripts.tsv', scriptSymbols);
+
+let stats = [
+    'attack', 'defence', 'strength', 'hitpoints', 'ranged', 'prayer',
+    'magic', 'cooking', 'woodcutting', 'fletching', 'fishing', 'firemaking',
+    'crafting', 'smithing', 'mining', 'herblore', 'agility', 'thieving',
+    'stat18', 'stat19', 'runecraft'
+];
+
+fs.writeFileSync('data/symbols/stats.tsv', stats.map((name, index) => `${index}\t${name}`).join('\n') + '\n');

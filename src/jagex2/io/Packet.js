@@ -154,6 +154,16 @@ export default class Packet {
         return str;
     }
 
+    // TODO: redundant, only for scripts
+    gjnstr() {
+        let str = '';
+        while (this.data[this.pos] != 0) {
+            str += String.fromCharCode(this.data[this.pos++]);
+        }
+        this.pos++;
+        return str;
+    }
+
     gdata(length = this.available, offset = this.pos, advance = true) {
         let temp = this.data.subarray(offset, offset + length);
         if (advance) {
