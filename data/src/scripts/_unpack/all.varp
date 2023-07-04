@@ -446,7 +446,9 @@ clientcode=7
 transmit=once
 scope=perm
 
-[varp_174]
+[temp_run]
+transmit=never
+scope=temp
 
 [junglepotion_progress]
 scope=perm

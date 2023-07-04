@@ -17,3 +17,8 @@ return($num1);
 
 [proc,looptest]
 ~fib2(30);
+
+[opheld1,obj_3]
+mes("Hello, World!");
+p_delay(1);
+mes("Hello World again!");

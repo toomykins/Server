@@ -1,3 +1,5 @@
+import World from '#lostcity/engine/World.js';
+
 // script state (maintains serverscript control flow)
 export default class ScriptState {
     static RUNNING = 0;
@@ -11,6 +13,7 @@ export default class ScriptState {
     // interpreter
     script = null;
     execution = ScriptState.RUNNING;
+    lastRanOn = -1;
 
     pc = -1; // program counter
     opcount = 0; // number of opcodes executed
@@ -29,9 +32,13 @@ export default class ScriptState {
 
     // server
     player = null;
-    npc = null;
-    obj = null;
-    loc = null;
+    target = null;
+    type = 'normal';
+    clock = 0;
+
+    future() {
+        return this.player.delay > 0 || this.clock > World.currentTick || this.execution >= ScriptState.PAUSEBUTTON || (this.lastRanOn === World.currentTick && this.execution == ScriptState.SUSPENDED);
+    }
 
     constructor(script, args = []) {
         this.script = script;

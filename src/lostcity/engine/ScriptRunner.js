@@ -145,8 +145,6 @@ export default class ScriptRunner {
                 stringLocals[proc.stringArgCount - i - 1] = state.popString();
             }
 
-            // console.log(`gosub ${proc.name}`, intLocals, stringLocals);
-
             state.frames[state.fp++] = {
                 pc: state.pc,
                 script: state.script,
@@ -240,6 +238,12 @@ export default class ScriptRunner {
         },
 
         [ScriptOpcodes.P_DELAY]: (state) => {
+            const player = state.player;
+
+            let delay = state.popInt();
+            player.delay = delay + 1;
+
+            state.execution = ScriptState.SUSPENDED;
         },
 
         [ScriptOpcodes.GIVEXP]: (state) => {
@@ -308,10 +312,13 @@ export default class ScriptRunner {
 
     static execute(state, benchmark = false) {
         if (!state) {
-            return null;
+            return ScriptState.ABORTED;
         }
 
         try {
+            state.lastRanOn = World.currentTick;
+            state.execution = ScriptState.RUNNING;
+
             while (state.execution === ScriptState.RUNNING) {
                 if (state.pc >= state.script.opcodes.length || state.pc < -1) {
                     throw new Error('Invalid program counter: ' + state.pc + ', max expected: ' + state.script.opcodes.length);
@@ -340,7 +347,7 @@ export default class ScriptRunner {
             state.execution = ScriptState.ABORTED;
         }
 
-        return state;
+        return state.execution;
     }
 
     static executeInner(state, opcode) {
@@ -348,7 +355,6 @@ export default class ScriptRunner {
             throw new Error(`Unknown opcode ${opcode}`);
         }
 
-        // console.log(state.script.name, 'line:', state.script.lineNumber(state.pc), ScriptOpcodes[opcode]);
         ScriptRunner.handlers[opcode](state);
     }
 }

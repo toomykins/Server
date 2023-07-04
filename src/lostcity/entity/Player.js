@@ -62,6 +62,26 @@ export default class Player {
     static SPOTANIM = 0x100;
     static FORCED_MOVEMENT = 0x200;
 
+    static ATTACK = 0;
+    static DEFENCE = 1;
+    static STRENGTH = 2;
+    static HITPOINTS = 3;
+    static RANGED = 4;
+    static PRAYER = 5;
+    static MAGIC = 6;
+    static COOKING = 7;
+    static WOODCUTTING = 8;
+    static FLETCHING = 9;
+    static FISHING = 10;
+    static FIREMAKING = 11;
+    static CRAFTING = 12;
+    static SMITHING = 13;
+    static MINING = 14;
+    static HERBLORE = 15;
+    static AGILITY = 16;
+    static THIEVING = 17;
+    static RUNECRAFT = 20;
+
     username = 'invalid_name';
     x = 3222;
     z = 3222;
@@ -620,6 +640,9 @@ export default class Player {
                 this.invSet('worn', 'obj_1127', 1, ObjType.TORSO);
                 this.invSet('worn', 'obj_1305', 1, ObjType.RIGHT_HAND);
             } break;
+            case 'scripttest': {
+                this.enqueueScript(ScriptProvider.getByName('[opheld1,obj_3]'));
+            } break;
         }
     }
 
@@ -828,6 +851,17 @@ export default class Player {
         return this.steps.length > 0;
     }
 
+    enqueueScript(script, type = 'normal') {
+        let state = ScriptRunner.init(script, this);
+        state.type = type;
+
+        if (type === 'weak') {
+            this.weakQueue.push(state);
+        } else {
+            this.queue.push(state);
+        }
+    }
+
     processQueue() {
         let processedQueueCount = 0;
 
@@ -839,13 +873,16 @@ export default class Player {
             }
 
             if (!this.delayed() && !this.containsModalInterface() && !s.future()) {
-                let finished = s.execute();
+                let state = ScriptRunner.execute(s);
+                let finished = state == ScriptState.ABORTED || state == ScriptState.FINISHED;
                 processedQueueCount++;
-                return !finished;
+                return !finished; // only keep if finished
             } else if (!s.future()) {
+                // guess we're done here!
                 return false;
             }
 
+            // keep it to try again later
             return true;
         });
 
@@ -858,7 +895,8 @@ export default class Player {
         // execute and remove scripts from the queue
         this.weakQueue = this.weakQueue.filter(s => {
             if (!this.delayed() && !this.containsModalInterface() && !s.future()) {
-                let finished = s.execute();
+                let state = ScriptRunner.execute(s);
+                let finished = state == ScriptState.ABORTED || state == ScriptState.FINISHED;
                 processedQueueCount++;
                 return !finished;
             } else if (!s.future()) {
@@ -1115,10 +1153,10 @@ export default class Player {
     }
 
     getCombatLevel() {
-        let base = 0.25 * (this.baseLevel[Skills.DEFENCE] + this.baseLevel[Skills.HITPOINTS] + Math.floor(this.baseLevel[Skills.PRAYER] / 2));
-        let melee = 0.325 * (this.baseLevel[Skills.ATTACK] + this.baseLevel[Skills.STRENGTH]);
-        let range = 0.325 * (Math.floor(this.baseLevel[Skills.RANGED] / 2) + this.baseLevel[Skills.RANGED]);
-        let magic = 0.325 * (Math.floor(this.baseLevel[Skills.MAGIC] / 2) + this.baseLevel[Skills.MAGIC]);
+        let base = 0.25 * (this.baseLevel[Player.DEFENCE] + this.baseLevel[Player.HITPOINTS] + Math.floor(this.baseLevel[Player.PRAYER] / 2));
+        let melee = 0.325 * (this.baseLevel[Player.ATTACK] + this.baseLevel[Player.STRENGTH]);
+        let range = 0.325 * (Math.floor(this.baseLevel[Player.RANGED] / 2) + this.baseLevel[Player.RANGED]);
+        let magic = 0.325 * (Math.floor(this.baseLevel[Player.MAGIC] / 2) + this.baseLevel[Player.MAGIC]);
         return Math.floor(base + Math.max(melee, range, magic));
     }
 
@@ -1654,12 +1692,7 @@ export default class Player {
 
         if (varp === -1) {
             console.error(`Invalid setVarp call: ${varp}, ${value}`);
-            return;
-        }
-
-        let varpType = VarpType.get(varp);
-        if (varpType.transmit !== 'always') {
-            return;
+            return -1;
         }
 
         return this.varps[varp];
@@ -1718,8 +1751,10 @@ export default class Player {
         }
 
         let state = ScriptRunner.execute(script);
-        if (state.execution === ScriptState.SUSPENDED) {
+        if (state === ScriptState.SUSPENDED) {
             this.interfaceScript = script;
+        } else {
+            this.interfaceScript = null;
         }
     }
 
