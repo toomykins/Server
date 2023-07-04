@@ -1,16 +1,77 @@
-import Isaac from '#jagex2/io/Isaac.js';
-import Player from '#lostcity/entity/Player.js';
+import Npc from '#lostcity/entity/Npc.js';
 import { ClientProtLengths } from '#lostcity/server/ClientProt.js';
+import { loadDir } from '#lostcity/tools/pack/NameMap.js';
 
 class World {
     members = typeof process.env.MEMBERS_WORLD !== 'undefined' ? true : false;
     currentTick = 0;
+    endTick = -1;
 
-    players = [];
-    npcs = [];
-    zones = [];
+    players = new Array(2048);
+    npcs = new Array(8192);
+    // zones = [];
 
     start() {
+        for (let i = 0; i < this.players.length; i++) {
+            this.players[i] = null;
+        }
+
+        for (let i = 0; i < this.npcs.length; i++) {
+            this.npcs[i] = null;
+        }
+
+        console.time('Loading maps');
+        loadDir('data/src/maps', 'jm2', (map, file) => {
+            let [mapsquareX, mapsquareZ] = file.substring(1, file.length - 4).split('_');
+            mapsquareX = parseInt(mapsquareX);
+            mapsquareZ = parseInt(mapsquareZ);
+
+            let section = null;
+            for (let i = 0; i < map.length; i++) {
+                let line = map[i];
+
+                if (line.startsWith('====')) {
+                    section = line.slice(4, -4).slice(1, 4);
+                    continue;
+                }
+
+                if (section === 'MAP') {
+                    // let parts = line.split(':');
+                    // let [level, x, z] = parts[0].split(' ');
+                    // let data = parts[1].slice(1).split(' ');
+                } else if (section === 'LOC') {
+                    // let parts = line.split(':');
+                    // let [level, x, z] = parts[0].split(' ');
+                    // let [id, shape, rotation] = parts[1].split(' ');
+                } else if (section === 'NPC') {
+                    let parts = line.split(':');
+                    let [level, localX, localZ] = parts[0].split(' ');
+                    let id = parts[1];
+
+                    id = parseInt(id);
+                    level = parseInt(level);
+                    localX = parseInt(localX);
+                    localZ = parseInt(localZ);
+
+                    let npc = new Npc();
+                    npc.nid = this.getNextNid();
+                    npc.type = id;
+                    npc.startX = (mapsquareX << 6) + localX;
+                    npc.startZ = (mapsquareZ << 6) + localZ;
+                    npc.x = npc.startX;
+                    npc.z = npc.startZ;
+                    npc.level = level;
+
+                    this.npcs[npc.nid] = npc;
+                } else if (section === 'OBJ') {
+                    // let parts = line.split(':');
+                    // let [level, x, z] = parts[0].split(' ');
+                    // let [id, count] = parts[1].split(' ');
+                }
+            }
+        });
+        console.timeEnd('Loading maps');
+
         this.cycle();
     }
 
@@ -20,7 +81,7 @@ class World {
         // world processing
 
         // client input
-        for (let i = 0; i < this.players.length; i++) {
+        for (let i = 1; i < this.players.length; i++) {
             if (!this.players[i]) {
                 continue;
             }
@@ -30,14 +91,14 @@ class World {
         }
 
         // npc scripts
-        for (let i = 0; i < this.npcs.length; i++) {
+        for (let i = 1; i < this.npcs.length; i++) {
             if (!this.npcs[i]) {
                 continue;
             }
         }
 
         // player scripts
-        for (let i = 0; i < this.players.length; i++) {
+        for (let i = 1; i < this.players.length; i++) {
             if (!this.players[i]) {
                 continue;
             }
@@ -47,7 +108,7 @@ class World {
         }
 
         // client output
-        for (let i = 0; i < this.players.length; i++) {
+        for (let i = 1; i < this.players.length; i++) {
             if (!this.players[i]) {
                 continue;
             }
@@ -110,9 +171,13 @@ class World {
     }
 
     addPlayer(player) {
-        this.players.pid = this.players.length;
-        this.players.push(player);
+        let pid = this.getNextPid();
+        if (pid === -1) {
+            return false;
+        }
 
+        this.players[pid] = player;
+        player.pid = pid;
         player.onLogin();
     }
 
@@ -129,6 +194,26 @@ class World {
         if (player) {
             this.removePlayer(player);
         }
+    }
+
+    getPlayer(pid) {
+        return this.players[pid];
+    }
+
+    getTotalPlayers() {
+        return this.players.filter(p => p !== null).length;
+    }
+
+    getNpc(nid) {
+        return this.npcs[nid];
+    }
+
+    getNextNid() {
+        return this.npcs.indexOf(null, 1);
+    }
+
+    getNextPid() {
+        return this.players.indexOf(null, 1);
     }
 }
 

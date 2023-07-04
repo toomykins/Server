@@ -13,6 +13,8 @@ import { Inventory } from '#lostcity/engine/Inventory.js';
 import ScriptProvider from '#lostcity/engine/ScriptProvider.js';
 import ScriptState from '#lostcity/engine/ScriptState.js';
 import ScriptRunner from '#lostcity/engine/ScriptRunner.js';
+import World from '#lostcity/engine/World.js';
+import Npc from '#lostcity/entity/Npc.js';
 
 const EXP_LEVELS = [
     0, 83, 174, 276, 388, 512, 650, 801, 969, 1154, 1358, 1584, 1833, 2107, 2411, 2746,
@@ -82,7 +84,7 @@ export default class Player {
     runweight = 0;
     playtime = 0;
     stats = new Int32Array(21);
-    level = new Uint8Array(21);
+    levels = new Uint8Array(21);
     varps = new Int32Array(VarpType.count);
     invs = [
         Inventory.fromType('inv'),
@@ -94,13 +96,13 @@ export default class Player {
         for (let i = 0; i < 21; i++) {
             this.stats[i] = 0;
             this.baseLevel[i] = 1;
-            this.level[i] = 1;
+            this.levels[i] = 1;
         }
 
         // hitpoints starts at level 10
         this.stats[3] = 1154;
         this.baseLevel[3] = 10;
-        this.level[3] = 10;
+        this.levels[3] = 10;
 
         // temp
         this.placement = true;
@@ -151,7 +153,7 @@ export default class Player {
         for (let i = 0; i < 21; i++) {
             player.stats[i] = sav.g4();
             player.baseLevel[i] = getLevelByExp(player.stats[i]);
-            player.level[i] = sav.g1();
+            player.levels[i] = sav.g1();
         }
 
         let varpCount = sav.g2();
@@ -194,8 +196,8 @@ export default class Player {
         for (let i = 0; i < 21; i++) {
             sav.p4(this.stats[i]);
 
-            if (this.level[i] === 0) {
-                sav.p1(this.level[i]);
+            if (this.levels[i] === 0) {
+                sav.p1(this.levels[i]);
             } else {
                 sav.p1(getLevelByExp(this.stats[i]));
             }
@@ -240,6 +242,8 @@ export default class Player {
     loadedX = -1;
     loadedZ = -1;
     walkQueue = [];
+    npcs = [];
+    players = [];
 
     client = null;
     netOut = [];
@@ -270,6 +274,10 @@ export default class Player {
     lastVerifyCom = null;
 
     decodeIn() {
+        if (this.client.inOffset < 1) {
+            return;
+        }
+
         let offset = 0;
 
         let decoded = [];
@@ -410,7 +418,7 @@ export default class Player {
         this.invListenOnCom('worn', 'wornitems:wear');
 
         for (let i = 0; i < this.stats.length; i++) {
-            this.updateStat(i, this.stats[i], this.level[i]);
+            this.updateStat(i, this.stats[i], this.levels[i]);
         }
 
         this.updateRunEnergy(this.runenergy);
@@ -648,7 +656,159 @@ export default class Player {
         }
     }
 
+    isWithinDistance(other) {
+        let dx = Math.abs(this.x - other.x);
+        let dz = Math.abs(this.z - other.z);
+
+        return dz < 16 && dx < 16 && this.level == other.level;
+    }
+
+    getNearbyNpcs() {
+        // TODO: limit searching to build area zones
+        let npcs = [];
+
+        for (let i = 0; i < World.npcs.length; i++) {
+            if (World.npcs[i] == null) {
+                continue;
+            }
+
+            let npc = World.npcs[i];
+            if (this.isWithinDistance(npc)) {
+                npcs.push(npc);
+            }
+        }
+
+        return npcs;
+    }
+
     updateNpcs() {
+        let nearby = this.getNearbyNpcs();
+        this.npcs = this.npcs.filter(x => x !== null);
+
+        let newNpcs = nearby.filter(x => this.npcs.findIndex(y => y.nid === x.nid) === -1);
+        let removedNpcs = this.npcs.filter(x => nearby.findIndex(y => y.nid === x.nid) === -1);
+        this.npcs.filter(x => removedNpcs.findIndex(y => x.nid === y.nid) !== -1).map(x => {
+            x.type = 1;
+        });
+
+        let updates = [];
+
+        let buffer = new Packet();
+        buffer.bits();
+
+        buffer.pBit(8, this.npcs.length);
+        this.npcs = this.npcs.map(x => {
+            if (x.type === 0) {
+                if (x.npc.mask > 0) {
+                    updates.push(x.npc);
+                }
+
+                buffer.pBit(1, x.npc.walkDir != -1 || x.npc.mask > 0);
+
+                if (x.npc.walkDir !== -1) {
+                    buffer.pBit(2, 1);
+                    buffer.pBit(3, x.npc.walkDir);
+                    buffer.pBit(1, x.npc.mask > 0 ? 1 : 0);
+                } else if (x.npc.mask > 0) {
+                    buffer.pBit(2, 0);
+                }
+                return x;
+            } else if (x.type === 1) {
+                // remove
+                buffer.pBit(1, 1);
+                buffer.pBit(2, 3);
+                return null;
+            }
+        });
+
+        newNpcs.map(n => {
+            buffer.pBit(13, n.nid);
+            buffer.pBit(11, n.type);
+            let xPos = n.x - this.x;
+            if (xPos < 0) {
+                xPos += 32;
+            }
+            let zPos = n.z - this.z;
+            if (zPos < 0) {
+                zPos += 32;
+            }
+            buffer.pBit(5, xPos);
+            buffer.pBit(5, zPos);
+
+            if (n.orientation !== -1) {
+                buffer.pBit(1, 1);
+                updates.push(n);
+            } else {
+                buffer.pBit(1, 0);
+            }
+
+            this.npcs.push({ type: 0, nid: n.nid, npc: n });
+        });
+
+        if (updates.length) {
+            buffer.pBit(13, 8191);
+        }
+        buffer.bytes();
+
+        updates.map(n => {
+            let newlyObserved = newNpcs.find(x => x == n) != null;
+
+            let mask = n.mask;
+            if (newlyObserved && (n.orientation !== -1 || n.faceX !== -1)) {
+                mask |= Npc.FACE_COORD;
+            }
+            if (newlyObserved && n.faceEntity !== -1) {
+                mask |= Npc.FACE_ENTITY;
+            }
+            buffer.p1(mask);
+
+            if (mask & Npc.ANIM) {
+                buffer.p2(n.animId);
+                buffer.p1(n.animDelay);
+            }
+
+            if (mask & Npc.FACE_ENTITY) {
+                buffer.p2(n.faceEntity);
+            }
+
+            if (mask & Npc.FORCED_CHAT) {
+                buffer.pjstr(n.forcedChat);
+            }
+
+            if (mask & Npc.DAMAGE) {
+                buffer.p1(n.damageTaken);
+                buffer.p1(n.damageType);
+                buffer.p1(n.currentHealth);
+                buffer.p1(n.maxHealth);
+            }
+
+            if (mask & Npc.TRANSMOGRIFY) {
+                buffer.p2(n.transmogId);
+            }
+
+            if (mask & Npc.SPOTANIM) {
+                buffer.p2(n.graphicId);
+                buffer.p2(n.graphicHeight);
+                buffer.p2(n.graphicDelay);
+            }
+
+            if (mask & Npc.FACE_COORD) {
+                if (newlyObserved && n.faceX != -1) {
+                    buffer.p2(n.faceX);
+                    buffer.p2(n.faceZ);
+                } else if (newlyObserved && n.orientation != -1) {
+                    let faceX = Position.moveX(n.x, n.orientation);
+                    let faceZ = Position.moveZ(n.z, n.orientation);
+                    buffer.p2(faceX * 2 + 1);
+                    buffer.p2(faceZ * 2 + 1);
+                } else {
+                    buffer.p2(n.faceX);
+                    buffer.p2(n.faceZ);
+                }
+            }
+        });
+
+        this.npcInfo(buffer);
     }
 
     updateInvs() {
@@ -818,16 +978,18 @@ export default class Player {
     }
 
     giveXp(stat, xp) {
-        this.stats[stat] += xp;
+        let multi = Number(process.env.XP_MULTIPLIER) || 1;
+        this.stats[stat] += xp * multi;
 
-        // capped to 200m per stat because we store in int32, then divide xp by 10, and round down to 200m (2.147b -> 214.7m -> 200m)
-        if (this.stats[stat] > 200_000_000) {
-            this.stats[stat] = 200_000_000;
+        // cap to 200m, this is represented as "2 billion" because we use 32-bit signed integers and divide by 10 to give us a decimal point
+        if (this.stats[stat] > 2_000_000_000) {
+            this.stats[stat] = 2_000_000_000;
         }
 
         // TODO: levelup trigger
         this.baseLevel[stat] = getLevelByExp(this.stats[stat]);
-        this.updateStat(stat, this.stats[stat], this.level[stat]);
+        // TODO: this.levels[stat]
+        this.updateStat(stat, this.stats[stat], this.levels[stat]);
     }
 
     // ----
@@ -1388,12 +1550,12 @@ export default class Player {
         this.netOut.push(out);
     }
 
-    updateFriendList(username37, world) {
+    updateFriendList(username37, worldNode) {
         let out = new Packet();
         out.p1(ServerProt.UPDATE_FRIENDLIST);
 
         out.p8(username37);
-        out.p1(world);
+        out.p1(worldNode);
 
         this.netOut.push(out);
     }
