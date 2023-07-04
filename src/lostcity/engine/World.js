@@ -154,9 +154,9 @@ class World {
 
             let player = this.players[i];
             player.updateBuildArea();
+            player.updateInvs();
             player.updatePlayers();
             player.updateNpcs();
-            player.updateInvs();
 
             player.encodeOut();
         }

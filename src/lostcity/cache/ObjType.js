@@ -6,7 +6,92 @@ let modelPack = loadPack('data/pack/model.pack');
 let objPack = loadPack('data/pack/obj.pack');
 let seqPack = loadPack('data/pack/seq.pack');
 
+function getWearPos(id) {
+    switch (id) {
+        case 0:
+            return 'hat';
+        case 1:
+            return 'back';
+        case 2:
+            return 'front';
+        case 3:
+            return 'righthand';
+        case 4:
+            return 'torso';
+        case 5:
+            return 'lefthand';
+        case 6:
+            return 'arms';
+        case 7:
+            return 'legs';
+        case 8:
+            return 'head';
+        case 9:
+            return 'hands';
+        case 10:
+            return 'feet';
+        case 11:
+            return 'jaw';
+        case 12:
+            return 'ring';
+        case 13:
+            return 'quiver';
+        default:
+            return id.toString();
+    }
+}
+
+function getWearPosId(name) {
+    switch (name) {
+        case 'hat':
+            return 0;
+        case 'back':
+            return 1;
+        case 'front':
+            return 2;
+        case 'righthand':
+            return 3;
+        case 'torso':
+            return 4;
+        case 'lefthand':
+            return 5;
+        case 'arms':
+            return 6;
+        case 'legs':
+            return 7;
+        case 'head':
+            return 8;
+        case 'hands':
+            return 9;
+        case 'feet':
+            return 10;
+        case 'jaw':
+            return 11;
+        case 'ring':
+            return 12;
+        case 'quiver':
+            return 13;
+        default:
+            return -1;
+    }
+}
+
 export default class ObjType {
+    static HAT = 0;
+    static BACK = 1; // cape
+    static FRONT = 2; // amulet
+    static RIGHT_HAND = 3;
+    static TORSO = 4;
+    static LEFT_HAND = 5;
+    static ARMS = 6;
+    static LEGS = 7;
+    static HEAD = 8;
+    static HANDS = 9;
+    static FEET = 10;
+    static JAW = 11;
+    static RING = 12;
+    static QUIVER = 13;
+
     static configs = [];
 
     static init() {
@@ -135,7 +220,9 @@ export default class ObjType {
                     config.countobj[index] = countobj;
                     config.countco[index] = countco;
                 } else if (key.startsWith('wearpos')) {
-                    config[key] = value;
+                    config[key] = getWearPosId(value);
+                } else if (key === 'readyanim') {
+                    config[key] = seqPack.indexOf(value);
                 } else if (key === 'weight') {
                     let grams = 0;
                     if (value.indexOf('kg') !== -1) {
@@ -240,6 +327,7 @@ export default class ObjType {
     wearpos = -1;
     wearpos2 = -1;
     wearpos3 = -1;
+    readyanim = -1; // idle animation change
     weight = 0; // in grams
     params = {};
 

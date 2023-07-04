@@ -29,7 +29,7 @@ const ScriptOpcodes = {
     // Server opcodes
     IF_CHATSELECT: 2000,
     P_PAUSEBUTTON: 2001,
-    LAST_COMSUBID: 2002,
+    LAST_VERIFYCOM: 2002,
     CHATNPC: 2004,
     ERROR: 2005,
     CHATPLAYER: 2006,

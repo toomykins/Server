@@ -248,13 +248,34 @@ export default class Player {
 
     client = null;
     netOut = [];
-    mask = 0;
+
     placement = false;
-    faceEntity = -1;
-    faceCoordX = -1;
-    faceCoordZ = -1;
+    mask = 0;
     animId = -1;
     animDelay = -1;
+    faceEntity = -1;
+    forcedChat = -1;
+    damageTaken = -1;
+    damageType = -1;
+    currentHealth = -1;
+    maxHealth = -1;
+    faceX = -1;
+    faceZ = -1;
+    orientation = -1;
+    messageColor = null;
+    messageEffect = null;
+    messageType = null;
+    message = null;
+    graphicId = -1;
+    graphicHeight = -1;
+    graphicDelay = -1;
+    forceStartX = -1;
+    forceStartZ = -1;
+    forceDestX = -1;
+    forceDestZ = -1;
+    forceMoveStart = -1;
+    forceMoveEnd = -1;
+    forceFaceDirection = -1;
 
     // script variables
     delay = 0;
@@ -501,6 +522,11 @@ export default class Player {
             case 'herbtest': {
                 this.invAdd('inv', 'unidentified_guam', 1);
                 this.invAdd('inv', 'unidentified_marrentill', 1);
+            } break;
+            case 'fullset': {
+                this.invSet('worn', 'obj_1163', 1, ObjType.HAT);
+                this.invSet('worn', 'obj_1127', 1, ObjType.TORSO);
+                this.invSet('worn', 'obj_1305', 1, ObjType.RIGHT_HAND);
             } break;
         }
     }
@@ -844,12 +870,46 @@ export default class Player {
         stream.p1(this.gender);
         stream.p1(this.headicons);
 
+        let skippedSlots = [];
+
+        let worn = this.getInv('worn');
+        for (let i = 0; i < worn.capacity; i++) {
+            let equip = this.invGetSlot('worn', i);
+            if (!equip) {
+                continue;
+            }
+
+            let config = ObjType.get(equip.id);
+
+            if (config.wearpos2 !== -1) {
+                if (skippedSlots.indexOf(config.wearpos2) === -1) {
+                    skippedSlots.push(config.wearpos2);
+                }
+            }
+
+            if (config.wearpos3 !== -1) {
+                if (skippedSlots.indexOf(config.wearpos3) === -1) {
+                    skippedSlots.push(config.wearpos3);
+                }
+            }
+        }
+
         for (let slot = 0; slot < 12; slot++) {
-            let appearanceValue = this.getAppearanceInSlot(slot);
-            if (appearanceValue === 0) {
+            if (skippedSlots.indexOf(slot) !== -1) {
                 stream.p1(0);
+                continue;
+            }
+
+            let equip = worn.get(slot);
+            if (!equip) {
+                let appearanceValue = this.getAppearanceInSlot(slot);
+                if (appearanceValue === 0) {
+                    stream.p1(0);
+                } else {
+                    stream.p2(appearanceValue);
+                }
             } else {
-                stream.p2(appearanceValue);
+                stream.p2(0x200 + equip.id);
             }
         }
 
@@ -857,7 +917,16 @@ export default class Player {
             stream.p1(this.colors[i]);
         }
 
-        stream.p2(808);
+        let readyanim = 808;
+        if (worn.get(ObjType.RIGHT_HAND)) {
+            let config = ObjType.get(worn.get(ObjType.RIGHT_HAND).id);
+
+            if (config.readyanim !== -1) {
+                readyanim = config.readyanim;
+            }
+        }
+
+        stream.p2(readyanim);
         stream.p2(823);
         stream.p2(819);
         stream.p2(820);
@@ -877,7 +946,7 @@ export default class Player {
         if (firstSeen) {
             mask |= Player.APPEARANCE;
         }
-        if (firstSeen && (this.faceCoordX != -1 || this.faceCoordY != -1)) {
+        if (firstSeen && (this.faceX != -1 || this.faceY != -1)) {
             mask |= Player.FACE_COORD;
         }
         if (firstSeen && (this.faceEntity != -1)) {
@@ -912,21 +981,54 @@ export default class Player {
         }
 
         if (mask & Player.FORCED_CHAT) {
+            out.pjstr(this.forcedChat);
         }
 
         if (mask & Player.DAMAGE) {
+            out.p1(this.damageTaken);
+            out.p1(this.damageType);
+            out.p1(this.currentHealth);
+            out.p1(this.maxHealth);
         }
 
         if (mask & Player.FACE_COORD) {
+            if (firstSeen && this.faceX != -1) {
+                out.p2(this.faceX);
+                out.p2(this.faceZ);
+            } else if (firstSeen && this.orientation != -1) {
+                let faceX = Position.moveX(this.x, this.orientation);
+                let faceZ = Position.moveZ(this.z, this.orientation);
+                out.p2(faceX * 2 + 1);
+                out.p2(faceZ * 2 + 1);
+            } else {
+                out.p2(this.faceX);
+                out.p2(this.faceZ);
+            }
         }
 
         if (mask & Player.CHAT) {
+            out.p1(this.messageColor);
+            out.p1(this.messageEffect);
+            out.p1(this.messageType);
+
+            out.p1(this.message.length);
+            out.pdata(this.message);
         }
 
         if (mask & Player.SPOTANIM) {
+            out.p2(this.graphicId);
+            out.p2(this.graphicHeight);
+            out.p2(this.graphicDelay);
         }
 
         if (mask & Player.FORCED_MOVEMENT) {
+            buffer.p1(this.forceStartX);
+            buffer.p1(this.forceStartY);
+            buffer.p1(this.forceDestX);
+            buffer.p1(this.forceDestY);
+            buffer.p2(this.forceMoveStart);
+            buffer.p2(this.forceMoveEnd);
+            buffer.p1(this.forceFaceDirection);
         }
     }
 
@@ -1097,6 +1199,25 @@ export default class Player {
 
     // ----
 
+    getInv(inv) {
+        if (typeof inv === 'string') {
+            inv = InvType.getId(inv);
+        }
+
+        if (inv === -1) {
+            console.error(`Invalid invGetSlot call: ${inv} ${slot}`);
+            return;
+        }
+
+        let container = this.invs.find(x => x.type === inv);
+        if (!container) {
+            console.error(`Invalid invGetSlot call: ${inv} ${slot}`);
+            return;
+        }
+
+        return container;
+    }
+
     invListenOnCom(inv, com) {
         if (typeof inv === 'string') {
             inv = InvType.getId(inv);
@@ -1157,6 +1278,10 @@ export default class Player {
         }
 
         container.removeAll();
+
+        if (container == this.getInv('worn')) {
+            this.generateAppearance();
+        }
     }
 
     invAdd(inv, obj, count) {
@@ -1181,6 +1306,37 @@ export default class Player {
 
         // probably should error if transaction != count
         container.add(obj, count);
+
+        if (container == this.getInv('worn')) {
+            this.generateAppearance();
+        }
+    }
+
+    invSet(inv, obj, count, slot) {
+        if (typeof inv === 'string') {
+            inv = InvType.getId(inv);
+        }
+
+        if (typeof obj === 'string') {
+            obj = ObjType.getId(obj);
+        }
+
+        if (inv === -1 || obj === -1) {
+            console.error(`Invalid invAdd call: ${inv}, ${obj}, ${count}`);
+            return;
+        }
+
+        let container = this.invs.find(x => x.type === inv);
+        if (!container) {
+            console.error(`Invalid invAdd call: ${inv}, ${obj}, ${count}`);
+            return;
+        }
+
+        container.set(slot, { id: obj, count });
+
+        if (container == this.getInv('worn')) {
+            this.generateAppearance();
+        }
     }
 
     invDel(inv, obj, count) {
@@ -1205,6 +1361,10 @@ export default class Player {
 
         // probably should error if transaction != count
         container.remove(obj, count);
+
+        if (container == this.getInv('worn')) {
+            this.generateAppearance();
+        }
     }
 
     invDelSlot(inv, slot) {
@@ -1224,6 +1384,10 @@ export default class Player {
         }
 
         container.delete(slot);
+
+        if (container == this.getInv('worn')) {
+            this.generateAppearance();
+        }
     }
 
     setVarp(varp, value) {

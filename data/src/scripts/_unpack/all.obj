@@ -14561,6 +14561,7 @@ model=model_2834_obj
 iop2=Wield
 manwear=model_564_obj_wear,0
 womanwear=model_564_obj_wear,6
+readyanim=seq_809
 
 [obj_1306]
 certlink=obj_1305
