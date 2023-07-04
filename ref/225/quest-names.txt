@@ -1,21 +1,20 @@
 Year   Quest Name                                   Quest Prefix
 2001   Cook's Assistant                             cook
-       Demon Slayer                                 dslay
+       Demon Slayer                                 demon
        The Restless Ghost                           priest
        Sheep Shearer                                sheep
-       Shield of Arrav                              phoenixgang
+       Shield of Arrav                              blackarmgang
        Ernest the Chicken                           haunted
        Vampyre Slayer                               vampire
        Imp Catcher                                  imp
-       Stolen Hearts                                ozan1
-       Diamond in the Rough                         ozan2
-       What's Mine Is Yours                         pnr
+       Prince Ali Rescue                            prince
+       Doric's Quest                                doric
        Witch's Potion                               hetty
        The Knight's Sword                           squire
        Goblin Diplomacy                             gobdip
        Pirate's Treasure                            hunt
        Dragon Slayer                                dragon
-2002   Druidic Ritual                               druid_quest_2
+2002   Druidic Ritual                               druid
        Lost City                                    zanaris
        Witch's House                                ball
        Merlin's Crystal                             arthur
@@ -49,6 +48,5 @@ Year   Quest Name                                   Quest Prefix
        The Dig Site                                 itexam
        Gertrude's Cat                               fluffs
        Legends' Quest                               legends
-       Rune Mysteries                               ariane1
-       Rune Memories                                ariane2
+       Rune Mysteries                               runemysteries
 2004   Big Chompy Bird Hunting                      chompybird
