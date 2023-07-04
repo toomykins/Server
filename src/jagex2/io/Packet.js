@@ -5,6 +5,18 @@ import forge from 'node-forge';
 
 const priv = forge.pki.privateKeyFromPem(fs.readFileSync('data/config/private.pem'));
 
+const BITMASK = [
+    0,
+    0x1, 0x3, 0x7, 0xF,
+    0x1F, 0x3F, 0x7F, 0xFF,
+    0x1FF, 0x3FF, 0x7FF, 0xFFF,
+    0x1FFF, 0x3FFF, 0x7FFF, 0xFFFF,
+    0x1FFFF, 0x3FFFF, 0x7FFFF, 0xFFFFF,
+    0x1FFFFF, 0x3FFFFF, 0x7FFFFF, 0xFFFFFF,
+    0x1FFFFFF, 0x3FFFFFF, 0x7FFFFFF, 0xFFFFFFF,
+    0x1FFFFFFF, 0x3FFFFFFF, 0x7FFFFFFF, 0xFFFFFFFF
+];
+
 export default class Packet {
     static crctable = new Int32Array(256);
 
@@ -43,6 +55,7 @@ export default class Packet {
 
         this.data = new Uint8Array(src);
         this.pos = 0;
+        this.bitPos = 0;
     }
 
     get length() {
@@ -199,6 +212,12 @@ export default class Packet {
         this.data[this.pos++] = value;
     }
 
+    p8(value) {
+        this.ensure(8);
+        this.p4(Number(value >> 32n));
+        this.p4(Number(value & 0xFFFFFFFFn));
+    }
+
     pjstr(str) {
         this.ensure(str.length + 1);
         for (let i = 0; i < str.length; i++) {
@@ -240,6 +259,15 @@ export default class Packet {
         }
     }
 
+    psize1(length) {
+        this.data[this.pos - length - 1] = length;
+    }
+
+    psize2(length) {
+        this.data[this.pos - length - 2] = length >> 8;
+        this.data[this.pos - length - 1] = length;
+    }
+
     // ----
 
     rsadec() {
@@ -271,5 +299,63 @@ export default class Packet {
 
         this.pos = 0;
         this.pdata(decrypted, false);
+    }
+
+    bits() {
+        this.bitPos = this.pos << 3;
+    }
+
+    bytes() {
+        this.pos = (this.bitPos + 7) >>> 3;
+    }
+
+    gBit(n) {
+        let bytePos = this.bitPos >> 3;
+        let remaining = 8 - (this.bitPos & 7);
+        let value = 0;
+        this.bitPos += n;
+
+        for (; n > remaining; remaining = 8) {
+            value += (this.data[bytePos++] & BITMASK[remaining]) << (n - remaining);
+            n -= remaining;
+        }
+
+        if (n == remaining) {
+            value += this.data[bytePos] & BITMASK[remaining];
+        } else {
+            value += (this.data[bytePos] >> (remaining - n)) & BITMASK[n];
+        }
+
+        return value;
+    }
+
+    pBit(n, value) {
+        let bytePos = this.bitPos >>> 3;
+        let remaining = 8 - (this.bitPos & 7);
+        this.bitPos += n;
+
+        // grow if necessary
+        if (bytePos + 1 > this.length) {
+            this.resize(bytePos + 1);
+        }
+
+        for (; n > remaining; remaining = 8) {
+            this.data[bytePos] &= ~BITMASK[remaining];
+            this.data[bytePos++] |= (value >>> (n - remaining)) & BITMASK[remaining];
+            n -= remaining;
+
+            // grow if necessary
+            if (bytePos + 1 > this.length) {
+                this.resize(bytePos + 1);
+            }
+        }
+
+        if (n == remaining) {
+            this.data[bytePos] &= ~BITMASK[remaining];
+            this.data[bytePos] |= value & BITMASK[remaining];
+        } else {
+            this.data[bytePos] &= ~BITMASK[n] << (remaining - n);
+            this.data[bytePos] |= (value & BITMASK[n]) << (remaining - n);
+        }
     }
 }

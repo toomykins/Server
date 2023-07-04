@@ -26,11 +26,7 @@ class World {
             }
 
             let player = this.players[i];
-            if (player.client.inOffset) {
-                console.log(player.client.in.slice(0, player.client.inOffset), player.client.inOffset);
-            }
-
-            player.client.reset();
+            player.decodeIn();
         }
 
         // npc scripts
@@ -52,6 +48,13 @@ class World {
             if (!this.players[i]) {
                 continue;
             }
+
+            let player = this.players[i];
+            player.load_area();
+            player.player_info();
+            // player.npc_info();
+
+            player.encodeOut();
         }
 
         let end = Date.now();
