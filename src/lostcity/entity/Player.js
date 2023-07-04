@@ -820,9 +820,13 @@ export default class Player {
     giveXp(stat, xp) {
         this.stats[stat] += xp;
 
+        // capped to 200m per stat because we store in int32, then divide xp by 10, and round down to 200m (2.147b -> 214.7m -> 200m)
+        if (this.stats[stat] > 200_000_000) {
+            this.stats[stat] = 200_000_000;
+        }
+
         // TODO: levelup trigger
         this.baseLevel[stat] = getLevelByExp(this.stats[stat]);
-
         this.updateStat(stat, this.stats[stat], this.level[stat]);
     }
 
