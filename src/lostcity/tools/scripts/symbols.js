@@ -1,6 +1,7 @@
 import fs from 'fs';
 import { loadPack } from '#lostcity/tools/pack/NameMap.js';
 
+fs.mkdirSync('data/symbols', { recursive: true });
 fs.writeFileSync('data/symbols/constants.tsv', '');
 
 let npcSymbols = '';

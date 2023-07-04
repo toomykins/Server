@@ -166,19 +166,6 @@ export default class ScriptRunner {
             pc += result;
         },
 
-        // Server opcodes
-        [ScriptOpcodes.IF_CHATSELECT]: (state) => {
-            World.getPlayer(state.player).showChoices(...state.popString().split('|'));
-        },
-
-        [ScriptOpcodes.P_PAUSEBUTTON]: (state) => {
-            state.execution = ScriptState.PAUSEBUTTON;
-        },
-
-        [ScriptOpcodes.LAST_COMSUBID]: (state) => {
-            state.pushInt(World.getPlayer(state.player).lastComSubId);
-        },
-
         [ScriptOpcodes.JUMP]: (state) => {
             let label = state.popString();
             let proc = ScriptProvider.getByName(`[proc,${label}]`);
@@ -198,17 +185,11 @@ export default class ScriptRunner {
             state.stringLocals = [];
         },
 
-        [ScriptOpcodes.CHATNPC]: (state) => {
-            let text = state.popString();
-            let expression = state.popString();
-            let npc = World.getNpc(state.npc);
-            World.getPlayer(state.player).showNpcMessage(npc.id, expression, ...text.split('|'));
-            state.execution = ScriptState.PAUSEBUTTON;
-        },
-
         [ScriptOpcodes.ERROR]: (state) => {
             throw new Error(state.popString());
         },
+
+        // Server opcodes
 
         // Math opcodes
 
