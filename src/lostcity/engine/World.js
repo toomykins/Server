@@ -105,6 +105,45 @@ class World {
 
             let player = this.players[i];
             player.playTime++;
+
+            player.queue = player.queue.filter(s => s); // remove any null scripts
+            if (player.queue.find(s => s.type === 'strong')) {
+                // the presence of a strong script closes modals before anything runs regardless of the order
+                player.closeModal();
+            }
+
+            if (player.delayed()) {
+                player.delay--;
+            }
+
+            // primary queue
+            if (!player.delayed()) {
+                if (player.queue.find(s => s.type == 'strong')) {
+                    // remove weak scripts from the queue if a strong script is present
+                    player.weakQueue = [];
+                }
+
+                while (player.queue.length) {
+                    let processedQueueCount = player.processQueue();
+
+                    if (processedQueueCount == 0) {
+                        break;
+                    }
+                }
+            }
+
+            // weak queue
+            if (!player.delayed()) {
+                while (player.weakQueue.length) {
+                    let processedQueueCount = player.processWeakQueue();
+
+                    if (processedQueueCount == 0) {
+                        break;
+                    }
+                }
+            }
+
+            player.processInteractions();
         }
 
         // client output

@@ -6,7 +6,6 @@ let seqPack = loadPack('data/pack/seq.pack');
 let npcPack = loadPack('data/pack/npc.pack');
 
 export default class NpcType {
-    static names = [];
     static configs = [];
 
     static init() {
@@ -24,7 +23,6 @@ export default class NpcType {
                 if (line.startsWith('[')) {
                     if (current) {
                         let id = npcPack.indexOf(current);
-                        NpcType.names[id] = current;
                         NpcType.configs[id] = config;
                     }
 
@@ -38,7 +36,6 @@ export default class NpcType {
 
             if (current) {
                 let id = npcPack.indexOf(current);
-                NpcType.names[id] = current;
                 NpcType.configs[id] = config;
             }
         });
@@ -49,6 +46,7 @@ export default class NpcType {
 
             let config = new NpcType();
             config.id = i;
+            config.config = npcPack[i];
 
             for (let j = 0; j < lines.length; j++) {
                 let line = lines[j];

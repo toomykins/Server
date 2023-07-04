@@ -90,6 +90,10 @@ export const ClientProt = {
     MOVE_GAMECLICK: 181, // 255
 };
 
+// generate reverse lookup:
+export const ClientProtNames = {};
+Object.keys(ClientProt).forEach(key => ClientProtNames[ClientProt[key]] = key);
+
 export const ClientProtLengths = [];
 
 ClientProtLengths[ClientProt.MAP_REQUEST_AREAS] = -1;

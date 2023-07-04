@@ -4,7 +4,7 @@ import Packet from '#jagex2/io/Packet.js';
 import { fromBase37, toBase37 } from '#jagex2/jstring/JString.js';
 import VarpType from '#lostcity/cache/VarpType.js';
 import { Position } from '#lostcity/entity/Position.js';
-import { ClientProt, ClientProtLengths } from '#lostcity/server/ClientProt.js';
+import { ClientProt, ClientProtLengths, ClientProtNames } from '#lostcity/server/ClientProt.js';
 import { ServerProt } from '#lostcity/server/ServerProt.js';
 import IfType from '#lostcity/cache/IfType.js';
 import InvType from '#lostcity/cache/InvType.js';
@@ -15,17 +15,20 @@ import ScriptState from '#lostcity/engine/ScriptState.js';
 import ScriptRunner from '#lostcity/engine/ScriptRunner.js';
 import World from '#lostcity/engine/World.js';
 import Npc from '#lostcity/entity/Npc.js';
+import LocType from '#lostcity/cache/LocType.js';
+import NpcType from '#lostcity/cache/NpcType.js';
 
+// * 10
 const EXP_LEVELS = [
-    0, 83, 174, 276, 388, 512, 650, 801, 969, 1154, 1358, 1584, 1833, 2107, 2411, 2746,
-    3115, 3523, 3973, 4470, 5018, 5624, 6291, 7028, 7842, 8740, 9730, 10824, 12031, 13363,
-    14833, 16456, 18247, 20224, 22406, 24815, 27473, 30408, 33648, 37224, 41171, 45529,
-    50339, 55649, 61512, 67983, 75127, 83014, 91721, 101333, 111945, 123660, 136594, 150872,
-    166636, 184040, 203254, 224466, 247886, 273742, 302288, 333804, 368599, 407015, 449428,
-    496254, 547953, 605032, 668051, 737627, 814445, 899257, 992895, 1096278, 1210421, 1336443,
-    1475581, 1629200, 1798808, 1986068, 2192818, 2421087, 2673114, 2951373, 3258594, 3597792,
-    3972294, 4385776, 4842295, 5346332, 5902831, 6517253, 7195629, 7944614, 8771558,
-    9684577, 10692629, 11805606, 13034431
+    0, 830, 1740, 2760, 3880, 5120, 6500, 8010, 9690, 11540, 13580, 15840, 18330, 21070, 24110, 27460,
+    31150, 352300, 397300, 447000, 501800, 562400, 629100, 70280, 78420, 87400, 97300, 108240, 120310, 133630,
+    148330, 164560, 182470, 202240, 224060, 248150, 274730, 304080, 336480, 372240, 411710, 455290,
+    503390, 556490, 615120, 679830, 751270, 830140, 917210, 1013330, 1119450, 1236600, 1365940, 1508720,
+    1666360, 1840400, 2032540, 2244660, 2478860, 2737420, 3022880, 3338040, 3685990, 4070150, 4494280,
+    4962540, 5479530, 6050320, 6680510, 7376270, 8144450, 8992570, 9928950, 10962780, 12104210, 13364430,
+    14755810, 16292000, 17988080, 19860680, 21928180, 24210870, 26731140, 29513730, 32585940, 35977920,
+    39722940, 43857760, 48422950, 53463320, 59028310, 65172530, 71956290, 79446140, 87715580,
+    96845770, 106926290, 118056060, 130344310
 ];
 
 function getLevelByExp(exp) {
@@ -92,23 +95,6 @@ export default class Player {
         Inventory.fromType('bank')
     ];
 
-    constructor() {
-        for (let i = 0; i < 21; i++) {
-            this.stats[i] = 0;
-            this.baseLevel[i] = 1;
-            this.levels[i] = 1;
-        }
-
-        // hitpoints starts at level 10
-        this.stats[3] = 1154;
-        this.baseLevel[3] = 10;
-        this.levels[3] = 10;
-
-        // temp
-        this.placement = true;
-        this.mask = Player.APPEARANCE;
-    }
-
     static load(name) {
         let name37 = toBase37(name);
         let safeName = fromBase37(name37);
@@ -118,6 +104,19 @@ export default class Player {
         player.username37 = name37;
 
         if (!fs.existsSync(`data/players/${safeName}.sav`)) {
+            for (let i = 0; i < 21; i++) {
+                player.stats[i] = 0;
+                player.baseLevel[i] = 1;
+                player.levels[i] = 1;
+            }
+
+            // hitpoints starts at level 10
+            player.stats[3] = 11540;
+            player.baseLevel[3] = 10;
+            player.levels[3] = 10;
+
+            player.placement = true;
+            player.generateAppearance();
             return player;
         }
 
@@ -172,6 +171,8 @@ export default class Player {
             }
         }
 
+        player.placement = true;
+        player.generateAppearance();
         return player;
     }
 
@@ -235,7 +236,7 @@ export default class Player {
     username37 = -1;
     lowMemory = false;
     webClient = false;
-    combatLevel = 0;
+    combatLevel = 3;
     headicons = 0;
     appearance = null; // cached appearance
     baseLevel = new Uint8Array(21);
@@ -347,7 +348,7 @@ export default class Player {
                     return;
                 }
 
-                // TODO: check com visibility
+                // TODO: verify com visibility
 
                 let trigger = 'opheld';
                 if (opcode == ClientProt.OPHELD1) {
@@ -366,6 +367,10 @@ export default class Player {
                 let script = ScriptProvider.getByName(`[${trigger},${objType.config}]`);
                 let state = ScriptRunner.init(script, this, null, null, objType);
                 this.executeInterface(state);
+            } else if (opcode === ClientProt.OPNPC1 || opcode === ClientProt.OPNPC2 || opcode === ClientProt.OPNPC3 || opcode === ClientProt.OPNPC4 || opcode === ClientProt.OPNPC5) {
+                let nid = data.g2();
+
+                this.setInteraction(ClientProtNames[opcode].toLowerCase(), { nid });
             }
         }
 
@@ -386,6 +391,8 @@ export default class Player {
         this.netOut = [];
         this.client.flush();
     }
+
+    // ----
 
     onLogin() {
         this.messageGame('Welcome to RuneScape.');
@@ -498,6 +505,259 @@ export default class Player {
         }
     }
 
+    // ----
+
+    setInteraction(trigger, subject) {
+        if (this.delayed()) {
+            return;
+        }
+
+        let ap = false;
+        let script = null;
+        let target = null;
+        let type = null;
+
+        if (typeof subject.nid !== 'undefined') {
+            target = World.getNpc(subject.nid);
+            type = NpcType.get(target.type);
+        }
+
+        if (target) {
+            // priority: ap,subject -> ap,_category -> op,subject -> op,_category -> ap,_ -> op,_ (less and less specific)
+            let operable = this.inOperableDistance(target);
+
+            // ap,subject
+            if (!operable) {
+                script = ScriptProvider.getByName(`[${trigger.replace('op', 'ap')},${type.config}]`);
+
+                // ap,_category
+                if (!script && target.category) {
+                    script = ScriptProvider.getByName(`[${trigger.replace('op', 'ap')},_${target.category}]`);
+                }
+
+                if (script) {
+                    ap = true;
+                }
+            }
+
+            // op,subject
+            if (!script) {
+                script = ScriptProvider.getByName(`[${trigger},${type.config}]`);
+            }
+
+            // op,_category
+            if (!script && target.category) {
+                script = ScriptProvider.getByName(`[${trigger},_${target.category}]`);
+            }
+
+            // ap,_ & op,_
+            if (!script) {
+                if (!operable) {
+                    script = ScriptProvider.getByName(`[${trigger.replace('op', 'ap')},_]`);
+
+                    if (script) {
+                        ap = true;
+                    }
+                } else {
+                    script = ScriptProvider.getByName(`[${trigger},_]`);
+                }
+            }
+        }
+
+        if (!script) {
+            return;
+        }
+
+        this.target = target;
+
+        if (ap) {
+            this.apScript = ScriptRunner.init(script, this, target);
+        } else {
+            this.opScript = ScriptRunner.init(script, this, target);
+        }
+
+        this.persistent = false;
+        this.closeModal();
+    }
+
+    resetInteraction() {
+        this.apScript = null;
+        this.opScript = null;
+        this.currentApRange = 10;
+        this.apRangeCalled = false;
+        this.target = null;
+        this.persistent = false;
+
+        if (this.faceEntity != -1) {
+            this.mask |= Player.FACE_ENTITY;
+            this.faceEntity = -1;
+        }
+    }
+
+    closeModal() {
+        this.modalOpen = false;
+    }
+
+    delayed() {
+        return this.delay > 0;
+    }
+
+    containsModalInterface() {
+        return this.modalOpen;
+    }
+
+    // check if the player is in melee distance and has line of walk
+    inOperableDistance(target) {
+        let dx = Math.abs(this.x - target.x);
+        let dz = Math.abs(this.z - target.z);
+
+        if (dx > 1 || dz > 1) {
+            // out of range
+            return false;
+        } else if (dx == 1 && dz == 1) {
+            // diagonal
+            return false;
+        } else if (dx == 0 && dz == 0) {
+            // same tile
+            return true;
+        } else if (dx == 1 && dz == 0) {
+            // west/east
+            return true;
+        } else if (dx == 0 && dz == 1) {
+            // north/south
+            return true;
+        }
+
+        return false;
+    }
+
+    // check if the player is in range of the target and has line of sight
+    inApproachDistance(target) {
+        let dx = Math.abs(this.x - target.x);
+        let dz = Math.abs(this.z - target.z);
+
+        // TODO: check line of sight!
+        if (dx <= this.currentApRange && dz <= this.currentApRange) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    hasSteps() {
+        return this.steps.length > 0;
+    }
+
+    processQueue() {
+        let processedQueueCount = 0;
+
+        // execute and remove scripts from the queue
+        this.queue = this.queue.filter(s => {
+            if (s.type == 'strong') {
+                // strong scripts always close the modal
+                this.closeModal();
+            }
+
+            if (!this.delayed() && !this.containsModalInterface() && !s.future()) {
+                let finished = s.execute();
+                processedQueueCount++;
+                return !finished;
+            } else if (!s.future()) {
+                return false;
+            }
+
+            return true;
+        });
+
+        return processedQueueCount;
+    }
+
+    processWeakQueue() {
+        let processedQueueCount = 0;
+
+        // execute and remove scripts from the queue
+        this.weakQueue = this.weakQueue.filter(s => {
+            if (!this.delayed() && !this.containsModalInterface() && !s.future()) {
+                let finished = s.execute();
+                processedQueueCount++;
+                return !finished;
+            } else if (!s.future()) {
+                return false;
+            }
+
+            return true;
+        });
+
+        return processedQueueCount;
+    }
+
+    processInteractions() {
+        if (!this.target) {
+            // TODO: process movement and return
+            return;
+        }
+
+        let interacted = false;
+        this.apRangeCalled = false;
+
+        if (!this.delayed() && !this.containsModalInterface()) {
+            if (this.opScript != null && this.inOperableDistance(this.target)) {
+                this.persistent = ScriptRunner.execute(this.opScript) === ScriptState.SUSPENDED;
+                interacted = true;
+            } else if (this.apScript != null && this.inApproachDistance(this.target)) {
+                this.persistent = ScriptRunner.execute(this.apScript) === ScriptState.SUSPENDED;
+                interacted = true;
+            } else if (this.inOperableDistance(this.target)) {
+                this.sendMessage('Nothing interesting happens.');
+                interacted = true;
+            }
+        }
+
+        // TODO: move the player if there's a queue
+
+        let moved = this.walkDir != -1;
+
+        // fix: convert AP to OP if the player is in range
+        if (this.apScript != null && this.currentApRange == -1) {
+            this.opScript = this.apScript;
+            this.apScript = null;
+        }
+
+        // re-check interactions after movement (ap can turn into op)
+        if (!this.delayed() && !this.containsModalInterface()) {
+            if (!interacted || this.apRangeCalled) {
+                if (this.opScript != null && this.inOperableDistance(this.target) && !moved) {
+                    this.persistent = ScriptRunner.execute(this.opScript) === ScriptState.SUSPENDED;
+                    interacted = true;
+                } else if (this.apScript != null && this.inApproachDistance(this.target)) {
+                    this.apRangeCalled = false;
+                    this.persistent = ScriptRunner.execute(this.apScript) === ScriptState.SUSPENDED;
+                    interacted = true;
+                } else if (this.inOperableDistance(this.target) && !moved) {
+                    this.sendMessage('Nothing interesting happens.');
+                    interacted = true;
+                }
+            }
+        }
+
+        if (!this.delayed() && !this.containsModalInterface()) {
+            if (!interacted && !moved && !this.hasSteps()) {
+                this.sendMessage("I can't reach that!");
+                this.resetInteraction();
+            }
+
+            if (interacted && !this.apRangeCalled && !this.persistent) {
+                this.resetInteraction();
+            }
+        }
+
+        if (interacted && !this.opScript && !this.apScript) {
+            this.closeModal();
+        }
+    }
+
+    // ----
+
     updateBuildArea() {
         let dx = Math.abs(this.x - this.loadedX);
         let dz = Math.abs(this.z - this.loadedZ);
@@ -510,6 +770,15 @@ export default class Player {
         }
 
         // TODO: zone updates in build area
+    }
+
+    // ----
+
+    isWithinDistance(other) {
+        let dx = Math.abs(this.x - other.x);
+        let dz = Math.abs(this.z - other.z);
+
+        return dz < 16 && dx < 16 && this.level == other.level;
     }
 
     updatePlayers() {
@@ -561,6 +830,14 @@ export default class Player {
         }
     }
 
+    getCombatLevel() {
+        let base = 0.25 * (this.baseLevel[Skills.DEFENCE] + this.baseLevel[Skills.HITPOINTS] + Math.floor(this.baseLevel[Skills.PRAYER] / 2));
+        let melee = 0.325 * (this.baseLevel[Skills.ATTACK] + this.baseLevel[Skills.STRENGTH]);
+        let range = 0.325 * (Math.floor(this.baseLevel[Skills.RANGED] / 2) + this.baseLevel[Skills.RANGED]);
+        let magic = 0.325 * (Math.floor(this.baseLevel[Skills.MAGIC] / 2) + this.baseLevel[Skills.MAGIC]);
+        return Math.floor(base + Math.max(melee, range, magic));
+    }
+
     generateAppearance() {
         let stream = new Packet();
 
@@ -591,6 +868,7 @@ export default class Player {
         stream.p8(this.username37);
         stream.p1(this.combatLevel);
 
+        this.mask |= Player.APPEARANCE;
         this.appearance = stream;
     }
 
@@ -620,10 +898,6 @@ export default class Player {
         }
 
         if (mask & Player.APPEARANCE) {
-            if (!this.appearance) {
-                this.generateAppearance();
-            }
-
             out.p1(this.appearance.length);
             out.pdata(this.appearance);
         }
@@ -656,12 +930,7 @@ export default class Player {
         }
     }
 
-    isWithinDistance(other) {
-        let dx = Math.abs(this.x - other.x);
-        let dz = Math.abs(this.z - other.z);
-
-        return dz < 16 && dx < 16 && this.level == other.level;
-    }
+    // ----
 
     getNearbyNpcs() {
         // TODO: limit searching to build area zones
@@ -811,6 +1080,8 @@ export default class Player {
         this.npcInfo(buffer);
     }
 
+    // ----
+
     updateInvs() {
         for (let i = 0; i < this.invs.length; i++) {
             let inv = this.invs[i];
@@ -823,6 +1094,8 @@ export default class Player {
             inv.update = false;
         }
     }
+
+    // ----
 
     invListenOnCom(inv, com) {
         if (typeof inv === 'string') {
@@ -990,6 +1263,11 @@ export default class Player {
         this.baseLevel[stat] = getLevelByExp(this.stats[stat]);
         // TODO: this.levels[stat]
         this.updateStat(stat, this.stats[stat], this.levels[stat]);
+
+        if (this.getCombatLevel() != this.combatLevel) {
+            this.combatLevel = this.getCombatLevel();
+            this.generateAppearance();
+        }
     }
 
     // ----

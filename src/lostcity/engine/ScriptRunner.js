@@ -191,6 +191,31 @@ export default class ScriptRunner {
         },
 
         // Server opcodes
+
+        [ScriptOpcodes.IF_CHATSELECT]: (state) => {
+        },
+
+        [ScriptOpcodes.P_PAUSEBUTTON]: (state) => {
+        },
+
+        [ScriptOpcodes.LAST_VERIFYCOM]: (state) => {
+        },
+
+        [ScriptOpcodes.CHATNPC]: (state) => {
+        },
+
+        [ScriptOpcodes.ERROR]: (state) => {
+            const player = state.player;
+
+            player.messageGame(`Error: ${state.popString()}`);
+        },
+
+        [ScriptOpcodes.CHATPLAYER]: (state) => {
+        },
+
+        [ScriptOpcodes.INV_TOTAL]: (state) => {
+        },
+
         [ScriptOpcodes.INV_ADD]: (state) => {
             const player = state.player;
 
@@ -209,6 +234,12 @@ export default class ScriptRunner {
             let inv = state.popInt();
 
             player.invDel(inv, obj, count);
+        },
+
+        [ScriptOpcodes.OBJBOX]: (state) => {
+        },
+
+        [ScriptOpcodes.P_DELAY]: (state) => {
         },
 
         [ScriptOpcodes.GIVEXP]: (state) => {
@@ -263,16 +294,15 @@ export default class ScriptRunner {
         },
     };
 
-    static init(script, player = null, npc = null, loc = null, obj = null) {
+    static init(script, player = null, subject = null, on = null) {
         if (!script) {
             return null;
         }
 
         let state = new ScriptState(script);
         state.player = player;
-        state.npc = npc;
-        state.loc = loc;
-        state.obj = obj;
+        state.subject = subject;
+        state.on = on;
         return state;
     }
 
