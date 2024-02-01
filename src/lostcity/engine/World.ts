@@ -49,7 +49,9 @@ import ClientSocket from '#lostcity/server/ClientSocket.js';
 import { ServerProt } from '#lostcity/server/ServerProt.js';
 
 import Environment from '#lostcity/util/Environment.js';
-import {CollisionFlagMap, LineValidator, NaivePathFinder, PathFinder, StepValidator} from '@2004scape/rsmod-pathfinder';
+import { CollisionFlagMap, LineValidator, NaivePathFinder, PathFinder, StepValidator } from '@2004scape/rsmod-pathfinder';
+import { PlayerQueueType } from '#lostcity/entity/EntityQueueRequest.js';
+import { PlayerTimerType } from '#lostcity/entity/EntityTimer.js';
 
 class World {
     id = Environment.WORLD_ID as number;
@@ -327,7 +329,7 @@ class World {
                 continue;
             }
 
-            player.updateRebootTimer(this.shutdownTick - this.currentTick);
+            player.write(ServerProt.UPDATE_REBOOT_TIMER, this.shutdownTick - this.currentTick);
         }
     }
 
@@ -504,14 +506,14 @@ class World {
                 }
 
                 player.queue = player.queue.filter(s => s);
-                if (player.queue.find(s => s.type === 'strong')) {
+                if (player.queue.find(s => s.type === PlayerQueueType.STRONG)) {
                     // the presence of a strong script closes modals before anything runs regardless of the order
                     player.closeModal();
                 }
 
                 player.processQueues();
-                player.processTimers('normal');
-                player.processTimers('soft');
+                player.processTimers(PlayerTimerType.NORMAL);
+                player.processTimers(PlayerTimerType.SOFT);
                 player.processEngineQueue();
                 player.processInteraction();
 
@@ -551,7 +553,7 @@ class World {
                 player.engineQueue = [];
                 player.clearInteraction();
                 player.closeModal();
-                player.clearWalkingQueue();
+                player.unsetMapFlag();
                 player.logoutRequested = true;
                 player.setVar('lastcombat', 0); // temp fix for logging out in combat, since logout trigger conditions still run...
             }
@@ -613,7 +615,7 @@ class World {
             this.players[index] = player;
             this.playerIds[pid] = index;
             player.pid = pid;
-            player.uid = ((Number(player.username37 & 0x1FFFFFn) << 11) | player.pid) >>> 0;
+            player.uid = ((Number(player.username37 & 0x1fffffn) << 11) | player.pid) >>> 0;
 
             this.getZone(player.x, player.z, player.level).enter(player);
 
@@ -625,7 +627,7 @@ class World {
             this.newPlayers.splice(i--, 1);
 
             if (this.shutdownTick > -1) {
-                player.updateRebootTimer(this.shutdownTick - this.currentTick);
+                player.write(ServerProt.UPDATE_REBOOT_TIMER, this.shutdownTick - this.currentTick);
             }
 
             if (player.client) {
@@ -778,7 +780,6 @@ class World {
             }
 
             inv.update = false;
-
 
             // Increase or Decrease shop stock
             const invType = InvType.get(inv.type);
@@ -1175,7 +1176,7 @@ class World {
             let opcode = stream.g1();
 
             if (socket.decryptor) {
-                opcode = (opcode - socket.decryptor.nextInt()) & 0xFF;
+                opcode = (opcode - socket.decryptor.nextInt()) & 0xff;
                 stream.data[start] = opcode;
             }
 
@@ -1249,20 +1250,20 @@ class World {
     }
 
     getPlayerByUid(uid: number) {
-        const pid = uid & 0x7FF;
-        const name37 = (uid >> 11) & 0x1FFFFF;
+        const pid = uid & 0x7ff;
+        const name37 = (uid >> 11) & 0x1fffff;
 
         const slot = this.playerIds[pid];
         if (slot === -1) {
             return null;
         }
-        
+
         const player = this.players[slot];
         if (!player) {
             return null;
         }
 
-        if (Number(player.username37 & 0x1FFFFFn) !== name37) {
+        if (Number(player.username37 & 0x1fffffn) !== name37) {
             return null;
         }
 
@@ -1287,8 +1288,8 @@ class World {
     }
 
     getNpcByUid(uid: number) {
-        const slot = uid & 0xFFFF;
-        const type = (uid >> 16) & 0xFFFF;
+        const slot = uid & 0xffff;
+        const type = (uid >> 16) & 0xffff;
 
         const npc = this.npcs[slot];
         if (!npc || npc.type !== type) {
