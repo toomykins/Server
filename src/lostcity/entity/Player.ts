@@ -53,6 +53,7 @@ import ScriptPointer from '#lostcity/engine/script/ScriptPointer.js';
 import Environment from '#lostcity/util/Environment.js';
 import WordEnc from '#lostcity/cache/WordEnc.js';
 import TextEncoder from '#jagex2/jstring/TextEncoder.js';
+import SpotanimType from '#lostcity/cache/SpotanimType.js';
 
 const levelExperience = new Int32Array(99);
 
@@ -1820,25 +1821,28 @@ export default class Player extends PathingEntity {
 
         switch (cmd) {
             case 'reload': {
-                // TODO: only reload config types that have changed to save time
-                CategoryType.load('data/pack/server');
-                ParamType.load('data/pack/server');
-                EnumType.load('data/pack/server');
-                StructType.load('data/pack/server');
-                InvType.load('data/pack/server');
-                VarPlayerType.load('data/pack/server');
-                ObjType.load('data/pack/server', World.members);
-                LocType.load('data/pack/server');
-                NpcType.load('data/pack/server');
-                IfType.load('data/pack/server');
-                SeqType.load('data/pack/server');
-                MesanimType.load('data/pack/server');
-                DbTableType.load('data/pack/server');
-                DbRowType.load('data/pack/server');
-                HuntType.load('data/pack/server');
+                if (Environment.LOCAL_DEV) {
+                    // TODO: only reload config types that have changed to save time
+                    CategoryType.load('data/pack/server');
+                    ParamType.load('data/pack/server');
+                    EnumType.load('data/pack/server');
+                    StructType.load('data/pack/server');
+                    InvType.load('data/pack/server');
+                    VarPlayerType.load('data/pack/server');
+                    ObjType.load('data/pack/server', World.members);
+                    LocType.load('data/pack/server');
+                    NpcType.load('data/pack/server');
+                    IfType.load('data/pack/server');
+                    SeqType.load('data/pack/server');
+                    SpotanimType.load('data/pack/server');
+                    MesanimType.load('data/pack/server');
+                    DbTableType.load('data/pack/server');
+                    DbRowType.load('data/pack/server');
+                    HuntType.load('data/pack/server');
 
-                const count = ScriptProvider.load('data/pack/server');
-                this.messageGame(`Reloaded ${count} scripts.`);
+                    const count = ScriptProvider.load('data/pack/server');
+                    this.messageGame(`Reloaded ${count} scripts.`);
+                }
                 break;
             }
             case 'setvar': {
@@ -2007,6 +2011,12 @@ export default class Player extends PathingEntity {
                             const name = args.shift();
 
                             params.push(IfType.getId(name ?? ''));
+                            break;
+                        }
+                        case ScriptVarType.SPOTANIM: {
+                            const name = args.shift();
+
+                            params.push(SpotanimType.getId(name ?? ''));
                             break;
                         }
                     }
@@ -3881,6 +3891,7 @@ export default class Player extends PathingEntity {
             buf.psize2(buf.pos - start);
         }
 
+        // console.log(buf.data);
         this.netOut.push(buf);
     }
 
@@ -3890,19 +3901,19 @@ export default class Player extends PathingEntity {
     }
 
     hintNpc(nid: number) {
-        this.write(ServerProt.HINT_ARROW, 1, nid, 0, 0);
+        this.write(ServerProt.HINT_ARROW, 1, nid, 0, 0, 0, 0);
     }
 
     hintTile(offset: number, x: number, z: number, height: number) {
-        this.write(ServerProt.HINT_ARROW, offset, x, z, height);
+        this.write(ServerProt.HINT_ARROW, offset, 0, 0, x, z, height);
     }
 
     hintPlayer(pid: number) {
-        this.write(ServerProt.HINT_ARROW, 10, pid, 0, 0);
+        this.write(ServerProt.HINT_ARROW, 10, 0, pid, 0, 0, 0);
     }
 
     stopHint() {
-        this.write(ServerProt.HINT_ARROW, -1, 0, 0, 0);
+        this.write(ServerProt.HINT_ARROW, -1, 0, 0, 0, 0, 0);
     }
 
     lastLoginInfo(lastLoginIp: number, daysSinceLogin: number, daysSinceRecoveryChange: number, unreadMessageCount: number) {
