@@ -11,7 +11,7 @@ import EnumType from '#lostcity/cache/EnumType.js';
 import FontType from '#lostcity/cache/FontType.js';
 import HuntType from '#lostcity/cache/HuntType.js';
 import IdkType from '#lostcity/cache/IdkType.js';
-import IfType from '#lostcity/cache/IfType.js';
+import Component from '#lostcity/cache/Component.js';
 import InvType from '#lostcity/cache/InvType.js';
 import LocType from '#lostcity/cache/LocType.js';
 import MesanimType from '#lostcity/cache/MesanimType.js';
@@ -227,7 +227,7 @@ class World {
         VarSharedType.load('data/pack/server');
 
         FontType.load('data/pack/client');
-        IfType.load('data/pack/server');
+        Component.load('data/pack/server');
 
         WordEnc.load('data/pack/client');
 
@@ -371,7 +371,12 @@ class World {
                 continue;
             }
 
-            player.decodeIn();
+            try {
+                player.decodeIn();
+            } catch (err) {
+                console.error(err);
+                await this.removePlayer(player);
+            }
         }
         clientInput = Date.now() - clientInput;
 
@@ -476,8 +481,8 @@ class World {
                     player.closeModal();
                 }
             } catch (err) {
-                // todo: remove player safely
                 console.error(err);
+                await this.removePlayer(player);
             }
         }
         playerProcessing = Date.now() - playerProcessing;
@@ -677,14 +682,19 @@ class World {
                 continue;
             }
 
-            player.updateMap();
-            player.updatePlayers();
-            player.updateNpcs();
-            player.updateZones();
-            player.updateInvs();
-            player.updateStats();
+            try {
+                player.updateMap();
+                player.updatePlayers();
+                player.updateNpcs();
+                player.updateZones();
+                player.updateInvs();
+                player.updateStats();
 
-            player.encodeOut();
+                player.encodeOut();
+            } catch (err) {
+                console.error(err);
+                await this.removePlayer(player);
+            }
         }
         clientOutput = Date.now() - clientOutput;
 
@@ -1095,19 +1105,18 @@ class World {
         // you will pickup one of them and the other one disappears
         const zone = this.getZone(obj.x, obj.z, obj.level);
         zone.removeObj(obj, receiver, -1);
-
         obj.despawn = this.currentTick;
-        const endTick = this.currentTick;
-        let future = this.futureUpdates.get(endTick);
-        if (!future) {
-            future = [];
+        obj.respawn = this.currentTick + ObjType.get(obj.type).respawnrate;
+        if(zone.staticObjs.includes(obj)) {
+            let future = this.futureUpdates.get(obj.respawn);
+            if (!future) {
+                future = [];
+            }
+            if (!future.includes(zone.index)) {
+                future.push(zone.index);
+            }
+            this.futureUpdates.set(obj.respawn, future);
         }
-
-        if (!future.includes(zone.index)) {
-            future.push(zone.index);
-        }
-
-        this.futureUpdates.set(endTick, future);
     }
 
     // ----
