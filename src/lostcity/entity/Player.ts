@@ -781,7 +781,7 @@ export default class Player extends PathingEntity {
                     continue;
                 }
 
-                const script = ScriptProvider.getByTriggerSpecific(ServerTriggerType.IF_FLASHING_TAB, -1, -1);
+                const script = ScriptProvider.getByTriggerSpecific(ServerTriggerType.TUTORIAL_CLICKSIDE, -1, -1);
                 if (script) {
                     this.executeScript(ScriptRunner.init(script, this), true);
                 }
@@ -1828,6 +1828,7 @@ export default class Player extends PathingEntity {
                     EnumType.load('data/pack/server');
                     StructType.load('data/pack/server');
                     InvType.load('data/pack/server');
+                    IdkType.load('data/pack/server');
                     VarPlayerType.load('data/pack/server');
                     ObjType.load('data/pack/server', World.members);
                     LocType.load('data/pack/server');
@@ -2019,10 +2020,16 @@ export default class Player extends PathingEntity {
                             params.push(SpotanimType.getId(name ?? ''));
                             break;
                         }
+                        case ScriptVarType.IDKIT: {
+                            const name = args.shift();
+
+                            params.push(IdkType.getId(name ?? ''));
+                            break;
+                        }
                     }
                 }
 
-                this.executeScript(ScriptRunner.init(script, this, null, null, params), true);
+                this.executeScript(ScriptRunner.init(script, this, null, null, params), false);
                 break;
             }
         }
@@ -2173,6 +2180,10 @@ export default class Player extends PathingEntity {
 
         this.weakQueue = [];
         // this.activeScript = null;
+
+        if (!this.delayed()) {
+            this.protect = false;
+        }
 
         if (this.modalState === 0) {
             return;
@@ -3805,8 +3816,11 @@ export default class Player extends PathingEntity {
     // ----
 
     runScript(script: ScriptState, protect: boolean = false, force: boolean = false) {
+        // console.log('Executing', script.script.info.scriptName);
+
         if (!force && protect && (this.protect || this.delayed())) {
             // can't get protected access, bye-bye
+            // console.log('No protected access:', script.script.info.scriptName, protect, this.protect);
             return -1;
         }
 
@@ -3835,8 +3849,11 @@ export default class Player extends PathingEntity {
     }
 
     executeScript(script: ScriptState, protect: boolean = false, force: boolean = false) {
+        // console.log('Executing', script.script.info.scriptName);
+
         const state = this.runScript(script, protect, force);
         if (state === -1) {
+            // console.log('Script did not run', script.script.info.scriptName, protect, this.protect);
             return;
         }
 
