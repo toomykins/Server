@@ -8,7 +8,7 @@ import World from '#lostcity/engine/World.js';
 import { LocShapes } from '#lostcity/engine/collision/LocShape.js';
 import PathingEntity from '#lostcity/entity/PathingEntity.js';
 
-class ZoneEvent {
+export class ZoneEvent {
     type = -1;
     receiverId = -1;
     buffer: Packet = new Packet();

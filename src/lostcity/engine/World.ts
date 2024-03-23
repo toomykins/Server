@@ -53,6 +53,10 @@ import Environment from '#lostcity/util/Environment.js';
 import { CollisionFlagMap, LineValidator, NaivePathFinder, PathFinder, StepValidator } from '@2004scape/rsmod-pathfinder';
 import { PlayerQueueType } from '#lostcity/entity/EntityQueueRequest.js';
 import { PlayerTimerType } from '#lostcity/entity/EntityTimer.js';
+import { Position } from '#lostcity/entity/Position.js';
+import ZoneManager from './zone/ZoneManager.js';
+import { getLatestModified, getModified } from '#lostcity/util/PackFile.js';
+import { ZoneEvent } from './zone/Zone.js';
 
 class World {
     id = Environment.WORLD_ID as number;
@@ -60,6 +64,11 @@ class World {
     currentTick = 0;
     tickRate = 600; // speeds up when we're processing server shutdown
     shutdownTick = -1;
+
+    // packed data timestamps
+    allLastModified: number = 0;
+    datLastModified: Map<string, number> = new Map();
+
     // debug data
     lastCycleStats: number[] = [];
     lastCycleBandwidth: number[] = [0, 0];
@@ -197,6 +206,129 @@ class World {
         return this.collisionManager.stepValidator;
     }
 
+    shouldReload(type: string): boolean {
+        const current = getModified(`data/pack/server/${type}.dat`);
+
+        if (!this.datLastModified.has(type)) {
+            this.datLastModified.set(type, current);
+            return true;
+        }
+
+        const changed = this.datLastModified.get(type) !== current;
+        if (changed) {
+            this.datLastModified.set(type, current);
+        }
+        return changed;
+    }
+
+    reload() {
+        if (this.shouldReload('varp')) {
+            VarPlayerType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('obj')) {
+            ObjType.load('data/pack/server', this.members);
+        }
+
+        if (this.shouldReload('loc')) {
+            LocType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('npc')) {
+            NpcType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('idk')) {
+            IdkType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('frame_del')) {
+            SeqFrame.load('data/pack/server');
+        }
+
+        if (this.shouldReload('seq')) {
+            SeqType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('spotanim')) {
+            SpotanimType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('category')) {
+            CategoryType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('param')) {
+            ParamType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('enum')) {
+            EnumType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('struct')) {
+            StructType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('inv')) {
+            InvType.load('data/pack/server');
+
+            for (let i = 0; i < InvType.count; i++) {
+                const inv = InvType.get(i);
+    
+                if (inv && inv.scope === InvType.SCOPE_SHARED) {
+                    this.invs[i] = Inventory.fromType(i);
+                }
+            }
+        }
+
+        if (this.shouldReload('mesanim')) {
+            MesanimType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('dbtable')) {
+            DbTableType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('dbrow')) {
+            DbRowType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('hunt')) {
+            HuntType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('varn')) {
+            VarNpcType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('vars')) {
+            VarSharedType.load('data/pack/server');
+        }
+
+        if (this.shouldReload('interface')) {
+            Component.load('data/pack/server');
+        }
+
+        if (this.shouldReload('script')) {
+            const count = ScriptProvider.load('data/pack/server');
+            this.broadcastMes(`Reloaded ${count} scripts.`);
+        }
+
+        this.allLastModified = getLatestModified('data/pack/server', '.dat');
+    }
+
+    broadcastMes(message: string) {
+        for (let i = 0; i < this.players.length; i++) {
+            const player = this.players[i];
+            if (!player) {
+                continue;
+            }
+
+            player.messageGame(message);
+        }
+    }
+
     async start(skipMaps = false, startCycle = true) {
         console.log('Starting world...');
 
@@ -204,48 +336,14 @@ class World {
             this.npcs[i] = null;
         }
 
-        VarPlayerType.load('data/pack/server');
-        ObjType.load('data/pack/server', this.members);
-        LocType.load('data/pack/server');
-        NpcType.load('data/pack/server');
-        IdkType.load('data/pack/server');
-        SeqFrame.load('data/pack/server');
-        SeqType.load('data/pack/server');
-        SpotanimType.load('data/pack/server');
-
-        CategoryType.load('data/pack/server');
-        ParamType.load('data/pack/server');
-        EnumType.load('data/pack/server');
-        StructType.load('data/pack/server');
-        InvType.load('data/pack/server');
-
-        MesanimType.load('data/pack/server');
-        DbTableType.load('data/pack/server');
-        DbRowType.load('data/pack/server');
-        HuntType.load('data/pack/server');
-        VarNpcType.load('data/pack/server');
-        VarSharedType.load('data/pack/server');
-
         FontType.load('data/pack/client');
-        Component.load('data/pack/server');
-
         WordEnc.load('data/pack/client');
 
-        for (let i = 0; i < InvType.count; i++) {
-            const inv = InvType.get(i);
-
-            if (inv && inv.scope === InvType.SCOPE_SHARED) {
-                this.invs.push(Inventory.fromType(i));
-            }
-        }
+        this.reload();
 
         if (!skipMaps) {
             this.gameMap.init();
         }
-
-        // console.time('Loading script.dat');
-        ScriptProvider.load('data/pack/server');
-        // console.timeEnd('Loading script.dat');
 
         this.vars = new Int32Array(VarSharedType.count);
 
@@ -278,6 +376,14 @@ class World {
     }
 
     async cycle(continueCycle = true) {
+        if (Environment.LOCAL_DEV) {
+            const lastModified = getLatestModified('data/pack/server', '.dat');
+            if (this.allLastModified !== lastModified) {
+                console.log('Reloading data...');
+                this.reload();
+            }
+        }
+
         const start = Date.now();
 
         // world processing
@@ -324,8 +430,8 @@ class World {
                     continue;
                 }
 
-                // 1/12 chance every 5 minutes of setting an afk event state
-                player.afkEventReady = Math.random() < 0.12;
+                // 1/12 chance every 5 minutes of setting an afk event state (even distrubution 60/5)
+                player.afkEventReady = Math.random() < 0.0833;
             }
         }
 
@@ -593,7 +699,6 @@ class World {
         // - loc/obj despawn/respawn
         // - compute shared buffer
         let zoneProcessing = Date.now();
-        // loc/obj despawn/respawn
         const future = this.futureUpdates.get(this.currentTick);
         if (future) {
             // despawn dynamic
@@ -871,11 +976,12 @@ class World {
             return null;
         }
 
-        let container = this.invs.find(x => x.type == inv);
+        let container = this.invs.find(x => x && x.type == inv);
         if (!container) {
             container = Inventory.fromType(inv);
             this.invs.push(container);
         }
+
         return container;
     }
 
@@ -884,7 +990,7 @@ class World {
     }
 
     getZoneIndex(zoneIndex: number) {
-        return this.gameMap.zoneManager.zones[zoneIndex];
+        return this.gameMap.zoneManager.zones.get(zoneIndex)!;
     }
 
     computeSharedEvents() {
@@ -916,7 +1022,7 @@ class World {
                 continue;
             }
 
-            zone.updates = updates.filter(event => {
+            zone.updates = updates.filter((event: ZoneEvent): boolean => {
                 // filter transient updates
                 if ((event.type === ServerProt.LOC_MERGE || event.type === ServerProt.LOC_ANIM || event.type === ServerProt.MAP_ANIM || event.type === ServerProt.MAP_PROJANIM) && event.tick < this.currentTick) {
                     return false;
@@ -932,12 +1038,12 @@ class World {
     }
 
     getUpdates(zoneIndex: number) {
-        return this.gameMap.zoneManager.zones[zoneIndex].updates;
+        return this.gameMap.zoneManager.zones.get(zoneIndex)!.updates;
     }
 
     getReceiverUpdates(zoneIndex: number, receiverId: number) {
         const updates = this.getUpdates(zoneIndex);
-        return updates.filter(event => {
+        return updates.filter((event: ZoneEvent): boolean => {
             if (event.type !== ServerProt.OBJ_ADD && event.type !== ServerProt.OBJ_DEL && event.type !== ServerProt.OBJ_COUNT && event.type !== ServerProt.OBJ_REVEAL) {
                 return false;
             }

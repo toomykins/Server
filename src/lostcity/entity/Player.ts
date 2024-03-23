@@ -52,8 +52,9 @@ import ScriptPointer from '#lostcity/engine/script/ScriptPointer.js';
 
 import Environment from '#lostcity/util/Environment.js';
 import WordEnc from '#lostcity/cache/WordEnc.js';
-import TextEncoder from '#jagex2/jstring/TextEncoder.js';
+import WordPack from '#jagex2/wordenc/WordPack.js';
 import SpotanimType from '#lostcity/cache/SpotanimType.js';
+import { ZoneEvent } from '#lostcity/engine/zone/Zone.js';
 
 const levelExperience = new Int32Array(99);
 
@@ -694,7 +695,7 @@ export default class Player extends PathingEntity {
             } else if (opcode === ClientProt.MESSAGE_PUBLIC) {
                 const colour = data.g1();
                 const effect = data.g1();
-                const message = TextEncoder.decode(data, data.length - 2);
+                const message = WordPack.unpack(data, data.length - 2);
 
                 if (colour < 0 || colour > 11 || effect < 0 || effect > 2 || message.length > 100) {
                     continue;
@@ -705,7 +706,7 @@ export default class Player extends PathingEntity {
                 this.messageType = 0;
 
                 const out = new Packet();
-                TextEncoder.encode(out, WordEnc.filter(message));
+                WordPack.pack(out, WordEnc.filter(message));
                 out.pos = 0;
                 this.message = out.gdata();
                 this.mask |= Player.CHAT;
@@ -1137,6 +1138,7 @@ export default class Player extends PathingEntity {
 
                 const loc = World.getLoc(x, z, this.level, locId);
                 if (!loc) {
+                    this.unsetMapFlag();
                     continue;
                 }
 
@@ -1259,6 +1261,7 @@ export default class Player extends PathingEntity {
 
                 const npc = World.getNpc(nid);
                 if (!npc || npc.delayed()) {
+                    this.unsetMapFlag();
                     continue;
                 }
 
@@ -1382,6 +1385,7 @@ export default class Player extends PathingEntity {
 
                 const obj = World.getObj(x, z, this.level, objId);
                 if (!obj) {
+                    this.unsetMapFlag();
                     continue;
                 }
 
@@ -1622,7 +1626,7 @@ export default class Player extends PathingEntity {
                 }
             } else if (opcode === ClientProt.MESSAGE_PRIVATE) {
                 const other = data.g8();
-                const message = TextEncoder.decode(data, data.length - 8);
+                const message = WordPack.unpack(data, data.length - 8);
 
                 World.socialPrivateMessage(this.username37, other, message);
             }
@@ -1938,94 +1942,87 @@ export default class Player extends PathingEntity {
                 // lookup debugproc with the name and execute it
                 const script = ScriptProvider.getByName(`[debugproc,${cmd}]`);
                 if (!script) {
-                    // this.messageGame(`Unable to locate [debugproc,${cmd}].`);
                     return;
                 }
 
-                const params = [];
+                const params = new Array(script.info.parameterTypes.length).fill(-1);
+
                 for (let i = 0; i < script.info.parameterTypes.length; i++) {
                     const type = script.info.parameterTypes[i];
 
-                    switch (type) {
-                        case ScriptVarType.STRING: {
-                            const value = args.shift();
+                    try {
+                        switch (type) {
+                            case ScriptVarType.STRING: {
+                                const value = args.shift();
+                                params[i] = value ?? '';
+                                break;
+                            }
+                            case ScriptVarType.INT: {
+                                const value = args.shift();
+                                params[i] = parseInt(value ?? '0', 10) | 0;
+                                break;
+                            }
+                            case ScriptVarType.OBJ:
+                            case ScriptVarType.NAMEDOBJ: {
+                                const name = args.shift();
+                                params[i] = ObjType.getId(name ?? '');
+                                break;
+                            }
+                            case ScriptVarType.NPC: {
+                                const name = args.shift();
+                                params[i] = NpcType.getId(name ?? '');
+                                break;
+                            }
+                            case ScriptVarType.LOC: {
+                                const name = args.shift();
+                                params[i] = LocType.getId(name ?? '');
+                                break;
+                            }
+                            case ScriptVarType.SEQ: {
+                                const name = args.shift();
+                                params[i] = SeqType.getId(name ?? '');
+                                break;
+                            }
+                            case ScriptVarType.STAT: {
+                                const name = args.shift();
+                                params[i] = Player.SKILLS.indexOf(name ?? '');
+                                break;
+                            }
+                            case ScriptVarType.INV: {
+                                const name = args.shift();
+                                params[i] = InvType.getId(name ?? '');
+                                break;
+                            }
+                            case ScriptVarType.COORD: {
+                                const args2 = cheat.split('_');
 
-                            params.push(value ?? '');
-                            break;
+                                const level = parseInt(args2[0].slice(6));
+                                const mx = parseInt(args2[1]);
+                                const mz = parseInt(args2[2]);
+                                const lx = parseInt(args2[3]);
+                                const lz = parseInt(args2[4]);
+
+                                params[i] = Position.packCoord(level, (mx << 6) + lx, (mz << 6) + lz);
+                                break;
+                            }
+                            case ScriptVarType.INTERFACE: {
+                                const name = args.shift();
+                                params[i] = Component.getId(name ?? '');
+                                break;
+                            }
+                            case ScriptVarType.SPOTANIM: {
+                                const name = args.shift();
+                                params[i] = SpotanimType.getId(name ?? '');
+                                break;
+                            }
+                            case ScriptVarType.IDKIT: {
+                                const name = args.shift();
+                                params[i] = IdkType.getId(name ?? '');
+                                break;
+                            }
                         }
-                        case ScriptVarType.INT: {
-                            const value = args.shift();
-
-                            // todo: range check? runtime only operates on 32-bits
-                            params.push(parseInt(value ?? '0', 10));
-                            break;
-                        }
-                        case ScriptVarType.NAMEDOBJ: {
-                            const name = args.shift();
-
-                            params.push(ObjType.getId(name ?? ''));
-                            break;
-                        }
-                        case ScriptVarType.NPC: {
-                            const name = args.shift();
-
-                            params.push(NpcType.getId(name ?? ''));
-                            break;
-                        }
-                        case ScriptVarType.LOC: {
-                            const name = args.shift();
-
-                            params.push(LocType.getId(name ?? ''));
-                            break;
-                        }
-                        case ScriptVarType.SEQ: {
-                            const name = args.shift();
-
-                            params.push(SeqType.getId(name ?? ''));
-                            break;
-                        }
-                        case ScriptVarType.STAT: {
-                            const name = args.shift();
-
-                            params.push(Player.SKILLS.indexOf(name ?? ''));
-                            break;
-                        }
-                        case ScriptVarType.INV: {
-                            const name = args.shift();
-
-                            params.push(InvType.getId(name ?? ''));
-                            break;
-                        }
-                        case ScriptVarType.COORD: {
-                            const args2 = cheat.split('_');
-
-                            const level = parseInt(args2[0].slice(6));
-                            const mx = parseInt(args2[1]);
-                            const mz = parseInt(args2[2]);
-                            const lx = parseInt(args2[3]);
-                            const lz = parseInt(args2[4]);
-
-                            params.push(Position.packCoord(level, (mx << 6) + lx, (mz << 6) + lz));
-                            break;
-                        }
-                        case ScriptVarType.INTERFACE: {
-                            const name = args.shift();
-
-                            params.push(Component.getId(name ?? ''));
-                            break;
-                        }
-                        case ScriptVarType.SPOTANIM: {
-                            const name = args.shift();
-
-                            params.push(SpotanimType.getId(name ?? ''));
-                            break;
-                        }
-                        case ScriptVarType.IDKIT: {
-                            const name = args.shift();
-
-                            params.push(IdkType.getId(name ?? ''));
-                            break;
-                        }
+                    } catch (err) {
+                        return;
                     }
                 }
 
@@ -2131,8 +2128,7 @@ export default class Player extends PathingEntity {
             this.refreshZonePresence(this.lastX, this.lastZ, this.level);
 
             // run energy drain
-            if (running) {
-                // TODO: "Moving to an adjacent tile through walking will not drain energy, even if Run is turned on."
+            if (running && (Math.abs(this.lastX - this.x) > 1 || Math.abs(this.lastZ - this.z) > 1)) {
                 const weightKg = Math.floor(this.runweight / 1000);
                 const clampWeight = Math.min(Math.max(weightKg, 0), 64);
                 const loss = 67 + (67 * clampWeight) / 64;
@@ -2497,7 +2493,11 @@ export default class Player extends PathingEntity {
             if (Environment.LOCAL_DEV && !opTrigger && !apTrigger) {
                 let debugname = '_';
                 if (this.target instanceof Npc) {
-                    debugname = NpcType.get(this.target.type)?.debugname ?? this.target.type.toString();
+                    if (this.targetOp === ServerTriggerType.APNPCT || this.targetOp === ServerTriggerType.OPNPCT) {
+                        debugname = Component.get(this.targetSubject)?.comName ?? this.targetSubject.toString();
+                    } else {
+                        debugname = NpcType.get(this.target.type)?.debugname ?? this.target.type.toString();
+                    }
                 } else if (this.target instanceof Loc) {
                     debugname = LocType.get(this.target.type)?.debugname ?? this.target.type.toString();
                 } else if (this.target instanceof Obj) {
@@ -2604,10 +2604,14 @@ export default class Player extends PathingEntity {
         // if the build area should be regenerated, do so now
         const { tele } = this.getMovementDir(); // wasteful but saves time on loading lines
         if (dx >= 36 || dz >= 36 || (tele && (Position.zone(this.x) !== Position.zone(this.loadedX) || Position.zone(this.z) !== Position.zone(this.loadedZ)))) {
-            this.loadArea(Position.zone(this.x), Position.zone(this.z));
+            this.rebuildNormal(Position.zone(this.x), Position.zone(this.z));
 
             this.loadedX = this.x;
             this.loadedZ = this.z;
+            this.loadedZones = {};
+        }
+
+        if (this.tele && this.jump) {
             this.loadedZones = {};
         }
     }
@@ -2639,7 +2643,7 @@ export default class Player extends PathingEntity {
                     this.loadedZones[zone.index] = -1; // note: flash appears when changing floors
                 }
 
-                const updates = World.getUpdates(zone.index).filter(event => {
+                const updates = World.getUpdates(zone.index).filter((event: ZoneEvent): boolean => {
                     return event.tick > this.loadedZones[zone.index];
                 });
 
@@ -3883,6 +3887,7 @@ export default class Player extends PathingEntity {
         }
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     write(opcode: ServerProt, ...args: any[]) {
         if (opcode < 0 || opcode > 255 || !ServerProtEncoders[opcode]) {
             return;
@@ -3949,8 +3954,7 @@ export default class Player extends PathingEntity {
         this.write(ServerProt.MESSAGE_GAME, msg);
     }
 
-    // todo
-    loadArea(zoneX: number, zoneZ: number) {
+    rebuildNormal(zoneX: number, zoneZ: number) {
         const out = new Packet();
         out.p1(ServerProt.REBUILD_NORMAL);
         out.p2(0);

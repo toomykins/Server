@@ -24,7 +24,9 @@ protect=no
 
 [eat_delay]
 
-[varp_41]
+[aggressive_npc]
+type=npc_uid
+protect=no
 
 [varp_42]
 
@@ -68,7 +70,7 @@ type=synth
 [autocast_spell]
 scope=perm
 
-[autocast_delay]
+[varp_61]
 
 [gobdip_progress]
 scope=perm
@@ -84,24 +86,27 @@ scope=perm
 [boat_takeoff]
 transmit=yes
 
-[spell]
+[pk_skull]
+protect=no
+scope=perm
 
 [xplamp]
 transmit=yes
 
-[varp_81]
-
 [questpoints]
 transmit=yes
 
-[varp_102]
+[poison]
+scope=perm
 
 [stunned]
 
 [multiway]
 type=boolean
 
-[varp_105]
+[chest_macro_gas_coord]
+type=coord
+scope=perm
 
 [newcomers_pos]
 transmit=yes
@@ -122,15 +127,25 @@ scope=perm
 transmit=yes
 scope=perm
 
-[varp_117]
+[pk_prey1]
+protect=no
+type=player_uid
 
-[varp_118]
+[pk_prey2]
+protect=no
+type=player_uid
 
-[varp_119]
+[pk_predator1]
+protect=no
+type=player_uid
 
-[varp_120]
+[pk_predator2]
+protect=no
+type=player_uid
 
-[varp_121]
+[pk_predator3]
+protect=no
+type=player_uid
 
 [varp_123]
 
@@ -219,17 +234,19 @@ scope=perm
 
 [varp_191]
 
-[varp_193]
-
-[varp_194]
-
-[varp_195]
-
 [varp_196]
 
 [varp_198]
 
 [varp_199]
+
+[varp_202]
+
+[varp_203]
+
+[varp_204]
+
+[varp_205]
 
 [varp_206]
 
@@ -375,17 +392,22 @@ transmit=yes
 [varp_266]
 
 [magearena_progress]
+protect=no
 scope=perm
 
-[varp_268]
+[saradomin_strike_casts]
+scope=perm
 
-[varp_269]
+[claws_of_guthix_casts]
+scope=perm
 
-[varp_270]
+[flames_of_zamorak_casts]
+scope=perm
 
 [varp_271]
 
-[varp_272]
+[charge_god_spell]
+scope=perm
 
 [varp_274]
 
@@ -394,9 +416,10 @@ scope=perm
 [varp_276]
 
 [antifire]
-protect=no
+scope=perm
 
-[varp_278]
+[antipoison]
+scope=perm
 
 [varp_279]
 
