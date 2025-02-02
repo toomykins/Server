@@ -82,13 +82,17 @@ import Isaac from '#/io/Isaac.js';
 import LoggerEventType from '#/server/logger/LoggerEventType.js';
 import MoveSpeed from '#/engine/entity/MoveSpeed.js';
 import ScriptVarType from '#/cache/config/ScriptVarType.js';
-import WordPack from '#/wordenc/WordPack.js';
 
 const priv = forge.pki.privateKeyFromPem(
     Environment.STANDALONE_BUNDLE ?
         (await (await fetch('data/config/private.pem')).text()) :
         fs.readFileSync('data/config/private.pem', 'ascii')
 );
+
+type LogoutRequest = {
+    save: Uint8Array;
+    lastAttempt: number;
+}
 
 class World {
     private loginThread = createWorker(Environment.STANDALONE_BUNDLE ? 'LoginThread.js' : './server/login/LoginThread.ts');
@@ -103,7 +107,7 @@ class World {
 
     private static readonly INV_STOCKRATE: number = 100; // 1m
     private static readonly AFK_EVENTRATE: number = 500; // 5m
-    private static readonly PLAYER_SAVERATE: number = 1500; // 15m
+    private static readonly PLAYER_SAVERATE: number = 500; // 5m
     private static readonly PLAYER_COORDLOGRATE: number = 50; // 30s
 
     private static readonly TIMEOUT_SOCKET_IDLE: number = Environment.NODE_DEBUG_SOCKET ? 60000 : 50; // 30s with no data- disconnect client
@@ -117,7 +121,7 @@ class World {
 
     // entities
     readonly loginRequests: Map<string, ClientSocket> = new Map(); // waiting for response from login server
-    readonly logoutRequests: Map<string, Uint8Array> = new Map(); // waiting for confirmation from login server
+    readonly logoutRequests: Map<string, LogoutRequest> = new Map(); // waiting for confirmation from login server
     readonly newPlayers: Set<Player>; // players joining at the end of this tick
     readonly players: PlayerList;
     readonly npcs: NpcList;
@@ -876,6 +880,17 @@ class World {
             }
         }
 
+        for (const [username, request] of this.logoutRequests) {
+            if (request.lastAttempt < Date.now() - 15000) {
+                request.lastAttempt = Date.now();
+                this.loginThread.postMessage({
+                    type: 'player_logout',
+                    username,
+                    save: request.save
+                });
+            }
+        }
+
         this.cycleStats[WorldStat.LOGOUT] = Date.now() - start;
     }
 
@@ -1178,12 +1193,6 @@ class World {
             }
         }
 
-        const online = this.getTotalPlayers();
-        if (online === 0 && this.logoutRequests.size === 0) {
-            printInfo('Server shutdown complete');
-            process.exit(0);
-        }
-
         for (const player of this.players) {
             player.loggedOut = true;
 
@@ -1191,6 +1200,12 @@ class World {
                 player.logout(); // see ya
                 player.client.close();
             }
+        }
+
+        const online = this.getTotalPlayers();
+        if (online === 0 && this.logoutRequests.size === 0) {
+            printInfo('Server shutdown complete');
+            process.exit(0);
         }
 
         if (duration > 2) {
@@ -1499,14 +1514,7 @@ class World {
         player.cleanup();
 
         player.addSessionLog(LoggerEventType.MODERATOR, 'Logged out');
-
-        const save = player.save();
-        this.logoutRequests.set(player.username, save);
-        this.loginThread.postMessage({
-            type: 'player_logout',
-            username: player.username,
-            save
-        });
+        this.flushPlayer(player);
 
         this.friendThread.postMessage({
             type: 'player_logout',
@@ -1788,15 +1796,7 @@ class World {
                 return;
             }
 
-            if (!success) {
-                setTimeout(() => {
-                    this.loginThread.postMessage({
-                        type: 'player_logout',
-                        username,
-                        save: this.logoutRequests.get(username)
-                    });
-                }, 1000);
-            } else {
+            if (success) {
                 this.logoutRequests.delete(username);
             }
         }
@@ -2031,6 +2031,15 @@ class World {
             coord: player.coord,
             offender,
             reason
+        });
+    }
+
+    flushPlayer(player: Player) {
+        const save = player.save();
+
+        this.logoutRequests.set(player.username, {
+            save,
+            lastAttempt: -1
         });
     }
 }
