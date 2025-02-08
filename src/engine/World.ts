@@ -392,9 +392,9 @@ class World {
             }
 
             if (Environment.WEB_PORT === 80) {
-                printInfo(kleur.green().bold('World ready') + kleur.white().bold(': http://localhost'));
+                printInfo(kleur.green().bold('World ready') + kleur.white().bold(': Visit http://localhost/rs2.cgi'));
             } else {
-                printInfo(kleur.green().bold('World ready') + kleur.white().bold(': http://localhost:' + Environment.WEB_PORT));
+                printInfo(kleur.green().bold('World ready') + kleur.white().bold(': Visit http://localhost:' + Environment.WEB_PORT + '/rs2.cgi'));
             }
         }
 
@@ -696,7 +696,7 @@ class World {
                     // x-logged / timed out for 60s: logout
                     player.loggedOut = true;
                 } else if (this.currentTick - player.lastResponse >= World.TIMEOUT_SOCKET_IDLE) {
-                    // x-logged / timed out for 10s: attempt logout
+                    // x-logged / timed out for 30s: attempt logout
                     player.tryLogout = true;
                 }
 
@@ -860,7 +860,7 @@ class World {
 
             player.closeModal();
 
-            if (player.queue.head() === null) {
+            if (player.canAccess() && player.queue.head() === null && player.engineQueue.head() === null) {
                 const script = ScriptProvider.getByTriggerSpecific(ServerTriggerType.LOGOUT, -1, -1);
                 if (!script) {
                     printError('LOGOUT TRIGGER IS BROKEN!');
@@ -926,16 +926,7 @@ class World {
                         other.client.send(Uint8Array.from([ 15 ]));
                     }
 
-                    // force resyncing
-                    // reload entity info (overkill? does the client have some logic around this?)
-                    other.buildArea.players.clear();
-                    other.buildArea.npcs.clear();
-                    // rebuild scene (rebuildnormal won't run if you're in the same zone!)
-                    other.originX = -1;
-                    other.originZ = -1;
-                    other.moveSpeed = MoveSpeed.INSTANT;
-                    other.tele = true;
-                    other.jump = true;
+                    other.onReconnect();
 
                     continue player;
                 }
@@ -1015,6 +1006,7 @@ class World {
                 type: 'player_login',
                 username: player.username,
                 chatModePrivate: player.privateChat,
+                staffLvl: player.staffModLevel
             });
         }
         this.newPlayers.clear();
