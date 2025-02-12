@@ -96,6 +96,8 @@ import Isaac from '#/io/Isaac.js';
 import LoggerEventType from '#/server/logger/LoggerEventType.js';
 import MoveSpeed from '#/engine/entity/MoveSpeed.js';
 import ScriptVarType from '#/cache/config/ScriptVarType.js';
+import InputTrackingEvent from './entity/tracking/InputEvent.js';
+import { SessionLog } from '#/engine/entity/tracking/SessionLog.js';
 
 const priv = forge.pki.privateKeyFromPem(Environment.STANDALONE_BUNDLE ? await (await fetch('data/config/private.pem')).text() : fs.readFileSync('data/config/private.pem', 'ascii'));
 
@@ -156,6 +158,8 @@ class World {
 
     vars: Int32Array = new Int32Array(); // var shared
     varsString: string[] = [];
+
+    sessionLogs: SessionLog[] = [];
 
     constructor() {
         this.gameMap = new GameMap(Environment.NODE_MEMBERS);
@@ -510,6 +514,16 @@ class World {
                 for (const player of this.players) {
                     player.addSessionLog(LoggerEventType.MODERATOR, 'Server check in');
                 }
+            }
+
+            // todo: move this into PLAYER_COORDLOGRATE if memory usage is sane?
+            if (this.sessionLogs.length > 0) {
+                this.loggerThread.postMessage({
+                    type: 'session_log',
+                    logs: this.sessionLogs
+                });
+
+                this.sessionLogs = [];
             }
 
             this.cycleStats[WorldStat.CYCLE] = Date.now() - start; // set the main logic stat here, before telemetry.
@@ -1749,7 +1763,7 @@ class World {
                 return;
             }
 
-            const { reply, username } = msg;
+            const { reply } = msg;
             const client = this.loginRequests.get(socket)!;
             this.loginRequests.delete(socket);
 
@@ -1790,10 +1804,15 @@ class World {
                 return;
             }
 
-            const { lowMemory, reconnecting, staffmodlevel, muted_until } = msg;
+            const { account_id, username, lowMemory, reconnecting, staffmodlevel, muted_until } = msg;
             const save = reply === 0 ? msg.save : new Uint8Array();
 
-            if (!save && reconnecting) {
+            if (reconnecting && !this.getPlayerByUsername(username)) {
+                // rejected
+                client.send(Uint8Array.from([11]));
+                client.close();
+                return;
+            } else if (!save && !reconnecting) {
                 // rejected
                 client.send(Uint8Array.from([11]));
                 client.close();
@@ -1803,6 +1822,7 @@ class World {
             try {
                 const player = PlayerLoading.load(username, new Packet(save), client);
 
+                player.account_id = account_id;
                 player.reconnecting = reconnecting;
                 player.staffModLevel = staffmodlevel;
                 player.lowMemory = lowMemory;
@@ -2036,10 +2056,9 @@ class World {
         client.opcode = -1;
     }
 
-    addSessionLog(event_type: LoggerEventType, username: string, session_uuid: string, coord: number, message: string, ...args: string[]) {
-        this.loggerThread.postMessage({
-            type: 'session_log',
-            username,
+    addSessionLog(event_type: LoggerEventType, account_id: number, session_uuid: string, coord: number, message: string, ...args: string[]) {
+        this.sessionLogs.push({
+            account_id,
             session_uuid,
             timestamp: Date.now(),
             coord,
@@ -2073,6 +2092,16 @@ class World {
             coord: player.coord,
             offender,
             reason
+        });
+    }
+
+    submitInputTracking(username: string, session_uuid: string, events: InputTrackingEvent[]) {
+        this.loggerThread.postMessage({
+            type: 'input_track',
+            username,
+            session_uuid,
+            timestamp: Date.now(),
+            events
         });
     }
 

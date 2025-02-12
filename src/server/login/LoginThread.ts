@@ -54,7 +54,7 @@ async function handleRequests(parentPort: ParentPort, msg: any) {
             const { socket, remoteAddress, username, password, uid, lowMemory, reconnecting } = msg;
 
             if (Environment.LOGIN_SERVER) {
-                const response = await client.playerLogin(username, password, uid, socket, remoteAddress);
+                const response = await client.playerLogin(username, password, uid, socket, remoteAddress, reconnecting);
 
                 parentPort.postMessage({
                     type: 'player_login',
@@ -164,6 +164,9 @@ async function handleRequests(parentPort: ParentPort, msg: any) {
                 const { staff, username, until } = msg;
                 await client.playerMute(staff, username, until);
             }
+            break;
+        }
+        case 'world_heartbeat': {
             break;
         }
         default:

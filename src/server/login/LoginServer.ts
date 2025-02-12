@@ -31,7 +31,7 @@ export default class LoginServer {
                             login_time: null
                         }).where('logged_in', '=', nodeId).execute();
                     } else if (type === 'player_login') {
-                        const { replyTo, username, password, uid, socket, remoteAddress } = msg;
+                        const { replyTo, username, password, uid, socket, remoteAddress, reconnecting } = msg;
 
                         const ipBan = await db.selectFrom('ipban').selectAll()
                             .where('ip', '=', remoteAddress).executeTakeFirst();
@@ -109,11 +109,7 @@ export default class LoginServer {
                             return;
                         }
 
-                        if (account.logged_in === nodeId) {
-                            // could be a reconnect so we have special logic here
-                            // the world will respond already logged in otherwise
-
-                            // todo: session not guaranteed at this point
+                        if (reconnecting && account.logged_in === nodeId) {
                             await db.insertInto('session').values({
                                 uuid: socket,
                                 account_id: account.id,
@@ -169,6 +165,7 @@ export default class LoginServer {
                             s.send(JSON.stringify({
                                 replyTo,
                                 response: 4,
+                                account_id: account.id,
                                 staffmodlevel: account.staffmodlevel,
                                 muted_until: account.muted_until
                             }));
@@ -179,6 +176,7 @@ export default class LoginServer {
                         s.send(JSON.stringify({
                             replyTo,
                             response: 0,
+                            account_id: account.id,
                             staffmodlevel: account.staffmodlevel,
                             save: save.toString('base64'),
                             muted_until: account.muted_until
@@ -244,10 +242,6 @@ export default class LoginServer {
                         await db.updateTable('account').set({
                             muted_until: toDbDate(until)
                         }).where('username', '=', username).executeTakeFirst();
-                    } else if (type === 'world_heartbeat') {
-                        const { names } = msg;
-
-                        // todo: ensure no accounts are locked
                     }
                 } catch (err) {
                     console.error(err);

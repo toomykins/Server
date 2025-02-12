@@ -45,7 +45,6 @@ import ServerTriggerType from '#/engine/script/ServerTriggerType.js';
 import ScriptPointer from '#/engine/script/ScriptPointer.js';
 
 import LinkList from '#/util/LinkList.js';
-import DoublyLinkList from '#/util/DoublyLinkList.js';
 
 import { CollisionFlag } from '@2004scape/rsmod-pathfinder';
 
@@ -70,15 +69,15 @@ import MessageGame from '#/network/server/model/MessageGame.js';
 import ServerProtPriority from '#/network/server/prot/ServerProtPriority.js';
 import ChatFilterSettings from '#/network/server/model/ChatFilterSettings.js';
 import InfoProt from '#/network/rs225/server/prot/InfoProt.js';
-import WalkTriggerSetting from '#/util/WalkTriggerSetting.js';
 
 import Environment from '#/util/Environment.js';
 import { ChatModePrivate, ChatModePublic, ChatModeTradeDuel } from '#/util/ChatModes.js';
 import LoggerEventType from '#/server/logger/LoggerEventType.js';
 import InputTracking from '#/engine/entity/tracking/InputTracking.js';
+import { findNaivePath } from '#/engine/GameMap.js';
 import Visibility from './Visibility.js';
 import UpdateRebootTimer from '#/network/server/model/UpdateRebootTimer.js';
-
+import { CollisionType } from '@2004scape/rsmod-pathfinder';
 const levelExperience = new Int32Array(99);
 
 let acc = 0;
@@ -222,6 +221,7 @@ export default class Player extends PathingEntity {
     tradeDuel: ChatModeTradeDuel = ChatModeTradeDuel.ON;
 
     // input tracking
+    account_id: number = -1;
     input: InputTracking;
 
     // runtime variables
@@ -262,7 +262,7 @@ export default class Player extends PathingEntity {
     tryLogout: boolean = false; // logout requested (you *really* need to be sure the logout if_button logic matches the logout trigger...)
 
     // not stored as a byte buffer so we can write and encrypt opcodes later
-    buffer: DoublyLinkList<OutgoingMessage> = new DoublyLinkList();
+    buffer: LinkList<OutgoingMessage> = new LinkList();
     lastResponse = -1;
 
     messageColor: number | null = null;
@@ -485,11 +485,11 @@ export default class Player extends PathingEntity {
     }
 
     addSessionLog(event_type: LoggerEventType, message: string, ...args: string[]): void {
-        World.addSessionLog(event_type, this.username, 'headless', CoordGrid.packCoord(this.level, this.x, this.z), message, ...args);
+        World.addSessionLog(event_type, this.account_id, 'headless', CoordGrid.packCoord(this.level, this.x, this.z), message, ...args);
     }
 
     addWealthLog(change: number, message: string, ...args: string[]) {
-        World.addSessionLog(LoggerEventType.WEALTH, this.username, 'headless', CoordGrid.packCoord(this.level, this.x, this.z), change + ';' + message, ...args);
+        World.addSessionLog(LoggerEventType.WEALTH, this.account_id, 'headless', CoordGrid.packCoord(this.level, this.x, this.z), change + ';' + message, ...args);
     }
 
     processEngineQueue() {
@@ -592,6 +592,12 @@ export default class Player extends PathingEntity {
 
         this.modalState = 0;
 
+        // close any input dialogue suspended scripts.
+        if (this.activeScript?.execution === ScriptState.COUNTDIALOG || this.activeScript?.execution === ScriptState.PAUSEBUTTON) {
+            this.activeScript = null;
+        }
+
+        // close any main viewport interface
         if (this.modalMain !== -1) {
             const closeTrigger = ScriptProvider.getByTrigger(ServerTriggerType.IF_CLOSE, this.modalMain);
             if (closeTrigger) {
@@ -601,6 +607,7 @@ export default class Player extends PathingEntity {
             this.modalMain = -1;
         }
 
+        // close any chatbox interface
         if (this.modalChat !== -1) {
             const closeTrigger = ScriptProvider.getByTrigger(ServerTriggerType.IF_CLOSE, this.modalChat);
             if (closeTrigger) {
@@ -610,6 +617,7 @@ export default class Player extends PathingEntity {
             this.modalChat = -1;
         }
 
+        // close any sidebar tabs interface
         if (this.modalSide !== -1) {
             const closeTrigger = ScriptProvider.getByTrigger(ServerTriggerType.IF_CLOSE, this.modalSide);
             if (closeTrigger) {
@@ -844,6 +852,30 @@ export default class Player extends PathingEntity {
 
         return ScriptProvider.getByTrigger(this.targetOp, typeId, categoryId) ?? null;
     }
+
+    pathToPathingTarget(): void {
+        if (!(this.target instanceof PathingEntity)) {
+            return;
+        }
+
+        if (this.isLastOrNoWaypoint() && (this.targetOp === ServerTriggerType.APPLAYER3 || this.targetOp === ServerTriggerType.OPPLAYER3)) {
+            this.queueWaypoint(this.target.followX, this.target.followZ);
+            return;
+        }
+
+        if (!this.canAccess()) {
+            return;
+        }
+
+        if (Environment.NODE_CLIENT_ROUTEFINDER && CoordGrid.intersects(this.x, this.z, this.width, this.length, this.target.x, this.target.z, this.target.width, this.target.length)) {
+            this.queueWaypoints(findNaivePath(this.level, this.x, this.z, this.target.x, this.target.z, this.width, this.length, this.target.width, this.target.length, 0, CollisionType.NORMAL));
+            return;
+        }
+        if (this.isLastOrNoWaypoint()) {
+            this.pathToTarget();
+        }
+    }
+
     // https://youtu.be/_NmFftkMm0I?si=xSgb8GCydgUXUayR&t=79
     // to allow p_walk (sets player destination tile) during walktriggers
     // we process walktriggers from regular movement in client input,
@@ -1029,7 +1061,7 @@ export default class Player extends PathingEntity {
             this.pathToPathingTarget();
 
             // Process walktrigger if there is waypoints
-            if (this.hasWaypoints()) {
+            if (this.hasWaypoints() && this.canAccess()) {
                 this.processWalktrigger();
             }
 
@@ -1885,7 +1917,7 @@ export default class Player extends PathingEntity {
         if (message.priority === ServerProtPriority.IMMEDIATE) {
             this.writeInner(message);
         } else {
-            this.buffer.push(message);
+            this.buffer.addTail(message);
         }
     }
 

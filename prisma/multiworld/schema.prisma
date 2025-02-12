@@ -123,15 +123,18 @@ model hiscore_large {
 model friendlist {
     account_id        Int
     friend_account_id Int
+    
+    created           DateTime  @default(now())
 
     @@id([account_id, friend_account_id])
 }
 
 model ignorelist {
     account_id        Int
-    ignore_account_id Int
+    value             String
+    created           DateTime  @default(now())
 
-    @@id([account_id, ignore_account_id])
+    @@id([account_id, value])
 }
 
 model public_chat {
@@ -170,4 +173,25 @@ model report {
 
     offender String
     reason   Int
+}
+
+model input_report {
+    id              Int @id @default(autoincrement())
+    account_id      Int
+    timestamp       DateTime
+    session_uuid    String
+}
+
+model input_report_event {
+    input_report_id Int
+    seq             Int
+    
+    input_type      Int    @default(-1)
+    delta           Int
+    coord           Int
+    mouse_x         Int?
+    mouse_y         Int?
+    key_code        Int?
+    
+    @@id([input_report_id, seq])
 }
