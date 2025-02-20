@@ -94,10 +94,11 @@ import { PlayerLoading } from '#/engine/entity/PlayerLoading.js';
 import ScriptPointer from '#/engine/script/ScriptPointer.js';
 import Isaac from '#/io/Isaac.js';
 import LoggerEventType from '#/server/logger/LoggerEventType.js';
-import MoveSpeed from '#/engine/entity/MoveSpeed.js';
 import ScriptVarType from '#/cache/config/ScriptVarType.js';
 import InputTrackingEvent from './entity/tracking/InputEvent.js';
 import { SessionLog } from '#/engine/entity/tracking/SessionLog.js';
+import { type GenericLoginThreadResponse, isPlayerLoginResponse, isPlayerLogoutResponse } from '#/server/login/index.d.js';
+import { FriendThreadMessage } from '#/server/friend/FriendThread.js';
 
 const priv = forge.pki.privateKeyFromPem(Environment.STANDALONE_BUNDLE ? await (await fetch('data/config/private.pem')).text() : fs.readFileSync('data/config/private.pem', 'ascii'));
 
@@ -911,11 +912,11 @@ class World {
                         printError('LOGOUT TRIGGER IS BROKEN!');
                         continue;
                     }
-    
+
                     const state = ScriptRunner.init(script, player);
                     state.pointerAdd(ScriptPointer.ProtectedActivePlayer);
                     ScriptRunner.execute(state);
-    
+
                     this.removePlayer(player);
                 }
             }
@@ -1003,7 +1004,7 @@ class World {
             try {
                 // if it throws then there was no available pid. otherwise guaranteed to not be -1.
                 pid = this.getNextPid(isClientConnected(player) ? player.client : null);
-            } catch (e) {
+            } catch (_) {  // eslint-disable-line @typescript-eslint/no-unused-vars
                 // world full
                 if (isClientConnected(player)) {
                     player.addSessionLog(LoggerEventType.ENGINE, 'Tried to log in - world full');
@@ -1300,6 +1301,7 @@ class World {
 
         npc.x = npc.startX;
         npc.z = npc.startZ;
+        npc.isActive = true;
 
         const zone = this.gameMap.getZone(npc.x, npc.z, npc.level);
         zone.enter(npc);
@@ -1324,6 +1326,7 @@ class World {
         const zone = this.gameMap.getZone(npc.x, npc.z, npc.level);
         const adjustedDuration = this.scaleByPlayerCount(duration);
         zone.leave(npc);
+        npc.isActive = false;
 
         switch (npc.blockWalk) {
             case BlockWalk.NPC:
@@ -1522,6 +1525,7 @@ class World {
 
     addPlayer(player: Player): void {
         this.newPlayers.add(player);
+        player.isActive = true;
     }
 
     sendPrivateChatModeToFriendsServer(player: Player): void {
@@ -1556,6 +1560,8 @@ class World {
         this.players.remove(player.pid);
         changeNpcCollision(player.width, player.x, player.z, player.level, false);
         player.cleanup();
+
+        player.isActive = false;
 
         player.addSessionLog(LoggerEventType.MODERATOR, 'Logged out');
         this.flushPlayer(player);
@@ -1770,10 +1776,8 @@ class World {
         }
     }
 
-    onLoginMessage(msg: any) {
-        const { type } = msg;
-
-        if (type === 'player_login') {
+    onLoginMessage(msg: GenericLoginThreadResponse) {
+        if (isPlayerLoginResponse(msg)) {
             const { socket } = msg;
             if (!this.loginRequests.has(socket)) {
                 return;
@@ -1841,7 +1845,7 @@ class World {
 
                 player.account_id = account_id;
                 player.reconnecting = reconnecting;
-                player.staffModLevel = staffmodlevel;
+                player.staffModLevel = staffmodlevel ?? 0;
                 player.lowMemory = lowMemory;
                 player.muted_until = muted_until ? new Date(muted_until) : null;
 
@@ -1869,7 +1873,7 @@ class World {
                     username: username
                 });
             }
-        } else if (type === 'player_logout') {
+        } else if (isPlayerLogoutResponse(msg)) {
             const { username, success } = msg;
             if (!this.logoutRequests.has(username)) {
                 return;
@@ -1881,7 +1885,8 @@ class World {
         }
     }
 
-    onFriendMessage({ opcode, data }: { opcode: FriendsServerOpcodes; data: any }) {
+    onFriendMessage(msg: FriendThreadMessage) {
+        const { opcode, data } = msg;
         try {
             if (opcode === FriendsServerOpcodes.UPDATE_FRIENDLIST) {
                 const username37 = BigInt(data.username37);
