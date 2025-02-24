@@ -128,7 +128,8 @@ export default class ClientCheatHandler extends MessageHandler<ClientCheat> {
                                 break;
                             }
                         }
-                    } catch (err) {
+                    } catch (_) {  // eslint-disable-line @typescript-eslint/no-unused-vars
+                        // invalid arguments
                         return false;
                     }
                 }
@@ -139,6 +140,20 @@ export default class ClientCheatHandler extends MessageHandler<ClientCheat> {
             } else if (cmd === 'rebuild' && !Environment.STANDALONE_BUNDLE) {
                 player.messageGame('Rebuilding scripts...');
                 World.rebuild();
+            } else if (cmd === 'speed') {
+                if (args.length < 1) {
+                    player.messageGame('Usage: ::speed <ms>');
+                    return false;
+                }
+
+                const speed: number = tryParseInt(args.shift(), 20);
+                if (speed < 20) {
+                    player.messageGame('::speed input was too low.');
+                    return false;
+                }
+
+                player.messageGame(`World speed was changed to ${speed}ms`);
+                World.tickRate = speed;
             } else if (cmd === 'fly') {
                 if (player.moveStrategy === MoveStrategy.FLY) {
                     player.moveStrategy = MoveStrategy.SMART;
