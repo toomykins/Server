@@ -78,6 +78,11 @@ import { findNaivePath, reachedEntity, reachedLoc, reachedObj } from '#/engine/G
 import Visibility from './Visibility.js';
 import UpdateRebootTimer from '#/network/server/model/UpdateRebootTimer.js';
 import { CollisionType } from '@2004scape/rsmod-pathfinder';
+import SceneState from '#/engine/entity/SceneState.js';
+import ZoneMap from '#/engine/zone/ZoneMap.js';
+import UpdateStat from '#/network/server/model/UpdateStat.js';
+import UpdateZoneFullFollows from '#/network/server/model/UpdateZoneFullFollows.js';
+import RebuildNormal from '#/network/server/model/RebuildNormal.js';
 const levelExperience = new Int32Array(99);
 
 let acc = 0;
@@ -110,6 +115,24 @@ export default class Player extends PathingEntity {
         [4626, 11146, 6439, 12, 4758, 10270],
         [4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574]
     ];
+
+    static readonly MALE_FEMALE_MAP = new Map<number, number>([
+        [0, 45], [1, 47], [2, 48], [3, 49], [4, 50], [5, 51], [6, 52], [7, 53], [8, 54], [9, 55],
+        [18, 56], [19, 56], [20, 56], [21, 56], [22, 56], [23, 56], [24, 56], [25, 56],
+        [26, 61], [27, 63], [28, 62], [29, 65], [30, 64], [31, 63], [32, 66],
+        [33, 67], [34, 68], [35, 69],
+        [36, 70], [37, 71], [38, 72], [39, 76], [40, 75], [41, 78],
+        [42, 79], [43, 80], [44, 81]
+    ]);
+
+    static readonly FEMALE_MALE_MAP = new Map<number, number>([
+        [45, 0], [46, 0], [47, 1], [48, 2], [49, 3], [50, 4], [51, 5], [52, 6], [53, 7], [54, 8], [55, 9],
+        [56, 18], [57, 18], [58, 18], [59, 18], [60, 18],
+        [61, 26], [62, 27], [63, 28], [64, 29], [65, 29], [66, 32],
+        [67, 33], [68, 34], [69, 35],
+        [70, 36], [71, 37], [72, 38], [73, 36], [74, 36], [75, 40], [76, 39], [77, 36], [78, 41],
+        [79, 42], [80, 43], [81, 44]
+    ]);
 
     save() {
         const sav = Packet.alloc(1);
@@ -261,7 +284,7 @@ export default class Player extends PathingEntity {
     preventLogoutUntil: number = -1;
 
     // not stored as a byte buffer so we can write and encrypt opcodes later
-    buffer: LinkList<OutgoingMessage> = new LinkList();
+    buffer: OutgoingMessage[] = [];
     lastResponse: number = -1;
     lastConnected: number = -1;
 
@@ -316,6 +339,12 @@ export default class Player extends PathingEntity {
     lastZone: number = -1;
 
     muted_until: Date | null = null;
+    members: boolean = true;
+
+    socialProtect: boolean = false; // social packet spam protection
+    reportAbuseProtect: boolean = false; // social packet spam protection
+
+    scene: SceneState = SceneState.NONE;
 
     constructor(username: string, username37: bigint, hash64: bigint) {
         super(0, 3094, 3106, 1, 1, EntityLifeCycle.FOREVER, MoveRestrict.NORMAL, BlockWalk.NPC, MoveStrategy.SMART, InfoProt.PLAYER_FACE_COORD.id, InfoProt.PLAYER_FACE_ENTITY.id); // tutorial island.
@@ -346,7 +375,7 @@ export default class Player extends PathingEntity {
         this.activeScript = null;
         this.invListeners.length = 0;
         this.resumeButtons.length = 0;
-        this.buffer.clear();
+        this.buffer = [];
         this.queue.clear();
         this.weakQueue.clear();
         this.engineQueue.clear();
@@ -370,12 +399,15 @@ export default class Player extends PathingEntity {
         this.message = null;
         this.logMessage = null;
         this.appearance = -1;
+        this.socialProtect = false;
+        this.reportAbuseProtect = false;
     }
 
     // ----
 
     onLogin() {
         // normalize client between logins
+        this.rebuildNormal();
         this.write(new IfClose());
         this.write(new UpdateUid192(this.pid));
         this.unsetMapFlag();
@@ -402,17 +434,21 @@ export default class Player extends PathingEntity {
 
     onReconnect() {
         // force resyncing
+        this.scene = SceneState.NONE;
         // reload entity info (overkill? does the client have some logic around this?)
         this.buildArea.clear(true);
+        // rebuild scene (rebuildnormal won't run if you're in the same zone!)
+        this.rebuildNormal();
+        this.scene = SceneState.LOAD;
         // in case of pending update
         if (World.isPendingShutdown) {
             const ticksBeforeShutdown = World.shutdownTicksRemaining;
             this.write(new UpdateRebootTimer(ticksBeforeShutdown));
         }
         this.write(new ResetAnims());
-        // rebuild scene (rebuildnormal won't run if you're in the same zone!)
-        this.originX = -1;
-        this.originZ = -1;
+        for (let i = 0; i < this.stats.length; i++) {
+            this.write(new UpdateStat(i, this.stats[i], this.levels[i]));
+        }
         // resync invs
         this.refreshInvs();
         this.moveSpeed = MoveSpeed.INSTANT;
@@ -1431,13 +1467,13 @@ export default class Player extends PathingEntity {
         }
 
         const fromObj = this.invGetSlot(fromInv, fromSlot);
-        if (!fromObj) {
-            throw new Error(`invMoveToSlot: Invalid from obj was null. This means the obj does not exist at this slot: ${fromSlot}`);
-        }
-
         const toObj = this.invGetSlot(toInv, toSlot);
-        this.invSet(toInv, fromObj.id, fromObj.count, toSlot);
 
+        if (fromObj) {
+            this.invSet(toInv, fromObj.id, fromObj.count, toSlot);
+        } else {
+            this.invDelSlot(toInv, toSlot);
+        }
         if (toObj) {
             this.invSet(fromInv, toObj.id, toObj.count, fromSlot);
         } else {
@@ -1835,6 +1871,62 @@ export default class Player extends PathingEntity {
         }
     }
 
+    rebuildZones(): void {
+        // update any newly tracked zones
+        this.buildArea.activeZones.clear();
+
+        const centerX = CoordGrid.zone(this.x);
+        const centerZ = CoordGrid.zone(this.z);
+
+        const originX: number = CoordGrid.zone(this.originX);
+        const originZ: number = CoordGrid.zone(this.originZ);
+
+        const leftX = originX - 6;
+        const rightX = originX + 6;
+        const topZ = originZ + 6;
+        const bottomZ = originZ - 6;
+
+        for (let x = centerX - 3; x <= centerX + 3; x++) {
+            for (let z = centerZ - 3; z <= centerZ + 3; z++) {
+                // check if the zone is within the build area
+                if (x < leftX || x > rightX || z > topZ || z < bottomZ) {
+                    continue;
+                }
+                this.buildArea.activeZones.add(ZoneMap.zoneIndex(x << 3, z << 3, this.level));
+            }
+        }
+    }
+
+    rebuildNormal(): void {
+        const originX: number = CoordGrid.zone(this.originX);
+        const originZ: number = CoordGrid.zone(this.originZ);
+
+        const reloadLeftX = (originX - 4) << 3;
+        const reloadRightX = (originX + 5) << 3;
+        const reloadTopZ = (originZ + 5) << 3;
+        const reloadBottomZ = (originZ - 4) << 3;
+
+        // if the build area should be regenerated, do so now
+        if (this.x < reloadLeftX || this.z < reloadBottomZ || this.x > reloadRightX - 1 || this.z > reloadTopZ - 1 || this.scene === SceneState.NONE) {
+            if (this.scene === SceneState.READY) {
+                // this fixes invisible door issue...
+                for (const zone of this.buildArea.activeZones) {
+                    const { x, z } = ZoneMap.unpackIndex(zone);
+                    if (x < reloadLeftX || z < reloadBottomZ || x > reloadRightX - 1 || z > reloadTopZ - 1) {
+                        this.write(new UpdateZoneFullFollows(CoordGrid.zone(x), CoordGrid.zone(z), this.originX, this.originZ));
+                    }
+                }
+            }
+
+            this.write(new RebuildNormal(CoordGrid.zone(this.x), CoordGrid.zone(this.z)));
+
+            this.originX = this.x;
+            this.originZ = this.z;
+            this.scene = SceneState.NONE;
+            this.buildArea.loadedZones.clear();
+        }
+    }
+
     // ----
 
     runScript(script: ScriptState, protect: boolean = false, force: boolean = false) {
@@ -1912,7 +2004,7 @@ export default class Player extends PathingEntity {
         if (message.priority === ServerProtPriority.IMMEDIATE) {
             this.writeInner(message);
         } else {
-            this.buffer.addTail(message);
+            this.buffer.push(message);
         }
     }
 

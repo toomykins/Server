@@ -57,6 +57,10 @@ async function handleRequests(parentPort: ParentPort, msg: any) {
             if (Environment.LOGIN_SERVER) {
                 const response = await client.playerLogin(username, password, uid, socket, remoteAddress, reconnecting, hasSave);
 
+                if (!Environment.NODE_PRODUCTION) {
+                    response.staffmodlevel = 3; // dev (destructive commands)
+                }
+
                 parentPort.postMessage({
                     type: 'player_login',
                     socket,
@@ -86,7 +90,8 @@ async function handleRequests(parentPort: ParentPort, msg: any) {
                         reply: 4,
                         staffmodlevel,
                         save: null,
-                        account_id: -1
+                        account_id: 1,
+                        members: Environment.NODE_MEMBERS
                     });
                 } else {
                     parentPort.postMessage({
@@ -98,7 +103,8 @@ async function handleRequests(parentPort: ParentPort, msg: any) {
                         reply: 0,
                         staffmodlevel,
                         save: fs.readFileSync(`data/players/${profile}/${username}.sav`),
-                        account_id: -1
+                        account_id: 1,
+                        members: Environment.NODE_MEMBERS
                     });
                 }
             }
